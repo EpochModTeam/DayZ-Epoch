@@ -1,7 +1,7 @@
 // Developed by [GZA] David for German Zombie Apocalypse Servers (https://zombieapo.eu/)
 // Rewritten by salival (https://github.com/oiad)
 
-private ["_amount","_backPackCount","_backPackGear","_cargoAmount","_charID","_control","_counter","_display","_enoughMoney","_gearCount","_hasKey","_isLimitArray","_itemText","_items","_keyName","_limit","_magazineCount","_matchedCount","_moneyInfo","_name","_overLimit","_storedVehicles","_success","_typeName","_typeOf","_vehicle","_wealth","_weaponsCount","_woGear","_playerNear","_ownerPUID","_plotCheck"];
+private ["_amount","_backPackCount","_backPackGear","_cargoAmount","_charID","_control","_counter","_display","_enoughMoney","_hasKey","_isLimitArray","_itemText","_items","_keyName","_limit","_magazineCount","_matchedCount","_moneyInfo","_name","_overLimit","_storedVehicles","_success","_typeName","_typeOf","_vehicle","_wealth","_weaponsCount","_woGear","_playerNear","_ownerPUID","_plotCheck"];
 
 disableSerialization;
 
@@ -24,13 +24,6 @@ if (_overLimit) exitWith {localize "STR_CL_VG_BLACKLISTED" call dayz_rollingMess
 		 _storedVehicles set [count _storedVehicles,_x select 1];
 	};
 } count vg_vehicleList;
-
-_gearCount = {
-	private ["_counter"];
-	_counter = 0;
-	{_counter = _counter + _x;} count _this;
-	_counter
-};
 
 if (_isLimitArray) then {
 	{
@@ -65,9 +58,9 @@ closeDialog 0;
 if (!vg_storeWithGear && !_woGear) exitWith {localize "STR_CL_VG_NOSTOREWITHGEAR" call dayz_rollingMessages;};
 
 _charID	= _vehicle getVariable ["CharacterID","0"];
-_weaponsCount = ((getWeaponCargo _vehicle) select 1) call _gearCount;
-_magazineCount = ((getMagazineCargo _vehicle) select 1) call _gearCount;
-_backPackCount = ((getBackpackCargo _vehicle) select 1) call _gearCount;
+_weaponsCount = ((getWeaponCargo _vehicle) select 1) call fnc_gearCount;
+_magazineCount = ((getMagazineCargo _vehicle) select 1) call fnc_gearCount;
+_backPackCount = ((getBackpackCargo _vehicle) select 1) call fnc_gearCount;
 _cargoAmount = (_weaponsCount + _magazineCount + _backPackCount);
 
 if (_charID == "-1") exitWith {localize "STR_CL_VG_STORE_MISSION" call dayz_rollingMessages;};

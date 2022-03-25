@@ -1,18 +1,3 @@
-fnc_sanitizeInput = {
-	private ["_input","_badChars"];
-
-	_input = _this;
-	_input = toArray (_input);
-	_badChars = [60,62,38,123,125,91,93,59,58,39,96,126,44,46,47,63,124,92,34];
-
-	{
-		_input = _input - [_x];
-	} forEach _badChars;
-
-	_input = parseNumber (toString (_input));
-	_input
-};
-
 BankDialogUpdateAmounts = {
 	private ["_vehicleType","_displayName","_sizeOfMoney"];
 
@@ -39,7 +24,7 @@ GivePlayerDialogAmounts = {
 BankDialogWithdrawAmount = {
 	private ["_amount","_bank","_wealth","_vehicleType","_displayName"];
 
-	_amount = (_this select 0) call fnc_sanitizeInput;
+	_amount = [(_this select 0),0] call fnc_sanitizeInput;
 	_bank = ZSC_CurrentStorage getVariable ["cashMoney",0];
 	_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 	_vehicleType = typeOf ZSC_CurrentStorage;
@@ -75,7 +60,7 @@ BankDialogDepositAmount = {
 		_displayName = "Unknown";
 	};
 
-	_amount = (_this select 0) call fnc_sanitizeInput;
+	_amount = [(_this select 0),0] call fnc_sanitizeInput;
 	_bank = ZSC_CurrentStorage getVariable ["cashMoney",0];
 	_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 
@@ -97,7 +82,7 @@ BankDialogDepositAmount = {
 GivePlayerAmount = {
 	private ["_amount","_wealth","_twealth","_isBusy"];
 
-	_amount = (_this select 0) call fnc_sanitizeInput;
+	_amount = [(_this select 0),0] call fnc_sanitizeInput;
 	_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 	_twealth = ZSC_GiveMoneyTarget getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 	_isBusy = ZSC_GiveMoneyTarget getVariable ["isBusy",false];
@@ -126,7 +111,7 @@ if (Z_globalBanking) then {
 	ATMDialogWithdrawAmount = {
 		private ["_amount","_bank","_wealth"];
 
-		_amount = (_this select 0) call fnc_sanitizeInput;
+		_amount = [(_this select 0),0] call fnc_sanitizeInput;
 		_bank = player getVariable ["bankMoney",0];
 		_wealth = player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 
@@ -142,7 +127,7 @@ if (Z_globalBanking) then {
 	ATMDialogDepositAmount = {
 		private ["_amount","_bank","_wealth"];
 
-		_amount = (_this select 0) call fnc_sanitizeInput;
+		_amount = [(_this select 0),0] call fnc_sanitizeInput;
 		_bank = player getVariable ["bankMoney",0];
 		_wealth = player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 

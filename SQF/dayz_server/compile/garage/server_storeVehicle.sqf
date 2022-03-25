@@ -1,4 +1,4 @@
-private ["_damageVeh","_VGobjID","_array","_backPack","_backPackCount","_charID","_class","_clientID","_colour","_colour2","_damage","_displayName","_fnc_sanitizeInput","_fuel","_gearCount","_hit","_hitpoints","_index","_inventory","_inventoryCount","_key","_magazine","_magazineCount","_message","_name","_objectID","_objectUID","_player","_playerUID","_selection","_vehicle","_weapons","_weaponsCount","_woGear"];
+private ["_damageVeh","_VGobjID","_array","_backPack","_backPackCount","_charID","_class","_clientID","_colour","_colour2","_damage","_displayName","_fuel","_hit","_hitpoints","_index","_inventory","_inventoryCount","_key","_magazine","_magazineCount","_message","_name","_objectID","_objectUID","_player","_playerUID","_selection","_vehicle","_weapons","_weaponsCount","_woGear"];
 
 _vehicle = _this select 0;
 _player = _this select 1;
@@ -6,31 +6,9 @@ _woGear = _this select 2;
 _clientID = owner _player;
 _playerUID = if (count _this > 3) then {_this select 3} else {getPlayerUID _player};
 
-_gearCount = {
-	private ["_counter"];
-	_counter = 0;
-	{_counter = _counter + _x;} count _this;
-	_counter;
-};
-
-_fnc_sanitizeInput = {
-	private ["_input","_badChars"];
-
-	_input = _this;
-	_input = toArray (_input);
-	_badChars = [60,62,38,123,125,91,93,59,58,39,96,126,44,46,47,63,124,92,34];
-
-	{
-		_input = _input - [_x];
-	} forEach _badChars;
-	
-	_input = toString (_input);
-	_input
-};
-
 _class = typeOf _vehicle;
-_displayName = (getText(configFile >> "cfgVehicles" >> _class >> "displayName")) call _fnc_sanitizeInput;
-_name = if (alive _player) then {(name _player) call _fnc_sanitizeInput;} else {"unknown player";};
+_displayName = [(getText(configFile >> "cfgVehicles" >> _class >> "displayName")),1] call fnc_sanitizeInput;
+_name = if (alive _player) then {[(name _player),1] call fnc_sanitizeInput;} else {"unknown player";};
 
 _charID = _vehicle getVariable ["CharacterID","0"];
 _objectID = _vehicle getVariable ["ObjectID","0"];
@@ -71,9 +49,9 @@ if (!_woGear) then {
 	_weapons = getWeaponCargo _vehicle;
 	_magazine = getMagazineCargo _vehicle;
 	_backPack = getBackpackCargo _vehicle;
-	_weaponsCount = (_weapons select 1) call _gearCount;
-	_magazineCount = (_magazine select 1) call _gearCount;
-	_backPackCount = (_backPack select 1) call _gearCount;
+	_weaponsCount = (_weapons select 1) call fnc_gearCount;
+	_magazineCount = (_magazine select 1) call fnc_gearCount;
+	_backPackCount = (_backPack select 1) call fnc_gearCount;
 	_inventory = [_weapons, _magazine, _backPack];
 	_inventoryCount = [_weaponsCount, _magazineCount, _backPackCount];
 };

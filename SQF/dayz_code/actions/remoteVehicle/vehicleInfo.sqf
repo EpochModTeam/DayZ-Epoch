@@ -1,11 +1,4 @@
-private ["_backPackCount","_backPackCount_raw","_backPackSlots","_formattedText","_gearCount","_magazineCount","_magazineCount_raw","_magazineSlots","_name","_picture","_price","_text","_typeOf","_weaponSlots","_weaponsCount","_weaponsCount_raw","_control","_index"];
-
-_gearCount = {
-	private ["_counter"];
-	_counter = 0;
-	{_counter = _counter + _x;} count _this;
-	_counter
-};
+private ["_backPackCount","_backPackCount_raw","_backPackSlots","_formattedText","_magazineCount","_magazineCount_raw","_magazineSlots","_name","_picture","_price","_text","_typeOf","_weaponSlots","_weaponsCount","_weaponsCount_raw","_control","_index"];
 
 _control = (_this select 0) select 0;
 _index = (_this select 0) select 1;
@@ -23,9 +16,9 @@ _backPackSlots = getNumber(configFile >> "CfgVehicles" >> _typeOf >> "transportm
 _name = getText(configFile >> "CfgVehicles" >> _typeOf >> "displayName");
 _picture = getText(configFile >> 'CfgVehicles' >> _typeOf >> 'picture');
 
-_weaponsCount = (_weaponsCount_raw select 1) call _gearCount;
-_magazineCount = (_magazineCount_raw select 1) call _gearCount;
-_backPackCount = (_backPackCount_raw select 1) call _gearCount;
+_weaponsCount = (_weaponsCount_raw select 1) call fnc_gearCount;
+_magazineCount = (_magazineCount_raw select 1) call fnc_gearCount;
+_backPackCount = (_backPackCount_raw select 1) call fnc_gearCount;
 
 _formattedText = format [
 	"<img image='%1' size='3' align='center'/><br />" +

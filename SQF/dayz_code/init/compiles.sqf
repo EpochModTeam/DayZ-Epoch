@@ -964,6 +964,30 @@ fnc_lockCode = {
 	_code
 };
 
+fnc_gearCount = {
+	local _counter = 0;
+	{_counter = _counter + _x;} count _this;
+	_counter
+};
+
+fnc_sanitizeInput = {
+	local _input = _this select 0;
+	local _type = _this select 1;	// 0 = Number, 1 = String
+	
+	_input = toArray (_input);
+	local _badChars = [60,62,38,123,125,91,93,59,58,39,96,126,44,46,47,63,124,92,34];
+
+	{
+		_input = _input - [_x];
+	} forEach _badChars;
+	
+	_input = toString (_input);
+	
+	if (_type == 0) then {_input = parseNumber _input;};
+	
+	_input
+};
+
 //	Enable this if your server got nuked on Chernarus or Chernarus Winter.
 /*
 if (toLower worldName in ["chernarus","chernarus_winter"]) then { //need to add building coordinates for other maps

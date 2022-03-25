@@ -10,19 +10,13 @@ _index = (_this select 0) select 1;
 _localVehicle = typeName (vg_vehicleList select _index) == "OBJECT";
 _DateMaintained = "";
 _MaintainDays = -1;
-_gearCount = {
-	private ["_counter"];
-	_counter = 0;
-	{_counter = _counter + _x;} count _this;
-	_counter;
-};
 
 if (_localVehicle) then {
 	_vehicle = vg_vehicleList select _index;
 	_typeOf = typeOf _vehicle;
-	_weaponsCount = ((getWeaponCargo _vehicle) select 1) call _gearCount;
-	_magazineCount = ((getMagazineCargo _vehicle) select 1) call _gearCount;
-	_backPackCount = ((getBackpackCargo _vehicle) select 1) call _gearCount;
+	_weaponsCount = ((getWeaponCargo _vehicle) select 1) call fnc_gearCount;
+	_magazineCount = ((getMagazineCargo _vehicle) select 1) call fnc_gearCount;
+	_backPackCount = ((getBackpackCargo _vehicle) select 1) call fnc_gearCount;
 	ctrlShow[2852,false]; // getVehicle
 	ctrlShow[2850,true]; // storeVehicle
 	ctrlShow[2851,true]; // storeVehicleWithGear

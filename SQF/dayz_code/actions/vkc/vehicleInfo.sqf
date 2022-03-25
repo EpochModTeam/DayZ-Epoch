@@ -1,11 +1,4 @@
-private ["_backPackCount","_backPackCount_raw","_backPackSlots","_formattedText","_gearCount","_magazineCount","_magazineCount_raw","_magazineSlots","_name","_picture","_price","_text","_typeOf","_weaponSlots","_weaponsCount","_weaponsCount_raw"];
-
-_gearCount = {
-	private ["_counter"];
-	_counter = 0;
-	{_counter = _counter + _x;} count _this;
-	_counter
-};
+private ["_backPackCount","_backPackCount_raw","_backPackSlots","_formattedText","_magazineCount","_magazineCount_raw","_magazineSlots","_name","_picture","_price","_text","_typeOf","_weaponSlots","_weaponsCount","_weaponsCount_raw"];
 
 if (vkc_action == "claim") then {
 	ctrlShow[4850,true];
@@ -28,9 +21,9 @@ _backPackSlots = getNumber(configFile >> "CfgVehicles" >> _typeOf >> "transportm
 _name = getText(configFile >> "CfgVehicles" >> _typeOf >> "displayName");
 _picture = getText(configFile >> 'CfgVehicles' >> _typeOf >> 'picture');
 
-_weaponsCount = (_weaponsCount_raw select 1) call _gearCount;
-_magazineCount = (_magazineCount_raw select 1) call _gearCount;
-_backPackCount = (_backPackCount_raw select 1) call _gearCount;
+_weaponsCount = (_weaponsCount_raw select 1) call fnc_gearCount;
+_magazineCount = (_magazineCount_raw select 1) call fnc_gearCount;
+_backPackCount = (_backPackCount_raw select 1) call fnc_gearCount;
 
 if (!isNil "sk_dualCurrency") then {if (z_singleCurrency) then {_price = _price * 10};};
 
