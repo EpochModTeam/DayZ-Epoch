@@ -1,4 +1,4 @@
-private ["_gearClasses","_coins","_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer","_clientKey","_exitReason","_playerUID","_weapons","_magazines","_backpacks"];
+private ["_setGlobal","_gearClasses","_coins","_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer","_clientKey","_exitReason","_playerUID","_weapons","_magazines","_backpacks"];
 
 if (count _this < 8) exitWith {diag_log format ["Server_SwapObject error: Wrong parameter format from player %1",_this select 5];};
 
@@ -67,7 +67,8 @@ if (!_allowed || !_proceed) exitWith {
 };
 
 // Publish variables
-_object setVariable ["CharacterID",_charID,true];
+_setGlobal = [false,true] select ((_class in DZE_isLockedStorageUpgrade) || (_class in DZE_DoorsLocked));
+_object setVariable ["CharacterID",_charID,_setGlobal];
 
 //diag_log ("PUBLISH: Attempt " + str(_object));
 

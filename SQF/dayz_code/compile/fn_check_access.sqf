@@ -35,7 +35,7 @@ private [
 	,"_isDoorFriend"				// return value - Only applicable if target is a door
 	,"_isDoorAdmin"				    // return value - Only applicable if target is a door
 	,"_targetType"					// return value
-	,"_targetOwnerUID"				// UID or characterID of the owner of _target
+	,"_targetOwnerUID"				// UID of the owner of _target
 	,"_playerUID"					// UID of the _player
 	,"_plotcheck"					// takes return value of FNC_find_plots
 	,"_isNearPlot"					// player is in plot's reach

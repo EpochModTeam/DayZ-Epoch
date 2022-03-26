@@ -70,7 +70,7 @@ if (_outcome != "PASS") then {
 	#endif
 
 	_object setVariable ["lastUpdate",diag_tickTime];
-	_object setVariable ["CharacterID", _characterID, true];
+	_object setVariable ["CharacterID", _characterID]; //	Non key vehicles need no global set CharacterID
 	_object setDamage _damage;
 
 	[_object,_array] call server_setHitpoints;

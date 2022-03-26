@@ -14,7 +14,7 @@ if (dayz_actionInProgress) exitWith {localize "str_epoch_player_48" call dayz_ro
 dayz_actionInProgress = true;
 
 player removeAction s_player_downgrade_build;
-s_player_downgrade_build = 1;
+s_player_downgrade_build = -1;
 
 local _obj = _this select 3;
 
@@ -22,7 +22,6 @@ local _objectCharacterID = _obj getVariable ["CharacterID","0"];
 
 if (DZE_Lock_Door != _objectCharacterID) exitWith {		// Unable to downgrade, you do not know the combination.
 	dayz_actionInProgress = false;
-	s_player_downgrade_build = -1;
 	localize "str_epoch_player_49" call dayz_rollingMessages;
 };
 
@@ -30,8 +29,14 @@ local _playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities [
 
 if (_playerNear) exitWith {					// Another player is nearby. Only one player can be near to perform this action.
 	dayz_actionInProgress = false;
-	s_player_downgrade_build = -1;
 	localize "str_pickup_limit_5" call dayz_rollingMessages;
+};
+
+local _ownerID = _obj getVariable["ownerPUID", "0"];
+
+if (_ownerID == "0") exitWith {		// Not setup yet.
+	dayz_actionInProgress = false;
+	localize "str_epoch_player_50" call dayz_rollingMessages;
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -89,9 +94,8 @@ if (count _upgrade > 0) then {
 		local _vector	= [(vectorDir _obj), (vectorUp _obj)];
 
 		if (_classname in DZE_DoorsLocked) then {
-
-			_obj setVariable ["CharacterID", dayz_characterID, true];
-			_objectCharacterID = dayz_characterID;
+			_objectCharacterID = "0";
+			_obj setVariable ["CharacterID",_objectCharacterID, true];
 		};
 
 		_classname = _newclassname;
@@ -125,8 +129,7 @@ if (count _upgrade > 0) then {
 
 			_object setDamage _damageNew;
 		};
-
-		local _ownerID = _obj getVariable["ownerPUID", "0"];
+		
 		_object setVariable ["ownerPUID", _ownerID, true];
 		PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _position, dayz_playerUID, _vector], _classname, _obj, player, [], dayz_authKey];
 		publicVariableServer "PVDZE_obj_Swap";

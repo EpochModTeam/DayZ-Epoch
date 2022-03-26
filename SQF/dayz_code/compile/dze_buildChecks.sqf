@@ -91,7 +91,7 @@ if (_isPole && _isNearPlot > 0) exitWith {
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 if (_isPole && !_isAdmin && DZE_limitPlots > 0) then {
 	{
-		if (_x getVariable["ownerPUID","0"] == dayz_playerUID || (_x getVariable["CharacterID","0"] == dayz_characterID)) then {
+		if (_x getVariable["ownerPUID","0"] == dayz_playerUID) then {
 			_plotPoles = _plotPoles + 1;
 		};
 	} count (entities "Plastic_Pole_EP1_DZ");	// all plot poles on the map owned by player
@@ -130,16 +130,11 @@ if (_isNearPlot == 0 && !_canBuild) exitWith {
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 if (_isNearPlot > 0) then {
-	local _ownerID = _nearestPole getVariable["CharacterID","0"];
-	if (dayz_characterID == _ownerID) then {
+	local _accessCheck	= [player, _nearestPole] call FNC_check_access;
+	local _isowner		= _accessCheck select 0;
+	local _isfriendly	= ((_accessCheck select 1) || (_accessCheck select 3));
+	if (_isowner || _isfriendly) then {
 		_canBuild = true;
-	} else {
-		local _accessCheck	= [player, _nearestPole] call FNC_check_access;
-		local _isowner		= _accessCheck select 0;
-		local _isfriendly	= ((_accessCheck select 1) || (_accessCheck select 3));
-		if (_isowner || _isfriendly) then {
-			_canBuild = true;
-		};
 	};
 };
 

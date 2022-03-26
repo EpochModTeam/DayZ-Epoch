@@ -80,7 +80,7 @@ if (_outcome != "PASS") then {
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 	_object setVariable ["ObjectID", _oid];
 	_object setVariable ["lastUpdate",diag_tickTime];
-	_object setVariable ["CharacterID", _characterID, true];
+	_object setVariable ["CharacterID", _characterID,[true,false] select (_donotusekey)];	//	Set CharacterID global only for vehicles with a key.
 
 	if(DZE_TRADER_SPAWNMODE) then {
 		_object attachTo [_object_para, [0,0,-1.6]];

@@ -105,7 +105,7 @@ if (_outcome != "PASS") then {
 
 	_object setVariable ["ObjectID", _oid];
 	_object setVariable ["lastUpdate",diag_tickTime];
-	_object setVariable ["CharacterID", _characterID, true];
+	_object setVariable ["CharacterID", _characterID, [false,true] select (_characterID != "0")];
 
 	if (Z_SingleCurrency && {ZSC_VehicleMoneyStorage && (_coins > 0)}) then {
 		_object setVariable ["cashMoney",_coins,true];

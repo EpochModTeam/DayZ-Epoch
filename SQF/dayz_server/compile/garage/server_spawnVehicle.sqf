@@ -82,7 +82,7 @@ if (_outcome != "PASS") then {
 	processInitCommands;
 
 	_characterID = str(_characterID);
-	_object setVariable ["CharacterID", _characterID, true];
+	_object setVariable ["CharacterID", _characterID, [true,false] select (_characterID == "0")];
 
 	if (_characterID != "0" && !(_object isKindOf "Bicycle")) then {_object setVehicleLock "LOCKED";};
 	

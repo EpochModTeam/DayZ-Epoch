@@ -263,7 +263,8 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 				};
 			};
 		};
-		_object setVariable ["CharacterID", _ownerID, true];
+		_setGlobal = [false,true] select ((_type in DZE_LockedStorage) || (_type in DZE_DoorsLocked));
+		_object setVariable ["CharacterID", _ownerID, _setGlobal];
 		if (_isSafeObject && !_isTrapItem) then {
 			_object setVariable["memDir",_dir,true];
 			if (DZE_GodModeBase && {!(_type in DZE_GodModeBaseExclude)}) then {
@@ -363,7 +364,8 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		{_object addBackpackCargoGlobal [_x, _backpackqty select _foreachindex];} foreach _backpackcargo;
 	};
 
-	_object setVariable ["CharacterID", _ownerID, true];
+	_setGlobal = [false,true] select (_ownerID != "0");
+	_object setVariable ["CharacterID", _ownerID, _setGlobal];
 	
 	[_object,_hitpoints] call server_setHitpoints;
 	

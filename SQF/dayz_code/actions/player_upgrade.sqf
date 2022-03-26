@@ -14,14 +14,14 @@ if (dayz_actionInProgress) exitWith {localize "str_epoch_player_52" call dayz_ro
 dayz_actionInProgress = true;
 
 player removeAction s_player_upgrade_build;
-s_player_upgrade_build = 1;
+s_player_upgrade_build = -1;
 
 local _obj		= _this select 3;
 local _classname	= typeOf _obj;
+local _ownerID = _obj getVariable["ownerPUID","0"];
 
-if (_classname in DZE_DisableUpgrade) exitWith {
+if (_ownerID == "0" || {_classname in DZE_DisableUpgrade}) exitWith {
 	dayz_actionInProgress	= false;
-	s_player_upgrade_build	= -1;
 	localize "str_epoch_player_50" call dayz_rollingMessages;					// Not setup yet.
 };
 
@@ -206,9 +206,7 @@ if ((count _upgrade) > 0) then {
 					};
 
 					_object setDamage _damageNew;
-				};
-
-				local _ownerID = _obj getVariable["ownerPUID","0"];
+				};				
 
 				if (_ownerID == "0") then {
 					_ownerID = dayz_playerUID;	// APFL is on but UID is 0 so we will claim it to record the ownership.

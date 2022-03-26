@@ -1212,19 +1212,16 @@ if (_canBuild) then {
 		if (count _findNearestPole > 0) then {							// is near plot
 
 			_nearestPole = _findNearestPole select 0;					// get first entry
-			_ownerID = _nearestPole getVariable["CharacterID","0"];
-
-			if (dayz_characterID != _ownerID) then {					// not the owner
-				_buildcheck	= [player, _nearestPole] call FNC_check_access;
-				_isowner	= _buildcheck select 0;
-				_isfriendly	= ((_buildcheck select 1) || (_buildcheck select 3));
-				if (!_isowner && !_isfriendly) then {
-					_cancel = true;
-				};
-				if (_cancel) then {
-					_reason = localize "STR_EPOCH_PLAYER_134";	// You do not have access to build on this plot.
-				};
+			_buildcheck	= [player, _nearestPole] call FNC_check_access;
+			_isowner	= _buildcheck select 0;
+			_isfriendly	= ((_buildcheck select 1) || (_buildcheck select 3));
+			if (!_isowner && !_isfriendly) then {
+				_cancel = true;
 			};
+			if (_cancel) then {
+				_reason = localize "STR_EPOCH_PLAYER_134";	// You do not have access to build on this plot.
+			};
+
 		};
 	};
 
@@ -1555,8 +1552,8 @@ if (_canBuild) then {
 					systemChat format[localize "str_epoch_player_140", _combinationDisplay, _text];	// You have setup your %2. The combination is %1
 
 				} else { // if not lockable item
-
-					_builtObject setVariable ["CharacterID", dayz_characterID, true];
+					local _charID = "0";
+					_builtObject setVariable ["CharacterID", _charID];
 
 					// fireplace
 					if (_builtObject isKindOf "Land_Fire_DZ") then { // if campfire, then spawn, but do not publish to database
@@ -1571,9 +1568,9 @@ if (_canBuild) then {
 							_friendsArr = [[dayz_playerUID, toArray (name player)]];
 							_builtObject setVariable ["plotfriends", _friendsArr, true];
 
-							PVDZ_obj_Publish = [dayz_characterID, _builtObject, [_dir, _position, dayz_playerUID, _vector], _friendsArr, player, dayz_authKey];
+							PVDZ_obj_Publish = [_charID, _builtObject, [_dir, _position, dayz_playerUID, _vector], _friendsArr, player, dayz_authKey];
 						} else {
-							PVDZ_obj_Publish = [dayz_characterID, _builtObject, [_dir, _position, dayz_playerUID, _vector], [], player, dayz_authKey];
+							PVDZ_obj_Publish = [_charID, _builtObject, [_dir, _position, dayz_playerUID, _vector], [], player, dayz_authKey];
 						};
 						publicVariableServer "PVDZ_obj_Publish";
 					};
