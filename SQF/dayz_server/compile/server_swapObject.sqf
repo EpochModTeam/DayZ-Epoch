@@ -69,8 +69,6 @@ if (!_allowed || !_proceed) exitWith {
 // Publish variables
 _object setVariable ["CharacterID",_charID,true];
 
-_object setVariable ["OEMPos",(_worldspace select 1),true];
-
 //diag_log ("PUBLISH: Attempt " + str(_object));
 
 //get UID

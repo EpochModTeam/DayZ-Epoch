@@ -15,7 +15,7 @@ _typeOf = typeOf _object;
 if !(_typeOf in DZE_unlockedStorage) exitWith {diag_log "server_changeCode called with invalid storage object!"};
 
 _lockedClass = getText (configFile >> "CfgVehicles" >> _typeOf >> "lockedClass");
-_pos = _object getVariable ["OEMPos",getPosATL _object];
+_pos = getPosATL _object;
 _dir = getDir _object;
 _vector = [vectorDir _object, vectorUp _object];
 _charID = _object getVariable ["CharacterID","0"];
@@ -49,7 +49,6 @@ _holder setVariable ["memDir",_dir,true];
 _holder setVectorDirAndUp _vector;
 _holder setPosATL _pos;
 _holder setVariable ["CharacterID",_characterID,true];
-_holder setVariable ["OEMPos",_pos,true];
 
 _ownerPUID = if (_charID == "0000" || _charID == "10000") then {_playerUID} else {_ownerID};
 _worldSpace = [_dir,_pos,_ownerPUID,_vector];

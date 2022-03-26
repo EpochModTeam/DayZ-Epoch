@@ -68,7 +68,7 @@ if (_isStorage) then {
 	sk_changeCode = [player,_cursorTarget,dayz_combination,dayz_authKey];
 	publicVariableServer "sk_changeCode";
 } else {
-	_location = _cursorTarget getVariable["OEMPos",getPosATL _cursorTarget];
+	_location = getPosATL _cursorTarget;
 	_dir = getDir _cursorTarget;
 	_vector = [vectorDir _cursorTarget,vectorUp _cursorTarget];
 

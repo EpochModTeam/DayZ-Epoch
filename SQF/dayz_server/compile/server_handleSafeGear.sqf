@@ -6,7 +6,7 @@ _status = _this select 2;
 
 _name = ["Dead Player",name _player] select (alive _player);
 _type = typeOf _obj;
-_pos = _obj getVariable ["OEMPos",getPosATL _obj];
+_pos = getPosATL _obj;
 _dir = direction _obj;
 _vector = [vectorDir _obj, vectorUp _obj];
 _charID = _obj getVariable ["CharacterID","0"];
@@ -72,7 +72,6 @@ call {
 		_holder setVariable ["CharacterID",_charID,true];
 		_holder setVariable ["ObjectID",_objectID];
 		_holder setVariable ["ObjectUID",_objectUID];
-		_holder setVariable ["OEMPos",_pos,true];
 		_holder setDamage _damage;
 		_holder setVariable ["ownerPUID",_ownerID,true];
 		if (_isZSC && {_unlockedClass in DZE_MoneyStorageClasses}) then {_holder setVariable ["cashMoney",_coins,true];};
@@ -100,7 +99,6 @@ call {
 		_holder setVariable ["CharacterID",_charID,true];
 		_holder setVariable ["ObjectID",_objectID];
 		_holder setVariable ["ObjectUID",_objectUID];
-		_holder setVariable ["OEMPos",_pos,true];
 		_holder setDamage _damage;
 		_holder setVariable ["ownerPUID",_ownerID,true];
 		if (_isZSC && {_lockedClass in DZE_MoneyStorageClasses}) then {_holder setVariable ["cashMoney",_coins,true];};

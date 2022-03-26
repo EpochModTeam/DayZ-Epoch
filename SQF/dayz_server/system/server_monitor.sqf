@@ -271,7 +271,6 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 			} else {
 				_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 			};
-			_object setVariable ["OEMPos",_pos,true]; // used for inplace upgrades and lock/unlock of safe
 		} else {
 			_object enableSimulation true;
 		};

@@ -1418,7 +1418,6 @@ if (_canBuild) then {
 				call player_forceSave;
 
 				[format[localize "str_build_01", _text], 1] call dayz_rollingMessages;
-				_builtObject setVariable ["OEMPos", _position, true]; // store original location as a variable
 
 				if (_lockable > 1) then { //if item has code lock on it
 

@@ -138,11 +138,11 @@ if ((count _upgrade) > 0) then {
 
 				call player_forceSave;
 
-				local _location			= _obj getVariable["OEMPos", (getPosATL _obj)];
-				local _dir			= getDir _obj;
+				local _location			= getPosATL _obj;
+				local _dir				= getDir _obj;
 				local _vector			= [vectorDir _obj, vectorUp _obj];
 				local _objectCharacterID	= _obj getVariable ["CharacterID","0"];
-				_classname			= _newclassname;
+				_classname				= _newclassname;
 
 				local _object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
 				//_object setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp

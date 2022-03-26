@@ -84,7 +84,7 @@ if (count _upgrade > 0) then {
 
 	if (_i > 0) then {
 
-		local _position	= _obj getVariable["OEMPos", getPosATL _obj];
+		local _position	= getPosATL _obj;
 		local _dir	= getDir _obj;
 		local _vector	= [(vectorDir _obj), (vectorUp _obj)];
 
