@@ -47,6 +47,10 @@
 [ADDED] Support for the elevator script via 3 new kits and objects. (546172959) @seelenapparat
 [ADDED] Harvestable plants and compost barrels. (84064ec89) @AirwavesMan
 [ADDED] 9 new buildable epoch buildings for server admins to add. (2e3f16c24) @AirwavesMan
+[ADDED] Changeable DZE_GemChance to customize the chance to find a gemstone in an ore vein. Can be changed in the configVariables.sqf (f179d037d) @AirwavesMan
+[ADDED] Changeable DZE_debrisRefundParts to customize the dynamic debris wrecks refund. Can be changed in the configVariables.sqf (6189bed04) @AirwavesMan
+[ADDED] Changeable DZE_toolBreakChance to customize the break chance of tools when removing a building. Can be changed in the configVariables.sqf (01792fe8e) @AirwavesMan
+[ADDED] After canceling an action the sound will be aborted too now. (21e9c3451) @Victor-the-Cleaner
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [UPDATED] Snappoints got improved. (f68e92d5) @worldwidesorrow
 [UPDATED] Replace M240 Nest ghost preview with the actual game object as preview. (ff05cb9cb) @ZzBombardierzZ, @AirwavesMan
@@ -73,6 +77,9 @@
 [UPDATED] All epoch buildings are listed in DayZ_SafeObjects now. (43006760f) @AirwavesMan
 [UPDATED] Mining stones for better stone detection. (c57d2f8d7) @Victor-the-Cleaner
 [UPDATED] Increased magazine slots for cooking pot and adv. workbench. (60b1ca78e) @seelenapparat
+[UPDATED] ObjectID and ObjectUID setVariables are no longer global and only visible by the server. (e72394d6d, 3ffa072c8, 2168d504b, d4e6e786d) @AirwavesMan
+[UPDATED] PVDZ_obj_Destroy send no longer ObjectIDs, ObjectUIDs and uses netID now. (e72394d6d) @AirwavesMan
+[UPDATED] characterID setVariables is only for vehicles with a key and locked/lockable buildings global now. (67bdc7217) @AirwavesMan
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -120,7 +127,8 @@
 [REMOVED] DZE_permanentPlot variable and checks. (5aba5d7dd, 9ecdb21dd) @AirwavesMan
 [REMOVED] Ghost previews for Razor Wire, Sandbag Nest, and HBarrier Cubes due to inaccurate geometry. (d744d995e) @Victor-the-Cleaner
 [REMOVED] DZE_modularBuild variable. (16361e546) @Victor-the-Cleaner
-[REMOVED] player_build (1bb034360) @Victor-the-Cleaner
+[REMOVED] player_build.sqf (1bb034360) @Victor-the-Cleaner
+[REMOVED] OEMPos variable (fc6680c36) @AirwavesMan
 [REPLACED] fnc_veh_setFixServer --> server_setHitpoints. (637f1f445) @AirwavesMan
 
 [INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, SyNcRoNiCzZ
