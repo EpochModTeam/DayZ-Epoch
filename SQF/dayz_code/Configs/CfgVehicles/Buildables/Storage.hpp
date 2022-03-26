@@ -223,6 +223,28 @@ class Wooden_shed2_DZ: Land_Shed_wooden
 	constructioncount = 10;
 };
 
+class WorkBench_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	cost = 100;
+	offset[] = {0,2,0.5};
+	model = "z\addons\dayz_buildings\models\workbench.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 400;
+	displayName = $STR_EPOCH_WORKBENCH;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
+	requireplot = 0;
+	nounderground = 0;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 1;
+};
+
 class Advanced_WorkBench_DZ: BuiltItems
 {
 	scope = 2;
@@ -803,4 +825,80 @@ class StorageBarrelGreenRusty2_DZ: BuiltItems
 	transportMaxWeapons = 12;
 	transportMaxMagazines = 120;
 	transportMaxBackpacks = 4;
+};
+
+class Rabbit_Hutch_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\Structures\Misc\Hutch\Misc_Hutch.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_RABBIT_HUTCH;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"rabbit_hutch_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 1;
+};
+
+class Chicken_Coop_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\Structures\Misc\ChickenCoop\Misc_ChickenCoop.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_CHICKEN_COOP;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"chicken_coop_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 1;
+};
+
+class Doghouse_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\buildings\psi_bouda.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_DOG_HOUSE;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"doghouse_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 1;
+};
+
+class Postbox_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\Structures\Misc\Misc_PostBox\Misc_PostBox.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_POSTBOX;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"postbox_kit",1}};
+	transportMaxWeapons = 1;
+	transportMaxMagazines = 5;
+	transportMaxBackpacks = 1;
 };
