@@ -223,3 +223,23 @@ class postbox_kit
 {
 	weight = 10;
 };
+class wild_bee_hive_kit
+{
+	weight = 55;
+};
+class cow_stable_kit
+{
+	weight = 180;
+};
+class goat_stable_kit
+{
+	weight = 180;
+};
+class sheep_stable_kit
+{
+	weight = 180;
+};
+class boar_stable_kit
+{
+	weight = 180;
+};

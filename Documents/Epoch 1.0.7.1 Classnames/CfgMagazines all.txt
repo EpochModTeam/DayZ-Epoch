@@ -1261,6 +1261,7 @@ ItemTobaccoSeed
 ItemKiloBlackTea
 ItemBlackTeaSeed
 ItemTobaccoLeafs
+ItemComfreySeed
 equip_comfreyleafs
 ItemLog
 ItemPlank
@@ -1600,6 +1601,11 @@ rabbit_hutch_kit
 chicken_coop_kit
 doghouse_kit
 postbox_kit
+wild_bee_hive_kit
+cow_stable_kit
+goat_stable_kit
+sheep_stable_kit
+boar_stable_kit
 ItemTent
 ItemTentWinter
 ItemDomeTent
@@ -1686,3 +1692,12 @@ TOW_Tripod_Launcher_Static_kit
 Rbs70_Launcher_Static_kit
 Igla_AntiAir_Launcher_Static_kit
 ZU23_AntiAir_Static_kit
+Plant_Patch_Pumpkin_kit
+Plant_Patch_Sunflower_kit
+Plant_Patch_Carrot_kit
+Plant_Patch_Potato_kit
+Plant_Patch_Hemp_kit
+Plant_Patch_Tobacco_kit
+Plant_Patch_Tea_kit
+Plant_Patch_Garlic_kit
+Plant_Patch_Comfrey_kit
