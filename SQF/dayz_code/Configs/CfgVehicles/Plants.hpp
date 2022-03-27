@@ -124,7 +124,7 @@ class Plant_Patch_Garlic_DZE : Plant_Patch_Base_DZE {
 
 class Plant_Patch_Comfrey_DZE : Plant_Patch_Base_DZE {
 	scope = 2;
-	displayname = $STR_EPOCH_PLANT_PATCH_GARLIC;
+	displayname = $STR_EPOCH_PLANT_PATCH_COMFREY;
 };
 
 class Plant_Pumpkin_DZE : Plant_Patch_Base_DZE {

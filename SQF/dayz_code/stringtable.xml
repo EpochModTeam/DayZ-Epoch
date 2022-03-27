@@ -35171,41 +35171,84 @@
 			<German>Kürbisbeet</German>
 			<Russian>Тыквенный участок</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN_DESC">
+			<English>Pumpkin patch</English>
+			<German>Kürbisbeet</German>
+			<Russian>Тыквенный участок</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER">
 			<English>Sunflower patch</English>
 			<German>Sonnenblumenbeet</German>
 			<Russian>Подсолнуховый участок</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER_DESC">
+			<English>Sunflower patch</English>
+			<German>Sonnenblumenbeet</German>
+			<Russian>Подсолнуховый участок</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT">
 			<English>Carrot patch</English>
 			<German>Karottenbeet</German>
 			<Russian>Морковный участок</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT_DESC">
+			<English>Carrot patch</English>
+			<German>Karottenbeet</German>
+			<Russian>Морковный участок</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO">
 			<English>Potato patch</English>
 			<German>Kartoffelbeet</German>
 			<Russian>Картофельный участок</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO_DESC">
+			<English>Potato patch</English>
+			<German>Kartoffelbeet</German>
+			<Russian>Картофельный участок</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP">
 			<English>Hemp plant patch</English>
 			<German>Hanfpflanzenbeet</German>
 			<Russian>Конопляный участок</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP_DESC">
+			<English>Hemp plant patch</English>
+			<German>Hanfpflanzenbeet</German>
+			<Russian>Конопляный участок</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO">
 			<English>Tobacco plant patch</English>
 			<German>Tabakpflanzenbeet</German>
 			<Russian>Табачный участок</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO_DESC">
+			<English>Tobacco plant patch</English>
+			<German>Tabakpflanzenbeet</German>
+			<Russian>Табачный участок</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA">
 			<English>Tea plant patch</English>
 			<German>Teepflanzenbeet</German>
 			<Russian>Чайный участок</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_TEA_DESC">
+			<English>Tea plant patch</English>
+			<German>Teepflanzenbeet</German>
+			<Russian>Чайный участок</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PATCH_GARLIC">
 			<English>Garlic patch</English>
 			<German>Knoblauchbeet</German>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_GARLIC_DESC">
+			<English>Garlic patch</English>
+			<German>Knoblauchbeet</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PATCH_COMFREY">
+			<English>Comfrey patch</English>
+			<German>Beinwellbeet</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_COMFREY_DESC">
 			<English>Comfrey patch</English>
 			<German>Beinwellbeet</German>
 		</Key>		

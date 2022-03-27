@@ -67,4 +67,5 @@ class CfgMagazines
 	#include "Buildings\Tent.hpp"	
 	#include "Buildings\Misc.hpp"
 	#include "Buildings\StaticWeapons.hpp"
+	#include "Buildings\Plants.hpp"
 };
