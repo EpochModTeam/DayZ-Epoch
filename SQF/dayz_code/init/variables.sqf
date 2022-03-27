@@ -312,7 +312,7 @@ if (!isDedicated) then {
 	Dayz_fishingItems = ["MeleeFishingPole"];
 	DZE_maintainRange = (DZE_PlotPole select 0) + 0.1;	// Default: maintain building objects within plot radius + 0.1 meters.	
 	DZE_refundStorageItemContents = DZE_isNewStorage; // array of non-lockable storage objects that will refund their contents when the object is removed
-	DZE_rocks = ["r2_boulder1.p3d","r2_boulder2.p3d","r2_rock1.p3d","r2_rock2.p3d","r2_rocktower.p3d","r2_rockwall.p3d","r2_stone.p3d"];
+	DZE_rocks = ["r_stone_01_ep1.p3d","r_tk_stone_01_ep1.p3d","r_tk_stone_02_ep1.p3d","r_tk_boulder_01_ep1.p3d","r_tk_boulder_02_ep1.p3d","r2_boulder1.p3d","r2_boulder2.p3d","r_boulder_03_ep1.p3d","r2_rock1.p3d","r2_rock2.p3d","r2_rocktower.p3d","r2_rockwall.p3d","r2_stone.p3d","skala3_3.p3d","skala3_2.p3d"];
 	DZE_WaterSources = ["Land_pumpa","Land_Barrel_water","Land_Misc_Well_C_EP1","Land_Misc_Well_L_EP1","land_smd_water_pump","Watertank_DZE","Watertower_DZE","Land_water_tank","MAP_water_tank"];
 
 	// Helper Colors Require Reformatting
