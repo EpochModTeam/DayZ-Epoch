@@ -902,3 +902,93 @@ class Postbox_DZE : BuiltItems
 	transportMaxMagazines = 5;
 	transportMaxBackpacks = 1;
 };
+
+class Wild_Bee_Hive_DZE : BuiltItems  
+{
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_WILD_BEE_HIVE;
+	vehicleClass = "DayZ Epoch Buildables";
+	model = "\ca\buildings\misc\drevo_hromada";
+	icon = "\Ca\Structures\Data\Icons\i_timbers_ca.paa";
+	offset[] = {0,3,0}; 
+	mapSize = 2;
+	armor = 800;
+	maintainBuilding[] = {{"ItemLog",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"wild_bee_hive_kit",1}};
+	transportMaxWeapons = 1;
+	transportMaxMagazines = 15;
+	transportMaxBackpacks = 1;	
+};
+
+class Cow_Stable_DZE : BuiltItems 
+{
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_COW_STABLE;
+	vehicleClass = "DayZ Epoch Buildables";	
+	model = "\ca\Buildings2\Shed_small\Shed_M03";
+	icon = "\ca\data\data\Unknown_object.paa";
+	offset[] = {0,4,0}; 
+	mapSize = 2;
+	armor = 1000;
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"cow_stable_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 4;		
+};
+
+class Goat_Stable_DZE : BuiltItems 
+{
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_GOAT_STABLE;
+	vehicleClass = "DayZ Epoch Buildables";	
+	model = "\ca\Buildings2\Shed_small\Shed_M03";
+	icon = "\ca\data\data\Unknown_object.paa";
+	offset[] = {0,4,0}; 
+	mapSize = 2;
+	armor = 1000;
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"goat_stable_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 4;		
+};
+
+class Sheep_Stable_DZE : BuiltItems 
+{
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_SHEEP_STABLE;
+	vehicleClass = "DayZ Epoch Buildables";	
+	model = "\ca\Buildings2\Shed_small\Shed_M03";
+	icon = "\ca\data\data\Unknown_object.paa";
+	offset[] = {0,4,0}; 
+	mapSize = 2;
+	armor = 1000;
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"sheep_stable_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 4;		
+};
+
+class Boar_Stable_DZE : BuiltItems 
+{
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_BOAR_STABLE;
+	vehicleClass = "DayZ Epoch Buildables";	
+	model = "\ca\Buildings2\Shed_small\Shed_M03";
+	icon = "\ca\data\data\Unknown_object.paa";
+	offset[] = {0,4,0}; 
+	mapSize = 2;
+	armor = 1000;
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"boar_stable_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 4;		
+};

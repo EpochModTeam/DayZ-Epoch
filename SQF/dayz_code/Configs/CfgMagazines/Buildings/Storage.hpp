@@ -1138,3 +1138,113 @@ class postbox_kit: CA_Magazine
 		};
 	};
 };
+
+class wild_bee_hive_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_WILD_BEE_HIVE;
+	descriptionShort = $STR_EQUIP_DESC_WILD_BEE_HIVE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Wild_Bee_Hive_DZE";
+		};
+	};
+};
+
+class cow_stable_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_COW_STABLE;
+	descriptionShort = $STR_EQUIP_DESC_COW_STABLE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Cow_Stable_DZE";
+		};
+	};
+};
+
+class goat_stable_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_GOAT_STABLE;
+	descriptionShort = $STR_EQUIP_DESC_GOAT_STABLE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Goat_Stable_DZE";
+		};
+	};
+};
+
+class sheep_stable_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_SHEEP_STABLE;
+	descriptionShort = $STR_EQUIP_DESC_SHEEP_STABLE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Sheep_Stable_DZE";
+		};
+	};
+};
+
+class boar_stable_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_BOAR_STABLE;
+	descriptionShort = $STR_EQUIP_DESC_BOAR_STABLE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Boar_Stable_DZE";
+		};
+	};
+};

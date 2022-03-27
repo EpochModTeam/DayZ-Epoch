@@ -36285,6 +36285,46 @@
 		<Key ID="STR_EQUIP_DESC_WATERTOWER">
 			<English>A big water tower which can hold a lot of water.</English>
 			<German>Ein großer Wasserturm, in welchem viel Wasser gelagert werden kann.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WILD_BEE_HIVE">
+			<English>Wild Bee Hive</English>
+			<German>Wildbienenstock</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WILD_BEE_HIVE">
+			<English>Many stacked wooden logs which can be a home for wild bees.</English>
+			<German>Viele aufgestapelte Holzscheite, welche ein Zuhause für Wildbienen sein sollen.</German>
+		</Key>			
+		<Key ID="STR_EQUIP_NAME_COW_STABLE">
+			<English>Cow Stable</English>
+			<German>Kuhstall</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_COW_STABLE">
+			<English>A small stable which can hold a cow.</English>
+			<German>Ein kleiner Stall, in welchem eine Kuh gehalten werden kann.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_GOAT_STABLE">
+			<English>Goat Stable</English>
+			<German>Ziegenstall</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_GOAT_STABLE">
+			<English>A small stable which can hold a goat.</English>
+			<German>Ein kleiner Stall, in welchem eine Ziege gehalten werden kann.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_SHEEP_STABLE">
+			<English>Sheep Stable</English>
+			<German>Schafstall</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_SHEEP_STABLE">
+			<English>A small stable which can hold a sheep.</English>
+			<German>Ein kleiner Stall, in welchem ein Schaf gehalten werden kann.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_BOAR_STABLE">
+			<English>Boar Stable</English>
+			<German>Wildschweinstall</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_BOAR_STABLE">
+			<English>A small stable which can hold a boar.</English>
+			<German>Ein kleiner Stall, in welchem ein Wildschwein gehalten werden kann.</German>
 		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
