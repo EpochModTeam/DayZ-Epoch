@@ -823,4 +823,6 @@ class CfgVehicles
 		disappearAtContact = 1;
 		airRotation = 1.0;
 	};
+	
+	#include "Helper.hpp"	
 };
