@@ -27089,6 +27089,14 @@
 			<German>Ein paar schwarzer Teesamen.</German>
 			<Russian>Семена чая, пригодные для посева.</Russian>
 		</Key>
+		<Key ID="STR_CRAFT_NAME_COMFREY_SEED">
+			<English>Bag of Comfrey Seeds</English>
+			<German>Säckchen Beinwellsamen</German>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_COMFREY_SEED">
+			<English>A few comfrey seeds.</English>
+			<German>Ein paar Beinwellsamen.</German>
+		</Key>		
 		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
 			<English>Hemp Plant</English>
 			<German>Hanfpflanze</German>
@@ -35197,6 +35205,10 @@
 			<English>Garlic patch</English>
 			<German>Knoblauchbeet</German>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_COMFREY">
+			<English>Comfrey patch</English>
+			<German>Beinwellbeet</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PUMPKIN">
 			<English>Pumpkin Plant</English>
 			<German>Kürbispflanze</German>
@@ -35228,6 +35240,10 @@
 		<Key ID="STR_EPOCH_PLANT_GARLIC">
 			<English>Garlic Plant</English>
 			<German>Knoblauchpflanze</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_COMFREY">
+			<English>Comfrey Plant</English>
+			<German>Beinwellpflanze</German>
 		</Key>		
 		<Key ID="STR_EPOCH_ITEM_NOTEBOOK">
 			<English>Notebook</English>

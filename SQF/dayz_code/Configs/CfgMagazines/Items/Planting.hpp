@@ -130,6 +130,17 @@ class ItemTobaccoLeafs : CA_Magazine
 	type = 256;
 };
 
+class ItemComfreySeed: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_CRAFT_NAME_COMFREY_SEED;
+	descriptionShort = $STR_CRAFT_DESC_COMFREY_SEED;
+	model = "\z\addons\dayz_epoch_w\items\veges\seedbag_01.p3d";
+	picture = "\dayz_epoch_c\icons\plants\confreyseeds.paa";
+	type = 256;
+};
+
 class equip_comfreyleafs : CA_Magazine 
 {
 	scope = 2;

@@ -568,6 +568,9 @@ class CfgSurvival {
 		};
 		class Plant_Garlic_DZE {
 			qty = 7;
+		};	
+		class Plant_Comfrey_DZE {
+			qty = 3;
 		};		
 	};
 };

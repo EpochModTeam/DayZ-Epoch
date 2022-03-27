@@ -122,6 +122,11 @@ class Plant_Patch_Garlic_DZE : Plant_Patch_Base_DZE {
 	displayname = $STR_EPOCH_PLANT_PATCH_GARLIC;
 };
 
+class Plant_Patch_Comfrey_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayname = $STR_EPOCH_PLANT_PATCH_GARLIC;
+};
+
 class Plant_Pumpkin_DZE : Plant_Patch_Base_DZE {
 	scope = 2;
 	displayName = $STR_EPOCH_PLANT_PUMPKIN;	
@@ -168,4 +173,10 @@ class Plant_Garlic_DZE : Plant_Patch_Base_DZE {
 	scope = 2;
 	displayName = $STR_EPOCH_PLANT_GARLIC;
 	model = "z\addons\dayz_communityassets\models\comfrey_up_small.p3d";
+};
+
+class Plant_Comfrey_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_PLANT_COMFREY;
+	model = "z\addons\dayz_communityassets\models\comfrey_up.p3d";
 };
