@@ -676,6 +676,7 @@ class CfgVehicles
 	#include "Car\MiniCooper.hpp"
 	#include "Car\Nissan.hpp"
 	#include "Car\ScrapAPC.hpp"
+	#include "Car\AAV.hpp"
 	//Helicopters
 	#include "Helicopter\MI17.hpp"
 	#include "Helicopter\UH1H.hpp"

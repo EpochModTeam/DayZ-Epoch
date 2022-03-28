@@ -179,7 +179,11 @@ class Category_7 {
 	class HMMWV_M1114_DSHKM_ACR_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
 	class HMMWV_M1114_DSHKM_ACR_DZ {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
 	class HMMWV_M1114_AGS_ACR_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
-	class HMMWV_M1114_AGS_ACR_DZ {type = "trade_any_vehicle";buy[] = {-2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};		
+	class HMMWV_M1114_AGS_ACR_DZ {type = "trade_any_vehicle";buy[] = {-2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
+	class HMMWV_Crows_M2_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemBriefcase100oz"};sell[] = {3,"ItemBriefcase100oz"};};
+	class HMMWV_Crows_M2_DZ {type = "trade_any_vehicle";buy[] = {-6,"ItemBriefcase100oz"};sell[] = {3,"ItemBriefcase100oz"};};	
+	class HMMWV_Crows_MK19_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemBriefcase100oz"};sell[] = {3,"ItemBriefcase100oz"};};
+	class HMMWV_Crows_MK19_DZ {type = "trade_any_vehicle";buy[] = {-6,"ItemBriefcase100oz"};sell[] = {3,"ItemBriefcase100oz"};};		
 	class Dingo_WDL_ACR_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
 	class Dingo_WDL_ACR_DZ {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};	
 	class Dingo_DST_ACR_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
@@ -208,8 +212,14 @@ class Category_7 {
 	class M113_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
 	class M113_TK_EP1_DZ {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
 	/*
-	class BTR90_DZE {type = "trade_any_vehicle";buy[] = {-3,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};
-	class BTR90_DZ {type = "trade_any_vehicle";buy[] = {-3,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};
+	class HMMWV_Avenger_WDL_DZE {type = "trade_any_vehicle";buy[] = {-8,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};
+	class HMMWV_Avenger_WDL_DZ {type = "trade_any_vehicle";buy[] = {-8,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};
+	class HMMWV_Avenger_DES_DZE {type = "trade_any_vehicle";buy[] = {-8,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};
+	class HMMWV_Avenger_DES_DZ {type = "trade_any_vehicle";buy[] = {-8,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};
+	class AAV_DZE {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
+	class AAV_DZ {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};	
+	class BTR90_DZE {type = "trade_any_vehicle";buy[] = {-8,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};
+	class BTR90_DZ {type = "trade_any_vehicle";buy[] = {-8,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};
 	class GAZ_Vodnik_HMG_DZE {type = "trade_any_vehicle";buy[] = {-8,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};
 	class GAZ_Vodnik_HMG_DZ {type = "trade_any_vehicle";buy[] = {-8,"ItemBriefcase100oz"};sell[] = {4,"ItemBriefcase100oz"};};	
 	class LandRover_SPG9_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};	

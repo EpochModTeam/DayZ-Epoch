@@ -180,6 +180,10 @@ class Category_7 {
 	class HMMWV_M1114_DSHKM_ACR_DZ {type = "trade_any_vehicle";buy[] = {-1,"worth"};sell[] = {10000,"worth"};};
 	class HMMWV_M1114_AGS_ACR_DZE {type = "trade_any_vehicle";buy[] = {20000,"worth"};sell[] = {10000,"worth"};};
 	class HMMWV_M1114_AGS_ACR_DZ {type = "trade_any_vehicle";buy[] = {-20000,"worth"};sell[] = {10000,"worth"};};	
+	class HMMWV_Crows_M2_DZE {type = "trade_any_vehicle";buy[] = {60000,"worth"};sell[] = {30000,"worth"};};
+	class HMMWV_Crows_M2_DZ {type = "trade_any_vehicle";buy[] = {-60000,"worth"};sell[] = {30000,"worth"};};
+	class HMMWV_Crows_MK19_DZE {type = "trade_any_vehicle";buy[] = {60000,"worth"};sell[] = {30000,"worth"};};
+	class HMMWV_Crows_MK19_DZ {type = "trade_any_vehicle";buy[] = {-60000,"worth"};sell[] = {30000,"worth"};};	
 	class Dingo_WDL_ACR_DZE {type = "trade_any_vehicle";buy[] = {60000,"worth"};sell[] = {20000,"worth"};};
 	class Dingo_WDL_ACR_DZ {type = "trade_any_vehicle";buy[] = {-60000,"worth"};sell[] = {20000,"worth"};};	
 	class Dingo_DST_ACR_DZE {type = "trade_any_vehicle";buy[] = {60000,"worth"};sell[] = {20000,"worth"};};
@@ -208,8 +212,12 @@ class Category_7 {
 	class M113_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {20000,"worth"};};
 	class M113_TK_EP1_DZ {type = "trade_any_vehicle";buy[] = {-40000,"worth"};sell[] = {20000,"worth"};};	
 	/*
-	class BTR90_DZE {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {40000,"worth"};};
-	class BTR90_DZ {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {40000,"worth"};};
+	class HMMWV_Avenger_WDL_DZE {type = "trade_any_vehicle";buy[] = {-80000,"worth"};sell[] = {40000,"worth"};};
+	class HMMWV_Avenger_WDL_DZ {type = "trade_any_vehicle";buy[] = {-80000,"worth"};sell[] = {40000,"worth"};};
+	class HMMWV_Avenger_DES_DZE {type = "trade_any_vehicle";buy[] = {-80000,"worth"};sell[] = {40000,"worth"};};
+	class HMMWV_Avenger_DES_DZ {type = "trade_any_vehicle";buy[] = {-80000,"worth"};sell[] = {40000,"worth"};};	
+	class BTR90_DZE {type = "trade_any_vehicle";buy[] = {-80000,"worth"};sell[] = {40000,"worth"};};
+	class BTR90_DZ {type = "trade_any_vehicle";buy[] = {-80000,"worth"};sell[] = {40000,"worth"};};
 	class GAZ_Vodnik_HMG_DZE {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {40000,"worth"};};
 	class GAZ_Vodnik_HMG_DZ {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {40000,"worth"};};
 	class LandRover_SPG9_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {-40000,"worth"};sell[] = {20000,"worth"};};	
@@ -229,7 +237,7 @@ class Category_7 {
 	class Offroad_SPG9_TK_GUE_EP1_DZE {type = "trade_any_vehicle";buy[] = {-40000,"worth"};sell[] = {20000,"worth"};};	
 	class Offroad_SPG9_TK_GUE_EP1_DZ {type = "trade_any_vehicle";buy[] = {-40000,"worth"};sell[] = {20000,"worth"};};	
 	class LAV25_DZE {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {40000,"worth"};};
-	class LAV25_DZ {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {4000,"worth"};};	
+	class LAV25_DZ {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {40000,"worth"};};	
 	class BMP2_RUST {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {80000,"worth"};};
 	class BMP2_WINTER {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {80000,"worth"};};	
 	class T72_WINTER {type = "trade_any_vehicle";buy[] = {-10000,"worth"};sell[] = {100000,"worth"};};

@@ -8501,7 +8501,92 @@
 			<English>HMMWV Ambulance (Desert)++++</English>
 			<Russian>Хамви Скорая (Пустыня)++++</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19">
+			<English>HMMWV Crows (MK19)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19+">
+			<English>HMMWV Crows (MK19)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19++">
+			<English>HMMWV Crows (MK19)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19+++">
+			<English>HMMWV Crows (MK19)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19++++">
+			<English>HMMWV Crows (MK19)++++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2">
+			<English>HMMWV Crows (M2)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2+">
+			<English>HMMWV Crows (M2)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2++">
+			<English>HMMWV Crows (M2)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2+++">
+			<English>HMMWV Crows (M2)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2++++">
+			<English>HMMWV Crows (M2)++++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL">
+			<English>HMMWX Avenger (Woodland)</English>
+			<German>HMMWX Avenger (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL+">
+			<English>HMMWX Avenger (Woodland)+</English>
+			<German>HMMWX Avenger (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL++">
+			<English>HMMWX Avenger (Woodland)++</English>
+			<German>HMMWX Avenger (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL+++">
+			<English>HMMWX Avenger (Woodland)+++</English>
+			<German>HMMWX Avenger (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL++++">
+			<English>HMMWX Avenger (Woodland)++++</English>
+			<German>HMMWX Avenger (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES">
+			<English>HMMWX Avenger (Desert)</English>
+			<German>HMMWX Avenger (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES+">
+			<English>HMMWX Avenger (Desert)+</English>
+			<German>HMMWX Avenger (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES++">
+			<English>HMMWX Avenger (Desert)++</English>
+			<German>HMMWX Avenger (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES+++">
+			<English>HMMWX Avenger (Desert)+++</English>
+			<German>HMMWX Avenger (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES++++">
+			<English>HMMWX Avenger (Desert)++++</English>
+			<German>HMMWX Avenger (Wüstentarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AAV">
+			<English>AAVP7A1</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_AAV+">
+			<English>AAVP7A1+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_AAV++">
+			<English>AAVP7A1++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_AAV+++">
+			<English>AAVP7A1+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_AAV++++">
+			<English>AAVP7A1++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_OLD_JEEP">
 			<English>Old Jeep</English>
 			<German>Alter Jeep</German>

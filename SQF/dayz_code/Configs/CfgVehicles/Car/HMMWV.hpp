@@ -2877,3 +2877,724 @@ class HMMWV_Ambulance_CZ_DES_EP1_DZE4: HMMWV_Ambulance_CZ_DES_EP1_DZE3
 	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE_DES++++";
 	fuelCapacity = 180; // base 100
 };
+
+class HMMWV_Crows_MK19_DZ: HMMWV_DZE_Base {
+	displayname = "$STR_VEH_NAME_HMMWV_CROWS_MK19";
+	scope = 2;
+	model = "\ca\wheeled_e\HMMWV\M998_crows_Mk19";
+    picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_crows_CA.paa";
+    icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_crows_CA.paa";
+	driverAction = "HMMWV_Driver_EP1";
+    cargoAction[] = {"HMMWV_Cargo_EP1", "HMMWV_Cargo02_EP1"};
+	cargoIsCoDriver[] = {1, 0};
+	crew = "";
+	typicalCargo[] = {};
+	transportSoldier = 2;
+	class TransportMagazines {};
+	class TransportWeapons {};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;
+	damageResistance = 0.00581;
+	
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			body = "mainTurret";
+			gun = "mainGun";
+			weapons[] = {"MK19BC", "SmokeLauncher"};
+			magazines[] = {"48Rnd_40mm_MK19", "48Rnd_40mm_MK19", "48Rnd_40mm_MK19", "48Rnd_40mm_MK19", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
+			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1", 0.01, 1, 10};
+			viewGunnerInExternal = 0;
+			turretInfoType = "RscWeaponRangeZeroing";
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+			discreteDistanceInitIndex = 2;
+			class ViewOptics {
+				initAngleX = 0;
+				minAngleX = -30;
+				maxAngleX = 60;
+				initAngleY = 0;
+				minAngleY = 0;
+				maxAngleY = 0;
+				initFov = 0.3;
+				minFov = 0.015;
+				maxFov = 0.3;
+				visionMode[] = {"Normal", "Ti", "NVG"};
+				thermalMode[] = {2, 3};
+			};
+			gunnerAction = "HMMWV_Gunner04_EP1";
+			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
+			gunnerForceOptics = 1;
+			class GunFire : WeaponCloudsMGun {
+				interval = 0.01;
+			};
+			stabilizedInAxes = "StabilizedInAxesBoth";
+		};
+	};
+	class Damage {
+		tex[] = {};
+		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_regular_2.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_regular_2_damage.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_regular_2_destruct.rvmat", "Ca\Ca_E\data\default.rvmat", "Ca\Ca_E\data\default.rvmat", "Ca\Ca_E\data\default_destruct.rvmat"};
+	};
+	HiddenSelections[] = {"camo", "camo1", "camo2"};
+	HiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_1_co.paa", "ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa", "ca\wheeled_e\hmmwv\data\hmmwv_regular_2_co.paa"};
+	smokeLauncherGrenadeCount = 4;
+	smokeLauncherVelocity = 8;
+	smokeLauncherOnTurret = 1;
+	smokeLauncherAngle = 120;
+};
+
+class HMMWV_Crows_MK19_DZE: HMMWV_Crows_MK19_DZ {
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
+			magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
+		};
+	};
+
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_Crows_MK19_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Crows_MK19_DZE1: HMMWV_Crows_MK19_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_MK19+";
+	original = "HMMWV_Crows_MK19_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 3; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_Crows_MK19_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_Crows_MK19_DZE2: HMMWV_Crows_MK19_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_MK19++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_Crows_MK19_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Crows_MK19_DZE3: HMMWV_Crows_MK19_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_MK19+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_Crows_MK19_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_Crows_MK19_DZE4: HMMWV_Crows_MK19_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_MK19++++";
+	fuelCapacity = 180; // base 100
+};
+
+class HMMWV_Crows_M2_DZ: HMMWV_DZE_Base {
+	displayname = "$STR_VEH_NAME_HMMWV_CROWS_M2";
+	scope = 2;
+	model = "\ca\wheeled_e\HMMWV\M998_crows";
+    picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_crows_CA.paa";
+    icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_crows_CA.paa";
+	driverAction = "HMMWV_Driver_EP1";
+    cargoAction[] = {"HMMWV_Cargo_EP1", "HMMWV_Cargo02_EP1"};
+	cargoIsCoDriver[] = {1, 0};
+	crew = "";
+	typicalCargo[] = {};
+	transportSoldier = 2;
+	class TransportMagazines {};
+	class TransportWeapons {};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;
+	damageResistance = 0.00581;
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			body = "mainTurret";
+			gun = "mainGun";
+			weapons[] = {"M2BC", "SmokeLauncher"};
+			turretInfoType = "RscWeaponRangeZeroing";
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};
+			magazines[] = {"100Rnd_127x99_M2", "100Rnd_127x99_M2", "100Rnd_127x99_M2", "100Rnd_127x99_M2", "100Rnd_127x99_M2", "100Rnd_127x99_M2", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
+			minElev = -25;
+			maxElev = 60;
+			viewGunnerInExternal = 0;
+			class ViewOptics {
+				initAngleX = 0;
+				minAngleX = -30;
+				maxAngleX = 60;
+				initAngleY = 0;
+				minAngleY = 0;
+				maxAngleY = 0;
+				initFov = 0.3;
+				minFov = 0.015;
+				maxFov = 0.3;
+				visionMode[] = {"Normal", "NVG", "Ti"};
+				thermalMode[] = {2, 3};
+			};
+			gunnerAction = "HMMWV_Gunner04_EP1";
+			gunnerOpticsModel = "\ca\Weapons\2Dscope_RWS";
+			gunnerForceOptics = 1;
+			stabilizedInAxes = "StabilizedInAxesBoth";
+			discreteDistanceInitIndex = 2;
+		};
+	};
+	class AnimationSources : AnimationSources {
+		class ReloadAnim {
+			source = "reload";
+			weapon = "M2BC";
+		};
+		class ReloadMagazine {
+			source = "reloadmagazine";
+			weapon = "M2BC";
+		};
+		class Revolving {
+			source = "revolving";
+			weapon = "M2BC";
+		};
+	};
+	class Damage {
+		tex[] = {};
+		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_regular_2.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_regular_2_damage.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_regular_2_destruct.rvmat", "Ca\Ca_E\data\default.rvmat", "Ca\Ca_E\data\default.rvmat", "Ca\Ca_E\data\default_destruct.rvmat"};
+	};
+	HiddenSelections[] = {"camo", "camo1", "camo2"};
+	HiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_1_co.paa", "ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa", "ca\wheeled_e\hmmwv\data\hmmwv_regular_2_co.paa"};
+	smokeLauncherGrenadeCount = 4;
+	smokeLauncherVelocity = 8;
+	smokeLauncherOnTurret = 1;
+	smokeLauncherAngle = 120;
+};
+
+class HMMWV_Crows_M2_DZE: HMMWV_Crows_M2_DZ {
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
+			magazines[] = {"SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag", "SmokeLauncherMag"};
+		};
+	};
+
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_Crows_M2_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Crows_M2_DZE1: HMMWV_Crows_M2_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_M2+";
+	original = "HMMWV_Crows_M2_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 3; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_Crows_M2_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_Crows_M2_DZE2: HMMWV_Crows_M2_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_M2++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_Crows_M2_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Crows_M2_DZE3: HMMWV_Crows_M2_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_M2+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_Crows_M2_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_Crows_M2_DZE4: HMMWV_Crows_M2_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_CROWS_M2++++";
+	fuelCapacity = 180; // base 100
+};
+
+class HMMWV_Avenger_WDL_DZ: HMMWV_DZE_Base {
+	displayname = "$STR_VEH_NAME_HMMWV_AVENGER_WDL";
+	scope = 2;
+	model = "\ca\wheeled2\HMMWV\M998A2_Avenger\M998A2_Avenger.p3d";
+    picture = "\Ca\wheeled2\data\ui\Picture_M998A2_CA.paa";
+    Icon = "\Ca\wheeled2\data\ui\Icon_M998A2_CA.paa";
+	driverAction = "HMMWV_Driver_EP1";
+    cargoAction[] = {"HMMWV_Cargo01"};
+	crew = "";
+	typicalCargo[] = {};
+	transportSoldier = 1;
+	class TransportMagazines {};
+	class TransportWeapons {};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;
+	damageResistance = 0.00581;
+	irScanRangeMin = 0;
+	irScanRangeMax = 1500;
+	irScanToEyeFactor = 3;
+	irScanGround = "false";
+	class HitPoints : HitPoints {
+		class HitGlass5 : HitGlass1 {
+			name = "glass5";
+			visual = "glass5";
+		};
+	};
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			gunnerAction = "AH1Z_Gunner";
+			gunnerInAction = "AH1Z_Gunner";
+			gunnerGetInAction = "GetInMedium";
+			gunnerGetOutAction = "GetOutMedium";
+			memoryPointGun = "machinegun";
+			weapons[] = {"StingerLaucher", "M3P"};
+			magazines[] = {"8Rnd_Stinger", "250Rnd_127x99_M3P", "250Rnd_127x99_M3P"};
+			minElev = -10;
+			maxElev = 70;
+			initElev = 0;
+			minTurn = -180;
+			maxTurn = 180;
+			initTurn = 0;
+			gunnerOpticsModel = "\ca\weapons\2Dscope_Avenger";
+			class ViewOptics {
+				initAngleX = 0;
+				minAngleX = -30;
+				maxAngleX = 30;
+				initAngleY = 0;
+				minAngleY = -100;
+				maxAngleY = 100;
+				initFov = 0.155;
+				minFov = 0.047;
+				maxFov = 0.155;
+				thermalMode[] = {2, 3};
+				visionMode[] = {"Normal", "Ti"};
+			};
+			class HitPoints : HitPoints {
+				class HitTurret {
+					armor = 0.8;
+					material = -1;
+					name = "vez";
+					visual = "vez";
+					passThrough = 1;
+				};
+			};
+			gunnerCompartments = "Compartment2";
+			stabilizedInAxes = "StabilizedInAxesBoth";
+			turretInfoType = "RscWeaponRangeZeroing";
+			viewGunnerInExternal = 0;
+		};
+	};
+	class Damage {
+		tex[] = {};
+		mat[] = {"ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body_Half_D.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body_Full_D.rvmat", "ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "ca\wheeled\hmmwv\data\hmmwv_details_Half_D.rvmat", "ca\wheeled\hmmwv\data\hmmwv_details_Full_D.rvmat", "ca\wheeled\hmmwv\data\hmmwv_parts_1.rvmat", "ca\wheeled\hmmwv\data\hmmwv_parts_1_Half_D.rvmat", "ca\wheeled\hmmwv\data\hmmwv_parts_1_Full_D.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_glass.rvmat", "ca\wheeled\hmmwv\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\hmmwv\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\hmmwv\data\hmmwv_glass_in.rvmat", "ca\wheeled\hmmwv\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\hmmwv\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_2.rvmat", "ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_2_damage.rvmat", "ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_2_destruct.rvmat", "ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_2_in.rvmat", "ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_2_in_damage.rvmat", "ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_2_in_damage.rvmat", "ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_3.rvmat", "ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_3_damage.rvmat", "ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_3_destruct.rvmat"};
+	};
+	class AnimationSources : AnimationSources {
+		class HitGlass5 {
+			source = "Hit";
+			hitpoint = "HitGlass5";
+			raw = 1;
+		};
+	};
+	hiddenSelections[] = {"Camo1", "Camo2", "Camo3"};
+	hiddenSelectionsTextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa", "\ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_1_co.paa", "\ca\wheeled2\hmmwv\m998a2_avenger\data\m998a2_avenger_3_co.paa"};
+
+};
+
+class HMMWV_Avenger_WDL_DZE: HMMWV_Avenger_WDL_DZ {
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
+			magazines[] = {};
+		};
+	};
+
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_Avenger_WDL_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Avenger_WDL_DZE1: HMMWV_Avenger_WDL_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_WDL+";
+	original = "HMMWV_Avenger_WDL_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 3; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_Avenger_WDL_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_Avenger_WDL_DZE2: HMMWV_Avenger_WDL_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_WDL++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_Avenger_WDL_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Avenger_WDL_DZE3: HMMWV_Avenger_WDL_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_WDL+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_Avenger_WDL_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_Avenger_WDL_DZE4: HMMWV_Avenger_WDL_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_WDL++++";
+	fuelCapacity = 180; // base 100
+};
+
+class HMMWV_Avenger_DES_DZ: HMMWV_DZE_Base {
+	displayname = "$STR_VEH_NAME_HMMWV_AVENGER_DES";
+	scope = 2;
+	model = "\ca\wheeled_e\HMMWV\M998A2_Avenger.p3d";
+    picture = "\Ca\wheeled2\data\ui\Picture_M998A2_CA.paa";
+    Icon = "\Ca\wheeled2\data\ui\Icon_M998A2_CA.paa";
+	driverAction = "HMMWV_Driver_EP1";
+    cargoAction[] = {"HMMWV_Cargo01"};
+	crew = "";
+	typicalCargo[] = {};
+	transportSoldier = 1;
+	class TransportMagazines {};
+	class TransportWeapons {};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;
+	damageResistance = 0.00581;
+	irScanRangeMin = 0;
+	irScanRangeMax = 1500;
+	irScanToEyeFactor = 3;
+	irScanGround = "false";
+	class HitPoints : HitPoints {
+		class HitGlass5 : HitGlass1 {
+			name = "glass5";
+			visual = "glass5";
+		};
+	};
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			gunnerAction = "AH1Z_Gunner";
+			gunnerInAction = "AH1Z_Gunner";
+			gunnerGetInAction = "GetInMedium";
+			gunnerGetOutAction = "GetOutMedium";
+			memoryPointGun = "machinegun";
+			weapons[] = {"StingerLaucher", "M3P"};
+			magazines[] = {"8Rnd_Stinger", "250Rnd_127x99_M3P", "250Rnd_127x99_M3P"};
+			minElev = -10;
+			maxElev = 70;
+			initElev = 0;
+			minTurn = -180;
+			maxTurn = 180;
+			initTurn = 0;
+			gunnerOpticsModel = "\ca\weapons\2Dscope_Avenger";
+			class ViewOptics {
+				initAngleX = 0;
+				minAngleX = -30;
+				maxAngleX = 30;
+				initAngleY = 0;
+				minAngleY = -100;
+				maxAngleY = 100;
+				initFov = 0.155;
+				minFov = 0.047;
+				maxFov = 0.155;
+				thermalMode[] = {2, 3};
+				visionMode[] = {"Normal", "Ti"};
+			};
+			class HitPoints : HitPoints {
+				class HitTurret {
+					armor = 0.8;
+					material = -1;
+					name = "vez";
+					visual = "vez";
+					passThrough = 1;
+				};
+			};
+			gunnerCompartments = "Compartment2";
+			stabilizedInAxes = "StabilizedInAxesBoth";
+			turretInfoType = "RscWeaponRangeZeroing";
+			viewGunnerInExternal = 0;
+		};
+	};
+	class Damage {
+		tex[] = {};
+		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_2.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_body_2_damage.rvmat", "Ca\wheeled_E\HMMWV\data\hmmwv_body_2_destruct.rvmat", "Ca\wheeled_E\HMMWV\Data\hmmwv_details.rvmat", "Ca\wheeled_E\HMMWV\Data\hmmwv_details_damage.rvmat", "Ca\wheeled_E\HMMWV\Data\hmmwv_details_destruct.rvmat", "Ca\wheeled_E\HMMWV\Data\hmmwv_glass.rvmat", "Ca\wheeled_E\HMMWV\Data\hmmwv_glass_damage.rvmat", "Ca\wheeled_E\HMMWV\Data\hmmwv_glass_destruct.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_1.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_1_damage.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_1_destruct.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_2.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_2_damage.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_2_destruct.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_2_in.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_2_in_damage.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_2_in_damage.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_3.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_3_damage.rvmat", "Ca\wheeled_E\HMMWV\Data\m998a2_avenger_3_destruct.rvmat", "Ca\Ca_E\data\default.rvmat", "Ca\Ca_E\data\default.rvmat", "Ca\Ca_E\data\default_destruct.rvmat"};
+	};
+	class AnimationSources : AnimationSources {
+		class HitGlass5 {
+			source = "Hit";
+			hitpoint = "HitGlass5";
+			raw = 1;
+		};
+	};
+	hiddenSelections[] = {"Camo1", "Camo2", "Camo3"};
+	hiddenSelectionsTextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa", "\CA\wheeled_E\HMMWV\Data\M998A2_Avenger_1_US_CO.paa", "\CA\wheeled_E\HMMWV\Data\M998A2_Avenger_3_US_CO.paa"};
+
+};
+
+class HMMWV_Avenger_DES_DZE: HMMWV_Avenger_DES_DZ {
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
+			magazines[] = {};
+		};
+	};
+
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_Avenger_DES_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Avenger_DES_DZE1: HMMWV_Avenger_DES_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_DES+";
+	original = "HMMWV_Avenger_DES_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 3; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_Avenger_DES_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_Avenger_DES_DZE2: HMMWV_Avenger_DES_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_DES++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_Avenger_DES_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Avenger_DES_DZE3: HMMWV_Avenger_DES_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_DES+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_Avenger_DES_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_Avenger_DES_DZE4: HMMWV_Avenger_DES_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AVENGER_DES++++";
+	fuelCapacity = 180; // base 100
+};
