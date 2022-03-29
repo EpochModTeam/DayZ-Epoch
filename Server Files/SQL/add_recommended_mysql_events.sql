@@ -75,7 +75,8 @@ BEGIN
 		AND `Object_DATA`.`Classname` NOT LIKE 'SandNest%'
 		AND `Object_DATA`.`Classname` NOT LIKE 'StorageBarrel%'
 		AND `Object_DATA`.`Classname` NOT LIKE '%Crate_DZ'
-		AND `Object_DATA`.`Classname` NOT IN ('Watertower_DZE','Watertank_DZE','Fueltank_DZE','Satellite_Dish_DZE','Boggle_DZE','Postbox_DZE','Doghouse_DZE','Chicken_Coop_DZE','Rabbit_Hutch_DZE','Windbreak_DZ','BarbedGate_DZ','FortifiedWire_DZ','Arcade_DZ','Sofa_DZ','Armchair_DZ','ATM_DZ','Server_Rack_DZ','Washing_Machine_DZ','Fridge_DZ','Wardrobe_DZ','Commode_DZ','Stoneoven_DZ','CookTripod_DZ','CCTV_DZ','Office_Chair_DZ','Table_DZ','Bed_DZ','Water_Pump_DZ','Greenhouse_DZ','Notebook_DZ','Scaffolding_DZ','OutHouse_DZ','Sandbag1_DZ', 'FireBarrel_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
+		AND `Object_DATA`.`Classname` NOT LIKE '%_Stable_DZE'
+		AND `Object_DATA`.`Classname` NOT IN ('Wild_Bee_Hive_DZE','Watertower_DZE','Watertank_DZE','Fueltank_DZE','Satellite_Dish_DZE','Boggle_DZE','Postbox_DZE','Doghouse_DZE','Chicken_Coop_DZE','Rabbit_Hutch_DZE','Windbreak_DZ','BarbedGate_DZ','FortifiedWire_DZ','Arcade_DZ','Sofa_DZ','Armchair_DZ','ATM_DZ','Server_Rack_DZ','Washing_Machine_DZ','Fridge_DZ','Wardrobe_DZ','Commode_DZ','Stoneoven_DZ','CookTripod_DZ','CCTV_DZ','Office_Chair_DZ','Table_DZ','Bed_DZ','Water_Pump_DZ','Greenhouse_DZ','Notebook_DZ','Scaffolding_DZ','OutHouse_DZ','Sandbag1_DZ', 'FireBarrel_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
 		AND FindVehicleKeysCount(Object_DATA.CharacterID) = 0;
 
 	RETURN ROW_COUNT();
@@ -158,7 +159,8 @@ CREATE EVENT `UnlockNonKeyVehicles` ON SCHEDULE EVERY 1 DAY DO UPDATE
 			AND `Object_DATA`.`Classname` NOT LIKE 'SandNest%'
 			AND `Object_DATA`.`Classname` NOT LIKE 'StorageBarrel%'
 			AND `Object_DATA`.`Classname` NOT LIKE '%Crate_DZ'
-			AND `Object_DATA`.`Classname` NOT IN ('Watertower_DZE','Watertank_DZE','Fueltank_DZE','Satellite_Dish_DZE','Boggle_DZE','Postbox_DZE','Doghouse_DZE','Chicken_Coop_DZE','Rabbit_Hutch_DZE','Windbreak_DZ','BarbedGate_DZ','FortifiedWire_DZ','Arcade_DZ','Sofa_DZ','Armchair_DZ','ATM_DZ','Server_Rack_DZ','Washing_Machine_DZ','Fridge_DZ','Wardrobe_DZ','Commode_DZ','Stoneoven_DZ','CookTripod_DZ','CCTV_DZ','Office_Chair_DZ','Table_DZ','Bed_DZ','Water_Pump_DZ','Greenhouse_DZ','Notebook_DZ','Scaffolding_DZ','OutHouse_DZ','Sandbag1_DZ', 'FireBarrel_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
+			AND `Object_DATA`.`Classname` NOT LIKE '%_Stable_DZE'
+			AND `Object_DATA`.`Classname` NOT IN ('Wild_Bee_Hive_DZE','Watertower_DZE','Watertank_DZE','Fueltank_DZE','Satellite_Dish_DZE','Boggle_DZE','Postbox_DZE','Doghouse_DZE','Chicken_Coop_DZE','Rabbit_Hutch_DZE','Windbreak_DZ','BarbedGate_DZ','FortifiedWire_DZ','Arcade_DZ','Sofa_DZ','Armchair_DZ','ATM_DZ','Server_Rack_DZ','Washing_Machine_DZ','Fridge_DZ','Wardrobe_DZ','Commode_DZ','Stoneoven_DZ','CookTripod_DZ','CCTV_DZ','Office_Chair_DZ','Table_DZ','Bed_DZ','Water_Pump_DZ','Greenhouse_DZ','Notebook_DZ','Scaffolding_DZ','OutHouse_DZ','Sandbag1_DZ', 'FireBarrel_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
 			AND FindVehicleKeysCount(Object_DATA.CharacterID) = 0
 ;;
 DELIMITER ;
