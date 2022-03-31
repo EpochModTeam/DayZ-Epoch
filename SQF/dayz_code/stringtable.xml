@@ -26447,12 +26447,12 @@
 		<Key ID="STR_EPOCH_BULK_DESC_PipeBomb_FULL">
 			<English>12x Pipe Bomb</English>
 			<German>12x Rohrbombe</German>
-			<Russian>Ящик с бомбами (12шт).</Russian>
+			<Russian>Ящик с самодельными бомбами (12шт).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_PipeBomb_FULL">
 			<English>Supply Crate (12x Pipe Bomb)</English>
 			<German>Kiste (12x Rohrbombe)</German>
-			<Russian>Ящик (12x Металлолом)</Russian>
+			<Russian>Ящик (12x Бомбы)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_PartWheel_FULL">
 			<English>12x Car wheel</English>
@@ -36377,66 +36377,82 @@
 		<Key ID="STR_EQUIP_NAME_RABBIT_HUTCH">
 			<English>Rabbit Hutch</English>
 			<German>Kaninchenkäfig</German>
+			<Russian>Крольчатник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_RABBIT_HUTCH">
 			<English>A bigger hutch with enough room for many rabbits.</English>
 			<German>Ein größerer Käfig mit genug Platz für viele Hasen.</German>
+			<Russian>Большой крольчатник, в котором достаточно места для нескольких кроликов.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CHICKEN_COOP">
 			<English>Chicken Coop</English>
 			<German>Hühnerstall</German>
+			<Russian>Курятник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CHICKEN_COOP">
 			<English>A small coop with room for only a few chickens.</English>
 			<German>Ein kleiner Stall mit gerade so genug Platz für ein paar Hühner.</German>
+			<Russian>Небольшой курятник с местом для нескольких цыплят.</Russian>
 		</Key>	
 		<Key ID="STR_EQUIP_NAME_DOG_HOUSE">
 			<English>Dog House</English>
 			<German>Hundehütte</German>
+			<Russian>Собачья конура</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_DOG_HOUSE">
 			<English>A small dog house.</English>
 			<German>Eine kleine Hundehütte.</German>
-		</Key>	
+			<Russian>Небольшая собачья конура.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_POSTBOX">
 			<English>Postbox</English>
 			<German>Briefkasten</German>
+			<Russian>Почтовый ящик</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_POSTBOX">
 			<English>A small postbox.</English>
 			<German>Ein kleiner Briefkasten.</German>
+			<Russian>Небольшой почтовый ящик.</Russian>
 		</Key>		
 		<Key ID="STR_EQUIP_NAME_BOGGLE">
 			<English>Boggle</English>
 			<German>Vogelscheuche</German>
+			<Russian>Пугало</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BOGGLE">
 			<English>A boggle to protect the fields against birds.</English>
 			<German>Eine Vogelscheuche, um Felder vor Vögeln zu schützen.</German>
+			<Russian>Пугало для защиты полей от птиц.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_SATELLITE_DISH">
 			<English>Satellite Dish</English>
 			<German>Satellitenschüssel</German>
+			<Russian>Спутниковая тарелка</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SATELLITE_DISH">
 			<English>A satellite dish to receive signals.</English>
 			<German>Eine Satellitenschüssel zum Empfang von Signalen.</German>
-		</Key>	
+			<Russian>Спутниковая тарелка для приёма сигналов.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_FUELTANK_BIG">
 			<English>Fuel Tank</English>
 			<German>Treibstofftank</German>
+			<Russian>Цистерна для топлива</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_FUELTANK_BIG">
 			<English>A big fuel tank which can hold a lot of fuel.</English>
 			<German>Ein großer Treibstofftank, in welchem viel Treibstoff gelagert werden kann.</German>
+			<Russian>Большая цистерна, которая может вместить много топлива.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WATERTANK">
 			<English>Water Tank</English>
 			<German>Wassertank</German>
+			<Russian>Цистерна для воды</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WATERTANK">
 			<English>A big water tank which can hold a lot of water.</English>
 			<German>Ein großer Wassertank, in welchem viel Wasser gelagert werden kann.</German>
+			<Russian>Большая цистерна, которая может вместить много воды.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WATERTOWER">
 			<English>Water Tower</English>
