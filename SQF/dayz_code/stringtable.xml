@@ -36296,67 +36296,83 @@
 		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A">
 			<English>Craft Metal Container (Red)</English>
 			<German>Metallcontainer (Red) herstellen</German>
+			<Russian>Создать контейнер (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1A">
 			<English>Build Metal Container (Red)</English>
 			<German>Metallcontainer (Red) bauen</German>
+			<Russian>Построить контейнер (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_1A">
 			<English>Metal Container (Red)</English>
 			<German>Metallcontainer (Red)</German>
+			<Russian>Металлический контейнер (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_1A">
 			<English>A metal container with strength suitable to withstand shipment, storage, and handling.</English>
 			<German>Ein Metallcontainer mit starken Wänden zum Verschiffen auf See.</German>
+			<Russian>Прочный металлический контейнер, подходящий для транспортировки и хранения.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1B">
 			<English>Craft Metal Container (Green)</English>
 			<German>Metallcontainer (Grün) herstellen</German>
+			<Russian>Создать контейнер (Зелёный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1B">
 			<English>Build Metal Container (Green)</English>
 			<German>Metallcontainer (Grün) bauen</German>
+			<Russian>Построить контейнер (Зелёный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_1B">
 			<English>Metal Container (Green)</English>
 			<German>Metallcontainer (Grün)</German>
+			<Russian>Металлический контейнер (Зелёный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_1B">
 			<English>A metal container with strength suitable to withstand shipment, storage, and handling.</English>
 			<German>Ein Metallcontainer mit starken Wänden zum Verschiffen auf See.</German>
-		</Key>		
+			<Russian>Прочный металлический контейнер, подходящий для транспортировки и хранения.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1G">
 			<English>Craft Metal Container (White)</English>
 			<German>Metallcontainer (Weiß) herstellen</German>
+			<Russian>Создать контейнер (Белый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1G">
 			<English>Build Metal Container (White)</English>
 			<German>Metallcontainer (Weiß) bauen</German>
+			<Russian>Построить контейнер (Белый)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_1G">
 			<English>Metal Container (White)</English>
 			<German>Metallcontainer (Weiß)</German>
+			<Russian>Металлический контейнер (Белый)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_1G">
 			<English>A metal container with strength suitable to withstand shipment, storage, and handling.</English>
 			<German>Ein Metallcontainer mit starken Wänden zum Verschiffen auf See.</German>
-		</Key>		
+			<Russian>Прочный металлический контейнер, подходящий для транспортировки и хранения.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_2D">
 			<English>Craft Metal Container 2x (Red)</English>
 			<German>Metallcontainer 2x (Rot) herstellen</German>
+			<Russian>Создать контейнер 2x (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_2D">
 			<English>Build Metal Container 2x (Red)</English>
 			<German>Metallcontainer 2x (Rot) bauen</German>
+			<Russian>Построить контейнер 2x (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_2D">
 			<English>Metal Container 2x (Red)</English>
 			<German>Metallcontainer 2x (Rot)</German>
+			<Russian>Металлический контейнер 2x (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_2D">
 			<English>Stacked metal containers with strength suitable to withstand shipment, storage, and handling.</English>
 			<German>Ein gestapelter Metallcontainer mit starken Wänden zum Verschiffen auf See.</German>
-		</Key>	
+			<Russian>Прочный двойной металлический контейнер, подходящий для транспортировки и хранения.</Russian>
+		</Key>
 
 		<Key ID="STR_EQUIP_NAME_RABBIT_HUTCH">
 			<English>Rabbit Hutch</English>
