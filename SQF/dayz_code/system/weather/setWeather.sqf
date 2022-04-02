@@ -97,4 +97,4 @@ if (_currentRain == 0 || {_currentOvercast <= .70} || {DZE_Weather in [3,4]}) th
 
 if (DEBUG_MESSAGE) then {"The Weather Has Changed" call dayz_rollingMessages;};
 
-diag_log format ["Weather Forecast: Overcast: %1, Fog: %2, Rain: %3, WindX: %4, WindY: %5, Snow: %6, Blizzard: %7, Change Type: %8.",_currentOvercast,_currentFog,_currentRain,_currentWindX,_currentWindY,_currentSnow,_blizzard,_changeType];
+if (DEBUG_MESSAGE) then {diag_log format ["Weather Forecast: Overcast: %1, Fog: %2, Rain: %3, WindX: %4, WindY: %5, Snow: %6, Blizzard: %7, Change Type: %8.",_currentOvercast,_currentFog,_currentRain,_currentWindX,_currentWindY,_currentSnow,_blizzard,_changeType];};

@@ -6,7 +6,7 @@
 */
 
 sched_antiTP_init = {
-	diag_log [ diag_ticktime, __FILE__, "Anti Teleport inited"];
+	if (DZE_schedDebug == 1) then {diag_log [ diag_ticktime, __FILE__, "Anti Teleport inited"];};
 	[true, [], 0, 0, objNull, respawn_west_original]
 };
 

@@ -2,7 +2,7 @@ BIS_Effects_Init = true;
 Corepatch_Effects_Init = true;
 if (isNil "BIS_Effects_Init_DZ") then {
 	BIS_Effects_Init_DZ = true;
-	diag_log "Res3tting B!S effects...";
+	//diag_log "Res3tting B!S effects...";
 	BIS_Effects_EH_Fired=compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\fired.sqf"; // Allows tanks to use smoke counter measures
 	BIS_Effects_EH_Killed = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\killed.sqf";
 

@@ -265,7 +265,6 @@ class FSM
                          "_timeStart = diag_tickTime;" \n
                          "_readytoAuth = false;" \n
                          "_startCheck = 0;" \n
-                         "_debug = 0;" \n
                          "_schedulerStarted=false;" \n
                          "_spawnSelection = 9;" \n
                          "" \n
@@ -273,7 +272,7 @@ class FSM
                          "_timeNemRegion = 0;" \n
                          "" \n
                          "" \n
-                         "if (_debug == 1) then {" \n
+                         "if (DZE_playerFSMDebug == 1) then {" \n
                          "diag_log (""DAYZ: CLIENT IS RUNNING DAYZ_CODE "" + str(dayz_versionNo));" \n
                          "};" \n
                          ""/*%FSM</STATEINIT""">*/;
@@ -335,7 +334,7 @@ class FSM
                         itemno = 4;
                         init = /*%FSM<STATEINIT""">*/"dayz_loadScreenMsg = localize 'str_player_loading'; " \n
                          "" \n
-                         "if (_debug == 1) then {diag_log [diag_tickTime,'Loading'];};"/*%FSM</STATEINIT""">*/;
+                         "if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Loading'];};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -364,7 +363,7 @@ class FSM
                          "" \n
                          "_playerUID = getPlayerUID player;" \n
                          "dayz_progressBarValue = 0.6;" \n
-                         "if (_debug == 1) then {diag_log [diag_tickTime,'Collect'];};"/*%FSM</STATEINIT""">*/;
+                         "if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Collect'];};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
@@ -424,7 +423,7 @@ class FSM
                 {
                         name = "Request";
                         itemno = 11;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Request'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Request'];};" \n
                          "" \n
                          "dayz_loadScreenMsg = localize 'str_player_request';" \n
                          "" \n
@@ -432,10 +431,10 @@ class FSM
                          "dayz_progressBarValue = 0.65;" \n
                          "PVDZ_plr_Login1 = [_playerUID,player];" \n
                          "publicVariableServer ""PVDZ_plr_Login1"";" \n
-                         "diag_log ['Sent to server: PVDZ_plr_Login1', PVDZ_plr_Login1]; " \n
+                         "if (DZE_playerFSMDebug == 1) then {diag_log ['Sent to server: PVDZ_plr_Login1', PVDZ_plr_Login1];};" \n
                          "PVDZ_send = [player,""dayzSetDate"",[player]];" \n
                          "publicVariableServer ""PVDZ_send"";" \n
-                         "diag_log ['Sent to server: PVDZ_send', PVDZ_send]; " \n
+                         "if (DZE_playerFSMDebug == 1) then {diag_log ['Sent to server: PVDZ_send', PVDZ_send];};" \n
                          "_myTime = diag_tickTime;" \n
                          ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -471,7 +470,7 @@ class FSM
                 {
                         name = "Parse_Login";
                         itemno = 13;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Parse_Login'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Parse_Login'];};" \n
                          "dayz_progressBarValue = 0.8;" \n
                          "_charID		= _msg select 0;" \n
                          "_inventory	= _msg select 1;" \n
@@ -497,12 +496,12 @@ class FSM
                          "	_characterCoins		= _msg select 11;" \n
                          "	_globalCoins		= _msg select 12;" \n
                          "	_bankCoins		= _msg select 13;" \n
-                         "	diag_log (""PLAYER RESULT: "" + str(_isHiveOk));" \n
+                         "	if (DZE_playerFSMDebug == 1) then {diag_log (""PLAYER RESULT: "" + str(_isHiveOk));};" \n
                          "};" \n
                          "" \n
                          "dayz_loadScreenMsg = localize 'str_player_creating_character'; " \n
                          "if (_isHiveOk) then { if (!_schedulerStarted) then { _schedulerStarted=true; execVM '\z\addons\dayz_code\system\scheduler\sched_init.sqf'; }; };" \n
-                         "if (_debug == 1) then {" \n
+                         "if (DZE_playerFSMDebug == 1) then {" \n
                          "diag_log (""PLOGIN: authenticated with : "" + str(_msg));" \n
                          "	diag_log [""player_monitor:Parse_Login _isHiveOk,_isNew,isnil preload, preload:"",_isHiveOk,_isNew,!isNil 'dayz_preloadFinished',dayz_preloadFinished];" \n
                          "};" \n
@@ -583,7 +582,7 @@ class FSM
                 {
                         name = "ERROR__Wrong_HIVE";
                         itemno = 15;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'ERROR__Wrong_HIVE'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'ERROR__Wrong_HIVE'];};" \n
                          "_myTime = diag_tickTime;" \n
                          "dayz_loadScreenMsg = localize 'str_player_wrong_hive';" \n
                          ""/*%FSM</STATEINIT""">*/;
@@ -609,7 +608,7 @@ class FSM
                 {
                         name = "Phase_One";
                         itemno = 17;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Phase_One'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Phase_One'];};" \n
                          "if ((!isNil ""dayz_selectGender"") && {(!isNil ""DZE_defaultSkin"") && (_isInfected == 0)}) then {" \n
                          "	if (dayz_selectGender == ""Survivor2_DZ"") then {" \n
                          "		_rand = (DZE_defaultSkin select 0) call BIS_fnc_selectRandom;" \n
@@ -711,7 +710,7 @@ class FSM
                          "PVCDZ_plr_Login2 = [];" \n
                          "PVDZ_plr_Login2 = [_charID,player,_playerUID,_spawnSelection,_inventory];" \n
                          "publicVariableServer ""PVDZ_plr_Login2"";" \n
-                         "diag_log ['Sent to server: PVDZ_plr_Login2', PVDZ_plr_Login2]; " \n
+                         "if (DZE_playerFSMDebug == 1) then {diag_log ['Sent to server: PVDZ_plr_Login2', PVDZ_plr_Login2];};" \n
                          "dayz_loadScreenMsg = localize 'str_player_requesting_character';" \n
                          ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -736,7 +735,7 @@ class FSM
                 {
                         name = "Phase_Two";
                         itemno = 19;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Phase_Two'];};dayz_loadScreenMsg = localize 'str_login_characterData'; " \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Phase_Two'];};dayz_loadScreenMsg = localize 'str_login_characterData'; " \n
                          "" \n
                          "_worldspace = 	PVCDZ_plr_Login2 select 0;" \n
                          "_state =			PVCDZ_plr_Login2 select 1;" \n
@@ -918,7 +917,7 @@ class FSM
                 {
                         name = "ERROR__Player_Already";
                         itemno = 21;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'ERROR__Player_Already'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'ERROR__Player_Already'];};" \n
                          "selectNoPlayer;" \n
                          "_myTime = diag_tickTime;" \n
                          "dayz_loadScreenMsg = localize 'str_login_alreadyDead';" \n
@@ -945,7 +944,7 @@ class FSM
                 {
                         name = "Position";
                         itemno = 23;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Position'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Position'];};" \n
                          "dayz_progressBarValue = 0.85;" \n
                          ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -981,7 +980,7 @@ class FSM
                 {
                         name = "Load_In";
                         itemno = 25;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Load_In'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Load_In'];};" \n
                          "dayz_progressBarValue = 0.95;" \n
                          "dayz_loadScreenMsg = localize 'str_player_setup_completed';" \n
                          "_torev4l=nearestObjects [_setPos, Dayz_plants + DayZ_GearedObjects + [""AllVehicles"",""WeaponHolder""], 50];" \n
@@ -1056,7 +1055,7 @@ class FSM
                 {
                         name = "Preload_Display";
                         itemno = 29;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Preload_Display'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Preload_Display'];};" \n
                          "" \n
                          "player disableConversation true;" \n
                          "" \n
@@ -1143,7 +1142,7 @@ class FSM
                 {
                         name = "Initialize";
                         itemno = 31;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Initialize'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Initialize'];};" \n
                          "" \n
                          "//Medical" \n
                          "//dayz_medicalH = [] execVM ""\z\addons\dayz_code\medical\init_medical.sqf"";	//Medical Monitor Script (client only)" \n
@@ -1210,7 +1209,7 @@ class FSM
                 {
                         name = "Finish";
                         itemno = 32;
-                        init = /*%FSM<STATEINIT""">*/"diag_log 'player_forceSave called from fsm';" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log 'player_forceSave called from fsm';};" \n
                          "//call player_forceSave;" \n
                          "" \n
                          "//Check for bad controls at login" \n
@@ -1228,7 +1227,7 @@ class FSM
                 {
                         name = "Enable_Sim";
                         itemno = 38;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Enable_Sim'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Enable_Sim'];};" \n
                          "" \n
                          "_myAssets = getText(configFile >> ""CfgPatches"" >> ""dayz_communityassets"" >> ""dayzVersion"");" \n
                          "_mySfx = getNumber(configFile >> ""CfgPatches"" >> ""dayz_sfx"" >> ""dayzVersion"");" \n
@@ -1247,7 +1246,7 @@ class FSM
                          "_myWeapons = getNumber(configFile >> ""CfgPatches"" >> ""dayz_weapons"" >> ""dayzVersion"");" \n
                          "*/" \n
                          "" \n
-                         "if (_debug == 1) then {" \n
+                         "if (DZE_playerFSMDebug == 1) then {" \n
                          "	diag_log format[""DayZ Version: DayZ_Anim: %1 DayZ_SFX: %2 DayZ_Assets: %3"",_myAnim, _mySfx,_myAssets];" \n
                          "};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1283,7 +1282,7 @@ class FSM
                 {
                         name = "ERROR__Client_Files";
                         itemno = 40;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'ERROR__Client_Files'];};selectNoPlayer;" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'ERROR__Client_Files'];};selectNoPlayer;" \n
                          "_myTime = diag_tickTime;" \n
                          "dayz_loadScreenMsg = localize 'str_player_outdated';" \n
                          ""/*%FSM</STATEINIT""">*/;
@@ -1309,7 +1308,7 @@ class FSM
                 {
                         name = "Stream";
                         itemno = 42;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Stream'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Stream'];};" \n
                          "dayz_loadScreenMsg = localize 'str_login_spawningLocalObjects';" \n
                          ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1334,14 +1333,14 @@ class FSM
                 {
                         name = "Retry";
                         itemno = 46;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Retry'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Retry'];};" \n
                          "dayz_loadScreenMsg = localize 'str_player_retrying';" \n
                          "" \n
                          "_AuthAttempt = _AuthAttempt +1;" \n
                          "" \n
                          "_myTime = diag_tickTime;" \n
                          "" \n
-                         "if (_debug == 1) then {" \n
+                         "if (DZE_playerFSMDebug == 1) then {" \n
                          "	diag_log (""PLOGIN: Retrying Authentication... ("" + _playerUID + "")"");" \n
                          "};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1377,9 +1376,9 @@ class FSM
                 {
                         name = "get_ready_to_clo";
                         itemno = 48;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'get_ready_to_clo'];};dayz_loadScreenMsg = localize 'str_player_authentication_failed';" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'get_ready_to_clo'];};dayz_loadScreenMsg = localize 'str_player_authentication_failed';" \n
                          "_myTime = diag_tickTime;" \n
-                         "if (_debug == 1) then {" \n
+                         "if (DZE_playerFSMDebug == 1) then {" \n
                          "	diag_log (""PLOGIN: Authentication Failed ("" + _playerUID + "")"");" \n
                          "};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1404,11 +1403,11 @@ class FSM
                 {
                         name = "Disconnect";
                         itemno = 50;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Disconnect'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Disconnect'];};" \n
                          "" \n
                          " player enableSimulation false;" \n
                          "" \n
-                         "if (_debug == 1) then {" \n
+                         "if (DZE_playerFSMDebug == 1) then {" \n
                          "	diag_log (""End Mission"");" \n
                          "};" \n
                          "" \n
@@ -1429,7 +1428,7 @@ class FSM
                 {
                         name = "Date_or_Time_Send";
                         itemno = 52;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Date_or_Time_Send'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Date_or_Time_Send'];};" \n
                          "_myTime = diag_tickTime;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
@@ -1442,9 +1441,9 @@ class FSM
                                         to="Stream";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"!isNil ""dayzSetDate"""/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"diag_log ['Date & time received:', dayzSetDate];" \n
+                                        action=/*%FSM<ACTION""">*/"if (DZE_playerFSMDebug == 1) then {diag_log ['Date & time received:', dayzSetDate];};" \n
                                          "setDate dayzSetDate;" \n
-                                         "diag_log ['Local date on this client:', date];"/*%FSM</ACTION""">*/;
+                                         "if (DZE_playerFSMDebug == 1) then {diag_log ['Local date on this client:', date];};"/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
                                 /*%FSM<LINK "no_Time_Date">*/
@@ -1466,10 +1465,10 @@ class FSM
                 {
                         name = "Server_Loading";
                         itemno = 54;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Server_Loading'];};_myTime = diag_tickTime;" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Server_Loading'];};_myTime = diag_tickTime;" \n
                          "dayz_loadScreenMsg = localize 'str_player_waiting_start';" \n
                          "" \n
-                         "if (_debug == 1) then {" \n
+                         "if (DZE_playerFSMDebug == 1) then {" \n
                          "	diag_log (""Server Loading"");" \n
                          "	diag_log (""PLOGIN: Waiting for server to start authentication"");" \n
                          "};"/*%FSM</STATEINIT""">*/;
@@ -1506,7 +1505,7 @@ class FSM
                 {
                         name = "Gender_Selection";
                         itemno = 58;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Gender_Selection'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Gender_Selection'];};" \n
                          "endLoadingScreen;" \n
                          "freshSpawn = 2;" \n
                          "" \n
@@ -1549,7 +1548,7 @@ class FSM
                 {
                         name = "Character_Type_6";
                         itemno = 60;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Character_Type_6'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Character_Type_6'];};" \n
                          "" \n
                          "_model = dayz_selectGender;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1585,7 +1584,7 @@ class FSM
                 {
                         name = "Region_Selection";
                         itemno = 61;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Region_Selection'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Region_Selection'];};" \n
                          "endLoadingScreen;" \n
                          "" \n
                          "_timeNem=diag_tickTime;" \n
@@ -1627,7 +1626,7 @@ class FSM
                 {
                         name = "Region_Process_6";
                         itemno = 63;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Region_Process_6, region selected:',_spawnSelection];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Region_Process_6, region selected:',_spawnSelection];};" \n
                          "_isNew = false;" \n
                          "_spawnSelection = dayz_selectRegion;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1654,7 +1653,7 @@ class FSM
                 {
                         name = "Spawn_Process_65";
                         itemno = 65;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Spawn_Process_65'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Spawn_Process_65'];};" \n
                          "_isNew = false;" \n
                          "dayz_selectRegion = 9;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1681,7 +1680,7 @@ class FSM
                 {
                         name = "ERROR__Date_Time";
                         itemno = 72;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'ERROR__Date_Time'];};_myTime = diag_tickTime;" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'ERROR__Date_Time'];};_myTime = diag_tickTime;" \n
                          "" \n
                          "diag_log format[""Date and time not synced""];" \n
                          "dayz_loadScreenMsg = localize 'str_player_desync';" \n
@@ -1733,7 +1732,7 @@ class FSM
                 {
                         name = "Waiting_for_Gender";
                         itemno = 90;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Waiting_for_Gender'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Waiting_for_Gender'];};" \n
                          "" \n
                          "_timeNemGender = diag_tickTime;"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1784,7 +1783,7 @@ class FSM
                 {
                         name = "Waiting_for__Region";
                         itemno = 92;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Waiting_for__Region'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Waiting_for__Region'];};" \n
                          "" \n
                          "_timeNemRegion = diag_tickTime;" \n
                          ""/*%FSM</STATEINIT""">*/;
@@ -1838,7 +1837,7 @@ class FSM
                 {
                         name = "Update_player";
                         itemno = 96;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Update_player'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Update_player'];};" \n
                          "dayz_loadScreenMsg = format[ localize 'str_player_ghost', _timeOut];" \n
                          "" \n
                          "_myTime = diag_tickTime;" \n
@@ -1876,7 +1875,7 @@ class FSM
                 {
                         name = "Ghost_System";
                         itemno = 99;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Ghost_System'];};dayz_loadScreenMsg = localize 'str_login_ghostedPlayer';" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Ghost_System'];};dayz_loadScreenMsg = localize 'str_login_ghostedPlayer';" \n
                          "" \n
                          ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -1952,7 +1951,7 @@ class FSM
                 {
                         name = "Finish_1";
                         itemno = 106;
-                        init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Finish'];};" \n
+                        init = /*%FSM<STATEINIT""">*/"if (DZE_playerFSMDebug == 1) then {diag_log [diag_tickTime,'Finish'];};" \n
                          "" \n
                          "dayz_playerName = if (alive player) then {name player} else {'unknown'};" \n
                          "PVDZ_plr_LoginRecord = [_playerUID,_charID,0,toArray dayz_playerName];" \n
@@ -1960,7 +1959,7 @@ class FSM
                          "" \n
                          "dayz_progressBarValue = 1;" \n
                          "" \n
-                         "diag_log format ['Sent to server PVDZ_plr_LoginRecord: [%1, %2, %3, %4]',_playerUID,_charID,0,dayz_playerName]; " \n
+                         "if (DZE_playerFSMDebug == 1) then {diag_log format ['Sent to server PVDZ_plr_LoginRecord: [%1, %2, %3, %4]',_playerUID,_charID,0,dayz_playerName];};" \n
                          "" \n
                          "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
                          "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
@@ -1980,7 +1979,7 @@ class FSM
                          "	call compile preprocessFileLineNumbers (""\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\""+_x+"".sqf""); " \n
                          "} count infectedWaterHoles;" \n
                          "	" \n
-                         "diag_log (infectedWaterHoles);"/*%FSM</STATEINIT""">*/;
+                         "if (DZE_playerFSMDebug == 1) then {diag_log (infectedWaterHoles);};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
