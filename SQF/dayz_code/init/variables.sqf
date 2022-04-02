@@ -491,4 +491,6 @@ if (!isDedicated) then {
 		["RightFoot","LeftFoot"],
 		["neck","pilot"]
 	];
+	dayz_insideBuilding	= objNull;	// building name the player is currently inside of, or objNull if player is outside
+	DZE_insideExceptions	= ["Garage_Green_DZ","Garage_White_DZ","Garage_Brown_DZ","Garage_Grey_DZ","Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","StorageShed_DZ","StorageShed2_DZ","Concrete_Bunker_DZ","Concrete_Bunker_Locked_DZ","SandNestLarge_DZ"]; // list of base-building objects that allow checking if player is inside (fnc_isInsideBuilding)
 };
