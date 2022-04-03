@@ -27279,106 +27279,132 @@
 		<Key ID="STR_EPOCH_GEMSUITCASE_EMPTY">
 			<English>Suitcase (Empty)</English>
 			<German>Koffer (Leer)</German>
+			<Russian>Чемодан (Пустой)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_EMPTY">
 			<English>An empty suitcase</English>
 			<German>Ein leerer Koffer</German>
+			<Russian>Пустой чемодан.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_TOPAZ">
 			<English>Pack 10 Topaz</English>
 			<German>10 Topase einpacken</German>
+			<Russian>Положить 10 Топазов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_OBSIDIAN">
 			<English>Pack 10 Obsidian</English>
 			<German>10 Obsidian einpacken</German>
+			<Russian>Положить 10 Обсидианов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_SAPPHIRE">
 			<English>Pack 10 Sapphire</English>
 			<German>10 Saphire einpacken</German>
+			<Russian>Положить 10 Сапфиров</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_AMETHYST">
 			<English>Pack 10 Amethyst</English>
 			<German>10 Amethysten einpacken</German>
+			<Russian>Положить 10 Аметистов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_EMERALD">
 			<English>Pack 10 Emerald</English>
 			<German>10 Smaragde einpacken</German>
+			<Russian>Положить 10 Изумрудов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_CITRINE">
 			<English>Pack 10 Citrine</English>
 			<German>10 Citrine einpacken</German>
+			<Russian>Положить 10 Цитринов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_RUBY">
 			<English>Pack 10 Ruby</English>
 			<German>10 Rubine einpacken</German>
+			<Russian>Положить 10 Рубинов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_ALL">
 			<English>Pack all 7 Gems</English>
 			<German>Alle 7 Edelsteine einpacken</German>
+			<Russian>Положить все 7 камней</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_Topaz">
 			<English>Suitcase (10 Topaz)</English>
 			<German>Koffer (10 Topase)</German>
+			<Russian>Чемодан (10 Топазов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_Topaz">
 			<English>An suitcase containing 10 Topaz</English>
 			<German>Ein Koffer mit 10 Topasen</German>
+			<Russian>Чемодан с десятью топазами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_OBSIDIAN">
 			<English>Suitcase (10 Obisidian)</English>
 			<German>Koffer (10 Obisidiane)</German>
+			<Russian>Чемодан (10 Обсидианов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_OBSIDIAN">
 			<English>An suitcase containing 10 Obisidian</English>
 			<German>Ein Koffer mit 10 Obisidian</German>
+			<Russian>Чемодан с десятью обсидианами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_SAPPHIRE">
 			<English>Suitcase (10 Sapphire)</English>
 			<German>Koffer (10 Saphire)</German>
+			<Russian>Чемодан (10 Сапфиров)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_SAPPHIRE">
 			<English>An suitcase containing 10 Sapphire</English>
 			<German>Ein Koffer mit 10 Saphiren</German>
+			<Russian>Чемодан с десятью сапфирами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_AMETHYST">
 			<English>Suitcase (10 Amethyst)</English>
 			<German>Koffer (10 Amethyste)</German>
+			<Russian>Чемодан (10 Аметистов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_AMETHYST">
 			<English>An suitcase containing 10 Amethyst</English>
 			<German>Ein Koffer mit 10 Amethysten</German>
+			<Russian>Чемодан с десятью аметистами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_EMERALD">
 			<English>Suitcase (10 Emerald)</English>
 			<German>Koffer (10 Smaragde)</German>
+			<Russian>Чемодан (10 Изумрудов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_EMERALD">
 			<English>An suitcase containing 10 Emerald</English>
 			<German>Ein Koffer mit 10 Smaragde</German>
+			<Russian>Чемодан с десятью изумрудами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_CITRINE">
 			<English>Suitcase (10 Citrine)</English>
 			<German>Koffer (10 Citrine)</German>
+			<Russian>Чемодан (10 Цитринов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_CITRINE">
 			<English>An suitcase containing 10 Citrine</English>
 			<German>Ein Koffer mit 10 Citrine</German>
+			<Russian>Чемодан с десятью цитринами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_RUBY">
 			<English>Suitcase (10 Ruby)</English>
 			<German>Koffer (10 Rubine)</German>
+			<Russian>Чемодан (10 Рубинов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_RUBY">
 			<English>An suitcase containing 10 Ruby</English>
 			<German>Ein Koffer mit 10 Rubinen</German>
+			<Russian>Чемодан с десятью рубинами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_ALL">
 			<English>Suitcase (7 Gems)</English>
 			<German>Koffer (7 Edelsteine)</German>
+			<Russian>Чемодан (7 камней)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_ALL">
 			<English>An suitcase containing 7 different gems</English>
 			<German>Ein Koffer mit 7 verschiedenen Edelsteinen</German>
+			<Russian>Чемодан с семью разными драгоценными камнями.</Russian>
 		</Key>
 		<Key ID="STR_ORE_NAME_IRON">
 			<English>Iron Ore</English>
@@ -27943,10 +27969,12 @@
 		<Key ID="STR_EPOCH_MUTANTPARTS_CLAW">
 			<English>Mutant Claw</English>
 			<German>Mutantenkralle</German>
+			<Russian>Коготь мутанта</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_MUTANTPARTS_CLAW_DESC">
 			<English>Mutant Claw in a Bag.</English>
 			<German>Mutantenkralle in einem Sack.</German>
+			<Russian>Коготь мутанта в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_MUTANTPARTS_FOOT">
 			<English>Mutant Foot</English>
@@ -28106,18 +28134,22 @@
 		<Key ID="STR_EPOCH_FUELBARREL_WATER">
 			<English>Barrel 210L (Water)</English>
 			<German>Fass 210 L (Wasser)</German>
+			<Russian>Бочка 210л. (Вода)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL_DESC_WATER">
 			<English>A 210 litres barrel filled with water.</English>
 			<German>Ein 210 Liter Fass gefüllt mit Wasser.</German>
+			<Russian>210-литровая бочка наполненная водой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL_MILK">
 			<English>Barrel 210L (Milk)</English>
 			<German>Fass 210 L (Milch)</German>
+			<Russian>Бочка 210л. (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL_DESC_MILK">
 			<English>A 210 litres barrel filled with milk.</English>
 			<German>Ein 210 Liter Fass gefüllt mit Milch.</German>
+			<Russian>210-литровая бочка наполненная молоком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL">
 			<English>Fuel Barrel (empty)</English>
@@ -28147,130 +28179,162 @@
 		<Key ID="STR_EPOCH_STORAGEBARRELREDKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELREDKIT_DESC">
 			<English>A red barrel that can be used to store items.</English>
 			<German>Eine rote Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Красная бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELEPOCHKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELEPOCHKIT_DESC">
 			<English>A green oil-barrel that can be used to store items.</English>
 			<German>Eine grüne Öl-Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Зелёная бочка из-под масла, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELYELLOWKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELYELLOWKIT_DESC">
 			<English>A yellow barrel that can be used to store items.</English>
 			<German>Eine gelbe Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Жёлтая бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELBLACKKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELBLACKKIT_DESC">
 			<English>A black barrel that can be used to store items.</English>
 			<German>Eine schwarze Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Чёрная бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARKKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARKKIT_DESC">
 			<English>A dark-green barrel that can be used to store items.</English>
 			<German>Eine dunkel-grüne Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Тёмно-зелёная бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELMILKKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELMILKKIT_DESC">
 			<English>A white-pink checkered barrel that can be used to store items.</English>
 			<German>Eine weiß-pink gefleckte Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Бело-розовая бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENKIT_DESC">
 			<English>A green barrel that can be used to store items.</English>
 			<German>Eine grüne Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Зелёная бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTYKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTYKIT_DESC">
 			<English>A green, rusty barrel that can be used to store items.</English>
 			<German>Eine grüne, rostige Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Зелёная ржавая бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELRED">
 			<English>Storage Barrel (Red)</English>
 			<German>Lagerungs-Tonne (Rot)</German>
+			<Russian>Бочка для хранения (Красная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELRED2">
 			<English>Storage Barrel (Red) +</English>
 			<German>Lagerungs-Tonne (Rot) +</German>
+			<Russian>Бочка для хранения + (Красная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELEPOCH">
 			<English>Storage Barrel (Epoch)</English>
 			<German>Lagerungs-Tonne (Epoch)</German>
+			<Russian>Бочка для хранения (Epoch)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELEPOCH2">
 			<English>Storage Barrel (Epoch) +</English>
 			<German>Lagerungs-Tonne (Epoch) +</German>
+			<Russian>Бочка для хранения + (Epoch)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELYELLOW">
 			<English>Storage Barrel (Yellow)</English>
 			<German>Lagerungs-Tonne (Gelb)</German>
+			<Russian>Бочка для хранения (Жёлтая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELYELLOW2">
 			<English>Storage Barrel (Yellow) +</English>
 			<German>Lagerungs-Tonne (Gelb) +</German>
+			<Russian>Бочка для хранения + (Жёлтая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELBLACK">
 			<English>Storage Barrel (Black)</English>
 			<German>Lagerungs-Tonne (Schwarz)</German>
+			<Russian>Бочка для хранения (Чёрная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELBLACK2">
 			<English>Storage Barrel (Black) +</English>
 			<German>Lagerungs-Tonne (Schwarz) +</German>
+			<Russian>Бочка для хранения + (Чёрная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARK">
 			<English>Storage Barrel (Green dark)</English>
 			<German>Lagerungs-Tonne (Grün dunkel)</German>
+			<Russian>Бочка для хранения (Т/зелёная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARK2">
 			<English>Storage Barrel (Green dark) +</English>
 			<German>Lagerungs-Tonne (Grün dunkel) +</German>
+			<Russian>Бочка для хранения + (Т/зелёная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELMILK">
 			<English>Storage Barrel (Milk)</English>
 			<German>Lagerungs-Tonne (Milch)</German>
+			<Russian>Бочка для хранения (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELMILK2">
 			<English>Storage Barrel (Milk) +</English>
 			<German>Lagerungs-Tonne (Milch) +</German>
+			<Russian>Бочка для хранения + (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREEN">
 			<English>Storage Barrel (Green)</English>
 			<German>Lagerungs-Tonne (Grün)</German>
+			<Russian>Бочка для хранения (Зелёная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREEN2">
 			<English>Storage Barrel (Green) +</English>
 			<German>Lagerungs-Tonne (Grün) +</German>
+			<Russian>Бочка для хранения + (Зелёная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTY">
 			<English>Storage Barrel (Green rusty)</English>
 			<German>Lagerungs-Tonne (Grün rostig)</German>
+			<Russian>Бочка для хранения (Ржавая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTY2">
 			<English>Storage Barrel (Green rusty) +</English>
 			<German>Lagerungs-Tonne (Grün rostig) +</German>
+			<Russian>Бочка для хранения + (Ржавая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WORKBENCH">
 			<English>Workbench</English>
@@ -32695,26 +32759,32 @@
 		<Key ID="STR_EQUIP_NAME_WBPET_COFFEE">
 			<English>Water Bottle PET (Coffee)</English>
 			<German>Wasserflasche PET (Kaffee)</German>
+			<Russian>Бутылка ПЭТ (Кофе)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_COFFEE">
 			<English>A PET bottle that has been filled with brewed coffee.</English>
 			<German>Eine Plastik-Flasche gefüllt mit gekochtem Kaffee.</German>
+			<Russian>ПЭТ-бутылка, наполненная заваренным кофе.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_BLACKTEA">
 			<English>Water Bottle PET (Black Tea)</English>
 			<German>Wasserflasche PET (Schwarzer Tee)</German>
+			<Russian>Бутылка ПЭТ (Чай)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_BLACKTEA">
 			<English>A PET bottle that has been filled with brewed black tea.</English>
 			<German>Eine Plastik-Flasche gefüllt mit gekochtem schwarzem Tee.</German>
+			<Russian>ПЭТ-бутылка, наполненная заваренным чёрным чаем.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_FROZEN">
 			<English>Water Bottle PET (Frozen)</English>
 			<German>Wasserflasche PET (Gefroren)</German>
+			<Russian>Бутылка ПЭТ (Заморожена)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_FROZEN">
 			<English>A PET bottle that has been filled with water. The content seems to be frozen.</English>
 			<German>Eine Plastik-Flasche gefüllt mit Wasser. Der Inhalt scheint gefroren zu sein.</German>
+			<Russian>ПЭТ-бутылка, наполненная водой. Кажется содержимое заморожено.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GENERIC_NAME">
 			<English>Paint bucket (generic)</English>
@@ -35269,22 +35339,27 @@
 		<Key ID="STR_EPOCH_COMPOST_BARREL_EMTPY">
 			<English>Compost Barrel (Empty)</English>
 			<German>Kompostfass (Leer)</German>
+			<Russian>Бочка для удобрений (Пустая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COMPOST_BARREL_EMTPY_DESC">
 			<English>Compost Barrel (Empty)</English>
 			<German>Kompostfass (Leer)</German>
+			<Russian>Пустая бочка для удобрений.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COMPOST_BARREL_FULL">
 			<English>Compost Barrel (Full)</English>
 			<German>Kompostfass (Voll)</German>
+			<Russian>Бочка с удобрениями (Полная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COMPOST_BARREL_FULL_DESC">
 			<English>Compost Barrel (Full)</English>
 			<German>Kompostfass (Voll)</German>
+			<Russian>Бочка наполненная удобрениями.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_COMPOST_BARREL">
 			<English>Build Compost Barrel</English>
 			<German>Kompostfass bauen</German>
+			<Russian>Установить бочку</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN">
 			<English>Pumpkin patch</English>
@@ -35294,7 +35369,7 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN_DESC">
 			<English>Pumpkin patch</English>
 			<German>Kürbisbeet</German>
-			<Russian>Тыквенный участок</Russian>
+			<Russian>Тыквенный участок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER">
 			<English>Sunflower patch</English>
@@ -35304,7 +35379,7 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER_DESC">
 			<English>Sunflower patch</English>
 			<German>Sonnenblumenbeet</German>
-			<Russian>Подсолнуховый участок</Russian>
+			<Russian>Подсолнуховый участок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT">
 			<English>Carrot patch</English>
@@ -35314,7 +35389,7 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT_DESC">
 			<English>Carrot patch</English>
 			<German>Karottenbeet</German>
-			<Russian>Морковный участок</Russian>
+			<Russian>Морковный участок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO">
 			<English>Potato patch</English>
@@ -35324,7 +35399,7 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO_DESC">
 			<English>Potato patch</English>
 			<German>Kartoffelbeet</German>
-			<Russian>Картофельный участок</Russian>
+			<Russian>Картофельный участок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP">
 			<English>Hemp plant patch</English>
@@ -35334,7 +35409,7 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP_DESC">
 			<English>Hemp plant patch</English>
 			<German>Hanfpflanzenbeet</German>
-			<Russian>Конопляный участок</Russian>
+			<Russian>Конопляный участок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO">
 			<English>Tobacco plant patch</English>
@@ -35344,7 +35419,7 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO_DESC">
 			<English>Tobacco plant patch</English>
 			<German>Tabakpflanzenbeet</German>
-			<Russian>Табачный участок</Russian>
+			<Russian>Табачный участок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA">
 			<English>Tea plant patch</English>
@@ -35354,61 +35429,72 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA_DESC">
 			<English>Tea plant patch</English>
 			<German>Teepflanzenbeet</German>
-			<Russian>Чайный участок</Russian>
+			<Russian>Чайный участок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_GARLIC">
 			<English>Garlic patch</English>
 			<German>Knoblauchbeet</German>
+			<Russian>Чесночный участок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_GARLIC_DESC">
 			<English>Garlic patch</English>
 			<German>Knoblauchbeet</German>
+			<Russian>Чесночный участок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_COMFREY">
 			<English>Comfrey patch</English>
 			<German>Beinwellbeet</German>
-			<Russian>Окопника участок</Russian>
+			<Russian>Участок Окопника</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_COMFREY_DESC">
 			<English>Comfrey patch</English>
 			<German>Beinwellbeet</German>
-			<Russian>Участок с окопником</Russian>
+			<Russian>Участок с окопником.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PUMPKIN">
 			<English>Pumpkin Plant</English>
 			<German>Kürbispflanze</German>
+			<Russian>Растение тыквы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_SUNFLOWER">
 			<English>Sunflower</English>
 			<German>Sonnenblume</German>
+			<Russian>Растение подсолнуха</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_POTATO">
 			<English>Potato Plant</English>
 			<German>Kartoffelpflanze</German>
+			<Russian>Растение картофеля</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_CARROT">
 			<English>Carrot Plant</English>
 			<German>Karottenpflanze</German>
+			<Russian>Растение моркови</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_HEMP">
 			<English>Hemp Plant</English>
 			<German>Cannabispflanze</German>
+			<Russian>Растение конопли</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_TEA">
 			<English>Tea Plant</English>
 			<German>Teepflanze</German>
+			<Russian>Растение чая</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_TOBACCO">
 			<English>Tobacco Plant</English>
 			<German>Tabakpflanze</German>
+			<Russian>Растение табака</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_GARLIC">
 			<English>Garlic Plant</English>
 			<German>Knoblauchpflanze</German>
+			<Russian>Растение чеснока</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_COMFREY">
 			<English>Comfrey Plant</English>
 			<German>Beinwellpflanze</German>
+			<Russian>Растение окопника</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ITEM_NOTEBOOK">
 			<English>Notebook</English>
@@ -35574,30 +35660,37 @@
 		<Key ID="STR_EPOCH_DESC_METAL_BUCKET">
 			<English>An empty bucket</English>
 			<German>Ein leerer Eimer</German>
+			<Russian>Просто пустое ведро.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METAL_BUCKET_WATER">
 			<English>Bucket (Water)</English>
 			<German>Eimer (Wasser)</German>
+			<Russian>Ведро (Вода)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_METAL_BUCKET_WATER">
 			<English>A bucket containing water</English>
 			<German>Ein Eimer Wasser</German>
+			<Russian>Ведро с водой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METAL_BUCKET_FUEL">
 			<English>Bucket (Fuel)</English>
 			<German>Eimer (Treibstoff)</German>
+			<Russian>Ведро (Топливо)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_METAL_BUCKET_FUEL">
 			<English>A bucket containing fuel</English>
 			<German>Ein Eimer Treibstoff</German>
+			<Russian>Ведро с топливом.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METAL_BUCKET_MILK">
 			<English>Bucket (Milk)</English>
 			<German>Eimer (Milch)</German>
+			<Russian>Ведро (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_METAL_BUCKET_MILK">
 			<English>A bucket containing milk</English>
 			<German>Ein Eimer Milch</German>
+			<Russian>Ведро с молоком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS">
 			<English>Suitcase with Diamonds</English>
@@ -36333,18 +36426,22 @@
 		<Key ID="STR_EPOCH_ACTION_CRAFT_BARBED_GATE">
 			<English>Craft Barbed Gate</English>
 			<German>Stacheldrahttor herstellen</German>
+			<Russian>Создать: Ворота из колючки</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_BARBED_GATE">
 			<English>Build Barbed Gate</English>
 			<German>Stacheldrahttor bauen</German>
+			<Russian>Установить: Ворота из колючки</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_BARBED_GATE">
 			<English>Barbed Gate</English>
 			<German>Stacheldrahttor</German>
+			<Russian>Ворота из колючей проволоки</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BARBED_GATE">
 			<English>A barbed metal gate to allow the passage of persons, vehicles and farm implements.</English>
 			<German>Ein Stacheldrahttor zum Befestigen von Stellungen.</German>
+			<Russian>Ворота из колючей проволоки.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A">
 			<English>Craft Metal Container (Red)</English>
@@ -38365,7 +38462,7 @@
 			<English>Mission Announcement</English>
 			<German>Missionsankündigung</German>
 			<French>Annonce de Mission</French>
-			<Russian>Оповещение миссии</Russian>
+			<Russian>Миссия:</Russian>
 			<Spanish>Anuncio de Misión</Spanish>
 		</Key>
 		<Key ID="STR_CL_MINEFIELD_WARNING">
