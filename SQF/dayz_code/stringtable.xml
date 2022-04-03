@@ -36003,34 +36003,42 @@
 		<Key ID="STR_EPOCH_PLAYER_COLLISION_01">
 			<English>You let go of the %1.</English>
 			<German>Du hast dich zu schnell bewegt!</German>
+			<Russian>Вы отпустили %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_01">
 			<English>%1 cannot be placed %2.</English>
 			<German>%1 kann nicht %2 platziert werden.</German>
+			<Russian>Нельзя разместить %1 %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_02">
 			<English>below ground</English>
 			<German>unter der Erde</German>
+			<Russian>ниже уровня земли</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_03">
 			<English>below sea level</English>
 			<German>unter Wasser</German>
+			<Russian>ниже уровня воды</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_WATER">
 			<English>You are not allowed to build over sea water.</English>
 			<German>Du kannst nicht auf dem Wasser bauen!</German>
+			<Russian>Строительство над водой запрещено!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BEWARE_RISING_TIDE">
 			<English>&lt;br/&gt;** Beware! This location may be flooded during high tide. **</English>
 			<German>&lt;br/&gt;** Vorsicht! Diese Position kann bei Flut unter Wasser stehen. **</German>
+			<Russian>&lt;br/&gt;** Внимание! Это место может быть затоплено во время прилива. **</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_RES_ZONE">
 			<English>You cannot build within %1m of %2.&lt;br/&gt;Current distance: %3 meters.</English>
 			<German>Du kannst nicht innerhalb von %1m zu %2.&lt;br/&gt;Derzeitige Distanz: %3 Meter.</German>
+			<Russian>Нельзя строить вблизи %1 м от %2.&lt;br/&gt;Текущая дистанция: %3 м.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_RES_BUILDING">
 			<English>You cannot build within %1m of a %2.</English>
 			<German>Du kannst nicht innerhalb von %1m zu %2 bauen.</German>
+			<Russian>Нельзя строить вблизи %1 м от %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF">
 			<English>Craft Heavy Bag Fence</English>
