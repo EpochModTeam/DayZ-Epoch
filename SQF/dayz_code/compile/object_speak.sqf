@@ -60,31 +60,30 @@ if ((round(random _chance) == _chance) or (_chance == 0)) then {
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 	//
-	//	Attach sound source to dummy object so that long duration sfx can be muted if
+	//	Attach sound source to helper object so that long duration sfx can be muted if
 	//	action is cancelled.
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////
-
 	local _killSound = (dayz_actionInProgress && (_type in ["bandage","chopwood","cook","gut","minestone","refuel","repair","tentpack"]));
 
 	if (_killSound) then {
-		local _dummy = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0];
-		_dummy hideObject true;
-		_dummy setPosATL (getPosATL _unit);
+		local _helper = "Helper_1_DZE" createVehicle [0,0,0];	// invisible helper
+		_helper setPosATL (getPosATL _unit);			// move to player
 
-		if (_type == "bandage") then {_dummy attachTo [_unit, [0,0,0]];};
+		if (_type == "bandage") then {
+			_helper attachTo [_unit, [0,0,0]];		// medical actions will be heard as player moves
+		};
+		_unit = _helper;					// sound source is now the helper object
 
-		_unit = _dummy;
-
-		_dummy spawn {
+		_helper spawn {
 			r_interrupt = false;
 
 			while {dayz_actionInProgress && !r_interrupt} do {
-				sleep 0.1;
+				uisleep 0.1;
 			};
-			if (r_interrupt) then {
+			if (r_interrupt) then {		// if player cancels the action
 				1.5 fadeSpeech 0;	// fade out
-				sleep 1.5;		// wait
+				uisleep 1.5;		// wait
 			};
 			deleteVehicle _this;		// kill sound
 			0 fadeSpeech 1;			// restore sound

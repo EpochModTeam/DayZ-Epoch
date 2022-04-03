@@ -85,6 +85,6 @@ sched_animals = {
 			};
 		};
 	};
-//	diag_log format [ "%1: update animals. local: %5, global: %6    fps: %2 -> %3%4",__FILE__, _min, diag_fpsmin,if (diag_fpsmin < 10) then {"!! <<<<<<<<<<<<<<<<<<<"} else {""}, _count, _global ];
+	if (DZE_schedDebug == 1) then {diag_log format [ "%1: update animals. local: %5, global: %6    fps: %2 -> %3%4",__FILE__, _min, diag_fpsmin,if (diag_fpsmin < 10) then {"!! <<<<<<<<<<<<<<<<<<<"} else {""}, _count, _global ];};
 	objNull
 };

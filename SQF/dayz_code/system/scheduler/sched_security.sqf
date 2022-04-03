@@ -1,7 +1,7 @@
 // (c) facoptere@gmail.com, licensed to DayZMod for the community
 
 sched_security_init = {
-	diag_log [ diag_ticktime, __FILE__, "Some security routines inited"];
+	if (DZE_schedDebug == 1) then {diag_log [ diag_ticktime, __FILE__, "Some security routines inited"];};
 	[ "", time, 0, 0, grpNull ]	
 };
 

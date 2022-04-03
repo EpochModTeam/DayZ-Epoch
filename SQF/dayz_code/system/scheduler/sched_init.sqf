@@ -63,4 +63,4 @@ if (count _list == 0) then {
 };
 _list execFSM (_base+"scheduler.fsm");
 
-diag_log [ diag_tickTime, __FILE__, "Scheduler started"];
+//diag_log [ diag_tickTime, __FILE__, "Scheduler started"];

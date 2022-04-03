@@ -1,10 +1,13 @@
 // EPOCH CONFIG VARIABLES //
-
-// To change a variable copy paste it in the mission init.sqf below the #include line.
 // Standard DayZ variables are found in dayz_code\init\variables.sqf.
 
+// Do not move the variables from here to the init.sqf. This file was made to have all variables in one place.
+
 // Both
-dayz_infectiouswaterholes = true; //Enable infected waterholes
+dayz_REsec = 1; // DayZ RE Security / 1 = enabled // 0 = disabled
+DZE_PlayerZed = false; // Enable spawning as a player zombie when players die with infected status
+DZE_SafeZonePosArray = []; //Fail-Safe, actual safezones are defined in the map specific init's
+dayz_infectiouswaterholes = true; //Enable infected waterholes, randomly adds some bodies, graves and wrecks by ponds (negatively impacts FPS), not supported by all maps
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
 dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
 DZE_HeliLift = true; // Enable Epoch heli lift system
@@ -13,9 +16,9 @@ DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage 
 DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in positions listed in DZE_SafeZonePosArray?
 dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
 infectedWaterHoles = []; //Needed for non-cherno maps.
-DZE_GodModeBase = false; // Disables damage handler from base objects so they can't be destroyed.
+DZE_GodModeBase = false; // Disables damage handler from base objects so they can't be destroyed. Make player built base objects indestructible.
 dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
-dayz_classicBloodBagSystem = false; // disable blood types system and use the single classic ItemBloodbag
+dayz_classicBloodBagSystem = true; // disable blood types system and use the single classic ItemBloodbag
 dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
 
 // Death Messages
@@ -85,8 +88,24 @@ DZE_WeatherVariables = [
 	2 // Winter Breath Fog Effects. Options: 0 - no breath fog, 1 - anytime, 2 - only when snowing or blizzard. Note: breath fog is only available with winter weather enabled.
 ];
 
+DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby.
+DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every door's management menu and open it.
+
+// Uncomment the lines below to change the default loadout
+//DefaultMagazines = ["HandRoadFlare","ItemBandage","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
+//DefaultWeapons = ["Makarov_DZ","ItemFlashlight"];
+//DefaultBackpack = "GymBag_Camo_DZE1";
+//DefaultBackpackItems = []; // Can include both weapons and magazines i.e. ["PDW_DZ","30Rnd_9x19_UZI"];
+
 //Server
 if (isServer) then {
+	EpochEvents = [ //[year,month,day of month, minutes,name of file - .sqf] If minutes is set to -1, the event will run once immediately after server start.
+		//["any","any","any","any",-1,"Infected_Camps"], // (negatively impacts FPS)
+		["any","any","any","any",-1,"Care_Packages"],
+		["any","any","any","any",-1,"CrashSites"]
+	];
+
+	dayz_POIs = false; //Adds Point of Interest map additions (negatively impacts FPS)
 	DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
 	DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with
 	DynamicVehicleFuelLow = 0; // Min fuel random vehicles can spawn with
@@ -94,12 +113,8 @@ if (isServer) then {
 	MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE filled with vehicle ammo to spawn around the map
 	MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 	DZE_TRADER_SPAWNMODE = false; // Vehicles purchased at traders will be parachuted in
-	EpochEvents = []; // [year,month,day of month, minutes,name of file - .sqf] If minutes is set to -1, the event will run once immediately after server start.
 	MaxDynamicDebris = 100; // Max number of random road blocks to spawn around the map
 	MaxVehicleLimit = 50; // Max number of random vehicles to spawn around the map
-	spawnArea = 1400; // Distance around markers to find a safe spawn position
-	spawnShoremode = 1; // Random spawn locations  1 = on shores, 0 = inland
-	dayz_POIs = false; //Enable POI's
 	dayz_enableGhosting = false;
 	dayz_ghostTimer = 120;
 	DZE_disableThermal = []; // Array of vehicle classnames to disable thermal on when being spawned. i.e: ["AH1Z","MTVR"];	
@@ -121,11 +136,19 @@ if (isServer) then {
 
 // Client
 if (!isDedicated) then {
+	dayz_antihack = 1; // DayZ Antihack / 1 = enabled // 0 = disabled
+	dayZ_serverName = ""; //Shown to all players in the bottom left of the screen (country code + server number)
+	dayz_enableRules = true; //Enables a nice little news/rules feed on player login (make sure to keep the lists quick).
+	dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
+	dayz_bleedingeffect = 2; //1 = blood on the ground (negatively impacts FPS), 2 = partical effect, 3 = both
+	DZE_R3F_WEIGHT = true; // Enable R3F weight. Players carrying too much will be overburdened and forced to move slowly.
+
 	DZE_defaultSkin = [["Survivor2_DZ","Rocker1_DZ","Rocker2_DZ","Rocker3_DZ","Rocker4_DZ","Priest_DZ","Functionary1_EP1_DZ","Doctor_DZ","Assistant_DZ","Worker1_DZ","Worker3_DZ","Worker4_DZ","TK_CIV_Takistani01_EP1_DZ","TK_CIV_Takistani03_EP1_DZ","TK_CIV_Takistani04_EP1_DZ","TK_CIV_Takistani06_EP1_DZ","Firefighter1_DZ","Firefighter2_DZ","Firefighter3_DZ","Firefighter4_DZ","Firefighter5_DZ","Firefighter_Officer1_DZ","Firefighter_Officer2_DZ","Postman1_DZ","Postman2_DZ","Postman3_DZ","Postman4_DZ","SchoolTeacher_DZ","Gardener_DZ","RU_Policeman2_DZ","Hunter_DZ","Civilian1_DZ","Civilian3_DZ","Civilian5_DZ","Civilian7_DZ","Civilian9_DZ","Civilian11_DZ","Civilian13_DZ","Prisoner1_DZ","Prisoner2_DZ","Prisoner3_DZ","Reporter_DZ","MafiaBoss_DZ","Dealer_DZ","BusinessMan_DZ"],["SurvivorW2_DZ","SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWpink_DZ","SurvivorW3_DZ"]]; // Default player skin for fresh spawns, selected randomly DZE_defaultSkin = [["Male skin1","Male skin2"],["Female skin1","Female skin2"]], comment out the whole line to disable this feature.
 	dayz_tameDogs = false; // Allow taming dogs with raw meat. Note dog behavior is experimental and buggy.
 	DZE_WarmClothes = []; //Array of warm clothes, type of player model must be added: E.g. ["MVD_Soldier_DZ","GUE_Soldier_2_DZ"];
 	DZE_TempVars = [7, 15, 4, 4, 2, 6, 8, 3, 2, 0.25, 0.75, 0.5, 12, 33]; //[vehicle, fire, building, moving, sun, heatpack, warm clothes, water, standing, rain, wind, night, snow, shivering] water, standing, rain, wind and night factors have a negative impact on temperature. The greater they are the quicker the player gets cold. To disable shivering set it to 26.
 	DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 allow player to hold two primary weapons, one on back and one in their hands.
+	dayz_quickSwitch = false; //Turns on forced animation for weapon switch. (hotkeys 1,2,3) False = enable animations, True = disable animations
 	DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
 	DZE_DamageBeforeMaint = 0.09; // Min damage built items must have before they can be maintained
 	DZE_NameTags = 0; // Name displays when looking at player up close  0 = Off, 1= On, 2 = Player choice
@@ -135,19 +158,16 @@ if (!isDedicated) then {
 	DZE_RestrictSkins = []; // Clothes that players are not allowed to wear. i.e. ["Skin_GUE_Soldier_CO_DZ","Skin_GUE_Soldier_2_DZ"] etc.
 	DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI = "vanilla"; otherwise it has no affect.
 	timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
-	dayz_maxGlobalZeds = 1000; // Maximum allowed zeds on the map
-	dayz_quickSwitch = false; //Enable quick weapon switch,
+	dayz_maxGlobalZeds = 500; // Maximum allowed zeds on the map
 	dayz_paraSpawn = false; // Helo jump spawn
-	DZE_SelfTransfuse = false; // Allow players to give themselves blood transfusions
+	DZE_SelfTransfuse = true; // Allow players to give themselves blood transfusions
 	DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount, infection chance, cool-down (seconds)]
 	dayz_DamageMultiplier = 1; // Increases the damage to the player by zombie attacks	
-	dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
-	DZE_BackpackAntiTheft = false; // Prevents accessing backpack gear of non-friendly players in trader cities
+	DZE_BackpackAntiTheft = true; // Prevents accessing backpack gear of non-friendly players in trader cities
 	DZE_StaticConstructionCount = 0; // Number of animations required for building an object. Leaving set at zero will default to the construction count in the configs for each object.
 	dayz_maxMaxWeaponHolders = 120; // Maximum number of loot piles that can spawn within 200 meters of a player.
-	dayz_bleedingeffect = 2; //1 = blood on the ground (negatively impacts FPS), 2 = partical effect, 3 = both
-	dayz_temperature_override = true; // Set to true to disable all temperature changes.
-	dayz_nutritionValuesSystem = false; //true, Enables nutrition system, false, disables nutrition system.
+	dayz_temperature_override = false; // Set to true to disable all temperature changes.
+	dayz_nutritionValuesSystem = true; //true, Enables nutrition system, false, disables nutrition system.
 	DZE_DisableVehicleUpgrade = []; // List of vehicles that cannot be upgraded with manuals E.g.: ["ArmoredSUV_PMC_DZE","LandRover_CZ_EP1_DZE"]
 	DZE_debrisRefundParts = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"]; // Dynamic debris wrecks refund
 
@@ -197,7 +217,6 @@ if (!isDedicated) then {
 
 	// Plot Management and Plot for Life
 	DZE_plotManagementMustBeClose = false; //Players must be within 10m of pole to be added as a plot friend.
-	DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby.
 	DZE_MaxPlotFriends = 10; //Max friends allowed on a plot. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
 	DZE_maintainCurrencyRate = 100; //The currency rate of what maintaining an item will be, for instance: at 100, 10 items will have a worth of 1000 (1 10oz gold or 1k coins) see actions/maintain_area.sqf for more examples.
 	DZE_limitPlots = 0; // Limit the amount of plot poles per person, Use 0 to disable. UIDS in the DZE_PlotManagementAdmins array are exempt.
@@ -222,12 +241,6 @@ if (!isDedicated) then {
 	DZE_displayHelpers = true;	// enable/disable display of modular object helpers
 	DZE_displayOnlyIfNearby	= false; // if identical object types are nearby, display green helpers. If no identical types are nearby, then do not display. false = always display green helpers. (This setting does not apply to Red and Blue helpers). If DZE_displayHelpers is disabled, then this setting will be ignored.
 	DZE_RefundDamageLimit = 0.25; // amount of damage an object can withstand before no refunded parts will be given. 0 = disable (will always refund)
-	DZE_helperSize = [[3,"Sign_sphere100cm_EP1"],[2,"Sign_sphere25cm_EP1"],[1,"Sign_sphere10cm_EP1"]];	// array of helper sizes and corresponding class. Keep in reverse order for optimized lookup
-	DZE_helperSizeDefault = 3; // default to large sphere
-	DZE_NoRefundTransparency = 0.5;	// Red Basebuilding Helper Transparency. min = 0.1, max = 1
-	DZE_removeTransparency = 0.5;	// Green Basebuilding Helper Transparency. min = 0.1, max = 1
-	DZE_deconstructTransparency	= 0.5;	// Blue Basebuilding Helper Transparency. min = 0.1, max = 1
-	DZE_largeObjects = ["MetalContainer2D_DZ","MetalContainer1G_DZ","MetalContainer1B_DZ","MetalContainer1A_DZ","DragonTeeth_DZ","DragonTeethBig_DZ","MetalFloor4x_DZ","Land_metal_floor_2x2_wreck","WoodFloor4x_DZ","Land_wood_floor_2x2_wreck","Scaffolding_DZ","CinderGateFrame_DZ","CinderGate_DZ","CinderGateLocked_DZ","WoodGateFrame_DZ","Land_DZE_WoodGate","Land_DZE_WoodGateLocked","WoodRamp_DZ","Metal_Drawbridge_DZ","Metal_DrawbridgeLocked_DZ","Land_WarfareBarrier10x_DZ","Land_WarfareBarrier10xTall_DZ","SandNestLarge_DZ"];	 // adjust _allowedDistance in fn_selfActions.sqf for large modular/crafted objects
 
 	//	Refund single kits, or modular object recipes as per the build configs
 	//	[[Enable, Modular Object, Refund Kit, [[Refund Class 1, Qty], [Refund Class 2, Qty], [Refund Class 3, Qty], [Refund Class 4, Qty]]]]
@@ -370,7 +383,6 @@ if (!isDedicated) then {
 
 	// Door Management
 	DZE_doorManagementMustBeClose = false; //Players must be within 10m of door to be added as a door friend.
-	DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every door's management menu and open it.
 	DZE_doorManagementAllowManualCode = true; //Allow unlocking doors by manually entering the combination. Setting false requires the use of eye scan for all doors.
 	DZE_doorManagementMaxFriends = 10; //Max friends allowed on a door. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
 	DZE_doorManagementHarderPenalty = true; //Enforce an exponential wait on attempts between unlocking a door from a failed code.

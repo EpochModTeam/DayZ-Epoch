@@ -35,4 +35,4 @@ inGameUISetEventHandler ["Action","false"];
 	deleteVehicle _plant;
 } count ["grass","prunus","picea","fallentree","phragmites","acer","amygdalusn","Brush","fiberplant","amygdalusc","boulder"];
 
-diag_log format ["%1: Plants libs tests done!",__FILE__];
+//diag_log format ["%1: Plants libs tests done!",__FILE__];
