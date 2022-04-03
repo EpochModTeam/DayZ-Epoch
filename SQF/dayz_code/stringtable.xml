@@ -1041,7 +1041,7 @@
 			<English>Sharpen Knife</English>
 			<Russian>Заточить нож</Russian>
 			<German>Messer schleifen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_ACTIONS_FIX_PICKAXE">
 			<English>Fix Pickaxe</English>
 			<Russian>Починить кирку</Russian>
@@ -1890,7 +1890,7 @@
 		<Key ID="STR_ITEM_NAME_comfrey">
 			<English>Comfrey</English>
 			<Spanish>Consuelda</Spanish>
-			<Russian>Живокост</Russian>
+			<Russian>Окопник</Russian>
 			<Czech>Kostival</Czech>
 			<French>Consoude</French>
 			<German>Rauer Beinwell</German>
@@ -2639,7 +2639,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_comfreyleafs">
 			<English>Comfrey Leaves</English>
-			<Russian>Листья живокоста</Russian>
+			<Russian>Листья окопника</Russian>
 			<Spanish>Hojas de consuelda</Spanish>
 			<Czech>Kostival lékařský</Czech>
 			<French>Feuilles de consoude</French>
@@ -2647,7 +2647,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_comfreyleafs">
 			<English>Comfrey leaves used in crafting.</English>
-			<Russian>Листья живокоста, полезны при перевязке для обработки ран.</Russian>
+			<Russian>Листья окопника, полезны при перевязке для обработки ран.</Russian>
 			<Spanish>Hojas de consuelda que pueden ser usadas para crear objetos.</Spanish>
 			<Czech>Kostival lékařský je léčivá bylina, jejíž listy jsou používány při výrobě.</Czech>
 			<French>Feuilles de consoude officinale (Artisanat)</French>
@@ -2695,7 +2695,7 @@
 		<Key ID="STR_CRAFT_DESC_SEPSISBandage">
 			<English>Blueprint to create a sepsis cure and bandage. Required - 3 rags, 2 gauze, 1 string, 2 comfrey leaves.</English>
 			<Spanish>Plano para crear un vendaje que combate la septicemia. Requerido: - 3 trapos, 2 gasas, 1 cuerda, 2 hojas de consuelda.</Spanish>
-			<Russian>Инструкция по созданию антисептических бинтов.&lt;br/&gt;Нужно: три тряпки, пара марль, нитки и пара листков живокоста.</Russian>
+			<Russian>Инструкция по созданию антисептических бинтов.&lt;br/&gt;Нужно: три тряпки, пара марль, нитки и пара листков окопника.</Russian>
 			<Czech>Návod pro vyrobení antiseptického obvazu. Potřeba: 3x hadr, 2x gáza, 1x provázek, 2x listy kostivalu.</Czech>
 			<French>Plan de fabrication d&apos;un pansement antiseptique. Requis: 3 tissus, 2 gazes, 1 ficelle, 2 consoudes.</French>
 			<German>Blaupause für eine antiseptische Bandage. Gebraucht werden: 3x Lumpen, 2x Mullbinden, 1x Schnur, 2x Beinwellblätter.</German>
@@ -3002,7 +3002,7 @@
 			<Spanish>Una pala es una herramienta usada para cavar.</Spanish>
 			<French>Oui une pelle c&apos;est fait pour creuser.</French>
 			<Czech>Lopata se používá hlavně pro kopání děr.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_SHOVEL_BROKEN">
 			<English>Broken Shovel</English>
 			<German>Kaputte Schaufel</German>
@@ -3078,7 +3078,7 @@
 			<Spanish>Caja de Fósforos</Spanish>
 			<French>Boîte d&apos;allumettes</French>
 			<Czech>Krabička zápalek</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_MATCHES_5">
 			<English>Box of Matches (5 left)</English>
 			<German>Streichhölzer (5 übrig)</German>
@@ -3134,7 +3134,7 @@
 			<Spanish>Una caja de fósforos de seguridad para iniciar fuego bajo condiciones controladas.</Spanish>
 			<French>Boîte d&apos;allumettes suédoises permettant d&apos;allumer un feu.</French>
 			<Czech>Balíček bezpečnostních zápalek pro zapálení ohně. Udržujte z dosahu dětí.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_DESC_MATCHES_5">
 			<English>Box of safety matches for starting a fire under controlled conditions. 5 Matches left.</English>
 			<Russian>Коробок с пятью спичками.</Russian>
@@ -3206,7 +3206,7 @@
 			<Spanish>Caja de fósforos mojada.</Spanish>
 			<French>Boîte d&apos;Allumettes mouillées.</French>
 			<Czech>Krabička plná mokrých zápalek.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_KNIFE">
 			<English>Hunting Knife</English>
 			<German>Jagdmesser</German>
@@ -3238,7 +3238,7 @@
 			<Spanish>Un cuchillo usado para preparar la carne de caza para ser guardada.</Spanish>
 			<French>Un couteau servant à dépecer le gibier.</French>
 			<Czech>Nůž, který se používá pro kuchání zvířat.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_DESC_KNIFE_5">
 			<English>Your knife appears to be too blunt. (Maybe 5 uses left).</English>
 			<Russian>Похоже, нож тупится. Осталось 5 использований.</Russian>
@@ -3284,7 +3284,7 @@
 			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
 			<French>Votre couteau semble trop émoussé</French>
 			<Czech>Vypadá to, že tento nůž je příliš tupý.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_FLASHLIGHT">
 			<English>Flashlight</English>
 			<German>Taschenlampe</German>
@@ -3384,7 +3384,7 @@
 			<Spanish>Un viejo tanque de combustible que puede ser usado para reparar un vehículo que lo tenga roto.</Spanish>
 			<French>Un réservoir d&apos;occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Náhradní díly pro opravu palivové nádrže u vašeho vozidla.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_CAR_WHEEL">
 			<English>Car Wheel</English>
 			<German>Reifen</German>
@@ -3416,7 +3416,7 @@
 			<Spanish>Una vieja rueda que puede ser usada para reparar un vehículo.</Spanish>
 			<French>Une roue d&apos;occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Staré kolo, které se hodí, pokud jste zrovna píchli.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_SCRAP_METAL">
 			<English>Scrap Metal</English>
 			<German>Metallteile</German>
@@ -3464,7 +3464,7 @@
 			<Spanish>Componentes de motor con lubricante. Todo lo necesario para reparar un motor.</Spanish>
 			<French>Un moteur ainsi que de l&apos;huile et du lubrifiant. Tout le nécessaire pour changer un moteur.</French>
 			<Czech>Náhraní díly motoru včetně oleje. Vše, co je potřeba k tomu, aby váš motor zase běžel jako hodinky.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_WINDSCREEN_GLASS">
 			<English>Windscreen Glass</English>
 			<German>Autoglas</German>
@@ -3512,7 +3512,7 @@
 			<Spanish>Eje hidráulico del rotor de un helicoptero.</Spanish>
 			<French>Colonne de rotor d&apos;hélicoptère. Permet de réparer un hélicoptère qui a un de ses rotors cassé.</French>
 			<Czech>Hlavní rotor pro vrtulníky. Lze použít při opravě rotoru libovolného vrtulníku.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE">
 			<English>Water Bottle</English>
 			<German>Wasserflasche</German>
@@ -3637,7 +3637,7 @@
 			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales.</Spanish>
 			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes.</French>
 			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_6">
 			<English>Antibiotics (6 left)</English>
 			<German>Antibiotikum (6 übrig)</German>
@@ -3653,7 +3653,7 @@
 			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (6 restante)</Spanish>
 			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (6 reste)</French>
 			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (6 zbývající)</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_5">
 			<English>Antibiotics (5 left)</English>
 			<German>Antibiotikum (5 übrig)</German>
@@ -3669,7 +3669,7 @@
 			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (5 restante)</Spanish>
 			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (5 reste)</French>
 			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (5 zbývající)</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_4">
 			<English>Antibiotics (4 left)</English>
 			<German>Antibiotikum (4 übrig)</German>
@@ -3685,7 +3685,7 @@
 			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (4 restante)</Spanish>
 			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (4 reste)</French>
 			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (4 zbývající)</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_3">
 			<English>Antibiotics (3 left)</English>
 			<German>Antibiotikum (3 übrig)</German>
@@ -3701,7 +3701,7 @@
 			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (3 restante)</Spanish>
 			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (3 reste)</French>
 			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (3 zbývající)</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_2">
 			<English>Antibiotics (2 left)</English>
 			<German>Antibiotikum (2 übrig)</German>
@@ -3717,7 +3717,7 @@
 			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (2 restante)</Spanish>
 			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (2 reste)</French>
 			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (2 zbývající)</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_1">
 			<English>Antibiotics (1 left)</English>
 			<German>Antibiotikum (1 übrig)</German>
@@ -3733,7 +3733,7 @@
 			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (1 restante)</Spanish>
 			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (1 reste)</French>
 			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (1 zbývající)</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_EMPTY">
 			<English>Antibiotics (empty)</English>
 			<German>Antibiotikum (leer)</German>
@@ -4057,7 +4057,7 @@
 			<English>A Mountain Dew soda can. It is pretty rare these days. Better to keep it for later.</English>
 			<German>Eine Mountain Dew Dose. Sehr selten in diesen Tagen. Besser für später aufheben.</German>
 			<Russian>Банка газировки Mountain Dew. Довольно редкая в наши дни. Лучше оставить на потом.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_WOOD_PILE">
 			<English>Wood Pile</English>
 			<German>Holzstapel</German>
@@ -4582,7 +4582,7 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.&lt;br/&gt;Pohlaví: Mužský</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.&lt;br/&gt;Sexe: Masculin</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.&lt;br/&gt;Geschlecht: Männlich</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_DESC_GHILLIE_FEMALE">
 			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.&lt;br/&gt;Sex: Female</English>
 			<Russian>Маскировочный халат типа "леший". Можно распаковать и надеть.&lt;br/&gt;Пол: Женский</Russian>
@@ -4702,7 +4702,7 @@
 			<Spanish>Cabra a la Parrilla que se utilizará para sobrevivir.</Spanish>
 			<French>La Chèvre grillée peut être consommée.</French>
 			<Czech>Kozí maso, které lze sníst, aby jste přežili.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_MUTTON_RAW">
 			<English>Mutton Meat (raw)</English>
 			<German>Hammelfleisch (roh)</German>
@@ -4734,7 +4734,7 @@
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
 			<French>La Viande d&apos;agneau peut être consommée.</French>
 			<Czech>Opečené jehněčí může být snězeno, abyste přežili.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_CHICKEN_RAW">
 			<English>Chicken Leg (raw)</English>
 			<German>Hühnchenkeule (roh)</German>
@@ -4766,7 +4766,7 @@
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
 			<French>La cuisse de poulet peut être consommée.</French>
 			<Czech>Kuřecí stehno může být snědeno, abyste přežili.</Czech>
-		</Key>	
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_BACON_RAW">
 			<English>Bacon (raw)</English>
 			<German>Speck (roh)</German>
@@ -4782,7 +4782,7 @@
 			<Spanish>Panceta que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<French>Le Bacon cru peut être consommé mais devrait être cuit avant de le manger.</French>
 			<Czech>Tento kus slaniny byl měl být nejprve opečen.</Czech>
-		</Key>	
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_BACON_COOKED">
 			<English>Bacon (cooked)</English>
 			<German>Speck (gebraten)</German>
@@ -4797,7 +4797,7 @@
 			<Spanish>Panceta que se utilizará para sobrevivir.</Spanish>
 			<French>Le Bacon peut être consommé.</French>
 			<Czech>Slanina může být snědena, abyste přežili.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_RABBIT_RAW">
 			<English>Rabbit Leg (raw)</English>
 			<German>Kaninchenkeule (roh)</German>
@@ -4873,7 +4873,7 @@
 			<English>Dog Meat to be used for sustenance, should be cooked prior to safe eating.</English>
 			<German>Ein Stück Hundefleisch, welches vor dem Verzehr gebraten werden sollte.</German>
 			<Russian>Сырое мясо собаки. Будет вкуснее и безопаснее, если его приготовить.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_DOG_COOKED">
 			<English>Dog Meat (cooked)</English>
 			<German>Hundefleisch (gebraten)</German>
@@ -4881,7 +4881,7 @@
 			<Spanish>Carne cocinada perro</Spanish>
 			<French>Cuit viande de chien</French>
 			<Czech>Vařené maso Dog</Czech>
-		</Key>	
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_DOG_COOKED">
 			<English>Dog Meat to be used for sustenance.</English>
 			<German>Ein Stück Hundefleisch, welches über Feuer gebraten wurde.</German>
@@ -5948,7 +5948,7 @@
 			<English>A small 5-liter can filled with milk.</English>
 			<German>Ein kleiner 5-Liter-Kanister gefüllt mit Milch.</German>
 		</Key>
-		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">			
+		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">
 			<English>Fuelcan 5L (empty)</English>
 			<German>Benzinkanister 5L (leer)</German>
 			<Russian>Канистра 5л (пустая)</Russian>
@@ -5995,7 +5995,7 @@
 		<Key ID="STR_ITEM_DESC_JERRYCAN_MILK">
 			<English>20 litre can filled with milk.</English>
 			<German>Ein 20-Liter-Kanister, welcher mit Milch befüllt wurde.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
 			<English>Jerry Can 20L (empty)</English>
 			<German>Benzinkanister 20L (leer)</German>
@@ -6003,7 +6003,7 @@
 			<Spanish>Bidón 20L (vacío)</Spanish>
 			<French>Jerrican 20L (vide)</French>
 			<Czech>Kanystr 20L (prázdný)</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN_EMPTY">
 			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>
 			<Spanish>Un bidón de combustible vacío de 20 litros que puede ser recargado estaciones de servicio.</Spanish>
@@ -8501,7 +8501,7 @@
 			<English>HMMWV Ambulance (Desert)++++</English>
 			<Russian>Хамви Скорая (Пустыня)++++</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19">
 			<English>HMMWV Crows (MK19)</English>
 		</Key>
@@ -8516,7 +8516,7 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19++++">
 			<English>HMMWV Crows (MK19)++++</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2">
 			<English>HMMWV Crows (M2)</English>
 		</Key>
@@ -8531,7 +8531,7 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2++++">
 			<English>HMMWV Crows (M2)++++</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL">
 			<English>HMMWX Avenger (Woodland)</English>
 			<German>HMMWX Avenger (Waldtarn)</German>
@@ -8586,7 +8586,7 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_AAV++++">
 			<English>AAVP7A1++++</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_OLD_JEEP">
 			<English>Old Jeep</English>
 			<German>Alter Jeep</German>
@@ -14303,7 +14303,7 @@
 		<Key ID="STR_VEH_NAME_CAMEL_CIVIL">
 			<English>Camel (Civil)</English>
 			<German>Camel (Zivil)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_STASH">
 			<English>Stash</English>
 			<French>Planque</French>
@@ -14643,7 +14643,7 @@
 		<Key ID="STR_ZNAME_BLOODSUCKER8">
 			<English>Bloodsucker</English>
 			<Russian>Кровосос</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_ZNAME_INFECTEDVIRAL">
 			<English>Viral Infected</English>
 			<Spanish>Infectado Viral</Spanish>
@@ -16376,7 +16376,7 @@
 			<English>AK-74 GP-25 PSO-1 SD</English>
 			<Russian>АК-74 ГП-25 ПСО-1 ПБС</Russian>
 		</Key>
-		
+
 		<!-- AKS74 -->
 		<Key ID="STR_DZ_WPN_AKS74_NAME">
 			<English>AKS-74</English>
@@ -16389,7 +16389,7 @@
 		<Key ID="STR_DZ_WPN_AKS74_PSO1_NAME">
 			<English>AKS-74 PSO-1</English>
 			<Russian>АКС-74 ПСО-1</Russian>
-		</Key>	
+		</Key>
 		<Key ID="STR_DZ_WPN_AKS74_NSPU_NAME">
 			<English>AKS-74 NSPU</English>
 			<Russian>АКС-74 НСПУ</Russian>
@@ -16397,7 +16397,7 @@
 		<Key ID="STR_DZ_WPN_AKS74_TWS_NAME">
 			<English>AKS-74 TWS</English>
 			<Russian>АКС-74 ТП</Russian>
-		</Key>		
+		</Key>
 
 		<!-- AKS74U -->
 		<Key ID="STR_DZ_WPN_AKS74U_NAME">
@@ -16575,7 +16575,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_G36A_NAME">
 			<English>G36A</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_DZ_WPN_G36K_CAMO_NAME">
 			<English>G36K Camo</English>
 			<Russian>G36K (Камуфляж)</Russian>
@@ -16588,7 +16588,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_G36K_NAME">
 			<English>G36K</English>
-		</Key>		
+		</Key>
 
 		<!-- MP5 -->
 		<Key ID="STR_DZ_WPN_MP5_NAME">
@@ -18711,19 +18711,19 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_G3A3_CCO_NAME">
 			<English>G3A3 CCO</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_DZ_WPN_G3A3_HOLO_NAME">
 			<English>G3A3 Holo</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_DZ_WPN_G3A3_ACOG_NAME">
 			<English>G3A3 ACOG</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_DZ_WPN_G3_SG1_NAME">
 			<English>G3 SG1</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_G3_SG1_BIPOD_NAME">
 			<English>G3 SG1 Bipod</English>
-		</Key>		
+		</Key>
 
 		<!-- MAT 49 -->
 		<Key ID="STR_DZ_WPN_MAT49_NAME">
@@ -18817,7 +18817,7 @@
 			<German>Zwillings-M134</German>
 			<Russian>M134 сдвоенный</Russian>
 		</Key>
-		
+
 		<!-- Red Ryder BB Gun -->
 		<Key ID="STR_DZ_WPN_RED_RYDER_NAME">
 			<English>Red Ryder BB</English>
@@ -18825,7 +18825,7 @@
         <Key ID="STR_DZ_WPN_RED_RYDER_DESC">
 			<English>Red Ryder BB&lt;br/&gt;Caliber: 4.5mm BBs</English>
 			<German>Red Ryder BB&lt;br/&gt;Kaliber: 4.5mm BBs</German>
-		</Key>		
+		</Key>
 
 		<!-- **** MAGAZINES **** -->
 
@@ -22370,7 +22370,7 @@
 			<Czech>Kalibr: 30x113mm&lt;br/&gt;Nábojů: 1200&lt;br/&gt;Pro: AH-64</Czech>
 			<Hungarian>Kaliber: 30x113mm&lt;br/&gt; Töltények: 1200&lt;br/&gt; Hozzá tartozó fegyver: AH-64</Hungarian>
 		</Key>
-		
+
 		<Key ID="STR_DZ_MAG_350RND_BB_GUN_NAME">
 			<English>350Rnd. 4.5mm mag.</English>
 			<Russian>350п. 4.5мм</Russian>
@@ -22385,7 +22385,7 @@
 			<German>Kaliber: 4.5mm&lt;br/&gt;Patronen: 350&lt;br/&gt;Verwendet in: Red Ryder BB</German>
 			<Czech>Kalibr: 4.5mm&lt;br/&gt;Nábojů: 350&lt;br/&gt;Pro: Red Ryder BB</Czech>
 			<Hungarian>Kaliber: 4.5mm&lt;br/&gt; Töltények: 350&lt;br/&gt; Hozzá tartozó fegyver: Red Ryder BB</Hungarian>
-		</Key>		
+		</Key>
 
 		<!-- **** ATTACHMENTS **** -->
 
@@ -22896,7 +22896,7 @@
 			<English>You have carved the heart of the %1 from it's chest.</English>
 			<German>Du hast das Herz des %1 aus seiner Brust herausgeschnitten.</German>
 			<Russian>Вы вырезали сердце %1 из его тела.</Russian>
-		</Key>						  
+		</Key>
 		<Key ID="str_actions_tamedog">
 			<English>Tame Dog</English>
 			<German>Hund zähmen</German>
@@ -25979,7 +25979,7 @@
 			<English>Butcher Bloodsucker</English>
 			<German>Bloodsucker ausnehmen</German>
 			<Russian>Разделать Кровососа</Russian>
-		</Key>						   
+		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_OPEN">
 			<English>Open %1</English>
 			<German>%1 öffnen</German>
@@ -26447,12 +26447,12 @@
 		<Key ID="STR_EPOCH_BULK_DESC_PipeBomb_FULL">
 			<English>12x Pipe Bomb</English>
 			<German>12x Rohrbombe</German>
-			<Russian>Ящик с бомбами (12шт).</Russian>
+			<Russian>Ящик с самодельными бомбами (12шт).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_PipeBomb_FULL">
 			<English>Supply Crate (12x Pipe Bomb)</English>
 			<German>Kiste (12x Rohrbombe)</German>
-			<Russian>Ящик (12x Металлолом)</Russian>
+			<Russian>Ящик (12x Бомба)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_PartWheel_FULL">
 			<English>12x Car wheel</English>
@@ -27177,11 +27177,13 @@
 		<Key ID="STR_CRAFT_NAME_COMFREY_SEED">
 			<English>Bag of Comfrey Seeds</English>
 			<German>Säckchen Beinwellsamen</German>
+			<Russian>Семена окопника</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_COMFREY_SEED">
 			<English>A few comfrey seeds.</English>
 			<German>Ein paar Beinwellsamen.</German>
-		</Key>		
+			<Russian>Семена окопника, пригодные для посева.</Russian>
+		</Key>
 		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
 			<English>Hemp Plant</English>
 			<German>Hanfpflanze</German>
@@ -27200,7 +27202,7 @@
 		<Key ID="STR_CRAFT_HEMP_PLANT">
 			<English>Craft Hemp Plant</English>
 			<German>Hanfpflanze herstellen</German>
-			<Russian>Создать конопляную грядку</Russian>
+			<Russian>Создать: Конопляная грядка</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PUMPKIN">
 			<English>Pumpkin</English>
@@ -27220,7 +27222,7 @@
 		<Key ID="STR_CRAFT_PUMPKIN_PLANT">
 			<English>Craft Pumpkin Plant</English>
 			<German>Kürbispflanze herstellen</German>
-			<Russian>Создать тыквенную грядку</Russian>
+			<Russian>Создать: Тыквенная грядка</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_SUNFLOWER">
 			<English>Bag of Sunflower Seeds</English>
@@ -27277,106 +27279,132 @@
 		<Key ID="STR_EPOCH_GEMSUITCASE_EMPTY">
 			<English>Suitcase (Empty)</English>
 			<German>Koffer (Leer)</German>
+			<Russian>Чемодан (Пустой)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_EMPTY">
 			<English>An empty suitcase</English>
 			<German>Ein leerer Koffer</German>
+			<Russian>Пустой чемодан.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_TOPAZ">
 			<English>Pack 10 Topaz</English>
 			<German>10 Topase einpacken</German>
+			<Russian>Положить 10 Топазов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_OBSIDIAN">
 			<English>Pack 10 Obsidian</English>
 			<German>10 Obsidian einpacken</German>
+			<Russian>Положить 10 Обсидианов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_SAPPHIRE">
 			<English>Pack 10 Sapphire</English>
 			<German>10 Saphire einpacken</German>
+			<Russian>Положить 10 Сапфиров</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_AMETHYST">
 			<English>Pack 10 Amethyst</English>
 			<German>10 Amethysten einpacken</German>
+			<Russian>Положить 10 Аметистов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_EMERALD">
 			<English>Pack 10 Emerald</English>
 			<German>10 Smaragde einpacken</German>
+			<Russian>Положить 10 Изумрудов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_CITRINE">
 			<English>Pack 10 Citrine</English>
 			<German>10 Citrine einpacken</German>
+			<Russian>Положить 10 Цитринов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_RUBY">
 			<English>Pack 10 Ruby</English>
 			<German>10 Rubine einpacken</German>
+			<Russian>Положить 10 Рубинов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_PACK_ALL">
 			<English>Pack all 7 Gems</English>
 			<German>Alle 7 Edelsteine einpacken</German>
-		</Key>		
+			<Russian>Положить все 7 камней</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_Topaz">
 			<English>Suitcase (10 Topaz)</English>
 			<German>Koffer (10 Topase)</German>
+			<Russian>Чемодан (10 Топазов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_Topaz">
 			<English>An suitcase containing 10 Topaz</English>
 			<German>Ein Koffer mit 10 Topasen</German>
-		</Key>		
+			<Russian>Чемодан с десятью топазами.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_OBSIDIAN">
 			<English>Suitcase (10 Obisidian)</English>
 			<German>Koffer (10 Obisidiane)</German>
+			<Russian>Чемодан (10 Обсидианов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_OBSIDIAN">
 			<English>An suitcase containing 10 Obisidian</English>
 			<German>Ein Koffer mit 10 Obisidian</German>
+			<Russian>Чемодан с десятью обсидианами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_SAPPHIRE">
 			<English>Suitcase (10 Sapphire)</English>
 			<German>Koffer (10 Saphire)</German>
+			<Russian>Чемодан (10 Сапфиров)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_SAPPHIRE">
 			<English>An suitcase containing 10 Sapphire</English>
 			<German>Ein Koffer mit 10 Saphiren</German>
+			<Russian>Чемодан с десятью сапфирами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_AMETHYST">
 			<English>Suitcase (10 Amethyst)</English>
 			<German>Koffer (10 Amethyste)</German>
+			<Russian>Чемодан (10 Аметистов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_AMETHYST">
 			<English>An suitcase containing 10 Amethyst</English>
 			<German>Ein Koffer mit 10 Amethysten</German>
+			<Russian>Чемодан с десятью аметистами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_EMERALD">
 			<English>Suitcase (10 Emerald)</English>
 			<German>Koffer (10 Smaragde)</German>
+			<Russian>Чемодан (10 Изумрудов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_EMERALD">
 			<English>An suitcase containing 10 Emerald</English>
 			<German>Ein Koffer mit 10 Smaragde</German>
+			<Russian>Чемодан с десятью изумрудами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_CITRINE">
 			<English>Suitcase (10 Citrine)</English>
 			<German>Koffer (10 Citrine)</German>
+			<Russian>Чемодан (10 Цитринов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_CITRINE">
 			<English>An suitcase containing 10 Citrine</English>
 			<German>Ein Koffer mit 10 Citrine</German>
+			<Russian>Чемодан с десятью цитринами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_RUBY">
 			<English>Suitcase (10 Ruby)</English>
 			<German>Koffer (10 Rubine)</German>
+			<Russian>Чемодан (10 Рубинов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_RUBY">
 			<English>An suitcase containing 10 Ruby</English>
 			<German>Ein Koffer mit 10 Rubinen</German>
+			<Russian>Чемодан с десятью рубинами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GEMSUITCASE_ALL">
 			<English>Suitcase (7 Gems)</English>
 			<German>Koffer (7 Edelsteine)</German>
+			<Russian>Чемодан (7 камней)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_ALL">
 			<English>An suitcase containing 7 different gems</English>
 			<German>Ein Koffer mit 7 verschiedenen Edelsteinen</German>
+			<Russian>Чемодан с семью разными драгоценными камнями.</Russian>
 		</Key>
 		<Key ID="STR_ORE_NAME_IRON">
 			<English>Iron Ore</English>
@@ -27892,12 +27920,12 @@
 			<English>Mutant Heart</English>
 			<German>Mutantenherz</German>
 			<Russian>Сердце мутанта</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_MUTANTPARTS_HEART_DESC">
 			<English>The heart of a mutant. It is probably worth a lot.</English>
 			<German>Das Herz eines Mutanten. Es ist möglicherweise viel wert.</German>
 			<Russian>Сердце мутанта. Это, наверное, многого стоит.</Russian>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_MUTANTPARTS_HEAD">
 			<English>Mutant Head</English>
 			<German>Mutantenkopf</German>
@@ -27941,10 +27969,12 @@
 		<Key ID="STR_EPOCH_MUTANTPARTS_CLAW">
 			<English>Mutant Claw</English>
 			<German>Mutantenkralle</German>
+			<Russian>Коготь мутанта</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_MUTANTPARTS_CLAW_DESC">
 			<English>Mutant Claw in a Bag.</English>
 			<German>Mutantenkralle in einem Sack.</German>
+			<Russian>Коготь мутанта в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_MUTANTPARTS_FOOT">
 			<English>Mutant Foot</English>
@@ -28005,7 +28035,7 @@
 			<English>Mutant Skin in a Bag.</English>
 			<German>Mutantenhaut in einem Sack.</German>
 			<Russian>Кожа мутанта в мешке.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
 			<German>Zahlenschloss</German>
@@ -28104,18 +28134,22 @@
 		<Key ID="STR_EPOCH_FUELBARREL_WATER">
 			<English>Barrel 210L (Water)</English>
 			<German>Fass 210 L (Wasser)</German>
+			<Russian>Бочка 210л. (Вода)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL_DESC_WATER">
 			<English>A 210 litres barrel filled with water.</English>
 			<German>Ein 210 Liter Fass gefüllt mit Wasser.</German>
+			<Russian>210-литровая бочка наполненная водой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL_MILK">
 			<English>Barrel 210L (Milk)</English>
 			<German>Fass 210 L (Milch)</German>
+			<Russian>Бочка 210л. (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL_DESC_MILK">
 			<English>A 210 litres barrel filled with milk.</English>
 			<German>Ein 210 Liter Fass gefüllt mit Milch.</German>
+			<Russian>210-литровая бочка наполненная молоком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL">
 			<English>Fuel Barrel (empty)</English>
@@ -28145,130 +28179,162 @@
 		<Key ID="STR_EPOCH_STORAGEBARRELREDKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELREDKIT_DESC">
 			<English>A red barrel that can be used to store items.</English>
 			<German>Eine rote Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Красная бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELEPOCHKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELEPOCHKIT_DESC">
 			<English>A green oil-barrel that can be used to store items.</English>
 			<German>Eine grüne Öl-Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Зелёная бочка из-под масла, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELYELLOWKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELYELLOWKIT_DESC">
 			<English>A yellow barrel that can be used to store items.</English>
 			<German>Eine gelbe Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Жёлтая бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELBLACKKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELBLACKKIT_DESC">
 			<English>A black barrel that can be used to store items.</English>
 			<German>Eine schwarze Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Чёрная бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARKKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARKKIT_DESC">
 			<English>A dark-green barrel that can be used to store items.</English>
 			<German>Eine dunkel-grüne Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Тёмно-зелёная бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELMILKKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELMILKKIT_DESC">
 			<English>A white-pink checkered barrel that can be used to store items.</English>
 			<German>Eine weiß-pink gefleckte Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Бело-розовая бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENKIT_DESC">
 			<English>A green barrel that can be used to store items.</English>
 			<German>Eine grüne Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Зелёная бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTYKIT">
 			<English>Storage Barrel Kit</English>
 			<German>Lagerungs-Tonne Bausatz</German>
+			<Russian>Бочка для хранения (Набор)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTYKIT_DESC">
 			<English>A green, rusty barrel that can be used to store items.</English>
 			<German>Eine grüne, rostige Tonne, die als Lagersplatz verwendet werden kann.</German>
+			<Russian>Зелёная ржавая бочка, которую можно использовать для хранения предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELRED">
 			<English>Storage Barrel (Red)</English>
 			<German>Lagerungs-Tonne (Rot)</German>
+			<Russian>Бочка для хранения (Красная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELRED2">
 			<English>Storage Barrel (Red) +</English>
 			<German>Lagerungs-Tonne (Rot) +</German>
+			<Russian>Бочка для хранения + (Красная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELEPOCH">
 			<English>Storage Barrel (Epoch)</English>
 			<German>Lagerungs-Tonne (Epoch)</German>
+			<Russian>Бочка для хранения (Epoch)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELEPOCH2">
 			<English>Storage Barrel (Epoch) +</English>
 			<German>Lagerungs-Tonne (Epoch) +</German>
+			<Russian>Бочка для хранения + (Epoch)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELYELLOW">
 			<English>Storage Barrel (Yellow)</English>
 			<German>Lagerungs-Tonne (Gelb)</German>
+			<Russian>Бочка для хранения (Жёлтая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELYELLOW2">
 			<English>Storage Barrel (Yellow) +</English>
 			<German>Lagerungs-Tonne (Gelb) +</German>
+			<Russian>Бочка для хранения + (Жёлтая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELBLACK">
 			<English>Storage Barrel (Black)</English>
 			<German>Lagerungs-Tonne (Schwarz)</German>
+			<Russian>Бочка для хранения (Чёрная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELBLACK2">
 			<English>Storage Barrel (Black) +</English>
 			<German>Lagerungs-Tonne (Schwarz) +</German>
+			<Russian>Бочка для хранения + (Чёрная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARK">
 			<English>Storage Barrel (Green dark)</English>
 			<German>Lagerungs-Tonne (Grün dunkel)</German>
+			<Russian>Бочка для хранения (Т/зелёная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARK2">
 			<English>Storage Barrel (Green dark) +</English>
 			<German>Lagerungs-Tonne (Grün dunkel) +</German>
+			<Russian>Бочка для хранения + (Т/зелёная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELMILK">
 			<English>Storage Barrel (Milk)</English>
 			<German>Lagerungs-Tonne (Milch)</German>
+			<Russian>Бочка для хранения (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELMILK2">
 			<English>Storage Barrel (Milk) +</English>
 			<German>Lagerungs-Tonne (Milch) +</German>
+			<Russian>Бочка для хранения + (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREEN">
 			<English>Storage Barrel (Green)</English>
 			<German>Lagerungs-Tonne (Grün)</German>
+			<Russian>Бочка для хранения (Зелёная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREEN2">
 			<English>Storage Barrel (Green) +</English>
 			<German>Lagerungs-Tonne (Grün) +</German>
+			<Russian>Бочка для хранения + (Зелёная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTY">
 			<English>Storage Barrel (Green rusty)</English>
 			<German>Lagerungs-Tonne (Grün rostig)</German>
+			<Russian>Бочка для хранения (Ржавая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTY2">
 			<English>Storage Barrel (Green rusty) +</English>
 			<German>Lagerungs-Tonne (Grün rostig) +</German>
+			<Russian>Бочка для хранения + (Ржавая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WORKBENCH">
 			<English>Workbench</English>
@@ -28582,7 +28648,7 @@
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHANDLE">
 			<English>Sledgehammer Handle</English>
 			<German>Vorschlaghammergriff</German>
-			<Russian>Ручка кувалды</Russian>
+			<Russian>Рукоять кувалды</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHANDLE_DESC">
 			<English>Combine with a head to make a Sledgehammer.</English>
@@ -29329,7 +29395,7 @@
 		<Key ID="STR_EPOCH_ELEVATORSTOP_TRANSPARENT">
 			<English>Elevator Stop (Transparent)</English>
 			<German>Fahrstuhl Halt (Durchsichtig)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_GLASSFLOOR">
 			<English>Glass Floor</English>
 			<German>Glasboden</German>
@@ -29679,7 +29745,7 @@
 			<English>Wooden stairs with supports and rails.</English>
 			<German>Eine Holztreppe mit verstärkten Balken und Geländer.</German>
 			<Russian>Деревянные ступеньки с опорами и перилами.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WOODFLOORSTAIRS">
 			<English>Wood Floor w/ stairs</English>
 			<German>Holzboden mit Treppe</German>
@@ -31092,17 +31158,17 @@
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
 			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Мужской</Russian>
-		 </Key>		 
+		 </Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_DESC">
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
 			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Мужской</Russian>
-		 </Key>	
+		 </Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_DESC">
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
 			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Мужской</Russian>
-		 </Key>		 
+		 </Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_FEMALE_DESC">
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
@@ -31112,7 +31178,7 @@
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
 			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Женский</Russian>
-		 </Key>		 
+		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
 			<English>Scientist (Red rad-suit)</English>
 			<German>Wissenschaftler (Roter Rad-Anzug)</German>
@@ -32693,26 +32759,32 @@
 		<Key ID="STR_EQUIP_NAME_WBPET_COFFEE">
 			<English>Water Bottle PET (Coffee)</English>
 			<German>Wasserflasche PET (Kaffee)</German>
+			<Russian>Бутылка ПЭТ (Кофе)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_COFFEE">
 			<English>A PET bottle that has been filled with brewed coffee.</English>
 			<German>Eine Plastik-Flasche gefüllt mit gekochtem Kaffee.</German>
+			<Russian>ПЭТ-бутылка, наполненная заваренным кофе.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_BLACKTEA">
 			<English>Water Bottle PET (Black Tea)</English>
 			<German>Wasserflasche PET (Schwarzer Tee)</German>
+			<Russian>Бутылка ПЭТ (Чай)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_BLACKTEA">
 			<English>A PET bottle that has been filled with brewed black tea.</English>
 			<German>Eine Plastik-Flasche gefüllt mit gekochtem schwarzem Tee.</German>
+			<Russian>ПЭТ-бутылка, наполненная заваренным чёрным чаем.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_FROZEN">
 			<English>Water Bottle PET (Frozen)</English>
 			<German>Wasserflasche PET (Gefroren)</German>
+			<Russian>Бутылка ПЭТ (Заморожена)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_FROZEN">
 			<English>A PET bottle that has been filled with water. The content seems to be frozen.</English>
 			<German>Eine Plastik-Flasche gefüllt mit Wasser. Der Inhalt scheint gefroren zu sein.</German>
+			<Russian>ПЭТ-бутылка, наполненная водой. Кажется содержимое заморожено.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GENERIC_NAME">
 			<English>Paint bucket (generic)</English>
@@ -33030,7 +33102,7 @@
 			<English>Heli Pads</English>
 			<German>Helipads</German>
 			<Russian>Вертолётные площадки</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
 			<English>Trade %1 %2 for %3 %4</English>
 			<German>%1 %2 für %3 %4 handeln</German>
@@ -33445,37 +33517,45 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_POINT_AUTO">
 			<English>Auto</English>
+			<Russian>Автоматически</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_DISABLED">
 			<English>Disabled</English>
 			<German>Deaktiviert</German>
-			<Russian>Деактивировано</Russian>			
+			<Russian>Деактивировано</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_SNAPPING">
 			<English>Snapping</English>
+			<Russian>Привязка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_DISTANCE">
 			<English>Distance from plot</English>
 			<German>Distanz zur Grundstückmarkierung</German>
+			<Russian>Расстояние от столба</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_RADIUS">
 			<English>Radius</English>
+			<Russian>Радиус</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_PITCH">
 			<English>Pitch</English>
 			<German>Vorneigen </German>
+			<Russian>Подъём</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_BANK">
 			<English>Bank</English>
 			<German>Zurückneigen</German>
+			<Russian>Вращение</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_ROTATE">
 			<English>Rotate</English>
 			<German>Rotieren</German>
+			<Russian>Наклон</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_DEGREES">
 			<English>Degrees</English>
 			<German>Grad</German>
+			<Russian>Градусы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_KEY_TAB">
 			<English>Tab</English>
@@ -33501,6 +33581,7 @@
 		<Key ID="STR_EPOCH_TUT_KEY_ARROWS">
 			<English>Arrow Keys</English>
 			<German>Pfeiltasten</German>
+			<Russian>Стрелки</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_KEY_ESC">
 			<English>Esc</English>
@@ -33512,33 +33593,37 @@
 		<Key ID="STR_EPOCH_TUT_KEY_SPACEBAR">
 			<English>Space Bar</English>
 			<German>Leertaste</German>
+			<Russian>Пробел</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_SNAP_NEXT_PREV">
 			<English>Snap Next / Prev Object</English>
 			<German>Snap Nächstes / Vorheriges Objekt</German>
+			<Russian>Привязать След./Пред. объект</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_HEIGHT1">
 			<English>Adjust height by 1cm</English>
 			<German>Passt die Höhe des Objektes um 1cm an.</German>
-			<Russian>Настройка высоты (1 см).</Russian>
+			<Russian>Настройка высоты (1 см)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_HEIGHT10">
 			<English>Adjust height by 10cm</English>
 			<German>Passt die Höhe des Objektes um 10cm an.</German>
-			<Russian>Настройка высоты (10 см).</Russian>			
+			<Russian>Настройка высоты (10 см)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_HEIGHT100">
 			<English>Adjust height by 1m</English>
 			<German>Passt die Höhe des Objektes um 1m an.</German>
-			<Russian>Настройка высоты (100 см).</Russian>			
+			<Russian>Настройка высоты (100 см)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_ADJ_DEGREES">
 			<English>Adjust Degrees</English>
 			<German>Grad anpassen</German>
+			<Russian>Настройка углов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_LOCAL">
 			<English>Local Mode</English>
 			<German>Lokaler Modus</German>
+			<Russian>Локальный режим</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_LOCAL_ON">
 			<English>ON</English>
@@ -33548,44 +33633,50 @@
 		<Key ID="STR_EPOCH_TUT_LOCAL_OFF">
 			<English>OFF</English>
 			<German>AUS</German>
-			<Russian>ВЫКЛ</Russian>			
+			<Russian>ВЫКЛ</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_TERRAIN">
 			<English>Terrain Align</English>
 			<German>Bodenausrichtung</German>
+			<Russian>Выровнить по поверхности</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_BOUNDARY">
 			<English>Plot Boundary</English>
 			<German>Grundstücksgrenze</German>
+			<Russian>Границы столба</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_RELEASE_HOLD">
 			<English>Release / Hold</English>
 			<German>Objekt feststellen / aufnehmen</German>
-			<Russian>Бросить / Поднять.</Russian>
+			<Russian>Отпустить / Удерживать</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_HIDE_PANEL">
 			<English>Hide Panel</English>
 			<German>Snap-Info ausschalten</German>
+			<Russian>Скрыть панель</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_CANCEL">
 			<English>Cancel</English>
 			<German>Abbrechen</German>
+			<Russian>Отменить</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_RESET">
 			<English>Reset</English>
 			<German>Zurücksetzen</German>
+			<Russian>Сбросить</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_BUILD">
 			<English>Build</English>
 			<German>Bauen</German>
+			<Russian>Построить</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_ADJ_DEGREES_KEYS">
 			<English>-=</English>
 			<German>ß´</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_BUILD_UI_SNAP">
 			<English>Snap</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_ON">
 			<English>ON</English>
 			<German>AN</German>
@@ -33649,58 +33740,72 @@
 		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_CENTER">
 			<English>Back Center</English>
 			<German>Hinten Mitte</German>
+			<Russian>Задняя в центре</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_LEFT">
 			<English>Back Left</English>
 			<German>Hinten Links</German>
+			<Russian>Задняя левая</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_RIGHT">
 			<English>Back Right</English>
 			<German>Hinten Rechts</German>
+			<Russian>Задняя правая</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_TOP">
 			<English>Back Top</English>
 			<German>Hinten Oben</German>
+			<Russian>Задняя верхняя</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_TOP">
 			<English>Front Top</English>
 			<German>Vorne Oben</German>
-		</Key>		
+			<Russian>Передняя верхняя</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_CENTER">
 			<English>Front Center</English>
 			<German>Vorne Mitte</German>
+			<Russian>Передняя в центре</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_LEFT">
 			<English>Front Left</English>
 			<German>Vorne Links</German>
+			<Russian>Передняя левая</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_RIGHT">
 			<English>Front Right</English>
 			<German>Vorne Rechts</German>
+			<Russian>Передняя правая</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_CENTER">
 			<English>Left Center</English>
 			<German>Linke Mitte</German>
+			<Russian>Левая в центре</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_BACK">
 			<English>Left Back</English>
 			<German>Links Hinten</German>
+			<Russian>Левая задняя</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_FRONT">
 			<English>Left Front</English>
 			<German>Links Vorne</German>
+			<Russian>Левая передняя</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_CENTER">
 			<English>Right Center</English>
 			<German>Rechte Mitte</German>
+			<Russian>Правая в центре</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_BACK">
 			<English>Right Back</English>
 			<German>Rechts Hinten</German>
+			<Russian>Правая задняя</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_FRONT">
 			<English>Right Front</English>
 			<German>Rechts Vorne</German>
+			<Russian>Правая передняя</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_VECTORS">
 			<English>Vectors:</English>
@@ -33746,7 +33851,7 @@
 			<English>DEGREES:</English>
 			<German>Grad:</German>
 			<Russian>УГЛЫ:</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_UI_STATUS_VANILLA">
 			<English>Vanilla</English>
 			<Russian>Обычный</Russian>
@@ -33833,7 +33938,7 @@
 			<English>Craft Sheet Metal</English>
 			<German>Metallplatte herstellen</German>
 			<Russian>Создать: Лист металла</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_CRAFTING_NEEDED_ITEMS">
 			<English>Needed items:</English>
 			<German>Benötigte Gegenstände:</German>
@@ -34598,7 +34703,7 @@
 			<English>A blood bag filled with blood from a mutant.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Mutanten.</German>
 			<Russian>Пакет, наполненный кровью мутанта.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_RABBIT">
 			<English>Rabbit Blood</English>
 			<German>Hasenblut</German>
@@ -35234,23 +35339,28 @@
 		<Key ID="STR_EPOCH_COMPOST_BARREL_EMTPY">
 			<English>Compost Barrel (Empty)</English>
 			<German>Kompostfass (Leer)</German>
+			<Russian>Бочка для удобрений (Пустая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COMPOST_BARREL_EMTPY_DESC">
 			<English>Compost Barrel (Empty)</English>
 			<German>Kompostfass (Leer)</German>
-		</Key>		
+			<Russian>Пустая бочка для удобрений.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_COMPOST_BARREL_FULL">
 			<English>Compost Barrel (Full)</English>
 			<German>Kompostfass (Voll)</German>
+			<Russian>Бочка с удобрениями (Полная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COMPOST_BARREL_FULL_DESC">
 			<English>Compost Barrel (Full)</English>
 			<German>Kompostfass (Voll)</German>
-		</Key>	
+			<Russian>Бочка наполненная удобрениями.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_BUILD_COMPOST_BARREL">
 			<English>Build Compost Barrel</English>
 			<German>Kompostfass bauen</German>
-		</Key>		
+			<Russian>Установить бочку</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN">
 			<English>Pumpkin patch</English>
 			<German>Kürbisbeet</German>
@@ -35259,8 +35369,8 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN_DESC">
 			<English>Pumpkin patch</English>
 			<German>Kürbisbeet</German>
-			<Russian>Тыквенный участок</Russian>
-		</Key>		
+			<Russian>Тыквенный участок.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER">
 			<English>Sunflower patch</English>
 			<German>Sonnenblumenbeet</German>
@@ -35269,8 +35379,8 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER_DESC">
 			<English>Sunflower patch</English>
 			<German>Sonnenblumenbeet</German>
-			<Russian>Подсолнуховый участок</Russian>
-		</Key>		
+			<Russian>Подсолнуховый участок.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT">
 			<English>Carrot patch</English>
 			<German>Karottenbeet</German>
@@ -35279,8 +35389,8 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT_DESC">
 			<English>Carrot patch</English>
 			<German>Karottenbeet</German>
-			<Russian>Морковный участок</Russian>
-		</Key>		
+			<Russian>Морковный участок.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO">
 			<English>Potato patch</English>
 			<German>Kartoffelbeet</German>
@@ -35289,8 +35399,8 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO_DESC">
 			<English>Potato patch</English>
 			<German>Kartoffelbeet</German>
-			<Russian>Картофельный участок</Russian>
-		</Key>		
+			<Russian>Картофельный участок.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP">
 			<English>Hemp plant patch</English>
 			<German>Hanfpflanzenbeet</German>
@@ -35299,8 +35409,8 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP_DESC">
 			<English>Hemp plant patch</English>
 			<German>Hanfpflanzenbeet</German>
-			<Russian>Конопляный участок</Russian>
-		</Key>		
+			<Russian>Конопляный участок.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO">
 			<English>Tobacco plant patch</English>
 			<German>Tabakpflanzenbeet</German>
@@ -35309,8 +35419,8 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO_DESC">
 			<English>Tobacco plant patch</English>
 			<German>Tabakpflanzenbeet</German>
-			<Russian>Табачный участок</Russian>
-		</Key>		
+			<Russian>Табачный участок.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA">
 			<English>Tea plant patch</English>
 			<German>Teepflanzenbeet</German>
@@ -35319,60 +35429,73 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA_DESC">
 			<English>Tea plant patch</English>
 			<German>Teepflanzenbeet</German>
-			<Russian>Чайный участок</Russian>
-		</Key>		
+			<Russian>Чайный участок.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_GARLIC">
 			<English>Garlic patch</English>
 			<German>Knoblauchbeet</German>
+			<Russian>Чесночный участок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_GARLIC_DESC">
 			<English>Garlic patch</English>
 			<German>Knoblauchbeet</German>
-		</Key>		
+			<Russian>Чесночный участок.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_COMFREY">
 			<English>Comfrey patch</English>
 			<German>Beinwellbeet</German>
+			<Russian>Участок Окопника</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_COMFREY_DESC">
 			<English>Comfrey patch</English>
 			<German>Beinwellbeet</German>
-		</Key>		
+			<Russian>Участок с окопником.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PUMPKIN">
 			<English>Pumpkin Plant</English>
 			<German>Kürbispflanze</German>
+			<Russian>Растение тыквы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_SUNFLOWER">
 			<English>Sunflower</English>
 			<German>Sonnenblume</German>
+			<Russian>Растение подсолнуха</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_POTATO">
 			<English>Potato Plant</English>
 			<German>Kartoffelpflanze</German>
-		</Key>	
+			<Russian>Растение картофеля</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_CARROT">
 			<English>Carrot Plant</English>
 			<German>Karottenpflanze</German>
+			<Russian>Растение моркови</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_HEMP">
 			<English>Hemp Plant</English>
 			<German>Cannabispflanze</German>
-		</Key>	
+			<Russian>Растение конопли</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_TEA">
 			<English>Tea Plant</English>
 			<German>Teepflanze</German>
+			<Russian>Растение чая</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_TOBACCO">
 			<English>Tobacco Plant</English>
 			<German>Tabakpflanze</German>
-		</Key>	
+			<Russian>Растение табака</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_GARLIC">
 			<English>Garlic Plant</English>
 			<German>Knoblauchpflanze</German>
-		</Key>	
+			<Russian>Растение чеснока</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_COMFREY">
 			<English>Comfrey Plant</English>
 			<German>Beinwellpflanze</German>
-		</Key>		
+			<Russian>Растение окопника</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_ITEM_NOTEBOOK">
 			<English>Notebook</English>
 			<Russian>Ноутбук</Russian>
@@ -35537,30 +35660,37 @@
 		<Key ID="STR_EPOCH_DESC_METAL_BUCKET">
 			<English>An empty bucket</English>
 			<German>Ein leerer Eimer</German>
+			<Russian>Просто пустое ведро.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METAL_BUCKET_WATER">
 			<English>Bucket (Water)</English>
 			<German>Eimer (Wasser)</German>
+			<Russian>Ведро (Вода)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_METAL_BUCKET_WATER">
 			<English>A bucket containing water</English>
 			<German>Ein Eimer Wasser</German>
+			<Russian>Ведро с водой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METAL_BUCKET_FUEL">
 			<English>Bucket (Fuel)</English>
 			<German>Eimer (Treibstoff)</German>
+			<Russian>Ведро (Топливо)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_METAL_BUCKET_FUEL">
 			<English>A bucket containing fuel</English>
 			<German>Ein Eimer Treibstoff</German>
+			<Russian>Ведро с топливом.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METAL_BUCKET_MILK">
 			<English>Bucket (Milk)</English>
 			<German>Eimer (Milch)</German>
+			<Russian>Ведро (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_METAL_BUCKET_MILK">
 			<English>A bucket containing milk</English>
 			<German>Ein Eimer Milch</German>
+			<Russian>Ведро с молоком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS">
 			<English>Suitcase with Diamonds</English>
@@ -35692,12 +35822,12 @@
 			<German>Eine Kiste mit Keramikteile.</German>
 			<Russian>Ящик с керамическими частями.</Russian>
 		</Key>
-		
+
 		<Key ID="STR_EPOCH_WEAPON_PARTS_PISTOL">
 			<English>Gun parts (Pistol)</English>
 			<German>Waffenteile (Pistole)</German>
 			<Russian>Части пистолета</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_PISTOL_DESC">
 			<English>A pile of pistol gun parts.</English>
 			<German>Ein Haufen Waffenteile einer Pistole.</German>
@@ -35707,17 +35837,17 @@
 			<English>Gun parts (SMG)</English>
 			<German>Waffenteile (SMG)</German>
 			<Russian>Части пистолета-пулемёта</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SMG_DESC">
 			<English>A pile of smg gun parts.</English>
 			<German>Ein Haufen Waffenteile einer Maschinenpistole.</German>
 			<Russian>Кучка деталей для пистолета-пулемёта.</Russian>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SHOTGUN">
 			<English>Gun parts (Shotgun)</English>
 			<German>Waffenteile (Schrotflinte)</German>
 			<Russian>Части дробовика</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SHOTGUN_DESC">
 			<English>A pile of shotgun gun parts.</English>
 			<German>Ein Haufen Waffenteile einer Schrotflinte.</German>
@@ -35727,17 +35857,17 @@
 			<English>Gun parts (Rifle)</English>
 			<German>Waffenteile (Gewehr)</German>
 			<Russian>Части винтовки</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_RIFLE_DESC">
 			<English>A pile of rifle gun parts.</English>
 			<German>Ein Haufen Waffenteile eines Gewehrs.</German>
 			<Russian>Кучка деталей для винтовки.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SNIPERRIFLE">
 			<English>Gun parts (Sniper Rifle)</English>
 			<German>Waffenteile (Scharfschützengewehr)</German>
 			<Russian>Части снайперской винтовки</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SNIPERRIFLE_DESC">
 			<English>A pile of sniper rifle gun parts.</English>
 			<German>Ein Haufen Waffenteile eines Scharfschützengewehrs.</German>
@@ -35747,7 +35877,7 @@
 			<English>Gun parts (MG)</English>
 			<German>Waffenteile (MG)</German>
 			<Russian>Части пулемёта</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_MG_DESC">
 			<English>A pile of mg gun parts.</English>
 			<German>Ein Haufen Waffenteile eines Maschinengewehrs.</German>
@@ -35757,17 +35887,17 @@
 			<English>Gun parts (Unknown)</English>
 			<German>Waffenteile (Unbekannt)</German>
 			<Russian>Части неизвестного оружия</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_UNKNOWN_DESC">
 			<English>A pile of unknown gun parts in a good condition.</English>
 			<German>Ein Haufen unbekannter Waffenteile, in einem guten Zustand.</German>
 			<Russian>Кучка деталей для какого-то оружия в хорошем состоянии.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_BAD">
 			<English>Gun parts (Bad)</English>
 			<German>Waffenteile (Schlecht)</German>
 			<Russian>Части оружия (испорчены)</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_BAD_DESC">
 			<English>A pile of old gun parts in a bad condition.</English>
 			<German>Ein Haufen alter Waffenteile in einem schlechten Zustand.</German>
@@ -35777,17 +35907,17 @@
 			<English>Gun parts (Average)</English>
 			<German>Waffenteile (Normal)</German>
 			<Russian>Части оружия (средние)</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_NORMAL_DESC">
 			<English>A pile of gun parts in an average condition.</English>
 			<German>Ein Haufen Waffenteile in einem durchschnittlichen Zustand.</German>
 			<Russian>Кучка деталей оружия в среднем состоянии.</Russian>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_GOOD">
 			<English>Gun parts (Good)</English>
 			<German>Waffenteile (Gut)</German>
 			<Russian>Части оружия (хорошие)</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_GOOD_DESC">
 			<English>A pile of gun parts in a good condition.</English>
 			<German>Ein Haufen Waffenteile, in einem guten Zustand.</German>
@@ -35797,7 +35927,7 @@
 			<English>Gun parts (Excellent)</English>
 			<German>Waffenteile (Exzellent)</German>
 			<Russian>Части оружия (отличные)</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_EXCELLENT_DESC">
 			<English>A pile of gun parts in an excellent condition.</English>
 			<German>Ein Haufen Waffenteile, in einem exzellenten Zustand.</German>
@@ -35862,7 +35992,7 @@
 			<English>A bag that is used to increase the volume of a backpack.</English>
 			<German>Eine Tasche, die dazu verwendet wird, das Volumen eines Rucksacks zu vergrössern.</German>
 			<Russian>Сумка, которая используется для увеличения объёма рюкзака.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN">
 			<English>Slugs in a can</English>
 			<Russian>Пули в банке</Russian>
@@ -35966,35 +36096,43 @@
 		<Key ID="STR_EPOCH_PLAYER_COLLISION_01">
 			<English>You let go of the %1.</English>
 			<German>Du hast dich zu schnell bewegt!</German>
+			<Russian>Вы отпустили %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_01">
 			<English>%1 cannot be placed %2.</English>
 			<German>%1 kann nicht %2 platziert werden.</German>
+			<Russian>Нельзя разместить %1 %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_02">
 			<English>below ground</English>
 			<German>unter der Erde</German>
+			<Russian>ниже уровня земли</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_03">
 			<English>below sea level</English>
 			<German>unter Wasser</German>
+			<Russian>ниже уровня воды</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_WATER">
 			<English>You are not allowed to build over sea water.</English>
 			<German>Du kannst nicht auf dem Wasser bauen!</German>
+			<Russian>Строительство над водой запрещено!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BEWARE_RISING_TIDE">
 			<English>&lt;br/&gt;** Beware! This location may be flooded during high tide. **</English>
 			<German>&lt;br/&gt;** Vorsicht! Diese Position kann bei Flut unter Wasser stehen. **</German>
-		</Key>	
+			<Russian>&lt;br/&gt;** Внимание! Это место может быть затоплено во время прилива. **</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_RES_ZONE">
 			<English>You cannot build within %1m of %2.&lt;br/&gt;Current distance: %3 meters.</English>
 			<German>Du kannst nicht innerhalb von %1m zu %2.&lt;br/&gt;Derzeitige Distanz: %3 Meter.</German>
+			<Russian>Нельзя строить вблизи %1 м от %2.&lt;br/&gt;Текущая дистанция: %3 м.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_RES_BUILDING">
 			<English>You cannot build within %1m of a %2.</English>
 			<German>Du kannst nicht innerhalb von %1m zu %2 bauen.</German>
-		</Key>	
+			<Russian>Нельзя строить вблизи %1 м от %2.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF">
 			<English>Craft Heavy Bag Fence</English>
 			<German>Schweren Sandsackzaun herstellen</German>
@@ -36116,18 +36254,22 @@
 		<Key ID="STR_ACTION_CRAFT_FORT_WIRE">
 			<English>Craft Fortified Razor Wire</English>
 			<German>Befestigten Stacheldraht herstellen</German>
+			<Russian>Создать: Проволочное заграждение</Russian>
 		</Key>
 		<Key ID="STR_ACTION_BUILD_FORT_WIRE">
 			<English>Build Fortified Razor Wire</English>
 			<German>Befestigten Stacheldraht bauen</German>
+			<Russian>Установить: Проволочное заграждение</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_FORT_WIRE">
 			<English>Wire Fencing (Fortified)</English>
 			<German>Stacheldraht (Befestigt)</German>
+			<Russian>Проволочное заграждение</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_FORT_WIRE">
 			<English>Tank traps combined with razor wire to form military obstacles.</English>
 			<German>Panzerfallen kombiniert mit Stacheldraht.</German>
+			<Russian>Заграждение из колючей проволоки и противотанкового ежа.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_SIMPLE_FOOTBRIDGE">
 			<English>Craft Simple Footbridge</English>
@@ -36264,49 +36406,57 @@
 		<Key ID="STR_EPOCH_ACTION_CRAFT_WINDBREAK">
 			<English>Craft Windbreak</English>
 			<German>Windbrecher herstellen</German>
+			<Russian>Создать: Ветрозащита</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_WINDBREAK">
 			<English>Build Windbreak</English>
 			<German>Windbrecher bauen</German>
+			<Russian>Установить: Ветрозащита</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WINDBREAK">
 			<English>Windbreak</English>
 			<German>Windschutz</German>
+			<Russian>Ветрозащита</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WINDBREAK">
 			<English>Windbreaks reduce wind speeds over areas such as open fields, industrial stockpiles, and dusty industrial operations.</English>
 			<German>Ein Windschutz verringert die Windwirkung in Gebieten wie offene Felder, Industriehalden und staubigen Industriebetrieben.</German>
+			<Russian>Ветрозащитные полосы снижают скорость ветра в таких областях, как открытые поля, промышленные склады и пыльные промышленные предприятия.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_BARBED_GATE">
 			<English>Craft Barbed Gate</English>
 			<German>Stacheldrahttor herstellen</German>
+			<Russian>Создать: Ворота из колючки</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_BARBED_GATE">
 			<English>Build Barbed Gate</English>
 			<German>Stacheldrahttor bauen</German>
+			<Russian>Установить: Ворота из колючки</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_BARBED_GATE">
 			<English>Barbed Gate</English>
 			<German>Stacheldrahttor</German>
+			<Russian>Ворота из колючей проволоки</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BARBED_GATE">
 			<English>A barbed metal gate to allow the passage of persons, vehicles and farm implements.</English>
 			<German>Ein Stacheldrahttor zum Befestigen von Stellungen.</German>
+			<Russian>Ворота из колючей проволоки.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A">
 			<English>Craft Metal Container (Red)</English>
 			<German>Metallcontainer (Red) herstellen</German>
-			<Russian>Создать контейнер (Красный)</Russian>
+			<Russian>Создать: Контейнер (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1A">
 			<English>Build Metal Container (Red)</English>
 			<German>Metallcontainer (Red) bauen</German>
-			<Russian>Построить контейнер (Красный)</Russian>
+			<Russian>Установить: Контейнер (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_1A">
 			<English>Metal Container (Red)</English>
 			<German>Metallcontainer (Red)</German>
-			<Russian>Металлический контейнер (Красный)</Russian>
+			<Russian>Металл. контейнер (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_1A">
 			<English>A metal container with strength suitable to withstand shipment, storage, and handling.</English>
@@ -36316,17 +36466,17 @@
 		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1B">
 			<English>Craft Metal Container (Green)</English>
 			<German>Metallcontainer (Grün) herstellen</German>
-			<Russian>Создать контейнер (Зелёный)</Russian>
+			<Russian>Создать: Контейнер (Зелёный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1B">
 			<English>Build Metal Container (Green)</English>
 			<German>Metallcontainer (Grün) bauen</German>
-			<Russian>Построить контейнер (Зелёный)</Russian>
+			<Russian>Установить: Контейнер (Зелёный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_1B">
 			<English>Metal Container (Green)</English>
 			<German>Metallcontainer (Grün)</German>
-			<Russian>Металлический контейнер (Зелёный)</Russian>
+			<Russian>Металл. контейнер (Зелёный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_1B">
 			<English>A metal container with strength suitable to withstand shipment, storage, and handling.</English>
@@ -36336,17 +36486,17 @@
 		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1G">
 			<English>Craft Metal Container (White)</English>
 			<German>Metallcontainer (Weiß) herstellen</German>
-			<Russian>Создать контейнер (Белый)</Russian>
+			<Russian>Создать: Контейнер (Белый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1G">
 			<English>Build Metal Container (White)</English>
 			<German>Metallcontainer (Weiß) bauen</German>
-			<Russian>Построить контейнер (Белый)</Russian>
+			<Russian>Установить: Контейнер (Белый)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_1G">
 			<English>Metal Container (White)</English>
 			<German>Metallcontainer (Weiß)</German>
-			<Russian>Металлический контейнер (Белый)</Russian>
+			<Russian>Металл. контейнер (Белый)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_1G">
 			<English>A metal container with strength suitable to withstand shipment, storage, and handling.</English>
@@ -36356,17 +36506,17 @@
 		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_2D">
 			<English>Craft Metal Container 2x (Red)</English>
 			<German>Metallcontainer 2x (Rot) herstellen</German>
-			<Russian>Создать контейнер 2x (Красный)</Russian>
+			<Russian>Создать: Контейнер 2x (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_2D">
 			<English>Build Metal Container 2x (Red)</English>
 			<German>Metallcontainer 2x (Rot) bauen</German>
-			<Russian>Построить контейнер 2x (Красный)</Russian>
+			<Russian>Установить: Контейнер 2x (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_2D">
 			<English>Metal Container 2x (Red)</English>
 			<German>Metallcontainer 2x (Rot)</German>
-			<Russian>Металлический контейнер 2x (Красный)</Russian>
+			<Russian>Металл. контейнер 2x (Красный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_2D">
 			<English>Stacked metal containers with strength suitable to withstand shipment, storage, and handling.</English>
@@ -36377,116 +36527,144 @@
 		<Key ID="STR_EQUIP_NAME_RABBIT_HUTCH">
 			<English>Rabbit Hutch</English>
 			<German>Kaninchenkäfig</German>
+			<Russian>Крольчатник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_RABBIT_HUTCH">
 			<English>A bigger hutch with enough room for many rabbits.</English>
 			<German>Ein größerer Käfig mit genug Platz für viele Hasen.</German>
+			<Russian>Большой крольчатник, в котором достаточно места для нескольких кроликов.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CHICKEN_COOP">
 			<English>Chicken Coop</English>
 			<German>Hühnerstall</German>
+			<Russian>Курятник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CHICKEN_COOP">
 			<English>A small coop with room for only a few chickens.</English>
 			<German>Ein kleiner Stall mit gerade so genug Platz für ein paar Hühner.</German>
-		</Key>	
+			<Russian>Небольшой курятник с местом для нескольких цыплят.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_DOG_HOUSE">
 			<English>Dog House</English>
 			<German>Hundehütte</German>
+			<Russian>Собачья конура</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_DOG_HOUSE">
 			<English>A small dog house.</English>
 			<German>Eine kleine Hundehütte.</German>
-		</Key>	
+			<Russian>Небольшая собачья конура.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_POSTBOX">
 			<English>Postbox</English>
 			<German>Briefkasten</German>
+			<Russian>Почтовый ящик</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_POSTBOX">
 			<English>A small postbox.</English>
 			<German>Ein kleiner Briefkasten.</German>
-		</Key>		
+			<Russian>Небольшой почтовый ящик.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_BOGGLE">
 			<English>Boggle</English>
 			<German>Vogelscheuche</German>
+			<Russian>Пугало</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BOGGLE">
 			<English>A boggle to protect the fields against birds.</English>
 			<German>Eine Vogelscheuche, um Felder vor Vögeln zu schützen.</German>
+			<Russian>Пугало для защиты полей от птиц.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_SATELLITE_DISH">
 			<English>Satellite Dish</English>
 			<German>Satellitenschüssel</German>
+			<Russian>Спутниковая тарелка</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SATELLITE_DISH">
 			<English>A satellite dish to receive signals.</English>
 			<German>Eine Satellitenschüssel zum Empfang von Signalen.</German>
-		</Key>	
+			<Russian>Спутниковая тарелка для приёма сигналов.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_FUELTANK_BIG">
 			<English>Fuel Tank</English>
 			<German>Treibstofftank</German>
+			<Russian>Цистерна для топлива</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_FUELTANK_BIG">
 			<English>A big fuel tank which can hold a lot of fuel.</English>
 			<German>Ein großer Treibstofftank, in welchem viel Treibstoff gelagert werden kann.</German>
+			<Russian>Большая цистерна, которая может вместить много топлива.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WATERTANK">
 			<English>Water Tank</English>
 			<German>Wassertank</German>
+			<Russian>Цистерна для воды</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WATERTANK">
 			<English>A big water tank which can hold a lot of water.</English>
 			<German>Ein großer Wassertank, in welchem viel Wasser gelagert werden kann.</German>
+			<Russian>Большая цистерна, которая может вместить много воды.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WATERTOWER">
 			<English>Water Tower</English>
 			<German>Wasserturm</German>
+			<Russian>Водонапорная башня</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WATERTOWER">
 			<English>A big water tower which can hold a lot of water.</English>
 			<German>Ein großer Wasserturm, in welchem viel Wasser gelagert werden kann.</German>
+			<Russian>Большая водонапорная башня, которая может вместить много воды.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WILD_BEE_HIVE">
 			<English>Wild Bee Hive</English>
 			<German>Wildbienenstock</German>
+			<Russian>Поленница</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WILD_BEE_HIVE">
 			<English>Many stacked wooden logs which can be a home for wild bees.</English>
 			<German>Viele aufgestapelte Holzscheite, welche ein Zuhause für Wildbienen sein sollen.</German>
-		</Key>			
+			<Russian>Множество сложенных деревянных поленьев, которые могут быть домом для диких пчёл.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_COW_STABLE">
 			<English>Cow Stable</English>
 			<German>Kuhstall</German>
+			<Russian>Коровник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_COW_STABLE">
 			<English>A small stable which can hold a cow.</English>
 			<German>Ein kleiner Stall, in welchem eine Kuh gehalten werden kann.</German>
+			<Russian>Небольшой сарай, в котором может поместиться корова.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_GOAT_STABLE">
 			<English>Goat Stable</English>
 			<German>Ziegenstall</German>
+			<Russian>Козлятник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_GOAT_STABLE">
 			<English>A small stable which can hold a goat.</English>
 			<German>Ein kleiner Stall, in welchem eine Ziege gehalten werden kann.</German>
+			<Russian>Небольшой сарай, в котором может поместиться коза.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_SHEEP_STABLE">
 			<English>Sheep Stable</English>
 			<German>Schafstall</German>
+			<Russian>Овчарня</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SHEEP_STABLE">
 			<English>A small stable which can hold a sheep.</English>
 			<German>Ein kleiner Stall, in welchem ein Schaf gehalten werden kann.</German>
+			<Russian>Небольшой сарай, в котором может поместиться овца.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_BOAR_STABLE">
 			<English>Boar Stable</English>
 			<German>Wildschweinstall</German>
+			<Russian>Свинарник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_BOAR_STABLE">
 			<English>A small stable which can hold a boar.</English>
 			<German>Ein kleiner Stall, in welchem ein Wildschwein gehalten werden kann.</German>
-		</Key>		
-		
+			<Russian>Небольшой сарай, в котором может поместиться кабан.</Russian>
+		</Key>
+
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
@@ -38080,7 +38258,7 @@
 			<German>%1 aufbrechen </German>
 		</Key>
 	</Package>
-	
+
 	<Package name="Mission and Events Markers">
 		<Key ID="STR_CL_HEMP_FARM">
 			<English>Hemp Farm</English>
@@ -38278,13 +38456,13 @@
 			<German>Wuhan Labor</German>
 		</Key>
 	</Package>
-	
+
 	<Package name="WickedAI_new">
 		<Key ID="STR_CL_MISSION_ANNOUNCE">
 			<English>Mission Announcement</English>
 			<German>Missionsankündigung</German>
 			<French>Annonce de Mission</French>
-			<Russian>Оповещение миссии</Russian>
+			<Russian>Миссия:</Russian>
 			<Spanish>Anuncio de Misión</Spanish>
 		</Key>
 		<Key ID="STR_CL_MINEFIELD_WARNING">
@@ -39440,7 +39618,7 @@
 			<English>Dr. Fauci is still lying about the virus origins.</English>
 			<German>Dr. Fauci erzählt noch immer Lügen über die Herkunft des Virus.</German>
 		</Key>
-	</Package>	
+	</Package>
 
 	<Package name="WickedAI_old">
 		<Key ID="STR_CL_GENERAL_ARMYBASE_ANNOUNCE">
