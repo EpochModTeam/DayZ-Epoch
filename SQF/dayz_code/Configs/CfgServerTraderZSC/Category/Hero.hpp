@@ -196,6 +196,8 @@ class Category_2 {
 	class T810A_PKT_ACR_DZ {type = "trade_any_vehicle";buy[] = {-1,"worth"};sell[] = {5000,"worth"};};
 	class T810A_PKT_DES_ACR_DZE {type = "trade_any_vehicle";buy[] = {10000,"worth"};sell[] = {5000,"worth"};};
 	class T810A_PKT_DES_ACR_DZ {type = "trade_any_vehicle";buy[] = {-1,"worth"};sell[] = {5000,"worth"};};
+	class T810A_PKT_WINTER_DZE {type = "trade_any_vehicle";buy[] = {10000,"worth"};sell[] = {5000,"worth"};};
+	class T810A_PKT_WINTER_DZ {type = "trade_any_vehicle";buy[] = {-1,"worth"};sell[] = {5000,"worth"};};	
 	class BMP2_Ambul_CDF_DZE {type = "trade_any_vehicle";buy[] = {30000,"worth"};sell[] = {15000,"worth"};};
 	class BMP2_Ambul_INS_DZE {type = "trade_any_vehicle";buy[] = {30000,"worth"};sell[] = {15000,"worth"};};
 	class BMP2_Ambul_Winter_DZE {type = "trade_any_vehicle";buy[] = {30000,"worth"};sell[] = {15000,"worth"};};

@@ -10246,6 +10246,26 @@
 			<German>Tatra PKT (Wüstentarn)++++</German>
 			<Russian>Tatra ПКТ (Пустыня)++++</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WINTER">
+			<English>Tatra PKT (Winter)</English>
+			<Russian>Tatra ПКТ (Зима)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WINTER+">
+			<English>Tatra PKT (Winter)+</English>
+			<Russian>Tatra ПКТ (Зима)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WINTER++">
+			<English>Tatra PKT (Winter)++</English>
+			<Russian>Tatra ПКТ (Зима)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WINTER+++">
+			<English>Tatra PKT (Winter)+++</English>
+			<Russian>Tatra ПКТ (Зима)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WINTER++++">
+			<English>Tatra PKT (Winter)++++</English>
+			<Russian>Tatra ПКТ (Зима)++++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL">
 			<English>Tatra Fuel (Woodland)</English>
 			<German>Tatra Treibstoff (Waldtarn)</German>

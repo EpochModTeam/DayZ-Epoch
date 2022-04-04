@@ -543,6 +543,117 @@ class T810A_PKT_DES_ACR_DZE4: T810A_PKT_DES_ACR_DZE3 {
 	fuelCapacity = 615;	
 };
 
+class T810A_PKT_WINTER_DZ: T810A_PKT_ACR_DZ
+{
+	scope = 2;
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WINTER";
+
+	hiddenSelections[] = {"camo1","camo2","camo3"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\t810\cabin_wintercamo.paa","\dayz_epoch_c\skins\t810\bed_wintercamo.paa","ca\wheeled_acr\t810\data\undercarriage_co.paa"};
+
+};
+
+class T810A_PKT_WINTER_DZE: T810A_PKT_WINTER_DZ
+{
+	class Turrets: Turrets
+	{
+		class MainTurret;
+		class PKBTurret: MainTurret
+		{
+			startEngine = 0;
+			hasGunner = 1;
+			memoryPointGunnerOptics = "eye";
+			gunnerOpticsModel = "\ca\Weapons\optika_empty";
+			gunnerForceOptics = 0;
+			gunnerOpticsShowCursor = 0;
+			viewGunnerInExternal = 1;
+			selectionFireAnim = "zasleh";
+			gunnerAction = "T810gunner";
+			gunnerInAction = "T810gunner";
+			gunnerName = "PKB Gunner";
+			getInAction = "GetInMedium";
+			getOutAction = "GetOutMedium";
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+			discreteDistanceInitIndex = 2;			
+			turretInfoType = "RscWeaponZeroing";
+			weapons[] = {"PKTBC"};
+			magazines[] = {};
+			gunBeg = "usti hlavne";
+			gunEnd = "konec hlavne";
+			animationSourceBody = "OtocVez";
+			animationSourceGun = "OtocHlaven";
+			memoryPointGun = "usti hlavne";
+			body = "OtocVez";
+			gun = "OtocHlaven";
+			gunAxis = "osa_hlavne";
+			turretAxis = "osa_veze";
+			minElev = -15;
+			maxElev = 35;
+			initElev = 0;
+			minTurn = -360;
+			maxTurn = 360;
+			initTurn = 0;
+			soundServo[] = {"\ca\sounds\vehicles\servos\turret-1",0.1,1,15};
+			outGunnerMayFire = 1;
+			inGunnerMayFire = 1;
+			castGunnerShadow = 1;
+			class ViewGunner
+			{
+				initAngleX = 7;
+				minAngleX = -30;
+				maxAngleX = 30;
+				initAngleY = 0;
+				minAngleY = -60;
+				maxAngleY = 60;
+				initFov = 0.8;
+				minFov = 0.5;
+				maxFov = 0.7;
+			};
+		};
+	};
+	class Upgrades {
+		ItemTruckORP[] = {"T810A_PKT_WINTER_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_PKT_WINTER_DZE1: T810A_PKT_WINTER_DZE {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WINTER+";
+	original = "T810A_PKT_WINTER_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 6.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810A_PKT_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class T810A_PKT_WINTER_DZE2: T810A_PKT_WINTER_DZE1 {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WINTER++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810A_PKT_WINTER_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_PKT_WINTER_DZE3: T810A_PKT_WINTER_DZE2 {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WINTER+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810A_PKT_WINTER_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class T810A_PKT_WINTER_DZE4: T810A_PKT_WINTER_DZE3 {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WINTER++++";
+	fuelCapacity = 615;	
+};
+
 class T810A_ACR_DZE: T810_DZE_Base_ACR
 {
 	scope = 2;

@@ -196,6 +196,8 @@ class Category_7 {
 	class T810A_PKT_ACR_DZ {type = "trade_any_vehicle";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
 	class T810A_PKT_DES_ACR_DZE {type = "trade_any_vehicle";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
 	class T810A_PKT_DES_ACR_DZ {type = "trade_any_vehicle";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class T810A_PKT_WINTER_DZE {type = "trade_any_vehicle";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class T810A_PKT_WINTER_DZ {type = "trade_any_vehicle";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};	
 	class BMP2_Ambul_CDF_DZE {type = "trade_any_vehicle";buy[] = {3,"ItemBriefcase100oz"};sell[] = {15,"ItemGoldBar10oz"};};
 	class BMP2_Ambul_INS_DZE {type = "trade_any_vehicle";buy[] = {3,"ItemBriefcase100oz"};sell[] = {15,"ItemGoldBar10oz"};};
 	class BMP2_Ambul_Winter_DZE {type = "trade_any_vehicle";buy[] = {3,"ItemBriefcase100oz"};sell[] = {15,"ItemGoldBar10oz"};};	
