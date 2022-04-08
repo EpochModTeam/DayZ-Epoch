@@ -87,8 +87,8 @@ class CfgAddons
 				"Anzio_20",
 				"nst",
 				"dayz_epoch_b",
-				"dayz_epoch_c",
-				"CfgVehicles"
+				"CfgVehicles",
+				"dayz_epoch_c"				
 			};
 		};
 	};
