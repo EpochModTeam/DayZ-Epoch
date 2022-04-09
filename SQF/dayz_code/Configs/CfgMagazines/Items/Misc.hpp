@@ -532,3 +532,69 @@ class ItemBackpackUpgrade_3 : CA_Magazine
 	picture = "\dayz_epoch_c\icons\equipment\ItemBackpackUpgrade.paa";
 	type = 256;
 };
+
+class FoodCanFrozen1 : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
+	displayName = $STR_FOOD_NAME_CAN_FROZEN;
+	descriptionShort = $STR_FOOD_DESC_CAN_FROZEN;
+};
+
+class FoodCanFrozen2 : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
+	displayName = $STR_FOOD_NAME_CAN_FROZEN;
+	descriptionShort = $STR_FOOD_DESC_CAN_FROZEN;
+};
+
+class ItemSodaFrozen1 : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
+	displayName = $STR_EQUIP_NAME_SODA_CAN_FROZEN;
+	descriptionShort = $STR_EQUIP_DESC_SODA_CAN_FROZEN;	
+};
+
+class ItemSodaFrozen2 : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
+	displayName = $STR_EQUIP_NAME_SODA_CAN_FROZEN;
+	descriptionShort = $STR_EQUIP_DESC_SODA_CAN_FROZEN;	
+};
+
+class ItemDung : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;	
+	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\dung.paa";
+	displayName = $STR_ITEM_NAME_DUNG;
+	descriptionShort = $STR_ITEM_DESC_DUNG;
+};
+
+class ItemSunFlowerOil : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;	
+	model = "\z\addons\dayz_communityassets\models\waterbottle.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\sunfloweroil.paa";
+	displayName = $STR_ITEM_NAME_SUNFLOWEROIL;
+	descriptionShort = $STR_ITEM_DESC_SUNFLOWEROIL;
+};

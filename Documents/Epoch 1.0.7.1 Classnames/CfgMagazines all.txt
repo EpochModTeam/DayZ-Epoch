@@ -545,6 +545,15 @@ ItemSodaRbull
 ItemSodaOrangeSherbet
 ItemSodaFrozen1
 ItemSodaFrozen2
+FoodSteakWithPotatos
+FoodSushi
+FoodPumpkinSoup
+FoodCarrotSoup
+FoodPotatoSoup
+FoodGarlicSoup
+FoodVegetablePlate
+ItemHoneyTea
+ItemHoney
 ItemWaterBottle
 ItemWaterBottleInfected
 ItemWaterBottleSafe
@@ -1423,6 +1432,8 @@ equip_rail_screws
 ItemBackpackUpgrade_1
 ItemBackpackUpgrade_2
 ItemBackpackUpgrade_3
+ItemDung
+ItemSunFlowerOil
 TrapBear
 ItemTrapBearTrapFlare
 ItemTrapBearTrapSmoke

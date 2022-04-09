@@ -43,6 +43,7 @@ class CfgWeight
 		#include "Magazines\Consumables\PlasticWaterbottle.hpp"
 		#include "Magazines\Consumables\Soda.hpp"
 		#include "Magazines\Consumables\WaterBottle.hpp"
+		#include "Magazines\Consumables\Misc.hpp"
 		
 		#include "Magazines\Items\Currency\AluminumBar.hpp"
 		#include "Magazines\Items\Currency\Briefcase.hpp"

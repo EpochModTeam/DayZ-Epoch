@@ -245,3 +245,27 @@ class ItemBackpackUpgrade_3
 {
 	weight = 6;
 };
+class FoodCanFrozen1
+{
+	weight = 0.25;	
+};
+class FoodCanFrozen2
+{
+	weight = 0.25;	
+};
+class ItemSodaFrozen1
+{
+	weight = 0.25;
+};
+class ItemSodaFrozen2
+{
+	weight = 0.25;
+};
+class ItemDung
+{
+	weight = 2.5;
+};
+class ItemSunFlowerOil
+{
+	weight = 0.6;
+};

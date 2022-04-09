@@ -5837,6 +5837,93 @@
 			<French>Une boîte intacte de maïs.</French>
 			<Czech>Čistá a ještě neotevřená plechovka kukuřice.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_FOOD_NAME_STEAKWITHFRIES">
+			<English>Steak with fries</English>
+			<German>Steak mit Pommes</German>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_DESC_STEAKWITHFRIES">
+			<English>A very hearty meal with a steak and some fries.</English>
+			<German>Ein sehr deftiges Mahl mit einem Steak und einigen Pommes.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_FOOD_NAME_SUSHI">
+			<English>Sushi</English>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_DESC_SUSHI">
+			<English>Suhsi with three kinds of fish.</English>
+			<German>Suhsi mit dreierlei Arten von Fisch.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_FOOD_NAME_PUMPKINSOUP">
+			<English>Pumpkin soup</English>
+			<German>Kürbissuppe</German>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_DESC_PUMPKINSOUP">
+			<English>A homemade pumpkin soup.</English>
+			<German>Eine Kürbissuppe nach Hausmannsart.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_FOOD_NAME_CARROTSOUP">
+			<English>Carrot soup</English>
+			<German>Karottensuppe</German>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_DESC_CARROTSOUP">
+			<English>A homemade carrot soup.</English>
+			<German>Eine Karottensuppe nach Hausmannsart.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_FOOD_NAME_POTATOSOUP">
+			<English>Potato soup</English>
+			<German>Kartoffelsuppe</German>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_DESC_POTATOSOUP">
+			<English>A homemade potato soup.</English>
+			<German>Eine Kartoffelsuppe nach Hausmannsart.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_FOOD_NAME_GARLICSOUP">
+			<English>Garlic soup</English>
+			<German>Knoblauchsuppe</German>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_DESC_GARLICSOUP">
+			<English>A homemade garlic soup.</English>
+			<German>Eine Knoblauchsuppe nach Hausmannsart.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_FOOD_NAME_VEGYPLATE">
+			<English>Vegetable platter</English>
+			<German>Gemüseplatte</German>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_DESC_VEGYPLATE">
+			<English>A platter of vegetable with lots of vitamins.</English>
+			<German>Eine Gemüseplatte mit vielen Vitaminen.</German>
+		</Key>
+		<Key ID="STR_ITEM_HONEYTEA_NAME">
+			<English>Honey tea</English>
+			<German>Honigtee</German>
+		</Key>
+		<Key ID="STR_ITEM_HONEYTEA_DESC">
+			<English>A heathly honey tea which will warm yourself.</English>
+			<German>Ein gesunder Honigtee, welcher Wärme spendet.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_FOOD_NAME_HONEYCOMB">
+			<English>Honeycomb</English>
+			<German>Honigwabe</German>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_DESC_HONEYCOMB">
+			<English>A freshly harvested honeycomb from a wild bee hive.</English>
+			<German>Eine frisch geerntete Honigwabe	aus einem Wildbienenstock.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_DUNG">
+			<English>Dung</English>
+			<German>Mist</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_DUNG">
+			<English>A by-product of your kept animals.</English>
+			<German>Ein Nebenprodukt von gehaltenen Tieren.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_SUNFLOWEROIL">
+			<English>Sunfloweroil</English>
+			<German>Sonnenblumenöl</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_SUNFLOWEROIL">
+			<English>An oil made od sunflower seeds.</English>
+			<German>Ein Öl, welches aus Sonnenblumensamen hergestellt wird.</German>
+		</Key>			
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">
 			<English>Toilet paper</English>
 			<German>Toilettenpapier</German>

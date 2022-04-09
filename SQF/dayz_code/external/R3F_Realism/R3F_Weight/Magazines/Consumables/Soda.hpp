@@ -82,11 +82,3 @@ class ItemSodaOrangeSherbet
 {
 	weight = 0.2;
 };
-class ItemSodaFrozen1
-{
-	weight = 0.25;
-};
-class ItemSodaFrozen2
-{
-	weight = 0.25;
-};

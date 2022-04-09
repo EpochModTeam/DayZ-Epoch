@@ -47,6 +47,10 @@ class equip_comfreyleafs
 {
 	weight = 0.1;
 };
+class ItemComfreySeed
+{
+	weight = 0.2;
+};
 class FoodPumpkin 
 { 
 	weight = 3; 

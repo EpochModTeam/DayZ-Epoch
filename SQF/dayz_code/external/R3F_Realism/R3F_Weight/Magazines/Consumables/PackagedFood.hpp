@@ -170,11 +170,3 @@ class FoodCanDog2
 {
 	weight = 0.2;	
 };
-class FoodCanFrozen1
-{
-	weight = 0.25;	
-};
-class FoodCanFrozen2
-{
-	weight = 0.25;	
-};
