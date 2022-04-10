@@ -11,7 +11,6 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
-			"csj_gyroac",
 			"pook_h13",
 			"map_eu",
 			
@@ -36,8 +35,7 @@ class CfgPatches
 			
 			//Extra Epoch Addons
 			"asc_eu_lights",
-			"gnt_c185",
-			"usec_ch53"
+			"gnt_c185"
 		};
 	};
 };

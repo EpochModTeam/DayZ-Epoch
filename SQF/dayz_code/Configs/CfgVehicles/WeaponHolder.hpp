@@ -164,17 +164,6 @@ class WeaponHolder_ItemCrate : WeaponHolderBase {
 	};
 };
 
-class WeaponHolder_Colt1911 : WeaponHolderBase {
-	scope = 2;
-	displayName = $STR_WPN_HOLDR_1;
-	model = "\dayz_equip\proxy\Colt1911.p3d";
-	destrType = "DestructNo";
-	
-	class eventHandlers {
-		init = "[(_this select 0),'cfgWeapons','Colt1911'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
-	};
-};
-
 class WeaponHolder_ItemHatchet : WeaponHolderBase {
 	scope = 2;
 	displayName = $STR_EQUIP_NAME_HATCHET;
@@ -197,27 +186,6 @@ class WeaponHolder_MeleeCrowbar : WeaponHolderBase {
 	};
 };
 
-class WeaponHolder_huntingrifle : WeaponHolderBase {
-	scope = 2;
-	displayName = $STR_WPN_HOLDR_2;
-	model = "\dayz_equip\proxy\huntingrifle.p3d";
-	destrType = "DestructNo";
-	
-	class eventHandlers {
-		init = "[(_this select 0),'cfgWeapons','huntingrifle'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
-	};
-};
-
-class WeaponHolder_M4A1 : WeaponHolderBase {
-	scope = 2;
-	displayName = $STR_WPN_HOLDR_3;
-	model = "\dayz_equip\proxy\M4A1.p3d";
-	destrType = "DestructNo";
-	
-	class eventHandlers {
-		init = "[(_this select 0),'cfgWeapons','M4A1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
-	};
-};
 
 class WeaponHolder_ItemTent : WeaponHolderBase {
 	scope = 2;
@@ -658,7 +626,7 @@ class WeaponHolder_ItemStorageBarrel2_kit: WeaponHolder {
 };
 class WeaponHolder_ItemStorageBarrel3_kit: WeaponHolder {
 	scope = 1;
-	displayName = "$STR_EPOCH_STORAGEBARRELEYELLOWKIT_DESC";
+	displayName = "$STR_EPOCH_STORAGEBARRELYELLOWKIT_DESC";
     model = "\CA\misc\Barel3.p3d";
 	destrType = "DestructNo";
 	
