@@ -46,13 +46,17 @@
 [ADDED] 8 buildable storage barrels. (ee0effcc7) @seelenapparat
 [ADDED] Support for the elevator script via 3 new kits and objects. (546172959) @seelenapparat
 [ADDED] Harvestable plants and compost barrels. (84064ec89) @AirwavesMan
-[ADDED] 9 new buildable epoch buildings for server admins to add. (2e3f16c24) @AirwavesMan
+[ADDED] 14 new buildable epoch buildings (Rabbit Hutch, Chicken Coop, Dog House, Postbox, Boggle, Satellite Dish, Fuel Tank, Water Tank, Water Tower, Wild Bee Hive, Cow Stable, Boar Stable, Goat Stable, Sheep Stable) for server admins to add. (2e3f16c24) @AirwavesMan
 [ADDED] Changeable DZE_GemChance to customize the chance to find a gemstone in an ore vein. Can be changed in the configVariables.sqf (f179d037d) @AirwavesMan
 [ADDED] Changeable DZE_debrisRefundParts to customize the dynamic debris wrecks refund. Can be changed in the configVariables.sqf (6189bed04) @AirwavesMan
 [ADDED] Changeable DZE_toolBreakChance to customize the break chance of tools when removing a building. Can be changed in the configVariables.sqf (01792fe8e) @AirwavesMan
 [ADDED] After canceling an action the sound will be aborted too now. (21e9c3451) @Victor-the-Cleaner
+[ADDED] HMMWV Crows(M19, M2), Avenger and AAV as epoch versions. (1b74c6ccc) @AirwavesMan
+[ADDED] T810A PKT winter version. (f42ef2b88) @DeVloek, 
+[ADDED] 18 new open map buildings with interior and loot positions. (0fd08dec2) @Helion4, @DeVloek, @AirwavesMan
+[ADDED] 2 new items (Dung, Sunflower Oil) and 9 food versions (Steak with fries, Sushi, Pumpkin soup, Carrot soup, Potato soup, Garlic soup, Vegetable platter, Honey tea, Honeycomb). (624acb3ab) @Damian6666, @AirwavesMan
+[ADDED] Comfrey patch, plant and seeds. (59e04523b) @AirwavesMan
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
-[UPDATED] Snappoints got improved. (f68e92d5) @worldwidesorrow
 [UPDATED] Replace M240 Nest ghost preview with the actual game object as preview. (ff05cb9cb) @ZzBombardierzZ, @AirwavesMan
 [UPDATED] Players may no longer build objects outside the plot radius. (bb968698e) @Victor-the-Cleaner
 [UPDATED] Players may now cancel the build by fast movement, i.e. running, or fast walking on steep terrain. (bb968698e) @Victor-the-Cleaner
@@ -80,6 +84,8 @@
 [UPDATED] ObjectID and ObjectUID setVariables are no longer global and only visible by the server. (e72394d6d, 3ffa072c8, 2168d504b, d4e6e786d) @AirwavesMan
 [UPDATED] PVDZ_obj_Destroy send no longer ObjectIDs, ObjectUIDs and uses netID now. (e72394d6d) @AirwavesMan
 [UPDATED] characterID setVariables is only for vehicles with a key and locked/lockable buildings global now. (67bdc7217) @AirwavesMan
+[UPDATED] Re-built missionfiles: configVariables.sqf, custom variables and compiles are included now. (ac68b0ca9) @AirwavesMan
+[UPDATED] DZE_rocks array detects more rocks on napf and lingor now. (6f249377d) @Victor-the-Cleaner, @AirwavesMan
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan

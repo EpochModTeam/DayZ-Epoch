@@ -158,6 +158,7 @@ GitHub Contributors
 * Helion4 - https://github.com/Helion4
 * Schalldampfer - https://github.com/Schalldampfer
 * Victor the Cleaner - https://github.com/Victor-the-Cleaner
+* Damian6666 - https://github.com/Damian6666
 
 --------------------------
 Special thanks
