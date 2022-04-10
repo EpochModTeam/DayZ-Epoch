@@ -3516,7 +3516,7 @@
 		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE">
 			<English>Water Bottle</English>
 			<German>Wasserflasche</German>
-			<Russian>Бутылка (вода)</Russian>
+			<Russian>Бутылка (Вода)</Russian>
 			<Spanish>Cantimplora</Spanish>
 			<French>Bouteille</French>
 			<Czech>Láhev s vodou</Czech>
@@ -3532,7 +3532,7 @@
 		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE_EMPTY">
 			<English>Water Bottle (Empty)</English>
 			<German>Wasserflasche (Leer)</German>
-			<Russian>Бутылка (пустая)</Russian>
+			<Russian>Бутылка (Пустая)</Russian>
 			<Spanish>Cantimplora (Vacía)</Spanish>
 			<French>Bouteille (vide)</French>
 			<Czech>Láhev na vodu (prázdná)</Czech>
@@ -3553,26 +3553,32 @@
 		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE_COFFEE">
 			<English>Water Bottle (Coffee)</English>
 			<German>Wasserflasche (Kaffee)</German>
+			<Russian>Бутылка (Кофе)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WATER_BOTTLE_COFFEE">
 			<English>A bottle that has been filled with brewed coffee.</English>
 			<German>Eine Flasche gefüllt mit gekochtem Kaffee.</German>
+			<Russian>Бутылка, наполненная заваренным кофе.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE_BLACKTEA">
 			<English>Water Bottle (Black Tea)</English>
 			<German>Wasserflasche (Schwarzer Tee)</German>
+			<Russian>Бутылка (Чай)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WATER_BOTTLE_BLACKTEA">
 			<English>A bottle that has been filled with brewed black tea.</English>
 			<German>Eine Flasche gefüllt mit gekochtem schwarzem Tee.</German>
+			<Russian>Бутылка, наполненная заваренным чёрным чаем.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE_FROZEN">
 			<English>Water Bottle (Frozen)</English>
 			<German>Wasserflasche (Gefroren)</German>
+			<Russian>Бутылка (Заморожено)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WATER_BOTTLE_FROZEN">
 			<English>A bottle that has been filled with water. The content seems to be frozen.</English>
 			<German>Eine Flasche gefüllt mit Wasser. Der Inhalt scheint gefroren zu sein.</German>
+			<Russian>Бутылка, наполненная водой. Кажется, содержимое заморожено.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_EPI_PEN">
 			<English>Epi-Pen</English>
@@ -4040,10 +4046,12 @@
 		<Key ID="STR_EQUIP_NAME_SODA_CAN_FROZEN">
 			<English>Soda Can (Frozen)</English>
 			<German>Getränkedose (Gefroren)</German>
+			<Russian>Газировка (Заморожено)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SODA_CAN_FROZEN">
 			<English>An aluminum can containing a tasty carbonated beverage full of sugar, artificial flavors, and preservatives. The content seems to be frozen.</English>
 			<German>Eine Alumniumdose, voll mit einem köstlichen kohlensäurehaltigen Getränk voller Zucker, künstlicher Aromen und Konservierungsmitteln. Der Inhalt scheint noch gefroren zu sein.</German>
+			<Russian>Алюминиевая банка с вкусным газированным напитком с сахаром, искусственными ароматизаторами и консервантами. Кажется, содержимое заморожено.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_MOUNTAIN_DEW">
 			<English>Soda Can (Mountain Dew)</English>
@@ -4181,7 +4189,7 @@
 		</Key>
 		<Key ID="STR_MAG_CONV_SA58_AK47">
 			<English>Combine for AK-47</English>
-			<Russian>Переснарядить для AK-47</Russian>
+			<Russian>Переснарядить для АК-47</Russian>
 			<German>In AK-47-Magazin umladen</German>
 		</Key>
 		<Key ID="STR_MAG_COMBINE_2X4IN8">
@@ -5744,18 +5752,22 @@
 		<Key ID="STR_FOOD_NAME_CAN_DOG">
 			<English>Can (Dogfood)</English>
 			<German>Dose (Hundefutter)</German>
+			<Russian>Банка (Собачьи консервы)</Russian>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_DOG">
 			<English>A clean, unopened tin can. The label says that it contains dogfood.</English>
 			<German>Eine saubere, ungeöffnete Dose. Das Etikett sagt es beinhaltet Hundefutter.</German>
+			<Russian>Чистая, закрытая консервная банка. Наклейка говорит о том, что в банке содержится еда для собак.</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_FROZEN">
 			<English>Can (Frozen)</English>
 			<German>Dose (Gefroren)</German>
+			<Russian>Банка (Заморожено)</Russian>
 		</Key>
 		<Key ID="STR_FOOD_DESC_CAN_FROZEN">
 			<English>A clean, unopened tin can. The content seems to be frozen.</English>
 			<German>Eine saubere, ungeöffnete Dose. Der Inhalt scheint noch gefroren zu sein.</German>
+			<Russian>Чистая, закрытая консервная банка. Кажется, содержимое заморожено.</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_STEW">
 			<English>Can (Stew)</English>
@@ -5840,90 +5852,112 @@
 		<Key ID="STR_EQUIP_FOOD_NAME_STEAKWITHFRIES">
 			<English>Steak with fries</English>
 			<German>Steak mit Pommes</German>
+			<Russian>Стейк с картошкой фри</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_STEAKWITHFRIES">
 			<English>A very hearty meal with a steak and some fries.</English>
 			<German>Ein sehr deftiges Mahl mit einem Steak und einigen Pommes.</German>
-		</Key>		
+			<Russian>Очень сытная еда со стейком и картофелем фри.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_SUSHI">
 			<English>Sushi</English>
+			<Russian>Суши</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_SUSHI">
 			<English>Suhsi with three kinds of fish.</English>
 			<German>Suhsi mit dreierlei Arten von Fisch.</German>
-		</Key>		
+			<Russian>Суши с тремя видами рыбы.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_PUMPKINSOUP">
 			<English>Pumpkin soup</English>
 			<German>Kürbissuppe</German>
+			<Russian>Тыквенный суп</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_PUMPKINSOUP">
 			<English>A homemade pumpkin soup.</English>
 			<German>Eine Kürbissuppe nach Hausmannsart.</German>
-		</Key>	
+			<Russian>Домашний суп из тыквы.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_CARROTSOUP">
 			<English>Carrot soup</English>
 			<German>Karottensuppe</German>
+			<Russian>Морковный суп</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_CARROTSOUP">
 			<English>A homemade carrot soup.</English>
 			<German>Eine Karottensuppe nach Hausmannsart.</German>
-		</Key>	
+			<Russian>Домашний суп из моркови.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_POTATOSOUP">
 			<English>Potato soup</English>
 			<German>Kartoffelsuppe</German>
+			<Russian>Картофельный суп</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_POTATOSOUP">
 			<English>A homemade potato soup.</English>
 			<German>Eine Kartoffelsuppe nach Hausmannsart.</German>
-		</Key>	
+			<Russian>Домашний суп из картофеля.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_GARLICSOUP">
 			<English>Garlic soup</English>
 			<German>Knoblauchsuppe</German>
+			<Russian>Чесночный суп</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_GARLICSOUP">
 			<English>A homemade garlic soup.</English>
 			<German>Eine Knoblauchsuppe nach Hausmannsart.</German>
-		</Key>		
+			<Russian>Домашний суп из чеснока.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_VEGYPLATE">
 			<English>Vegetable platter</English>
 			<German>Gemüseplatte</German>
+			<Russian>Овощное ассорти</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_VEGYPLATE">
 			<English>A platter of vegetable with lots of vitamins.</English>
 			<German>Eine Gemüseplatte mit vielen Vitaminen.</German>
+			<Russian>Тарелка с овощами, в которых много витаминов.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_HONEYTEA_NAME">
 			<English>Honey tea</English>
 			<German>Honigtee</German>
+			<Russian>Медовый чай</Russian>
 		</Key>
 		<Key ID="STR_ITEM_HONEYTEA_DESC">
 			<English>A heathly honey tea which will warm yourself.</English>
 			<German>Ein gesunder Honigtee, welcher Wärme spendet.</German>
-		</Key>	
+			<Russian>Полезный чай с мёдом, который вас согреет.</Russian>
+		</Key>
 		<Key ID="STR_EQUIP_FOOD_NAME_HONEYCOMB">
 			<English>Honeycomb</English>
 			<German>Honigwabe</German>
+			<Russian>Соты с мёдом</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_HONEYCOMB">
 			<English>A freshly harvested honeycomb from a wild bee hive.</English>
 			<German>Eine frisch geerntete Honigwabe	aus einem Wildbienenstock.</German>
+			<Russian>Свежесобранные соты из дикого пчелиного улья.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_DUNG">
 			<English>Dung</English>
 			<German>Mist</German>
+			<Russian>Навоз</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_DUNG">
 			<English>A by-product of your kept animals.</English>
 			<German>Ein Nebenprodukt von gehaltenen Tieren.</German>
+			<Russian>Продукты жизнедеятельности ваших животных.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_SUNFLOWEROIL">
 			<English>Sunfloweroil</English>
 			<German>Sonnenblumenöl</German>
+			<Russian>Подсолнечное масло</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_SUNFLOWEROIL">
 			<English>An oil made od sunflower seeds.</English>
 			<German>Ein Öl, welches aus Sonnenblumensamen hergestellt wird.</German>
-		</Key>			
+			<Russian>Масло из семян подсолнуха.</Russian>
+		</Key>
 		<Key ID="STR_JUNK_NAME_TOILETPAPER">
 			<English>Toilet paper</English>
 			<German>Toilettenpapier</German>
@@ -6022,18 +6056,22 @@
 		<Key ID="STR_ITEM_NAME_FUELCAN_WATER">
 			<English>Can 5L (Water)</English>
 			<German>Kanister 5L (Wasser)</German>
+			<Russian>Канистра 5л (Вода)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN_WATER">
 			<English>A small 5-liter can filled with water.</English>
 			<German>Ein kleiner 5-Liter-Kanister gefüllt mit Wasser.</German>
+			<Russian>Небольшая пятилитровая ёмкость с водой.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN_MILK">
 			<English>Can 5L (Milk)</English>
 			<German>Kanister 5L (Milch)</German>
+			<Russian>Канистра 5л (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN_MILK">
 			<English>A small 5-liter can filled with milk.</English>
 			<German>Ein kleiner 5-Liter-Kanister gefüllt mit Milch.</German>
+			<Russian>Небольшая пятилитровая ёмкость с молоком.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">
 			<English>Fuelcan 5L (empty)</English>
@@ -6070,18 +6108,22 @@
 		<Key ID="STR_ITEM_NAME_JERRYCAN_WATER">
 			<English>Can 20L (Water)</English>
 			<German>Kanister 20L (Wasser</German>
+			<Russian>Канистра 20л (Вода)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN_WATER">
 			<English>20 litre can filled with water.</English>
 			<German>Ein 20-Liter-Kanister, welcher mit Wasser befüllt wurde.</German>
+			<Russian>20-литровая ёмкость с водой.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_JERRYCAN_MILK">
 			<English>Can 20L (Milk)</English>
 			<German>Kanister 20L (Milch)</German>
+			<Russian>Канистра 20л (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN_MILK">
 			<English>20 litre can filled with milk.</English>
 			<German>Ein 20-Liter-Kanister, welcher mit Milch befüllt wurde.</German>
+			<Russian>20-литровая ёмкость с молоком.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
 			<English>Jerry Can 20L (empty)</English>
@@ -6942,7 +6984,7 @@
 		<Key ID="str_player_28">
 			<English>You cannot reload that combination, you need %1 %2 magazines.</English>
 			<German>Diese Kombination kannst du nicht laden, dafür brauchst du %1 %2 Magazine.</German>
-			<Russian>Не удалось преобразовать магазины. Нужны %1 %2.</Russian>
+			<Russian>Не удалось переснярядить магазины. Нужны %1 %2.</Russian>
 			<Spanish>No puedes recargar esa combinación, necesitas %1 cargadores de %2</Spanish>
 			<French>Vous ne pouvez pas recharger cette combinaison, vous avez besoin de %1 %2 chargeur(s).</French>
 			<Czech>Tuto kombinaci nelze provést, potřebujete zásobníky %1 %2.</Czech>
@@ -7458,7 +7500,7 @@
 			<English>The weapon you are converting ammo for must be in your hands!</English>
 			<German>Du musst die Waffe, für die du Munition umwandeln willst, in den Händen halten!</German>
 			<Spanish>¡El arma a la que se quiere convertir la munición debe estar en tus manos!</Spanish>
-			<Russian>Оружие, для которого конвертируются магазины, должно быть в руках!</Russian>
+			<Russian>Оружие, для которого пересняряжаются магазины, должно быть в руках!</Russian>
 			<French>Pour convertir des munitions pour une arme, celle ci doit être dans vos mains!</French>
 			<Czech>Zbraň, pro kterou měníte munici, musíte mít v rukách.</Czech>
 		</Key>
@@ -8080,7 +8122,7 @@
 			<!-- %1 weapon name -->
 			<English>Good news is I&apos;m packing a %1 and I&apos;ve got some ammo for it. I should probably reload it though seeing as it&apos;s empty.</English>
 			<German>Die gute Nachricht: Ich habe eine %1 und etwas Munition. Aber ich sollte wohl nachladen, das Magazin ist leer.</German>
-			<Russian>Хорошие новости - у меня есть %1 и я добыл немного патронов.. Стоит переснарялить магазины.</Russian>
+			<Russian>Хорошие новости - у меня есть %1 и я добыл немного патронов... Стоит переснарядить магазины.</Russian>
 			<Spanish>Por suerte llevo una %1 con algo de munición para ella. Aunque debería recargarla porque la estoy viendo sin munición.</Spanish>
 			<French>Bonne nouvelle je transporte un %1 avec des munitions. Je devrais le recharger car il est vide</French>
 			<Czech>Dobrá zpráva je, že mám %1 a i nějakou munici. Možná bych měl přebít, abych zjistit, kolik je v zásobníku nábojů.</Czech>
@@ -8591,73 +8633,93 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19">
 			<English>HMMWV Crows (MK19)</English>
+			<Russian>Хамви Crows (MK19)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19+">
 			<English>HMMWV Crows (MK19)+</English>
+			<Russian>Хамви Crows (MK19)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19++">
 			<English>HMMWV Crows (MK19)++</English>
+			<Russian>Хамви Crows (MK19)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19+++">
 			<English>HMMWV Crows (MK19)+++</English>
+			<Russian>Хамви Crows (MK19)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19++++">
 			<English>HMMWV Crows (MK19)++++</English>
+			<Russian>Хамви Crows (MK19)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2">
 			<English>HMMWV Crows (M2)</English>
+			<Russian>Хамви Crows (M2)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2+">
 			<English>HMMWV Crows (M2)+</English>
+			<Russian>Хамви Crows (M2)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2++">
 			<English>HMMWV Crows (M2)++</English>
+			<Russian>Хамви Crows (M2)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2+++">
 			<English>HMMWV Crows (M2)+++</English>
+			<Russian>Хамви Crows (M2)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_M2++++">
 			<English>HMMWV Crows (M2)++++</English>
+			<Russian>Хамви Crows (M2)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL">
 			<English>HMMWX Avenger (Woodland)</English>
 			<German>HMMWX Avenger (Waldtarn)</German>
+			<Russian>Хамви Avenger (Лес)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL+">
 			<English>HMMWX Avenger (Woodland)+</English>
 			<German>HMMWX Avenger (Waldtarn)+</German>
+			<Russian>Хамви Avenger (Лес)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL++">
 			<English>HMMWX Avenger (Woodland)++</English>
 			<German>HMMWX Avenger (Waldtarn)++</German>
+			<Russian>Хамви Avenger (Лес)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL+++">
 			<English>HMMWX Avenger (Woodland)+++</English>
 			<German>HMMWX Avenger (Waldtarn)+++</German>
+			<Russian>Хамви Avenger (Лес)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_WDL++++">
 			<English>HMMWX Avenger (Woodland)++++</English>
 			<German>HMMWX Avenger (Waldtarn)++++</German>
+			<Russian>Хамви Avenger (Лес)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES">
 			<English>HMMWX Avenger (Desert)</English>
 			<German>HMMWX Avenger (Wüstentarn)</German>
+			<Russian>Хамви Avenger (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES+">
 			<English>HMMWX Avenger (Desert)+</English>
 			<German>HMMWX Avenger (Wüstentarn)+</German>
+			<Russian>Хамви Avenger (Пустыня)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES++">
 			<English>HMMWX Avenger (Desert)++</English>
 			<German>HMMWX Avenger (Wüstentarn)++</German>
+			<Russian>Хамви Avenger (Пустыня)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES+++">
 			<English>HMMWX Avenger (Desert)+++</English>
 			<German>HMMWX Avenger (Wüstentarn)+++</German>
+			<Russian>Хамви Avenger (Пустыня)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AVENGER_DES++++">
 			<English>HMMWX Avenger (Desert)++++</English>
 			<German>HMMWX Avenger (Wüstentarn)++++</German>
+			<Russian>Хамви Avenger (Пустыня)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_AAV">
 			<English>AAVP7A1</English>
@@ -10352,7 +10414,7 @@
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WINTER++++">
 			<English>Tatra PKT (Winter)++++</English>
 			<Russian>Tatra ПКТ (Зима)++++</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL">
 			<English>Tatra Fuel (Woodland)</English>
 			<German>Tatra Treibstoff (Waldtarn)</German>
@@ -10625,152 +10687,152 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS">
 			<English>Skoda Van (blue)</English>
-			<Russian>Шкода фургон (Синий)</Russian>
+			<Russian>Skoda фургон (Синий)</Russian>
 			<German>Skoda Van (blau)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS+">
 			<English>Skoda Van (blue)+</English>
-			<Russian>Шкода фургон (Синий)+</Russian>
+			<Russian>Skoda фургон (Синий)+</Russian>
 			<German>Skoda Van (blau)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS++">
 			<English>Skoda Van (blue)++</English>
-			<Russian>Шкода фургон (Синий)++</Russian>
+			<Russian>Skoda фургон (Синий)++</Russian>
 			<German>Skoda Van (blau)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS+++">
 			<English>Skoda Van (blue)+++</English>
-			<Russian>Шкода фургон (Синий)+++</Russian>
+			<Russian>Skoda фургон (Синий)+++</Russian>
 			<German>Skoda Van (blau)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS++++">
 			<English>Skoda Van (blue)++++</English>
-			<Russian>Шкода фургон (Синий)++++</Russian>
+			<Russian>Skoda фургон (Синий)++++</Russian>
 			<German>Skoda Van (blau)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE">
 			<English>Skoda Van (Ambulance)</English>
-			<Russian>Шкода фургон (Скорая)</Russian>
+			<Russian>Skoda фургон (Скорая)</Russian>
 			<German>Skoda Van (Ambulanz)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE+">
 			<English>Skoda Van (Ambulance)+</English>
-			<Russian>Шкода фургон (Скорая)+</Russian>
+			<Russian>Skoda фургон (Скорая)+</Russian>
 			<German>Skoda Van (Ambulanz)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE++">
 			<English>Skoda Van (Ambulance)++</English>
-			<Russian>Шкода фургон (Скорая)++</Russian>
+			<Russian>Skoda фургон (Скорая)++</Russian>
 			<German>Skoda Van (Ambulanz)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE+++">
 			<English>Skoda Van (Ambulance)+++</English>
-			<Russian>Шкода фургон (Скорая)+++</Russian>
+			<Russian>Skoda фургон (Скорая)+++</Russian>
 			<German>Skoda Van (Ambulanz)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE++++">
 			<English>Skoda Van (Ambulance)++++</English>
-			<Russian>Шкода фургон (Скорая)++++</Russian>
+			<Russian>Skoda фургон (Скорая)++++</Russian>
 			<German>Skoda Van (Ambulanz)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE">
 			<English>Skoda (white)</English>
-			<Russian>Шкода (белая)</Russian>
+			<Russian>Skoda (белая)</Russian>
 			<German>Skoda (weiß)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE+">
 			<English>Skoda (white)+</English>
-			<Russian>Шкода (белая)+</Russian>
+			<Russian>Skoda (белая)+</Russian>
 			<German>Skoda (weiß)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE++">
 			<English>Skoda (white)++</English>
-			<Russian>Шкода (белая)++</Russian>
+			<Russian>Skoda (белая)++</Russian>
 			<German>Skoda (weiß)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE+++">
 			<English>Skoda (white)+++</English>
-			<Russian>Шкода (белая)+++</Russian>
+			<Russian>Skoda (белая)+++</Russian>
 			<German>Skoda (weiß)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE++++">
 			<English>Skoda (white)++++</English>
-			<Russian>Шкода (белая)++++</Russian>
+			<Russian>Skoda (белая)++++</Russian>
 			<German>Skoda (weiß)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE">
 			<English>Skoda (blue)</English>
-			<Russian>Шкода (синяя)</Russian>
+			<Russian>Skoda (синяя)</Russian>
 			<German>Skoda (blau)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE+">
 			<English>Skoda (blue)+</English>
-			<Russian>Шкода (синяя)+</Russian>
+			<Russian>Skoda (синяя)+</Russian>
 			<German>Skoda (blau)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE++">
 			<English>Skoda (blue)++</English>
-			<Russian>Шкода (синяя)++</Russian>
+			<Russian>Skoda (синяя)++</Russian>
 			<German>Skoda (blau)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE+++">
 			<English>Skoda (blue)+++</English>
-			<Russian>Шкода (синяя)+++</Russian>
+			<Russian>Skoda (синяя)+++</Russian>
 			<German>Skoda (blau)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE++++">
 			<English>Skoda (blue)++++</English>
-			<Russian>Шкода (синяя)++++</Russian>
+			<Russian>Skoda (синяя)++++</Russian>
 			<German>Skoda (blau)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED">
 			<English>Skoda (red)</English>
-			<Russian>Шкода (красная)</Russian>
+			<Russian>Skoda (красная)</Russian>
 			<German>Skoda (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED+">
 			<English>Skoda (red)+</English>
-			<Russian>Шкода (красная)+</Russian>
+			<Russian>Skoda (красная)+</Russian>
 			<German>Skoda (rot)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED++">
 			<English>Skoda (red)++</English>
-			<Russian>Шкода (красная)++</Russian>
+			<Russian>Skoda (красная)++</Russian>
 			<German>Skoda (rot)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED+++">
 			<English>Skoda (red)+++</English>
-			<Russian>Шкода (красная)+++</Russian>
+			<Russian>Skoda (красная)+++</Russian>
 			<German>Skoda (rot)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED++++">
 			<English>Skoda (red)++++</English>
-			<Russian>Шкода (красная)++++</Russian>
+			<Russian>Skoda (красная)++++</Russian>
 			<German>Skoda (rot)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN">
 			<English>Skoda (green)</English>
-			<Russian>Шкода (зелёная)</Russian>
+			<Russian>Skoda (зелёная)</Russian>
 			<German>Skoda (grün)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN+">
 			<English>Skoda (green)+</English>
-			<Russian>Шкода (зелёная)+</Russian>
+			<Russian>Skoda (зелёная)+</Russian>
 			<German>Skoda (grün)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN++">
 			<English>Skoda (green)++</English>
-			<Russian>Шкода (зелёная)++</Russian>
+			<Russian>Skoda (зелёная)++</Russian>
 			<German>Skoda (grün)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN+++">
 			<English>Skoda (green)+++</English>
-			<Russian>Шкода (зелёная)+++</Russian>
+			<Russian>Skoda (зелёная)+++</Russian>
 			<German>Skoda (grün)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN++++">
 			<English>Skoda (green)++++</English>
-			<Russian>Шкода (зелёная)++++</Russian>
+			<Russian>Skoda (зелёная)++++</Russian>
 			<German>Skoda (grün)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE">
@@ -11086,22 +11148,27 @@
 		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE">
 			<English>SUV (Blue White)</English>
 			<German>SUV (Blau Weiss)</German>
+			<Russian>SUV (Бело-синий)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE+">
 			<English>SUV (Blue White)+</English>
 			<German>SUV (Blau Weiss)+</German>
+			<Russian>SUV (Бело-синий)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE++">
 			<English>SUV (Blue White)++</English>
 			<German>SUV (Blau Weiss)++</German>
+			<Russian>SUV (Бело-синий)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE+++">
 			<English>SUV (Blue White)+++</English>
 			<German>SUV (Blau Weiss)+++</German>
+			<Russian>SUV (Бело-синий)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE++++">
 			<English>SUV (Blue White)++++</English>
 			<German>SUV (Blau Weiss)++++</German>
+			<Russian>SUV (Бело-синий)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ARMORED">
 			<English>SUV (Armored)</English>
@@ -17011,7 +17078,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_DESC">
 			<English>Bolt-action military rifle developed by the Imperial Russian Army in 1891.&lt;br/&gt;Caliber: 7.62x54mmR</English>
-			<Russian>Магазинная винтовка, принятая на вооружение Русской Императорской армии в 1891 году.&lt;br/&gt;Калибр: 7.62x54ммR</Russian>
+			<Russian>Магазинная винтовка, принятая на вооружение Русской Императорской армией в 1891 году.&lt;br/&gt;Калибр: 7.62x54ммR</Russian>
 			<German>Kammerverschluss Militär Gewehr entwickelt von der Imperialen Russischen Armee 1891.&lt;br/&gt;Kaliber: 7.62x54mmR</German>
 		</Key>
 
@@ -17113,7 +17180,7 @@
 			<English>Scorpion Evo 3 CCO SD</English>
 			<Russian>Scorpion Evo 3 CCO ПБС</Russian>
 		</Key>
-        <Key ID="STR_DZ_WPN_SC_EVO3_DESC">
+		<Key ID="STR_DZ_WPN_SC_EVO3_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
 			<English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
 			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm</Italian>
@@ -17123,8 +17190,8 @@
 			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 9x19мм</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm </Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
-        </Key>
-        <Key ID="STR_DZ_WPN_SC_EVO3_SD_DESC">
+		</Key>
+		<Key ID="STR_DZ_WPN_SC_EVO3_SD_DESC">
 			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm SD</German>
 			<English>Silenced submachine gun  &lt;br/&gt;Caliber: 9x19mm SD</English>
 			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 9x19mm SD</Italian>
@@ -17134,7 +17201,7 @@
 			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: 9х19мм дозвук.</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 9x19mm SD</Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 9x19mm SD</Hungarian>
-        </Key>
+		</Key>
 
 		<!-- CZ 805 -->
 		<Key ID="STR_DZ_WPN_CZ_805A1_NAME">
@@ -17331,7 +17398,7 @@
 			<German>MP7 ACOG SD MTL</German>
 			<Russian>MP7 ACOG ПБС ВФ</Russian>
 		</Key>
-        <Key ID="STR_DZ_WPN_MP7_DESC">
+		<Key ID="STR_DZ_WPN_MP7_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: 4.6x30mm</German>
 			<English>Submachine gun  &lt;br/&gt;Caliber: 4.6x30mm</English>
 			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 4.6x30mm</Italian>
@@ -17341,8 +17408,8 @@
 			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 4.6x30мм</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 4.6x30mm</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm</Hungarian>
-        </Key>
-        <Key ID="STR_DZ_WPN_MP7_SD_DESC">
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_SD_DESC">
 			<English>Silenced submachine gun  &lt;br/&gt;Caliber: 4.6x30mm SD</English>
 			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 4.6x30mm SD</German>
 			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 4.6x30mm SD</Italian>
@@ -17352,7 +17419,7 @@
 			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: 4.6x30мм дозвук.</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 4.6x30mm SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm SD</Hungarian>
-        </Key>
+		</Key>
 
 		<!-- P99 -->
 		<Key ID="STR_DZ_WPN_P99_BLACK_NAME">
@@ -17776,6 +17843,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_COLT_ANACONDA_GOLD_NAME">
 			<English>Colt Anaconda Gold</English>
+			<Russian>Colt Anaconda Золотой</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_COLT_ANACONDA_DESC">
 			<English>Revolver &lt;br/&gt;Caliber: .44 Magnum</English>
@@ -17816,6 +17884,7 @@
 		<Key ID="STR_DZ_WPN_P226_SILVER_NAME">
 			<English>SIG Sauer P226 (Silver)</English>
 			<German>SIG Sauer P226 (Silber)</German>
+			<Russian>SIG Sauer P226 (Серебряный)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_P226_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
@@ -18016,7 +18085,7 @@
 			<English>KRISS Holo SD</English>
 			<Russian>KRISS Holo ПБС</Russian>
 		</Key>
-        <Key ID="STR_DZ_WPN_KRISS_DESC">
+		<Key ID="STR_DZ_WPN_KRISS_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP</German>
 			<English>Submachine gun  &lt;br/&gt;Caliber: .45 ACP</English>
 			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: .45 ACP</Italian>
@@ -18026,8 +18095,8 @@
 			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: .45 ACP</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: .45 ACP</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
-        </Key>
-        <Key ID="STR_DZ_WPN_KRISS_SD_DESC">
+		</Key>
+		<Key ID="STR_DZ_WPN_KRISS_SD_DESC">
 			<English>Silenced submachine gun  &lt;br/&gt;Caliber: .45 ACP SD</English>
 			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
 			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: .45 ACP SD</Italian>
@@ -18037,7 +18106,7 @@
 			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: .45 ACP дозвук.</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP SD</Hungarian>
-        </Key>
+		</Key>
 
 		<!-- MAC-10 -->
 		<Key ID="STR_DZ_WPN_MAC10_NAME">
@@ -18089,7 +18158,7 @@
 			<English>UMP Holo SD</English>
 			<Russian>UMP Holo ПБС</Russian>
 		</Key>
-        <Key ID="STR_DZ_WPN_UMP_DESC">
+		<Key ID="STR_DZ_WPN_UMP_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP</German>
 			<English>Submachine gun  &lt;br/&gt;Caliber: .45 ACP</English>
 			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: .45 ACP</Italian>
@@ -18099,8 +18168,8 @@
 			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: .45 ACP</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: .45 ACP</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
-        </Key>
-        <Key ID="STR_DZ_WPN_UMP_SD_DESC">
+		</Key>
+		<Key ID="STR_DZ_WPN_UMP_SD_DESC">
 			<English>Silenced submachine gun  &lt;br/&gt;Caliber: .45 ACP SD</English>
 			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
 			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: .45 ACP SD</Italian>
@@ -18110,7 +18179,7 @@
 			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: .45 ACP дозвук.</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP SD</Hungarian>
-        </Key>
+		</Key>
 
 		<!-- P90 -->
 		<Key ID="STR_DZ_WPN_P90_NAME">
@@ -18134,7 +18203,7 @@
 			<English>P90 Holo SD</English>
 			<Russian>P90 Holo ПБС</Russian>
 		</Key>
-        <Key ID="STR_DZ_WPN_P90_DESC">
+		<Key ID="STR_DZ_WPN_P90_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: 5.7x28mm</German>
 			<English>Submachine gun  &lt;br/&gt;Caliber: 5.7x28mm</English>
 			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 5.7x28mm</Italian>
@@ -18144,8 +18213,8 @@
 			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 5.7x28мм</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 5.7x28mm</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm</Hungarian>
-        </Key>
-        <Key ID="STR_DZ_WPN_P90_SD_DESC">
+		</Key>
+		<Key ID="STR_DZ_WPN_P90_SD_DESC">
 			<English>Silenced submachine gun  &lt;br/&gt;Caliber: 5.7x28mm SD</English>
 			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 5.7x28mm SD</German>
 			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 5.7x28mm SD</Italian>
@@ -18155,7 +18224,7 @@
 			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: 5.7x28мм дозвук.</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 5.7x28mm SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm SD</Hungarian>
-        </Key>
+		</Key>
 
 		<!-- HK416 -->
 		<Key ID="STR_DZ_WPN_HK416_NAME">
@@ -18327,7 +18396,7 @@
 			<Russian>Masada ACOG ПБС</Russian>
 		</Key>
 
-		<!-- AKS -->		
+		<!-- AKS -->
 		<Key ID="STR_DZ_WPN_AKS_GOLD_NAME">
 			<English>AK-47MS Gold</English>
 			<Russian>АК-47МС Золотой</Russian>
@@ -18340,7 +18409,7 @@
 		<Key ID="STR_DZ_WPN_AKS_NAME">
 			<English>AK-47MS</English>
 			<Russian>АК-47МС</Russian>
-		</Key>		
+		</Key>
 
 		<!-- AN-94 Abakan -->
 		<Key ID="STR_DZ_WPN_AN94_NAME">
@@ -18767,7 +18836,7 @@
 		<Key ID="STR_DZ_WPN_M200_CHEYTAC_SD_DESC">
 			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .408 Chey Tac SD</English>
 			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac SD</German>
-			<Russian>Бесшумная Снайперская винтовка&lt;br/&gt;Калибр: .408 Chey Tac дозвук.</Russian>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: .408 Chey Tac дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_WA2000_NAME">
 			<English>WA2000</English>
@@ -18796,7 +18865,7 @@
 		<Key ID="STR_DZ_WPN_STEN_MK_NAME">
 			<English>Sten MK</English>
 		</Key>
-        <Key ID="STR_DZ_WPN_STEN_MK_DESC">
+		<Key ID="STR_DZ_WPN_STEN_MK_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
 			<English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm Parabellum</Italian>
@@ -18806,13 +18875,13 @@
 			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 9x19мм Parabellum</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
-        </Key>
+		</Key>
 
 		<!-- G3 -->
 		<Key ID="STR_DZ_WPN_G3_NAME">
 			<English>G3A1</English>
 		</Key>
-        <Key ID="STR_DZ_WPN_G3_DESC">
+		<Key ID="STR_DZ_WPN_G3_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51мм</Russian>
@@ -18840,7 +18909,7 @@
 		<Key ID="STR_DZ_WPN_MAT49_NAME">
 			<English>MAT-49</English>
 		</Key>
-        <Key ID="STR_DZ_WPN_MAT49_DESC">
+		<Key ID="STR_DZ_WPN_MAT49_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
 			<English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm Parabellum</Italian>
@@ -18850,13 +18919,13 @@
 			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 9x19мм Parabellum</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
-        </Key>
+		</Key>
 
 		<!-- Suomi M-31 -->
 		<Key ID="STR_DZ_WPN_M31_NAME">
 			<English>Suomi M-31</English>
 		</Key>
-        <Key ID="STR_DZ_WPN_M31_DESC">
+		<Key ID="STR_DZ_WPN_M31_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
 			<English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm Parabellum</Italian>
@@ -18866,17 +18935,17 @@
 			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 9x19мм Parabellum</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
-        </Key>
+		</Key>
 
 		<!-- USAS12 -->
 		<Key ID="STR_DZ_WPN_USAS12_NAME">
 			<English>USAS-12</English>
 		</Key>
-        <Key ID="STR_DZ_WPN_USAS12_DESC">
+		<Key ID="STR_DZ_WPN_USAS12_DESC">
 			<English>Automatic Shotgun &lt;br/&gt;Caliber: Caliber 12</English>
 			<German>Selbstladeschrotflinte &lt;br/&gt;Kaliber: Kaliber 12</German>
 			<Russian>Автоматический дробовик&lt;br/&gt;Калибр: 12к</Russian>
-      </Key>
+		</Key>
 
 		<!-- Desert Eagle -->
 		<Key ID="STR_DZ_WPN_DESERT_EAGLE_NAME">
@@ -18894,17 +18963,17 @@
 		<Key ID="STR_DZ_WPN_DESERT_EAGLE_MODERN_NAME">
 			<English>Desert Eagle Modern</English>
 		</Key>
-        <Key ID="STR_DZ_WPN_DESERT_EAGLE_DESC">
+		<Key ID="STR_DZ_WPN_DESERT_EAGLE_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .50 AE</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .50 AE</German>
 			<Russian>Полувтоматический пистолет&lt;br/&gt;Калибр: .50 AE</Russian>
-      </Key>
+		</Key>
 
 		<!-- Colt Revolver -->
 		<Key ID="STR_DZ_WPN_COLT_REVOLVER_NAME">
 			<English>Colt Revolver</English>
 		</Key>
-        <Key ID="STR_DZ_WPN_COLT_REVOLVER_DESC">
+		<Key ID="STR_DZ_WPN_COLT_REVOLVER_DESC">
 			<English>Revolver &lt;br/&gt;Caliber: .45 ACP</English>
 			<German>Revolver &lt;br/&gt;Kaliber: .45 ACP</German>
 			<Russian>Револьвер&lt;br/&gt;Калибр: .45 ACP</Russian>
@@ -18933,9 +19002,10 @@
 		<Key ID="STR_DZ_WPN_RED_RYDER_NAME">
 			<English>Red Ryder BB</English>
 		</Key>
-        <Key ID="STR_DZ_WPN_RED_RYDER_DESC">
+		<Key ID="STR_DZ_WPN_RED_RYDER_DESC">
 			<English>Red Ryder BB&lt;br/&gt;Caliber: 4.5mm BBs</English>
 			<German>Red Ryder BB&lt;br/&gt;Kaliber: 4.5mm BBs</German>
+			<Russian>Пневматическая винтовка Daisy Red Ryder&lt;br/&gt;Калибр: 4.5мм</Russian>
 		</Key>
 
 		<!-- **** MAGAZINES **** -->
@@ -19002,7 +19072,7 @@
 
 		<Key ID="STR_DZ_MAG_30RND_545x39_AKSD_NAME">
 			<English>30Rnd. AK-74 SD mag.</English>
-			<Russian>30п. AK-74 дозвук.</Russian>
+			<Russian>30п. АК-74 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_545x39_AK_NAME">
 			<English>30Rnd. AK-74 mag.</English>
@@ -19020,7 +19090,7 @@
 		<Key ID="STR_DZE_MAG_60RND_762X39_AK47_DESC">
 			<English>Caliber: 7.62x39mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-47M, AK-47MS, SA-58, RPK, SCAR-H AK</English>
 			<German>Kaliber: 7.62x39mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Verwendet in: AK-47M, AK-47MS, SA-58, RPK, SCAR-H AK</German>
-			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Количество: 60&lt;br/&gt;2 магазина соединенные изолентой.&lt;br/&gt;Исп. в: AK-47M, AK-47MS, SA-58, РПК, SCAR-H AK</Russian>
+			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Количество: 60&lt;br/&gt;2 магазина соединенные изолентой.&lt;br/&gt;Исп. в: АК-47М, АК-47МС, SA-58, РПК, SCAR-H AK</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_762X39_SA58_NAME">
 			<English>30Rnd. SA-58 mag.</English>
@@ -19251,7 +19321,7 @@
 			<Czech>Ráže: 12 Buckshot&lt;br/&gt;Munice: 8&lt;br/&gt;Pro: M1014, Remington 870</Czech>
 			<German>Kaliber: 12 Schrot&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
 		</Key>
-        <Key ID="STR_DZ_MAG_30RND_MP5_DESC">
+		<Key ID="STR_DZ_MAG_30RND_MP5_DESC">
 			<German>Kaliber: 9x19mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: MP5, Scorpion Evo 3</German>
 			<English>Caliber: 9x19mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5, Scorpion Evo 3</English>
 			<Italian>Calibro: 9x19mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5, Scorpion Evo 3</Italian>
@@ -19261,8 +19331,8 @@
 			<Russian>Калибр: 9x19мм Parabellum&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: MP5, Scorpion Evo 3</Russian>
 			<Polish>Kaliber: 9x19mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5, Scorpion Evo 3</Polish>
 			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5, Scorpion Evo 3</Hungarian>
-        </Key>
-        <Key ID="STR_DZ_MAG_30RND_MP5SD_DESC">
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_MP5SD_DESC">
 			<German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: MP5SD, Scorpion Evo 3 SD</German>
 			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5SD, Scorpion Evo 3 SD</English>
 			<Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5SD, Scorpion Evo 3 SD</Italian>
@@ -19272,14 +19342,14 @@
 			<Russian>Калибр: 9x19мм Parabellum дозвук.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: MP5 ПБС, Scorpion Evo 3 ПБС</Russian>
 			<Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5SD, Scorpion Evo 3 SD</Polish>
 			<Hungarian>Kaliber: 9x19mm Parabellum SD&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5SD, Scorpion Evo 3 SD</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_NAME">
 			<English>60Rnd. Stanag mag</English>
-			<Russian>60п. STANAG маг</Russian>
+			<Russian>60п. STANAG</Russian>
 		</Key>
 		<Key ID="STR_DZE_MAG_60RND_556x45_STANAGSD_NAME">
 			<English>60Rnd. Stanag SD mag</English>
-			<Russian>60п. STANAG дозвук. маг</Russian>
+			<Russian>60п. STANAG дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_DESC">
 			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</English>
@@ -19293,23 +19363,23 @@
 		</Key>
 		<Key ID="STR_DZE_MAG_60RND_545x39_AK74_NAME">
 			<English>60Rnd. AK-74 mag</English>
-			<Russian>60п. AK-74 маг</Russian>
+			<Russian>60п. АК-74</Russian>
 		</Key>
 		<Key ID="STR_DZE_MAG_60RND_545x39_AK74_DESC">
 			<English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-74, AK-107 and RPK-74</English>
 			<German>Kaliber: 5.45x39mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Verwendet in: AK-74, AK-107 und RPK-74</German>
-			<Russian>Калибр: 5.45x39мм&lt;br/&gt;Количество: 60&lt;br/&gt;2 магазина соединенные изолентой.&lt;br/&gt;Исп. в: AK-74, AK-107 и РПК-74</Russian>
+			<Russian>Калибр: 5.45x39мм&lt;br/&gt;Количество: 60&lt;br/&gt;2 магазина соединенные изолентой.&lt;br/&gt;Исп. в: АК-74, АК-107 и РПК-74</Russian>
 		</Key>
 		<Key ID="STR_DZE_MAG_60RND_545x39_AK74SD_NAME">
 			<English>60Rnd. AK-74 SD mag</English>
-			<Russian>60п. AK-74 дозвук. маг</Russian>
+			<Russian>60п. АК-74 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZE_MAG_60RND_545x39_AK74SD_DESC">
 			<English>Caliber: 5.45x39mm SD&lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-74 SD</English>
 			<German>Kaliber: 5.45x39mm SD&lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Verwendet in: AK-74 SD</German>
-			<Russian>Калибр: 5.45x39мм дозвук.&lt;br/&gt;Количество: 60&lt;br/&gt;2 магазина соединенные изолентой.&lt;br/&gt;Исп. в: AK-74 ПБС</Russian>
+			<Russian>Калибр: 5.45x39мм дозвук.&lt;br/&gt;Количество: 60&lt;br/&gt;2 магазина соединенные изолентой.&lt;br/&gt;Исп. в: АК-74 ПБС</Russian>
 		</Key>
-         <Key ID="STR_DZ_MAG_30RND_AK74_DESC">
+		<Key ID="STR_DZ_MAG_30RND_AK74_DESC">
 			<German>Kaliber: 5.45x39mm &lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: AK-74, AK-107 und RPK-74</German>
 			<English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-107 and RPK-74</English>
 			<Italian>Calibro: 5.45x39mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AK-107 e RPK-74</Italian>
@@ -19319,7 +19389,7 @@
 			<Russian>Калибр: 5.45x39мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: АК-74, АК-107, РПК-74</Russian>
 			<Polish>Kaliber: 5.45x39mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AK-107 i RPK-74</Polish>
 			<Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-107 and RPK-74</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_30RND_AK74SD_DESC">
 			<German>Kaliber: 5.45x39mm SD &lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: AK-74 SD</German>
 			<English>Caliber: 5.45x39mm SD &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74 SD</English>
@@ -19327,10 +19397,10 @@
 			<Spanish>Calibre: 5.45x39mm SD &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74 SD</Spanish>
 			<French>Calibre: 5.45x39mm SD &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: AK-74 SD</French>
 			<Czech>Kalibr: 5.45x39mm SD &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74 SD</Czech>
-			<Russian>Калибр: 5.45x39мм дозвук.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-74 ПБС</Russian>
+			<Russian>Калибр: 5.45x39мм дозвук.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: АК-74 ПБС</Russian>
 			<Polish>Kaliber: 5.45x39mm SD &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74 SD</Polish>
 			<Hungarian>Kaliber: 5.45x39mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74 SD</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_75RND_RPK74_DESC">
 			<German>Kaliber: 5.45x39mm &lt;br/&gt;Patronen: 75 &lt;br/&gt;Verwendet in: AK-74, AK-107 und RPK-74</German>
 			<English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 75 &lt;br/&gt;Used in: AK-74, AK-107 and RPK-74</English>
@@ -19341,7 +19411,7 @@
 			<Russian>Калибр: 5.45x39мм&lt;br/&gt;Количество: 75&lt;br/&gt;Исп. в: АК-74, АК-107, РПК-74</Russian>
 			<Polish>Kaliber: 5.45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-107 i RPK-74</Polish>
 			<Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-107 and RPK-74</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_100RND_556x45_BetaCMag_NAME">
 			<English>100Rnd. Beta C-Mag</English>
 			<Russian>100п. Beta C-Mag</Russian>
@@ -19356,7 +19426,7 @@
 			<Russian>Калибр: 5.56x45мм&lt;br/&gt;Количество: 100&lt;br/&gt;Исп. в: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21, Steyr Aug</Russian>
 			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21, Steyr Aug</Polish>
 			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21, Steyr Aug</Hungarian>
-        </Key>
+		</Key>
 			<Key ID="STR_DZ_MAG_100RND_556x45_BetaCMagSD_NAME">
 			<English>100Rnd. Beta C-Mag SD</English>
 			<Russian>100п. Beta C-Mag дозвук.</Russian>
@@ -19371,7 +19441,7 @@
 			<Russian>Калибр: 5.56x45мм дозвук.&lt;br/&gt;Количество: 100&lt;br/&gt;Исп. в: G36 ПБС, M4 ПБС, XM8 ПБС, Famas ПБС, HK416 ПБС, Masada ПБС, MK16 ПБС, CZ805 ПБС</Russian>
 			<Polish>Kaliber: 5.56x45mm SD &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Polish>
 			<Hungarian>Kaliber: 5.56x45mm SD &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_20RND_MK17_DESC">
 			<English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: MK17, M110, CZ 805B</English>
 			<French>Calibre: 7.62x51mm OTAN&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: MK17, M110, CZ 805B</French>
@@ -20003,11 +20073,11 @@
 			<Russian>Калибр: 9x19мм дозвук.&lt;br/&gt;Количество: 18&lt;br/&gt;Исп. в: CZ 75SP ПБС</Russian>
 			<German>Kaliber: 9x19mm SD&lt;br/&gt;Patronen: 18&lt;br/&gt;Verwendet in: CZ 75SP SD</German>
 		</Key>
-	  <Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_NAME">
+		<Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_NAME">
 			<English>3Rnd. Anzio 20mm mag.</English>
 			<Russian>3п. Anzio 20мм</Russian>
-	  </Key>
-      <Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_DESC">
+		</Key>
+		<Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_DESC">
 			<English>Caliber: 20x102mm&lt;br/&gt;Rounds: 3&lt;br/&gt;Used in: Anzio 20mm</English>
 			<French>Calibre: 20x102mm&lt;br/&gt;Munitions : 3&lt;br/&gt;Utilisé avec: Anzio 20mm</French>
 			<Spanish>Calibre: 20x102mm&lt;br/&gt;Cartuchos: 3&lt;br/&gt;Usado en: Anzio 20mm</Spanish>
@@ -20017,7 +20087,7 @@
 			<German>Kaliber: 20x102mm&lt;br/&gt;Patronen: 3&lt;br/&gt;Verwendet in: Anzio 20mm</German>
 			<Czech>Kalibr: 20x102mm&lt;br/&gt;Nábojů: 3&lt;br/&gt;Pro: Anzio 20mm</Czech>
 			<Hungarian>Kaliber: 20x102mm&lt;br/&gt; Töltények: 3&lt;br/&gt; Hozzá tartozó fegyver: Anzio 20mm</Hungarian>
-      </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_33RND_45ACP_KRISS_NAME">
 			<English>33Rnd. KRISS mag.</English>
 			<Russian>33п. KRISS</Russian>
@@ -20078,7 +20148,7 @@
 			<English>30Rnd. TMP mag.</English>
 			<Russian>30п. TMP</Russian>
 		</Key>
-        <Key ID="STR_DZ_MAG_30RND_TMP_DESC">
+		<Key ID="STR_DZ_MAG_30RND_TMP_DESC">
 			<German>Kaliber: 9x19mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: Steyr TMP</German>
 			<English>Caliber: 9x19mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: Steyr TMP</English>
 			<Italian>Calibro: 9x19mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: Steyr TMP</Italian>
@@ -20088,8 +20158,8 @@
 			<Russian>Калибр: 9x19мм Parabellum&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Steyr TMP</Russian>
 			<Polish>Kaliber: 9x19mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: Steyr TMP</Polish>
 			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr TMP</Hungarian>
-        </Key>
-        <Key ID="STR_DZ_MAG_30RND_TMPSD_DESC">
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_TMPSD_DESC">
 			<German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: Steyr TMP SD</German>
 			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: Steyr TMP SD</English>
 			<Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: Steyr TMP SD</Italian>
@@ -20099,7 +20169,7 @@
 			<Russian>Калибр: 9x19мм Parabellum дозвук.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Steyr TMP ПБС</Russian>
 			<Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: Steyr TMP SD</Polish>
 			<Hungarian>Kaliber: 9x19mm Parabellum SD&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr TMP SD</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_25RND_45_UMP_NAME">
 			<English>25Rnd. UMP mag.</English>
 			<Russian>25п. UMP</Russian>
@@ -20108,7 +20178,7 @@
 			<English>25Rnd. UMP SD mag.</English>
 			<Russian>25п. UMP дозвук.</Russian>
 		</Key>
-        <Key ID="STR_DZ_MAG_25RND_UMP_DESC">
+		<Key ID="STR_DZ_MAG_25RND_UMP_DESC">
 			<German>Kaliber: .45 ACP &lt;br/&gt;Patronen: 25 &lt;br/&gt;Verwendet in: UMP</German>
 			<English>Caliber: .45 ACP &lt;br/&gt;Rounds: 25 &lt;br/&gt;Used in: UMP</English>
 			<Italian>Calibro: .45 ACP &lt;br/&gt;Munizioni: 25 &lt;br/&gt;Si usa in: UMP</Italian>
@@ -20118,8 +20188,8 @@
 			<Russian>Калибр: .45 ACP&lt;br/&gt;Количество: 25&lt;br/&gt;Исп. в: UMP</Russian>
 			<Polish>Kaliber: .45 ACP &lt;br/&gt;Naboje: 25 &lt;br/&gt;Używane w: UMP</Polish>
 			<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 25 &lt;br/&gt; Hozzá tartozó fegyver: UMP</Hungarian>
-        </Key>
-        <Key ID="STR_DZ_MAG_25RND_UMPSD_DESC">
+		</Key>
+		<Key ID="STR_DZ_MAG_25RND_UMPSD_DESC">
 			<German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 25 &lt;br/&gt;Verwendet in: UMP SD</German>
 			<English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 25 &lt;br/&gt;Used in: UMP SD</English>
 			<Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 25 &lt;br/&gt;Si usa in: UMP SD</Italian>
@@ -20129,7 +20199,7 @@
 			<Russian>Калибр: .45 ACP дозвук.&lt;br/&gt;Количество: 25&lt;br/&gt;Исп. в: UMP ПБС</Russian>
 			<Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 25 &lt;br/&gt;Używane w: UMP SD</Polish>
 			<Hungarian>Kaliber: .45 ACP SD&lt;br/&gt; Töltények: 25 &lt;br/&gt; Hozzá tartozó fegyver: UMP SD</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_50RND_P90_NAME">
 			<English>50Rnd. P90 mag.</English>
 			<Russian>50п. P90</Russian>
@@ -20138,7 +20208,7 @@
 			<English>50Rnd. P90 SD mag.</English>
 			<Russian>50п. P90 дозвук.</Russian>
 		</Key>
-        <Key ID="STR_DZ_MAG_50RND_P90_DESC">
+		<Key ID="STR_DZ_MAG_50RND_P90_DESC">
 			<German>Kaliber: 5.7x28mm &lt;br/&gt;Patronen: 50 &lt;br/&gt;Verwendet in: P90</German>
 			<English>Caliber: 5.7x28mm &lt;br/&gt;Rounds: 50 &lt;br/&gt;Used in: P90</English>
 			<Italian>Calibro: 5.7x28mm &lt;br/&gt;Munizioni: 50 &lt;br/&gt;Si usa in: P90</Italian>
@@ -20148,8 +20218,8 @@
 			<Russian>Калибр: 5.7x28мм&lt;br/&gt;Количество: 50&lt;br/&gt;Исп. в: P90</Russian>
 			<Polish>Kaliber: 5.7x28mm &lt;br/&gt;Naboje: 50 &lt;br/&gt;Używane w: P90</Polish>
 			<Hungarian>Kaliber: 5.7x28mm &lt;br/&gt; Töltények: 50 &lt;br/&gt; Hozzá tartozó fegyver: P90</Hungarian>
-        </Key>
-        <Key ID="STR_DZ_MAG_50RND_P90SD_DESC">
+		</Key>
+		<Key ID="STR_DZ_MAG_50RND_P90SD_DESC">
 			<German>Kaliber: 5.7x28mm SD&lt;br/&gt;Patronen: 50 &lt;br/&gt;Verwendet in: P90 SD</German>
 			<English>Caliber: 5.7x28mm SD&lt;br/&gt;Rounds: 50 &lt;br/&gt;Used in: P90 SD</English>
 			<Italian>Calibro: 5.7x28mm SD&lt;br/&gt;Munizioni: 50 &lt;br/&gt;Si usa in: P90 SD</Italian>
@@ -20159,7 +20229,7 @@
 			<Russian>Калибр: 5.7x28мм дозвук.&lt;br/&gt;Количество: 50&lt;br/&gt;Исп. в: P90 ПБС</Russian>
 			<Polish>Kaliber: 5.7x28mm SD&lt;br/&gt;Naboje: 50 &lt;br/&gt;Używane w: P90 SD</Polish>
 			<Hungarian>Kaliber: 5.7x28mm SD&lt;br/&gt; Töltények: 50 &lt;br/&gt; Hozzá tartozó fegyver: P90 SD</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_20RND_HK417_NAME">
 			<English>20Rnd. HK417 mag.</English>
 			<Russian>20п. HK417</Russian>
@@ -20256,7 +20326,7 @@
 			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: AK-47M, AK-47MS, SA-58, RPK, SCAR-H AK</Spanish>
 			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: AK-47M, AK-47MS, SA-58, RPK, SCAR-H AK</Italian>
 			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: AK-47M, AK-47MS, SA-58, RPK, SCAR-H AK</Polish>
-			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-47M, AK-47MS, SA-58, RPK, SCAR-H AK</Russian>
+			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: АК-47М, АК-47МС, SA-58, РПК, SCAR-H AK</Russian>
 			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: AK-47M, AK-47MS, SA-58, RPK, SCAR-H AK</German>
 			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, AK-47MS, SA-58, RPK, SCAR-H AK</Czech>
 			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, AK-47MS, SA-58, RPK, SCAR-H AK</Hungarian>
@@ -20267,7 +20337,7 @@
 			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: SA-58, AK-47M, AK-47MS, RPK, SCAR-H AK</Spanish>
 			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: SA-58, AK-47M, AK-47MS, RPK, SCAR-H AK</Italian>
 			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: SA-58, AK-47M, AK-47MS, RPK, SCAR-H AK</Polish>
-			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: SA-58, AK-47M, AK-47MS, RPK, SCAR-H AK</Russian>
+			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: SA-58, АК-47М, АК-47МС, РПК, SCAR-H AK</Russian>
 			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: SA-58, AK-47M, AK-47MS, RPK, SCAR-H AK</German>
 			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: SA-58, AK-47M, SA-58, AK-47MS, RPK, SCAR-H AK</Czech>
 			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: SA-58, AK-47M, AK-47MS, RPK, SCAR-H AK</Hungarian>
@@ -20368,7 +20438,7 @@
 			<Russian>Калибр: 5.56x45мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Steyr Aug A3</Russian>
 			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: Steyr Aug A3</Polish>
 			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr Aug A3</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_5RND_408_CHEYTAC_NAME">
 			<English>5Rnd. Chey Tac mag.</English>
 			<Russian>5п. Chey Tac</Russian>
@@ -20383,7 +20453,7 @@
 			<Russian>Калибр: .408 Chey Tac&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: M200 Chey Tac</Russian>
 			<Polish>Kaliber: .408 Chey Tac &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M200 Chey Tac</Polish>
 			<Hungarian>Kaliber: .408 Chey Tac &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M200 Chey Tac</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_5RND_408_CHEYTAC_SD_NAME">
 			<English>5Rnd. Chey Tac SD mag.</English>
 			<Russian>5п. Chey Tac дозвук.</Russian>
@@ -20398,7 +20468,7 @@
 			<Russian>Калибр: .408 Chey Tac дозвук.&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: M200 Chey Tac ПБС</Russian>
 			<Polish>Kaliber: .408 Chey Tac SD &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M200 Chey Tac SD</Polish>
 			<Hungarian>Kaliber: .408 Chey Tac SD &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M200 Chey Tac SD</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_6RND_WA2000_NAME">
 			<English>6Rnd. WA2000 mag.</English>
 			<Russian>6п. WA2000</Russian>
@@ -20556,7 +20626,7 @@
 			<Russian>Калибр: 5.56x45мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M16, M4, M249, MK-12, G36, MG36, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Russian>
 			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: M16, M4, M249, MK-12, G36, MG36, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Polish>
 			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: M16, M4, M249, MK-12, G36, MG36, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZE_MAG_30RND_556x45_G36_DESC">
 			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</English>
 			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</German>
@@ -20567,7 +20637,7 @@
 			<Russian>Калибр: 5.56x45мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Russian>
 			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Polish>
 			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZE_MAG_30RND_556x45_G36SD_DESC">
 			<English>Caliber: 5.56x45mm SD&lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, L85 SD, MK16 SD, Masada SD, CZ805 SD</English>
 			<German>Kaliber: 5.56x45mm SD&lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, L85 SD, MK16 SD, Masada SD, CZ805 SD</German>
@@ -20578,7 +20648,7 @@
 			<Russian>Калибр: 5.56x45мм дозвук.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: G36 ПБС, M4 ПБС, XM8 ПБС, Famas ПБС, HK416 ПБС, L85 ПБС, MK16 ПБС, Masada ПБС, CZ805 ПБС</Russian>
 			<Polish>Kaliber: 5.56x45mm SD&lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, L85 SD, MK16 SD, Masada SD, CZ805 SD</Polish>
 			<Hungarian>Kaliber: 5.56x45mm SD&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, L85 SD, MK16 SD, Masada SD, CZ805 SD</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZE_MAG_30RND_556x45_STANAGSD_DESC">
 			<English>Caliber: 5.56x45mm SD&lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: M4 SD, G36 SD, XM8 SD, Famas SD, HK416 SD, L85 SD, MK16 SD, Masada SD, CZ805 SD</English>
 			<German>Kaliber: 5.56x45mm SD&lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: M4 SD, G36 SD, XM8 SD, Famas SD, HK416 SD, L85 SD, MK16 SD, Masada SD, CZ805 SD</German>
@@ -20589,7 +20659,7 @@
 			<Russian>Калибр: 5.56x45мм дозвук.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M4 ПБС, G36 ПБС, XM8 ПБС, Famas ПБС, HK416 ПБС, L85 ПБС, MK16 ПБС, Masada ПБС, CZ805 ПБС</Russian>
 			<Polish>Kaliber: 5.56x45mm SD&lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: M4 SD, G36 SD, XM8 SD, Famas SD, HK416 SD, L85 SD, MK16 SD, Masada SD, CZ805 SD</Polish>
 			<Hungarian>Kaliber: 5.56x45mm SD&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: M4 SD, G36 SD, XM8 SD, Famas SD, HK416 SD, L85 SD, MK16 SD, Masada SD, CZ805 SD</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_100RND_762x54_PK_DESC">
 			<English>Caliber: 7.62x54mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: PKM, PKP</English>
 			<German>Kaliber: 7.62x54mm &lt;br/&gt;Patronen: 100 &lt;br/&gt;Verwendet in: PKM, PKP</German>
@@ -20600,7 +20670,7 @@
 			<Russian>Калибр: 7.62x54мм&lt;br/&gt;Количество: 100&lt;br/&gt;Исп. в: PKM, PKP</Russian>
 			<Polish>Kaliber: 7.62x54mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: PKM, PKP</Polish>
 			<Hungarian>Kaliber: 7.62x54mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: PKM, PKP</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_100RND_762x51_M240_DESC">
 			<English>Caliber: 7.62x51mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: M240, M60E4, MK43, MK48</English>
 			<German>Kaliber: 7.62x51mm &lt;br/&gt;Patronen: 100 &lt;br/&gt;Verwendet in: M240, M60E4, MK43, MK48</German>
@@ -20611,7 +20681,7 @@
 			<Russian>Калибр: 7.62x51мм&lt;br/&gt;Количество: 100&lt;br/&gt;Исп. в: M240, M60E4, MK43, MK48</Russian>
 			<Polish>Kaliber: 7.62x51mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: M240, M60E4, MK43, MK48</Polish>
 			<Hungarian>Kaliber: 7.62x51mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: M240, M60E4, MK43, MK48</Hungarian>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_5RND_762x51_M24_DESC">
 			<English>Caliber: 7.62x51mm &lt;br/&gt;Rounds: 5 &lt;br/&gt;Used in: M24, M40</English>
 			<German>Kaliber: 7.62x51mm &lt;br/&gt;Patronen: 5 &lt;br/&gt;Verwendet in: M24, M40</German>
@@ -20622,8 +20692,8 @@
 			<Russian>Калибр: 7.62x51мм&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: M24, M40</Russian>
 			<Polish>Kaliber: 7.62x51mm &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M24, M40</Polish>
 			<Hungarian>Kaliber: 7.62x51mm &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M24, M40</Hungarian>
-        </Key>
-        <Key ID="str_dss_1rnd_flarewhite_gp25">
+		</Key>
+		<Key ID="str_dss_1rnd_flarewhite_gp25">
 			<English>Type: Flare &lt;br/&gt;Rounds: 1 &lt;br/&gt;Used in: GP-25 grenade launcher</English>
 			<French>Type: Fusée &lt;br/&gt;Munitions : 1 &lt;br/&gt;Utilisé avec : lance-grenades GP-25</French>
 			<Spanish>Tipo: Bengala &lt;br/&gt;Cargas: 1 &lt;br/&gt;Uso: lanzagranadas GP-25</Spanish>
@@ -20633,7 +20703,7 @@
 			<Russian>Тип: сигнальная ракета&lt;br/&gt;Количество: 1&lt;br/&gt;Исп. в: ГП-25</Russian>
 			<German>Typ: Leuchtgeschoss &lt;br/&gt;Schuss: 1 &lt;br/&gt;Verwendet in: GP-25 Granatwerfer</German>
 			<Czech>Typ: světlice &lt;br/&gt;Nábojů: 1 &lt;br/&gt;Pro: granátomet GP-25</Czech>
-        </Key>
+		</Key>
 		<Key ID="STR_DZ_MAG_10RND_SVD_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: SVD, SVU</English>
 			<French>Calibre: 7.62x54mm&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: SVD, SVU</French>
@@ -22848,7 +22918,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_BELT_DESC">
 			<English>Holds cartridges for easier access. Can be attached to the stock of a rifle.</English>
-			<Russian>Обеспечивает хранение и быстрый доступ к магазинам. Может быть прикреплён к прикладу.</Russian>
+			<Russian>Обеспечивает хранение и быстрый доступ к обоймам. Может быть прикреплён к прикладу.</Russian>
 			<German>Für den schnelleren Zugriff auf Munition beim Nachladen. Kann an den Gewehrkolben abgebracht werden.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_BELT_RMVE">
@@ -31119,12 +31189,12 @@
 			<German>Thermoanzug (weiß)</German>
 			<Russian>Термокостюм (Белый)</Russian>
 		</Key>
-	    <Key ID="STR_DZE_EQUIP_CAMOWINTER_DESC">
+		<Key ID="STR_DZE_EQUIP_CAMOWINTER_DESC">
 			<English>Thermo Suit, which can protect you from a cold and rainy weather.&lt;br/&gt;Sex: Male</English>
 			<German>Thermoanzug, der vor kalten und nassen Wetterbedingungen schützen kann.&lt;br/&gt;Geschlecht: Männlich</German>
 			<Russian>Термокостюм, который может вас защитить от холодной и дождливой погоды.&lt;br/&gt;Пол: Мужской</Russian>
 		</Key>
-	    <Key ID="STR_DZE_EQUIP_CAMOWINTER_FEMALE_DESC">
+		<Key ID="STR_DZE_EQUIP_CAMOWINTER_FEMALE_DESC">
 			<English>Thermo Suit, which can protect you from a cold and rainy weather.&lt;br/&gt;Sex: Female</English>
 			<German>Thermoanzug, der vor kalten und nassen Wetterbedingungen schützen kann.&lt;br/&gt;Geschlecht: Weiblich</German>
 			<Russian>Термокостюм, который может вас защитить от холодной и дождливой погоды.&lt;br/&gt;Пол: Женский</Russian>
@@ -31139,12 +31209,12 @@
 			<German>NAC-Soldat</German>
 			<Russian>Солдат NAC</Russian>
 		</Key>
-	    <Key ID="STR_DZE_EQUIP_NACSOLDIER_DESC">
+		<Key ID="STR_DZE_EQUIP_NACSOLDIER_DESC">
 			<English>NAC Soldier suit&lt;br/&gt;Sex: Male</English>
 			<German>NAC-Soldatenanzug&lt;br/&gt;Geschlecht: Männlich</German>
 			<Russian>Солдат NAC.&lt;br/&gt;Пол: Мужской</Russian>
 		</Key>
-	    <Key ID="STR_DZE_EQUIP_NACSOLDIER_FEMALE_DESC">
+		<Key ID="STR_DZE_EQUIP_NACSOLDIER_FEMALE_DESC">
 			<English>NAC Soldier suit&lt;br/&gt;Sex: Female</English>
 			<German>NAC-Soldatenanzug&lt;br/&gt;Geschlecht: Weiblich</German>
 			<Russian>Солдат NAC.&lt;br/&gt;Пол: Женский</Russian>
@@ -32150,9 +32220,9 @@
 			<Russian>Вы снова присоединились к группе %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_NEW">
-            <English>New group invite from %1 - Press F5 to view</English>
-            <German>Neue Gruppeneinladung von %1 - Drücke F5 um sie dir anzusehen</German>
-            <Russian>Групповое приглашение от %1, нажмите F5 чтобы посмотреть</Russian>
+			<English>New group invite from %1 - Press F5 to view</English>
+			<German>Neue Gruppeneinladung von %1 - Drücke F5 um sie dir anzusehen</German>
+			<Russian>Групповое приглашение от %1, нажмите F5 чтобы посмотреть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_PENDING">
 			<English>This player already has a pending invite.</English>
