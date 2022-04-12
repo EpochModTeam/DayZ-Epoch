@@ -98,14 +98,12 @@ if (Z_SingleCurrency) then {
 _canBuy = [_weaponsToBuy,[_pistolMagsToBuy,_regularMagsToBuy],_backpacksToBuy,_toolsToBuy,_sidearmToBuy,_primaryToBuy,_vehiclesToBuy,_toolClasses,_toolAmounts] call Z_allowBuying;
 if (!_canBuy) exitWith {}; // Keep systemChat reasons for failure in Z_allowBuying for sanity
 
-_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
-
 _enoughMoney = false;
-
 _moneyInfo = [false, [], [], [], 0];
 
 if (Z_SingleCurrency) then {
-	_enoughMoney = (_wealth >= _priceToBuy);
+	_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
+	_enoughMoney = (_wealth >= _priceToBuy);	
 } else {
 	_moneyInfo = _priceToBuy call Z_canAfford;
 	_enoughMoney = _moneyInfo select 0;

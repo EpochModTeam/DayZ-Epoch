@@ -39,9 +39,9 @@ if (_disabled) exitWith {[_reason,1] call dayz_rollingMessages};
 
 _enoughMoney = false;
 _moneyInfo = [false, [], [], [], 0];
-_wealth = player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 
 if (Z_SingleCurrency) then {
+	_wealth = player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 	_enoughMoney = (_wealth >= _amount);
 } else {
 	Z_Selling = false;
