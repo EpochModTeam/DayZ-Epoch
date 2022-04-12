@@ -33772,6 +33772,22 @@
 			<German>Pfeiltasten</German>
 			<Russian>Стрелки</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TUT_KEY_NUMPAD_ARROWS">
+			<English>Numpad Arrow Keys</English>
+			<German>Nummernpad-Pfeiltasten</German>
+		</Key>
+		<Key ID="STR_EPOCH_KEYBOARD_HANDEDNESS">
+			<English>** Keyboard is now configured: %1 **</English>
+			<German>** Tastatur is eingestellt auf: %1 **</German>
+		</Key>
+		<Key ID="STR_EPOCH_LEFT_HANDED">
+			<English>Left-handed</English>
+			<German>Linkshändig</German>
+		</Key>
+		<Key ID="STR_EPOCH_RIGHT_HANDED">
+			<English>Right-handed</English>
+			<German>Rechtshändig</German>
+		</Key>		
 		<Key ID="STR_EPOCH_TUT_KEY_ESC">
 			<English>Esc</English>
 		</Key>

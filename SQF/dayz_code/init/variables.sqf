@@ -431,6 +431,7 @@ if (!isDedicated) then {
 	DZE_myHaloVehicle = objNull;
 	dayz_myLiftVehicle = objNull;
 	DZE_Friends = [];
+	DZE_LEFT_HANDED = false;
 	DZE_Q = false;
 	DZE_Z = false;
 	DZE_Q_alt = false;

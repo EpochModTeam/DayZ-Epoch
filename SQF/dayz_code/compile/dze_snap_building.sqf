@@ -47,12 +47,13 @@ local _hpsp		= _hyphen + _PgUp + _slash + _PgDn + _BRW;
 local _degKeys		= toArray (localize "STR_EPOCH_TUT_ADJ_DEGREES_KEYS");
 local _decrease		= toString [_degKeys select 0];
 local _increase		= toString [_degKeys select 1];
+local _handedness	= ["STR_EPOCH_TUT_KEY_ARROWS","STR_EPOCH_TUT_KEY_NUMPAD_ARROWS"] select DZE_LEFT_HANDED;
 
 local _HK = _OBR + _tab + _DBR + localize "STR_EPOCH_TUT_KEY_SHIFT" + _hyphen + _tab + _BRW	+ localize "STR_EPOCH_TUT_SNAP_NEXT_PREV"	+ _NL;
 _HK = _HK + _OBR + _PgUp + _DBR + _PgDn + _BRW							+ localize "STR_EPOCH_TUT_HEIGHT10"		+ _NL;
 _HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_CTRL" + _hpsp					+ localize "STR_EPOCH_TUT_HEIGHT1"		+ _NL;
 _HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_ALT"  + _hpsp					+ localize "STR_EPOCH_TUT_HEIGHT100"		+ _NL;
-_HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_ARROWS" + _BRW					+ _strPitch + " / " + _strBank			+ _NL;
+_HK = _HK + _OBR + localize _handedness + _BRW							+ _strPitch + " / " + _strBank			+ _NL;
 _HK = _HK + _ORA + "[Q] [E] "									+ _WHT + _strRotate				+ _NL;
 _HK = _HK + _OBR + _decrease + _DBR + _increase + _BRW						+ localize "STR_EPOCH_TUT_ADJ_DEGREES"		+ _NL;
 _HK = _HK + _spacing;

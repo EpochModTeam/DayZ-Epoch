@@ -70,30 +70,38 @@ if (isNil "keyboard_keys") then {
 		};
 	};
 	local _dze_up = {
-		if (!isNil "DZE_buildItem") then {		// pitch object forward while base building (Up Arrow Only)
-			DZE_UP = true;
-			_handled = true;			// prevent move forward
+		if (!isNil "DZE_buildItem") then {		// pitch object forward while base building (Up Arrow or Numpad 8)
+			if ((DZE_LEFT_HANDED && (_dikCode == 72)) || (!DZE_LEFT_HANDED && (_dikCode == 200))) then {
+				DZE_UP = true;
+				_handled = true;
+			};
 		};
 		r_interrupt = true;
 	};
 	local _dze_down = {
-		if (!isNil "DZE_buildItem") then {		// pitch object back while base building (Down Arrow Only)
-			DZE_DOWN = true;
-			_handled = true;			// prevent move back
+		if (!isNil "DZE_buildItem") then {		// pitch object back while base building (Down Arrow or Numpad 2)
+			if ((DZE_LEFT_HANDED && (_dikCode == 80)) || (!DZE_LEFT_HANDED && (_dikCode == 208))) then {
+				DZE_DOWN = true;
+				_handled = true;
+			};
 		};
 		r_interrupt = true;
 	};
 	local _dze_left = {
-		if (!isNil "DZE_buildItem") then {		// bank object left while base building
-			DZE_LEFT = true;
-			_handled = true;			// prevent move left
+		if (!isNil "DZE_buildItem") then {		// bank object left while base building (Left Arrow or Numpad 4)
+			if ((DZE_LEFT_HANDED && (_dikCode == 75)) || (!DZE_LEFT_HANDED && (_dikCode == 203))) then {
+				DZE_LEFT = true;
+				_handled = true;
+			};
 		};
 		r_interrupt = true;
 	};
 	local _dze_right = {
-		if (!isNil "DZE_buildItem") then {		// bank object right while base building
-			DZE_RIGHT = true;
-			_handled = true;			// prevent move right
+		if (!isNil "DZE_buildItem") then {		// bank object right while base building (Right Arrow or Numpad 6)
+			if ((DZE_LEFT_HANDED && (_dikCode == 77)) || (!DZE_LEFT_HANDED && (_dikCode == 205))) then {
+				DZE_RIGHT = true;
+				_handled = true;
+			};
 		};
 		r_interrupt = true;
 	};
@@ -166,6 +174,19 @@ if (isNil "keyboard_keys") then {
 		profileNamespace setVariable ["statusUI",DZE_UI];
 		saveProfileNamespace;
 		call ui_changeDisplay;
+		_handled = true;
+	};
+	local _handedness = {
+		if (isNil "DZE_buildItem") then {	// only allow switching outside of base building
+			DZE_LEFT_HANDED = !DZE_LEFT_HANDED;
+			local _handed = "";
+			if (DZE_LEFT_HANDED) then {
+				_handed = "STR_EPOCH_LEFT_HANDED";
+			} else {
+				_handed = "STR_EPOCH_RIGHT_HANDED";
+			};
+			systemChat format [localize "STR_EPOCH_KEYBOARD_HANDEDNESS", localize _handed];
+		};
 		_handled = true;
 	};
 	local _rifle = {
@@ -313,11 +334,19 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "MoveBack", _interrupt] call _addArray;	// S / Down Arrow Keys
 	[actionKeys "TurnLeft", _interrupt] call _addArray;	// A / Left Arrow Keys
 	[actionKeys "TurnRight", _interrupt] call _addArray;	// D / Right Arrow Keys
-	// keep these arrow keys directly below the move/turn action key entries
+	///////////////////////////////////////////////////////////////////////////////////////////
+	//	Keep these arrow keys directly below the move/turn action key entries,
+	//	and keep them in exactly this order.
+	///////////////////////////////////////////////////////////////////////////////////////////
+	[[DIK_NUMPAD8], _dze_up] call _addArray;
+	[[DIK_NUMPAD2], _dze_down] call _addArray;
+	[[DIK_NUMPAD4], _dze_left] call _addArray;
+	[[DIK_NUMPAD6], _dze_right] call _addArray;
 	[[DIK_UP], _dze_up] call _addArray;
 	[[DIK_DOWN], _dze_down] call _addArray;
 	[[DIK_LEFT], _dze_left] call _addArray;
 	[[DIK_RIGHT], _dze_right] call _addArray;
+	///////////////////////////////////////////////////////////////////////////////////////////
 	[actionKeys "PushToTalk", _noise] call _addArray;
 	[actionKeys "PushToTalkAll", _noise] call _addArray;
 	[actionKeys "PushToTalkCommand", _noise] call _addArray;
@@ -335,6 +364,7 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "SelectAll", _block] call _addArray;
 	[[DIK_F1], _muteSound] call _addArray;
 	[[DIK_F3], _statusUI] call _addArray;
+	[[DIK_F6], _handedness] call _addArray;
 	[[DIK_F5], {if (diag_tickTime - dayz_lastSave > 10) then {call player_forceSave;};_handled = true;}] call _addArray;
 	[[DIK_TAB], _dze_tab] call _addArray;
 	[actionKeys "LeanLeft",  {DZE_4 = true; dayz_dodge = true;}] call _addArray;
@@ -343,7 +373,7 @@ if (isNil "keyboard_keys") then {
 	[[DIK_E], _dze_e] call _addArray;
 	[actionKeys "GetOver", _bunnyhop] call _addArray; // V
 	[actionKeys "ForceCommandingMode", {DZE_5 = true; _handled = true;}] call _addArray;
-	[[DIK_F2, DIK_F4, DIK_F6, DIK_F7, DIK_F8, DIK_F9, DIK_F10, DIK_F11, DIK_F12, DIK_4, DIK_5, DIK_6, DIK_7, DIK_8, DIK_9], _block] call _addArray;
+	[[DIK_F2, DIK_F4, DIK_F7, DIK_F8, DIK_F9, DIK_F10, DIK_F11, DIK_F12, DIK_4, DIK_5, DIK_6, DIK_7, DIK_8, DIK_9], _block] call _addArray;
 	
 	if (dayz_groupSystem) then {
 		[[DIK_F5], _openGroups] call _addArray;
