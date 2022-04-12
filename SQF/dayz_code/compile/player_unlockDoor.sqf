@@ -7,7 +7,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_display","_displayCombo","_displayEye","_doorMethod","_hasAccess","_notNearestPlayer","_obj","_objectCharacterID","_code"];
+private ["_msg","_display","_displayCombo","_displayEye","_doorMethod","_hasAccess","_notNearestPlayer","_obj","_objectCharacterID","_code"];
 
 _doorMethod = "";
 _displayCombo = findDisplay 41144;
@@ -83,11 +83,12 @@ if (!isNull dayz_selectedDoor) then {
 				if (DZE_doorManagementHarderPenalty) then {
 					dayz_lastCodeFail = (diag_tickTime + dayz_UnlockTime);
 					dayz_UnlockTime = dayz_UnlockTime * 2;
+					_msg = format [localize "str_epoch_player_19",round(dayz_lastCodeFail - diag_tickTime)];
 				} else {
-					dayz_lastCodeFail = (diag_tickTime + dayz_UnlockTime);
+					_msg = localize "str_epoch_player_19_1";
 				};
 
-				format [localize "str_epoch_player_19",round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;
+				_msg call dayz_rollingMessages;
 				_display closeDisplay 2;
 			};
 		};

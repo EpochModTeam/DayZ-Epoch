@@ -23319,6 +23319,14 @@
 			<French>Trop d'erreurs avec le code, patientez %1 secondes</French>
 			<Czech>Mnohokrát jsi zadal špatný kód, musíš počkat %1 vteřin</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_19_1">
+			<English>You entered the wrong code.</English>
+			<German>Du hast einen falschen Code eingegeben.</German>
+			<Russian>Вы несколько раз ввели неправильный код.</Russian>
+			<Dutch>Je hebt te vaak een foute code ingevoerd.</Dutch>
+			<French>Trop d'erreurs avec le code.</French>
+			<Czech>Mnohokrát jsi zadal špatný kód.</Czech>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_19_WAIT">
 			<English>You must wait another %1 seconds before you can enter another code.</English>
 			<German>Du musst weitere %1 Sekunden warten, bevor du einen anderen Code eingeben kannst.</German>

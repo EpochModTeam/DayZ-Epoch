@@ -73,7 +73,7 @@ class WoodenGate_1_DZ: DZE_Housebase
 			priority = 6;	
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "!keypadCancel && (DZE_Lock_Door != (this getvariable['CharacterID','0'])) && (this animationPhase ""DoorR"" == 0)";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};		
 	};
 
@@ -135,7 +135,7 @@ class WoodenGate_2_DZ: DZE_Housebase
 			priority = 6;	
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "!keypadCancel && (DZE_Lock_Door != (this getvariable['CharacterID','0'])) && (this animationPhase ""DoorR"" == 0)";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};		
 	};
 	
@@ -197,7 +197,7 @@ class WoodenGate_3_DZ: DZE_Housebase
 			priority = 6;	
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "!keypadCancel && (DZE_Lock_Door != (this getvariable['CharacterID','0'])) && (this animationPhase ""DoorR"" == 0)";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};		
 	};
 	
@@ -258,7 +258,7 @@ class WoodenGate_4_DZ: DZE_Housebase
 			priority = 6;	
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "!keypadCancel && (DZE_Lock_Door != (this getvariable['CharacterID','0'])) && (this animationPhase ""DoorR"" == 0)";
-			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog 'DoorAccess';} else {if (DZE_doorManagementHarderPenalty && {dayz_lastCodeFail > diag_tickTime}) then {format [localize 'STR_EPOCH_PLAYER_19_WAIT',round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;} else {createdialog 'ComboLockUI';};};";
 		};		
 	};
 	
