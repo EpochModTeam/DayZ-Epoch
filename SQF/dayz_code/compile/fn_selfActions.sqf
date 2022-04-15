@@ -21,6 +21,7 @@ local _vehicleOwnerID = _vehicle getVariable ["CharacterID","0"];
 local _hasHotwireKit = "ItemHotwireKit" in _magazinesPlayer;
 local _isMan = _cursorTarget isKindOf "Man"; //includes animals and zombies
 local _isZombie = _cursorTarget isKindOf "zZombie_base";
+local _isBloodsucker = _cursorTarget isKindOf "z_bloodsucker";
 local _isPZombie = player isKindOf "PZombie_VB";
 local _isClose = (player distance _cursorTarget < 3);
 local _dogHandle = player getVariable ["dogID",0];
@@ -836,7 +837,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 		};
 	};
 
-	if (!_isAlive && _isMan && !_isZombie && {!(_cursorTarget isKindOf "Animal")}) then {	
+	if (!_isAlive && _isMan && !_isZombie && !_isBloodsucker && {!(_cursorTarget isKindOf "Animal")}) then {	
 		if (DZE_Take_Clothes) then {
 			if (!(_cursorTarget getVariable["clothesTaken",false]) && {_typeOfCursorTarget in AllPlayers} && {!(_typeOfCursorTarget in DZE_Disable_Take_Clothes)}) then {
 				if (s_player_clothes < 0) then {
@@ -891,7 +892,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 
 	// ZSC
 	if (Z_singleCurrency) then {
-		if (_isMan && !_isAlive && {(!(_cursorTarget isKindOf "Animal") && !_isZombie) || (_isZombie && ZSC_ZombieCoins select 0)}) then {
+		if (_isMan && !_isAlive && {(!(_cursorTarget isKindOf "Animal") && !_isZombie && !_isBloodsucker) || (_isZombie && ZSC_ZombieCoins select 0)}) then {
 			if (s_player_checkWallet < 0) then {
 				s_player_checkWallet = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_CHECK_WALLET"],"\z\addons\dayz_code\actions\zsc\checkWallet.sqf",_cursorTarget,0,false,true];
 			};
