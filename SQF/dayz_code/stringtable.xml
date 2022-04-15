@@ -40787,4 +40787,96 @@
 			<Russian>Внимание! Этот транспорт будет удалён после рестарта!</Russian>
 		</Key>
 	</Package>
+	<Package name="Logistic">
+		<Key ID="STR_LOG_LIFT">
+            <English>LIFT OBJECT</English>
+            <German>OBJEKT KOPPELN</German>
+            <French>Hélitreuiller l'objet</French>
+        </Key>
+        <Key ID="STR_LOG_ATTACHED">
+            <English>OBJECT '%1' ATTACHED.</English>
+            <German>OBJEKT '%1' GEKOPPELT.</German>
+            <French>Véhicule '%1' attaché.</French>
+        </Key>
+        <Key ID="STR_LOG_DROPPED">
+            <English>OBJECT '%1' DROPPED.</English>
+            <German>OBJEKT '%1' ABGEKOPPELT.</German>
+            <French>Véhicule '%1' détaché.</French>
+        </Key>
+        <Key ID="STR_LOG_DROP">
+            <English>DROP OBJECT</English>
+            <German>OBJEKT ABKOPPELN</German>
+            <French>Détacher l'objet</French>
+        </Key>
+        <Key ID="STR_LOG_CANT_LIFT_TOWING">
+            <English>CAN NOT LIFT OBJECT '%1', BECAUSE IT'S TOWING ANOTHER OBJECT.</English>
+            <German>OBJEKT '%1' KANN NICHT HOCHGEZOGEN WERDEN, WEIL ES BEREITS ABGESCHLEPPT WIRD.</German>
+            <French>Véhicule non hélitreuillable '%1' car il tracte un autre objet.</French>
+        </Key>
+        <Key ID="STR_LOG_CANT_LIFT_MOVING">
+            <English>OBJECT '%1' IS BEING BY A PLAYER.</English>
+            <German>OBJEKT '%1' IST DICHT AN EINEM ANDEREN SPIELER DRAN.</German>
+            <French>Remorquage du véhicule '%1' en cours par un autre joueur.</French>
+        </Key>
+        <Key ID="STR_LOG_CANT_LIFT_PLAYER">
+            <English>THERE IS A PLAYER IN OBJECT '%1'.</English>
+            <German>IM OBJEKT '%1' BEFINDET SICH EIN SPIELER.</German>
+            <French>Il y a un joueur dans le véhicule '%1'.</French>
+        </Key>
+        <Key ID="STR_LOG_ALREADY">
+            <English>OBJECT '%1' IS ALREADY TRANSPORTED BY ANOTHER OBJECT.</English>
+            <German>DAS OBJEKT '%1' WIRD BEREITS VON EINEM ANDEREN OBJEKT TRANSPORTIERT.</German>
+            <French>Véhicule '%1' est déjà transporté par un autre véhicule.</French>
+        </Key>
+        <Key ID="STR_LOG_NOW_SELECT">
+            <English>SELECT THE OBJECT WHICH IS TO TOW WITH '%1'...</English>
+            <German>WÄHLE NUN DAS OBJEKT, DAS OBJEKT '%1' ABSCHLEPPEN SOLL...</German>
+            <French>Sélectionner l'objet à remorquer avec '%1'.</French>
+        </Key>
+        <Key ID="STR_TOW_THIS">
+            <English>TOW OBJECT</English>
+            <German>OBJEKT KOPPELN</German>
+            <French>Remorquer l'objet</French>
+        </Key>
+        <Key ID="STR_LOG_TUG_SELECT">
+            <English>... TOW SELECTED OBJECT TO THIS OBJECT</English>
+            <German>... AUSGEWÄHLTES OBJEKT MIT DIESEM ABSCHLEPPEN</German>
+            <French>... remorquer le véhicule sélectionné à ce véhicule</French>
+        </Key>
+        <Key ID="STR_LOG_TOW">
+            <English>TOW...</English>
+            <German>ABSCHLEPPEN...</German>
+            <French>Remorquage...</French>
+        </Key>
+        <Key ID="STR_LOG_UNTOW">
+            <English>UNTOW OBJECT</English>
+            <German>OBJEKT ABKOPPELN</German>
+            <French>Détacher l'objet</French>
+        </Key>
+        <Key ID="STR_LOG_TOO_FAR">
+            <English>OBJECT '%1' IS TOO FAR FROM THE OBJECT TO BE TOWED.</English>
+            <German>DAS OBJEKT '%1' IST ZU WEIT ENTFERNT ZUM KOPPELN.</German>
+            <French>Le véhicule '%1' est trop loin du véhicule à remorquer.</French>
+        </Key>
+        <Key ID="STR_LOG_IMPOSSIBLE_VEHICLE">
+            <English>ONLY THE PILOT CAN DETACH THIS OBJECT.</English>
+            <German>NUR DER PILOT KANN DIESE OBJEKT ABKOPPELN.</German>
+            <French>Seulement le conducteur peut détacher ce véhicule.</French>
+        </Key>
+        <Key ID="STR_LOG_IN_TRANSIT">
+            <English>OBJECT '%1' IS IN TRANSIT.</English>
+            <German>DAS OBJEKT '%1' IST IN BEWEGUNG.</German>
+            <French>Véhicule '%1' est en mouvement.</French>
+        </Key>
+        <Key ID="STR_LOG_INPROGRESS">
+            <English>SORRY, BUT THE CURRENT OPERATION IS NOT FINISHED YET!</English>
+            <German>SORRY, ABER DIE DERZEITIGE AKTION IST NOCH NICHT BEENDET!</German>
+            <French>L'opération n'est pas encore terminée!</French>
+        </Key>
+        <Key ID="STR_LOG_UNTOWED">
+            <English>OBJECT '%1' UNTOWED.</English>
+            <German>OBJEKT '%1' WURDE ABGEKOPPELT.</German>
+            <French>Véhicule '%1' détaché.</French>
+        </Key>
+	</Package>	
 </Project>

@@ -34,8 +34,7 @@ class CfgPatches
 			"st_evasive",
 			
 			//Extra Epoch Addons
-			"asc_eu_lights",
-			"gnt_c185"
+			"asc_eu_lights"
 		};
 	};
 };
