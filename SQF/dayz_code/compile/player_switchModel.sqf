@@ -5,10 +5,7 @@ _class = if (_isArray) then {_this select 0} else {_this};
 if (gear_done) then {disableUserInput true;disableUserInput true;};
 disableSerialization;
 
-//Old location system causes issues with players getting damaged during movement.
-//_position = getPosATL player;
-//New system testing needed.
-_position = player modeltoWorld [0,0,0];
+_position = [player] call FNC_GetPos;
 _dir = getDir player;
 _currentAnim = animationState player;
 _currentCamera = cameraView;
@@ -70,9 +67,10 @@ _leader = (player == leader _oldGroup);
 //[player] joinSilent grpNull;
 _group = createGroup west;
 _newUnit = _group createUnit [_class,respawn_west_original,[],0,"NONE"];
+_newUnit allowDamage false;
+
 if (_isArray) then {
-	_newUnit allowDamage false;
-	mydamage_eh1 = _newUnit AddEventHandler ["HandleDamage", {False}];
+	mydamage_eh1 = _newUnit addEventHandler ["handleDamage", {0}];
 	_newUnit setVariable ["characterID",(_this select 1),true];
 	_newUnit setVariable ["humanity",(_this select 2),true];
 	_newUnit setVariable ["zombieKills",(_this select 3),true];
@@ -112,15 +110,20 @@ if (_secweapon != (secondaryWeapon _newUnit) && _secweapon != "") then {
 
 _switchUnit = {
 	//Make New Unit Playable (1 of these 3 commands causes crashes with gear dialog open)
-	//_oldUnit setPosATL [_position select 0 + cos(_dir) * 2, _position select 1 + sin(_dir) * 2, _position select 2];
 	addSwitchableUnit _newUnit;
 	setPlayable _newUnit;
 	selectPlayer _newUnit;
 	//Switch the units
 	_rndx = floor(random 100);
 	_rndy = floor(random 100);
-	_oldUnit setPosATL [(respawn_west_original select 0) + _rndx, (respawn_west_original select 1) + _rndy, 0];
-	_newUnit setPosATL _position;
+	_oldUnit setPosATL [(respawn_west_original select 0) + _rndx, (respawn_west_original select 1) + _rndy, 0];	
+	
+	if (surfaceIsWater _position) then {
+		_newUnit setPosASL _position;
+	} else {
+		_newUnit setPosATL _position;
+	};	
+	
 	if (surfaceIsWater respawn_west_original) then {_newUnit call fn_exitSwim;};
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} count magazines _oldUnit;

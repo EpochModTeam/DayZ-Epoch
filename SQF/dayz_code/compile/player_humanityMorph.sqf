@@ -10,7 +10,7 @@ _old removeAllEventHandlers "HandleDamage";
 _old removeAllEventHandlers "Killed";
 _old removeAllEventHandlers "Fired";
 _old allowDamage false;
-_old AddEventHandler ["HandleDamage", {False}];
+_old addEventHandler ["handleDamage", {0}];
 
 //Logout
 local _humanity = player getVariable ["humanity",0];
@@ -109,7 +109,7 @@ if (Z_SingleCurrency) then {
 call dayz_resetSelfActions; //New unit has no self actions yet. Reset variables so actions can be added back.
 dayz_actionInProgress = false; //Allow self actions to run now.
 
-player removeAllEventHandlers "HandleDamage";
+player removeAllEventHandlers "handleDamage";
 eh_player_killed = player addeventhandler ["FiredNear",{_this call player_weaponFiredNear;}];
 [player] call fnc_usec_damageHandle;
 player allowDamage true;

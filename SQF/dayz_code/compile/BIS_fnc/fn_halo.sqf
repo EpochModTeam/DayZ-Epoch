@@ -235,19 +235,19 @@ if (typename _this == typename []) then {
 
 	_unit = _this select 0;
 	if (!local _unit) exitwith {};
+	
+	_unit allowDamage false; //Prevent glitch death when opening chute
 
 	//--- Free fall
 	if (count _this == 2) exitwith { //Fresh spawn calling from player_monitor.fsm
-		_alt = _this select 1;
-		_unit call fn_exitSwim;
+		if (surfaceIsWater respawn_west_original) then {_unit call fn_exitSwim;};
 		_unit setvariable ["bis_fnc_halo_now",true];
 		_unit spawn bis_fnc_halo;
 	};
 	//-------------
 
 	_para = objnull;
-	_vel = [];
-	_unit allowDamage false; //Prevent glitch death when opening chute
+	_vel = [];	
 	_paraPosition1 = [_unit] call FNC_GetPos;
 	_para = createVehicle ["ParachuteWest", _paraPosition1, [], 0, "CAN_COLLIDE"];
 	//_para = "BIS_Steerable_Parachute" createVehicle position _unit;

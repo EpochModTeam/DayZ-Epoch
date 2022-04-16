@@ -627,7 +627,6 @@ class FSM
                          "" \n
                          "_model call player_switchModel;" \n
                          "" \n
-                         "player allowDamage false;" \n
                          "_lastAte = _survival select 1;" \n
                          "_lastDrank = _survival select 2;" \n
                          "" \n
