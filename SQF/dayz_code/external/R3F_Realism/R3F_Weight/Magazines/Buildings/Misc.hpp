@@ -35,7 +35,7 @@ class ItemWire
 
 class ItemTankTrap
 {
-	weight = 218;
+	weight = 7.5;
 };
 
 class ItemGenerator

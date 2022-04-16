@@ -46,7 +46,7 @@ class bulk_equip_garlic_bulbFull
 
 class bulk_FishCookedSeaBassFull
 {
-	weight = 15;
+	weight = 48;
 };
 
 class bulk_FishCookedTroutFull
@@ -56,7 +56,7 @@ class bulk_FishCookedTroutFull
 
 class bulk_FishCookedTunaFull
 {
-	weight = 24.6;
+	weight = 180;
 };
 
 class bulk_FoodBeefCookedFull
@@ -132,12 +132,12 @@ class bulk_ItemSandbag
 
 class bulk_ItemTankTrap
 {
-	weight = 2619;
+	weight = 93;
 };
 
 class bulk_ItemTankTrapHalf
 {
-	weight = 1331;
+	weight = 48;
 };
 
 class bulk_ItemWire
