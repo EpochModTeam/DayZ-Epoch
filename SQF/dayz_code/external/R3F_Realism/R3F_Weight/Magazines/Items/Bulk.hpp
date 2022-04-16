@@ -6,168 +6,168 @@ class bulk
 
 class bulk_empty
 {
-	weight = 5;
+	weight = 3;
 };
 
 class bulk_ItemSodaCoke 
 {
-	weight = 6;
+	weight = 4.98;
 };
 
 class bulk_ItemSodaCokeFull
 {
-	weight = 7;
+	weight = 6.96;
 };
 
 class bulk_ItemSodaPepsi
 {
-	weight = 6;
+	weight = 4.98;
 };
 
 class bulk_ItemSodaPepsiFull 
 {
-	weight = 7;
+	weight = 6.96;
 };
 
 class bulk_FoodbaconCooked 
 {
-	weight = 5;
+	weight = 4.8;
 };
 
 class bulk_FoodbaconCookedFull
 {
-	weight = 5;
+	weight = 6.6;
 };
 
 class bulk_equip_garlic_bulbFull
 {
-	weight = 6.2;
+	weight = 4;
 };
 
 class bulk_FishCookedSeaBassFull
 {
-	weight = 65;
+	weight = 15;
 };
 
 class bulk_FishCookedTroutFull
 {
-	weight = 17;
+	weight = 19.8;
 };
 
 class bulk_FishCookedTunaFull
 {
-	weight = 305;
+	weight = 24.6;
 };
 
 class bulk_FoodBeefCookedFull
 {
-	weight = 8;
+	weight = 7.8;
 };
 
 class bulk_FoodCarrotFull
 {
-	weight = 8;
+	weight = 4.2;
 };
 class bulk_FoodChickenCookedFull
 {
-	weight = 8;
+	weight = 15;
 };
 
 class bulk_FoodDogCookedFull
 {
-	weight = 8;
+	weight = 15;
 };
 
 class bulk_FoodGoatCookedFull
 {
-	weight = 8;
+	weight = 15;
 };
 
 class bulk_FoodMuttonCookedFull
 {
-	weight = 8;
+	weight = 15;
 };
 
 class bulk_FoodPotatoRawFull
 {
-	weight = 8;
+	weight = 6.6;
 };
 
 class bulk_FoodPumpkinFull
 {
-	weight = 41;
+	weight = 15;
 };
 
 class bulk_FoodRabbitCookedFull
 {
-	weight = 8;
+	weight = 15;
 };
 
 // Ammo
 class bulk_17Rnd_9x19_glock17
 {
-	weight = 17;
+	weight = 6.48;
 };
 
 class bulk_15Rnd_9x19_M9SD
 {
-	weight = 17;
+	weight = 6.12;
 };
 
 class bulk_30Rnd_9x19_MP5SD
 {
-	weight = 18;
+	weight = 7.8;
 };
 
 class bulk_30Rnd_556x45_StanagSD
 {
-	weight = 20;
+	weight = 9.12;
 };
 
 //BuildingSupplies
 class bulk_ItemSandbag
 {
-	weight = 60;
+	weight = 123;
 };
 
 class bulk_ItemTankTrap
 {
-	weight = 25;
+	weight = 2619;
 };
 
 class bulk_ItemTankTrapHalf
 {
-	weight = 12.5;
+	weight = 1331;
 };
 
 class bulk_ItemWire
 {
-	weight = 25;
+	weight = 33;
 };
 
 class bulk_ItemWireHalf
 {
-	weight = 12.5;
+	weight = 18;
 };
 
 class bulk_PartGeneric
 {
-	weight = 60;
+	weight = 63;
 };
 
 class bulk_PartGenericHalf
 {
-	weight = 30;
+	weight = 33;
 };
 
 class bulk_ItemSandbagHalf
 {
-	weight = 125;
+	weight = 63;
 };
 
 class bulk_ItemComboLockFull
 {
-	weight = 5.36;
+	weight = 8;
 };
 
 //Animal craftables
@@ -266,21 +266,21 @@ class bulk_equip_stringFull
 
 class bulk_HandChemBlueFull
 {
-	weight = 6.2;
+	weight = 4;
 };
 
 class bulk_HandChemGreenFull
 {
-	weight = 6.2;
+	weight = 4;
 };
 class bulk_HandChemRedFull
 {
-	weight = 6.2;
+	weight = 4;
 };
 
 class bulk_HandRoadFlareFull
 {
-	weight = 13.4;
+	weight = 8;
 };
 
 class bulk_ItemC4ChargeFull
@@ -290,65 +290,65 @@ class bulk_ItemC4ChargeFull
 
 class bulk_ItemDogTagFull
 {
-	weight = 5.12;
+	weight = 3;
 };
 
 class bulk_ItemHotwireKitFull
 {
-	weight = 29;
+	weight = 27;
 };
 
 class bulk_ItemKosmosSmokesFull
 {
-	weight = 14.6;
+	weight = 3;
 };
 
 class bulk_ItemLightBulbFull
 {
-	weight = 5.24;
+	weight = 3.24;
 };
 
 class bulk_ItemMixOilFull
 {
-	weight = 8;
+	weight = 6;
 };
 
 class bulk_ItemScrewsFull
 {
-	weight = 8;
+	weight = 9;
 };
 
 class bulk_PartGlassFull
 {
-	weight = 65;
+	weight = 147;
 };
 
 class bulk_PartWheelFull
 {
-	weight = 125;
+	weight = 123;
 };
 
 class bulk_PipeBombFull
 {
-	weight = 53;
+	weight = 51;
 };
 
 class bulk_ItemFertilizerFull
 {
-	weight = 35;
+	weight = 33;
 };
 
 class bulk_ItemKiloBlackTeaFull
 {
-	weight = 17;
+	weight = 15;
 };
 
 class bulk_ItemKiloHempFull
 {
-	weight = 17;
+	weight = 15;
 };
 
 class bulk_ItemKiloTobaccoFull
 {
-	weight = 17;
+	weight = 15;
 };

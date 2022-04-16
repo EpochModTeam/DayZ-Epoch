@@ -33,11 +33,11 @@ class 1Rnd_Arrow_Wood
 };
 class 1Rnd_Bolt_Tranquilizer 
 {
-	weight = 0.03;
+	weight = 0.1;
 };
 class 1Rnd_Bolt_Explosive 
 {
-	weight = 0.04;
+	weight = 0.1;
 };
 class Quiver 
 {
@@ -45,7 +45,7 @@ class Quiver
 };
 class 12Rnd_Quiver_Wood 
 {
-	weight = 0.08;
+	weight = 0.24;
 };
 class 2Rnd_12Gauge_Slug
 {
@@ -53,7 +53,7 @@ class 2Rnd_12Gauge_Slug
 };
 class 2Rnd_12Gauge_Buck
 {
-	weight = 0.075;
+	weight = 0.068;
 };
 class 350Rnd_BB_Magazine
 {
@@ -65,7 +65,7 @@ class 350Rnd_BB_GUN
 };
 class 8Rnd_12Gauge_Buck
 {
-	weight = 0.3;
+	weight = 0.27;
 };
 class 8Rnd_12Gauge_Slug
 {
@@ -73,41 +73,41 @@ class 8Rnd_12Gauge_Slug
 };
 class 8Rnd_B_Saiga12_74Slug
 {
-	weight = 0.3;
+	weight = 0.65;
 };
 class 8Rnd_B_Beneli_74Slug
 {
-	weight = 0.4;
+	weight = 0.3;
 };
 class 8Rnd_B_Beneli_Pellets
 {
-	weight = 0.5;
+	weight = 0.27;
 };
 class 8Rnd_B_Saiga12_Pellets
 {
-	weight = 0.3;
+	weight = 0.62;
 };
 class 15Rnd_W1866_Slug
 {
-	weight = 0.5;
+	weight = 0.2;
 };
 class 20Rnd_B_AA12_Pellets
 {
-	weight = 1.2;
+	weight = 1.93;
 };
 class 20Rnd_B_AA12_74Slug
 {
-	weight = 1.2;
+	weight = 2.01;
 };
 class 20Rnd_B_AA12_HE
 {
-	weight = 1.5;
+	weight = 1.97;
 };
 class 20Rnd_B_Usas12_74Slug
 {
-	weight = 1.5;
+	weight = 2.06;
 };
 class 20Rnd_B_Usas12_Pellets
 {
-	weight = 1.5;
+	weight = 1.98;
 };

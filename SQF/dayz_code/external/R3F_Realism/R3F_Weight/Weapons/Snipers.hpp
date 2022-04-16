@@ -1,6 +1,6 @@
 ﻿class m107_TWS_EP1
 {
-	weight = 14.3;
+	weight = 18;
 };
 class M24_des_EP1
 {
@@ -112,45 +112,44 @@ class M40A3_Gh_DZ
 };
 class M107
 {
-	weight = 14;
+	weight = 13.5;
 };
 class SVD_NSPU_EP1
 {
-	weight =  9.8;
+	weight = 9.8;
 };
 class SVD_des_EP1
 {
-	weight =  9;
+	weight = 9;
 };
 class SVD
 {
-	weight =  9;
+	weight = 9;
 };
 class SVD_DZ
 {
-	weight =  8.6;
+	weight = 8.6;
 };
 class SVD_Gh_DZ
 {
-	weight =  8.8;
+	weight = 8.8;
 };
 class SVD_PSO1_DZ
 {
-	weight =  9;
+	weight = 9;
 };
 class SVD_PSO1_Gh_DZ
 {
-	weight =  9.2;
+	weight = 9.2;
 };
 class SVD_Camo
 {
-	weight =  9.2;
+	weight = 9.2;
 };
 class VSS_Vintorez
 {
 	weight = 5.3;
 };
-
 class MSR_DZ
 {
 	weight = 3.2;
@@ -253,11 +252,11 @@ class ksvk_Small
 };
 class m107_Small
 {
-	weight = 14;
+	weight = 13.5;
 };
 class m107_TWS_EP1_Small
 {
-	weight = 14.3;
+	weight = 18;
 };
 class DMR_SKN
 {
@@ -357,7 +356,7 @@ class BAF_AS50_scoped_DZ
 };
 class m107_SKN
 {
-	weight = 14.0;
+	weight = 13.5;
 };
 class M4SPR
 {
@@ -416,10 +415,10 @@ class BAF_AS50_TWS_Large
 	weight = 13.2; 
 };
 class PMC_AS50_scoped_Large 		
-{ 	weight = 13; 
+{
+	weight = 13; 
 };
 class PMC_AS50_TWS_Large 			
 { 	
 	weight = 13.2; 
 };
-

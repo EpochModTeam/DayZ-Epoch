@@ -5,7 +5,7 @@ class ItemSandbag
 
 class BagFenceRound_DZ_kit
 {
-	weight = 10;
+	weight = 20;
 };
 
 class ItemSandbagLarge 

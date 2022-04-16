@@ -1,56 +1,56 @@
 class FoodbeefCooked
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodmuttonCooked
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodchickenCooked
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodrabbitCooked
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodbaconCooked
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodGoatCooked
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodGoatRaw
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodmuttonRaw
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodchickenRaw
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodBaconRaw
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodRabbitRaw
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodbeefRaw
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodDogRaw
 {
-	weight = 0.25;
+	weight = 1;
 };
 class FoodDogCooked
 {
-	weight = 0.25;
+	weight = 1;
 };

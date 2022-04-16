@@ -98,33 +98,33 @@ class ItemSatelitePhoneBroken
 };
 class ItemPC
 {
-	weight = 21;
+	weight = 10;
 };
 class ItemPCBroken
 {
-	weight = 21;
+	weight = 10;
 };
 class ItemDesktopRadio
 {
-	weight = 12;
+	weight = 7;
 };
 class ItemDesktopRadioBroken
 {
-	weight = 12;
+	weight = 7;
 };
 class ItemMusicRadio1
 {
-	weight = 3;
+	weight = 1;
 };
 class ItemMusicRadio1Broken
 {
-	weight = 3;
+	weight = 1;
 };
 class ItemMusicRadio2
 {
-	weight = 3;
+	weight = 1;
 };
 class ItemMusicRadio2Broken
 {
-	weight = 3;
+	weight = 1;
 };

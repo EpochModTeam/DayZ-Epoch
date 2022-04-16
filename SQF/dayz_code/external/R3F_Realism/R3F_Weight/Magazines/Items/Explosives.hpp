@@ -20,50 +20,50 @@ class MineE
 
 class ItemC4Charge
 {
-	weight = 0.8;
+	weight = 4;
 };
 
 class ItemCarBomb
 {
-	weight = 0.8;
+	weight = 4;
 };
 
 class PMC_ied_v1 
 {
-	weight = 6; 
+	weight = 20; 
 };
 
 class PMC_ied_v2 
 {
-	weight = 6; 
+	weight = 20; 
 };
 
 class PMC_ied_v3 
 {
-	weight = 6; 
+	weight = 20; 
 };
 
 class PMC_ied_v4 
 {
-	weight = 6; 
+	weight = 20; 
 };
 
 class BAF_ied_v1 
 {
-	weight = 6; 
+	weight = 20; 
 };
 
 class BAF_ied_v2 
 {
-	weight = 6; 
+	weight = 20; 
 };
 
 class BAF_ied_v3 
 {
-	weight = 6; 
+	weight = 20; 
 };
 
 class BAF_ied_v4 
 {
-	weight = 6; 
+	weight = 20; 
 };	

@@ -1,58 +1,58 @@
 class Chainsaw 
 {	
-	weight = 4.5;
+	weight = 6;
 };
 class ChainSawB 
 {	
-	weight = 4.5;
+	weight = 6;
 };
 class ChainsawG 
 {	
-	weight = 4.5;
+	weight = 6;
 };
 class ChainsawP 
 {	
-	weight = 4.5;
+	weight = 6;
 };
 class ChainsawR 
 {	
-	weight = 4.5;
+	weight = 6;
 };
 class ChainSawBroken 
 { 
-	weight = 4.5;
+	weight = 6;
 };
 class ChainSawBBroken 
 { 
-	weight = 4.5; 
+	weight = 6; 
 };
 class ChainSawGBroken 
 { 
-	weight = 4.5; 
+	weight = 6; 
 };
 class ChainSawPBroken 
 { 
-	weight = 4.5; 
+	weight = 6; 
 };
 class ChainSawRBroken 
 { 
-	weight = 4.5; 
+	weight = 6; 
 };
 class Binocular
 {	
-	weight = 1;
+	weight = 0.3;
 };
 class Binocular_Vector
 {	
-	weight = 1;
+	weight = 0.5;
 };
 class BinocularBroken 
 { 
-	weight = 1; 
+	weight = 0.5; 
 };
 class Binocular_VectorBroken 
 {
-	weight = 1; 
+	weight = 0.5; 
 };
 class NVGoggles
 {	
@@ -60,11 +60,11 @@ class NVGoggles
 };
 class Laserdesignator_mounted
 {	
-	weight = 5.5;
+	weight = 5;
 };
 class Laserdesignator
 {	
-	weight = 6.0;
+	weight = 5;
 };
 class ItemCompass
 {
@@ -72,15 +72,15 @@ class ItemCompass
 };
 class ItemGPS
 {
-	weight = 0.3;
+	weight = 0.4;
 };
 class ItemWatch
 {
-	weight = 0.1;
+	weight = 0.03;
 };
 class ItemMap
 {
-	weight = 0.1;
+	weight = 0.005;
 };
 class ItemRadio
 {
@@ -88,39 +88,39 @@ class ItemRadio
 };
 class ItemFlashlight 
 {
-	weight = 0.1;
+	weight = 0.15;
 };
 class ItemFlashlightRed 
 {
-	weight = 0.1;
+	weight = 0.25;
 };
 class ItemKnife 
 {
-	weight = 0.1;
+	weight = 0.135;
 };
 class ItemKnife5 
 {
-	weight = 0.1;
+	weight = 0.135;
 };
 class ItemKnife4 
 {
-	weight = 0.1;
+	weight = 0.135;
 };
 class ItemKnife3 
 {
-	weight = 0.1;
+	weight = 0.135;
 };
 class ItemKnife2
 {
-	weight = 0.1;
+	weight = 0.135;
 };
 class ItemKnife1
 {
-	weight = 0.1;
+	weight = 0.135;
 };
 class ItemKnifeBlunt
 {
-	weight = 0.1;
+	weight = 0.135;
 };
 class MeleeCrowbar  
 {
@@ -208,7 +208,7 @@ class ItemMatchboxWet
 };
 class ItemToolbox   
 {
-	weight = 1;
+	weight = 5;
 };
 class ItemKeyKit   
 {
@@ -216,23 +216,23 @@ class ItemKeyKit
 };
 class ItemEtool   
 {
-	weight = 1;
+	weight = 0.6;
 };
 class ItemPickaxe  
 {
-	weight = 1;
+	weight = 2.5;
 };
 class ItemPickaxeBroken  
 {
-	weight = 1;
+	weight = 2.5;
 };
 class ItemShovel  
 {
-	weight = 1;
+	weight = 2;
 };
 class ItemShovelBroken  
 {
-	weight = 1;
+	weight = 2;
 };
 class ItemFishingPole  
 {
@@ -340,15 +340,15 @@ class ItemFishingPoleBroken
 };
 class ItemSledgeBroken
 {
-	weight = 1;
+	weight = 9.1;
 };
 class ItemSledgeHammer
 {
-	weight = 1;
+	weight = 9.1;
 };
 class ItemSledgeHammerBroken
 {
-	weight = 1;
+	weight = 9.1;
 };
 class ItemCrowbarBent
 {
@@ -384,35 +384,35 @@ class ItemRadioBroken_DZE
 };
 class ItemAPSI_DZE
 {
-	weight = 1;
+	weight = 5;
 };
 class ItemAPSIBroken_DZE
 {
-	weight = 1;
+	weight = 5;
 };
 class ItemPilotmask_DZE
 {
-	weight = 1;
+	weight = 3;
 };
 class ItemPilotmaskBroken_DZE
 {
-	weight = 1;
+	weight = 3;
 };
 class ItemGasmask1_DZE
 {
-	weight = 1;
+	weight = 4;
 };
 class ItemGasmask1Broken_DZE
 {
-	weight = 1;
+	weight = 4;
 };
 class ItemGasmask2_DZE
 {
-	weight = 1;
+	weight = 4;
 };
 class ItemGasmask2Broken_DZE
 {
-	weight = 1;
+	weight = 4;
 };
 class ItemSolder_DZE
 {
@@ -504,7 +504,7 @@ class HandsawBroken_DZE
 };
 class Smartphone_DZE 
 { 
-	weight = 0.6; 
+	weight = 0.3; 
 };
 class SmartphoneBroken_DZE 
 { 

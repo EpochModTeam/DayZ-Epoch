@@ -4,11 +4,11 @@
 };
 class ItemSepsisBandage 
 {
-	weight = 0.005;
+	weight = 0.1;
 };
 class ItemBandage 
 {
-	weight = 0.005;
+	weight = 0.05;
 };
 class ItemPainkiller
 {
@@ -24,11 +24,11 @@ class ItemEpinephrine
 };
 class ItemHeatPack
 {
-	weight = 0.1;
+	weight = 0.05;
 };
 class ItemBloodbag
 {
-	weight = 0.4;
+	weight = 2;
 };
 class ItemAntibiotic
 {
@@ -64,67 +64,67 @@ class ItemAntibioticEmpty
 };
 class bloodBagANEG
 {
-	weight = 0.4;
+	weight = 2;
 };
 class bloodBagAPOS
 {
-	weight = 0.4;
+	weight = 2;
 };
 class bloodBagBNEG
 {
-	weight = 0.4;
+	weight = 2;
 };
 class bloodBagBPOS
 {
-	weight = 0.4;
+	weight = 2;
 };
 class bloodBagABNEG
 {
-	weight = 0.4;
+	weight = 2;
 };
 class bloodBagABPOS
 {
-	weight = 0.4;
+	weight = 2;
 };
 class bloodBagONEG
 {
-	weight = 0.4;
+	weight = 2;
 };
 class bloodBagOPOS
 {
-	weight = 0.4;
+	weight = 2;
 };
 class wholeBloodBagANEG
 {
-	weight = 0.4;
+	weight = 2;
 };
 class wholeBloodBagAPOS
 {
-	weight = 0.4;
+	weight = 2;
 };
 class wholeBloodBagBNEG
 {
-	weight = 0.4;
+	weight = 2;
 };
 class wholeBloodBagBPOS
 {
-	weight = 0.4;
+	weight = 2;
 };
 class wholeBloodBagABNEG
 {
-	weight = 0.4;
+	weight = 2;
 };
 class wholeBloodBagABPOS
 {
-	weight = 0.4;
+	weight = 2;
 };
 class wholeBloodBagONEG
 {
-	weight = 0.4;
+	weight = 2;
 };
 class wholeBloodBagOPOS
 {
-	weight = 0.4;
+	weight = 2;
 };
 class bloodTester
 {
@@ -168,11 +168,11 @@ class ItemPainkillerEmpty
 };
 class equip_woodensplint 
 { 
-	weight = 1.0; 
+	weight = 2; 
 };
 class equip_gauze 
 { 
-	weight = 0.2; 
+	weight = 0.3; 
 };
 class equip_gauzepackaged 
 { 
@@ -184,41 +184,41 @@ class equip_herb_box
 };
 class ItemBloodbagInfected
 {
-	weight = 0.4;
+	weight = 2;
 };
 class ItemBloodbagZombie
 {
-	weight = 0.4;
+	weight = 2;
 };
 class ItemBloodbagMutant
 {
-	weight = 0.6;
+	weight = 2;
 };
 class ItemBloodbagRabbit
 {
-	weight = 0.4;
+	weight = 1;
 };
 class ItemBloodbagChicken
 {
-	weight = 0.4;
+	weight = 1;
 };
 class ItemBloodbagDog
 {
-	weight = 0.4;
+	weight = 2;
 };
 class ItemBloodbagCow
 {
-	weight = 0.4;
+	weight = 2;
 };
 class ItemBloodbagBoar
 {
-	weight = 0.4;
+	weight = 2;
 };
 class ItemBloodbagGoat
 {
-	weight = 0.4;
+	weight = 2;
 };
 class ItemBloodbagSheep
 {
-	weight = 0.4;
+	weight = 2;
 };

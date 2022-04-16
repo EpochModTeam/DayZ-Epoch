@@ -1,24 +1,24 @@
 class FishRawTrout
 {
-	weight = 1;
+	weight = 1.4;
 };
 class FishCookedTrout
 {
-	weight = 1;
+	weight = 1.4;
 };
 class FishRawSeaBass
 {
-	weight = 6;
+	weight = 2;
 };
 class FishCookedSeaBass
 {
-	weight = 5;
+	weight = 2;
 };
 class FishRawTuna
 {
-	weight = 27;
+	weight = 1.8;
 };
 class FishCookedTuna
 {
-	weight = 25;
+	weight = 1.8;
 };

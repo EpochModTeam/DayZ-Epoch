@@ -1,112 +1,112 @@
 class ItemWaterbottle
 {
-	weight = 0.22;
+	weight = 1;
 };
 class ItemWaterbottleBoiled
 {
-	weight = 0.22;
+	weight = 1;
 };
 class ItemWaterBottleInfected
 {
-	weight = 0.22;
+	weight = 1;
 };
 class ItemWaterBottleSafe
 {
-	weight = 0.22;
+	weight = 1;
 };
 class ItemWaterBottleHerbal
 {
-	weight = 0.22;
+	weight = 1;
 };
 class ItemWaterBottleUnfilled 
 {
-	weight = 0.02;
+	weight = 1;
 };
 class ItemWaterBottleDmg 
 {
-	weight = 0.02;
+	weight = 1;
 };
 class ItemWaterbottle1oz
 {
-	weight = 0.04;
+	weight = 0.1;
 };
 class ItemWaterbottle2oz
 {
-	weight = 0.06;
+	weight = 0.2;
 };
 class ItemWaterbottle3oz
 {
-	weight = 0.08;
+	weight = 0.3;
 };
 class ItemWaterbottle4oz
 {
-	weight = 0.1;
+	weight = 0.4;
 };
 class ItemWaterbottle5oz
 {
-	weight = 0.12;
+	weight = 0.5;
 };
 class ItemWaterbottle6oz
 {
-	weight = 0.14;
+	weight = 0.6;
 };
 class ItemWaterbottle7oz
 {
-	weight = 0.16;
+	weight = 0.7;
 };
 class ItemWaterbottle8oz
 {
-	weight = 0.17;
+	weight = 0.8;
 };
 class ItemWaterbottle9oz
 {
-	weight = 0.2;
+	weight = 0.9;
 };
 class ItemWaterbottle1ozBoiled
 {
-	weight = 0.04;
+	weight = 0.1;
 };
 class ItemWaterbottle2ozBoiled
 {
-	weight = 0.06;
+	weight = 0.2;
 };
 class ItemWaterbottle3ozBoiled
 {
-	weight = 0.08;
+	weight = 0.3;
 };
 class ItemWaterbottle4ozBoiled
 {
-	weight = 0.1;
+	weight = 0.4;
 };
 class ItemWaterbottle5ozBoiled
 {
-	weight = 0.12;
+	weight = 0.5;
 };
 class ItemWaterbottle6ozBoiled
 {
-	weight = 0.14;
+	weight = 0.6;
 };
 class ItemWaterbottle7ozBoiled
 {
-	weight = 0.16;
+	weight = 0.7;
 };
 class ItemWaterbottle8ozBoiled
 {
-	weight = 0.17;
+	weight = 0.8;
 };
 class ItemWaterbottle9ozBoiled
 {
-	weight = 0.2;
+	weight = 0.9;
 };
 class ItemWaterBottleCoffee
 {
-	weight = 0.22;	
+	weight = 1;	
 };
 class ItemWaterBottleBlackTea
 {
-	weight = 0.22;	
+	weight = 1;	
 };
 class ItemWaterBottleFrozen
 {
-	weight = 0.22;	
+	weight = 1;	
 };

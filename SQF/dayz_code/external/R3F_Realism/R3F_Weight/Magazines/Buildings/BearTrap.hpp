@@ -1,12 +1,12 @@
 class TrapBear 
 {
-	weight = 1;
+	weight = 3.47;
 };
 class ItemTrapBearTrapFlare 
 {
-	weight = 1;
+	weight = 3.47;
 };
 class ItemTrapBearTrapSmoke 
 {
-	weight = 1;
+	weight = 3.47;
 };

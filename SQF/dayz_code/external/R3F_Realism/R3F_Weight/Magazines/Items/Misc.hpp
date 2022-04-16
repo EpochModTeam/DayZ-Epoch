@@ -5,17 +5,17 @@ class ItemHotwireKit
 
 class ItemCards
 {
-	weight = 0.7;
+	weight = 0.1;
 };
 
 class ItemKosmosSmokes
 {
-	weight = 0.8;
+	weight = 0.1;
 };
 
 class ItemKosmosSmokesOpen
 {
-	weight = 0.6;
+	weight = 0.1;
 };
 
 class equip_nails 

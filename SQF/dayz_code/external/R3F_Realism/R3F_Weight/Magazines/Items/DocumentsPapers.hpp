@@ -15,22 +15,22 @@ class ItemLetter
 
 class ItemBook1
 {
-	weight = 0.1;
+	weight = 0.5;
 };
 
 class ItemBook2
 {
-	weight = 0.1;
+	weight = 0.5;
 };
 
 class ItemBook3
 {
-	weight = 0.1;
+	weight = 0.5;
 };
 
 class ItemBook4
 {
-	weight = 0.1;
+	weight = 0.5;
 };
 
 class ItemNewspaper
@@ -45,7 +45,7 @@ class ItemDocumentRamp
 
 class ItemBookBible
 {
-	weight = 0.1;
+	weight = 1;
 };
 
 class ItemTrashPaper

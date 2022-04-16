@@ -8,35 +8,35 @@ class PartFueltank
 };
 class PartGlass 
 {
-	weight = 5;
+	weight = 12;
 };
 class PartEngine 
 {
-	weight = 15;
+	weight = 200;
 };
 class PartVRotor 
 {
-	weight = 15;
+	weight = 400;
 };
 class PartFueltankBroken
 {
-	weight = 10;
+	weight = 7;
 };
 class PartWheelBroken
 {
-	weight = 10;
+	weight = 6;
 };
 class PartEngineBroken
 {
-	weight = 15;
+	weight = 110;
 };
 class PartVRotorBroken
 {
-	weight = 15;
+	weight = 220;
 };
 class PartGlassBroken
 {
-	weight = 5;
+	weight = 1;
 };
 	
 // PartGeneric can be found under Items\Metal.hpp

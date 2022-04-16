@@ -10,12 +10,12 @@ class ItemConcreteBlock
 
 class CinderBlocks
 {
-	weight = 100;
+	weight = 108;
 };
 
 class MortarBucket
 {
-	weight = 21;
+	weight = 3;
 };
 
 class equip_brick 
@@ -25,5 +25,5 @@ class equip_brick
 
 class CementBag
 {
-	weight = 40;
+	weight = 50;
 };

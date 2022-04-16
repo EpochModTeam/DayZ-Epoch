@@ -25,7 +25,7 @@ class metal_panel_kit
 
 class ItemCorrugated
 {
-	weight = 29;
+	weight = 10;
 };
 
 class ItemWire
@@ -35,7 +35,7 @@ class ItemWire
 
 class ItemTankTrap
 {
-	weight = 5;
+	weight = 218;
 };
 
 class ItemGenerator
@@ -50,42 +50,42 @@ class fuel_pump_kit
 
 class light_pole_kit
 {
-	weight = 10;
+	weight = 5;
 };
 
 class deer_stand_kit
 {
-	weight = 25;
+	weight = 40;
 };
 
 class rusty_gate_kit
 {
-	weight = 80;
+	weight = 20;
 };
 
 class stick_fence_kit
 {
-	weight = 6;
+	weight = 3;
 };
 
 class sun_shade_kit
 {
-	weight = 50;
+	weight = 5;
 };
 
 class park_bench_kit 
 {
-	weight = 50;
+	weight = 10;
 };
 
 class ItemScaffoldingKit
 {
-	weight = 80;
+	weight = 150;
 };
 
 class notebook_kit
 {
-	weight = 3;
+	weight = 1;
 };
 class water_pump_kit
 {
@@ -97,63 +97,63 @@ class greenhouse_kit
 };
 class bed_kit
 {
-	weight = 50;
+	weight = 8;
 };
 class table_kit
 {
-	weight = 25;
+	weight = 2;
 };
 class office_chair_kit
 {
-	weight = 25;
+	weight = 0.5;
 };
 class garage_green_kit
 {
-	weight = 500;
+	weight = 250;
 };
 class garage_white_kit
 {
-	weight = 500;
+	weight = 250;
 };
 class garage_brown_kit
 {
-	weight = 500;
+	weight = 250;
 };
 class garage_grey_kit
 {
-	weight = 500;
+	weight = 250;
 };
 class helipad_civil_kit
 {
-	weight = 5;
+	weight = 1;
 };
 class helipad_rescue_kit
 {
-	weight = 5;
+	weight = 1;
 };
 class helipad_army_kit
 {
-	weight = 5;
+	weight = 1;
 };
 class helipad_cross_kit
 {
-	weight = 5;
+	weight = 1;
 };
 class helipad_parkborder_kit
 {
-	weight = 5;
+	weight = 1;
 };
 class cctv_kit
 {
-	weight = 25;
+	weight = 1;
 };
 class fortified_wire_kit
 {
-	weight = 85;
+	weight = 10;
 };
 class barbed_gate_kit
 {
-	weight = 35;
+	weight = 20;
 };
 class concrete_barrier_kit
 {
@@ -193,19 +193,19 @@ class windbreak_kit
 };
 class metal_container_1a_kit
 {
-	weight = 200;
+	weight = 100;
 };
 class metal_container_1b_kit
 {
-	weight = 200;
+	weight = 100;
 };
 class metal_container_1g_kit
 {
-	weight = 200;
+	weight = 100;
 };
 class metal_container_2d_kit
 {
-	weight = 400;
+	weight = 200;
 };
 class compost_barrel_empty_kit
 {

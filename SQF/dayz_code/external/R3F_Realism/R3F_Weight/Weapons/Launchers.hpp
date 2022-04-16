@@ -1,6 +1,6 @@
 ﻿class M32_EP1
 {
-	weight = 6;
+	weight = 5.3;
 };
 class M79_EP1
 {
@@ -8,27 +8,27 @@ class M79_EP1
 };
 class Mk13_EP1
 {
-	weight = 2.7;
+	weight = 3.5;
 };
 class MAAWS
 {
-	weight = 7.5;
+	weight = 8.5;
 };
 class BAF_NLAW_Launcher
 {
-	weight = 7.5;
+	weight = 12.5;
 };
 class M47Launcher_EP1
 {
-	weight = 7;
+	weight = 20.76;
 };
 class M136
 {
-	weight = 7.6;
+	weight = 6.7;
 };
 class Stinger
 {
-	weight = 10;
+	weight = 5.6;
 };
 class SMAW
 {
@@ -40,21 +40,21 @@ class RPG7V
 };
 class RPG18
 {
-	weight = 1.4;
+	weight = 2.6;
 };
 class MetisLauncher
 {
-	weight = 16;
+	weight = 4.95;
 };
 class Javelin
 {
-	weight = 16;
+	weight = 11.8;
 };
 class Igla
 {
-	weight = 7;
+	weight = 1.3;
 };
 class Strela
 {
-	weight = 6;
+	weight = 1.17;
 };

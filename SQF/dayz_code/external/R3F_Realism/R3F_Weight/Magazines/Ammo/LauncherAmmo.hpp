@@ -12,7 +12,7 @@ class PG7VR
 };
 class PG9_AT
 {
-	weight = 4.5;
+	weight = 4.4;
 };
 class OG7
 {
@@ -20,73 +20,73 @@ class OG7
 };
 class OG9_HE
 {
-	weight = 2;
+	weight = 5.5;
 };
 class RPG18
 {
-	weight = 1.2;
+	weight = 1.4;
 };
 class AT13
 {
-	weight = 14;
+	weight = 13.8;
 };
 class Igla
 {
-	weight = 11;
+	weight = 10.6;
 };
 class 2Rnd_Igla
 {
-	weight = 22;
+	weight = 21.2;
 };
 class Strela
 {
-	weight = 10;
+	weight = 9.15;
 };
 class Javelin
 {
-	weight = 12;
+	weight = 10.1;
 };
 class M136
 {
-	weight = 6;
+	weight = 1.8;
 };
 class Stinger
 {
-	weight = 6;
+	weight = 3;
 };
 class SMAW_HEAA
 {
-	weight = 6;
+	weight = 6.4;
 };
 class SMAW_HEDP
 {
-	weight = 6;
+	weight = 5.95;
 };
 class MAAWS_HEDP
 {
-	weight = 6;
+	weight = 3.3;
 };
 class MAAWS_HEAT
 {
-	weight = 6;
+	weight = 3.2;
 };
 class NLAW
 {
-	weight = 6;
+	weight = 1.8;
 };
 class Dragon_EP1
 {
-	weight = 11;
+	weight = 11.4;
 };
 class SMAW_HEAA_Big
 {
-	weight = 11;
+	weight = 12.8;
 };
 class SMAW_HEDP_Big
 {
-	weight = 11;
+	weight = 11.9;
 };
 class NLAW_Big
 {
-	weight = 11;
+	weight = 3.6;
 };
