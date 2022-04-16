@@ -36,7 +36,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Panthera";
-		briefingDescription="Version 1.0.7";
+		briefingDescription="Version 1.0.7.1";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;

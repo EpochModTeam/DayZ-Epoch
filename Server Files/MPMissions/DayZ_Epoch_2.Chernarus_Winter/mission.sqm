@@ -32,7 +32,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Chernarus Winter";
-		briefingDescription="Version 1.0.7";
+		briefingDescription="Version 1.0.7.1";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
