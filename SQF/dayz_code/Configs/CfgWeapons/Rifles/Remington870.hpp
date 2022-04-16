@@ -77,6 +77,8 @@ class Remington870_FL_DZ : Remington870_DZ
 	
 	R870_FLASHLIGHT;
 
+	class Attachments {};
+
 	class ItemActions
 	{
 		class RemoveFlashlight
@@ -94,6 +96,8 @@ class Remington870_MFL_DZ : Remington870_DZ
 	descriptionShort = $STR_DZ_WPN_R870_FL_DESC;
 	
 	R870_MFLASHLIGHT;
+
+	class Attachments {};
 
 	class ItemActions
 	{
