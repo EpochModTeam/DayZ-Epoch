@@ -15044,7 +15044,7 @@
 			<German>Gesägte Holzplanke</German>
 		</Key>
 		<Key ID="STR_BLD_desc_ItemPlank">
-			<English>Saw Planks</English>
+			<English>Sawn Planks</English>
 			<Russian>Распиленные доски.</Russian>
 			<French>Des planches de bois</French>
 			<Czech>Hrubá neohoblovaná prkna</Czech>
@@ -29811,7 +29811,7 @@
 			<Russian>Бет. стена с воротами</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATE_DESC">
-			<English>Cinder Gate constructed out cinder.</English>
+			<English>Cinder Gate constructed out of cinder.</English>
 			<German>Ein Betontor bestehend aus Beton.</German>
 			<Russian>Бетонная стена с большими гаражными воротами.</Russian>
 		</Key>
