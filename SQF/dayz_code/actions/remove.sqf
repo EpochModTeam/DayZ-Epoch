@@ -68,6 +68,8 @@ s_player_deconstruct	= 1;
 s_player_upgrade_build	= 1;
 s_player_maint_build	= 1;
 
+local _wasStanding	= ["perc", animationState player] call fnc_inString;
+local _sleep		= 0;
 local _objOwnerID	= _obj getVariable["ownerPUID","0"];
 local _isOwnerOfObj	= (_objOwnerID == dayz_playerUID);
 local _isDestructable	= _obj isKindOf "BuiltItems";
@@ -532,6 +534,7 @@ if (_proceed && _success) then {
 			} count _selectedRemoveOutput;
 
 			if (_totalCount > 0) then {		// Only reveal refund if there is something there. Random ranges can produce zero results.
+				_sleep = 1;
 				_item setPosATL _iPos;
 				player reveal _item;
 
@@ -543,6 +546,10 @@ if (_proceed && _success) then {
 		};
 	} else {
 		localize "str_epoch_player_91" call dayz_rollingMessages;		// Failed, object no longer exists.
+	};
+	if (_wasStanding) then {
+		uiSleep _sleep;
+		player playActionNow "PlayerStand";	// once the action has completed, return player to a standing pose if they were standing before the action
 	};
 };
 

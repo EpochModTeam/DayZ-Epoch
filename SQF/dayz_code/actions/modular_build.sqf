@@ -75,6 +75,8 @@ if (_canBuild) then {
 	//
 	///////////////////////////////////////////////////////////////////////////////////////////
 
+	local _wasStanding	= ["perc", animationState player] call fnc_inString;
+
 	player playActionNow "PlayerCrouch";					// prevent instant cancel from moving too fast
 
 	local _isPole		= _buildCheck select 1;				// bool
@@ -1404,6 +1406,8 @@ if (_canBuild) then {
 		};
 
 		if (_proceed) then {
+
+			if (_wasStanding) then {player playActionNow "PlayerStand";};	// once the action has completed, return player to a standing pose if they were standing before the action
 
 			local _num_removed = ([player, DZE_buildItem] call BIS_fnc_invRemove); // remove item's magazine from inventory
 
