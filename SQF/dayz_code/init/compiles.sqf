@@ -413,23 +413,23 @@ if (!isDedicated) then {
 	};
 
 	gearDialog_create = {
-		private ["_i","_dialog"];
+		disableSerialization;
 		if (!isNull (findDisplay 106)) then {
 			(findDisplay 106) closeDisplay 0;
 		};
 		openMap false;
 		closeDialog 0;
-		if (gear_done) then {sleep 0.001;};
+		if (gear_done) then {uiSleep 0.001;};
 		DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on player's gear
 		skipGearSound = true; //Don't play sound when checking backpack mags ammo count
 		player action ["Gear", player];
-		if (gear_done) then {sleep 0.001;};
-		_dialog = findDisplay 106;
-		_i = 0;
+		if (gear_done) then {uiSleep 0.001;};
+		local _dialog = findDisplay 106;
+		local _i = 0;
 		while {isNull _dialog} do {
 			_i = _i + 1;
 			_dialog = findDisplay 106;
-			if (gear_done) then {sleep 0.001;};
+			if (gear_done) then {uiSleep 0.001;};
 			if (_i in [100,200,299]) then {
 				closeDialog 0;
 				DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on player's gear
@@ -438,13 +438,19 @@ if (!isDedicated) then {
 			};
 			if (_i > 300) exitWith {};
 		};
-		if (gear_done) then {sleep 0.001;};
-		_dialog = findDisplay 106;
+		if (gear_done) then {
+			waitUntil {
+				uiSleep 0.1;
+				_dialog = findDisplay 106;
+				!isNull _dialog
+			};
+		};
+
 		if ((parseNumber(_this select 0)) != 0) then {
 			ctrlActivate (_dialog displayCtrl 157);
 			if (gear_done) then {
 				waitUntil {ctrlShown (_dialog displayCtrl 159)};
-				sleep 0.001;
+				uiSleep 0.001;
 			};
 		};
 		skipGearSound = false;
