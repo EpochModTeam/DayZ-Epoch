@@ -36976,11 +36976,9 @@
 
 	<Package name="VG">
 		<Key ID="STR_CL_VG_NEED_HELIPAD">
-			<English>You need a helipad to spawn air vehicles.</English>
-			<French>Vous avez besoin d'un héliport pour engendrer des véhicules aériens.</French>
-			<German>Du benötigst ein Helipad, um Luftfahrzeuge auszuparken.</German>
-			<Russian>Вам нужна вертолетная площадка, чтобы забрать авиатехнику.</Russian>
-			<Spanish>Necesitas un Helipad para crear vehiculos aereos.</Spanish>
+			<English>You need a helipad to spawn vehicles.</English>
+			<French>Vous avez besoin d'un héliport pour engendrer des véhicules.</French>
+			<German>Du benötigst ein Helipad, um Fahrzeuge auszuparken.</German>
 		</Key>
 		<Key ID="STR_CL_VG_STOREDATE">
 			<English>Stored Date</English>

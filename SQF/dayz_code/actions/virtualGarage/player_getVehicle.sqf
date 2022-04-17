@@ -15,14 +15,9 @@ _plotCheck = [player,false] call FNC_find_plots;
 _isNearPlot = (_plotCheck select 1) > 0;
 
 _heliPad = nearestObjects [if (_isNearPlot) then {_plotCheck select 2} else {player},vg_heliPads,if (_isNearPlot) then {DZE_maintainRange} else {Z_VehicleDistance}];
-if ((count _heliPad == 0) && ((_vehicle select 1) isKindOf "Air")) exitWith {localize "STR_CL_VG_NEED_HELIPAD" call dayz_rollingMessages;};
-if (count _heliPad > 0) then {
-	_location = [(_heliPad select 0)] call FNC_GetPos;
-} else {
-	_location = [(position player),0,400,10,0,2000,0] call BIS_fnc_findSafePos;
-	_location set [2,0];
-};
+if (count _heliPad < 1) exitWith {localize "STR_CL_VG_NEED_HELIPAD" call dayz_rollingMessages;};
 
+_location = [(_heliPad select 0)] call FNC_GetPos;
 _sign = "Sign_arrow_down_large_EP1" createVehicleLocal [0,0,0];
 _sign setPos _location;
 
