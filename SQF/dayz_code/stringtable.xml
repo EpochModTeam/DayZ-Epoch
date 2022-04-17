@@ -38217,6 +38217,10 @@
 			<Russian>Кто-то уже пытается упаковать %1! Попробуйте позже.</Russian>
 			<Spanish>Alguien trató de empacar ese/a %1! Inténtalo nuevamente en unos segundos.</Spanish>
 		</Key>
+		<Key ID="STR_CL_DA_DEPLOY_COMBAT">
+			<English>You can't deploy your %1 while in combat!</English>
+			<German>Du kannst %1 nicht aufbauen, wenn du im Kampf bist!</German>
+		</Key>		
 		<Key ID="STR_CL_DA_DEPLOY_BULDABLES">
 			<English>%1 can not be built near a wall/door</English>
 			<German>%1 kann nicht in der Nähe von Objekten gebaut werden.</German>
