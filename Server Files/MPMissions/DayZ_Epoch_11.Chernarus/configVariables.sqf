@@ -420,9 +420,11 @@ if (!isDedicated) then {
 	// Bury and Butcher Bodies
 	if (DZE_Bury_Body) then {
 		DZE_Bury_Body_Value = 30;// Amount of humanity to gain for burying a body.
+		DZE_BuryOnRoad = false; // Restrict burying/butchering on roads?
 	};
 	if (DZE_Butcher_Body) then {
 		DZE_Butcher_Body_Value = -30;// Amount of humanity to lose for butchering a body.
+		DZE_BuryOnRoad = false; // Restrict burying/butchering on roads?
 	};
 	
 	// Take Clothes

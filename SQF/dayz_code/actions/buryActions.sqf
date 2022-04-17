@@ -4,7 +4,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_action","_backPackMag","_backPackWpn","_crate","_corpse","_cross","_gain","_isBury","_grave","_name","_playerNear","_backPack","_position","_sound","_notOnRoad"];
+private ["_action","_backPackMag","_backPackWpn","_crate","_corpse","_cross","_gain","_isBury","_grave","_name","_playerNear","_backPack","_position","_sound"];
 
 _corpse = (_this select 3) select 0;
 if (isNull _corpse) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
@@ -13,7 +13,6 @@ _playerNear = {isPlayer _x} count (([_corpse] call FNC_GetPos) nearEntities ["CA
 if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _action = (_this select 3) select 1;
-_notOnRoad = false; // Restrict burying/butchering on roads?
 
 player removeAction s_player_bury_human;
 s_player_bury_human = -1;
@@ -23,7 +22,7 @@ s_player_butcher_human = -1;
 _position = getPosATL _corpse;
 _isBury = _action == "bury";
 
-if (_notOnRoad && {isOnRoad _position}) exitWith {dayz_actionInProgress = false; format[localize "STR_CL_BA_ROAD",if (_isBury) then {localize "STR_CL_BA_BURY1"} else {"STR_CL_BA_BUTCHER1"}] call dayz_rollingMessages;};
+if (!DZE_BuryOnRoad && {isOnRoad _position}) exitWith {dayz_actionInProgress = false; format[localize "STR_CL_BA_ROAD",if (_isBury) then {localize "STR_CL_BA_BURY1"} else {localize "STR_CL_BA_BUTCHER1"}] call dayz_rollingMessages;};
 
 _finished = ["Medic",1] call fn_loopAction;
 if (!_finished) exitWith {dayz_actionInProgress = false;localize "str_epoch_player_26" call dayz_rollingMessages;};
