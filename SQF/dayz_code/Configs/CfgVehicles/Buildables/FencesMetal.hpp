@@ -1,10 +1,3 @@
-class MetalFence_ghost_DZ: DZE_Ghost_Previews
-{
-	scope = 2;
-	model = "z\addons\dayz_buildings\models\metal_fence_ghost.p3d";
-	displayName = $STR_BLD_name_MetalFence_ghost;
-}; 
-
 class MetalFence_1_foundation_DZ: ModularItems
 {
 	scope = 2;
@@ -109,4 +102,5 @@ class MetalFence_7_DZ: ModularItems
 	offset[] = {0,4,0};		
 	ladders[]={{"ladderstart","ladderend"}};	
 	armor = 5500;
+	GhostPreview = "MetalFence_7_Preview_DZ";
 }; 

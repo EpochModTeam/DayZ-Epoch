@@ -244,3 +244,51 @@ class ElevatorStop_Transparent_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch\models\metal_floor_ghost.p3d";
 	displayName = $STR_EPOCH_ELEVATORSTOP_TRANSPARENT;
 };
+
+class Water_Pump_Preview_DZ : DZE_Ghost_Previews {
+	scope = 2;
+	model = "\ca\buildings\misc\pumpa";
+	displayName = "Water Pump Preview";
+};
+
+class MetalFence_ghost_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "z\addons\dayz_buildings\models\metal_fence_ghost.p3d";
+	displayName = $STR_BLD_name_MetalFence_ghost;
+}; 
+
+class WoodenFence_ghost_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "z\addons\dayz_buildings\models\fence_wood_ghost.p3d";
+	displayName = $STR_BLD_name_WoodenFence_ghost;
+}; 
+
+class MetalFence_7_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "z\addons\dayz_buildings\models\metal_fence7.p3d";
+	displayName = "MetalFence 7 Preview";	
+}; 
+
+class WoodenFence_7_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "z\addons\dayz_buildings\models\fence7.p3d";
+	displayName = "WoodenFence 7 Preview";
+};
+
+class Fueltank_Preview_DZ : DZE_Ghost_Previews {
+	scope = 2;
+	model = "\Ca\buildings2\Ind_Tank\Ind_TankSmall2";
+	displayName = "Fueltank Preview";
+};
+
+class Watertank_Preview_DZ : DZE_Ghost_Previews {
+	scope = 2;
+    model = "\Ca\buildings2\Ind_Tank\Ind_TankSmall";
+	displayName = "Watertank Preview ";
+};
+
+class Watertower_Preview_DZ : DZE_Ghost_Previews {
+	scope = 2;
+    model = "\CA\misc\water_tank.p3d";
+	displayName = "Watertower Preview";
+};

@@ -830,6 +830,7 @@ class SnapBuilding {
 	class WoodenFence_5_DZ: WoodenFence_4_DZ {};	
 	class WoodenFence_6_DZ: WoodenFence_4_DZ {};
 	class WoodenFence_7_DZ: WoodenFence_4_DZ {};
+	class WoodenFence_7_Preview_DZ: WoodenFence_4_DZ {};
 	class WoodenFence_ghost_DZ: WoodenFence_4_DZ {};	
 
 	class WoodenFence_2_DZ {	
@@ -890,7 +891,8 @@ class SnapBuilding {
 	};
 	class MetalFence_5_DZ: MetalFence_4_DZ {};
 	class MetalFence_6_DZ: MetalFence_4_DZ {};
-	class MetalFence_7_DZ: MetalFence_4_DZ {};	
+	class MetalFence_7_DZ: MetalFence_4_DZ {};
+	class MetalFence_7_Preview_DZ: MetalFence_4_DZ {};		
 	class MetalFence_ghost_DZ: MetalFence_4_DZ {};
 
 	///////////////////////////////////////////////////////////////////////////////////////////

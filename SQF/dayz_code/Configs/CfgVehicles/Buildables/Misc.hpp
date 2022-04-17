@@ -508,6 +508,7 @@ class Water_Pump_DZ: Land_pumpa
 	offset[] = {0,2,0};
 	removeoutput[] = {{"water_pump_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
+	GhostPreview = "Water_Pump_Preview_DZ";
 };
 
 class MAP_Misc_Greenhouse;
@@ -738,6 +739,7 @@ class Fueltank_DZE : BuiltItems
 	maintainBuilding[] = {{"PartGeneric",1}};
 	constructioncount = 3;
 	removeoutput[] = {{"fueltank_kit",1}};
+	GhostPreview = "Fueltank_Preview_DZ";
 };
 
 class Watertank_DZE : BuiltItems 
@@ -754,6 +756,7 @@ class Watertank_DZE : BuiltItems
 	maintainBuilding[] = {{"PartGeneric",1}};
 	constructioncount = 3;
 	removeoutput[] = {{"watertank_kit",1}};
+	GhostPreview = "Watertank_Preview_DZ";
 };
 
 class Watertower_DZE : BuiltItems 
@@ -770,4 +773,5 @@ class Watertower_DZE : BuiltItems
 	maintainBuilding[] = {{"PartGeneric",2}};
 	constructioncount = 3;
 	removeoutput[] = {{"watertower_kit",1}};
+	GhostPreview = "Watertower_Preview_DZ";
 };

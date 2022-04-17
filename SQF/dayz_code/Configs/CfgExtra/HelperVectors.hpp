@@ -722,6 +722,7 @@ class HelperVectors: Helpers {
 	class WoodenFence_5_DZ: WoodenFence_4_DZ {};
 	class WoodenFence_6_DZ: WoodenFence_4_DZ {};
 	class WoodenFence_7_DZ: WoodenFence_4_DZ {};
+	class WoodenFence_7_Preview_DZ: WoodenFence_4_DZ {};
 
 	class MetalFence_1_foundation_DZ: WoodenFence_1_foundation_DZ {};
 
@@ -742,6 +743,7 @@ class HelperVectors: Helpers {
 	class MetalFence_5_DZ: WoodenFence_4_DZ {};
 	class MetalFence_6_DZ: WoodenFence_4_DZ {};
 	class MetalFence_7_DZ: WoodenFence_4_DZ {};
+	class MetalFence_7_Preview_DZ: WoodenFence_4_DZ {};
 
 	class WoodenGate_foundation_DZ: vector {
 		points[] = {

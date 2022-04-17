@@ -1,9 +1,3 @@
-class WoodenFence_ghost_DZ: DZE_Ghost_Previews
-{
-	scope = 2;
-	model = "z\addons\dayz_buildings\models\fence_wood_ghost.p3d";
-	displayName = $STR_BLD_name_WoodenFence_ghost;
-}; 
 class WoodenFence_1_foundation_DZ: ModularItems
 {
 	scope = 2;
@@ -116,4 +110,5 @@ class WoodenFence_7_DZ: ModularItems
 	displayName = $STR_BLD_name_WoodenFence_7;
 	offset[] = {0,4,0};	
 	ladders[] = {{"ladderstart","ladderend"}};
+	GhostPreview = "WoodenFence_7_Preview_DZ";
 }; 
