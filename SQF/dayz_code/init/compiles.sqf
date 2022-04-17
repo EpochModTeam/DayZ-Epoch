@@ -544,6 +544,13 @@ if (!isDedicated) then {
 			(_display displayCtrl 105) lbSetColor [_i, [0.06, 0.05, 0.03, 1]];
 		};
 	};
+	
+	gearDialog_close = {
+		while {dayz_actionInProgress} do {
+			findDisplay 106 closeDisplay 0;			
+			uisleep 0.1;
+		};
+	};
 
 	dayz_lowHumanity = {
 		private "_unit";

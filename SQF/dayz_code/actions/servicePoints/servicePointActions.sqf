@@ -2,6 +2,10 @@
 // Rewritten for single currency, gems, briefcase support and 1.0.7 epoch compatibility by salival - https://github.com/oiad/
 // Requires DayZ Epoch 1.0.7 for gem support.
 
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
+[] spawn gearDialog_close;
+
 private ["_vehicle","_costs","_fuel","_magazineCount","_weapon","_type","_name","_weaponType","_weaponName","_turret","_magazines","_ammo","_textMissing","_pos","_message","_action","_damage","_selection","_strH","_disabled","_amount","_enoughMoney","_moneyInfo","_wealth","_success","_reason","_cmpt"];
 
 _vehicle = _this select 0;
@@ -35,7 +39,7 @@ if (typeName _amount == "STRING") then {
 	if (_amount == (localize "strwffree")) then {_amount = 0};
 };
 
-if (_disabled) exitWith {[_reason,1] call dayz_rollingMessages};
+if (_disabled) exitWith {dayz_actionInProgress = false;[_reason,1] call dayz_rollingMessages};
 
 _enoughMoney = false;
 _moneyInfo = [false, [], [], [], 0];
@@ -52,7 +56,7 @@ if (Z_SingleCurrency) then {
 
 _success = if (Z_SingleCurrency) then {true} else {[player,_amount,_moneyInfo,true,0] call Z_payDefault};
 
-if (!_success && _enoughMoney) exitWith {systemChat localize "STR_EPOCH_TRADE_GEAR_AND_BAG_FULL"}; // Not enough room in gear or bag to accept change
+if (!_success && _enoughMoney) exitWith {dayz_actionInProgress = false;systemChat localize "STR_EPOCH_TRADE_GEAR_AND_BAG_FULL"}; // Not enough room in gear or bag to accept change
 
 if (_enoughMoney) then {
 	_success = if (Z_SingleCurrency) then {_amount <= _wealth} else {[player,_amount,_moneyInfo,false,0] call Z_payDefault};
@@ -63,6 +67,7 @@ if (_enoughMoney) then {
 
 		[player,(getPosATL player),50,"refuel"] spawn fnc_alertZombies;
 		_vehicle engineOn false;
+		
 		if (_action == "refuel") then {
 			[format[localize "STR_CL_SP_REFUELING",_name],1] call dayz_rollingMessages;
 
@@ -99,7 +104,7 @@ if (_enoughMoney) then {
 					_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _x >> "name");
 					_strH = "hit_" + (_selection);
 					_vehicle setHit[_selection,0];
-					_vehicle setVariable [_strH,0,true];
+
 					uiSleep ((_this select 3) select 2);
 				};
 			} forEach _hitpoints;
@@ -128,8 +133,7 @@ if (_enoughMoney) then {
 			};
 
 			[format[localize "STR_CL_SP_REARMED",_weaponName,_name],1] call dayz_rollingMessages;
-		};
-		call player_forceSave;
+		};		
 	} else {
 		systemChat localize "STR_EPOCH_TRADE_DEBUG";
 	};
@@ -141,3 +145,5 @@ if (_enoughMoney) then {
 		systemChat format[localize "STR_CL_SP_FAIL_BRIEFCASES",_itemText,_action,_name];
 	};
 };
+
+dayz_actionInProgress = false;
