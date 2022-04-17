@@ -56,6 +56,7 @@
 [ADDED] 18 new open map buildings with interior and loot positions. (0fd08dec2) @Helion4, @DeVloek, @AirwavesMan
 [ADDED] 2 new items (Dung, Sunflower Oil) and 9 food versions (Steak with fries, Sushi, Pumpkin soup, Carrot soup, Potato soup, Garlic soup, Vegetable platter, Honey tea, Honeycomb). (624acb3ab) @Damian6666, @AirwavesMan
 [ADDED] Comfrey patch, plant and seeds. (59e04523b) @AirwavesMan
+[ADDED] Snapping keys can be switched between right-handed and left-handed with F6. (03636463c) @Victor-the-Cleaner
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [UPDATED] Replace M240 Nest ghost preview with the actual game object as preview. (ff05cb9cb) @ZzBombardierzZ, @AirwavesMan
 [UPDATED] Players may no longer build objects outside the plot radius. (bb968698e) @Victor-the-Cleaner
@@ -86,6 +87,7 @@
 [UPDATED] characterID setVariables is only for vehicles with a key and locked/lockable buildings global now. (67bdc7217) @AirwavesMan
 [UPDATED] Re-built missionfiles: configVariables.sqf, custom variables and compiles are included now. (ac68b0ca9) @AirwavesMan
 [UPDATED] DZE_rocks array detects more rocks on napf and lingor now. (6f249377d) @Victor-the-Cleaner, @AirwavesMan
+[UPDATED] All weights got updated and corrected with more realistic values. (da57bada5) @TheFirstNoob
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -129,6 +131,10 @@
 [FIXED] Visual glitch on loading screen. (608af0743) @iben
 [FIXED] Upgrading a winter lockbox leaded into a wiped lockbox inventory. (31fef08e7) @AirwavesMan
 [FIXED] Safe coins refund when packing (9f8af554d) @Luka
+[FIXED] Unlock door penalty was not working when door management was turned off. (fb2bf9462) @IsGoose, @AirwavesMan
+[FIXED] Freezing player gear menu when changing clothes on maps where the respawn is on water. (8a7d93799) @iben, @AirwavesMan
+[FIXED] Players were falling through buildings when change clothes or login if they were over water, this includes piers and oil rigs. (876e264e3) @ndavalos, @iben, @AirwavesMan
+[FIXED] Remington 870 flashlight attachments. (4dbf3740c) @Victor-the-Cleaner
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @seelenapparat, @AirwavesMan
 [REMOVED] DZE_permanentPlot variable and checks. (5aba5d7dd, 9ecdb21dd) @AirwavesMan
 [REMOVED] Ghost previews for Razor Wire, Sandbag Nest, and HBarrier Cubes due to inaccurate geometry. (d744d995e) @Victor-the-Cleaner
