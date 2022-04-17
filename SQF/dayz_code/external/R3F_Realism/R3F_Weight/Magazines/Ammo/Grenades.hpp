@@ -6,6 +6,10 @@ class HandGrenade_west
 {
 	weight = 0.4;
 };
+class BAF_L109A1_HE 
+{
+	weight = 0.4; 
+};
 class 1Rnd_HE_M203
 {	
 	weight = 0.23;

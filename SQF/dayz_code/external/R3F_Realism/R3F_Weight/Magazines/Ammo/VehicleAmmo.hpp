@@ -260,10 +260,6 @@ class 5Rnd_AT11_T90
 {
 	weight = 73; 
 };
-class BAF_L109A1_HE 
-{
-	weight = 0.4; 
-};
 class 6RND_105mm_APDS 
 {
 	weight = 59.3; 
