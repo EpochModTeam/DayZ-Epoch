@@ -176,7 +176,7 @@ class FlareWhite_GP25: CA_Magazine
 	scope = 2;
 	type = 16;
 	displayName = "$STR_DN_FLAREWHITE_GP25";
-	descriptionShort = "$str_dss_1rnd_flarewhite_gp25";
+	descriptionShort = "$STR_DZ_MG_1RND_FLARE_WHITE_GP25_DESC";
 	picture = "\Ca\weapons_E\Data\icons\M_GP25_white_CA.paa";
 	model = "\z\addons\dayz_epoch_w\magazine\dze_gp_flare.p3d";
 	ammo = "F_40mm_White";
