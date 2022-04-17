@@ -159,6 +159,7 @@ GitHub Contributors
 * Schalldampfer - https://github.com/Schalldampfer
 * Victor the Cleaner - https://github.com/Victor-the-Cleaner
 * Damian6666 - https://github.com/Damian6666
+* TheFirstNoob - https://github.com/TheFirstNoob
 
 --------------------------
 Special thanks
