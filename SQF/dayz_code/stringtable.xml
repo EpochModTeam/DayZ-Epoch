@@ -20693,7 +20693,7 @@
 			<Polish>Kaliber: 7.62x51mm &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M24, M40</Polish>
 			<Hungarian>Kaliber: 7.62x51mm &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M24, M40</Hungarian>
 		</Key>
-		<Key ID="str_dss_1rnd_flarewhite_gp25">
+		<Key ID="STR_DZ_MG_1RND_FLARE_WHITE_GP25_DESC">
 			<English>Type: Flare &lt;br/&gt;Rounds: 1 &lt;br/&gt;Used in: GP-25 grenade launcher</English>
 			<French>Type: Fusée &lt;br/&gt;Munitions : 1 &lt;br/&gt;Utilisé avec : lance-grenades GP-25</French>
 			<Spanish>Tipo: Bengala &lt;br/&gt;Cargas: 1 &lt;br/&gt;Uso: lanzagranadas GP-25</Spanish>
@@ -40794,91 +40794,109 @@
             <English>LIFT OBJECT</English>
             <German>OBJEKT KOPPELN</German>
             <French>Hélitreuiller l'objet</French>
+			<Russian>ПОДНЯТЬ ОБЪЕКТ<Russian>
         </Key>
         <Key ID="STR_LOG_ATTACHED">
             <English>OBJECT '%1' ATTACHED.</English>
             <German>OBJEKT '%1' GEKOPPELT.</German>
             <French>Véhicule '%1' attaché.</French>
+			<Russian>ОБЪЕКТ '%1' ПРИСОЕДИНЁН<Russian>
         </Key>
         <Key ID="STR_LOG_DROPPED">
             <English>OBJECT '%1' DROPPED.</English>
             <German>OBJEKT '%1' ABGEKOPPELT.</German>
             <French>Véhicule '%1' détaché.</French>
+			<Russian>ОБЪЕКТ '%1' СБРОШЕН<Russian>
         </Key>
         <Key ID="STR_LOG_DROP">
             <English>DROP OBJECT</English>
             <German>OBJEKT ABKOPPELN</German>
             <French>Détacher l'objet</French>
+			<Russian>СБРОСИТЬ ОБЪЕКТ<Russian>
         </Key>
         <Key ID="STR_LOG_CANT_LIFT_TOWING">
             <English>CAN NOT LIFT OBJECT '%1', BECAUSE IT'S TOWING ANOTHER OBJECT.</English>
             <German>OBJEKT '%1' KANN NICHT HOCHGEZOGEN WERDEN, WEIL ES BEREITS ABGESCHLEPPT WIRD.</German>
             <French>Véhicule non hélitreuillable '%1' car il tracte un autre objet.</French>
-        </Key>
+			<Russian>ВЫ НЕ МОЖЕТЕ ПОДНЯТЬ ОБЪЕКТ '%1',ПОТОМУ ТО ОН БУКСИРУЕТ ДРУГОЙ ОБЪЕКТ.<Russian>
+		</Key>
         <Key ID="STR_LOG_CANT_LIFT_MOVING">
             <English>OBJECT '%1' IS BEING BY A PLAYER.</English>
             <German>OBJEKT '%1' IST DICHT AN EINEM ANDEREN SPIELER DRAN.</German>
             <French>Remorquage du véhicule '%1' en cours par un autre joueur.</French>
+			<Russian>ОБЪЕКТ '%1' БЛОКИРУЕТСЯ ДРУГИМ ИГРОКОМ.<Russian>
         </Key>
         <Key ID="STR_LOG_CANT_LIFT_PLAYER">
             <English>THERE IS A PLAYER IN OBJECT '%1'.</English>
             <German>IM OBJEKT '%1' BEFINDET SICH EIN SPIELER.</German>
             <French>Il y a un joueur dans le véhicule '%1'.</French>
-        </Key>
+			<Russian>В ОБЪЕКТЕ '%1' НАХОДИТСЯ ИГРОК.<Russian>
+	   </Key>
         <Key ID="STR_LOG_ALREADY">
             <English>OBJECT '%1' IS ALREADY TRANSPORTED BY ANOTHER OBJECT.</English>
             <German>DAS OBJEKT '%1' WIRD BEREITS VON EINEM ANDEREN OBJEKT TRANSPORTIERT.</German>
             <French>Véhicule '%1' est déjà transporté par un autre véhicule.</French>
+			<Russian>ОБЪЕКТ '%1' ТРАНСПОРТИРУЕТСЯ ДРУГИМ ОБЪЕКТОМ.<Russian>
         </Key>
         <Key ID="STR_LOG_NOW_SELECT">
             <English>SELECT THE OBJECT WHICH IS TO TOW WITH '%1'...</English>
             <German>WÄHLE NUN DAS OBJEKT, DAS OBJEKT '%1' ABSCHLEPPEN SOLL...</German>
             <French>Sélectionner l'objet à remorquer avec '%1'.</French>
+			<Russian>ВБЕРИТЕ ТЕХНИКУ ДЛЯ БУКСИРОВКИ '%1'.<Russian>
         </Key>
         <Key ID="STR_TOW_THIS">
             <English>TOW OBJECT</English>
             <German>OBJEKT KOPPELN</German>
             <French>Remorquer l'objet</French>
+			<Russian>БУКСИРОВАТЬ ОБЪЕКТ<Russian>
         </Key>
         <Key ID="STR_LOG_TUG_SELECT">
             <English>... TOW SELECTED OBJECT TO THIS OBJECT</English>
             <German>... AUSGEWÄHLTES OBJEKT MIT DIESEM ABSCHLEPPEN</German>
             <French>... remorquer le véhicule sélectionné à ce véhicule</French>
+			<Russian>... ПРИСОЕДИНИТЬ ВЫБРАННЫЙ ОБЪЕКТ К ЭТОМУ<Russian>
         </Key>
         <Key ID="STR_LOG_TOW">
             <English>TOW...</English>
             <German>ABSCHLEPPEN...</German>
             <French>Remorquage...</French>
+			<Russian>ПРИЦЕПИТЬ...<Russian>
         </Key>
         <Key ID="STR_LOG_UNTOW">
             <English>UNTOW OBJECT</English>
             <German>OBJEKT ABKOPPELN</German>
             <French>Détacher l'objet</French>
+			<Russian>ОТЦЕПИТЬ<Russian>
         </Key>
         <Key ID="STR_LOG_TOO_FAR">
             <English>OBJECT '%1' IS TOO FAR FROM THE OBJECT TO BE TOWED.</English>
             <German>DAS OBJEKT '%1' IST ZU WEIT ENTFERNT ZUM KOPPELN.</German>
             <French>Le véhicule '%1' est trop loin du véhicule à remorquer.</French>
+			<Russian>ОБЪЕКТ '%1' НАХОДИТСЯ СЛИШКОМ ДАЛЕКО ОТ БУКСИРУЕМОГО ОБЪЕКТА.<Russian>
         </Key>
         <Key ID="STR_LOG_IMPOSSIBLE_VEHICLE">
             <English>ONLY THE PILOT CAN DETACH THIS OBJECT.</English>
             <German>NUR DER PILOT KANN DIESE OBJEKT ABKOPPELN.</German>
             <French>Seulement le conducteur peut détacher ce véhicule.</French>
+			<Russian>ТОЛЬКО ПИЛОТ МОЖЕТ ОТСОЕДИНИТЬ ЭТОТ ОБЪЕКТ.<Russian>
         </Key>
         <Key ID="STR_LOG_IN_TRANSIT">
             <English>OBJECT '%1' IS IN TRANSIT.</English>
             <German>DAS OBJEKT '%1' IST IN BEWEGUNG.</German>
             <French>Véhicule '%1' est en mouvement.</French>
+			<Russian>ОБЪЕКТ '%1' НАХОДИТСЯ В ДВИЖЕНИИ.<Russian>
         </Key>
         <Key ID="STR_LOG_INPROGRESS">
             <English>SORRY, BUT THE CURRENT OPERATION IS NOT FINISHED YET!</English>
             <German>SORRY, ABER DIE DERZEITIGE AKTION IST NOCH NICHT BEENDET!</German>
             <French>L'opération n'est pas encore terminée!</French>
+			<Russian>ИЗВИНИТЕ, НО ТЕКУЩАЯ ОПЕРАЦИЯ ЕЩЕ НЕ ЗАВЕРШЕНА!<Russian>
         </Key>
         <Key ID="STR_LOG_UNTOWED">
             <English>OBJECT '%1' UNTOWED.</English>
             <German>OBJEKT '%1' WURDE ABGEKOPPELT.</German>
             <French>Véhicule '%1' détaché.</French>
+			<Russian>ОБЪЕКТ '%1' БЫЛ ОТСОЕДИНЕН.<Russian>
         </Key>
 	</Package>	
 </Project>
