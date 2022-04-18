@@ -70,7 +70,7 @@ _newUnit = _group createUnit [_class,respawn_west_original,[],0,"NONE"];
 _newUnit allowDamage false;
 
 if (_isArray) then {
-	mydamage_eh1 = _newUnit addEventHandler ["handleDamage", {0}];
+	mydamage_eh1 = _newUnit addEventHandler ["HandleDamage", {0}];
 	_newUnit setVariable ["characterID",(_this select 1),true];
 	_newUnit setVariable ["humanity",(_this select 2),true];
 	_newUnit setVariable ["zombieKills",(_this select 3),true];

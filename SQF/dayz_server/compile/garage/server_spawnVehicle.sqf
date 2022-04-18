@@ -53,7 +53,7 @@ if (_outcome != "PASS") then {
 		_object setPos _location;
 	};
 
-	_object addEventHandler ["HandleDamage",{false}];
+	_object addEventHandler ["HandleDamage",{0}];
 
 	clearWeaponCargoGlobal _object;
 	clearMagazineCargoGlobal _object;

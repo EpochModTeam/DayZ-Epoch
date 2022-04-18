@@ -85,9 +85,9 @@ _object setVariable ["lastUpdate",diag_tickTime];
 _object setVariable ["ObjectUID", _uid];
 
 if (DZE_GodModeBase && {!(_class in DZE_GodModeBaseExclude)}) then {
-	_object addEventHandler ["HandleDamage",{false}];
+	_object addEventHandler ["HandleDamage",{0}];
 } else {
-	_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
+	_object addMPEventHandler ["MPKilled",{if !(isServer) exitWith {};_this call vehicle_handleServerKilled;}];
 };
 
 _gearClasses = ["Wooden_shed2_DZ","WoodShack2_DZ","StorageShed2_DZ","GunRack2_DZ","WoodCrate2_DZ","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4","DesertTentStorage0","DesertTentStorage1","DesertTentStorage2","DesertTentStorage3","DesertTentStorage4","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","StashMedium4","TentStorageWinter0","TentStorageWinter1","TentStorageWinter2","TentStorageWinter3","TentStorageWinter4","WinterDomeTentStorage0","WinterDomeTentStorage1","WinterDomeTentStorage2","WinterDomeTentStorage3","WinterDomeTentStorage4"];

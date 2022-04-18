@@ -31,9 +31,9 @@ if ([_object, "Server"] call check_publishobject) then {
 
 	if !(_object isKindOf "TrapItems") then {
 		if (DZE_GodModeBase && {!(_type in DZE_GodModeBaseExclude)}) then {
-			_object addEventHandler ["HandleDamage", {false}];
+			_object addEventHandler ["HandleDamage", {0}];
 		} else {
-			_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
+			_object addMPEventHandler ["MPKilled",{if !(isServer) exitWith {};_this call vehicle_handleServerKilled;}];
 		};
 	};
 	// Test disabling simulation server side on buildables only.

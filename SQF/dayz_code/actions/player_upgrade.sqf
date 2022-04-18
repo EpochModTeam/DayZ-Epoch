@@ -188,7 +188,7 @@ if ((count _upgrade) > 0) then {
 
 				if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
 
-					_object addEventHandler ["HandleDamage",{false}];
+					_object addEventHandler ["HandleDamage",{0}];
 
 				} else {
 					//

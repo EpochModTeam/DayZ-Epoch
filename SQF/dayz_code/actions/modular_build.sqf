@@ -1580,7 +1580,7 @@ if (_canBuild) then {
 					};
 				};
 				if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
-					_builtObject addEventHandler ["HandleDamage", {false}];
+					_builtObject addEventHandler ["HandleDamage", {0}];
 				};
 			} else { // if magazine was not removed, cancel publish
 				deleteVehicle _builtObject;
