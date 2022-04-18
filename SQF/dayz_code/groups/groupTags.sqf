@@ -1,22 +1,22 @@
 #define DRAW_TAGS (!visibleMap && {count units group player > 1}) //Use && cameraView != "GROUP" if tactical view is allowed (blocked by default)
-private ["_display","_distance","_group","_icon","_index","_pos","_scale","_screen","_text","_refresh"];
 disableSerialization;
-
-_refresh = {
-	_group = player call dayz_filterGroup;
-
-	_display = uiNamespace getVariable "DZ_GroupTags";
-	_index = 0;
+local _refresh = {
+	local _group	= player call dayz_filterGroup;
+	local _display	= uiNamespace getVariable "DZ_GroupTags";
+	local _index	= 0;
 	{
-		_pos = [_x] call FNC_GetPos;
-		_distance = _pos distance player;
-		_icon = _display displayCtrl (100 + _index);
+		local _pos = vehicle _x modelToWorld [0,0,0];	// AGL
+
+		local _distance = _pos distance player;
+		local _icon = _display displayCtrl (100 + _index);
+
 		if (_distance > 1 && {_distance < 2500} && {vehicle _x != vehicle player}) then {
-			_pos set [2,(_pos select 2) + 1.5];
-			_screen = worldToScreen _pos;
-			_text = composeText [image "\ca\ui\data\igui_side_unknown_ca.paa"," ",if (dayz_groupNameTags) then {name _x} else {""}];
-			if (count _screen > 1) then {
-				_scale = [1 min ((1 - (_distance - 3) / 15) max .3),.3] select (_distance < 200);
+			_pos set [2, (_pos select 2) + 1.5];
+			local _screen = worldToScreen _pos;	// AGL
+			local _text = composeText [image "\ca\ui\data\igui_side_unknown_ca.paa"," ",if (dayz_groupNameTags) then {name _x} else {""}];
+
+			if (count _screen > 0) then {
+				local _scale = [1 min ((1 - (_distance - 3) / 15) max .3),.3] select (_distance < 200);
 				_icon ctrlSetStructuredText _text;
 				_icon ctrlSetPosition [(_screen select 0),(_screen select 1),.99,.65];
 				_icon ctrlSetScale _scale;
