@@ -338,22 +338,28 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 		s_player_siphonfuel = -1;
 	};
 
-	//Fireplace Actions check
-	if ((_cursorTarget call isInflamed) or (inflamed _cursorTarget)) then {
+// Fireplace Actions Check
+	if ((inflamed _cursorTarget) || {_cursorTarget call isInflamed}) then {
 		local _hasRawMeat = {_x in Dayz_meatraw} count _magazinesPlayer > 0;
-		local _hasunboiledwater = {_x in ["ItemWaterBottleInfected","ItemWaterBottle","ItemWaterBottleSafe","ItemWaterbottle1oz","ItemWaterbottle2oz","ItemWaterbottle3oz","ItemWaterbottle4oz","ItemWaterbottle5oz","ItemWaterbottle6oz","ItemWaterbottle7oz","ItemWaterbottle8oz","ItemWaterbottle9oz","ItemPlasticWaterBottle","ItemPlasticWaterBottleInfected","ItemPlasticWaterBottleSafe","ItemPlasticWaterbottle1oz","ItemPlasticWaterbottle2oz","ItemPlasticWaterbottle3oz","ItemPlasticWaterbottle4oz","ItemPlasticWaterbottle5oz","ItemPlasticWaterbottle6oz","ItemPlasticWaterbottle7oz","ItemPlasticWaterbottle8oz","ItemPlasticWaterbottle9oz"]} count _magazinesPlayer > 0;
+		local _hasUnboiledWater = {_x in DZE_unboiledWater} count _magazinesPlayer > 0;
+		local _hasFrozenFoods = {_x in DZE_frozenFoods} count _magazinesPlayer > 0;
 
-
-	//Cook Meat
+		// Cook Meat
 		if (_hasRawMeat && !a_player_cooking) then {
 			if (s_player_cook < 0) then {
-				s_player_cook = player addAction [localize "str_actions_self_05", "\z\addons\dayz_code\actions\cook.sqf",_cursorTarget, 3, true, true];
+				s_player_cook = player addAction [localize "str_actions_self_05", "\z\addons\dayz_code\actions\cook.sqf", _cursorTarget, 3, true, true];
 			};
 		};
-	//Boil Water
-		if (_hasunboiledwater && !a_player_boil) then {
+		// Boil Water
+		if (_hasUnboiledWater && !a_player_boil) then {
 			if (s_player_boil < 0) then {
-				s_player_boil = player addAction [localize "str_actions_boilwater", "\z\addons\dayz_code\actions\boil.sqf",_cursorTarget, 3, true, true];
+				s_player_boil = player addAction [localize "str_actions_boilwater", "\z\addons\dayz_code\actions\boil.sqf", _cursorTarget, 3, true, true];
+			};
+		};
+		// Thaw Frozen Food
+		if (_hasFrozenFoods && !a_player_thaw) then {
+			if (s_player_thaw < 0) then {
+				s_player_thaw = player addAction [localize "STR_ACTIONS_THAW_FROZEN", "\z\addons\dayz_code\actions\thaw.sqf", _cursorTarget, 3, true, true];
 			};
 		};
 	} else {
@@ -364,6 +370,10 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 		if (a_player_boil) then {
 			player removeAction s_player_boil;
 			s_player_boil = -1;
+		};
+		if (a_player_thaw) then {
+			player removeAction s_player_thaw;
+			s_player_thaw = -1;
 		};
 	};
 
@@ -1068,6 +1078,8 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	s_player_cook = -1;
 	player removeAction s_player_boil;
 	s_player_boil = -1;
+	player removeAction s_player_thaw;
+	s_player_thaw = -1;
 	player removeAction s_player_packtent;
 	s_player_packtent = -1;
 	player removeAction s_player_packtentinfected;

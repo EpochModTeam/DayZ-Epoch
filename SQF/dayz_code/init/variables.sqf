@@ -143,6 +143,7 @@ if (!isDedicated) then {
 		s_player_fire = -1;
 		s_player_cook = -1;
 		s_player_boil = -1;
+		s_player_thaw = -1;
 		s_player_packtent = -1;
 		s_player_packtentinfected = -1;
 		s_player_fillfuel = -1;
@@ -161,8 +162,6 @@ if (!isDedicated) then {
 		s_player_fishing_veh = -1;
 		s_player_gather = -1;
 		s_player_destroytent = -1;
-
-		// Epoch Additions
 		s_player_packvault = -1;
 		s_player_lockvault = -1;
 		s_player_unlockvault = -1;
@@ -244,6 +243,7 @@ if (!isDedicated) then {
 	// General Variables
 	a_player_cooking = false;
 	a_player_boil = false;
+	a_player_thaw = false;
 	dayz_actionInProgress = false;
 	dayz_DisplayGenderSelect = true;
 	carryClick = false;
@@ -296,6 +296,12 @@ if (!isDedicated) then {
 	DayZ_fuelSources = ["Land_Ind_TankSmall","Land_fuel_tank_big","Land_fuel_tank_stairs","Land_fuel_tank_stairs_ep1","Land_wagon_tanker","Land_fuelstation","Land_fuelstation_army","Land_smd_fuelstation_army","land_fuelstation_w","Land_benzina_schnell","Fueltank_DZE"];
 	dayz_plantOutput = ["FoodPumpkin","FoodSunFlowerSeed","ItemKiloHemp","FoodPumpkin","FoodSunFlowerSeed","FoodPotatoRaw","FoodCarrot","ItemKiloHemp","ItemKiloBlackTea","ItemTobaccoLeafs","equip_garlic_bulb","equip_comfreyleafs"];
 	dayz_plantTypes = ["","MAP_pumpkin","MAP_p_Helianthus","fiberplant"] + DZE_Plants;
+	DZE_frozenFood	= ["FoodCanFrozen1","FoodCanFrozen2"];
+	DZE_thawedFood	= [["FoodCanDog1","FoodCanUnlabeled"],["FoodCanDog2","FoodCanRusUnlabeled"]];	// paired with DZE_frozenFood. Must have a corresponding equal number of elements, or optional comma separated arrays for randomization.
+	DZE_frozenDrink	= ["ItemWaterBottleFrozen","ItemPlasticWaterBottleFrozen","ItemSodaFrozen1","ItemSodaFrozen2"];
+	DZE_thawedDrink	= [["ItemWaterBottle"],["ItemPlasticWaterBottle"],["ItemSodaCoke"],["ItemSodaPepsi"]];	// paired with DZE_frozenDrink. Must have a corresponding equal number of elements, or optional comma separated arrays for randomization.
+	DZE_frozenFoods	= DZE_frozenFood + DZE_frozenDrink;
+	DZE_unboiledWater = ["ItemWaterBottleInfected","ItemWaterBottle","ItemWaterBottleSafe","ItemWaterbottle1oz","ItemWaterbottle2oz","ItemWaterbottle3oz","ItemWaterbottle4oz","ItemWaterbottle5oz","ItemWaterbottle6oz","ItemWaterbottle7oz","ItemWaterbottle8oz","ItemWaterbottle9oz","ItemPlasticWaterBottle","ItemPlasticWaterBottleInfected","ItemPlasticWaterBottleSafe","ItemPlasticWaterbottle1oz","ItemPlasticWaterbottle2oz","ItemPlasticWaterbottle3oz","ItemPlasticWaterbottle4oz","ItemPlasticWaterbottle5oz","ItemPlasticWaterbottle6oz","ItemPlasticWaterbottle7oz","ItemPlasticWaterbottle8oz","ItemPlasticWaterbottle9oz"];
 	DZE_LockableStorage = DZE_LockedStorage + DZE_UnLockedStorage;
 	DZE_UpgradableStorage = ["StorageShed_DZ","WoodShack_DZ","Wooden_shed_DZ","GunRack_DZ","WoodCrate_DZ","VaultStorageLocked","LockboxStorageLocked","LockboxStorageWinterLocked"];
 	DZE_LockboxesUnlocked = ["LockboxStorage","LockboxStorage2","LockboxStorageWinter","LockboxStorageWinter2"];
