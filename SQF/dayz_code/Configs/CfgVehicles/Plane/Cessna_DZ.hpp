@@ -18,6 +18,11 @@ class GNT_C185C_DZ: GNT_C185C
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 2;
 	soundEngine[]= {"\GNT_C185\engine.wav",5.6234102,1,1000};
+	class Eventhandlers: DefaultEventhandlers
+	{
+		fired = "_this call BIS_Effects_EH_Fired;";
+		killed = "_this call BIS_Effects_EH_Killed;";
+	};	
 };
 
 class GNT_C185R;
@@ -40,6 +45,11 @@ class GNT_C185R_DZ: GNT_C185R
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 2;	
 	soundEngine[]= {"\GNT_C185\engine.wav",5.6234102,1,1000};
+	class Eventhandlers: DefaultEventhandlers
+	{
+		fired = "_this call BIS_Effects_EH_Fired;";
+		killed = "_this call BIS_Effects_EH_Killed;";
+	};	
 };
 
 class GNT_C185;
@@ -62,6 +72,11 @@ class GNT_C185_DZ: GNT_C185
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 2;
 	soundEngine[]= {"\GNT_C185\engine.wav",5.6234102,1,1000};
+	class Eventhandlers: DefaultEventhandlers
+	{
+		fired = "_this call BIS_Effects_EH_Fired;";
+		killed = "_this call BIS_Effects_EH_Killed;";
+	};	
 };
 
 class GNT_C185U;
@@ -84,6 +99,11 @@ class GNT_C185U_DZ: GNT_C185U
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 2;
 	soundEngine[]= {"\GNT_C185\engine.wav",5.6234102,1,1000};
+	class Eventhandlers: DefaultEventhandlers
+	{
+		fired = "_this call BIS_Effects_EH_Fired;";
+		killed = "_this call BIS_Effects_EH_Killed;";
+	};	
 };
 
 class GNT_C185T;
@@ -108,6 +128,11 @@ class GNT_C185T_DZ: GNT_C185T
 	soundEngine[]= {"\GNT_C185\engine.wav",5.6234102,1,1000};
 	weapons[] = {"FFARLauncher_12"};
 	magazines[] = {"12Rnd_FFAR"};
+	class Eventhandlers: DefaultEventhandlers
+	{
+		fired = "_this call BIS_Effects_EH_Fired;";
+		killed = "_this call BIS_Effects_EH_Killed;";
+	};	
 };
 
 class GNT_C185T_DZE: GNT_C185T_DZ
@@ -152,5 +177,7 @@ class GNT_C185F_DZ: GNT_C185F
 	{
 		init = "_sxr = _this execvm ""\GNT_C185\scr\C185Init.sqf"";_scr = _this execVM ""\ca\Data\ParticleEffects\SCRIPTS\init.sqf"";";
 		engine = "_this execVM ""\GNT_C185\scr\C185_Exhaust.sqf"";[_this select 0] execvm ""\GNT_C185\scr\G_CheckEngine.sqf"";";
+		fired = "_this call BIS_Effects_EH_Fired;";
+		killed = "_this call BIS_Effects_EH_Killed;";
 	};
 };
