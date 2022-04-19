@@ -6,11 +6,12 @@ if (isNull _body) exitWith {dayz_actionInProgress = false; systemChat localize "
 if (_body getVariable["meatHarvested",false]) exitWith {dayz_actionInProgress = false;}; // Exit the script if the meat has already been harvested.
 if ({isPlayer _x} count ((getPosATL _body) nearEntities ["CAManBase", 12]) > 1) exitWith {dayz_actionInProgress = false;localize "str_pickup_limit_5" call dayz_rollingMessages;}; // Exit the script if another player is near to prevent duping.
 
-local _type = typeOf _body;
-local _isZombie = _type isKindOf "zZombie_base";
-local _isMutant = _type == "z_bloodsucker";
-local _knives = [];
-local _string = "";
+local _type		= typeOf _body;
+local _isZombie		= _type isKindOf "zZombie_base";
+local _isMutant		= _type == "z_bloodsucker";
+local _knives		= [];
+local _string		= "";
+local _wasStanding	= ["perc", animationState player] call fnc_inString;
 
 // Count how many knives the player has
 {
@@ -46,7 +47,7 @@ local _qty = if (_isListed) then {getNumber (configFile >> "CfgSurvival" >> "Mea
 if ((_knives select 0) == "ItemKnifeBlunt") then {_qty = round(_qty / 2);};
 
 if (local _body) then {
-	[_body,_qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)
+	[_body, _qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)
 } else {
 	PVCDZ_obj_GutBody =[_body,_qty];
 	publicVariable "PVCDZ_obj_GutBody";
@@ -54,19 +55,21 @@ if (local _body) then {
 
 ["knives",0.2] call fn_dynamicTool;
 
+if (_wasStanding) then {player playActionNow "PlayerStand";};	// once the action has completed, return player to a standing pose if they were standing before the action
+
 call {
 	if (_isZombie) exitWith {
 		// Reduce humanity for gutting zeds
-		local _humanity = player getVariable ["humanity",0];
-		player setVariable ["humanity",(_humanity - 10),true];
-		_string = format[localize "str_success_gutted_zombie",_text]; //%1 has been gutted, zombie parts are now on the carcass
+		local _humanity = player getVariable ["humanity", 0];
+		player setVariable ["humanity", (_humanity - 10), true];
+		_string = format [localize "str_success_gutted_zombie", _text];	// %1 has been gutted, zombie parts are now on the carcass
 	};
 	
 	if (_isMutant) exitWith {
-		_string = format[localize "str_success_gutted_mutant",_text];
+		_string = format [localize "str_success_gutted_mutant", _text];
 	};
 	
-	_string = format[localize "str_success_gutted_animal",_text,_qty]; // default is gut animal
+	_string = format [localize "str_success_gutted_animal", _text, _qty];	// default is gut animal
 };
 
 closeDialog 0;
