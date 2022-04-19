@@ -415,6 +415,7 @@ if (!isDedicated) then {
 	dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened after so many uses.
 	dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
 	dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
+	DZE_bottleBreakChance = 0.10; // Water bottle break chance when boiling. Valid values from 0.01 - 1. 0.10 = 10% Chance
 	DZE_toolBreakChance = 0.04;	//	Tool break chance when removing a building, valid values from 0.01 - 1, 0.04 = 4% Chance
 	
 	// Bury and Butcher Bodies
