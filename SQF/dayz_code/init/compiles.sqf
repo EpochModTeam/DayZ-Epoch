@@ -840,7 +840,6 @@ if (dayz_townGenerator) then {
 BIS_fnc_numberDigits = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_numberDigits.sqf";
 BIS_fnc_numberText = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_numberText.sqf";
 local_lockUnlock = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lockUnlock.sqf"; //When vehicle is local to unit perform locking vehicle
-FNC_GetSetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getSetPos.sqf";
 dayz_groupInvite = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\handleInvite.sqf";
 
 player_sumMedical = {

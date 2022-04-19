@@ -1,9 +1,3 @@
-private "_pos";
-
-_pos = getPosASL (_this select 0);
-
-if !(surfaceIsWater _pos) then {
-	_pos = ASLToATL _pos;
-};
-
+local _pos = getPosATL (_this select 0);
+if (surfaceIsWater _pos) then {_pos = ATLToASL _pos;};
 _pos
