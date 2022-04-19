@@ -23326,7 +23326,7 @@
 			<Dutch>Je hebt te vaak een foute code ingevoerd.</Dutch>
 			<French>Trop d'erreurs avec le code.</French>
 			<Czech>Mnohokrát jsi zadal špatný kód.</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_19_WAIT">
 			<English>You must wait another %1 seconds before you can enter another code.</English>
 			<German>Du musst weitere %1 Sekunden warten, bevor du einen anderen Code eingeben kannst.</German>
@@ -24032,11 +24032,11 @@
 			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einem Objekt (%3).</German>
 			<Russian>Нельзя построить %1 в пределах %2м от %3.</Russian>
 		</Key>
- 		<Key ID="STR_EPOCH_PLAYER_168">
- 			<English>Building is restricted above %1 meter(s).</English>
+		<Key ID="STR_EPOCH_PLAYER_168">
+			<English>Building is restricted above %1 meter(s).</English>
 			<German>Das Bauen ist auf eine Höhe von %1 Metern begrenzt.</German>
 			<Russian>Высота строительства ограничена %1м.</Russian>
- 		</Key>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_173">
 			<English>Dog consumed %1, and is now tamed.</English>
 			<German>Der Hund hat %1 gefressen und ist nun gezähmt.</German>
@@ -28243,7 +28243,7 @@
 		<Key ID="STR_EPOCH_CORRUGATEDFENCE_DESC">
 			<English>Corrugated Fence: A buildable object used for fortification purposes.</English>
 			<German>Wellblechzaun: Ein aufbaubares Objekt zur Erstellung einer Befestigung.</German>
-			<Russian>Гофрированный забор: Используется для защитных целей.</Russian>
+			<Russian>Гофрированный забор: Используется для оборонительных целей.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALPOLE">
 			<English>Metal Pole</English>
@@ -29272,7 +29272,7 @@
 			<German>Der Handelsbereich ist blockiert. Das Fahrzeug wird an einer sicheren Stelle in der Nähe erscheinen.</German>
 			<Russian>Площадка для транспорта занята. Транспорт появится в безопасном месте поблизости.</Russian>
 		</Key>
-  		<Key ID="STR_EPOCH_TRADE_DUPLICATE_TOOL">
+		<Key ID="STR_EPOCH_TRADE_DUPLICATE_TOOL">
 			<English>You can not buy more than one of the same tool into your gear.</English>
 			<German>Du kannst nicht mehr als ein Werkzeug von einer Sorte gleichzeitig in deine Ausrüstung kaufen.</German>
 			<Russian>Вы не можете купить более одного одинакового инструмента в свое снаряжение.</Russian>
@@ -33775,19 +33775,23 @@
 		<Key ID="STR_EPOCH_TUT_KEY_NUMPAD_ARROWS">
 			<English>Numpad Arrow Keys</English>
 			<German>Nummernpad-Pfeiltasten</German>
+			<Russian>Стрелки на цифровой клавиатуре</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_KEYBOARD_HANDEDNESS">
 			<English>** Keyboard is now configured: %1 **</English>
 			<German>** Tastatur is eingestellt auf: %1 **</German>
+			<Russian>** Теперь клавиатура сконфигурирована для %1 **</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LEFT_HANDED">
 			<English>Left-handed</English>
 			<German>Linkshändig</German>
+			<Russian>левшей</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RIGHT_HANDED">
 			<English>Right-handed</English>
 			<German>Rechtshändig</German>
-		</Key>		
+			<Russian>правшей</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_TUT_KEY_ESC">
 			<English>Esc</English>
 		</Key>
@@ -36341,99 +36345,122 @@
 		<Key ID="STR_EPOCH_PLAYER_HBF">
 			<English>Craft Heavy Bag Fence</English>
 			<German>Schweren Sandsackzaun herstellen</German>
+			<Russian>Создать: Забор из крупных мешков</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBF">
 			<English>Heavy Bag Fence</English>
 			<German>Schwerer Sandsackzaun</German>
+			<Russian>Забор из крупных мешков</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBF">
 			<English>Heavy Bag Fence: A buildable object that is used for fortification purposes.</English>
 			<German>Schwerer Sandsackzaun: Zum Befestigen von Stellungen.</German>
+			<Russian>Забор из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF_CORNER">
 			<English>Craft Heavy Bag Fence (Corner)</English>
 			<German>Schwerer Sandsackzaun (Ecke) herstellen</German>
+			<Russian>Создать: Забор из крупных мешков (Угол)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBF_CORNER">
 			<English>Heavy Bag Fence (Corner)</English>
 			<German>Schwerer Sandsackzaun (Ecke)</German>
+			<Russian>Забор из крупных мешков (Угол)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBF_CORNER">
 			<English>Heavy Bag Fence (Corner): A buildable object that is used for fortification purposes.</English>
 			<German>Schwerer Sandsackzaun (Ecke): Zum Befestigen von Stellungen.</German>
+			<Russian>Угловой забор из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF_ROUND">
 			<English>Craft Heavy Bag Fence (Round)</English>
 			<German>Schwerer Sandsackzaun (Rund) herstellen</German>
+			<Russian>Создать: Забор из крупных мешков (Круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBF_ROUND">
 			<English>Heavy Bag Fence (Round)</English>
 			<German>Schwerer Sandsackzaun (Rund)</German>
+			<Russian>Забор из крупных мешков (Круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBF_ROUND">
 			<English>Heavy Bag Fence (Round): A buildable object that is used for fortification purposes.</English>
 			<German>Schwerer Sandsackzaun (Rund): Zum Befestigen von Stellungen.</German>
+			<Russian>Скруглённый забор из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_WBARRIER5">
 			<English>Craft Warfare Barrier 5x</English>
 			<German>Verteidigungsbarriere 5x herstellen</German>
+			<Russian>Создать: Защитный барьер 5x</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_WBARRIER5_2">
 			<English>Build Warfare Barrier 5x</English>
 			<German>Verteidigungsbarriere 5x bauen</German>
+			<Russian>Установить: Защитный барьер 5x</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBARRIER5">
 			<English>Warfare Barrier 5x</English>
 			<German>Verteidigungsbarriere 5x</German>
+			<Russian>Защитный барьер 5x</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBARRIER5">
 			<English>Warfare Barrier 5x: A buildable object that is used for fortification purposes.</English>
 			<German>Verteidigungsbarriere 5x: Zum Befestigen von Stellungen.</German>
+			<Russian>Защитный барьер 5x: Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_WBARRIER10">
 			<English>Craft Warfare Barrier 10x</English>
 			<German>Verteidigungsbarriere 10x herstellen</German>
+			<Russian>Создать: Защитный барьер 10x</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_WBARRIER10_2">
 			<English>Build Warfare Barrier 10x </English>
 			<German>Verteidigungsbarriere 10x  bauen</German>
+			<Russian>Установить: Защитный барьер 10x</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBARRIER10">
 			<English>Warfare Barrier 10x</English>
 			<German>Verteidigungsbarriere 10x</German>
+			<Russian>Защитный барьер 10x</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBARRIER10">
 			<English>Warfare Barrier 10x: A buildable object that is used for fortification purposes.</English>
 			<German>Verteidigungsbarriere 10x: Zum Befestigen von Stellungen.</German>
+			<Russian>Защитный барьер 10x: Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_WBARRIER10TALL">
 			<English>Craft Warfare Barrier 10x (Tall)</English>
 			<German>Verteidigungsbarriere 10x (Groß) herstellen</German>
+			<Russian>Создать: Защитный барьер 10x (Высокий)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_WBARRIER10TALL_2">
 			<English>Build Warfare Barrier 10x (Tall)</English>
 			<German>Verteidigungsbarriere 10x (Groß) bauen</German>
+			<Russian>Установить: Защитный барьер 10x (Высокий)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBARRIER10TALL">
 			<English>Warfare Barrier 10x (Tall)</English>
 			<German>Verteidigungsbarriere 10x (Groß)</German>
+			<Russian>Защитный барьер 10x (Высокий)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBARRIER10TALL">
 			<English>Warfare Barrier 10x (Tall): A buildable object that is used for fortification purposes.</English>
 			<German>Verteidigungsbarriere 10x (Groß): Zum Befestigen von Stellungen.</German>
+			<Russian>Защитный барьер 10x (Высокий): Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBARRIER5CURVED">
 			<English>Craft Sandbag Cube (5x H-barrier curved)</English>
 			<German>Sandsack (5x H-Barriere Gebogen) herstellen</German>
+			<Russian>Создать: Мешки с песком (5x H-barrier изогнутый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBARRIER5CURVED_2">
 			<English>Build Sandbag Cube (5x H-barrier curved)</English>
 			<German>Sandsack (5x H-Barriere Gebogen) bauen</German>
+			<Russian>Установить: Мешки с песком (5x H-barrier изогнутый)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBARRIER5CURVED">
 			<English>Sandbag Cube (5x H-barrier curved)</English>
 			<German>Sandsack (5x H-Barriere Gebogen)</German>
-			<Russian>Мешки с песком (5x H-barrier curved)</Russian>
+			<Russian>Мешки с песком (5x H-barrier изогнутый)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBARRIER5CURVED">
 			<English>Hesco barrier: A buildable object that is used for fortification purposes.</English>
@@ -36443,18 +36470,22 @@
 		<Key ID="STR_EPOCH_PLAYER_LARGENEST">
 			<English>Craft Large Sandbag Nest</English>
 			<German>Großes Sandsacknest herstellen</German>
+			<Russian>Создать: Большое укрепление из мешков</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_LARGENEST_2">
 			<English>Build Large Sandbag Nest</English>
 			<German>Großes Sandsacknest bauen</German>
+			<Russian>Установить: Большое укрепление из мешков</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_LARGENEST">
 			<English>Sandbag Nest (Large)</English>
 			<German>Sandsacknest (Groß)</German>
+			<Russian>Укрепление из мешков (Большое)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_LARGENEST">
 			<English>Sandbag Nest (Large): A buildable object that is used for fortification purposes.</English>
 			<German>Sandsacknest (Groß): Zum Befestigen von Stellungen.</German>
+			<Russian>Большое укрепление из мешков, используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_ACTION_CRAFT_FORT_WIRE">
 			<English>Craft Fortified Razor Wire</English>
@@ -36479,134 +36510,167 @@
 		<Key ID="STR_EPOCH_ACTION_CRAFT_SIMPLE_FOOTBRIDGE">
 			<English>Craft Simple Footbridge</English>
 			<German>Fußgängerbrücke herstellen</German>
+			<Russian>Создать: Простой мостик</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_SIMPLE_FOOTBRIDGE">
 			<English>Build Simple Footbridge</English>
 			<German>Fußgängerbrücke (Einfach) bauen</German>
+			<Russian>Установить: Простой мостик</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE">
 			<English>Footbridge (Simple)</English>
 			<German>Fußgängerbrücke (Einfach)</German>
+			<Russian>Простой мостик</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SIMPLE_FOOTBRIDGE">
 			<English>These three planks make a simple but reliable footbridge.</English>
 			<German>Drei Holzbalken, die eine einfache Fußgängerbrücke ergeben.</German>
+			<Russian>Эти три доски образуют простой, но надёжный мостик.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_WOODEN_FOOTBRIDGE">
 			<English>Craft Wooden Footbridge</English>
 			<German>Fußgängerbrücke (Holz) herstellen</German>
+			<Russian>Создать: Деревянный мостик</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_WOODEN_FOOTBRIDGE">
 			<English>Build Wooden Footbridge</English>
 			<German>Fußgängerbrücke (Holz) bauen</German>
+			<Russian>Установить: Деревянный мостик</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WOODEN_FOOTBRIDGE">
 			<English>Footbridge (Wooden)</English>
 			<German>Fußgängerbrücke (Holz)</German>
+			<Russian>Деревянный мостик</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WOODEN_FOOTBRIDGE">
 			<English>A solid wooden footbridge used in base building.</English>
 			<German>Drei Holzbalken, die eine soldie Fußgängerbrücke ergeben.</German>
+			<Russian>Прочный деревянный пешеходный мостик, используется при строительстве баз.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_CNC_BARRIER">
 			<English>Craft Concrete Barrier</English>
 			<German>Betonbarriere herstellen</German>
+			<Russian>Создать: Бетонное заграждение</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_CNC_BARRIER">
 			<English>Build Concrete Barrier</English>
 			<German>Betonbarriere bauen</German>
+			<Russian>Установить: Бетонное заграждение</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CNC_BARRIER">
 			<English>Concrete Barrier</English>
 			<German>Betonbarriere</German>
+			<Russian>Бетонное заграждение</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CNC_BARRIER">
 			<English>Designed for highway traffic, these cement dividers serve to protect from vehicular impact.</English>
 			<German>Eine Betonbarriere zum Schutz vor Fahrzeugen.</German>
+			<Russian>Бетонные заграждения служат для защиты от тарана транспортными средствами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_CNC_BARRIER_STRIPED">
 			<English>Craft Striped Concrete Barrier</English>
 			<German>Betonbarriere (Gestreift) herstellen</German>
+			<Russian>Создать: Бетонное заграждение (Полосы)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_CNC_BARRIER_STRIPED">
 			<English>Build Striped Concrete Barrier</English>
 			<German>Betonbarriere (Gestreift) bauen</German>
+			<Russian>Установить: Бетонное заграждение (Полосы)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CNC_BARRIER_STRIPED">
 			<English>Concrete Barrier (Striped)</English>
 			<German>Betonbarriere (Gestreift)</German>
+			<Russian>Бетонное заграждение (Полосы)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CNC_BARRIER_STRIPED">
 			<English>Designed for perimeter security, these cement dividers serve to protect from vehicular impact.</English>
 			<German>Eine Betonbarriere zum Schutz vor Fahrzeugen.</German>
+			<Russian>Бетонные заграждения служат для защиты от тарана транспортными средствами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_CONCRETE_WALL">
 			<English>Craft Concrete Wall</English>
 			<German>Betonwand herstellen</German>
+			<Russian>Создать: Бетонная стена</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_CONCRETE_WALL">
 			<English>Build Concrete Wall</English>
 			<German>Betonwand bauen</German>
+			<Russian>Установить: Бетонная стена</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CONCRETE_WALL">
 			<English>Concrete Wall</English>
 			<German>Betonwand</German>
+			<Russian>Бетонная стена</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CONCRETE_WALL">
 			<English>A cast-in-place concrete wall used in base building.</English>
 			<German>Betonwand: Zum Befestigen von Stellungen.</German>
+			<Russian>Монолитная бетонная стена, используется при строительстве баз.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_CONCRETE_PIPE">
 			<English>Craft Concrete Pipe</English>
 			<German>Betonröhre herstellen</German>
+			<Russian>Создать: Бетонная труба</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_CONCRETE_PIPE">
 			<English>Build Concrete Pipe</English>
 			<German>Betonröhre bauen</German>
+			<Russian>Установить: Бетонная труба</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CONCRETE_PIPE">
 			<English>Concrete Pipe</English>
 			<German>Betonröhre</German>
+			<Russian>Бетонная труба</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CONCRETE_PIPE">
 			<English>A cast-in-place concrete pipe used in base building.</English>
 			<German>Betonröhre: Zum Befestigen von Stellungen.</German>
+			<Russian>Монолитная бетонная труба, используется при строительстве баз.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_DRAGONTEETH">
 			<English>Craft Dragon's Teeth</English>
 			<German>Drachenzähne herstellen</German>
+			<Russian>Создать: Зубы дракона</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_DRAGONTEETH">
 			<English>Build Dragon's Teeth</English>
 			<German>Drachenzähne bauen</German>
+			<Russian>Установить: Зубы дракона</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_DRAGONTEETH">
 			<English>Dragon's Teeth</English>
 			<German>Drachenzähne</German>
+			<Russian>Зубы дракона</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_DRAGONTEETH">
 			<English>Square pyramidal fortifications of reinforced concrete used to impede the movement of tanks and mechanised infantry.</English>
 			<German>Drachenzähne aus Beton zum Befestigen von Stellungen und zum Schutz vor Fahrzeugen.</German>
+			<Russian>Квадратные пирамидальные укрепления из железобетона, используются для затруднения движения танков и мотопехоты.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_DRAGONTEETH_BIG">
 			<English>Craft Large Dragon's Teeth</English>
 			<German>Drachenzähne (Groß) herstellen</German>
+			<Russian>Создать: Зубы дракона (Большие)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_BUILD_DRAGONTEETH_BIG">
 			<English>Build Large Dragon's Teeth</English>
 			<German>Drachenzähne (Groß) bauen</German>
+			<Russian>Установить: Зубы дракона (Большие)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_DRAGONTEETH_BIG">
 			<English>Dragon's Teeth (Large)</English>
 			<German>Drachenzähne (Groß)</German>
+			<Russian>Зубы дракона (Большие)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_DRAGONTEETH_BIG">
 			<English>Large pyramidal fortifications of reinforced concrete used to impede the movement of tanks and mechanised infantry.</English>
 			<German>Große Drachenzähne aus Beton zum Befestigen von Stellungen und zum Schutz vor Fahrzeugen.</German>
+			<Russian>Большие квадратные пирамидальные укрепления из железобетона, используются для затруднения движения танков и мотопехоты.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_WOODEN_PALLET">
 			<English>Craft Wooden Pallet</English>
 			<German>Holzpallete herstellen</German>
+			<Russian>Создать: Деревянная паллета</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_WINDBREAK">
 			<English>Craft Windbreak</English>
@@ -36979,6 +37043,7 @@
 			<English>You need a helipad to spawn vehicles.</English>
 			<French>Vous avez besoin d'un héliport pour engendrer des véhicules.</French>
 			<German>Du benötigst ein Helipad, um Fahrzeuge auszuparken.</German>
+			<Russian>Необходима вертолётная площадка.</Russian>
 		</Key>
 		<Key ID="STR_CL_VG_STOREDATE">
 			<English>Stored Date</English>
@@ -37972,14 +38037,14 @@
 			<English>Lift vehicle</English>
 			<German>Fahrzeug anheben</German>
 			<French>Treuiller Vehicule</French>
-			<Russian>Буксировать транспорт</Russian>
+			<Russian>Поднять транспорт</Russian>
 			<Spanish>Levantar vehículo</Spanish>
 		</Key>
 		<Key ID="STR_CL_LOG_DROP">
 			<English>Drop vehicle</English>
 			<German>Fahrzeug abstellen</German>
 			<French>Largué Vehicule</French>
-			<Russian>Бросить транспорт</Russian>
+			<Russian>Сбросить транспорт</Russian>
 			<Spanish>Arrojar vehículo</Spanish>
 		</Key>
 		<Key ID="STR_CL_LOG_DROPPED">
@@ -38000,7 +38065,7 @@
 			<English>Can't lift %1, it's towing another vehicle.</English>
 			<German>%1 kann nicht angehoben werden, da es bereits ein anderes Fahrzeug abschleppt.</German>
 			<French>Impossible de treuiller %1, car il est attacher a un autre véhicule.</French>
-			<Russian>Нельзя буксировать %1, так как он буксирует другой транспорт.</Russian>
+			<Russian>Нельзя поднять %1, так как он буксирует другой транспорт.</Russian>
 			<Spanish>No se puede levantar %1, está siendo remolcado por otro vehículo.</Spanish>
 		</Key>
 		<!-- This is an old translation I don't know what it does, so let's just leave it -->
@@ -38014,7 +38079,7 @@
 			<German>Es befindet sich ein Spieler in %1.</German>
 			<French>Il y a un joueur a l'intérieur %1</French>
 			<Spanish>Hay un jugador dentro de %1.</Spanish>
-			<Russian>Внутри находится игрок %1.</Russian>
+			<Russian>Игрок внутри %1.</Russian>
 		</Key>
 		<Key ID="STR_CL_LOG_LIFT_FAIL_ALREADY">
 			<English>%1 is already being towed by another vehicle.</English>
@@ -38028,7 +38093,7 @@
 			<German>Wähle das Fahrzeug aus, mit welchem du %1 abschleppen willst.</German>
 			<French>Séléctionner le véhicule que vous voulez que %1 remorque.</French>
 			<Spanish>Elige el vehículo que quieres que %1 remolque.</Spanish>
-			<Russian>Выберите транспорт, который вы хотите отбуксировать %1</Russian>
+			<Russian>Выберите транспорт, который вы хотите прицепить к %1</Russian>
 		</Key>
 		<Key ID="STR_CL_LOG_TOW_FAR">
 			<English>%1 is too far from the towing vehicle to be towed.</English>
@@ -38049,28 +38114,28 @@
 			<German>%1 wurde abgekoppelt.</German>
 			<French>%1 a bien été détacher.</French>
 			<Spanish>%1 ya no está en el remolque.</Spanish>
-			<Russian>%1 был отвязан.</Russian>
+			<Russian>%1 отцеплен.</Russian>
 		</Key>
 		<Key ID="STR_CL_LOG_UNTOW">
 			<English>Untow this vehicle</English>
 			<German>Kopple dieses Fahrzeug ab</German>
 			<French>Détacher ce véhicule</French>
 			<Spanish>Quitar del remolque.</Spanish>
-			<Russian>Отвяжите этот транспорт</Russian>
+			<Russian>Отцепить этот транспорт</Russian>
 		</Key>
 		<Key ID="STR_CL_LOG_TOW">
 			<English>Tow selected vehicle behind this vehicle</English>
 			<German>Kopple ausgewähltes Fahrzeug hinter dieses</German>
 			<French>Remorquer le véhicule séléctionner derrière ce véhicule</French>
 			<Spanish>Remolcar el vehículo seleccionado detrás de este vehículo.</Spanish>
-			<Russian>Сделайте привязку этого транспорта к другому</Russian>
+			<Russian>Прицепить выбранный транспорт позади этого</Russian>
 		</Key>
 		<Key ID="STR_CL_LOG_TOW_VEHICLE">
 			<English>Tow this vehicle</English>
 			<German>Schleppe dieses Fahrzeug ab</German>
 			<French>Remorquer ce véhicule</French>
 			<Spanish>Remolcar este vehículo.</Spanish>
-			<Russian>Отбуксировать этот транспорт</Russian>
+			<Russian>Прицепить этот транспорт</Russian>
 		</Key>
 		<Key ID="STR_CL_LOG_FAIL_GETIN">
 			<English>You can't enter a vehicle while it's being towed!</English>
@@ -38220,7 +38285,8 @@
 		<Key ID="STR_CL_DA_DEPLOY_COMBAT">
 			<English>You can't deploy your %1 while in combat!</English>
 			<German>Du kannst %1 nicht aufbauen, wenn du im Kampf bist!</German>
-		</Key>		
+			<Russian>Вы не можете создать %1 находять в режиме боя!</Russian>
+		</Key>
 		<Key ID="STR_CL_DA_DEPLOY_BULDABLES">
 			<English>%1 can not be built near a wall/door</English>
 			<German>%1 kann nicht in der Nähe von Objekten gebaut werden.</German>
@@ -38470,197 +38536,246 @@
 		<Key ID="STR_CL_HEMP_FARM">
 			<English>Hemp Farm</English>
 			<German>Hanffarm</German>
+			<Russian>Конопляная ферма</Russian>
 		</Key>
 		<Key ID="STR_CL_ESE_FUELBOMB_TITLE">
 			<English>Fuel Station Bomb</English>
 			<German>Tankstellenbombe</German>
+			<Russian>Бомба на заправке</Russian>
 		</Key>
 		<Key ID="STR_CL_ESE_FUELBOMB_START">
 			<English>A bomb has been planted on a truck at the %1 fuel station. It will explode in %2 minutes.</English>
 			<German>An einem Lastwagen nahe der %1 Tankstelle, wurde eine Bombe gelegt. Sie wird in %2 Minuten explodieren.</German>
+			<Russian>На автозаправочной станции %1, на грузовике установлена бомба. Она взорвётся через %2 мин.</Russian>
 		</Key>
 		<Key ID="STR_CL_ESE_FUELBOMB_END">
 			<English>Explosion at the %1 fuel station! Recover the remaining supplies!</English>
 			<German>Explosion an der %1 Tankstelle! Hole dir die verbleibenden Vorräte!</German>
+			<Russian>Взрыв на заправке %1! Заберите оставшиеся припасы!</Russian>
 		</Key>
 		<Key ID="STR_CL_ESE_CRASHSITE_MARKER">
 			<English>%1 Crash Site</English>
 			<German>%1 Absturz</German>
+			<Russian>Обломки %1</Russian>
 		</Key>
 		<Key ID="STR_CL_ESE_MECHANIC_TITLE">
 			<English>Mechanic's Vehicle</English>
 			<German>Fahrzeug des Mechanikers</German>
+			<Russian>Транспорт механика</Russian>
 		</Key>
 		<Key ID="STR_CL_ESE_MECHANIC_START">
 			<English>A mechanic has left his truck full of upgrade parts in the large garage near %1.</English>
 			<German>Ein Mechaniker hat seinen LKW voller Upgrade-Teile in der großen Garage in der Nähe von %1 gelassen.</German>
+			<Russian>Механик оставил свой грузовик, полный деталей для улучшения, в большом гараже около %1.</Russian>
 		</Key>
 		<Key ID="STR_CL_CLAIM_MARKER">
 			<English>Claimed by %1</English>
 			<German>Beansprucht von %1</German>
+			<Russian>Занято %1</Russian>
 		</Key>
 		<Key ID="STR_CL_TIMEOUT_MARKER">
 			<English>%1 Claim Timeout [%2]</English>
 			<German>%1 Anspruchauszeit [%2]</German>
+			<!-- <Russian>%1 таймер [%2]</Russian> -->
 		</Key>
 		<Key ID="STR_CL_CLAIM_WARNING">
 			<English>You are in %1's mission. Ask %1 for permission!</English>
 			<German>Du befindest dich in der Mission von %1. Frage %1 um Erlaubnis!</German>
+			<Russian>Эту миссию занял %1. Спросите у него разрешения!</Russian>
 		</Key>
 		<Key ID="STR_CL_CLEARED_MARKER">
 			<English>Cleared by %1</English>
 			<German>Beendet von %1</German>
+			<Russian>Зачистил %1</Russian>
 		</Key>
 		<Key ID="STR_CL_MISSION_HERO">
 			<English>Hero %1</English>
 			<German>Held %1</German>
+			<Russian>Герой %1</Russian>
 		</Key>
 		<Key ID="STR_CL_MISSION_BANDIT">
 			<English>Bandit %1</English>
 			<German>Bandit %1</German>
+			<Russian>Бандит %1</Russian>
 		</Key>
 		<Key ID="STR_CL_MISSION_HEROS">
 			<English>Heroes</English>
 			<German>Helden</German>
+			<Russian>Герои</Russian>
 		</Key>
 		<Key ID="STR_CL_MISSION_BANDITS">
 			<English>Bandits</English>
 			<German>Banditen</German>
+			<Russian>Бандиты</Russian>
 		</Key>
 		<Key ID="STR_CL_MISSION_HERO_COUNT">
 			<English>Hero %1 (%2 %3)</English>
 			<German>Held %1 (%2 %3)</German>
+			<Russian>Герой %1 (%2 %3)</Russian>
 		</Key>
 		<Key ID="STR_CL_MISSION_BANDIT_COUNT">
 			<English>Bandit %1 (%2 %3)</English>
 			<German>Bandit %1 (%2 %3)</German>
+			<Russian>Бандит %1 (%2 %3)</Russian>
 		</Key>
 		<Key ID="STR_CL_BASE_TITLE">
 			<English>Military Base</English>
 			<German>Militärbasis</German>
+			<Russian>Военная база</Russian>
 		</Key>
 		<Key ID="STR_CL_ABANDONEDTRADER_TITLE">
 			<English>Abandoned Trader</English>
 			<German>Verlassener Händler</German>
+			<Russian>Торговый город</Russian>
 		</Key>
 		<Key ID="STR_CL_ARMEDVEHICLE_TITLE">
 			<English>Disabled %1</English>
 			<German>Deaktiviert %1</German>
+			<Russian>Разбитый %1</Russian>
 		</Key>
 		<Key ID="STR_CL_ARMYBASE_TITLE">
 			<English>Army Base</English>
 			<German>Armeebasis</German>
+			<Russian>Армейская база</Russian>
 		</Key>
 		<Key ID="STR_CL_BHCRASH_TITLE">
 			<English>Black Hawk Crash</English>
 			<German>Black Hawk Absturz</German>
+			<Russian>Падение Чёрного Ястреба</Russian>
 		</Key>
 		<Key ID="STR_CL_URAL_TITLE">
 			<English>Ural Attack</English>
 			<German>Ural Angriff</German>
+			<Russian>Урал под атакой</Russian>
 		</Key>
 		<Key ID="STR_CL_CANNIBALCAVE_TITLE">
 			<English>Cannibal Cave</English>
 			<German>Kannibalenhöhle</German>
+			<Russian>Пещера каннибалов</Russian>
 		</Key>
 		<Key ID="STR_CL_MV22_TITLE">
 			<English>Captured MV-22</English>
 			<German>Gekaperte MV-22</German>
+			<Russian>Захваченный MV-22</Russian>
 		</Key>
 		<Key ID="STR_CL_AIRDROP_TITLE">
 			<English>%1 Air Drop</English>
 			<German>%1 Luftlieferung</German>
+			<Russian>Сброшен %1</Russian>
 		</Key>
 		<Key ID="STR_CL_WAIPATROL_TITLE">
 			<English>Armed Patrol</English>
 			<German>Bewaffnete Patrouille</German>
+			<Russian>Вооружённый патруль</Russian>
 		</Key>
 		<Key ID="STR_CL_CROPRADIER_TITLE">
 			<English>Crop Raider</English>
 			<German>Ernteräuber</German>
+			<Russian>Налёт на общину</Russian>
 		</Key>
 		<Key ID="STR_CL_DRONE_TITLE">
 			<English>Drone Pilot</English>
 			<German>Drohnenpilot</German>
+			<Russian>Беспилотник</Russian>
 		</Key>
 		<Key ID="STR_CL_DRUGBUST_TITLE">
 			<English>Drug Bust</English>
 			<German>Drogenrazzia</German>
+			<Russian>Драгдилер</Russian>
 		</Key>
 		<Key ID="STR_CL_FARMER_TITLE">
 			<English>Farmer</English>
+			<Russian>Фермер</Russian>
 		</Key>
 		<Key ID="STR_CL_FIRESTATION_TITLE">
 			<English>Fire Station</English>
 			<German>Feuerwehr</German>
+			<Russian>Пожарная часть</Russian>
 		</Key>
 		<Key ID="STR_CL_GEMTOWER_TITLE">
 			<English>Gem Tower</English>
 			<German>Edelsteinturm</German>
+			<Russian>Башня</Russian>
 		</Key>
 		<Key ID="STR_CL_WAI_IKEA_TITLE">
 			<English>IKEA Convoy</English>
 			<German>IKEA-Konvoi</German>
+			<Russian>Конвой IKEA</Russian>
 		</Key>
 		<Key ID="STR_CL_JUNKYARD_TITLE">
 			<English>Junk Yard</English>
 			<German>Schrottplatz</German>
+			<Russian>Свалка</Russian>
 		</Key>
 		<Key ID="STR_CL_LUMBERMILL_TITLE">
 			<English>Lumber Mill</English>
 			<German>Sägewerk</German>
+			<Russian>Лесопилка</Russian>
 		</Key>
 		<Key ID="STR_CL_PRESIDENT_TITLE">
 			<English>President's in Town</English>
 			<German>Präsident in der Stadt</German>
+			<Russian>Президент в городе</Russian>
 		</Key>
 		<Key ID="STR_CL_EXTRACTION_TITLE">
 			<English>Sniper Extraction %1</English>
 			<German>Scharfschützen-Extraktion %1</German>
+			<Russian>Эвакуация снайпера %1</Russian>
 		</Key>
 		<Key ID="STR_CL_FARM_TITLE">
 			<English>The Farm</English>
 			<German>Der Bauernhof</German>
+			<Russian>Ферма</Russian>
 		</Key>
 		<Key ID="STR_CL_MAYOR_TITLE">
 			<English>Mayors Mansion</English>
 			<German>Bürgermeistervilla</German>
+			<Russian>Особняк Мэра</Russian>
 		</Key>
 		<Key ID="STR_CL_WAI_MSC_TITLE">
 			<English>Medical Supply Camp</English>
 			<German>Medizincamp</German>
+			<Russian>Медицинский лагерь</Russian>
 		</Key>
 		<Key ID="STR_CL_WAI_OUTPOST_TITLE">
 			<English>Outpost</English>
 			<German>Vorposten</German>
+			<Russian>Аванпост</Russian>
 		</Key>
 		<Key ID="STR_CL_RADIOTOWER_TITLE">
 			<English>Radio Tower</English>
 			<German>Funkturm</German>
+			<Russian>Радиовышка</Russian>
 		</Key>
 		<Key ID="STR_CL_WAI_PATROL_TITLE">
 			<English>Scout Patrol</English>
 			<German>Spähpatrouille</German>
+			<Russian>Патруль</Russian>
 		</Key>
 		<Key ID="STR_CL_SLAUGHTERHOUSE_TITLE">
 			<English>Slaughter House</English>
 			<German>Schlachthaus</German>
+			<Russian>Старая бойня</Russian>
 		</Key>
 		<Key ID="STR_CL_WAI_TANK_TITLE">
 			<English>Tank Column</English>
 			<German>Panzerkolonne</German>
+			<Russian>Танковая колонна</Russian>
 		</Key>
 		<Key ID="STR_CL_WAI_WEAPONCACHE_TITLE">
 			<English>Weapon Cache</English>
 			<German>Waffenversteck</German>
+			<Russian>Ящик с оружием</Russian>
 		</Key>
 		<Key ID="STR_CL_GRAYSKULL_TITLE">
 			<English>Castle Grayskull</English>
 			<German>Schloss Grayskull</German>
+			<Russian>Замок Серого Черепа</Russian>
 		</Key>
 		<Key ID="STR_CL_WUHAN_TITLE">
 			<English>Wuhan Lab</English>
 			<German>Wuhan Labor</German>
+			<Russian>Уханьская лаборатория</Russian>
 		</Key>
 	</Package>
 
@@ -39804,26 +39919,32 @@
 		<Key ID="STR_CL_GRAYSKULL_ANNOUNCE">
 			<English>Castle Grayskull is under attack!</English>
 			<German>Castle Grayskull wird angegriffen!</German>
+			<Russian>Замок Серого Черепа подвергся нападению!</Russian>
 		</Key>
 		<Key ID="STR_CL_GRAYSKULL_WIN">
 			<English>Survivors have secured Castle Grayskull.</English>
 			<German>Überlebende haben Castle Grayskull unter ihre Kontrolle gebracht.</German>
+			<Russian>Выжившие захватили Замок Серого Черепа.</Russian>
 		</Key>
 		<Key ID="STR_CL_GRAYSKULL_FAIL">
 			<English>Survivors did not secure Castle Grayskull.</English>
 			<German>Überlebende konnten Castle Grayskull nicht unter ihre Kontrolle bringen.</German>
+			<Russian>Выжившие не смогли захватить Замок Серого Черепа.</Russian>
 		</Key>
 		<Key ID="STR_CL_WUHAN_ANNOUNCE">
 			<English>Wuhan Lab scientists are guarding Dr. Fauci.</English>
 			<German>Wuhan Lab Wissenschaftler bewachen Dr. Fauci.</German>
+			<Russian>Учёные Уханьской лаборатории охраняют доктора Фаучи.</Russian>
 		</Key>
 		<Key ID="STR_CL_WUHAN_WIN">
 			<English>Dr. Fauci has been relieved of duty.</English>
 			<German>Dr. Fauci wurde für immer von seinen Diensten entbunden.</German>
+			<Russian>Доктор Фаучи освобождён от должности.</Russian>
 		</Key>
 		<Key ID="STR_CL_WUHAN_FAIL">
 			<English>Dr. Fauci is still lying about the virus origins.</English>
 			<German>Dr. Fauci erzählt noch immer Lügen über die Herkunft des Virus.</German>
+			<Russian>Доктор Фаучи продолжает лгать о происхождении вируса.</Russian>
 		</Key>
 	</Package>
 
@@ -40174,12 +40295,12 @@
 		<Key ID="STR_CL_ESE_RUBBLETOWN_TITLE">
 			<English>Rubble Town</English>
 			<German>Trümmerstadt</German>
-			<Russian>Разрушенный Город</Russian>
+			<Russian>Разрушенный город</Russian>
 		</Key>
 		<Key ID="STR_CL_ESE_RUBBLETOWN">
 			<English>Mercenaries stashed a loot crate in rubble town!</English>
 			<German>Söldner haben eine Lagerkiste in der Trümmerstadt gebunkert!</German>
-			<Russian>Наемники спрятали ящик с добычей в развалинах города!</Russian>
+			<Russian>Наёмники спрятали ящик с добычей в развалинах города!</Russian>
 		</Key>
 		<Key ID="STR_CL_ESE_LABYRINTH_TITLE">
 			<English>Labyrinth</English>
@@ -40188,7 +40309,7 @@
 		<Key ID="STR_CL_ESE_LABYRINTH">
 			<English>David Bowie put a loot crate inside a Labyrinth!</English>
 			<German>David Bowie hat Ausrüstung in einem Labyrinth versteckt!</German>
-			<Russian>David Bowie спрятал ящик с лутом в лабиринте!</Russian>
+			<Russian>Дэвид Боуи спрятал ящик с лутом в лабиринте!</Russian>
 		</Key>
 		<Key ID="STR_CL_ESE_VAULT_TITLE">
 			<English>Abandoned Safe</English>
@@ -40287,7 +40408,7 @@
 		<Key ID="STR_CL_ACS_TITLE">
 			<English>Animated Crash</English>
 			<German>Animierter Absturz</German>
-			<Russian>Анимированное крушение</Russian>
+			<Russian>Крушение</Russian>
 		</Key>
 		<Key ID="STR_CL_ACS_ANNOUNCE">
 			<English>A %1 is in distress! Watch for it and go to the crash site to secure the loot!</English>
@@ -40791,112 +40912,112 @@
 	</Package>
 	<Package name="Logistic">
 		<Key ID="STR_LOG_LIFT">
-            <English>LIFT OBJECT</English>
-            <German>OBJEKT KOPPELN</German>
-            <French>Hélitreuiller l'objet</French>
+			<English>LIFT OBJECT</English>
+			<German>OBJEKT KOPPELN</German>
+			<French>Hélitreuiller l'objet</French>
 			<Russian>Поднять объект</Russian>
-        </Key>
-        <Key ID="STR_LOG_ATTACHED">
-            <English>OBJECT '%1' ATTACHED.</English>
-            <German>OBJEKT '%1' GEKOPPELT.</German>
-            <French>Véhicule '%1' attaché.</French>
+		</Key>
+		<Key ID="STR_LOG_ATTACHED">
+			<English>OBJECT '%1' ATTACHED.</English>
+			<German>OBJEKT '%1' GEKOPPELT.</German>
+			<French>Véhicule '%1' attaché.</French>
 			<Russian>Объект '%1' присоединён</Russian>
-        </Key>
-        <Key ID="STR_LOG_DROPPED">
-            <English>OBJECT '%1' DROPPED.</English>
-            <German>OBJEKT '%1' ABGEKOPPELT.</German>
-            <French>Véhicule '%1' détaché.</French>
+		</Key>
+		<Key ID="STR_LOG_DROPPED">
+			<English>OBJECT '%1' DROPPED.</English>
+			<German>OBJEKT '%1' ABGEKOPPELT.</German>
+			<French>Véhicule '%1' détaché.</French>
 			<Russian>Объект '%1' сброшен</Russian>
-        </Key>
-        <Key ID="STR_LOG_DROP">
-            <English>DROP OBJECT</English>
-            <German>OBJEKT ABKOPPELN</German>
-            <French>Détacher l'objet</French>
+		</Key>
+		<Key ID="STR_LOG_DROP">
+			<English>DROP OBJECT</English>
+			<German>OBJEKT ABKOPPELN</German>
+			<French>Détacher l'objet</French>
 			<Russian>Сбросить объект</Russian>
-        </Key>
-        <Key ID="STR_LOG_CANT_LIFT_TOWING">
-            <English>CAN NOT LIFT OBJECT '%1', BECAUSE IT'S TOWING ANOTHER OBJECT.</English>
-            <German>OBJEKT '%1' KANN NICHT HOCHGEZOGEN WERDEN, WEIL ES BEREITS ABGESCHLEPPT WIRD.</German>
-            <French>Véhicule non hélitreuillable '%1' car il tracte un autre objet.</French>
+		</Key>
+		<Key ID="STR_LOG_CANT_LIFT_TOWING">
+			<English>CAN NOT LIFT OBJECT '%1', BECAUSE IT'S TOWING ANOTHER OBJECT.</English>
+			<German>OBJEKT '%1' KANN NICHT HOCHGEZOGEN WERDEN, WEIL ES BEREITS ABGESCHLEPPT WIRD.</German>
+			<French>Véhicule non hélitreuillable '%1' car il tracte un autre objet.</French>
 			<Russian>Вы не можете поднять объект '%1', потому что он буксирует другой объект.</Russian>
 		</Key>
-        <Key ID="STR_LOG_CANT_LIFT_MOVING">
-            <English>OBJECT '%1' IS BEING BY A PLAYER.</English>
-            <German>OBJEKT '%1' IST DICHT AN EINEM ANDEREN SPIELER DRAN.</German>
-            <French>Remorquage du véhicule '%1' en cours par un autre joueur.</French>
+		<Key ID="STR_LOG_CANT_LIFT_MOVING">
+			<English>OBJECT '%1' IS BEING BY A PLAYER.</English>
+			<German>OBJEKT '%1' IST DICHT AN EINEM ANDEREN SPIELER DRAN.</German>
+			<French>Remorquage du véhicule '%1' en cours par un autre joueur.</French>
 			<Russian>Объект '%1' блокируется другим игроком.</Russian>
-        </Key>
-        <Key ID="STR_LOG_CANT_LIFT_PLAYER">
-            <English>THERE IS A PLAYER IN OBJECT '%1'.</English>
-            <German>IM OBJEKT '%1' BEFINDET SICH EIN SPIELER.</German>
-            <French>Il y a un joueur dans le véhicule '%1'.</French>
+		</Key>
+		<Key ID="STR_LOG_CANT_LIFT_PLAYER">
+			<English>THERE IS A PLAYER IN OBJECT '%1'.</English>
+			<German>IM OBJEKT '%1' BEFINDET SICH EIN SPIELER.</German>
+			<French>Il y a un joueur dans le véhicule '%1'.</French>
 			<Russian>В объекте '%1' находится игрок.</Russian>
-	   </Key>
-        <Key ID="STR_LOG_ALREADY">
-            <English>OBJECT '%1' IS ALREADY TRANSPORTED BY ANOTHER OBJECT.</English>
-            <German>DAS OBJEKT '%1' WIRD BEREITS VON EINEM ANDEREN OBJEKT TRANSPORTIERT.</German>
-            <French>Véhicule '%1' est déjà transporté par un autre véhicule.</French>
+		</Key>
+		<Key ID="STR_LOG_ALREADY">
+			<English>OBJECT '%1' IS ALREADY TRANSPORTED BY ANOTHER OBJECT.</English>
+			<German>DAS OBJEKT '%1' WIRD BEREITS VON EINEM ANDEREN OBJEKT TRANSPORTIERT.</German>
+			<French>Véhicule '%1' est déjà transporté par un autre véhicule.</French>
 			<Russian>Объект '%1' транспортируется другим объектом.</Russian>
-        </Key>
-        <Key ID="STR_LOG_NOW_SELECT">
-            <English>SELECT THE OBJECT WHICH IS TO TOW WITH '%1'...</English>
-            <German>WÄHLE NUN DAS OBJEKT, DAS OBJEKT '%1' ABSCHLEPPEN SOLL...</German>
-            <French>Sélectionner l'objet à remorquer avec '%1'.</French>
+		</Key>
+		<Key ID="STR_LOG_NOW_SELECT">
+			<English>SELECT THE OBJECT WHICH IS TO TOW WITH '%1'...</English>
+			<German>WÄHLE NUN DAS OBJEKT, DAS OBJEKT '%1' ABSCHLEPPEN SOLL...</German>
+			<French>Sélectionner l'objet à remorquer avec '%1'.</French>
 			<Russian>Выберите технику для буксировки '%1'.</Russian>
-        </Key>
-        <Key ID="STR_TOW_THIS">
-            <English>TOW OBJECT</English>
-            <German>OBJEKT KOPPELN</German>
-            <French>Remorquer l'objet</French>
+		</Key>
+		<Key ID="STR_TOW_THIS">
+			<English>TOW OBJECT</English>
+			<German>OBJEKT KOPPELN</German>
+			<French>Remorquer l'objet</French>
 			<Russian>Буксировать объект</Russian>
-        </Key>
-        <Key ID="STR_LOG_TUG_SELECT">
-            <English>... TOW SELECTED OBJECT TO THIS OBJECT</English>
-            <German>... AUSGEWÄHLTES OBJEKT MIT DIESEM ABSCHLEPPEN</German>
-            <French>... remorquer le véhicule sélectionné à ce véhicule</French>
+		</Key>
+		<Key ID="STR_LOG_TUG_SELECT">
+			<English>... TOW SELECTED OBJECT TO THIS OBJECT</English>
+			<German>... AUSGEWÄHLTES OBJEKT MIT DIESEM ABSCHLEPPEN</German>
+			<French>... remorquer le véhicule sélectionné à ce véhicule</French>
 			<Russian>... присоединить выбранный объект к этому</Russian>
-        </Key>
-        <Key ID="STR_LOG_TOW">
-            <English>TOW...</English>
-            <German>ABSCHLEPPEN...</German>
-            <French>Remorquage...</French>
+		</Key>
+		<Key ID="STR_LOG_TOW">
+			<English>TOW...</English>
+			<German>ABSCHLEPPEN...</German>
+			<French>Remorquage...</French>
 			<Russian>Прицепить...</Russian>
-        </Key>
-        <Key ID="STR_LOG_UNTOW">
-            <English>UNTOW OBJECT</English>
-            <German>OBJEKT ABKOPPELN</German>
-            <French>Détacher l'objet</French>
+		</Key>
+		<Key ID="STR_LOG_UNTOW">
+			<English>UNTOW OBJECT</English>
+			<German>OBJEKT ABKOPPELN</German>
+			<French>Détacher l'objet</French>
 			<Russian>Отцепить</Russian>
-        </Key>
-        <Key ID="STR_LOG_TOO_FAR">
-            <English>OBJECT '%1' IS TOO FAR FROM THE OBJECT TO BE TOWED.</English>
-            <German>DAS OBJEKT '%1' IST ZU WEIT ENTFERNT ZUM KOPPELN.</German>
-            <French>Le véhicule '%1' est trop loin du véhicule à remorquer.</French>
+		</Key>
+		<Key ID="STR_LOG_TOO_FAR">
+			<English>OBJECT '%1' IS TOO FAR FROM THE OBJECT TO BE TOWED.</English>
+			<German>DAS OBJEKT '%1' IST ZU WEIT ENTFERNT ZUM KOPPELN.</German>
+			<French>Le véhicule '%1' est trop loin du véhicule à remorquer.</French>
 			<Russian>Объект '%1' находится слишком далеко от буксируемого объекта.</Russian>
-        </Key>
-        <Key ID="STR_LOG_IMPOSSIBLE_VEHICLE">
-            <English>ONLY THE PILOT CAN DETACH THIS OBJECT.</English>
-            <German>NUR DER PILOT KANN DIESE OBJEKT ABKOPPELN.</German>
-            <French>Seulement le conducteur peut détacher ce véhicule.</French>
+		</Key>
+		<Key ID="STR_LOG_IMPOSSIBLE_VEHICLE">
+			<English>ONLY THE PILOT CAN DETACH THIS OBJECT.</English>
+			<German>NUR DER PILOT KANN DIESE OBJEKT ABKOPPELN.</German>
+			<French>Seulement le conducteur peut détacher ce véhicule.</French>
 			<Russian>Только пилот может отсоединить этот объект.</Russian>
-        </Key>
-        <Key ID="STR_LOG_IN_TRANSIT">
-            <English>OBJECT '%1' IS IN TRANSIT.</English>
-            <German>DAS OBJEKT '%1' IST IN BEWEGUNG.</German>
-            <French>Véhicule '%1' est en mouvement.</French>
+		</Key>
+		<Key ID="STR_LOG_IN_TRANSIT">
+			<English>OBJECT '%1' IS IN TRANSIT.</English>
+			<German>DAS OBJEKT '%1' IST IN BEWEGUNG.</German>
+			<French>Véhicule '%1' est en mouvement.</French>
 			<Russian>Объект '%1' находится в движении.</Russian>
-        </Key>
-        <Key ID="STR_LOG_INPROGRESS">
-            <English>SORRY, BUT THE CURRENT OPERATION IS NOT FINISHED YET!</English>
-            <German>SORRY, ABER DIE DERZEITIGE AKTION IST NOCH NICHT BEENDET!</German>
-            <French>L'opération n'est pas encore terminée!</French>
+		</Key>
+		<Key ID="STR_LOG_INPROGRESS">
+			<English>SORRY, BUT THE CURRENT OPERATION IS NOT FINISHED YET!</English>
+			<German>SORRY, ABER DIE DERZEITIGE AKTION IST NOCH NICHT BEENDET!</German>
+			<French>L'opération n'est pas encore terminée!</French>
 			<Russian>Извините, но текущая операция еще не завершена!</Russian>
-        </Key>
-        <Key ID="STR_LOG_UNTOWED">
-            <English>OBJECT '%1' UNTOWED.</English>
-            <German>OBJEKT '%1' WURDE ABGEKOPPELT.</German>
-            <French>Véhicule '%1' détaché.</French>
+		</Key>
+		<Key ID="STR_LOG_UNTOWED">
+			<English>OBJECT '%1' UNTOWED.</English>
+			<German>OBJEKT '%1' WURDE ABGEKOPPELT.</German>
+			<French>Véhicule '%1' détaché.</French>
 			<Russian>Объект '%1' был отсоединён.</Russian>
-        </Key>
-	</Package>	
+		</Key>
+	</Package>
 </Project>
