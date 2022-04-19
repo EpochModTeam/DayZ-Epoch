@@ -28,7 +28,7 @@ class BAF_LRR_scoped
 };
 class BAF_LRR_scoped_W
 {
-	weight = 5.6;
+	weight = 6.9;
 };
 class L115A3_DZ
 {
@@ -44,7 +44,7 @@ class Anzio_20
 };
 class m107_DZ
 {
-	weight = 14;
+	weight = 13.5;
 };
 class DMR
 {
@@ -116,7 +116,7 @@ class M107
 };
 class SVD_NSPU_EP1
 {
-	weight = 9.8;
+	weight = 11.4;
 };
 class SVD_des_EP1
 {
@@ -392,7 +392,7 @@ class Barrett_MRAD_CCO_DZ
 };
 class Barrett_MRAD_Sniper_DZ
 {
-	weight = 12.4;
+	weight = 14.18;
 };
 class PMC_AS50_scoped 				
 { 	
@@ -404,7 +404,7 @@ class PMC_AS50_TWS
 };
 class CZ_750_S1_ACR 				
 { 	
-	weight = 4.8; 
+	weight = 5.84; 
 };
 class BAF_AS50_scoped_Large 		
 { 	

@@ -508,7 +508,7 @@ class M16A2_GL_DZ
 };
 class M16A4_ACG
 {
-	weight = 3.8;
+	weight = 3.819;
 };
 class M16A4_GL
 {
@@ -524,11 +524,11 @@ class M16A2_DZ
 };
 class M16A4_ACG_GL
 {
-	weight = 5.2;
+	weight = 5.179;
 };
 class M4A1_AIM_SD_camo
 {
-	weight = 3;
+	weight = 3.36;
 };
 class M4A1_Aim_camo
 {
@@ -624,11 +624,11 @@ class M4A1_Holo_SD_FL_DZ
 };
 class M4A1_GL_Holo_DZ
 {
-	weight = 3.4;
+	weight = 4.29;
 };
 class M4A1_GL_Holo_FL_DZ
 {
-	weight = 4.29;
+	weight = 4.305;
 };
 class M4A1_GL_Holo_SD_DZ
 {
@@ -748,7 +748,7 @@ class SA58_ACOG_DZ
 };
 class Sa58V_EP1
 {
-	weight = 3.1;
+	weight = 2.91;
 };
 class Sa58V_CCO_EP1
 {
@@ -1296,15 +1296,15 @@ class XM8_GREY_2_DZ
 };
 class XM8_GL_DZ
 {
-	weight = 5.8;
+	weight = 4.16;
 };
 class XM8_DES_GL_DZ
 {
-	weight = 5.8;
+	weight = 4.16;
 };
 class XM8_GREY_GL_DZ
 {
-	weight = 5.6;
+	weight = 4.16;
 };
 class XM8_Sharpsh_DZ
 {
@@ -1331,10 +1331,12 @@ class BAF_L7A2_GPMG
 	weight = 10.85;
 };
 
+// Need to move in Vehicle Ammo? didnt find in Weapon and Magazine item - Start
 class GSh23L_L39
 {
 	weight = 69.6;
 };
+// Need to move in Vehicle Ammo? didnt find in Weapon and Magazine item - End
 
 class M4A3_EP1
 {
@@ -1358,7 +1360,7 @@ class AKS_74_UN_CP
 };
 class M4A3_RCO_EP1
 {
-	weight = 3.4;
+	weight = 2.945;
 };
 class AN94_DZ
 {
@@ -1370,23 +1372,23 @@ class AN94_GL_DZ
 };
 class AKS_Gold_DZ
 {
-	weight = 6.0;
+	weight = 7.7;
 };
 class AKS_Silver_DZ
 {
-	weight = 5.0;
+	weight = 5.7;
 };
 class G36A_Camo_SD_DZ
 {
-	weight = 4.0;
+	weight = 4.49;
 };
 class M4A1_MFL_DZ
 {
-	weight = 3.0;
+	weight = 2.705;
 };
 class M4A1_SD_MFL_DZ
 {
-	weight = 2.705;
+	weight = 3.385;
 };
 class M4A1_GL_MFL_DZ
 {
@@ -1446,19 +1448,19 @@ class M4A1_Rusty_DZ
 };
 class M4A1_Camo_CCO_DZ
 {
-	weight = 3.1;
+	weight = 2.945;
 };
 class M4A1_Camo_CCO_SD_DZ
 {
-	weight = 3.3;
+	weight = 3.625;
 };
 class M4A1_Camo_Holo_GL_DZ
 {
-	weight = 3.6;
+	weight = 4.29;
 };
 class M4A1_Camo_Holo_GL_SD_DZ
 {
-	weight = 3.8;
+	weight = 4.97;
 };
 class HK416_Holo_DZ
 {
@@ -1854,11 +1856,11 @@ class ACR_SNOW_DZ
 };
 class ACR_SNOW_SD_DZ
 {
-	weight = 5.356;
+	weight = 3.996;
 };
 class ACR_SNOW_GL_SD_DZ
 {
-	weight = 5.4;
+	weight = 5.356;
 };
 class ACR_SNOW_CCO_DZ
 {
@@ -2150,11 +2152,11 @@ class Sa58V_DZ
 };
 class Sa58V_Camo_CCO_DZ
 {
-	weight = 3.779;
+	weight = 3.625;
 };
 class Sa58V_Camo_ACOG_DZ
 {
-	weight = 4.8;
+	weight = 3.779;
 };
 class m8_carbine_pmc
 { 
@@ -2198,7 +2200,7 @@ class CZ805_B_GL_ACR
 };
 class M4A1_GL_Holo_MFL_DZ 
 { 
-	weight = 3.6; 
+	weight = 4.315; 
 };
 class M4A3_DES_CCO_DZ 
 { 
@@ -2230,7 +2232,7 @@ class ACR_SNOW_GL_DZ
 };
 class M16A4_GL_CCO_MFL_DZ 
 { 
-	weight = 4.6; 
+	weight = 5.05; 
 };
 class RK95_DZ  
 {
