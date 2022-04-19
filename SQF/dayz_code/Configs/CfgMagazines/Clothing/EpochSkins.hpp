@@ -1501,6 +1501,20 @@ class Skin_BusinessMan_DZ : SkinBase {
 	sex = "male";
 	playerModel = "BusinessMan_DZ";	
 };
+class Skin_Paramedic_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_SKIN_PARAMEDIC_NAME;
+	descriptionShort = $STR_DZE_SKIN_PARAMEDIC_NAME;
+	sex = "male";
+	playerModel = "Paramedic_DZ";	
+};
+class Skin_Garbage_Man_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_SKIN_GARBAGEMAN_NAME;
+	descriptionShort = $STR_DZE_SKIN_GARBAGEMAN_NAME;
+	sex = "male";
+	playerModel = "Garbage_Man_DZ";	
+};
 // Female ghillies
 class Skin_SniperW_DZ : SkinBase {
 	scope = 2;

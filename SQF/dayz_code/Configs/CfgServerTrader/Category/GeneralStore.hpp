@@ -168,6 +168,8 @@ class Category_30 {
 	class Skin_Dealer_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_BusinessMan_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_INS_Worker2_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_Paramedic_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_Garbage_Man_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 };
 
 //Backpacks

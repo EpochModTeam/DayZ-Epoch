@@ -871,6 +871,8 @@ Skin_Reporter_DZ
 Skin_MafiaBoss_DZ
 Skin_Dealer_DZ
 Skin_BusinessMan_DZ
+Skin_Paramedic_DZ
+Skin_Garbage_Man_DZ
 Skin_SniperW_DZ
 Skin_Sniper1W_DZ
 Skin_SniperBanditW_DZ

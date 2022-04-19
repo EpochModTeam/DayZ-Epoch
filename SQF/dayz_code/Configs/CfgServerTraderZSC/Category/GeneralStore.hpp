@@ -168,6 +168,8 @@ class Category_30 {
 	class Skin_Dealer_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_BusinessMan_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_INS_Worker2_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_Paramedic_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_Garbage_Man_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 };
 
 //Backpacks

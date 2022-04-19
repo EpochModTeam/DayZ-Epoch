@@ -32106,6 +32106,16 @@
 			<German>Nutte</German>
 			<Russian>Проститутка</Russian>
 		</Key>
+		<Key ID="STR_DZE_SKIN_PARAMEDIC_NAME">
+			<English>Paramedic</English>
+			<German>Sanitäter</German>
+			<Russian>санитар</Russian>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GARBAGEMAN_NAME">
+			<English>Garbage Man</English>
+			<German>Müllmann</German>
+			<Russian>мусорщик</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzerung</German>

@@ -1741,3 +1741,29 @@ class BusinessMan_DZ: Survivor_DZ {
 	};
 };
 
+class Paramedic_DZ : Survivor_DZ {
+	scope = 2;
+	displayName = $STR_DZE_SKIN_PARAMEDIC_NAME;
+	model = "\kpfs_thw\characters\worker\thw_worker";
+	hiddenSelections[] = {"camo01","hps","glasses"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\male\paramedic.paa"};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_thw\characters\worker\thw_worker.rvmat","kpfs_thw\characters\worker\thw_worker_wound1.rvmat","kpfs_thw\characters\worker\thw_worker_wound2.rvmat"};
+	};	
+};
+
+class Garbage_Man_DZ : Survivor_DZ {
+	scope = 2;
+	displayName = $STR_DZE_SKIN_GARBAGEMAN_NAME;
+	model = "\Ca\characters_E\Overall\Overall";
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\male\garbageman.paa"};
+
+	class Wounds {
+		tex[] = {};
+		mat[] = {"Ca\characters_E\Overall\Data\Overall.rvmat", "Ca\characters_E\Overall\Data\W1_Overall.rvmat", "Ca\characters_E\Overall\Data\W2_Overall.rvmat"};
+	};
+};
+
