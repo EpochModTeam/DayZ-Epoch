@@ -1284,9 +1284,9 @@
 			<Russian>Не достаточно топлива для заполнения всех контейнеров. Осталось около %1л. (Вам нужно %2л)</Russian>
 		</Key>
 		<Key ID="str_fill_success">
-			<English>You have filled %1 fuel container(s) with fuel. %2 has an estimated %3 litres of fuel left.</English>
-			<German>%1 Kraftstoffbehälter wurde(n) erfolgreich mit Kraftstoff befüllt. %2 hat noch ungefähr %3 Liter Kraftstoff übrig.</German>
-			<Russian>Заполнено контейнеров: %1. Осталось примерно %3л топлива.</Russian>
+			<English>You have filled %1 fuel container(s) with fuel. The fuel tank has an estimated %2 litres of fuel left.</English>
+			<German>%1 Kraftstoffbehälter wurde(n) erfolgreich mit Kraftstoff befüllt. Der Treibstofftank hat noch ungefähr %2 Liter Kraftstoff übrig.</German>
+			<Russian>Заполнено контейнеров: %1. Осталось примерно %2л топлива.</Russian>
 		</Key>
 		<Key ID="str_siphon_canceled">
 			<English>Canceled siphon</English>
@@ -33805,7 +33805,7 @@
 			<Russian>Пробел</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_SNAP_NEXT_PREV">
-			<English>Snap Next / Prev Object</English>
+			<English>Next Snap / Prev Snap</English>
 			<German>Snap Nächstes / Vorheriges Objekt</German>
 			<Russian>Привязать След./Пред. объект</Russian>
 		</Key>
@@ -33830,8 +33830,8 @@
 			<Russian>Настройка углов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_LOCAL">
-			<English>Local Mode</English>
-			<German>Lokaler Modus</German>
+			<English>Local Axis</English>
+			<German>Lokale Längsachse</German>
 			<Russian>Локальный режим</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_LOCAL_ON">
@@ -36933,6 +36933,31 @@
 			<German>Ein kleiner Stall, in welchem ein Wildschwein gehalten werden kann.</German>
 			<Russian>Небольшой сарай, в котором может поместиться кабан.</Russian>
 		</Key>
+		<Key ID="STR_ACTIONS_THAW_FROZEN">
+			<English>Thaw Frozen Food/Drink</English>
+			<German>Nahrungsmittel auftauen</German>
+		</Key>
+		<Key ID="STR_SUCCESS_THAWED_FOOD1">
+			<English>You have thawed %1 can of frozen food.</English>
+			<German>Du hast eine Dose aufgetaut.</German>
+		</Key>
+		<Key ID="STR_SUCCESS_THAWED_FOOD2">
+			<English>You have thawed %1 cans of frozen food.</English>
+			<German>Du hast %1 Dosen aufgetaut.</German>
+		</Key>
+		<Key ID="STR_SUCCESS_THAWED_DRINK1">
+			<English>You have thawed %1 frozen drink.</English>
+			<German>Du hast ein Getränk aufgetaut.</German>
+		</Key>
+		<Key ID="STR_SUCCESS_THAWED_DRINK2">
+			<English>You have thawed %1 frozen drinks.</English>
+			<German>Du hast %1 Getränke aufgetaut.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CANCELED">
+			<English>Action canceled.</English>
+			<German>Aktion abgebrochen.</German>
+			<Russian>Действие отменено.</Russian>
+		</Key>		
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
