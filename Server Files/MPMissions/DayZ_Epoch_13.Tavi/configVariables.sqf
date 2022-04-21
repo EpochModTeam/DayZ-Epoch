@@ -57,6 +57,9 @@ dayz_groupSystem = false; // Enable group system
 // Bloodsuckers	
 DZE_Bloodsuckers = false; // Enable bloodsucker spawning.
 
+// EVR Storms
+DZE_EVR = false; // Enable EVR storms.
+
 // Bury and Butcher Bodies
 DZE_Bury_Body = false; // Enable Bury Bodies
 DZE_Butcher_Body = false; // Enable Butcher Bodies
@@ -131,6 +134,12 @@ if (isServer) then {
 	if (DZE_Virtual_Garage) then {
 		vg_clearAmmo = true; // Clear the ammo of vehicles spawned during the same restart they are stored? (stops users storing a vehicle for a free rearm)
 		vg_sortColumn = 0; //0 or an out of range value sorts by the default column 'DisplayName', otherwise 1 = 'DateStored', 2 = 'id', 3 = 'Name' (of storing player), 4 = 'DateMaintained'
+	};
+	
+	// EVR Storms
+	if (DZE_EVR) then {
+		DZE_EVRFirstTime = [15, 60]; // Random time in minutes after server restart to begin the first EVR storm [min, max].
+		DZE_EVRTimer = [45, 180]; // Random time in minutes between additional EVR storms [min, max].
 	};
 };
 
@@ -519,6 +528,13 @@ if (!isDedicated) then {
 		DZE_BloodsuckerDeleteNearTrader = true; // Deletes bloodsuckers when near trader cities.
 		DZE_MutantHeartProtect = true; // Disables targeting and attack if the player has a mutant heart in inventory.
 		DZE_MutantHumanity = 20;
+	};
+	
+	// EVR Storms
+	if (DZE_EVR) then {
+		DZE_EVRDamageItemsChance = .20; // Chance that an EVR storm will damage items in inventory. From 0 to 1. Chance applies to each item. Set to 0 to disable.
+		DZE_EVRDamageItems = [["Binocular_Vector","Binocular_VectorBroken"],["NVGoggles_DZE","ItemNVGFullBroken_DZE"],["NVGoggles","ItemNVGBroken_DZE"],["ItemGPS","ItemGPSBroken_DZE"],["ItemRadio","ItemRadioBroken_DZE"],["Smartphone_DZE","SmartphoneBroken_DZE"]]; // [item (input), damaged item (output)]. Items that have a chance to be damaged by EMP.
+		DZE_EVRBloodLoss = [4000,8000]; // Random number of blood loss if a player does not have an APSI and/or is not inside a building [min, max]. Player will not die, there is a minimum of 1000 after the calculation
 	};
 
 	// Garage Door Opener
