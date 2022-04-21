@@ -57,6 +57,7 @@
 [ADDED] 2 new items (Dung, Sunflower Oil) and 9 food versions (Steak with fries, Sushi, Pumpkin soup, Carrot soup, Potato soup, Garlic soup, Vegetable platter, Honey tea, Honeycomb). (624acb3ab) @Damian6666, @AirwavesMan
 [ADDED] Comfrey patch, plant and seeds. (59e04523b) @AirwavesMan
 [ADDED] Snapping keys can be switched between right-handed and left-handed with F6. (03636463c) @Victor-the-Cleaner
+[ADDED] Nightstalker EVR storms integrated. @worldwidesorrow
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [UPDATED] Replace M240 Nest ghost preview with the actual game object as preview. (ff05cb9cb) @ZzBombardierzZ, @AirwavesMan
 [UPDATED] Players may no longer build objects outside the plot radius. (bb968698e) @Victor-the-Cleaner
