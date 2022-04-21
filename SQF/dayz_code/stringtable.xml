@@ -36967,40 +36967,49 @@
 			<English>Action canceled.</English>
 			<German>Aktion abgebrochen.</German>
 			<Russian>Действие отменено.</Russian>
+		</Key>
+
+		<!--Nightstalker EVR storms-->
+		<Key ID="STR_APSI_STATE">
+			<English>APSI On/Off</English>
+			<German>APSI An/Aus</German>
+		</Key>
+		<Key ID="STR_EVR_ACTIVITY">
+			<English>APSI: Stronger activity of flux field has been detected..</English>
+			<German>APSI: Starke Magnetfeld Aktivität entdeckt..</German>
+		</Key>
+		<Key ID="STR_EVR_DETECT">
+			<English>APSI: EVR sequence detected..</English>
+			<German>APSI: EVR-Sequenz gefunden..</German>
+		</Key>
+		<Key ID="STR_EVR_PROTECT">
+			<English>APSI: EM and PSI protection enabled..</English>
+			<German>APSI: EM und PSI-Schutz aktiviert..</German>
+		</Key>
+		<Key ID="STR_EVR_ENABLED">
+			<English>APSI: Enabled..</English>
+			<German>APSI: Aktiviert..</German>
+		</Key>
+		<Key ID="STR_EVR_DISABLED">
+			<English>APSI: Disabled...</English>
+			<German>APSI: Deaktiviert...</German>
+		</Key>
+		<Key ID="STR_EVR_START">
+			<English>APSI: EVR sequence start..</English>
+			<German>APSI: EVR-Sequenz gestartet..</German>
+		</Key>
+		<Key ID="STR_EVR_END">
+			<English>APSI: EVR sequence end..</English>
+			<German>APSI: EVR-Sequenz beendet..</German>
+		</Key>
+		<Key ID="STR_EVR_DAMAGED_ITEMS">
+			<English>%1 damaged by the EMP</English>
+			<German>%1 wurde vom EMP beschädigt</German>
 		</Key>		
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
-		</Key>
-		
-		<!--Nightstalker EVR storms-->
-		<Key ID="STR_APSI_STATE">
-			<English>APSI On/Off</English>
-		</Key>
-		<Key ID="STR_EVR_ACTIVITY">
-			<English>APSI: Stronger activity of flux field has been detected..</English>
-		</Key>
-		<Key ID="STR_EVR_DETECT">
-			<English>APSI: EVR sequence detected..</English>
-		</Key>
-		<Key ID="STR_EVR_PROTECT">
-			<English>APSI: EM and PSI protection enabled..</English>
-		</Key>
-		<Key ID="STR_EVR_ENABLED">
-			<English>APSI: Enabled...</English>
-		</Key>
-		<Key ID="STR_EVR_DISABLED">
-			<English>APSI: Disabled..</English>
-		</Key>
-		<Key ID="STR_EVR_START">
-			<English>APSI: EVR sequence start..</English>
-		</Key>
-		<Key ID="STR_EVR_END">
-			<English>APSI: EVR sequence end..</English>
-		</Key>
-		<Key ID="STR_EVR_DAMAGED_ITEMS">
-			<English>%1 damaged by the EMP</English>
 		</Key>
 	</Package>
 </Project>
