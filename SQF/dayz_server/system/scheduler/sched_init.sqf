@@ -9,6 +9,9 @@ call compile preprocessFileLineNumbers (PATH+"sched_traps.sqf");
 if (DZE_Bury_Body || DZE_Butcher_Body) then {
 	call compile preprocessFileLineNumbers (PATH+"sched_lootCrates.sqf");
 };
+if (DZE_EVR) then {
+	call compile preprocessFileLineNumbers (PATH+"sched_evr.sqf");
+};
 
 local _list = [
 	// period	offset	code <-> ctx				init code ->ctx
@@ -24,6 +27,9 @@ local _list = [
 
 if (DZE_Bury_Body || DZE_Butcher_Body) then {
 	_list set [count _list, [ 60,	 	240,	sched_lootCrates ]];
+};
+if (DZE_EVR) then {
+	_list set [count _list, [ 60,		180,	sched_evr, sched_evr_init ]];
 };	 
 
 _list execFSM ("\z\addons\dayz_code\system\scheduler\scheduler.fsm"); 
