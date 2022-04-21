@@ -147,17 +147,17 @@ class CfgSounds {
 	};
 	class z_cough_w_0 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\cough_w_0.ogg",0.5,1,40};
+		sound[] = {"\dayz_sfx\effects\cough_w_0.ogg",0.5,1.5,40};
 		titles[] = {};
 	};
 	class z_cough_w_1 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\cough_w_1.ogg",0.4,1,40};
+		sound[] = {"\dayz_sfx\effects\cough_w_1.ogg",0.4,1.5,40};
 		titles[] = {};
 	};
 	class z_cough_w_2 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\cough_w_2.ogg",0.3,1,40};
+		sound[] = {"\dayz_sfx\effects\cough_w_2.ogg",0.3,1.5,40};
 		titles[] = {};
 	};
 	class z_bandage_0 {
@@ -901,10 +901,79 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\bloodsucker\forest_hidden_4.ogg",0.25118899,1};
 		titles[] = {};
 	};
-	class z_minestone_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\effects\minestone.ogg", 0.1, 1, 50};
-		titles[] = {};
+	class ns_evrDetect {
+		name="NS evr_detect";
+		sound[]= {"\dayz_sfx\evr\evr_detect.ogg",1.7782789,1};
+		titles[]={};
 	};
-
+	class ns_evrBegin {
+		name="NS evr_begin";
+		sound[]= {"\dayz_sfx\evr\evr_begin.ogg",3.1622779,1};
+		titles[]={};
+	};
+	class ns_evrHit1 {
+		name="NS evr_hit1";
+		sound[]= {"\dayz_sfx\evr\hit_1.ogg",1.584893,1};
+		titles[]={};
+	};
+	class ns_evrHit2 {
+		name="NS evr_hit2";
+		sound[]= {"\dayz_sfx\evr\hit_2.ogg",1.584893,1};
+		titles[]={};
+	};
+	class ns_evrHit3 {
+		name="NS evr_hit3";
+		sound[]= {"\dayz_sfx\evr\hit_3.ogg",1.584893,1};
+		titles[]={};
+	};
+	class ns_evrWave1 {
+		name="NS evr_wave1";
+		sound[]= {"\dayz_sfx\evr\wave_1.ogg",1.584893,1};
+		titles[]={};
+	};
+	class ns_evrWave2 {
+		name="NS evr_wave2";
+		sound[]= {"\dayz_sfx\evr\wave_2.ogg",1.584893,1};
+		titles[]={};
+	};
+	class ns_evrWave3 {
+		name="NS evr_wave3";
+		sound[]= {"\dayz_sfx\evr\wave_3.ogg",1.584893,1};
+		titles[]={};
+	};
+	class ns_evrPsy {
+		name="NS evr_psy";
+		sound[]= {"\dayz_sfx\evr\psy_voices.ogg",1.7782789,1};
+		titles[]={};
+	};
+	class ns_evrFullWave {
+		name="NS blowout_full";
+		sound[]= {"\dayz_sfx\evr\full_wave.ogg",1.7782789,1};
+		titles[]={};
+	};
+	class ns_apsi_on {
+		name="NS apsi_on";
+		sound[]= {"\dayz_sfx\evr\apsi_on.ogg",1.7782789,1};
+		titles[]={};
+	};
+	class ns_apsi_off {
+		name="NS apsi_off";
+		sound[]= {"\dayz_sfx\evr\apsi_off.ogg",1.7782789,1};
+		titles[]={};
+	};
+	class ns_drone2 {
+		name="NS Drone 2";
+		sound[]= {"\dayz_sfx\evr\fx_drone2.ogg",1,1};
+		titles[]={};
+	};
+	class ns_drone1 {
+		name="NS Drone 1";
+		sound[]= {"\dayz_sfx\evr\fx_drone1.ogg",1,1};
+		titles[]={};
+	};
+	class ns_misc4 {
+		name="Misc strange wind";
+		sound[]= {"\dayz_sfx\evr\fx_misc4.ogg",1,1};
+		titles[]={};
+	};
 };
