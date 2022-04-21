@@ -195,6 +195,8 @@ if (!isDedicated) then {
 	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
 	fnc_localizeMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_localizeMessage.sqf";
 	fnc_remoteMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_remoteMessage.sqf";
+	fnc_apsiState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\apsiState.sqf"; // Toggle APSI on and off
+	if (DZE_EVR) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_evr.sqf";};
 	
 	if (DZE_Remote_Vehicle) then {
 		remoteVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remoteVehicle\remoteVehicle.sqf";

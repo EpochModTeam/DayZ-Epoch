@@ -951,4 +951,87 @@ class RscTitles
 			text="\nst\textures\skrabanec.paa";
 		};
 	};
+	class RscAPSI
+	{
+		idd = -1;
+		duration = 10;
+		fadein = 0;
+		movingEnable = 0;
+		enableSimulation = 0;
+		enableDisplay = 0;
+		class controls
+		{
+			class APSILog: RscTextAPSI
+			{
+				text = $STR_EVR_ACTIVITY;
+				ColorText[] = {1,0.2,0.1,1};
+			};
+		};
+	};
+	class RscAPSI_Detected: RscAPSI
+	{
+		class controls
+		{
+			class APSILog: RscTextAPSI
+			{
+				text = $STR_EVR_DETECT;
+				ColorText[] = {1,0,0.2,1};
+			};
+		};
+	};
+	class RscAPSI_Protected: RscAPSI
+	{
+		class controls
+		{
+			class APSILog: RscTextAPSI
+			{
+				text = $STR_EVR_PROTECT;
+				ColorText[] = {0,1,0.2,1};
+			};
+		};
+	};
+	class RscAPSI_On: RscAPSI
+	{
+		class controls
+		{
+			class APSILog: RscTextAPSI
+			{
+				text = $STR_EVR_ENABLED;
+				ColorText[] = {0,1,0.2,1};
+			};
+		};
+	};
+	class RscAPSI_Off: RscAPSI
+	{
+		class controls
+		{
+			class APSILog: RscTextAPSI
+			{
+				text = $STR_EVR_DISABLED;
+				ColorText[] = {0,1,0.2,1};
+			};
+		};
+	};
+	class RscAPSI_Start: RscAPSI
+	{
+		class controls
+		{
+			class APSILog: RscTextAPSI
+			{
+				text = $STR_EVR_START;
+				ColorText[] = {1,0,0.2,1};
+			};
+		};
+	};
+	class RscAPSI_End: RscAPSI
+	{
+		class controls
+		{
+			class APSILog: RscTextAPSI
+			{
+				text = $STR_EVR_END;
+				ColorText[] = {0,1,0.2,1};
+			};
+		};
+	};
 };

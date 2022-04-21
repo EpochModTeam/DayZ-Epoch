@@ -792,6 +792,20 @@ class bloodTest
 	};
 };
 
+class RscTextAPSI : RscText
+{
+	x = 0.5;
+	y = 1;
+	h = 0.03;
+	w = 0.5;
+	style = 2;
+	font = "BitStream";
+	SizeEx = 0.025;
+	colorText[] = {0.1,0.1,0.1,1};
+	colorBackground[] = {0.5,0.5,0.5,0.4};
+	lineSpacing = 1;
+};
+
 #include "RscDisplay\includes.hpp"
 
 //Override BIS Loadscreen
