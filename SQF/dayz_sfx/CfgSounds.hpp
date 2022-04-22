@@ -147,17 +147,17 @@ class CfgSounds {
 	};
 	class z_cough_w_0 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\cough_w_0.ogg",0.5,1.5,40};
+		sound[] = {"\dayz_sfx\effects\cough_w_0.ogg",0.5,1,40};
 		titles[] = {};
 	};
 	class z_cough_w_1 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\cough_w_1.ogg",0.4,1.5,40};
+		sound[] = {"\dayz_sfx\effects\cough_w_1.ogg",0.4,1,40};
 		titles[] = {};
 	};
 	class z_cough_w_2 {
 		name = "";
-		sound[] = {"\dayz_sfx\effects\cough_w_2.ogg",0.3,1.5,40};
+		sound[] = {"\dayz_sfx\effects\cough_w_2.ogg",0.3,1,40};
 		titles[] = {};
 	};
 	class z_bandage_0 {
@@ -899,6 +899,11 @@ class CfgSounds {
 	class z_bloodforest4_0 {
 		name = "";
 		sound[] = {"\dayz_sfx\bloodsucker\forest_hidden_4.ogg",0.25118899,1};
+		titles[] = {};
+	};
+	class z_minestone_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\minestone.ogg", 0.1, 1, 50};
 		titles[] = {};
 	};
 	class ns_evrDetect {
