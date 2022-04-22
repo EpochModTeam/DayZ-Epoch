@@ -23948,14 +23948,14 @@
 		<Key ID="STR_EPOCH_PLAYER_152">
 			<English>%3 complete, missing %1 more of %2</English>
 			<German>%3 abgeschlossen, dir fehlt/fehlen noch %1 %2</German>
-			<Russian>%3 завершено, не хватает ещё %2 (В количестве: %1) </Russian>
+			<Russian>%3 завершено. Не хватает: %2 (%1 шт.) </Russian>
 			<Dutch>%3 compleet, nog %1 %2 nodig voor de volgende</Dutch>
 			<Czech>%3 hotovo, chybí ještě %1 %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_154">
 			<English>%1x %2 has been successfully added to your inventory.</English>
 			<German>%1x %2 wurde erfolgreich deinem Inventar hinzugefügt.</German>
-			<Russian>%2 (в количестве: %1) успешно добавлен в ваш инвентарь.</Russian>
+			<Russian>В ваш инвентарь добавлено: %2 (%1 шт.)</Russian>
 			<Dutch>%1x %2 is aan je inventaris toegevoegd.</Dutch>
 			<Czech>%1x %2 bylo úspěšně přidáno do Vašeho inventáře.</Czech>
 		</Key>
@@ -24826,12 +24826,12 @@
 		<Key ID="STR_EPOCH_PLAYER_253_1">
 			<English>Craft Cinder Gate Frame</English>
 			<German>Betontorrahmen herstellen</German>
-			<Russian>Создать: Бет. стена с б/проёмом</Russian>
+			<Russian>Создать: Стена из ш/б с б/проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253_1_1">
 			<English>Craft Cinder Garage Frame w/ no top</English>
 			<German>Betongaragendurchgang (rahmenlos) herstellen</German>
-			<Russian>Создать: Бет. стена б/в с гар. проёмом</Russian>
+			<Russian>Создать: Стена из ш/б б/в с гар. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_254">
 			<English>Craft Plywood</English>
@@ -27888,7 +27888,7 @@
 		<Key ID="STR_EPOCH_WOODRAMP">
 			<English>Wooden Ramp</English>
 			<German>Holzrampe</German>
-			<Russian>Деревянная рампа</Russian>
+			<Russian>Чертёж дер. рампы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAMP_DESC">
 			<English>Document used in building a wooden ramp.</English>
@@ -29623,77 +29623,77 @@
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF">
 			<English>Cinder Wall Half</English>
 			<German>Betonwand (Halb)</German>
-			<Russian>Бет. стена (1/2)</Russian>
+			<Russian>Стена ш/б (1/2)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF_GAP">
 			<English>Cinder Wall Half w/ gap</English>
 			<German>Betonwand (Halb) mit Lücke</German>
-			<Russian>Бет. стена (1/2) с щелью</Russian>
+			<Russian>Стена ш/б (1/2) с щелью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL">
 			<English>Cinder Wall Full</English>
 			<German>Betonwand (Komplett)</German>
-			<Russian>Бет. стена</Russian>
+			<Russian>Стена ш/б</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_DESC">
 			<English>Half height cinder block wall.</English>
 			<German>Eine Betonwand, welche nur zur Hälfte aufgebaut wurde.</German>
-			<Russian>Бетонная стена, построенная только наполовину.</Russian>
+			<Russian>Стена из шлакоблоков, построенная только наполовину.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FULLCINDERBLOCKWALL_DESC">
 			<English>Full height cinder block wall.</English>
 			<German>Eine komplett aufgebaute Betonwand.</German>
-			<Russian>Полностью построенная бетонная стена.</Russian>
+			<Russian>Полностью построенная стена из шлакоблоков.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW">
 			<English>Cinder Wall w/ window</English>
 			<German>Betonwand mit Fenster</German>
-			<Russian>Бет. стена с окном</Russian>
+			<Russian>Стена ш/б с окном</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_DESC">
 			<English>Cinder Wall with window that can be locked with a combination lock.</English>
 			<German>Eine Betonwand mit Fenster, welches mit einem Zahlenschloss verschlossen werden kann.</German>
-			<Russian>Бетонная стена с окном, которое можно запереть кодовым замком.</Russian>
+			<Russian>Стена из шлакоблоков с окном. На окно можно повесить кодовый замок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED">
 			<English>Cinder Wall w/ window locked</English>
 			<German>Betonwand mit Fenster (verschlossen)</German>
-			<Russian>Бет. стена с окном с замком</Russian>
+			<Russian>Стена ш/б с окном и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED_DESC">
 			<English>Cinder Wall with window and a combination lock.</English>
 			<German>Eine Betonwand mit Fenster und einem Zahlenschloss.</German>
-			<Russian>Бетонная стена с окном, запертым кодовым замком.</Russian>
+			<Russian>Стена из шлакоблоков с окном и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY">
 			<English>Cinder Doorway</English>
 			<German>Betontürrahmen</German>
-			<Russian>Бет. стена с дв. проёмом</Russian>
+			<Russian>Стена ш/б с дв. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_DESC">
 			<English>Cinder block wall with metal single access door.</English>
 			<German>Ein Türdurchgang aus Beton.</German>
-			<Russian>Дверной проём в бетонной стене.</Russian>
+			<Russian>Стена из шлакоблоков с дверным проёмом.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR">
 			<English>Cinder Door</English>
 			<German>Betontür</German>
-			<Russian>Бет. стена с дверью</Russian>
+			<Russian>Стена ш/б с дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR_DESC">
 			<English>A Cinder block wall with metal door that can be locked with a combination lock.</English>
 			<German>Eine Betontür, welche mit einem Zahlenschloss verschlossen werden kann.</German>
-			<Russian>Бетонная стена с железной дверью, которую можно запереть кодовым замком.</Russian>
+			<Russian>Стена из шлакоблоков с железной дверью. На дверь можно повесить кодовый замок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORLOCKED">
 			<English>Cinder Door (locked)</English>
 			<German>Betontür (verschlossen)</German>
-			<Russian>Бет. стена с дв. и замком</Russian>
+			<Russian>Стена ш/б с дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_LOCKED_DESC">
 			<English>Cinder block door with a combination lock.</English>
 			<German>Eine Betontür mit einem Zahlenschloss.</German>
-			<Russian>Бетонная стена с железной дверью, запертой кодовым замком.</Russian>
+			<Russian>Стена из шлакоблоков с железной дверью и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKER">
 			<English>Concrete Bunker</English>
@@ -29718,112 +29718,112 @@
 		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH">
 			<English>Cinder Door w/ Hatch</English>
 			<German>Betontür mit Luke</German>
-			<Russian>Бет. стена с дв. с люком</Russian>
+			<Russian>Стена ш/б с дв. и люком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH_DESC">
 			<English>A cinder block wall with a hatch and a metal door that can be locked with a combination lock.</English>
 			<German>Eine Betontür mit Luke, welche mit einem Zahlenschloss verschlossen werden kann.</German>
-			<Russian>Бетонная стена с железной дверью и смотровым окном, которую можно запереть кодовым замком.</Russian>
+			<Russian>Стена из шлакоблоков с железной дверью и смотровым окном. На дверь можно повесить кодовый замок.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORLOCKED_HATCH">
 			<English>Cinder Door w/ Hatch (locked)</English>
 			<German>Betontür mit Luke (verschlossen)</German>
-			<Russian>Бет. стена с дв., люком, замком</Russian>
+			<Russian>Стена ш/б с дв., люком, замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_HATCH_LOCKED_DESC">
 			<English>Cinder block door with a hatch and a combination lock.</English>
 			<German>Eine Betontür mit einer Luke und einem Zahlenschloss.</German>
-			<Russian>Бетонная стена с железной дверью и смотровым окном, запертой кодовым замком.</Russian>
+			<Russian>Стена из шлакоблоков с железной дверью, смотровым окном и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
 			<English>Cinder Garage Doorway</English>
 			<German>Betongaragentürrahmen</German>
-			<Russian>Бет. стена с гар. проёмом</Russian>
+			<Russian>Стена ш/б с гар. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_DESC">
 			<English>Cinder block wall with metal garage doorway.</English>
 			<German>Ein Garagentürrahmen aus Beton.</German>
-			<Russian>Бетонная стена с гаражным дверным проёмом.</Russian>
+			<Russian>Стена из шлакоблоков с гаражным дверным проёмом.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOOR">
 			<English>Cinder Garage Door</English>
 			<German>Betongaragentür</German>
-			<Russian>Бет. стена с гар. дверью</Russian>
+			<Russian>Стена ш/б с гар. дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOOR_DESC">
 			<English>Cinder garage door constructed out of cinder.</English>
 			<German>Eine Betongaragentür bestehend aus Beton.</German>
-			<Russian>Бетонная стена с железной гаражной дверью.</Russian>
+			<Russian>Стена из шлакоблоков с железной гаражной дверью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORLOCKED">
 			<English>Cinder Garage Door (locked)</English>
 			<German>Betongaragentür (verschlossen)</German>
-			<Russian>Бет. стена с гар. дв. и замком</Russian>
+			<Russian>Стена ш/б с гар. дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_LOCKED_DESC">
 			<English>Cinder block wall with locked metal garage doorway.</English>
 			<German>Eine Betongaragentür mit einem Zahlenschloss.</German>
-			<Russian>Бетонная стена с железной гаражной дверью, запертой кодовым замком.</Russian>
+			<Russian>Стена из шлакоблоков с железной гаражной дверью и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEFRAME">
 			<English>Cinder Garage Frame w/ no top</English>
 			<German>Betongaragentürdurchgang (rahmenlos)</German>
-			<Russian>Бет. стена б/в с гар. проёмом</Russian>
+			<Russian>Стена ш/б б/в с гар. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEFRAME_DESC">
 			<English>Cinder garage frame constructed out of cinder.</English>
 			<German>Ein Betongaragentürdurchgang bestehend aus Beton.</German>
-			<Russian>Бетонная стена с открытым верхом и гаражным дверным проёмом.</Russian>
+			<Russian>Стена из шлакоблоков с открытым верхом и гаражным дверным проёмом.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOOR">
 			<English>Cinder Garage Door w/ no top</English>
 			<German>Betongaragentür (rahmenlos)</German>
-			<Russian>Бет. стена б/в с гар. дверью</Russian>
+			<Russian>Стена ш/б б/в с гар. дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOOR_DESC">
 			<English>Cinder garage door constructed out of cinder.</English>
 			<German>Eine Betongaragentür bestehend aus Beton.</German>
-			<Russian>Бетонная стена с открытым верхом и железной гаражной дверью.</Russian>
+			<Russian>Стена из шлакоблоков с открытым верхом и железной гаражной дверью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED">
 			<English>Cinder Garage Door Locked w/ no top</English>
 			<German>Betongaragentür (verschlossen, rahmenlos)</German>
-			<Russian>Бет. стена б/в с гар. дв. и замком</Russian>
+			<Russian>Стена ш/б б/в с гар. дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED_DESC">
 			<English>Cinder garage door with combination lock.</English>
 			<German>Eine Betongaragentür mit Zahlenschloss.</German>
-			<Russian>Бетонная стена с открытым верхом и железной гаражной дверью, запертой кодовым замком.</Russian>
+			<Russian>Стена из шлакоблоков с открытым верхом, железной гаражной дверью и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATEFRAME">
 			<English>Cinder Gate Frame</English>
 			<German>Betontorrahmen</German>
-			<Russian>Бет. стена с б/проёмом</Russian>
+			<Russian>Стена ш/б с б/проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATEFRAME_DESC">
 			<English>Cinder Gate Frame constructed out of cinder.</English>
 			<German>Ein Betontorrahmen bestehend aus Beton.</German>
-			<Russian>Бетонная стена с проёмом для больших гаражных ворот.</Russian>
+			<Russian>Стена из шлакоблоков с проёмом для больших гаражных ворот.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATE">
 			<English>Cinder Gate</English>
 			<German>Betontor</German>
-			<Russian>Бет. стена с воротами</Russian>
+			<Russian>Стена ш/б с б/воротами</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATE_DESC">
 			<English>Cinder Gate constructed out of cinder.</English>
 			<German>Ein Betontor bestehend aus Beton.</German>
-			<Russian>Бетонная стена с большими гаражными воротами.</Russian>
+			<Russian>Стена из шлакоблоков с большими гаражными воротами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATELOCKED">
 			<English>Cinder Gate Locked</English>
 			<German>Betontor (verschlossen)</German>
-			<Russian>Бет. стена с воротами и замком</Russian>
+			<Russian>Стена ш/б с б/воротами и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATELOCKED_DESC">
 			<English>Cinder Gate with combination lock.</English>
 			<German>Ein Betontor mit Zahlenschloss.</German>
-			<Russian>Бетонная стена с большими гаражными воротами, запертыми кодовым замком.</Russian>
+			<Russian>Стена из шлакоблоков с большими гаражными воротами и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALDRAWBRIDGE">
 			<English>Metal Drawbridge</English>
@@ -29843,7 +29843,7 @@
 		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED_DESC">
 			<English>Metal Drawbridge with combination lock.</English>
 			<German>Eine Stahlzugbrücke mit einem Zahlenschloss.</German>
-			<Russian>Железный подъёмный мост, запертый кодовым замком.</Russian>
+			<Russian>Железный подъёмный мост с кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALPILLAR">
 			<English>Metal Pillar</English>
@@ -29883,22 +29883,22 @@
 		<Key ID="STR_EPOCH_DOOR_LOCKED_DESC">
 			<English>Single door out of metal with a combination lock.</English>
 			<German>Eine einfache Tür aus Metall mit einem Zahlenschloss.</German>
-			<Russian>Железная дверь, запертая кодовым замком.</Russian>
+			<Russian>Железная дверь с кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILING">
 			<English>Floor/Ceiling</English>
 			<German>Holzboden/Decke</German>
-			<Russian>Пол/Потолок</Russian>
+			<Russian>Дер. пол/потолок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILINGHALF">
 			<English>Floor/Ceiling 1/2</English>
 			<German>Holzboden/Decke 1/2</German>
-			<Russian>Пол/Потолок (1/2)</Russian>
+			<Russian>Дер. пол/потолок (1/2)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILINGQUARTER">
 			<English>Floor/Ceiling 1/4</English>
 			<German>Holzboden/Decke 1/4</German>
-			<Russian>Пол/Потолок (1/4)</Russian>
+			<Russian>Дер. пол/потолок (1/4)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILING_DESC">
 			<English>Wooden floor can also be used as a ceiling.</English>
@@ -29908,7 +29908,7 @@
 		<Key ID="STR_EPOCH_FLOORCEILING4x">
 			<English>Floor/Ceiling 4x</English>
 			<German>Holzboden/Decke 4x</German>
-			<Russian>Пол/Потолок 4x</Russian>
+			<Russian>Дер. пол/потолок 4x</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRS">
 			<English>Wooden Stairs</English>
@@ -29943,7 +29943,7 @@
 		<Key ID="STR_EPOCH_WOODFLOORSTAIRS_DESC">
 			<English>Wooden floor with stairs constructed out of plywood and lumber.</English>
 			<German>Ein Holzboden mit Treppe bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Деревянный пол с лестницей из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянный пол с лестницей.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODLADDER">
 			<English>Wooden Ladder</English>
@@ -29958,7 +29958,7 @@
 		<Key ID="STR_EPOCH_WOODRAIL_DESC">
 			<English>Wood Handrail constructed out of lumber.</English>
 			<German>Ein Holzgeländer bestehend aus Bauholz.</German>
-			<Russian>Деревянный поручень из пиломатериалов.</Russian>
+			<Russian>Деревянный поручень.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODPILLAR">
 			<English>Wood Pillar</English>
@@ -29968,27 +29968,27 @@
 		<Key ID="STR_EPOCH_WOODPILLAR_DESC">
 			<English>Wood Pillar constructed out of lumber.</English>
 			<German>Eine Holzsäule bestehend aus Bauholz.</German>
-			<Russian>Деревянная опора из пиломатериалов.</Russian>
+			<Russian>Деревянная опора.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL">
 			<English>Triangle Wall</English>
 			<German>Dreieckige Wand</German>
-			<Russian>Треугольная стена</Russian>
+			<Russian>Дер. треугольная стена</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL_DESC">
 			<English>Triangle wall constructed out of plywood and lumber.</English>
 			<German>Eine dreieckige Holzwand bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Треугольная стена из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная треугольная стена.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODFLOOR">
 			<English>Triangle Floor</English>
 			<German>Dreieckiger Boden</German>
-			<Russian>Треугольный пол</Russian>
+			<Russian>Дер. треугольный пол</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODFLOOR_DESC">
 			<English>Triangle floor constructed out of plywood and lumber.</English>
 			<German>Ein dreieckiger Holzboden bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Треугольный пол из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянный треугольный пол.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALL">
 			<English>Wooden Wall</English>
@@ -29998,7 +29998,7 @@
 		<Key ID="STR_EPOCH_WOODWALL_DESC">
 			<English>Wall constructed out of plywood and lumber.</English>
 			<German>Eine Holzwand bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Стена, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALLTHIRDPART">
 			<English>Wooden Wall 1/3</English>
@@ -30018,7 +30018,7 @@
 		<Key ID="STR_EPOCH_WALLWITHWINDOW_DESC">
 			<English>Wall with window constructed out of plywood and lumber.</English>
 			<German>Eine Holzwand mit Fenster bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Стена с окном, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с окном, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORWAY">
 			<English>Wall w/ Doorway</English>
@@ -30028,7 +30028,7 @@
 		<Key ID="STR_EPOCH_WALLWITHDOORWAY_DESC">
 			<English>Wall with doorway constructed out of plywood and lumber.</English>
 			<German>Eine Holzwand mit einem Türdurchgang bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Стена с дверным проёмом, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с дверным проёмом, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOOR">
 			<English>Wall w/ Door</English>
@@ -30038,17 +30038,17 @@
 		<Key ID="STR_EPOCH_WALLWITHDOORLOCKED">
 			<English>Wall w/ Door Locked</English>
 			<German>Holzwand (Tür verschlossen)</German>
-			<Russian>Дер. стена с дв. с замком</Russian>
+			<Russian>Дер. стена с дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORLOCKED_DESC">
 			<English>Wall with locked door constructed out of plywood and lumber.</English>
 			<German>Eine Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Стена с запираемой дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с дверью и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOOR_DESC">
 			<English>Wall with door constructed out of plywood and lumber.</English>
 			<German>Eine Holzwand mit Tür bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Стена с дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с дверью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOOR">
 			<English>Wooden Garage Door</English>
@@ -30058,7 +30058,7 @@
 		<Key ID="STR_EPOCH_WOODGARAGEDOOR_DESC">
 			<English>Garage door constructed out of plywood and lumber.</English>
 			<German>Eine Holzgaragentür bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Деревянная стена с гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с гаражной дверью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED">
 			<English>Wooden Garage Door Locked</English>
@@ -30068,7 +30068,7 @@
 		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED_DESC">
 			<English>Garage door with combination lock.</English>
 			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
-			<Russian>Деревянная стена с запираемой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с гаражной дверью и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR">
 			<English>Wood Garage Door w/ no top</English>
@@ -30078,7 +30078,7 @@
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR_DESC">
 			<English>Garage door constructed out of plywood and lumber.</English>
 			<German>Eine Holzgaragentür bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Деревянная стена с открытым верхом и гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с открытым верхом и гаражной дверью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED">
 			<English>Wood Garage Door Locked w/ no top</English>
@@ -30088,7 +30088,7 @@
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED_DESC">
 			<English>Garage door with combination lock.</English>
 			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
-			<Russian>Деревянная стена с открытым верхом и гаражной дверью, запертой кодовым замком, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с открытым верхом, гаражной дверью и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATEFRAME">
 			<English>Wooden Gate Frame</English>
@@ -30103,7 +30103,7 @@
 		<Key ID="STR_EPOCH_WOODGATE">
 			<English>Wooden Gate</English>
 			<German>Holztor</German>
-			<Russian>Дер. стена с воротами</Russian>
+			<Russian>Дер. стена с б/воротами</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATE_DESC">
 			<English>Wooden Gate constructed out of plywood and lumber.</English>
@@ -30113,67 +30113,67 @@
 		<Key ID="STR_EPOCH_WOODGATELOCKED">
 			<English>Wooden Gate Locked</English>
 			<German>Holztor (verschlossen)</German>
-			<Russian>Дер. стена с воротами и замком</Russian>
+			<Russian>Дер. стена с б/воротами и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATELOCKED_DESC">
 			<English>Wooden Gate with combination lock.</English>
 			<German>Ein Holztor mit Zahlenschloss.</German>
-			<Russian>Деревянная стена с большими гаражными воротами, запертыми кодовым замком.</Russian>
+			<Russian>Деревянная стена с большими гаражными воротами и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWOODWALL">
 			<English>Large Wooden Wall</English>
 			<German>Große Holzwand</German>
-			<Russian>Большая стена</Russian>
+			<Russian>Большая д/стена</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWOODWALL_DESC">
 			<English>Large wall constructed out of plywood and lumber.</English>
 			<German>Eine große Holzwand aus bestehend Sperr- und Bauholz.</German>
-			<Russian>Большая стена, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Большая деревянная стена, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHWINDOW">
 			<English>Large Wall w/ Window</English>
 			<German>Große Holzwand (Fenster)</German>
-			<Russian>Большая стена с окном</Russian>
+			<Russian>Большая д/стена с окном</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHWINDOW_DESC">
 			<English>Large wall with window constructed out of plywood and lumber.</English>
 			<German>Eine große Holzwand mit Fenster bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Большая стена с окном, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Большая деревянная стена с окном.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORWAY">
 			<English>Large Wall w/ Doorway</English>
 			<German>Große Holzwand (Türrahmen)</German>
-			<Russian>Большая стена с дв. проёмом</Russian>
+			<Russian>Большая д/стена с дв. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORWAY_DESC">
 			<English>Large wall with doorway constructed out of plywood and lumber.</English>
 			<German>Eine große Holzwand mit Türdurchgang bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Большая стена с дверным проёмом, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Большая деревянная стена с дверным проёмом.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOOR">
 			<English>Large Wall w/ Door</English>
 			<German>Große Holzwand (Tür)</German>
-			<Russian>Большая стена с дверью</Russian>
+			<Russian>Большая д/стена с дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOOR_DESC">
 			<English>Wall with door constructed out of plywood and lumber.</English>
 			<German>Eine große Holzwand mit Tür bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Большая стена с дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Большая деревянная стена с дверью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED">
 			<English>Large Wall w/ Door Locked</English>
 			<German>Große Holzwand (Tür verschlossen)</German>
-			<Russian>Большая стена с дв. и замком</Russian>
+			<Russian>Большая д/стена с дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED_DESC">
 			<English>Wall with combination lock door constructed out of plywood and lumber.</English>
 			<German>Eine große Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Большая стена с дверью и кодовым замком, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Большая деревянная стена с дверью и кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_ROUND">
 			<English>Sandbag Fence (Round)</English>
 			<German>Sandsack (rund)</German>
-			<Russian>Ограждение из мешков (круг)</Russian>
+			<Russian>Ограждение из мешков (Круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_NEST">
 			<English>Sandbag Nest</English>
@@ -32506,7 +32506,7 @@
 		</Key>
 		<Key ID="STR_CINDER_WALL_WRECK">
 			<English>Cinder wall ruins</English>
-			<Russian>Руины шлакобетонных стен</Russian>
+			<Russian>Руины стены из шлакоблоков</Russian>
 			<German>Betontrümmer</German>
 		</Key>
 		<Key ID="STR_METAL_FLOOR_WRECK">
@@ -37339,7 +37339,7 @@
 		<Key ID="STR_CL_VG_STORE_VEHICLE_GEAR">
 			<English>Store Vehicle with Gear</English>
 			<German>Fahrzeug mit Ausrüstung parken</German>
-			<Russian>Поставить технику с инвентарем</Russian>
+			<Russian>Поставить с инвентарём</Russian>
 			<French>Ranger le véhicule avec l'inventaire</French>
 			<Spanish>Almacenar Vehiculo con contenido</Spanish>
 		</Key>

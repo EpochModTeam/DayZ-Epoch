@@ -252,10 +252,10 @@ class ItemMutantTeeth: CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	displayName = $STR_EPOCH_ZOMBIEPARTS_TEETH;
+	displayName = $STR_EPOCH_MUTANTPARTS_TEETH;
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_TEETH_DESC;
+	descriptionShort = $STR_EPOCH_MUTANTPARTS_TEETH_DESC;
 };
 
 class ItemMutantSkin: CA_Magazine
