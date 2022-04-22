@@ -2695,7 +2695,7 @@
 		<Key ID="STR_CRAFT_DESC_SEPSISBandage">
 			<English>Blueprint to create a sepsis cure and bandage. Required - 3 rags, 2 gauze, 1 string, 2 comfrey leaves.</English>
 			<Spanish>Plano para crear un vendaje que combate la septicemia. Requerido: - 3 trapos, 2 gasas, 1 cuerda, 2 hojas de consuelda.</Spanish>
-			<Russian>Инструкция по созданию антисептических бинтов.&lt;br/&gt;Нужно: три тряпки, пара марль, нитки и пара листков окопника.</Russian>
+			<Russian>Инструкция по созданию антисептических бинтов.&lt;br/&gt;Нужно: три тряпки, пара марль, нитки и пара листьев окопника.</Russian>
 			<Czech>Návod pro vyrobení antiseptického obvazu. Potřeba: 3x hadr, 2x gáza, 1x provázek, 2x listy kostivalu.</Czech>
 			<French>Plan de fabrication d&apos;un pansement antiseptique. Requis: 3 tissus, 2 gazes, 1 ficelle, 2 consoudes.</French>
 			<German>Blaupause für eine antiseptische Bandage. Gebraucht werden: 3x Lumpen, 2x Mullbinden, 1x Schnur, 2x Beinwellblätter.</German>
@@ -27321,17 +27321,17 @@
 		<Key ID="STR_CRAFT_DESC_PUMPKIN_SEED">
 			<English>A few pumpkin seeds.</English>
 			<German>Ein paar Kürbissamen.</German>
-			<Russian>Семена тыквы, пригодные для посева.</Russian>
+			<Russian>Несколько семян тыквы.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PUMPKIN_PLANT">
 			<English>Pumpkin Plant</English>
 			<German>Kürbispflanze</German>
-			<Russian>Тыквенная грядка</Russian>
+			<Russian>Тыквенное растение</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PUMPKIN_PLANT">
 			<English>A fully grown pumpkin plant.</English>
 			<German>Eine ausgewachsene Kürbispflanze</German>
-			<Russian>Полностью возделанная тыквенная грядка.</Russian>
+			<Russian>Полностью созревшее тыквенное растение.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_HEMP_SEED">
 			<English>Bag of Hemp Seeds</English>
@@ -27411,7 +27411,7 @@
 		<Key ID="STR_CRAFT_PUMPKIN_PLANT">
 			<English>Craft Pumpkin Plant</English>
 			<German>Kürbispflanze herstellen</German>
-			<Russian>Создать: Тыквенная грядка</Russian>
+			<Russian>Создать: Тыквенное растение</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_SUNFLOWER">
 			<English>Bag of Sunflower Seeds</English>
@@ -30183,7 +30183,7 @@
 		<Key ID="STR_EQUIP_DESC_21_NEST">
 			<English>A buildable fortification object, can be removed.</English>
 			<German>Eine Sandsackbefestigung, die wieder abgebaut werden kann. </German>
-			<Russian>Фортификационный объект из мешков с песком который потом можно убрать.</Russian>
+			<Russian>Оборонительное сооружение из мешков с песком который потом можно убрать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_HBARRIER">
 			<English>Sandbag Cube (H-barrier)</English>
@@ -32115,7 +32115,7 @@
 			<English>Garbage Man</English>
 			<German>Müllmann</German>
 			<Russian>мусорщик</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzerung</German>
@@ -33721,7 +33721,7 @@
 		<Key ID="STR_EPOCH_TUT_DISABLED">
 			<English>Disabled</English>
 			<German>Deaktiviert</German>
-			<Russian>Деактивировано</Russian>
+			<Russian>Отключено</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_SNAPPING">
 			<English>Snapping</English>
@@ -33739,17 +33739,17 @@
 		<Key ID="STR_EPOCH_TUT_PITCH">
 			<English>Pitch</English>
 			<German>Vorneigen </German>
-			<Russian>Подъём</Russian>
+			<Russian>Наклон</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_BANK">
 			<English>Bank</English>
 			<German>Zurückneigen</German>
-			<Russian>Вращение</Russian>
+			<Russian>Крен</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_ROTATE">
 			<English>Rotate</English>
 			<German>Rotieren</German>
-			<Russian>Наклон</Russian>
+			<Russian>Вращение</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_DEGREES">
 			<English>Degrees</English>
@@ -33817,7 +33817,7 @@
 		<Key ID="STR_EPOCH_TUT_SNAP_NEXT_PREV">
 			<English>Next Snap / Prev Snap</English>
 			<German>Snap Nächstes / Vorheriges Objekt</German>
-			<Russian>Привязать След./Пред. объект</Russian>
+			<Russian>Точка привязки: Следующая/Предыдущая</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_HEIGHT1">
 			<English>Adjust height by 1cm</English>
@@ -33857,7 +33857,7 @@
 		<Key ID="STR_EPOCH_TUT_TERRAIN">
 			<English>Terrain Align</English>
 			<German>Bodenausrichtung</German>
-			<Russian>Выровнить по поверхности</Russian>
+			<Russian>Выровнять по поверхности</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_BOUNDARY">
 			<English>Plot Boundary</English>
@@ -33872,7 +33872,7 @@
 		<Key ID="STR_EPOCH_TUT_HIDE_PANEL">
 			<English>Hide Panel</English>
 			<German>Snap-Info ausschalten</German>
-			<Russian>Скрыть панель</Russian>
+			<Russian>Скрыть подсказки</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_CANCEL">
 			<English>Cancel</English>
@@ -33895,6 +33895,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_UI_SNAP">
 			<English>Snap</English>
+			<Russian>Привязка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_ON">
 			<English>ON</English>
@@ -34034,12 +34035,12 @@
 		<Key ID="STR_EPOCH_VECTORS_PITCH_FORWARD">
 			<English>Pitch Forward</English>
 			<German>Nach vorne neigen</German>
-			<Russian>Повернуть вперёд</Russian>
+			<Russian>Наклонить вперёд</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VECTORS_PITCH_BACK">
 			<English>Pitch Back</English>
 			<German>Nach hinten neigen</German>
-			<Russian>Повернуть назад</Russian>
+			<Russian>Наклонить назад</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VECTORS_BANK_LEFT">
 			<English>Bank Left</English>
@@ -34069,7 +34070,7 @@
 		<Key ID="STR_EPOCH_VECTORS_DEGREES">
 			<English>DEGREES:</English>
 			<German>Grad:</German>
-			<Russian>УГЛЫ:</Russian>
+			<Russian>Углы:</Russian>
 		</Key>
 		<Key ID="STR_UI_STATUS_VANILLA">
 			<English>Vanilla</English>
@@ -35583,12 +35584,12 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN">
 			<English>Pumpkin patch</English>
 			<German>Kürbisbeet</German>
-			<Russian>Тыквенный участок</Russian>
+			<Russian>Тыквенная грядка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN_DESC">
 			<English>Pumpkin patch</English>
 			<German>Kürbisbeet</German>
-			<Russian>Тыквенный участок.</Russian>
+			<Russian>Тыквенная грядка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER">
 			<English>Sunflower patch</English>
@@ -36290,7 +36291,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_DECONSTRUCT">
 			<English>Deconstruct %1</English>
-			<Russian>Деконструировать %1</Russian>
+			<Russian>Снести %1</Russian>
 			<Spanish>Deconstruir %1</Spanish>
 			<Czech>Dekonstruovat %1</Czech>
 			<French>Déconstruire %1</French>
@@ -36946,22 +36947,27 @@
 		<Key ID="STR_ACTIONS_THAW_FROZEN">
 			<English>Thaw Frozen Food/Drink</English>
 			<German>Nahrungsmittel auftauen</German>
+			<Russian>Разморозить</Russian>
 		</Key>
 		<Key ID="STR_SUCCESS_THAWED_FOOD1">
 			<English>You have thawed %1 can of frozen food.</English>
 			<German>Du hast eine Dose aufgetaut.</German>
+			<Russian>Разморожено еды: %1 шт.</Russian>
 		</Key>
 		<Key ID="STR_SUCCESS_THAWED_FOOD2">
 			<English>You have thawed %1 cans of frozen food.</English>
 			<German>Du hast %1 Dosen aufgetaut.</German>
+			<Russian>Разморожено еды: %1 шт.</Russian>
 		</Key>
 		<Key ID="STR_SUCCESS_THAWED_DRINK1">
 			<English>You have thawed %1 frozen drink.</English>
 			<German>Du hast ein Getränk aufgetaut.</German>
+			<Russian>Разморожено напитков: %1 шт.</Russian>
 		</Key>
 		<Key ID="STR_SUCCESS_THAWED_DRINK2">
 			<English>You have thawed %1 frozen drinks.</English>
 			<German>Du hast %1 Getränke aufgetaut.</German>
+			<Russian>Разморожено напитков: %1 шт.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CANCELED">
 			<English>Action canceled.</English>
@@ -36973,39 +36979,48 @@
 		<Key ID="STR_APSI_STATE">
 			<English>APSI On/Off</English>
 			<German>APSI An/Aus</German>
+			<Russian>Пси-шлем Вкл./Выкл.</Russian>
 		</Key>
 		<Key ID="STR_EVR_ACTIVITY">
 			<English>APSI: Stronger activity of flux field has been detected..</English>
 			<German>APSI: Starke Magnetfeld Aktivität entdeckt..</German>
+			<Russian>Пси-шлем: Обнаружено усиление электромагнитного поля.</Russian>
 		</Key>
 		<Key ID="STR_EVR_DETECT">
 			<English>APSI: EVR sequence detected..</English>
 			<German>APSI: EVR-Sequenz gefunden..</German>
+			<Russian>Пси-шлем: Обнаружено начало выброса.</Russian>
 		</Key>
 		<Key ID="STR_EVR_PROTECT">
 			<English>APSI: EM and PSI protection enabled..</English>
 			<German>APSI: EM und PSI-Schutz aktiviert..</German>
+			<Russian>Пси-шлем: Защита активирована.</Russian>
 		</Key>
 		<Key ID="STR_EVR_ENABLED">
 			<English>APSI: Enabled..</English>
 			<German>APSI: Aktiviert..</German>
+			<Russian>Пси-шлем: Активирован.</Russian>
 		</Key>
 		<Key ID="STR_EVR_DISABLED">
 			<English>APSI: Disabled...</English>
 			<German>APSI: Deaktiviert...</German>
+			<Russian>Пси-шлем: Деактивирован.</Russian>
 		</Key>
 		<Key ID="STR_EVR_START">
 			<English>APSI: EVR sequence start..</English>
 			<German>APSI: EVR-Sequenz gestartet..</German>
+			<Russian>Пси-шлем: Выброс!</Russian>
 		</Key>
 		<Key ID="STR_EVR_END">
 			<English>APSI: EVR sequence end..</English>
 			<German>APSI: EVR-Sequenz beendet..</German>
+			<Russian>Пси-шлем: Выброс закончен!</Russian>
 		</Key>
 		<Key ID="STR_EVR_DAMAGED_ITEMS">
 			<English>%1 damaged by the EMP</English>
 			<German>%1 wurde vom EMP beschädigt</German>
-		</Key>		
+			<Russian>Повреждено выбросом: %1</Russian>
+		</Key>
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
