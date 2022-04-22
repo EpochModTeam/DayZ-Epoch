@@ -36974,6 +36974,11 @@
 			<German>Aktion abgebrochen.</German>
 			<Russian>Действие отменено.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_ACTION_COPY_KEY">
+			<English>Make Copy</English>
+			<German>Kopie anfertigen</German>
+			<Russian>Сделать копию</Russian>
+		</Key>		
 
 		<!--Nightstalker EVR storms-->
 		<Key ID="STR_APSI_STATE">

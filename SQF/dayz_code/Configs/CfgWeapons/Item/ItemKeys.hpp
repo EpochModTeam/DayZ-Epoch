@@ -11,7 +11,7 @@ class ItemKey: ItemCore {
 	{
 		class Toolbelt
 		{
-			text="Make Copy";
+			text=$STR_EPOCH_ACTION_COPY_KEY;
 			script="spawn player_copyKey;";
 		};
 	};
