@@ -663,13 +663,3 @@ if (!isDedicated) then {
 		};
 	};
 };
-
-/*
-	Developers:
-
-	This file's purpose is to slim down init.sqf to only the map specific and most frequently changed variables.
-	It cuts down on the amount of if(isNil)then{}; statements in variables.sqf and makes the mission smaller.
-
-	Variables that are map specific or frequently changed should be included in init.sqf by default
-	with a corresponding if(isNil)then{}; in variables.sqf.
-*/
