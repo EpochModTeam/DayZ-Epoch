@@ -94,6 +94,12 @@ DZE_WeatherVariables = [
 DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby.
 DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every door's management menu and open it.
 
+DZE_disableThermal = []; // Array of vehicle classnames to disable thermal on when being spawned. i.e: ["AH1Z","MTVR"];
+DZE_clearStaticAmmo = true; // Clears the ammo of all built and spawned static guns	
+DZE_clearVehicleAmmo = true; // Clears the ammo of vehicles spawned, bought, claimed and upgraded during the same restart	
+DZE_clearVehicleFlares = false; // Clears the flares of vehicles during the same restart, DZE_clearVehicleAmmo must be true in order to work
+DZE_addVehicleAmmo = false; // Adds ammo to all spawned, bought, claimed and upgraded vehicles during the same restart
+
 // Uncomment the lines below to change the default loadout
 //DefaultMagazines = ["HandRoadFlare","ItemBandage","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
 //DefaultWeapons = ["Makarov_DZ","ItemFlashlight"];
@@ -120,10 +126,6 @@ if (isServer) then {
 	MaxVehicleLimit = 50; // Max number of random vehicles to spawn around the map
 	dayz_enableGhosting = false;
 	dayz_ghostTimer = 120;
-	DZE_disableThermal = []; // Array of vehicle classnames to disable thermal on when being spawned. i.e: ["AH1Z","MTVR"];	
-	DZE_clearVehicleAmmo = true; // Clears the ammo of vehicles spawned, bought, claimed and upgraded during the same restart	
-	DZE_clearVehicleFlares = false; // Clears the flares of vehicles during the same restart, DZE_clearVehicleAmmo must be true in order to work
-	DZE_addVehicleAmmo = false; // Adds ammo to all spawned, bought, claimed and upgraded vehicles during the same restart
 
 	// ZSC
 	Z_globalBankingTraders = false; // Enable banking NPCs at trader cities.
@@ -233,7 +235,7 @@ if (!isDedicated) then {
 	DZE_AxialHelper	 = true; // when building within a plot radius, display a perpendicular line of helpers from the highest point to lowest point of the plot boundary.
 	DZE_plotGreenTransparency = 0.4; // green plot pole helper transparency. min = 0.1, max = 1
 	DZE_plotRedTransparency = 0.7; // red plot pole helper transparency. min = 0.1, max = 1
-	DZE_restrictRemoval = ["Fence_corrugated_DZ","M240Nest_DZ","ParkBench_DZ","FireBarrel_DZ","Scaffolding_DZ","CanvasHut_DZ","LightPole_DZ","DeerStand_DZ","MetalGate_DZ","StickFence_DZ","Garage_Green_DZ","Garage_White_DZ","Garage_Brown_DZ","Garage_Grey_DZ","CCTV_DZ","Notebook_DZ","Water_Pump_DZ","Greenhouse_DZ","Bed_DZ","Table_DZ","Office_Chair_DZ"]; //Items that can be removed with a crowbar only with proper ownership or access. It is not necessary to add doors, storage or items that inherit from 'ModularItems' to this list. Items that inherit from 'BuiltItems' can be added to this list if desired.
+	DZE_restrictRemoval = ["FuelPump_DZ","FireBarrel_DZ","CanvasHut_DZ","ParkBench_DZ","DeerStand_DZ","MetalGate_DZ","Fence_corrugated_DZ","StickFence_DZ","LightPole_DZ","Scaffolding_DZ","Hedgehog_DZ","MetalPanel_DZ","Fort_RazorWire","FortifiedWire_DZ","BarbedGate_DZ","WoodGate_DZ","Notebook_DZ","Water_Pump_DZ","Greenhouse_DZ","Bed_DZ","Table_DZ","Office_Chair_DZ","Garage_Green_DZ","Garage_White_DZ","Garage_Brown_DZ","Garage_Grey_DZ","CCTV_DZ","Boggle_DZE","Satellite_Dish_DZE","Fueltank_DZE","Watertank_DZE","Watertower_DZE","Compost_Barrel_Empty_DZE","Compost_Barrel_Full_DZE","Plant_Patch_Pumpkin_DZE","Plant_Patch_Sunflower_DZE","Plant_Patch_Carrot_DZE","Plant_Patch_Potato_DZE","Plant_Patch_Hemp_DZE","Plant_Patch_Tobacco_DZE","Plant_Patch_Tea_DZE","Plant_Patch_Garlic_DZE","Plant_Patch_Comfrey_DZE","Sandbag1_DZ","BagFenceRound_DZ"]; //Items that can be removed with a crowbar only with proper ownership or access. It is not necessary to add doors, storage or items that inherit from 'ModularItems' to this list. Items that inherit from 'BuiltItems' can be added to this list if desired.
 	DZE_DisableUpgrade = []; //Array of buildables that are not allowed to be upgraded. For example: DZE_DisableUpgrade = ["WoodShack_DZ","StorageShed_DZ"];
 	
 	// Snap Build and Build Vectors
