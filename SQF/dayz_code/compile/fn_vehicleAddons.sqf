@@ -11,12 +11,12 @@ if (_type in DZE_disableThermal) then {
 };
 
 if (_clearAmmo && {!(_type in _skipAmmoClear)}) then {
-	_vehicle call server_clearTurrets;
+	_vehicle call fn_clearTurrets;
 };
 
 if (_addAmmo && {!(_type in _skipAmmoFill)}) then {
 	local _countMags = 2;	//	Number of how many magazines will be added to the vehicle
-	[_vehicle,_countMags] call server_fillTurrets;
+	[_vehicle,_countMags] call fn_fillTurrets;
 };
 
 

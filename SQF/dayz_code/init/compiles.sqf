@@ -799,6 +799,10 @@ object_getHit = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\o
 object_setHit = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_setHit.sqf";			//process the hit as a NORMAL damage (useful for persistent vehicles)
 object_processHit = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_processHit.sqf";		//process the hit in the REVO damage system (records and sets hit)
 
+fn_vehicleAddons = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_vehicleAddons.sqf";
+fn_clearTurrets = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_clearTurrets.sqf";
+fn_fillTurrets = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_fillTurrets.sqf";
+
 // Vehicle damage fix
 fnc_veh_handleDam = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleDam.sqf";
 fnc_veh_handleKilled = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleKilled.sqf";

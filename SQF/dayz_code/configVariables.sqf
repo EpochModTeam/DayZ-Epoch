@@ -94,6 +94,12 @@ DZE_WeatherVariables = [
 DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby.
 DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every door's management menu and open it.
 
+DZE_disableThermal = []; // Array of vehicle classnames to disable thermal on when being spawned. i.e: ["AH1Z","MTVR"];
+DZE_clearStaticAmmo = true; // Clears the ammo of all built and spawned static guns	
+DZE_clearVehicleAmmo = true; // Clears the ammo of vehicles spawned, bought, claimed and upgraded during the same restart	
+DZE_clearVehicleFlares = false; // Clears the flares of vehicles during the same restart, DZE_clearVehicleAmmo must be true in order to work
+DZE_addVehicleAmmo = false; // Adds ammo to all spawned, bought, claimed and upgraded vehicles during the same restart
+
 // Uncomment the lines below to change the default loadout
 //DefaultMagazines = ["HandRoadFlare","ItemBandage","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
 //DefaultWeapons = ["Makarov_DZ","ItemFlashlight"];
@@ -120,10 +126,6 @@ if (isServer) then {
 	MaxVehicleLimit = 50; // Max number of random vehicles to spawn around the map
 	dayz_enableGhosting = false;
 	dayz_ghostTimer = 120;
-	DZE_disableThermal = []; // Array of vehicle classnames to disable thermal on when being spawned. i.e: ["AH1Z","MTVR"];	
-	DZE_clearVehicleAmmo = true; // Clears the ammo of vehicles spawned, bought, claimed and upgraded during the same restart	
-	DZE_clearVehicleFlares = false; // Clears the flares of vehicles during the same restart, DZE_clearVehicleAmmo must be true in order to work
-	DZE_addVehicleAmmo = false; // Adds ammo to all spawned, bought, claimed and upgraded vehicles during the same restart
 
 	// ZSC
 	Z_globalBankingTraders = false; // Enable banking NPCs at trader cities.

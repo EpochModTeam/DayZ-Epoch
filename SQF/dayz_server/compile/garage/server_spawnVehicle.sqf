@@ -90,7 +90,7 @@ if (_outcome != "PASS") then {
 	
 	[_object,"all",true] call server_updateObject;
 	
-	[_object,vg_clearAmmo,false] call server_vehicleAddons;
+	[_object,vg_clearAmmo,false] call fn_vehicleAddons;
 
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 

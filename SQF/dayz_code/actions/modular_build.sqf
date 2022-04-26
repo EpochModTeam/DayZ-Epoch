@@ -1578,6 +1578,10 @@ if (_canBuild) then {
 						};
 						publicVariableServer "PVDZ_obj_Publish";
 					};
+					
+					if (_builtObject isKindOf "StaticWeapon" || {_classname in DZE_StaticWeapons}) then {
+						[_builtObject,DZE_clearStaticAmmo,false] call fn_vehicleAddons;
+					};
 				};
 				if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
 					_builtObject addEventHandler ["HandleDamage", {0}];

@@ -94,7 +94,7 @@ if (_outcome != "PASS") then {
 		};
 	};
 	
-	[_object,DZE_clearVehicleAmmo,DZE_addVehicleAmmo] call server_vehicleAddons;
+	[_object,DZE_clearVehicleAmmo,DZE_addVehicleAmmo] call fn_vehicleAddons;
 
 	_object call fnc_veh_ResetEH;
 

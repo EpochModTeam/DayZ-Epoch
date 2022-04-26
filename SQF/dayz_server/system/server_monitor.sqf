@@ -102,7 +102,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	_damage = _x select 8;
 	_storageMoney = _x select 9;
 
-	if ((_type isKindOf "AllVehicles") && !(_type isKindOf "StaticWeapon")) then {
+	if ((_type isKindOf "AllVehicles") && {!(_type isKindOf "StaticWeapon") && {!(_type in DZE_StaticWeapons)}}) then {
 		_VehicleQueue set [_vQty,_x];
 		_vQty = _vQty + 1;
 	} else {
@@ -263,6 +263,11 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 				};
 			};
 		};
+		
+		if (_type isKindOf "StaticWeapon" || {_type in DZE_StaticWeapons}) then {
+			[_object,DZE_clearStaticAmmo,false] call fn_vehicleAddons;
+		};
+		
 		_setGlobal = [false,true] select ((_type in DZE_LockedStorage) || (_type in DZE_DoorsLocked));
 		_object setVariable ["CharacterID", _ownerID, _setGlobal];
 		if (_isSafeObject && !_isTrapItem) then {
@@ -373,7 +378,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	
 	[_object,"all",true] call server_updateObject;
 	
-	[_object,DZE_clearVehicleAmmo,DZE_addVehicleAmmo] call server_vehicleAddons;
+	[_object,DZE_clearVehicleAmmo,DZE_addVehicleAmmo] call fn_vehicleAddons;
 	
 	_object call fnc_veh_ResetEH;
 	if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};

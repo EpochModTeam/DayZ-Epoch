@@ -24,9 +24,6 @@ server_onPlayerDisconnect = compile preprocessFileLineNumbers "\z\addons\dayz_se
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\updateObject_functions.sqf";
 server_updateObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateObject.sqf";
 server_setHitpoints = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_setHitpoints.sqf";
-server_vehicleAddons = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_vehicleAddons.sqf";
-server_clearTurrets = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_clearTurrets.sqf";
-server_fillTurrets = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_fillTurrets.sqf";
 server_playerDied = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDied.sqf";
 server_publishObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishObject.sqf";	//Creates the object in DB
 server_deleteObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_deleteObj.sqf"; 	//Removes the object from the DB
