@@ -251,18 +251,6 @@ class Water_Pump_Preview_DZ : DZE_Ghost_Previews {
 	displayName = "Water Pump Preview";
 };
 
-class MetalFence_ghost_DZ: DZE_Ghost_Previews {
-	scope = 2;
-	model = "z\addons\dayz_buildings\models\metal_fence_ghost.p3d";
-	displayName = $STR_BLD_name_MetalFence_ghost;
-}; 
-
-class WoodenFence_ghost_DZ: DZE_Ghost_Previews {
-	scope = 2;
-	model = "z\addons\dayz_buildings\models\fence_wood_ghost.p3d";
-	displayName = $STR_BLD_name_WoodenFence_ghost;
-}; 
-
 class MetalFence_7_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence7.p3d";

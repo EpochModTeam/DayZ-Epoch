@@ -3,7 +3,6 @@ class WoodenFence_1_foundation_DZ: ModularItems
 	scope = 2;
 	model = "z\addons\dayz_buildings\models\fence1_ground.p3d";
 	displayName = $STR_BLD_name_WoodenFence_1_foundation;
-	GhostPreview = "WoodenFence_ghost_DZ";
 	armor = 1000;
 	offset[] = {0,4,0};	
 	upgradeBuilding[] = {"WoodenFence_1_frame_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",4},{"equip_nails",1}}};
@@ -13,7 +12,6 @@ class WoodenFence_1_frame_DZ: ModularItems
 	scope = 2;
 	model = "z\addons\dayz_buildings\models\fence1_frame.p3d";
 	displayName = $STR_BLD_name_WoodenFence_1_frame;
-	GhostPreview = "WoodenFence_ghost_DZ";
 	armor = 1200;
 	offset[] = {0,4,0};	
 	upgradeBuilding[] = {"WoodenFence_quaterpanel_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",4},{"equip_nails",1}}};	

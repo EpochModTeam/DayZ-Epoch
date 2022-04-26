@@ -1,11 +1,3 @@
-class WoodenGate_ghost_DZ: NonStrategic
-{	
-	scope = 2;
-	displayName = $STR_BLD_name_WoodenGate_1_ghost;
-	model = "z\addons\dayz_buildings\models\gates\gate_wood_ghost.p3d";
-	armor = 1000;
-};
-
 class WoodenGate_foundation_DZ: DZE_Housebase
 {	
 	scope = 2;
@@ -13,8 +5,7 @@ class WoodenGate_foundation_DZ: DZE_Housebase
 	model = "z\addons\dayz_buildings\models\gates\gate0_dzam.p3d";	
 	armor = 1000;
 	icon = "\ca\data\data\Unknown_object.paa";	
-	mapSize = 8;	
-	GhostPreview = "WoodenGate_ghost_DZ";	
+	mapSize = 8;
 	offset[] = {0,4,0};
 	upgradeBuilding[] = {"WoodenGate_1_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
 };

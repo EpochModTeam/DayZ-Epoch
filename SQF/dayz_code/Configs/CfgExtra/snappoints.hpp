@@ -830,8 +830,7 @@ class SnapBuilding {
 	class WoodenFence_5_DZ: WoodenFence_4_DZ {};	
 	class WoodenFence_6_DZ: WoodenFence_4_DZ {};
 	class WoodenFence_7_DZ: WoodenFence_4_DZ {};
-	class WoodenFence_7_Preview_DZ: WoodenFence_4_DZ {};
-	class WoodenFence_ghost_DZ: WoodenFence_4_DZ {};	
+	class WoodenFence_7_Preview_DZ: WoodenFence_4_DZ {};	
 
 	class WoodenFence_2_DZ {	
 		points[] = {
@@ -846,16 +845,7 @@ class SnapBuilding {
 	class WoodenGate_foundation_DZ: WoodenFence_2_DZ {};	
 	class WoodenGate_1_DZ: WoodenFence_2_DZ {};
 	class WoodenGate_2_DZ: WoodenFence_2_DZ {};	
-	class WoodenGate_3_DZ: WoodenFence_2_DZ {};	
-	
-	class WoodenGate_ghost_DZ {	
-		points[] = {
-			{      0, 0,     0, $STR_EPOCH_ACTION_SNAP_PIVOT},
-			{ -2.535, 0, -0.95, $STR_EPOCH_ACTION_SNAP_LEFT},
-			{  2.535, 0, -0.95, $STR_EPOCH_ACTION_SNAP_RIGHT},
-			{      0, 0,   2.6, $STR_EPOCH_ACTION_SNAP_TOP}
-		};
-	};	
+	class WoodenGate_3_DZ: WoodenFence_2_DZ {};		
 
 	class MetalFence_1_foundation_DZ {	
 		points[] = {
@@ -893,7 +883,6 @@ class SnapBuilding {
 	class MetalFence_6_DZ: MetalFence_4_DZ {};
 	class MetalFence_7_DZ: MetalFence_4_DZ {};
 	class MetalFence_7_Preview_DZ: MetalFence_4_DZ {};		
-	class MetalFence_ghost_DZ: MetalFence_4_DZ {};
 
 	///////////////////////////////////////////////////////////////////////////////////////////
 	//

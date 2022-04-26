@@ -3,7 +3,6 @@ class MetalFence_1_foundation_DZ: ModularItems
 	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence1_foundation.p3d";
 	displayName = $STR_BLD_name_MetalFence_1_foundation;
-	GhostPreview = "MetalFence_ghost_DZ";
 	offset[] = {0,4,0};	
 	upgradeBuilding[] = {"MetalFence_1_frame_DZ",{"ItemToolbox","ItemSledge"},{{"ItemPlank",4},{"ItemRSJ",1}}};
 	armor = 1000;
@@ -14,7 +13,6 @@ class MetalFence_1_frame_DZ: ModularItems
 	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence1_stage1.p3d";
 	displayName = $STR_BLD_name_MetalFence_1_frame;
-	GhostPreview = "MetalFence_ghost_DZ";
 	offset[] = {0,4,0};	
 	upgradeBuilding[] = {"MetalFence_halfpanel_DZ",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",3},{"ItemScrews",1}}};
 	armor = 1500;
@@ -53,7 +51,7 @@ class MetalFence_2_DZ: ModularItems
 {
 	scope = 2;
 	model = "z\addons\dayz_buildings\models\metal_fence2.p3d";
-	displayName = $STR_BLD_name_MetalFence_2;		
+	displayName = $STR_BLD_name_MetalFence_2;	
 	offset[] = {0,4,0};	
 	upgradeBuilding[] = {"MetalFence_3_DZ",{"ItemToolbox","ItemSledge"},{{"ItemMetalSheet",4},{"ItemScrews",1},{"ItemRSJ",2}}};
 	armor = 3500;
