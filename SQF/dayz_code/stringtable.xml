@@ -4224,7 +4224,7 @@
 		<Key ID="STR_MAG_NAME_CHEMLIGHT_GREEN">
 			<English>Chemlight (Green)</English>
 			<German>Knicklicht (Grün)</German>
-			<Russian>Химсвет (Зеленый)</Russian>
+			<Russian>Химсвет (Зелёный)</Russian>
 			<Spanish>Chemlight (Verde)</Spanish>
 			<French>Bâton lumineux (vert)</French>
 			<Czech>Chemické světlo (zelené)</Czech>
@@ -5624,7 +5624,7 @@
 		<Key ID="STR_FOOD_NAME_CAN_DEMON">
 			<English>Can (Beans)</English>
 			<German>Dose (Bohnen)</German>
-			<Russian>Банка (Зеленый горошек)</Russian>
+			<Russian>Банка (Зелёный горошек)</Russian>
 			<Spanish>Lata (Porotos)</Spanish>
 			<French>Conserve (Haricots)</French>
 			<Czech>Plechovka (Fazole)</Czech>
@@ -5632,7 +5632,7 @@
 		<Key ID="STR_FOOD_DESC_CAN_DEMON">
 			<English>A clean, unopened can of Demon Groves green beans.</English>
 			<German>Eine saubere, ungeöffnete Dose grüne Bohnen "Dämonenhain".</German>
-			<Russian>Чистая, закрытая банка зеленого горошка "Demon Groves".</Russian>
+			<Russian>Чистая, закрытая банка зелёного горошка "Demon Groves".</Russian>
 			<Spanish>Una limpia y cerrada lata de porotos verdes "Demon Groves".</Spanish>
 			<French>Une boîte intacte d&apos;haricots verts "Demon Groves".</French>
 			<Czech>Čistá a ještě neotevřená plechovka zelených fazolí značky Deamon Groves.</Czech>
@@ -8583,52 +8583,52 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE">
 			<English>HMMWV Ambulance (Woodland)</English>
-			<Russian>Хамви Скорая (Лес)</Russian>
+			<Russian>Хамви Санитарный (Лес)</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE+">
 			<English>HMMWV Ambulance (Woodland)+</English>
-			<Russian>Хамви Скорая (Лес)+</Russian>
+			<Russian>Хамви Санитарный (Лес)+</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE++">
 			<English>HMMWV Ambulance (Woodland)++</English>
-			<Russian>Хамви Скорая (Лес)++</Russian>
+			<Russian>Хамви Санитарный (Лес)++</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE+++">
 			<English>HMMWV Ambulance (Woodland)+++</English>
-			<Russian>Хамви Скорая (Лес)+++</Russian>
+			<Russian>Хамви Санитарный (Лес)+++</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE++++">
 			<English>HMMWV Ambulance (Woodland)++++</English>
-			<Russian>Хамви Скорая (Лес)++++</Russian>
+			<Russian>Хамви Санитарный (Лес)++++</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES">
 			<English>HMMWV Ambulance (Desert)</English>
-			<Russian>Хамви Скорая (Пустыня)</Russian>
+			<Russian>Хамви Санитарный (Пустыня)</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES+">
 			<English>HMMWV Ambulance (Desert)+</English>
-			<Russian>Хамви Скорая (Пустыня)+</Russian>
+			<Russian>Хамви Санитарный (Пустыня)+</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES++">
 			<English>HMMWV Ambulance (Desert)++</English>
-			<Russian>Хамви Скорая (Пустыня)++</Russian>
+			<Russian>Хамви Санитарный (Пустыня)++</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES+++">
 			<English>HMMWV Ambulance (Desert)+++</English>
-			<Russian>Хамви Скорая (Пустыня)+++</Russian>
+			<Russian>Хамви Санитарный (Пустыня)+++</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES++++">
 			<English>HMMWV Ambulance (Desert)++++</English>
-			<Russian>Хамви Скорая (Пустыня)++++</Russian>
+			<Russian>Хамви Санитарный (Пустыня)++++</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_CROWS_MK19">
@@ -9229,52 +9229,52 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_WHITE">
 			<English>Lada (white)</English>
-			<Russian>Лада (белая)</Russian>
+			<Russian>Лада (Белая)</Russian>
 			<German>Lada (weiß)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_WHITE+">
 			<English>Lada (white)+</English>
-			<Russian>Лада (белая)+</Russian>
+			<Russian>Лада (Белая)+</Russian>
 			<German>Lada (weiß)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_WHITE++">
 			<English>Lada (white)++</English>
-			<Russian>Лада (белая)++</Russian>
+			<Russian>Лада (Белая)++</Russian>
 			<German>Lada (weiß)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_WHITE+++">
 			<English>Lada (white)+++</English>
-			<Russian>Лада (белая)+++</Russian>
+			<Russian>Лада (Белая)+++</Russian>
 			<German>Lada (weiß)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_WHITE++++">
 			<English>Lada (white)++++</English>
-			<Russian>Лада (белая)++++</Russian>
+			<Russian>Лада (Белая)++++</Russian>
 			<German>Lada (weiß)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_RED">
 			<English>Lada (red)</English>
-			<Russian>Лада (красная)</Russian>
+			<Russian>Лада (Красная)</Russian>
 			<German>Lada (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_RED+">
 			<English>Lada (red)+</English>
-			<Russian>Лада (красная)+</Russian>
+			<Russian>Лада (Красная)+</Russian>
 			<German>Lada (rot)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_RED++">
 			<English>Lada (red)++</English>
-			<Russian>Лада (красная)++</Russian>
+			<Russian>Лада (Красная)++</Russian>
 			<German>Lada (rot)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_RED+++">
 			<English>Lada (red)+++</English>
-			<Russian>Лада (красная)+++</Russian>
+			<Russian>Лада (Красная)+++</Russian>
 			<German>Lada (rot)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_RED++++">
 			<English>Lada (red)++++</English>
-			<Russian>Лада (красная)++++</Russian>
+			<Russian>Лада (Красная)++++</Russian>
 			<German>Lada (rot)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_POLICE">
@@ -9304,27 +9304,27 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_GREEN">
 			<English>Lada (green)</English>
-			<Russian>Лада (зелёная)</Russian>
+			<Russian>Лада (Зелёная)</Russian>
 			<German>Lada (grün)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_GREEN+">
 			<English>Lada (green)+</English>
-			<Russian>Лада (зелёная)+</Russian>
+			<Russian>Лада (Зелёная)+</Russian>
 			<German>Lada (grün)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_GREEN++">
 			<English>Lada (green)++</English>
-			<Russian>Лада (зелёная)++</Russian>
+			<Russian>Лада (Зелёная)++</Russian>
 			<German>Lada (grün)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_GREEN+++">
 			<English>Lada (green)+++</English>
-			<Russian>Лада (зелёная)+++</Russian>
+			<Russian>Лада (Зелёная)+++</Russian>
 			<German>Lada (grün)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_GREEN++++">
 			<English>Lada (green)++++</English>
-			<Russian>Лада (зелёная)++++</Russian>
+			<Russian>Лада (Зелёная)++++</Russian>
 			<German>Lada (grün)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_HIPPY">
@@ -9354,227 +9354,227 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_YELLOW">
 			<English>Lada (yellow)</English>
-			<Russian>Лада (жёлтая)</Russian>
+			<Russian>Лада (Жёлтая)</Russian>
 			<German>Lada (gelb)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_YELLOW+">
 			<English>Lada (yellow)+</English>
-			<Russian>Лада (жёлтая)+</Russian>
+			<Russian>Лада (Жёлтая)+</Russian>
 			<German>Lada (gelb)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_YELLOW++">
 			<English>Lada (yellow)++</English>
-			<Russian>Лада (жёлтая)++</Russian>
+			<Russian>Лада (Жёлтая)++</Russian>
 			<German>Lada (gelb)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_YELLOW+++">
 			<English>Lada (yellow)+++</English>
-			<Russian>Лада (жёлтая)+++</Russian>
+			<Russian>Лада (Жёлтая)+++</Russian>
 			<German>Lada (gelb)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_YELLOW++++">
 			<English>Lada (yellow)++++</English>
-			<Russian>Лада (жёлтая)++++</Russian>
+			<Russian>Лада (Жёлтая)++++</Russian>
 			<German>Lada (gelb)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED">
 			<English>Military Offroad (red)</English>
-			<Russian>Военный внедорожник (Красный)</Russian>
+			<Russian>Land Rover (Красный)</Russian>
 			<German>Militär Offroad (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED+">
 			<English>Military Offroad (red)+</English>
-			<Russian>Военный внедорожник (Красный)+</Russian>
+			<Russian>Land Rover (Красный)+</Russian>
 			<German>Militär Offroad (rot)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED++">
 			<English>Military Offroad (red)++</English>
-			<Russian>Военный внедорожник (Красный)++</Russian>
+			<Russian>Land Rover (Красный)++</Russian>
 			<German>Militär Offroad (rot)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED+++">
 			<English>Military Offroad (red)+++</English>
-			<Russian>Военный внедорожник (Красный)+++</Russian>
+			<Russian>Land Rover (Красный)+++</Russian>
 			<German>Militär Offroad (rot)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED++++">
 			<English>Military Offroad (red)++++</English>
-			<Russian>Военный внедорожник (Красный)++++</Russian>
+			<Russian>Land Rover (Красный)++++</Russian>
 			<German>Militär Offroad (rot)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT">
 			<English>Military Offroad (Desert)</English>
-			<Russian>Военный внедорожник (Пустыня)</Russian>
+			<Russian>Land Rover (Пустыня)</Russian>
 			<German>Militär Offroad (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT+">
 			<English>Military Offroad (Desert)+</English>
-			<Russian>Военный внедорожник (Пустыня)+</Russian>
+			<Russian>Land Rover (Пустыня)+</Russian>
 			<German>Militär Offroad (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT++">
 			<English>Military Offroad (Desert)++</English>
-			<Russian>Военный внедорожник (Пустыня)++</Russian>
+			<Russian>Land Rover (Пустыня)++</Russian>
 			<German>Militär Offroad (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT+++">
 			<English>Military Offroad (Desert)+++</English>
-			<Russian>Военный внедорожник (Пустыня)+++</Russian>
+			<Russian>Land Rover (Пустыня)+++</Russian>
 			<German>Militär Offroad (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT++++">
 			<English>Military Offroad (Desert)++++</English>
-			<Russian>Военный внедорожник (Пустыня)++++</Russian>
+			<Russian>Land Rover (Пустыня)++++</Russian>
 			<German>Militär Offroad (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND">
 			<English>Military Offroad (Woodland)</English>
-			<Russian>Военный внедорожник (Лес)</Russian>
+			<Russian>Land Rover (Лес)</Russian>
 			<German>Militär Offroad (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+">
 			<English>Military Offroad (Woodland)+</English>
-			<Russian>Военный внедорожник (Лес)+</Russian>
+			<Russian>Land Rover (Лес)+</Russian>
 			<German>Militär Offroad (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++">
 			<English>Military Offroad (Woodland)++</English>
-			<Russian>Военный внедорожник (Лес)++</Russian>
+			<Russian>Land Rover (Лес)++</Russian>
 			<German>Militär Offroad (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+++">
 			<English>Military Offroad (Woodland)+++</English>
-			<Russian>Военный внедорожник (Лес)+++</Russian>
+			<Russian>Land Rover (Лес)+++</Russian>
 			<German>Militär Offroad (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++++">
 			<English>Military Offroad (Woodland)++++</English>
-			<Russian>Военный внедорожник (Лес)++++</Russian>
+			<Russian>Land Rover (Лес)++++</Russian>
 			<German>Militär Offroad (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND">
 			<English>Military Offroad Ambulance (Woodland)</English>
-			<Russian>Военный внедорожник Скорая (Лес)</Russian>
+			<Russian>Land Rover Санитарный (Лес)</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND+">
 			<English>Military Offroad Ambulance (Woodland)+</English>
-			<Russian>Военный внедорожник Скорая (Лес)+</Russian>
+			<Russian>Land Rover Санитарный (Лес)+</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND++">
 			<English>Military Offroad Ambulance (Woodland)++</English>
-			<Russian>Военный внедорожник Скорая (Лес)++</Russian>
+			<Russian>Land Rover Санитарный (Лес)++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND+++">
 			<English>Military Offroad Ambulance (Woodland)+++</English>
-			<Russian>Военный внедорожник Скорая (Лес)+++</Russian>
+			<Russian>Land Rover Санитарный (Лес)+++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND++++">
 			<English>Military Offroad Ambulance (Woodland)++++</English>
-			<Russian>Военный внедорожник Скорая (Лес)++++</Russian>
+			<Russian>Land Rover Санитарный (Лес)++++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT">
 			<English>Military Offroad Ambulance (Desert)</English>
-			<Russian>Военный внедорожник Скорая (Пустыня)</Russian>
+			<Russian>Land Rover Санитарный (Пустыня)</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT+">
 			<English>Military Offroad Ambulance (Desert)+</English>
-			<Russian>Военный внедорожник Скорая (Пустыня)+</Russian>
+			<Russian>Land Rover Санитарный (Пустыня)+</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT++">
 			<English>Military Offroad Ambulance (Desert)++</English>
-			<Russian>Военный внедорожник Скорая (Пустыня)++</Russian>
+			<Russian>Land Rover Санитарный (Пустыня)++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT+++">
 			<English>Military Offroad Ambulance (Desert)+++</English>
-			<Russian>Военный внедорожник Скорая (Пустыня)+++</Russian>
+			<Russian>Land Rover Санитарный (Пустыня)+++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT++++">
 			<English>Military Offroad Ambulance (Desert)++++</English>
-			<Russian>Военный внедорожник Скорая (Пустыня)++++</Russian>
+			<Russian>Land Rover Санитарный (Пустыня)++++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL">
 			<English>Military Offroad (AGS-30)</English>
-			<Russian>Военный внедорожник (АГС-30)</Russian>
+			<Russian>Land Rover (АГС-30)</Russian>
 			<German>Militär Offroad (AGS-30)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL+">
 			<English>Military Offroad (AGS-30)+</English>
-			<Russian>Военный внедорожник (АГС-30)+</Russian>
+			<Russian>Land Rover (АГС-30)+</Russian>
 			<German>Militär Offroad (AGS-30)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL++">
 			<English>Military Offroad (AGS-30)++</English>
-			<Russian>Военный внедорожник (АГС-30)++</Russian>
+			<Russian>Land Rover (АГС-30)++</Russian>
 			<German>Militär Offroad (AGS-30)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL+++">
 			<English>Military Offroad (AGS-30)+++</English>
-			<Russian>Военный внедорожник (АГС-30)+++</Russian>
+			<Russian>Land Rover (АГС-30)+++</Russian>
 			<German>Militär Offroad (AGS-30)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL++++">
 			<English>Military Offroad (AGS-30)++++</English>
-			<Russian>Военный внедорожник (АГС-30)++++</Russian>
+			<Russian>Land Rover (АГС-30)++++</Russian>
 			<German>Militär Offroad (AGS-30)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2">
 			<English>Military Offroad (M2)</English>
-			<Russian>Военный внедорожник (M2)</Russian>
+			<Russian>Land Rover (M2)</Russian>
 			<German>Militär Offroad (M2)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2+">
 			<English>Military Offroad (M2)+</English>
-			<Russian>Военный внедорожник (M2)+</Russian>
+			<Russian>Land Rover (M2)+</Russian>
 			<German>Militär Offroad (M2)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2++">
 			<English>Military Offroad (M2)++</English>
-			<Russian>Военный внедорожник (M2)++</Russian>
+			<Russian>Land Rover (M2)++</Russian>
 			<German>Militär Offroad (M2)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2+++">
 			<English>Military Offroad (M2)+++</English>
-			<Russian>Военный внедорожник (M2)+++</Russian>
+			<Russian>Land Rover (M2)+++</Russian>
 			<German>Militär Offroad (M2)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2++++">
 			<English>Military Offroad (M2)++++</English>
-			<Russian>Военный внедорожник (M2)++++</Russian>
+			<Russian>Land Rover (M2)++++</Russian>
 			<German>Militär Offroad (M2)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9">
 			<English>Military Offroad (SPG-9)</English>
-			<Russian>Военный внедорожник (СПГ-9)</Russian>
+			<Russian>Land Rover (СПГ-9)</Russian>
 			<German>Militär Offroad (SPG-9)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9+">
 			<English>Military Offroad (SPG-9)+</English>
-			<Russian>Военный внедорожник (СПГ-9)+</Russian>
+			<Russian>Land Rover (СПГ-9)+</Russian>
 			<German>Militär Offroad (SPG-9)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9++">
 			<English>Military Offroad (SPG-9)++</English>
-			<Russian>Военный внедорожник (СПГ-9)++</Russian>
+			<Russian>Land Rover (СПГ-9)++</Russian>
 			<German>Militär Offroad (SPG-9)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9+++">
 			<English>Military Offroad (SPG-9)+++</English>
-			<Russian>Военный внедорожник (СПГ-9)+++</Russian>
+			<Russian>Land Rover (СПГ-9)+++</Russian>
 			<German>Militär Offroad (SPG-9)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9++++">
 			<English>Military Offroad (SPG-9)++++</English>
-			<Russian>Военный внедорожник (СПГ-9)++++</Russian>
+			<Russian>Land Rover (СПГ-9)++++</Russian>
 			<German>Militär Offroad (SPG-9)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LAV25">
@@ -10712,153 +10712,153 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE">
 			<English>Skoda Van (Ambulance)</English>
-			<Russian>Skoda фургон (Скорая)</Russian>
+			<Russian>Skoda фургон (Санитарный)</Russian>
 			<German>Skoda Van (Ambulanz)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE+">
 			<English>Skoda Van (Ambulance)+</English>
-			<Russian>Skoda фургон (Скорая)+</Russian>
+			<Russian>Skoda фургон (Санитарный)+</Russian>
 			<German>Skoda Van (Ambulanz)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE++">
 			<English>Skoda Van (Ambulance)++</English>
-			<Russian>Skoda фургон (Скорая)++</Russian>
+			<Russian>Skoda фургон (Санитарный)++</Russian>
 			<German>Skoda Van (Ambulanz)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE+++">
 			<English>Skoda Van (Ambulance)+++</English>
-			<Russian>Skoda фургон (Скорая)+++</Russian>
+			<Russian>Skoda фургон (Санитарный)+++</Russian>
 			<German>Skoda Van (Ambulanz)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE++++">
 			<English>Skoda Van (Ambulance)++++</English>
-			<Russian>Skoda фургон (Скорая)++++</Russian>
+			<Russian>Skoda фургон (Санитарный)++++</Russian>
 			<German>Skoda Van (Ambulanz)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE">
 			<English>Skoda (white)</English>
-			<Russian>Skoda (белая)</Russian>
+			<Russian>Skoda (Белая)</Russian>
 			<German>Skoda (weiß)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE+">
 			<English>Skoda (white)+</English>
-			<Russian>Skoda (белая)+</Russian>
+			<Russian>Skoda (Белая)+</Russian>
 			<German>Skoda (weiß)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE++">
 			<English>Skoda (white)++</English>
-			<Russian>Skoda (белая)++</Russian>
+			<Russian>Skoda (Белая)++</Russian>
 			<German>Skoda (weiß)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE+++">
 			<English>Skoda (white)+++</English>
-			<Russian>Skoda (белая)+++</Russian>
+			<Russian>Skoda (Белая)+++</Russian>
 			<German>Skoda (weiß)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_WHITE++++">
 			<English>Skoda (white)++++</English>
-			<Russian>Skoda (белая)++++</Russian>
+			<Russian>Skoda (Белая)++++</Russian>
 			<German>Skoda (weiß)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE">
 			<English>Skoda (blue)</English>
-			<Russian>Skoda (синяя)</Russian>
+			<Russian>Skoda (Синяя)</Russian>
 			<German>Skoda (blau)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE+">
 			<English>Skoda (blue)+</English>
-			<Russian>Skoda (синяя)+</Russian>
+			<Russian>Skoda (Синяя)+</Russian>
 			<German>Skoda (blau)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE++">
 			<English>Skoda (blue)++</English>
-			<Russian>Skoda (синяя)++</Russian>
+			<Russian>Skoda (Синяя)++</Russian>
 			<German>Skoda (blau)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE+++">
 			<English>Skoda (blue)+++</English>
-			<Russian>Skoda (синяя)+++</Russian>
+			<Russian>Skoda (Синяя)+++</Russian>
 			<German>Skoda (blau)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BLUE++++">
 			<English>Skoda (blue)++++</English>
-			<Russian>Skoda (синяя)++++</Russian>
+			<Russian>Skoda (Синяя)++++</Russian>
 			<German>Skoda (blau)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED">
 			<English>Skoda (red)</English>
-			<Russian>Skoda (красная)</Russian>
+			<Russian>Skoda (Красная)</Russian>
 			<German>Skoda (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED+">
 			<English>Skoda (red)+</English>
-			<Russian>Skoda (красная)+</Russian>
+			<Russian>Skoda (Красная)+</Russian>
 			<German>Skoda (rot)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED++">
 			<English>Skoda (red)++</English>
-			<Russian>Skoda (красная)++</Russian>
+			<Russian>Skoda (Красная)++</Russian>
 			<German>Skoda (rot)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED+++">
 			<English>Skoda (red)+++</English>
-			<Russian>Skoda (красная)+++</Russian>
+			<Russian>Skoda (Красная)+++</Russian>
 			<German>Skoda (rot)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_RED++++">
 			<English>Skoda (red)++++</English>
-			<Russian>Skoda (красная)++++</Russian>
+			<Russian>Skoda (Красная)++++</Russian>
 			<German>Skoda (rot)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN">
 			<English>Skoda (green)</English>
-			<Russian>Skoda (зелёная)</Russian>
+			<Russian>Skoda (Зелёная)</Russian>
 			<German>Skoda (grün)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN+">
 			<English>Skoda (green)+</English>
-			<Russian>Skoda (зелёная)+</Russian>
+			<Russian>Skoda (Зелёная)+</Russian>
 			<German>Skoda (grün)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN++">
 			<English>Skoda (green)++</English>
-			<Russian>Skoda (зелёная)++</Russian>
+			<Russian>Skoda (Зелёная)++</Russian>
 			<German>Skoda (grün)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN+++">
 			<English>Skoda (green)+++</English>
-			<Russian>Skoda (зелёная)+++</Russian>
+			<Russian>Skoda (Зелёная)+++</Russian>
 			<German>Skoda (grün)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_GREEN++++">
 			<English>Skoda (green)++++</English>
-			<Russian>Skoda (зелёная)++++</Russian>
+			<Russian>Skoda (Зелёная)++++</Russian>
 			<German>Skoda (grün)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE">
 			<English>Skoda Octavia (white)</English>
 			<German>Skoda Octavia (weiß)</German>
-			<Russian>Skoda Octavia (белая)</Russian>
+			<Russian>Skoda Octavia (Белая)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE+">
 			<English>Skoda Octavia (white)+</English>
 			<German>Skoda Octavia (weiß)+</German>
-			<Russian>Skoda Octavia (белая)+</Russian>
+			<Russian>Skoda Octavia (Белая)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE++">
 			<English>Skoda Octavia (white)++</English>
 			<German>Skoda Octavia (weiß)++</German>
-			<Russian>Skoda Octavia (белая)++</Russian>
+			<Russian>Skoda Octavia (Белая)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE+++">
 			<English>Skoda Octavia (white)+++</English>
 			<German>Skoda Octavia (weiß)+++</German>
-			<Russian>Skoda Octavia (белая)+++</Russian>
+			<Russian>Skoda Octavia (Белая)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE++++">
 			<English>Skoda Octavia (white)++++</English>
 			<German>Skoda Octavia (weiß)++++</German>
-			<Russian>Skoda Octavia (белая)++++</Russian>
+			<Russian>Skoda Octavia (Белая)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLACK">
 			<English>SUV (black)</English>
@@ -13648,51 +13648,51 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF">
 			<English>Mi-17 MedEvac (CDF)</English>
-			<Russian>Ми-17 Эвакуационный (CDF)</Russian>
+			<Russian>Ми-17 Медицинский (CDF)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF+">
 			<English>Mi-17 MedEvac (CDF)+</English>
-			<Russian>Ми-17 Эвакуационный (CDF)+</Russian>
+			<Russian>Ми-17 Медицинский (CDF)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF++">
 			<English>Mi-17 MedEvac (CDF)++</English>
-			<Russian>Ми-17 Эвакуационный (CDF)++</Russian>
+			<Russian>Ми-17 Медицинский (CDF)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF+++">
 			<English>Mi-17 MedEvac (CDF)+++</English>
-			<Russian>Ми-17 Эвакуационный (CDF)+++</Russian>
+			<Russian>Ми-17 Медицинский (CDF)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_INS">
 			<English>Mi-17 MedEvac (INS)</English>
-			<Russian>Ми-17 Эвакуационный (INS)</Russian>
+			<Russian>Ми-17 Медицинский (INS)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_INS+">
 			<English>Mi-17 MedEvac (INS)+</English>
-			<Russian>Ми-17 Эвакуационный (INS)+</Russian>
+			<Russian>Ми-17 Медицинский (INS)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_INS++">
 			<English>Mi-17 MedEvac (INS)++</English>
-			<Russian>Ми-17 Эвакуационный (INS)++</Russian>
+			<Russian>Ми-17 Медицинский (INS)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_INS+++">
 			<English>Mi-17 MedEvac (INS)+++</English>
-			<Russian>Ми-17 Эвакуационный (INS)+++</Russian>
+			<Russian>Ми-17 Медицинский (INS)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_RU">
 			<English>Mi-17 MedEvac (RU)</English>
-			<Russian>Ми-17 Эвакуационный (RU)</Russian>
+			<Russian>Ми-17 Медицинский (RU)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_RU+">
 			<English>Mi-17 MedEvac (RU)+</English>
-			<Russian>Ми-17 Эвакуационный (RU)+</Russian>
+			<Russian>Ми-17 Медицинский (RU)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_RU++">
 			<English>Mi-17 MedEvac (RU)++</English>
-			<Russian>Ми-17 Эвакуационный (RU)++</Russian>
+			<Russian>Ми-17 Медицинский (RU)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_RU+++">
 			<English>Mi-17 MedEvac (RU)+++</English>
-			<Russian>Ми-17 Эвакуационный (RU)+++</Russian>
+			<Russian>Ми-17 Медицинский (RU)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_DESERT">
 			<English>Mi-17 (Desert)</English>
@@ -14128,19 +14128,19 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_HH60">
 			<English>HH-60M MedEvac</English>
-			<Russian>HH-60M Эвакуационный</Russian>
+			<Russian>HH-60M Медицинский</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HH60+">
 			<English>HH-60M MedEvac+</English>
-			<Russian>HH-60M Эвакуационный+</Russian>
+			<Russian>HH-60M Медицинский+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HH60++">
 			<English>HH-60M MedEvac++</English>
-			<Russian>HH-60M Эвакуационный++</Russian>
+			<Russian>HH-60M Медицинский++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HH60+++">
 			<English>HH-60M MedEvac+++</English>
-			<Russian>HH-60M Эвакуационный+++</Russian>
+			<Russian>HH-60M Медицинский+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MV22">
 			<English>MV-22</English>
@@ -14250,62 +14250,62 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC">
 			<English>Bell 47 MedEvac (Olive-green)</English>
-			<Russian>Bell 47 Эвакуационный (Оливковый)</Russian>
+			<Russian>Bell 47 Медицинский (Оливковый)</Russian>
 			<German>Bell 47 SanHS. (Olivgrün)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC+">
 			<English>Bell 47 MedEvac (Olive-green)+</English>
-			<Russian>Bell 47 Эвакуационный (Оливковый)+</Russian>
+			<Russian>Bell 47 Медицинский (Оливковый)+</Russian>
 			<German>Bell 47 SanHS. (Olivgrün)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC++">
 			<English>Bell 47 MedEvac (Olive-green)++</English>
-			<Russian>Bell 47 Эвакуационный (Оливковый)++</Russian>
+			<Russian>Bell 47 Медицинский (Оливковый)++</Russian>
 			<German>Bell 47 SanHS. (Olivgrün)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC+++">
 			<English>Bell 47 MedEvac (Olive-green)+++</English>
-			<Russian>Bell 47 Эвакуационный (Оливковый)+++</Russian>
+			<Russian>Bell 47 Медицинский (Оливковый)+++</Russian>
 			<German>Bell 47 SanHS. (Olivgrün)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_GREEN">
 			<English>Bell 47 MedEvac (Green)</English>
-			<Russian>Bell 47 Эвакуационный (Зелёный)</Russian>
+			<Russian>Bell 47 Медицинский (Зелёный)</Russian>
 			<German>Bell 47 SanHS. (Grün)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_GREEN+">
 			<English>Bell 47 MedEvac (Green)+</English>
-			<Russian>Bell 47 Эвакуационный (Зелёный)+</Russian>
+			<Russian>Bell 47 Медицинский (Зелёный)+</Russian>
 			<German>Bell 47 SanHS. (Grün)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_GREEN++">
 			<English>Bell 47 MedEvac (Green)++</English>
-			<Russian>Bell 47 Эвакуационный (Зелёный)++</Russian>
+			<Russian>Bell 47 Медицинский (Зелёный)++</Russian>
 			<German>Bell 47 SanHS. (Grün)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_GREEN+++">
 			<English>Bell 47 MedEvac (Green)+++</English>
-			<Russian>Bell 47 Эвакуационный (Зелёный)+++</Russian>
+			<Russian>Bell 47 Медицинский (Зелёный)+++</Russian>
 			<German>Bell 47 SanHS. (Grün)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_ORANGE">
 			<English>Bell 47 MedEvac (Orange)</English>
-			<Russian>Bell 47 Эвакуационный (Оранжевый)</Russian>
+			<Russian>Bell 47 Медицинский (Оранжевый)</Russian>
 			<German>Bell 47 SanHS. (Orange)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_ORANGE+">
 			<English>Bell 47 MedEvac (Orange)+</English>
-			<Russian>Bell 47 Эвакуационный (Оранжевый)+</Russian>
+			<Russian>Bell 47 Медицинский (Оранжевый)+</Russian>
 			<German>Bell 47 SanHS. (Orange)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_ORANGE++">
 			<English>Bell 47 MedEvac (Orange)++</English>
-			<Russian>Bell 47 Эвакуационный (Оранжевый)++</Russian>
+			<Russian>Bell 47 Медицинский (Оранжевый)++</Russian>
 			<German>Bell 47 SanHS. (Orange)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_ORANGE+++">
 			<English>Bell 47 MedEvac (Orange)+++</English>
-			<Russian>Bell 47 Эвакуационный (Оранжевый)+++</Russian>
+			<Russian>Bell 47 Медицинский (Оранжевый)+++</Russian>
 			<German>Bell 47 SanHS. (Orange)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP">
@@ -14424,7 +14424,7 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_AN2_WHITERED">
 			<English>Antonov AN-2 (white red)</English>
-			<Russian>Антонов АН-2 (Бело-красный)</Russian>
+			<Russian>Антонов АН-2 (Красно-белый)</Russian>
 			<German>Antonow AN-2 (weiß rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_AN2_VICKER">
@@ -14728,7 +14728,7 @@
 		</Key>
 		<Key ID="STR_BUILT_SANDBAG_Dismantle">
 			<English>Dismantle Bag Fence</English>
-			<Russian>Демонтировать преграду из мешков</Russian>
+			<Russian>Демонтировать ограждение из мешков</Russian>
 			<German>Sandsackwall abbauen</German>
 		</Key>
 		<Key ID="STR_BUILT_HEDGEHOG_Dismantle">
@@ -14749,7 +14749,7 @@
 		</Key>
 		<Key ID="STR_BUILT_SANDBAG">
 			<English>Bag Fence</English>
-			<Russian>Преграда из мешков с песком</Russian>
+			<Russian>Ограждение из мешков</Russian>
 			<French>Sacs de sable</French>
 			<Czech>Val z pytlů</Czech>
 			<German>Sandsackwall</German>
@@ -18414,11 +18414,11 @@
 		<!-- AN-94 Abakan -->
 		<Key ID="STR_DZ_WPN_AN94_NAME">
 			<English>AN-94 Abakan</English>
-			<Russian>AН-94 Абакан</Russian>
+			<Russian>АН-94 Абакан</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_AN94_GL_NAME">
 			<English>AN-94 Abakan GP-25</English>
-			<Russian>AН-94 Абакан ГП-25</Russian>
+			<Russian>АН-94 Абакан ГП-25</Russian>
 		</Key>
 
 		<!-- SVD Gold -->
@@ -25068,7 +25068,7 @@
 		<Key ID="STR_EPOCH_PLAYER_299">
 			<English>Build Round Fence</English>
 			<German>Sandsackwall(rund) aufstellen</German>
-			<Russian>Установить: Круглая ограда</Russian>
+			<Russian>Установить: Ограждение из мешков (Круг)</Russian>
 			<Czech>Postavit Kulaté oplocení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_301">
@@ -27698,7 +27698,7 @@
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_GREEN">
 			<English>Hermlite 2 Stroke Chainsaw (Green)</English>
 			<German>Hermlite 2 Takt Kettensäge (Grün)</German>
-			<Russian>Бензопила "Hermlite" с двухтактным двигателем (Зеленая).</Russian>
+			<Russian>Бензопила "Hermlite" с двухтактным двигателем (Зелёная).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_PINK">
 			<English>Hermlite 2 Stroke Chainsaw (Pink)</English>
@@ -27723,7 +27723,7 @@
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_GREEN_BROKEN">
 			<English>Broken Hermlite 2 Stroke Chainsaw (Green)</English>
 			<German>Kaputte Hermlite 2 Takt Kettensäge (Grün)</German>
-			<Russian>Сломанная бензопила "Hermlite" (Зеленая).</Russian>
+			<Russian>Сломанная бензопила "Hermlite" (Зелёная).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_PINK_BROKEN">
 			<English>Broken Hermlite 2 Stroke Chainsaw (Pink)</English>
@@ -29576,14 +29576,17 @@
 		<Key ID="STR_EPOCH_ELEVATORSTART">
 			<English>Elevator Start</English>
 			<German>Fahrstuhl Start</German>
+			<Russian>Лифт: Точка начала</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ELEVATORSTOP_GLASS">
 			<English>Elevator Stop (Glass)</English>
 			<German>Fahrstuhl Halt (Glass)</German>
+			<Russian>Лифт: Точка остановки (Стекло)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ELEVATORSTOP_TRANSPARENT">
 			<English>Elevator Stop (Transparent)</English>
 			<German>Fahrstuhl Halt (Durchsichtig)</German>
+			<Russian>Лифт: Точка остановки (Прозр.)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GLASSFLOOR">
 			<English>Glass Floor</English>
@@ -30173,7 +30176,7 @@
 		<Key ID="STR_EQUIP_NAME_21_ROUND">
 			<English>Sandbag Fence (Round)</English>
 			<German>Sandsack (rund)</German>
-			<Russian>Ограждение из мешков (Круг)</Russian>
+			<Russian>Огр-е из мешков (Круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_NEST">
 			<English>Sandbag Nest</English>
@@ -32727,7 +32730,7 @@
 		<!--PET waterbottles -->
 		<Key ID="STR_EQUIP_NAME_WBPET_01">
 			<English>Water Bottle PET (Empty)</English>
-			<Russian>Бутылка для воды ПЭТ (Пустая)</Russian>
+			<Russian>Бутылка ПЭТ (Пустая)</Russian>
 			<German>Wasserflasche PET (Leer)</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_01">
@@ -32737,7 +32740,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_02">
 			<English>Water Bottle PET (Broken)</English>
-			<Russian>Бутылка для воды ПЭТ (Сломанная)</Russian>
+			<Russian>Бутылка ПЭТ (Сломана)</Russian>
 			<German>Wasserflasche PET (Undicht)</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_02">
@@ -32998,7 +33001,7 @@
 		<Key ID="STR_DZE_EQUIP_PAINT_BLACK_NAME">
 			<English>Paint bucket (black)</English>
 			<German>Farbeimer (Schwarz)</German>
-			<Russian>Ведро с краской (Чёрная)</Russian>
+			<Russian>Ведро с чёрной краской</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_BLACK_DESC">
 			<English>A bucket of black paint.</English>
@@ -33008,7 +33011,7 @@
 		<Key ID="STR_DZE_EQUIP_PAINT_WHITE_NAME">
 			<English>Paint bucket (white)</English>
 			<German>Farbeimer (Weiss)</German>
-			<Russian>Ведро с краской (Белая)</Russian>
+			<Russian>Ведро с белой краской</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_WHITE_DESC">
 			<English>A bucket of white paint.</English>
@@ -33018,7 +33021,7 @@
 		<Key ID="STR_DZE_EQUIP_PAINT_BLUE_NAME">
 			<English>Paint bucket (blue)</English>
 			<German>Farbeimer (Blau)</German>
-			<Russian>Ведро с краской (Синяя)</Russian>
+			<Russian>Ведро с синей краской</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_BLUE_DESC">
 			<English>A bucket of blue paint.</English>
@@ -33028,7 +33031,7 @@
 		<Key ID="STR_DZE_EQUIP_PAINT_GREEN_NAME">
 			<English>Paint bucket (green)</English>
 			<German>Farbeimer (Grün)</German>
-			<Russian>Ведро с краской (Зелёная)</Russian>
+			<Russian>Ведро с зелёной краской</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GREEN_DESC">
 			<English>A bucket of green paint.</English>
@@ -33038,7 +33041,7 @@
 		<Key ID="STR_DZE_EQUIP_PAINT_RED_NAME">
 			<English>Paint bucket (red)</English>
 			<German>Farbeimer (Rot)</German>
-			<Russian>Ведро с краской (Красная)</Russian>
+			<Russian>Ведро с красной краской</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_RED_DESC">
 			<English>A bucket of red paint.</English>
@@ -34517,322 +34520,402 @@
 		<Key ID="STR_ITEM_NAME_STASHFILE_01">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_01">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_02">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_02">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_03">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_03">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_04">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_04">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_05">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_05">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_06">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_06">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_07">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_07">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_08">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_08">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_09">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_09">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_10">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_10">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_11">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_11">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_12">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_12">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_13">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_13">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_14">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_14">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_15">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_15">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_16">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_16">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_17">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_17">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_18">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_18">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_19">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_19">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_20">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_20">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_21">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_21">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_22">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_22">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_23">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_23">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_24">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_24">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_25">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_25">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_26">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_26">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_27">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_27">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_28">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_28">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_29">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_29">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_30">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_30">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_31">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_31">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_32">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_32">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_33">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_33">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_34">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_34">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_35">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_35">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_36">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_36">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_37">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_37">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_38">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_38">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_39">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_39">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_STASHFILE_40">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_STASHFILE_40">
 			<English>Stash File</English>
 			<German>Versteck Mappe</German>
+			<Russian>Секретные данные.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_PILEOFBOOKS">
 			<English>Pile of books</English>
@@ -36356,47 +36439,47 @@
 		<Key ID="STR_EPOCH_PLAYER_HBF">
 			<English>Craft Heavy Bag Fence</English>
 			<German>Schweren Sandsackzaun herstellen</German>
-			<Russian>Создать: Забор из крупных мешков</Russian>
+			<Russian>Создать: Заграждение из крупных мешков</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBF">
 			<English>Heavy Bag Fence</English>
 			<German>Schwerer Sandsackzaun</German>
-			<Russian>Забор из крупных мешков</Russian>
+			<Russian>Заграждение из крупных мешков</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBF">
 			<English>Heavy Bag Fence: A buildable object that is used for fortification purposes.</English>
 			<German>Schwerer Sandsackzaun: Zum Befestigen von Stellungen.</German>
-			<Russian>Забор из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
+			<Russian>Заграждение из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF_CORNER">
 			<English>Craft Heavy Bag Fence (Corner)</English>
 			<German>Schwerer Sandsackzaun (Ecke) herstellen</German>
-			<Russian>Создать: Забор из крупных мешков (Угол)</Russian>
+			<Russian>Создать: Заграждение из крупных мешков (Угол)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBF_CORNER">
 			<English>Heavy Bag Fence (Corner)</English>
 			<German>Schwerer Sandsackzaun (Ecke)</German>
-			<Russian>Забор из крупных мешков (Угол)</Russian>
+			<Russian>Заграждение из крупных мешков (Угол)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBF_CORNER">
 			<English>Heavy Bag Fence (Corner): A buildable object that is used for fortification purposes.</English>
 			<German>Schwerer Sandsackzaun (Ecke): Zum Befestigen von Stellungen.</German>
-			<Russian>Угловой забор из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
+			<Russian>Угловое заграждение из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF_ROUND">
 			<English>Craft Heavy Bag Fence (Round)</English>
 			<German>Schwerer Sandsackzaun (Rund) herstellen</German>
-			<Russian>Создать: Забор из крупных мешков (Круг)</Russian>
+			<Russian>Создать: Заграждение из крупных мешков (Круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBF_ROUND">
 			<English>Heavy Bag Fence (Round)</English>
 			<German>Schwerer Sandsackzaun (Rund)</German>
-			<Russian>Забор из крупных мешков (Круг)</Russian>
+			<Russian>Заграждение из крупных мешков (Круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBF_ROUND">
 			<English>Heavy Bag Fence (Round): A buildable object that is used for fortification purposes.</English>
 			<German>Schwerer Sandsackzaun (Rund): Zum Befestigen von Stellungen.</German>
-			<Russian>Скруглённый забор из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
+			<Russian>Полукруглое заграждение из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_WBARRIER5">
 			<English>Craft Warfare Barrier 5x</English>
@@ -36461,17 +36544,17 @@
 		<Key ID="STR_EPOCH_PLAYER_HBARRIER5CURVED">
 			<English>Craft Sandbag Cube (5x H-barrier curved)</English>
 			<German>Sandsack (5x H-Barriere Gebogen) herstellen</German>
-			<Russian>Создать: Мешки с песком (5x H-barrier изогнутый)</Russian>
+			<Russian>Создать: Защитный барьер 5x (Изогнутый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBARRIER5CURVED_2">
 			<English>Build Sandbag Cube (5x H-barrier curved)</English>
 			<German>Sandsack (5x H-Barriere Gebogen) bauen</German>
-			<Russian>Установить: Мешки с песком (5x H-barrier изогнутый)</Russian>
+			<Russian>Установить: Защитный барьер 5x (Изогнутый)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBARRIER5CURVED">
 			<English>Sandbag Cube (5x H-barrier curved)</English>
 			<German>Sandsack (5x H-Barriere Gebogen)</German>
-			<Russian>Мешки с песком (5x H-barrier изогнутый)</Russian>
+			<Russian>Защитный барьер 5x (Изогнут)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBARRIER5CURVED">
 			<English>Hesco barrier: A buildable object that is used for fortification purposes.</English>
@@ -36989,7 +37072,7 @@
 		<Key ID="STR_EVR_ACTIVITY">
 			<English>APSI: Stronger activity of flux field has been detected..</English>
 			<German>APSI: Starke Magnetfeld Aktivität entdeckt..</German>
-			<Russian>Пси-шлем: Обнаружено усиление электромагнитного поля.</Russian>
+			<Russian>Пси-шлем: Обнаружено усиление ЭМП.</Russian>
 		</Key>
 		<Key ID="STR_EVR_DETECT">
 			<English>APSI: EVR sequence detected..</English>
@@ -39536,21 +39619,21 @@
 			<English>A Black Hawk carrying supplies has crashed!</English>
 			<German>Ein Black Hawk mit Materialien ist abgestürzt!</German>
 			<French>Un Black Hawk qui transportai des provitions c'est cracher.</French>
-			<Russian>Разбился Черный Ястреб, перевозящий предметы снабжения!</Russian>
+			<Russian>Разбился Чёрный Ястреб, перевозящий предметы снабжения!</Russian>
 			<Spanish>Un Black Hawk transportando suministros se ha estrellado!</Spanish>
 		</Key>
 		<Key ID="STR_CL_BHCRASH_WIN">
 			<English>Survivors have secured the crashed Black Hawk.</English>
 			<German>Überlebende haben den abgestürzten Black Hawk gesichert.</German>
 			<French>Les survivant on sécuriser le Black Hawk.</French>
-			<Russian>Выжившие захватили место крушения Черного Ястреба.</Russian>
+			<Russian>Выжившие захватили место крушения Чёрного Ястреба.</Russian>
 			<Spanish>Los sobrevivientes han asegurado el Black Hawk estrellado.</Spanish>
 		</Key>
 		<Key ID="STR_CL_BHCRASH_FAIL">
 			<English>Survivors did not secure the crashed Black Hawk in time.</English>
 			<German>Der abgestürzte Black Hawk wurde entfernt.</German>
 			<French>Les survivant n'on pas sécuriser le Black Hawk.</French>
-			<Russian>Выжившие не смогли захватить место крушения Черного Ястреба.</Russian>
+			<Russian>Выжившие не смогли захватить место крушения Чёрного Ястреба.</Russian>
 			<Spanish>Los sobrevivientes no han asegurado el Black Hawk estrellado a tiempo.</Spanish>
 		</Key>
 		<Key ID="STR_CL_BANDIT_MV22_ANNOUNCE">
@@ -40067,21 +40150,21 @@
 			<English>A Hero Black Hawk carrying supplies has crashed!</English>
 			<German>Ein Black Hawk der Helden mit Materialien ist abgestürzt!</German>
 			<French>Un Black Hawk Hero portant des provitions c'est cracher!</French>
-			<Russian>Разбился Черный Ястреб, перевозящий предметы снабжения!</Russian>
+			<Russian>Разбился Чёрный Ястреб, перевозящий предметы снабжения!</Russian>
 			<Spanish>Un Black Hawk de los héroes transportando suministros se ha estrellado!</Spanish>
 		</Key>
 		<Key ID="STR_CL_BANDIT_BHCRASH_WIN">
 			<English>Bandits have secured the crashed Black Hawk.</English>
 			<German>Banditen haben den abgestürzten Black Hawk gesichert.</German>
 			<French>Les Bandits on sécuriser les Black Hawk cracher.</French>
-			<Russian>Бандиты захватили место крушения Черного Ястреба.</Russian>
+			<Russian>Бандиты захватили место крушения Чёрного Ястреба.</Russian>
 			<Spanish>Los bandidos han asegurado el Black Hawk estrellado</Spanish>
 		</Key>
 		<Key ID="STR_CL_BANDIT_BHCRASH_FAIL">
 			<English>Bandits did not secure the crashed Black Hawk.</English>
 			<German>Der abgestürzte Black Hawk wurde entfernt.</German>
 			<French>Les Bandits n'ont pas sécuriser le Black Hawk cracher.</French>
-			<Russian>Бандиты не смогли захватить место крушения Черного Ястреба.</Russian>
+			<Russian>Бандиты не смогли захватить место крушения Чёрного Ястреба.</Russian>
 			<Spanish>Los bandidos no han asegurado el Black Hawk estrellado</Spanish>
 		</Key>
 		<Key ID="STR_CL_GENERAL_CANNIBALCAVE_ANNOUNCE">
@@ -40313,21 +40396,21 @@
 			<English>A Black Hawk carrying supplies has crashed!</English>
 			<German>Ein Black Hawk mit Materialien ist abgestürzt!</German>
 			<French>Un Black Hawk qui transportai des provitions c'est cracher.</French>
-			<Russian>Разбился Черный Ястреб, перевозящий предметы снабжения!</Russian>
+			<Russian>Разбился Чёрный Ястреб, перевозящий предметы снабжения!</Russian>
 			<Spanish>Un Black Hawk transportando suministros se ha estrellado!</Spanish>
 		</Key>
 		<Key ID="STR_CL_HERO_BHCRASH_WIN">
 			<English>Survivors have secured the crashed Black Hawk.</English>
 			<German>Überlebende haben den abgestürzten Black Hawk gesichert.</German>
 			<French>Les survivant on sécuriser le Black Hawk.</French>
-			<Russian>Выжившие захватили место крушения Черного Ястреба.</Russian>
+			<Russian>Выжившие захватили место крушения Чёрного Ястреба.</Russian>
 			<Spanish>Los sobrevivientes han asegurado el Black Hawk estrellado.</Spanish>
 		</Key>
 		<Key ID="STR_CL_HERO_BHCRASH_FAIL">
 			<English>Survivors did not secure the crashed Black Hawk in time.</English>
 			<German>Der abgestürzte Black Hawk wurde entfernt.</German>
 			<French>Les survivant n'on pas sécuriser le Black Hawk.</French>
-			<Russian>Выжившие не смогли захватить место крушения Черного Ястреба.</Russian>
+			<Russian>Выжившие не смогли захватить место крушения Чёрного Ястреба.</Russian>
 			<Spanish>Los sobrevivientes no han asegurado el Black Hawk estrellado a tiempo.</Spanish>
 		</Key>
 	</Package>
