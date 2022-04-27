@@ -64,8 +64,8 @@ class BagFenceRound_DZ_kit: CA_Magazine
 	scope = 2;
 	count = 1;
 	type = 256;
-	displayName = $STR_EQUIP_NAME_21_ROUND;
-	descriptionShort = $STR_EQUIP_DESC_21;
+	displayName = $STR_EQUIP_NAME_SANDBAGS_ROUND;
+	descriptionShort = $STR_EQUIP_DESC_SANDBAGS_ROUND;
 	model = "\dayz_equip\models\sandbags.p3d";
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 	

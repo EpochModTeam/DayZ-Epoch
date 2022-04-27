@@ -1,6 +1,6 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_isStatic","_type","_objectUID","_characterID","_object","_worldspace","_key","_ownerArray","_inventory","_clientKey","_exitReason","_player","_playerUID"];
+private ["_type","_objectUID","_characterID","_object","_worldspace","_key","_ownerArray","_inventory","_clientKey","_exitReason","_player","_playerUID"];
 
 if (count _this < 6) exitWith {diag_log "Server_PublishObj error: Wrong parameter format";};
 

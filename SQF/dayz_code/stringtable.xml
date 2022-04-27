@@ -4308,6 +4308,19 @@
 			<Czech>Jutové pytle, lze naplnit pískem nebo zeminou a použít je pro postavení opevnění.</Czech>
 			<French>Des sacs de jute qui peuvent être remplis de sable et utilisés pour des fortifications militaires.</French>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_SANDBAGS_ROUND">
+			<English>Sandbag Fence (Round)</English>
+			<German>Sandsack (rund)</German>
+			<Russian>Огр-е из мешков (Круг)</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_SANDBAGS_ROUND">
+			<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>
+			<German>Jutesäcke, die mit Sand oder Erde gefüllt für Befestigungen verwendet werden können.</German>
+			<Russian>Мешки с песком для создания оборонительных сооружений.</Russian>
+			<Spanish>Bolsas hechas de arpillera que pueden llenarse con arena o tierra y ser usadas para fortificación militar.</Spanish>
+			<Czech>Jutové pytle, lze naplnit pískem nebo zeminou a použít je pro postavení opevnění.</Czech>
+			<French>Des sacs de jute qui peuvent être remplis de sable et utilisés pour des fortifications militaires.</French>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_TANK_TRAP">
 			<English>Tank Trap Kit</English>
 			<German>Panzersperre</German>
@@ -30172,12 +30185,7 @@
 			<English>Wall with combination lock door constructed out of plywood and lumber.</English>
 			<German>Eine große Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Большая деревянная стена с дверью и кодовым замком.</Russian>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_21_ROUND">
-			<English>Sandbag Fence (Round)</English>
-			<German>Sandsack (rund)</German>
-			<Russian>Огр-е из мешков (Круг)</Russian>
-		</Key>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_21_NEST">
 			<English>Sandbag Nest</English>
 			<German>Sandsacknest</German>
