@@ -141,6 +141,7 @@ if (_canBuild) then {
 	DZE_SnapSelIdx		= -2;						// array of object snapping points
 	DZE_nowBuilding		= false;					// notify snap build so it can clean up helpers
 	snapGizmosNearby	= [];
+	local _isStaticWeapon	= false;
 
 	local _walk		= "amovpercmwlk";				// animation state substrings
 	local _run		= "amovpercmrun";
@@ -704,7 +705,7 @@ if (_canBuild) then {
 			_objectHelperPos = ATLToASL _pos;
 		};
  
-		if (_vectoringEnabled) then {
+		if (_vectoringEnabled || {_classname in DZE_StaticWeapons}) then {
 			_objectHelper setVectorUp _vector;				// align
 		};
 
@@ -886,6 +887,9 @@ if (_canBuild) then {
 	local _text		= getText	(configFile >> "CfgVehicles" >> _classname >> "displayName");					// e.g. "Cinder Wall Full"
 	local _ghost		= getText	(configFile >> "CfgVehicles" >> _classname >> "ghostpreview");					// e.g. "CinderWall_Preview_DZ"
 	local _lockable		= getNumber	(configFile >> "CfgVehicles" >> _classname >> "lockable");					// defaults to 0
+	local _staticOffset	= getNumber	(configFile >> "CfgVehicles" >> _classname >> "staticOffset");
+
+	_isStaticWeapon = ((_classname isKindof "StaticWeapon") || {_classname in DZE_StaticWeapons});
 
 	local _offset = getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 	if (count _offset == 0) then {
@@ -981,7 +985,7 @@ if (_canBuild) then {
 		_refreshDist	= DZE_snapRadius * 0.5;				// distance object moves before the snap auto-refresh triggers
 	};
 
-	if !(DZE_buildItem in DZE_noRotate) then {
+	if (!(DZE_buildItem in DZE_noRotate) && !_isStaticWeapon) then {
 		_vectoringEnabled = true;
 		["","","",["Init", "Init", 0]] spawn build_vectors;
 	};
@@ -994,7 +998,7 @@ if (_canBuild) then {
 
 	call _axial_helper;
 	call _setup_object;
-	[_distFromPlot, _radius, _snappingEnabled, _vectoringEnabled, _snapList, _object] spawn dze_snap_building;
+	[_distFromPlot, _radius, _snappingEnabled, _vectoringEnabled, _isStaticWeapon, _snapList, _object] spawn dze_snap_building;
 	
 	while {_isOk} do {
 
@@ -1351,20 +1355,39 @@ if (_canBuild) then {
 		_builtObject setVariable["memDir", _dir, true];
 		_builtObject setVectorDirAndUp _vector;
 
-		local _position = _modelBasePos;				// ATL/ASL
+		local _position	= _modelBasePos;						// ATL/ASL
+		local _vectorUp	= _vector select 1;
+		local _isWater	= surfaceIsWater _position;
 
-		if (surfaceIsWater _position) then {
-			_position = ASLToATL _position;				// position must be ATL
+		if (_isStaticWeapon) then {							// handle static weapons
+			local _positionASL = _position;
+
+			if (!_isWater) then {_positionASL = ATLToASL _position;};		// must be ASL
+
+			for "_i" from 0 to 2 do {
+				_positionASL set [_i, (_positionASL select _i) + ((_vectorUp select _i) * _staticOffset)];		// add static weapon vectorUp offset to ASL position (world coordinates)
+			};
+			if (!_isWater) then {							// convert back to
+				_position = ASLToATL _positionASL;				// ATL
+			} else {
+				_position = _positionASL;					// or ASL
+			};
+		};
+
+		if (_isWater) then {
+			_position = ASLToATL _position;						// position must be ATL
 		};
 		_builtObject setPosATL _position;
 
 		///////////////////////////////////////////////////////////////////////////////////
 
-		_position = _modelCenterPos;					// ATL/ASL. Update db position in case model center is non-zero
-		_position set [2, (_position select 2) - _modelOffset];		// adjust world Z-height
+		if (!_isStaticWeapon) then {
+			_position = _modelCenterPos;						// ATL/ASL. Update db position in case model center is non-zero
+			_position set [2, (_position select 2) - _modelOffset];			// adjust world Z-height
 
-		if (surfaceIsWater _position) then {
-			_position = ASLToATL _position;				// ensure position passed to db is ATL
+			if (surfaceIsWater _position) then {
+				_position = ASLToATL _position;					// ensure position passed to db is ATL
+			};
 		};
 
 		///////////////////////////////////////////////////////////////////////////////////
@@ -1578,11 +1601,10 @@ if (_canBuild) then {
 						};
 						publicVariableServer "PVDZ_obj_Publish";
 					};
-					
+
 					if (_builtObject isKindOf "StaticWeapon" || {_classname in DZE_StaticWeapons}) then {
 						[_builtObject,DZE_clearStaticAmmo,false] call fn_vehicleAddons;
-					};
-				};
+					};				};
 				if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
 					_builtObject addEventHandler ["HandleDamage", {0}];
 				};

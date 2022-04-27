@@ -11,8 +11,9 @@ local _distFromPlot	= _this select 0;
 local _radius		= _this select 1;
 local _snappingEnabled	= _this select 2;
 local _vectoringEnabled	= _this select 3;
-local _snapList		= _this select 4;
-local _object		= _this select 5;
+local _isStaticWeapon	= _this select 4;
+local _snapList		= _this select 5;
+local _object		= _this select 6;
 
 local _header		= "<img align='left' size='1' image='\z\addons\dayz_code\gui\EpochSnapBuilding.paa'></img><br/>";	
 local _format		= "<t align='left' size='0.4' font='Zeppelin33'>";
@@ -24,6 +25,7 @@ local _ORA		= _COL + "'#FF8800'>";		// orange
 local _GRY		= _COL + "'#808080'>";		// greyed out
 local _TRN		= _format + "<t shadow='0' color='#00000000'>";	// transparent
 local _VEC		= [_GRY, _WHT] select _vectoringEnabled;	// initial text color
+local _TER		= [_VEC, _WHT] select _isStaticWeapon;		// initial text color
 local _END		= "</t>";			// end of segment
 local _NL		= _END + "<br/>";		// new line
 local _spacing		= _TRN + "." + _NL;		// blank line
@@ -58,7 +60,7 @@ _HK = _HK + _ORA + "[Q] [E] "									+ _WHT + _strRotate				+ _NL;
 _HK = _HK + _OBR + _decrease + _DBR + _increase + _BRW						+ localize "STR_EPOCH_TUT_ADJ_DEGREES"		+ _NL;
 _HK = _HK + _spacing;
 _HK = _HK + _ORA + "[L] "									+ _WHT + localize "STR_EPOCH_TUT_LOCAL" + " [%1"+ _NL;
-_HK = _HK + _ORA + "[T] "									+ _VEC + localize "STR_EPOCH_TUT_TERRAIN"	+ _NL;
+_HK = _HK + _ORA + "[T] "									+ _TER + localize "STR_EPOCH_TUT_TERRAIN"	+ _NL;
 _HK = _HK + _ORA + "[P] "									+ _WHT + localize "STR_EPOCH_TUT_BOUNDARY"	+ _NL;
 _HK = _HK + _ORA + "[F] "									+ _WHT + localize "STR_EPOCH_TUT_RELEASE_HOLD"	+ _NL;
 _HK = _HK + _ORA + "[H] "									+ _WHT + localize "STR_EPOCH_TUT_HIDE_PANEL"	+ _NL;
