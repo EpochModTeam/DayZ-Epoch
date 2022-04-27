@@ -4311,7 +4311,7 @@
 		<Key ID="STR_EQUIP_NAME_SANDBAGS_ROUND">
 			<English>Sandbag Fence (Round)</English>
 			<German>Sandsack (rund)</German>
-			<Russian>Огр-е из мешков (Круг)</Russian>
+			<Russian>Ограда из мешков (Круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SANDBAGS_ROUND">
 			<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>
@@ -14741,7 +14741,7 @@
 		</Key>
 		<Key ID="STR_BUILT_SANDBAG_Dismantle">
 			<English>Dismantle Bag Fence</English>
-			<Russian>Демонтировать ограждение из мешков</Russian>
+			<Russian>Демонтировать ограду из мешков</Russian>
 			<German>Sandsackwall abbauen</German>
 		</Key>
 		<Key ID="STR_BUILT_HEDGEHOG_Dismantle">
@@ -14762,7 +14762,7 @@
 		</Key>
 		<Key ID="STR_BUILT_SANDBAG">
 			<English>Bag Fence</English>
-			<Russian>Ограждение из мешков</Russian>
+			<Russian>Ограда из мешков</Russian>
 			<French>Sacs de sable</French>
 			<Czech>Val z pytlů</Czech>
 			<German>Sandsackwall</German>
@@ -24974,33 +24974,33 @@
 		<Key ID="STR_EPOCH_PLAYER_273">
 			<English>Craft H-Barrier</English>
 			<German>H-Barriere herstellen</German>
-			<Russian>Создать: H-Barrier</Russian>
+			<Russian>Создать: Мешок Hesco</Russian>
 			<Czech>Vytvořit Velké pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_1">
 			<English>Craft 3x H-Barrier</English>
 			<German>3x H-Barriere herstellen</German>
-			<Russian>Создать: 3x H-Barrier</Russian>
+			<Russian>Создать: 3x Мешка Hesco</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_2">
 			<English>Craft 5x H-Barrier</English>
 			<German>5x H-Barriere herstellen</German>
-			<Russian>Создать: 5x H-Barrier</Russian>
+			<Russian>Создать: 5x Мешков Hesco</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_3">
 			<English>Build H-Barrier</English>
 			<German>H-Barriere aufbauen</German>
-			<Russian>Установить: H-Barrier</Russian>
+			<Russian>Установить: Мешок Hesco</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_4">
 			<English>Build 3x H-Barrier</English>
 			<German>3x H-Barriere aufbauen</German>
-			<Russian>Установить: 3x H-Barrier</Russian>
+			<Russian>Установить: 3x Мешка Hesco</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_5">
 			<English>Build 5x H-Barrier</English>
 			<German>5x H-Barriere aufbauen</German>
-			<Russian>Установить: 5x H-Barrier</Russian>
+			<Russian>Установить: 5x Мешков Hesco</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_274">
 			<English>Craft Sandbag Nest</English>
@@ -25075,13 +25075,13 @@
 		<Key ID="STR_EPOCH_PLAYER_298">
 			<English>Craft Round Fence</English>
 			<German>Sandsackwall(rund) herstellen</German>
-			<Russian>Создать: Круглая ограда</Russian>
+			<Russian>Создать: Ограда из мешков (Круг)</Russian>
 			<Czech>Vytvořit Kulaté oplocení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_299">
 			<English>Build Round Fence</English>
 			<German>Sandsackwall(rund) aufstellen</German>
-			<Russian>Установить: Ограждение из мешков (Круг)</Russian>
+			<Russian>Установить: Ограда из мешков (Круг)</Russian>
 			<Czech>Postavit Kulaté oplocení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_301">
@@ -27354,7 +27354,7 @@
 		<Key ID="STR_CRAFT_DESC_HEMP_SEED">
 			<English>A few hemp seeds.</English>
 			<German>Ein paar Hanfsamen.</German>
-			<Russian>Семена конопли, пригодные для посева.</Russian>
+			<Russian>Несколько семян конопли.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_TOBACCO_SEED">
 			<English>Bag of Tobacco Seeds</English>
@@ -27364,7 +27364,7 @@
 		<Key ID="STR_CRAFT_DESC_TOBACCO_SEED">
 			<English>A few tobacco seeds.</English>
 			<German>Ein paar Tabaksamen.</German>
-			<Russian>Семена табака, пригодные для посева.</Russian>
+			<Russian>Несколько семян табачного растения.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_BLACK_TEA_SEED">
 			<English>Bag of Black Tea Seeds</English>
@@ -27374,7 +27374,7 @@
 		<Key ID="STR_CRAFT_DESC_BLACK_TEA_SEED">
 			<English>A few black tea seeds.</English>
 			<German>Ein paar schwarzer Teesamen.</German>
-			<Russian>Семена чая, пригодные для посева.</Russian>
+			<Russian>Несколько семян чайного дерева.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_COMFREY_SEED">
 			<English>Bag of Comfrey Seeds</English>
@@ -27384,17 +27384,17 @@
 		<Key ID="STR_CRAFT_DESC_COMFREY_SEED">
 			<English>A few comfrey seeds.</English>
 			<German>Ein paar Beinwellsamen.</German>
-			<Russian>Семена окопника, пригодные для посева.</Russian>
+			<Russian>Несколько семян окопника.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
 			<English>Hemp Plant</English>
 			<German>Hanfpflanze</German>
-			<Russian>Конопляная грядка</Russian>
+			<Russian>Конопляное растение</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_HEMP_PLANT">
 			<English>A fully grown hemp plant. Hemp is used to make a variety of commercial and industrial products including rope, clothes, food, paper, textiles, plastics, insulation and biofuel.</English>
 			<German>Eine ausgewachsene Hanfpflanze. Hanf wird für eine Vielfalt von kommerziellen und industriellen Produkten einschließlich Seile, Kleider, Papier, Textilien, Plastik, Dämmstoffe und Biokraftstoff genutzt.</German>
-			<Russian>Полностью возделанная конопляная грядка. Используется для изготовления лекарств и различных предметов.</Russian>
+			<Russian>Полностью выращенное растение конопли. Используется для изготовления лекарств и различных предметов.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_PLANT_HEMP_PLANT">
 			<English>Plant Hemp</English>
@@ -27404,7 +27404,7 @@
 		<Key ID="STR_CRAFT_HEMP_PLANT">
 			<English>Craft Hemp Plant</English>
 			<German>Hanfpflanze herstellen</German>
-			<Russian>Создать: Конопляная грядка</Russian>
+			<Russian>Создать: Конопляное растение</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PUMPKIN">
 			<English>Pumpkin</English>
@@ -30199,22 +30199,22 @@
 		<Key ID="STR_EQUIP_NAME_21_HBARRIER">
 			<English>Sandbag Cube (H-barrier)</English>
 			<German>Sandsack (H-Barriere)</German>
-			<Russian>Мешки с песком (H-barrier)</Russian>
+			<Russian>Мешок Hesco</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_21_HBARRIER">
 			<English>Hesco barrier: A buildable object that is used for fortification purposes.</English>
 			<German>Hesco Barriere(Schanzkorb): Ein Objekt, das zum Ausbau und zur Befestigung von Basen dient.</German>
-			<Russian>H-barrier: Большие кубические мешки наполненные песком.</Russian>
+			<Russian>Мешки Hesco (H-barrier): Большие кубические мешки наполненные песком, используются в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_3XHBARRIER">
 			<English>Sandbag Cube (3x H-barrier)</English>
 			<German>Sandsack (3x H-Barriere)</German>
-			<Russian>Мешки с песком (3x H-barrier)</Russian>
+			<Russian>Мешок Hesco (3x)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_5XHBARRIER">
 			<English>Sandbag Cube (5x H-barrier)</English>
 			<German>Sandsack (5x H-Barriere)</German>
-			<Russian>Мешки с песком (5x H-barrier)</Russian>
+			<Russian>Мешок Hesco (5x)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ALUMINUM">
 			<English>Aluminum</English>
@@ -35685,82 +35685,82 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER">
 			<English>Sunflower patch</English>
 			<German>Sonnenblumenbeet</German>
-			<Russian>Подсолнуховый участок</Russian>
+			<Russian>Подсолнуховая грядка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER_DESC">
 			<English>Sunflower patch</English>
 			<German>Sonnenblumenbeet</German>
-			<Russian>Подсолнуховый участок.</Russian>
+			<Russian>Подсолнуховая грядка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT">
 			<English>Carrot patch</English>
 			<German>Karottenbeet</German>
-			<Russian>Морковный участок</Russian>
+			<Russian>Морковная грядка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT_DESC">
 			<English>Carrot patch</English>
 			<German>Karottenbeet</German>
-			<Russian>Морковный участок.</Russian>
+			<Russian>Морковная грядка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO">
 			<English>Potato patch</English>
 			<German>Kartoffelbeet</German>
-			<Russian>Картофельный участок</Russian>
+			<Russian>Картофельная грядка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO_DESC">
 			<English>Potato patch</English>
 			<German>Kartoffelbeet</German>
-			<Russian>Картофельный участок.</Russian>
+			<Russian>Картофельная грядка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP">
 			<English>Hemp plant patch</English>
 			<German>Hanfpflanzenbeet</German>
-			<Russian>Конопляный участок</Russian>
+			<Russian>Конопляная грядка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP_DESC">
 			<English>Hemp plant patch</English>
 			<German>Hanfpflanzenbeet</German>
-			<Russian>Конопляный участок.</Russian>
+			<Russian>Конопляная грядка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO">
 			<English>Tobacco plant patch</English>
 			<German>Tabakpflanzenbeet</German>
-			<Russian>Табачный участок</Russian>
+			<Russian>Табачная грядка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO_DESC">
 			<English>Tobacco plant patch</English>
 			<German>Tabakpflanzenbeet</German>
-			<Russian>Табачный участок.</Russian>
+			<Russian>Табачная грядка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA">
 			<English>Tea plant patch</English>
 			<German>Teepflanzenbeet</German>
-			<Russian>Чайный участок</Russian>
+			<Russian>Чайная грядка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA_DESC">
 			<English>Tea plant patch</English>
 			<German>Teepflanzenbeet</German>
-			<Russian>Чайный участок.</Russian>
+			<Russian>Чайная грядка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_GARLIC">
 			<English>Garlic patch</English>
 			<German>Knoblauchbeet</German>
-			<Russian>Чесночный участок</Russian>
+			<Russian>Чесночная грядка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_GARLIC_DESC">
 			<English>Garlic patch</English>
 			<German>Knoblauchbeet</German>
-			<Russian>Чесночный участок.</Russian>
+			<Russian>Чесночная грядка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_COMFREY">
 			<English>Comfrey patch</English>
 			<German>Beinwellbeet</German>
-			<Russian>Участок Окопника</Russian>
+			<Russian>Грядка Окопника</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_COMFREY_DESC">
 			<English>Comfrey patch</English>
 			<German>Beinwellbeet</German>
-			<Russian>Участок с окопником.</Russian>
+			<Russian>Грядка с окопником.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PUMPKIN">
 			<English>Pumpkin Plant</English>
@@ -36447,47 +36447,47 @@
 		<Key ID="STR_EPOCH_PLAYER_HBF">
 			<English>Craft Heavy Bag Fence</English>
 			<German>Schweren Sandsackzaun herstellen</German>
-			<Russian>Создать: Заграждение из крупных мешков</Russian>
+			<Russian>Создать: Усил. ограда из мешков</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBF">
 			<English>Heavy Bag Fence</English>
 			<German>Schwerer Sandsackzaun</German>
-			<Russian>Заграждение из крупных мешков</Russian>
+			<Russian>Усил. ограда из мешков</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBF">
 			<English>Heavy Bag Fence: A buildable object that is used for fortification purposes.</English>
 			<German>Schwerer Sandsackzaun: Zum Befestigen von Stellungen.</German>
-			<Russian>Заграждение из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
+			<Russian>Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF_CORNER">
 			<English>Craft Heavy Bag Fence (Corner)</English>
 			<German>Schwerer Sandsackzaun (Ecke) herstellen</German>
-			<Russian>Создать: Заграждение из крупных мешков (Угол)</Russian>
+			<Russian>Создать: Усил. ограда из мешков (Угол)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBF_CORNER">
 			<English>Heavy Bag Fence (Corner)</English>
 			<German>Schwerer Sandsackzaun (Ecke)</German>
-			<Russian>Заграждение из крупных мешков (Угол)</Russian>
+			<Russian>Усил. ограда из мешков (Угол)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBF_CORNER">
 			<English>Heavy Bag Fence (Corner): A buildable object that is used for fortification purposes.</English>
 			<German>Schwerer Sandsackzaun (Ecke): Zum Befestigen von Stellungen.</German>
-			<Russian>Угловое заграждение из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
+			<Russian>Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBF_ROUND">
 			<English>Craft Heavy Bag Fence (Round)</English>
 			<German>Schwerer Sandsackzaun (Rund) herstellen</German>
-			<Russian>Создать: Заграждение из крупных мешков (Круг)</Russian>
+			<Russian>Создать: Усил. ограда из мешков (Круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBF_ROUND">
 			<English>Heavy Bag Fence (Round)</English>
 			<German>Schwerer Sandsackzaun (Rund)</German>
-			<Russian>Заграждение из крупных мешков (Круг)</Russian>
+			<Russian>Усил. ограда из мешков (Круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBF_ROUND">
 			<English>Heavy Bag Fence (Round): A buildable object that is used for fortification purposes.</English>
 			<German>Schwerer Sandsackzaun (Rund): Zum Befestigen von Stellungen.</German>
-			<Russian>Полукруглое заграждение из крупных мешков: Строительный объект, который используется в оборонительных целях.</Russian>
+			<Russian>Строительный объект, который используется в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_WBARRIER5">
 			<English>Craft Warfare Barrier 5x</English>
@@ -36552,22 +36552,22 @@
 		<Key ID="STR_EPOCH_PLAYER_HBARRIER5CURVED">
 			<English>Craft Sandbag Cube (5x H-barrier curved)</English>
 			<German>Sandsack (5x H-Barriere Gebogen) herstellen</German>
-			<Russian>Создать: Защитный барьер 5x (Изогнутый)</Russian>
+			<Russian>Создать: Мешок Hesco 5x (Изогнутый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_HBARRIER5CURVED_2">
 			<English>Build Sandbag Cube (5x H-barrier curved)</English>
 			<German>Sandsack (5x H-Barriere Gebogen) bauen</German>
-			<Russian>Установить: Защитный барьер 5x (Изогнутый)</Russian>
+			<Russian>Установить: Мешок Hesco 5x (Изогнутый)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_HBARRIER5CURVED">
 			<English>Sandbag Cube (5x H-barrier curved)</English>
 			<German>Sandsack (5x H-Barriere Gebogen)</German>
-			<Russian>Защитный барьер 5x (Изогнут)</Russian>
+			<Russian>Мешок Hesco 5x (Изогнутый)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HBARRIER5CURVED">
 			<English>Hesco barrier: A buildable object that is used for fortification purposes.</English>
 			<German>Hesco Barriere(Schanzkorb): Ein Objekt, das zum Ausbau und zur Befestigung von Basen dient.</German>
-			<Russian>H-barrier: Большие кубические мешки наполненные песком.</Russian>
+			<Russian>Мешки Hesco (H-barrier): Большие кубические мешки наполненные песком, используются в оборонительных целях.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_LARGENEST">
 			<English>Craft Large Sandbag Nest</English>
