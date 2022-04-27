@@ -22,7 +22,7 @@ class BagFenceRound_DZ: BuiltItems {
 	icon = "\Ca\misc3\data\Icons\icon_bagFenceRound_ca.paa";
 	mapSize = 2;
 	vehicleClass = "DayZ Epoch Buildables";
-	displayName = $STR_EQUIP_NAME_21_ROUND;
+	displayName = $STR_EQUIP_NAME_SANDBAGS_ROUND;
 	simulation = "house";
 	destrType = "DestructNo";
 	armor = 2500;
