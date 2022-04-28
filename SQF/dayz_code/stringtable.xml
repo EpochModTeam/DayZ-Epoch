@@ -37556,7 +37556,7 @@
 		<Key ID="STR_CL_ZSC_DEPOSIT_OK">
 			<English>You have deposited %1 %2 into the %3.</English>
 			<German>Du hast %1 %2 in %3 eingezahlt.</German>
-			<Russian>Вы положили %1 %2 в %3.</Russian>
+			<Russian>Вы положили %1 %2 в %3</Russian>
 			<French>Vous avez déposé %1 %2 dans votre %3.</French>
 			<Spanish>Depositaste %1 %2 dentro de %3.</Spanish>
 		</Key>
@@ -37640,7 +37640,7 @@
 		<Key ID="STR_CL_ZSC_GLOBAL_DEPOSIT_OK">
 			<English>You have deposited %1 %2.</English>
 			<German>Du hast %1 %2 eingezahlt.</German>
-			<Russian>Вы положили %1 %2.</Russian>
+			<Russian>Вы положили %1 %2</Russian>
 			<French>Vous avez déposé %1 %2.</French>
 			<Spanish>Has depositado %1 %2.</Spanish>
 		</Key>
@@ -38755,12 +38755,12 @@
 		<Key ID="STR_CL_CLAIM_MARKER">
 			<English>Claimed by %1</English>
 			<German>Beansprucht von %1</German>
-			<Russian>Занято %1</Russian>
+			<Russian>Занял %1</Russian>
 		</Key>
 		<Key ID="STR_CL_TIMEOUT_MARKER">
 			<English>%1 Claim Timeout [%2]</English>
 			<German>%1 Anspruchauszeit [%2]</German>
-			<!-- <Russian>%1 таймер [%2]</Russian> -->
+			<Russian>%1: время на возврат %2 сек.</Russian>
 		</Key>
 		<Key ID="STR_CL_CLAIM_WARNING">
 			<English>You are in %1's mission. Ask %1 for permission!</English>
@@ -38775,12 +38775,12 @@
 		<Key ID="STR_CL_MISSION_HERO">
 			<English>Hero %1</English>
 			<German>Held %1</German>
-			<Russian>Герой %1</Russian>
+			<Russian>[Герои] %1</Russian>
 		</Key>
 		<Key ID="STR_CL_MISSION_BANDIT">
 			<English>Bandit %1</English>
 			<German>Bandit %1</German>
-			<Russian>Бандит %1</Russian>
+			<Russian>[Бандиты] %1</Russian>
 		</Key>
 		<Key ID="STR_CL_MISSION_HEROS">
 			<English>Heroes</English>
@@ -38795,12 +38795,12 @@
 		<Key ID="STR_CL_MISSION_HERO_COUNT">
 			<English>Hero %1 (%2 %3)</English>
 			<German>Held %1 (%2 %3)</German>
-			<Russian>Герой %1 (%2 %3)</Russian>
+			<Russian>[Герои] %1 (Осталось: %2)</Russian>
 		</Key>
 		<Key ID="STR_CL_MISSION_BANDIT_COUNT">
 			<English>Bandit %1 (%2 %3)</English>
 			<German>Bandit %1 (%2 %3)</German>
-			<Russian>Бандит %1 (%2 %3)</Russian>
+			<Russian>[Бандиты] %1 (Осталось: %2)</Russian>
 		</Key>
 		<Key ID="STR_CL_BASE_TITLE">
 			<English>Military Base</English>
