@@ -114,12 +114,13 @@ if (_canBuild) then {
 	local _tooLow		= false;					// warn player object cannot go below ground
 	local _isOnWater	= false;					// object placed in or above water
 	local _heightASL	= 0;						// test if object is below max sea level
-
 	local _minHeight	= 0;						// used for nounderground
 	local _startPos		= [];
 	local _playerASL	= 0;
 	local _startHeight	= 0;						// raise object up on creation if necessary
-
+	local _staticOffset	= 0;
+	local _staticOffsetSet	= false;
+	local _isStaticWeapon	= false;
 	local _vectoringEnabled	= false;
 	local _snappingEnabled	= false;
 	local _snapList		= [];						// helper panel array of valid snapping points
@@ -141,7 +142,6 @@ if (_canBuild) then {
 	DZE_SnapSelIdx		= -2;						// array of object snapping points
 	DZE_nowBuilding		= false;					// notify snap build so it can clean up helpers
 	snapGizmosNearby	= [];
-	local _isStaticWeapon	= false;
 
 	local _walk		= "amovpercmwlk";				// animation state substrings
 	local _run		= "amovpercmrun";
@@ -237,6 +237,12 @@ if (_canBuild) then {
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	local _setup_object = {
+
+		if (!_staticOffsetSet) then {
+			_object setVectorUp [0,0,1];
+			_staticOffset = ((getPosASL _object) select 2) - ((getPosASL _modelBase) select 2);
+			_staticOffsetSet = true;
+		};
 
 		DZE_updateVec		= false;	// trigger update on true
 		DZE_memDir		= 0;		// object rotation (Q/E keys)
@@ -705,7 +711,8 @@ if (_canBuild) then {
 			_objectHelperPos = ATLToASL _pos;
 		};
  
-		if (_vectoringEnabled || {_classname in DZE_StaticWeapons}) then {
+		//if (_vectoringEnabled || {_classname in DZE_StaticWeapons}) then {
+		if (_vectoringEnabled || _isStaticWeapon) then {
 			_objectHelper setVectorUp _vector;				// align
 		};
 
@@ -887,9 +894,6 @@ if (_canBuild) then {
 	local _text		= getText	(configFile >> "CfgVehicles" >> _classname >> "displayName");					// e.g. "Cinder Wall Full"
 	local _ghost		= getText	(configFile >> "CfgVehicles" >> _classname >> "ghostpreview");					// e.g. "CinderWall_Preview_DZ"
 	local _lockable		= getNumber	(configFile >> "CfgVehicles" >> _classname >> "lockable");					// defaults to 0
-	local _staticOffset	= getNumber	(configFile >> "CfgVehicles" >> _classname >> "staticOffset");
-
-	_isStaticWeapon = ((_classname isKindof "StaticWeapon") || {_classname in DZE_StaticWeapons});
 
 	local _offset = getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 	if (count _offset == 0) then {
@@ -984,6 +988,8 @@ if (_canBuild) then {
 		DZE_snapRadius	= _diag * 0.5 + 9;				// 9 is half the largest bounding box diagonal (rounded up) of the largest snappable objects in the game; currently the Land_WarfareBarrier10xTall_DZ and the MetalContainer2D_DZ.
 		_refreshDist	= DZE_snapRadius * 0.5;				// distance object moves before the snap auto-refresh triggers
 	};
+
+	_isStaticWeapon = ((_object isKindof "StaticWeapon") || {_classname in DZE_StaticWeapons});
 
 	if (!(DZE_buildItem in DZE_noRotate) && !_isStaticWeapon) then {
 		_vectoringEnabled = true;
@@ -1601,10 +1607,10 @@ if (_canBuild) then {
 						};
 						publicVariableServer "PVDZ_obj_Publish";
 					};
-
-					if (_builtObject isKindOf "StaticWeapon" || {_classname in DZE_StaticWeapons}) then {
+					if (_isStaticWeapon) then {
 						[_builtObject,DZE_clearStaticAmmo,false] call fn_vehicleAddons;
-					};				};
+					};
+				};
 				if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
 					_builtObject addEventHandler ["HandleDamage", {0}];
 				};
