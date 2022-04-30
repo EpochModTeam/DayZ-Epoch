@@ -171,6 +171,7 @@ if (!isDedicated) then {
 	timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 	dayz_maxGlobalZeds = 500; // Maximum allowed zeds on the map
 	dayz_paraSpawn = false; // Helo jump spawn
+	DZE_enableBloodRegen = true; // player slowly regains blood if they are well fed and resting
 	DZE_SelfTransfuse = true; // Allow players to give themselves blood transfusions
 	DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount, infection chance, cool-down (seconds)]
 	dayz_DamageMultiplier = 1; // Increases the damage to the player by zombie attacks	

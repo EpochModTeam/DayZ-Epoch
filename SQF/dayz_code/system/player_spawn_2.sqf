@@ -212,26 +212,25 @@ while {1 == 1} do {
 		_radTimer = 0;
 	};
 
-	// Regen some blood if player is well fed and resting
-	// Attention: regen _result must not trigger the "up" arrow of the blood icon
-	if (r_player_blood < r_player_bloodTotal && {(dayz_hunger < SleepFood) && (dayz_thirst < SleepWater) && !r_player_injured && !r_player_infected && !(r_player_Sepsis select 0) && !r_player_unconscious}) then {
-		_result = (1-(dayz_hunger + dayz_thirst)/(SleepWater + SleepFood));
+	if (DZE_enableBloodRegen) then {
+		// Regen some blood if player is well fed and resting
+		// Attention: regen _result must not trigger the "up" arrow of the blood icon
+		if (r_player_blood < r_player_bloodTotal && {(dayz_hunger < SleepFood) && (dayz_thirst < SleepWater) && !r_player_injured && !r_player_infected && !(r_player_Sepsis select 0) && !r_player_unconscious}) then {
+			_result = (1-(dayz_hunger + dayz_thirst)/(SleepWater + SleepFood));
 
-		call {
-			if (_result < 0.25) exitWith {}; // not well fed
-			if ((toArray(animationState player) select 5) == 112) exitWith { // prone
-				_result = _result * (1 + 10 * (r_player_bloodTotal - r_player_blood) / r_player_bloodTotal);
+			call {
+				if (_result < 0.25) exitWith {}; // not well fed
+				if ((toArray(animationState player) select 5) == 112) exitWith { // prone
+					_result = _result * (1 + 10 * (r_player_bloodTotal - r_player_blood) / r_player_bloodTotal);
+				};
+				if (speed player < 1) exitWith { // still
+					_result = _result * (1 + 4 * sqrt((r_player_bloodTotal - r_player_blood) / r_player_bloodTotal));
+				};
 			};
-			if (speed player < 1) exitWith { // still
-				_result = _result * (1 + 4 * sqrt((r_player_bloodTotal - r_player_blood) / r_player_bloodTotal));
-			};
+			r_player_bloodregen = r_player_bloodregen + _result;
 		};
-		r_player_bloodregen = r_player_bloodregen + _result;
 	};
-
-	if (r_player_blood > r_player_bloodTotal) then {
-		r_player_blood = r_player_bloodTotal;
-	};
+	r_player_blood = r_player_blood min r_player_bloodTotal;
 
 	//Record low bloow
 	_lowBlood = player getVariable ["USEC_lowBlood", false];
