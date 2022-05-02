@@ -329,23 +329,16 @@ if (!isDedicated) then {
 	};
 
 	dayz_losCheck = {
-		private ["_cantSee","_target","_agent"];
-		_target = _this select 0; // PUT THE PLAYER IN FIRST ARGUMENT!!!!
-		_agent = _this select 1;
-		_cantSee = true;
+		local _target	= _this select 0;
+		local _agent	= _this select 1;
+		local _cantSee	= true;
 
 		if ((!isNull _target) && {!isNull _agent}) then {
-			private ["_tPos","_zPos"];
-			_tPos = eyePos _target;
-			_zPos = eyePos _agent;
-			if ((count _tPos > 0) && {count _zPos > 0}) then {
-				_cantSee = terrainIntersectASL [(eyePos _target), (eyePos _agent)];
-				//diag_log ("terrainIntersectASL: " + str(_cantSee));
+			local _los = [eyePos _target, eyePos _agent];	// [player, zombie]
+			_cantSee = lineIntersects _los;
 
-				if (!_cantSee) then {
-					_cantSee = lineIntersects [(eyePos _target), (eyePos _agent)];
-					//diag_log ("lineIntersects: " + str(_cantSee));
-				};
+			if (!_cantSee) then {
+				_cantSee = terrainIntersectASL _los;
 			};
 		};
 		_cantSee
