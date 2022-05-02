@@ -387,7 +387,7 @@ fnc_evr = {
 			local _vehicle = vehicle player;
 			
 			if (player == _vehicle) then {
-				if (_hasAPSI) then {
+				if (_hasAPSI || {DZE_EVRProtectInside && dayz_inside}) then {
 					player switchMove "";
 					[objNull, player, rswitchMove, ""] call RE;
 				} else {
@@ -401,7 +401,7 @@ fnc_evr = {
 					player action ["engineOff",_vehicle];
 					_vehicle setFuel _fuel;
 				} else {
-					if !(_hasAPSI) then {
+					if (!_hasAPSI && {!DZE_EVRProtectInside || (DZE_EVRProtectInside && !dayz_inside)}) then {
 						player action ["eject",_vehicle];
 						[] spawn {
 							uiSleep 3;
@@ -417,13 +417,11 @@ fnc_evr = {
 			uiSleep 0.1;
 			titleText["","BLACK OUT",1];
 
-			if (!_hasAPSI) then {
+			if (!_hasAPSI && {!DZE_EVRProtectInside || (DZE_EVRProtectInside && !dayz_inside)}) then {
 				r_player_inpain = true;
 				player setVariable["USEC_inPain",true,true];
-				if (!dayz_inside) then {
-					local _blood = r_player_blood - ((DZE_EVRBloodLoss select 0) max random(DZE_EVRBloodLoss select 1)); // Player is not inside a building so reduce blood.
-					r_player_blood = [_blood,1000] select (_blood < 1000); // Player will have at least 1000 blood.
-				};
+				local _blood = r_player_blood - ((DZE_EVRBloodLoss select 0) max random(DZE_EVRBloodLoss select 1)); // Player is not inside a building so reduce blood.
+				r_player_blood = [_blood,1000] select (_blood < 1000); // Player will have at least 1000 blood.
 			};
 
 			uiSleep 1;
@@ -455,7 +453,7 @@ fnc_evr = {
 			"dynamicBlur" ppEffectCommit 16;
 
 			if (!_hasAPSI) then {
-				if (player == vehicle player) then {
+				if (player == vehicle player && {!DZE_EVRProtectInside || (DZE_EVRProtectInside && !dayz_inside)}) then {
 					uiSleep 10; // 10 second knockout.
 					[nil, player, rSWITCHMOVE, "AmovPpneMstpSnonWnonDnon_healed"] call RE;
 					player SWITCHMOVE "AmovPpneMstpSnonWnonDnon_healed";
