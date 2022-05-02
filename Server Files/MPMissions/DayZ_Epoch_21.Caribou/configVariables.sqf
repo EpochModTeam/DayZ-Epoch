@@ -189,6 +189,7 @@ if (!isDedicated) then {
 	DZE_BuildHeightLimit = 0; // 0 = No building height limit | >0 = Height limit in meters | Changing this to 30 would limit the maximum built height to 30 meters.
 	DZE_HeightLimitColor = true; // display plot boundary helpers in red if they are above DZE_BuildHeightLimit
 	DZE_requireplot = 1; // Players require a plot to build
+	DZE_requirePlotOverride = []; // Add a list of classnames that require a plot pole to build. This will override the config settings. E.g. ["DomeTentStorage","VaultStorageLocked","VaultStorage2Locked","TallSafeLocked","LockboxStorageLocked","LockboxStorage2Locked","LockboxStorageWinterLocked","LockboxStorageWinter2Locked"];
 	DZE_PlotPole = [30,45]; // Plot radius, minimum distance between plots
 	DZE_BuildOnRoads = false; // Allow building on roads
 	DZE_BuildingLimit = 150; // Maximum allowed objects per plot

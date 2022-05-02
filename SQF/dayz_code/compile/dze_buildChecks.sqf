@@ -44,6 +44,8 @@ local _message		= "";	// for blacklisted zones and buildings
 if (isNumber (configFile >> "CfgVehicles" >> _classname >> "requireplot")) then {
 	_requireplot = getNumber(configFile >> "CfgVehicles" >> _classname >> "requireplot");
 };
+if (_classname in DZE_requirePlotOverride) then {_requireplot = 1;};
+
 local _plotcheck	= [player, _isPole] call FNC_find_plots;
 local _distance		= _plotcheck select 0;
 local _isNearPlot	= _plotcheck select 1;

@@ -711,7 +711,6 @@ if (_canBuild) then {
 			_objectHelperPos = ATLToASL _pos;
 		};
  
-		//if (_vectoringEnabled || {_classname in DZE_StaticWeapons}) then {
 		if (_vectoringEnabled || _isStaticWeapon) then {
 			_objectHelper setVectorUp _vector;				// align
 		};
@@ -911,6 +910,7 @@ if (_canBuild) then {
 	if (isNumber (configFile >> "CfgVehicles" >> _classname >> "requireplot")) then {
 		_requireplot = getNumber(configFile >> "CfgVehicles" >> _classname >> "requireplot");
 	};
+	if (_classname in DZE_requirePlotOverride) then {_requireplot = 1;};
 
 	useModelCenter = 0;	// global
 
