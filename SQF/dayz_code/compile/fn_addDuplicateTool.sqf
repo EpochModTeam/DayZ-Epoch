@@ -12,25 +12,32 @@ _this: string - toolbelt item classname to check and add
 How to use:
 "ItemSledge" call player_addDuplicateTool;
 */
-private "_bag";
+local _tool = _this;
+local _displayName = getText(configFile >> "CfgWeapons" >> _tool >> "displayName");
 
-if (_this in items player) then {
-	_bag = unitBackpack player;
-	if (!isNull _bag) then {
-		systemChat format[localize "str_epoch_player_313",_this];
-		_bag addWeaponCargoGlobal [_this,1];
+if (_tool in items player) then {
+	local _bag = unitBackpack player;
+	if (!isNull _bag) then {	
+		local _freeSlots = call fnc_freeBackpackSlots;
+		if (_freeSlots > 0)	then {
+			systemChat format[localize "str_epoch_player_313",_displayName];			
+			_bag addWeaponCargoGlobal [_tool,1];
+		} else {
+			[_tool,2,1] call fn_dropItem;
+			systemChat format[localize "str_actions_noroom",_displayName];
+		};	
 	} else {
-		[_this,2,1] call fn_dropItem;
-		systemChat format[localize "str_actions_noroom",_this];
+		[_tool,2,1] call fn_dropItem;
+		systemChat format[localize "str_actions_noroom",_displayName];
 	};
 } else {
 	//Remove melee magazines (BIS_fnc_invAdd fix)
 	false call dz_fn_meleeMagazines;
 	
-	if !([player,_this] call BIS_fnc_invAdd) then {
+	if !([player,_tool] call BIS_fnc_invAdd) then {
 		systemChat localize "str_epoch_player_107";
-		[_this,2,1] call fn_dropItem;
-		systemChat format[localize "str_actions_noroom",_this];
+		[_tool,2,1] call fn_dropItem;
+		systemChat format[localize "str_actions_noroom",_displayName];
 	};
 	true call dz_fn_meleeMagazines;
 };
