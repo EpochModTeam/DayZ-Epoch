@@ -535,6 +535,7 @@ if (!isDedicated) then {
 	
 	// EVR Storms
 	if (DZE_EVR) then {
+		DZE_EVRWhiteFlash = true;	//	Turns On/Off the white flash within the EVR Storm, this is an important option for players who suffers from epilepsy.
 		DZE_EVRDamageItemsChance = .20; // Chance that an EVR storm will damage items in inventory. From 0 to 1. Chance applies to each item. Set to 0 to disable.
 		DZE_EVRDamageItems = [["Binocular_Vector","Binocular_VectorBroken"],["NVGoggles_DZE","ItemNVGFullBroken_DZE"],["NVGoggles","ItemNVGBroken_DZE"],["ItemGPS","ItemGPSBroken_DZE"],["ItemRadio","ItemRadioBroken_DZE"],["Smartphone_DZE","SmartphoneBroken_DZE"]]; // [item (input), damaged item (output)]. Items that have a chance to be damaged by EMP.
 		DZE_EVRBloodLoss = [4000,8000]; // Random number of blood loss if a player does not have an APSI and/or is not inside a building [min, max]. Player will not die, there is a minimum of 1000 after the calculation

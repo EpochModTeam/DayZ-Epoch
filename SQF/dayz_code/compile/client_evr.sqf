@@ -320,7 +320,7 @@ fnc_evr = {
 			// Define arrays of sound effects
 			local _hit = ["ns_evrHit1","ns_evrHit2","ns_evrHit3"];
 			local _wave = ["ns_evrWave1","ns_evrWave2","ns_evrWave3"];
-			#define FLASH titleText["","WHITE OUT",1]; titleText["","WHITE IN",1]; uiSleep 0.25;
+			#define FLASH if (DZE_EVRWhiteFlash) then {titleText["","WHITE OUT",1]; titleText["","WHITE IN",1]; uiSleep 0.25;};
 			
 			FLASH
 			playSound (_hit select (round (random 2)));
@@ -461,5 +461,4 @@ fnc_evr = {
 		};
 	};
 };
-
 "PVDZE_EVR" addPublicVariableEventHandler {(_this select 1) spawn fnc_evr;};
