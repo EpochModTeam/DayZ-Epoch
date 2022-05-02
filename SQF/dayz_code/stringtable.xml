@@ -25152,13 +25152,17 @@
 			<German>Zum Kommandantensitz</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_313">
-			<English>%1 is already in your inventory. Adding to backpack!</English>
-			<German>%1 ist bereits in deinem Inventar. Hinzufügen zum Rucksack!</German>
+			<English>%1 is already in your inventory and got added to your backpack!</English>
+			<German>%1 ist bereits in deinem Inventar und wurde deinem Rucksack hinzugefügt!</German>
 			<Russian>%1 уже есть в вашем инвентаре. Перемещено в рюкзак!</Russian>
 			<Dutch>%1 is al in je inventaris. Toevoegen aan rugzak!</Dutch>
 			<French>%1 est déjà dans votre inventaire. Ajout d'un sac à dos!</French>
 			<Czech>%1 je již ve vašem inventáři. Přidání do batoh!</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_313_1">
+			<English>%1 is already in your inventory and got added to your vehicle!</English>
+			<German>%1 ist bereits in deinem Inventar und wurde deinem Fahrzeug hinzugefügt!</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_315">
 			<English>%1 is restricted.</English>
 			<German>%1 ist gesperrt.</German>

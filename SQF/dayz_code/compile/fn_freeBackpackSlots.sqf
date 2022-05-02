@@ -29,7 +29,7 @@ if (!isNull _bag) then {
 		call {
 			if (_weaponInvType == 1) exitwith {_qtyMaxBag = _qtyMaxBag + (10*_qtyWeapon);};
 			if (_weaponInvType == 2) exitwith {_qtyMaxBag = _qtyMaxBag + (5*_qtyWeapon);};
-			if (_weaponInvType in [256,4096]) exitwith {_qtyMaxBag = _qtyMaxBag + _qtyWeapon;};
+			if (_weaponInvType in [131072,4096]) exitwith {_qtyMaxBag = _qtyMaxBag + _qtyWeapon;};
 		};
 	} foreach _weaponsBag;	
 	
