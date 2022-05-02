@@ -384,13 +384,31 @@ fnc_evr = {
 			disableUserInput false; disableUserInput false;
 			disableUserInput true; disableUserInput true;
 			
-			if (player == vehicle player) then {
+			local _vehicle = vehicle player;
+			
+			if (player == _vehicle) then {
 				if (_hasAPSI) then {
 					player switchMove "";
 					[objNull, player, rswitchMove, ""] call RE;
 				} else {
 					player switchMove "AcinPercMrunSnonWnonDf_agony"; // knockout animation
 					[objNull, player, rSwitchMove, "AcinPercMrunSnonWnonDf_agony"] call RE;
+				};
+			} else {
+				if (DZE_EVRHandleVehicles && {isEngineOn _vehicle && ((speed _vehicle) > 10)}) then {
+					local _fuel = fuel _vehicle;
+					_vehicle setFuel 0;
+					player action ["engineOff",_vehicle];
+					_vehicle setFuel _fuel;
+				} else {
+					if !(_hasAPSI) then {
+						player action ["eject",_vehicle];
+						[] spawn {
+							uiSleep 3;
+							player switchMove "AcinPercMrunSnonWnonDf_agony"; // knockout animation
+							[objNull, player, rSwitchMove, "AcinPercMrunSnonWnonDf_agony"] call RE;
+						};
+					};					
 				};
 			};
 
