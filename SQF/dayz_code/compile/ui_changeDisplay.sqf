@@ -12,10 +12,7 @@ if !(DZE_UI == 0) then {
 	3 cutRsc [_ui,"PLAIN",0];
 	if (Z_singleCurrency) then {16 cutRsc ["ZSC_Money_Display","PLAIN"];};
 	call player_updateGui;
-	//call ui_initDisplay; // I think this function is old and no longer necessary - JasonTM.
-	//hintSilent ""; // not sure why this is here.
 } else {
 	3 cutRsc ["default","PLAIN",0];
 	if (Z_singleCurrency) then {16 cutRsc ["default","PLAIN"];};
-	//hintSilent ""; // or here.
 };
