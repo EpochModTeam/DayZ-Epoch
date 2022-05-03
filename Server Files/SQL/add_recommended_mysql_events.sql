@@ -85,38 +85,29 @@ END
 DELIMITER ;
 
 -- ----------------------------
--- Event structure for removeDamagedVehicles
+-- Removes destroyed vehicles and objects
 -- ----------------------------
 DROP EVENT IF EXISTS `removeDamagedVehicles`;
 DELIMITER ;;
-CREATE EVENT `removeDamagedVehicles` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes damaged vehicles' DO DELETE FROM `Object_DATA` WHERE Damage >= 1
+CREATE EVENT `removeDamagedVehicles` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes destroyed vehicles and objects' DO DELETE FROM `Object_DATA` WHERE Damage >= 1
 ;;
 DELIMITER ;
 
 -- ----------------------------
--- Event structure for removeObjectEmpty
--- ----------------------------
-DROP EVENT IF EXISTS `removeObjectEmpty`;
-DELIMITER ;;
-CREATE EVENT `removeObjectEmpty` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes abandoned storage objects and vehicles' DO DELETE FROM `Object_DATA` WHERE `LastUpdated` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 14 DAY) AND `Datestamp` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 24 DAY) AND ( (`Inventory` IS NULL) OR (`Inventory` = '[]') OR (`Inventory` = '[[[],[]],[[],[]],[[],[]]]') )
-;;
-DELIMITER ;
-
--- ----------------------------
--- Event structure for removeObjectOld
+-- Removes old objects and vehicles after 14 days if not updated
 -- ----------------------------
 DROP EVENT IF EXISTS `removeObjectOld`;
 DELIMITER ;;
-CREATE EVENT `removeObjectOld` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes old objects and vehicles' DO DELETE FROM `Object_DATA` WHERE `LastUpdated` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 24 DAY) AND `Datestamp` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 42 DAY)
+CREATE EVENT `removeObjectOld` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes old objects and vehicles after 14 days if not updated' DO DELETE FROM `Object_DATA` WHERE `LastUpdated` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 14 DAY)
 ;;
 DELIMITER ;
 
 -- ----------------------------
--- Event structure for setDamageOnAge
+-- Sets damage on objects so they can be maintained
 -- ----------------------------
 DROP EVENT IF EXISTS `setDamageOnAge`;
 DELIMITER ;;
-CREATE EVENT `setDamageOnAge` ON SCHEDULE EVERY 1 DAY COMMENT 'This sets damage on a wall so that it can be maintained' DO UPDATE `Object_DATA` SET `Damage`=0.1 WHERE `ObjectUID` <> 0 AND `CharacterID` <> 0 AND `Datestamp` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 3 DAY) AND ( (`Inventory` IS NULL) OR (`Inventory` = '[]') OR (`Classname` IN ('Land_DZE_GarageWoodDoorLocked','Land_DZE_LargeWoodDoorLocked','Land_DZE_WoodDoorLocked','CinderWallDoorLocked_DZ','CinderWallDoorSmallLocked_DZ','WoodenGate_1_DZ','WoodenGate_2_DZ','WoodenGate_3_DZ','WoodenGate_4_DZ','Land_DZE_WoodGateLocked','CinderGateLocked_DZ','Metal_DrawbridgeLocked_DZ','Land_DZE_WoodOpenTopGarageLocked','CinderGarageOpenTopLocked_DZ','DoorLocked_DZ','CinderWallWindowLocked_DZ','CinderDoorHatchLocked_DZ','Concrete_Bunker_Locked_DZ','CinderWallWindowLocked_DZ','Plastic_Pole_EP1_DZ')) )
+CREATE EVENT `setDamageOnAge` ON SCHEDULE EVERY 1 DAY COMMENT 'Sets damage on objects so they can be maintained' DO UPDATE `Object_DATA` SET `Damage`=0.1 WHERE `Hitpoints` = '[]' AND `Fuel` = 0.0 AND `Datestamp` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 3 DAY)
 ;;
 DELIMITER ;
 
