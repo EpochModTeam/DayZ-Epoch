@@ -64,6 +64,10 @@ while {(!isNull _display) && !r_player_dead} do {
 				closeDialog 2;
 			};
 		};
+		case (DZE_EVRStormRunning) : {
+			_btnAbort ctrlEnable false;
+			[localize "STR_EPOCH_PLAYER_12_1",1] call dayz_rollingMessages;
+		};		
 		case (_inCombat) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText, ceil (_timeout - diag_tickTime)];

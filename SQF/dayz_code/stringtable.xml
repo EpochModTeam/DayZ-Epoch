@@ -23323,6 +23323,10 @@
 			<French>Impossible d'interrompre dans un marché!</French>
 			<Czech>Nelze se odpojit, když jste v trader area!</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_12_1">
+			<English>You cannot abort while an EVR Storm is running!</English>
+			<German>Du darfst dich nicht während eines EVR-Sturms ausloggen!</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_16">
 			<English>You cannot pack while another player is nearby.</English>
 			<German>Packen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>

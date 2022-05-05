@@ -186,6 +186,9 @@ fnc_evr = {
 		};
 			
 		if (_this == "Stage5") exitWith {
+			DZE_EVRStormRunning = true;
+			[player,false] call fnc_setCombat;
+			
 			if (_hasAPSI) then {
 				playSound "ns_evrDetect";
 				uiSleep 0.2;
@@ -231,7 +234,7 @@ fnc_evr = {
 			"chromAberration" ppEffectEnable false;
 		};
 			
-		if (_this == "Stage6") exitWith {
+		if (_this == "Stage6") exitWith {		
 			if (_hasAPSI) then {
 				playSound "ns_evrDetect";
 				uiSleep 0.2;
@@ -277,14 +280,11 @@ fnc_evr = {
 			"chromAberration" ppEffectEnable false;
 		};
 
-		if (_this == "Stage7") exitWith {
-			
+		if (_this == "Stage7") exitWith {			
 			if (_hasAPSI) then {
 				playSound "ns_evrDetect";
 				cutRsc ["RscAPSI_Start","PLAIN"];
 			};
-
-			player setVariable["startcombattimer", 1];
 
 			playSound "ns_evrBegin";
 			"dynamicBlur" ppEffectAdjust [8];
@@ -359,7 +359,7 @@ fnc_evr = {
 			if (!_hasAPSI) then {
 				playSound "ns_evrPsy"; // This is the voices sound file
 			};
-
+			
 			uiSleep 4;
 			FLASH
 			playSound (_wave select (round (random 2)));
@@ -427,7 +427,12 @@ fnc_evr = {
 			uiSleep 1;
 			4 fadeSound 0;
 			uiSleep 10;
-			6 fadeSound 1;
+			
+			if (dayz_soundMuted) then {
+				6 fadeSound 0.25;
+			} else {
+				6 fadeSound 1;
+			};
 			titleText["","BLACK IN",10];
 			ppEffectDestroy _effect;
 
@@ -474,6 +479,8 @@ fnc_evr = {
 			disableUserInput false; disableUserInput false;
 			disableUserInput true; disableUserInput true;
 			disableUserInput false; disableUserInput false;
+			DZE_EVRStormRunning = false;
+			player setVariable["startcombattimer", 0];
 		};
 	};
 };

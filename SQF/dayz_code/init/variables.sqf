@@ -453,6 +453,7 @@ if (!isDedicated) then {
 	DZE_Surrender = false;
 	DZE_InRadiationZone = false;
 	DZE_myVehicle = objNull;
+	DZE_EVRStormRunning = false;
 	dayz_groupNameTags = (profileNamespace getVariable ["streamerMode",0] == 0); //If streamer mode is on then hide name tags at startup. Toggle with Windows key.
 	dayz_minusDownTime = 0;
 	dayz_lastCodeFail = 0;
