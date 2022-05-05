@@ -180,6 +180,12 @@ class 100Rnd_127x99_M2 : Vehicle_ammo_base {
 	nameSound = "mgun"; 
 };
 
+class 250Rnd_127x99_M3P : 100Rnd_127x99_M2 {
+	count = 250;
+	displayName = $STR_DZ_MAG_250RND_M3P_NAME; 
+	descriptionShort = $STR_DZ_MAG_250RND_M3P_DESC;	
+};
+
 class 50Rnd_127x107_DSHKM : Vehicle_ammo_base { 
 	scope = 2; 
 	displayName = $STR_DZ_MAG_50RND_DSHKM_NAME; 

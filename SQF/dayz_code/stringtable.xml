@@ -20950,6 +20950,21 @@
 			<Czech>Kalibr: .50&lt;br/&gt;Nábojů: 100&lt;br/&gt;Pro: M2</Czech>
 			<Hungarian>Kaliber: .50&lt;br/&gt; Töltények: 100&lt;br/&gt; Hozzá tartozó fegyver: M2</Hungarian>
 		</Key>
+		<Key ID="STR_DZ_MAG_250RND_M3P_NAME">
+			<English>250Rnd. M3P</English>
+			<Russian>250п. M3P</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_250RND_M3P_DESC">
+			<English>Caliber: .50&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: M3P</English>
+			<French>Calibre: .50&lt;br/&gt;Munitions : 250&lt;br/&gt;Utilisé avec: M3P</French>
+			<Spanish>Calibre: .50&lt;br/&gt;Cartuchos: 250&lt;br/&gt;Usado en: M3P</Spanish>
+			<Italian>Calibro: .50&lt;br/&gt;Munizioni: 250&lt;br/&gt;Usato in: M3P</Italian>
+			<Polish>Kaliber: .50&lt;br/&gt;Naboje: 250&lt;br/&gt;Uzywany w: M3P</Polish>
+			<Russian>Калибр: .50&lt;br/&gt;Количество: 250&lt;br/&gt;Исп. в: M3P</Russian>
+			<German>Kaliber: .50&lt;br/&gt;Patronen: 250&lt;br/&gt;Verwendet in: M3P</German>
+			<Czech>Kalibr: .50&lt;br/&gt;Nábojů: 250&lt;br/&gt;Pro: M3P</Czech>
+			<Hungarian>Kaliber: .50&lt;br/&gt; Töltények: 250&lt;br/&gt; Hozzá tartozó fegyver: M3P</Hungarian>
+		</Key>		
 		<Key ID="STR_DZ_MAG_50RND_DSHKM_NAME">
 			<English>50Rnd. DSHKM</English>
 			<Russian>50п. ДШКМ</Russian>
