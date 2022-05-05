@@ -4320,7 +4320,7 @@
 			<Spanish>Bolsas hechas de arpillera que pueden llenarse con arena o tierra y ser usadas para fortificación militar.</Spanish>
 			<Czech>Jutové pytle, lze naplnit pískem nebo zeminou a použít je pro postavení opevnění.</Czech>
 			<French>Des sacs de jute qui peuvent être remplis de sable et utilisés pour des fortifications militaires.</French>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_TANK_TRAP">
 			<English>Tank Trap Kit</English>
 			<German>Panzersperre</German>
@@ -6524,7 +6524,7 @@
 			<!-- As in "you have successfully cooked 5 raw steak" -->
 			<English>You have cooked %1 %2</English>
 			<German>Du hast %1x %2 über dem Feuer gebraten.</German>
-			<Russian>Вы приготовили: %1 %2</Russian>
+			<Russian>Вы приготовили: %2 %1 шт.</Russian>
 			<Spanish>Cocinaste %1 %2</Spanish>
 			<French>Vous avez cuit %1 %2</French>
 			<Czech>Upekl jsi %1x %2</Czech>
@@ -6668,7 +6668,7 @@
 		<Key ID="str_player_01">
 			<English>You have filled %1 bottles with water</English>
 			<German>Du hast %1 Flasche(n) mit Wasser aufgefüllt.</German>
-			<Russian>Наполнено бутылок: %1</Russian>
+			<Russian>Наполнено бутылок: %1 шт.</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste vodou %1 láhve.</Czech>
@@ -6676,7 +6676,7 @@
 		<Key ID="str_player_boiledwater">
 			<English>You have boiled %1 bottles of water.</English>
 			<German>Du hast %1 Flasche(n) mit Wasser abgekocht.</German>
-			<Russian>Наполнено бутылок кипячёной водой: %1</Russian>
+			<Russian>Наполнено бутылок кипячёной водой: %1 шт.</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste převařenou vodou %1 láhve.</Czech>
@@ -24138,7 +24138,7 @@
 		<Key ID="STR_EPOCH_PLAYER_184">
 			<English>Need %1 More %2</English>
 			<German>Du benötigst noch %1 %2</German>
-			<Russian>Нужно ещё %1 %2.</Russian>
+			<Russian>Нужно ещё: %2 %1 шт.</Russian>
 			<Dutch>Nog %1 %2 nodig</Dutch>
 			<Czech>Bude ještě potřeba %1 %2</Czech>
 		</Key>
@@ -25177,7 +25177,8 @@
 		<Key ID="STR_EPOCH_PLAYER_313_1">
 			<English>%1 is already in your inventory and got added to your vehicle!</English>
 			<German>%1 ist bereits in deinem Inventar und wurde deinem Fahrzeug hinzugefügt!</German>
-		</Key>		
+			<Russian>%1 уже есть в вашем инвентаре. Перемещено в ваш транспорт!</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_315">
 			<English>%1 is restricted.</English>
 			<German>%1 ist gesperrt.</German>
@@ -29224,7 +29225,7 @@
 		<Key ID="STR_EPOCH_TRADE_SELLING_ALL">
 			<English>These are all the items I'm selling.</English>
 			<German>Dies sind alle Produkte, die ich verkaufe.</German>
-			<Russian>Вот какие вещи я продаю.</Russian>
+			<Russian>Вот что я продаю:</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUYING_VEHICLE">
 			<English>Buying into your vehicle.</English>
@@ -29282,12 +29283,12 @@
 		<Key ID="STR_EPOCH_TRADE_OFFER">
 			<English>I would offer %1 %2.</English>
 			<German>Ich biete %1 %2.</German>
-			<Russian>Я предлагаю: %1 %2.</Russian>
+			<Russian>Предлагаю: %1 %2</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ACCEPT">
 			<English>I accept %1 items from your %2.</English>
 			<German>Ich akzeptiere %1 aus %2.</German>
-			<Russian>Я беру: %1 шт. из %2.</Russian>
+			<Russian>%2: беру %1 шт.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ERROR">
 			<English>Something went wrong selecting the trader.</English>
@@ -30204,7 +30205,7 @@
 			<English>Wall with combination lock door constructed out of plywood and lumber.</English>
 			<German>Eine große Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Большая деревянная стена с дверью и кодовым замком.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_21_NEST">
 			<English>Sandbag Nest</English>
 			<German>Sandsacknest</German>
@@ -33335,7 +33336,7 @@
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
 			<English>Trade %1 %2 for %3 %4</English>
 			<German>%1 %2 für %3 %4 handeln</German>
-			<Russian>Обмен %1 %2 на %3 %4</Russian>
+			<Russian>Обмен %1 шт. %2 на %3 шт. %4</Russian>
 		</Key>
 		<Key ID="str_actions_medical_gave_antibiotics">
 			<English>You gave antibiotics to %1</English>
@@ -37088,7 +37089,7 @@
 			<English>Make Copy</English>
 			<German>Kopie anfertigen</German>
 			<Russian>Сделать копию</Russian>
-		</Key>		
+		</Key>
 
 		<!--Nightstalker EVR storms-->
 		<Key ID="STR_APSI_STATE">
@@ -37645,14 +37646,14 @@
 		<Key ID="STR_CL_ZSC_GLOBAL_WITHDRAW">
 			<English>You have withdrawn %1 %2.</English>
 			<German>Du hast %1 %2 abgehoben.</German>
-			<Russian>Вы сняли %1 %2.</Russian>
+			<Russian>Вы сняли %1 %2</Russian>
 			<French>Vous avez retiré %1 %2.</French>
 			<Spanish>Extrajiste %1 %2.</Spanish>
 		</Key>
 		<Key ID="STR_CL_ZSC_GLOBAL_DEPOSIT_FAIL">
 			<English>You can only have a maximum of %1 %2.</English>
 			<German>Du kannst maximal %1 %2 haben.</German>
-			<Russian>Вы можете иметь максимум %1 %2.</Russian>
+			<Russian>Вы можете иметь максимум %1 %2</Russian>
 			<French>Vous pouvez seulement avoir un maximum de %1 %2.</French>
 			<Spanish>Solo puedes tener un maximo de %1 %2.</Spanish>
 		</Key>
