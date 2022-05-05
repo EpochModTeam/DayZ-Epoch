@@ -14,11 +14,6 @@ _timer150 = diag_ticktime;
 player setVariable ["temperature",dayz_temperatur,true];
 player setVariable["friendlies",DZE_Friends,true];
 
-//[0,0] call player_humanityChange;
-
-//player addMagazine "Hatchet_swing";
-//player addWeapon "MeleeHatchet";
-
 while {1 == 1} do {
 	//_start = diag_tickTime;
 
@@ -281,8 +276,7 @@ while {1 == 1} do {
 
 	_startcombattimer = player getVariable["startcombattimer", 0];
 	if (_startcombattimer == 1) then { //Do not use _PlayerNearby it makes building impossible, this is handled in player_onPause.sqf just fine
-		player setVariable["combattimeout", diag_tickTime + 30, false];
-		if !(player getVariable["inCombat",false]) then {player setVariable["inCombat",true,true];};
+		[player,true] call fnc_setCombat;
 		player setVariable["startcombattimer", 0, false];
 	};
 

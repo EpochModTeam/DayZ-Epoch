@@ -9,7 +9,7 @@ sched_playerActions = {
 	};
 	
 	//combat check
-	if ((player getVariable ["combattimeout",0] < diag_tickTime) && {player getVariable ["inCombat",false]}) then {
+	if ((player getVariable ["combattimeout",0] < diag_tickTime) && {player getVariable ["inCombat",false]} && {player getVariable["startcombattimer", 0] == 0}) then {
 		player setVariable ["inCombat", false, true];
 	};
 	
