@@ -1966,7 +1966,7 @@ class FSM
                          "Dayz_logonTown = ""Wilderness"";" \n
                          "if (count _nearestCity > 0) then {Dayz_logonTown = text (_nearestCity select 0)};" \n
                          "" \n
-                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",(floor ((_survival select 0) / 1440))]] spawn {uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
+                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",(floor ((_survival select 0) / 1440))]] spawn {waitUntil {!isNull (findDisplay 46)};uiSleep 5;_this spawn BIS_fnc_infoText;};" \n
                          "" \n
                          "dayz_myPosition = getPosATL player;" \n
                          "Dayz_loginCompleted = true;" \n
