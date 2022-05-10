@@ -112,7 +112,7 @@ class 8Rnd_12Gauge_Buck : 8Rnd_B_Beneli_Pellets
 
 class 2Rnd_12Gauge_Buck : 8Rnd_12Gauge_Buck
 {
-	model = "\z\addons\dayz_communityassets\models\2shells_slugshot.p3d";
+	model = "\z\addons\dayz_communityassets\models\2shells_pellet.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_2shells_pellet_ca.paa";
 	displayName = $STR_DZ_MAG_2RND_12GAUGE_BUCK_NAME;
 	descriptionShort = $STR_DZ_MAG_2RND_12GAUGE_BUCK_DESC;	
