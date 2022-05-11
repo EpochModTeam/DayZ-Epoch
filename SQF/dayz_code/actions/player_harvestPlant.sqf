@@ -61,7 +61,14 @@ if !(isNull _plant) then {
 				PVDZ_objgather_Knockdown = [_plant,player]; // Ask server to setDamage on plant and sync for JIP
 				publicVariableServer "PVDZ_objgather_Knockdown";
 			} else {
-				deleteVehicle _plant;
+				local _ownerPUID = _plant getVariable ["ownerPUID","0"];	
+				
+				if ((_ownerPUID != "0") && {_type in DZE_Plants}) then {	//	Makes sure the plant is an acutal player built object and no map addtion
+					PVDZ_obj_Destroy = [netID player,netID _plant, dayz_authKey];
+					publicVariableServer "PVDZ_obj_Destroy";
+				} else {
+					deleteVehicle _plant;	
+				};				
 			};
 			if (_groundDrop) then {
 				format[localize "str_success_gathered",_text,(_i-_j),_j,_text] call dayz_rollingMessages;
