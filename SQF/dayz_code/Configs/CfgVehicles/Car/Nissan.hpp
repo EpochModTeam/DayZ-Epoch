@@ -211,7 +211,7 @@ class Nissan_base: epoch_car
 		};
 		
 		class NoiseIn {
-			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\int\int-noise2", 0.1, 1.0};
+			sound[] = {"ca\sounds\Vehicles\Wheeled\Noises\int\noise2", 0.1, 1.0};
 			frequency = "1";
 			volume = "(damper0 max 0.03)*(speed factor[0, 8])*(1-camPos)";
 		};
