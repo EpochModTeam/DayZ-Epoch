@@ -22,13 +22,6 @@ dayz_actionInProgress = true;
 
 private ["_maintain","_req","_target","_objects","_requirements","_count","_objects_filtered","_message1","_message2","_option","_line1","_line2","_plotDialog"];
 
-player removeAction s_player_maintain_area;
-s_player_maintain_area = 1;
-player removeAction s_player_maintain_area_force;
-s_player_maintain_area_force = 1;
-player removeAction s_player_maintain_area_preview;
-s_player_maintain_area_preview = 1;
-
 _target = (([player] call FNC_getPos) nearEntities ["Plastic_Pole_EP1_DZ",15]) select 0;
 _objects = nearestObjects [_target, DZE_maintainClasses, DZE_maintainRange];
 
@@ -124,7 +117,7 @@ _maintain = {
 	};
 } count _objects;
 
-_option = if (typeName _this == "ARRAY") then {_this select 3} else {_this};
+_option = _this;
 
 call {
 	if (_option == "maintain") exitwith {

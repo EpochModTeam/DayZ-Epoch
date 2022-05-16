@@ -533,12 +533,6 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	} else {
 		player removeAction s_player_plotManagement;
 		s_player_plotManagement = -1;
-		player removeAction s_player_maintain_area;
-		s_player_maintain_area = -1;
-		player removeAction s_player_maintain_area_force;
-		s_player_maintain_area_force = -1;
-		player removeAction s_player_maintain_area_preview;
-		s_player_maintain_area_preview = -1;
 		player removeAction s_player_plot_boundary;
 		s_player_plot_boundary = -1;
 	};
@@ -1117,12 +1111,6 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	s_player_lockUnlock_crtl = -1;
 	player removeAction s_player_SurrenderedGear;
 	s_player_SurrenderedGear = -1;
-	player removeAction s_player_maintain_area;
-	s_player_maintain_area = -1;
-	player removeAction s_player_maintain_area_force;
-	s_player_maintain_area_force = -1;
-	player removeAction s_player_maintain_area_preview;
-	s_player_maintain_area_preview = -1;
 	player removeAction s_player_tamedog;
 	s_player_tamedog = -1;
 	player removeAction s_player_feeddog;

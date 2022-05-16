@@ -192,9 +192,6 @@ if (!isDedicated) then {
 		s_player_downgrade_build = -1;
 		s_halo_action = -1;
 		s_player_SurrenderedGear = -1;
-		s_player_maintain_area = -1;
-		s_player_maintain_area_force = -1;
-		s_player_maintain_area_preview = -1;
 		s_player_heli_lift = -1;
 		s_player_heli_detach = -1;
 		s_player_lockUnlock_crtl = -1;
@@ -510,4 +507,7 @@ if (!isDedicated) then {
 	];
 	dayz_insideBuilding	= objNull;	// building name the player is currently inside of, or objNull if player is outside
 	DZE_insideExceptions	= ["Garage_Green_DZ","Garage_White_DZ","Garage_Brown_DZ","Garage_Grey_DZ","Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","StorageShed_DZ","StorageShed2_DZ","Concrete_Bunker_DZ","Concrete_Bunker_Locked_DZ","SandNestLarge_DZ"]; // list of base-building objects that allow checking if player is inside (fnc_isInsideBuilding)
+	DZE_sheltered		= 0.0;	// used in determining how much a player is sheltered from the environment
+	DZE_roofOverhead	= false;
+	DZE_allTrees		= dayz_trees + ["b_craet1.p3d"];	// include shrubs that the player can hide in
 };
