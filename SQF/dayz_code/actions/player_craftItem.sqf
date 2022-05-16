@@ -85,8 +85,7 @@ if (_canDo) then {
 
 	while {_craft_doLoop} do {
 		_temp_removed_array = [];
-
-		if ([_item,_selectedRecipeTools,"none"] call dze_requiredItemsCheck) then {
+		if ([_item,_selectedRecipeTools,"none"] call dze_requiredItemsCheck) then {			
 			// Dry run to see if all parts are available.
 			_proceed = true;
 			if (count _selectedRecipeInput > 0) then {
@@ -95,6 +94,7 @@ if (_canDo) then {
 					_countIn = _x select 1;
 
 					_qty = { (_x == _itemIn) || (!_selectedRecipeInputStrict && {configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn})} count magazines player;
+					
 					if (_qty < _countIn) exitWith {
 						_missing = _itemIn;
 						_missingQty = (_countIn - _qty);
@@ -129,6 +129,7 @@ if (_canDo) then {
 					_removed_total = 0; // count total of removed items
 					_tobe_removed_total = 0; // count total of all to be removed items
 					_waterLevel_lowest = 0; // find the lowest _waterLevel
+					
 					// Take items
 					{
 						_removed = 0;
@@ -154,7 +155,7 @@ if (_canDo) then {
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
 							if ((_removed < _countIn) && {(_x == _itemIn) || (!_selectedRecipeInputStrict && {_configParent == _itemIn})}) then {
-								if ((_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && {getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest})) then {
+								if ((_x != "ItemWaterbottle") || (_configParent != "ItemWaterbottle") || {(_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && {getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest})}) then {
 									_num_removed = ([player,_x] call BIS_fnc_invRemove);
 								} else {
 									_num_removed = 0;
@@ -172,8 +173,8 @@ if (_canDo) then {
 									_temp_removed_array set [count _temp_removed_array,_x];
 								};
 							};
-						} foreach (magazines player);
-					} count _selectedRecipeInput;
+						} count (magazines player);
+					} foreach _selectedRecipeInput;
 
 					//diag_log format["removed: %1 of: %2", _removed, _tobe_removed_total];
 
@@ -244,7 +245,7 @@ if (_canDo) then {
 								format[localize "str_epoch_player_150",_textCreate,_countOut] call dayz_rollingMessages;
 								// sleep here
 								uiSleep 1;
-							} count _selectedRecipeOutput;
+							} foreach _selectedRecipeOutput;
 
 							_tradeComplete = _tradeComplete + 1;
 						};
