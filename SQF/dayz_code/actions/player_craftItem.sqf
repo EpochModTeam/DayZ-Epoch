@@ -23,7 +23,7 @@ class ItemActions
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_finished","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx","_configParent","_pPos","_text"];
+private ["_plasticWaterBottles","_boiledWaterBottles","_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_finished","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx","_configParent","_pPos","_text"];
 
 // This is used to find correct recipe based what itemaction was click allows multiple recipes per item.
 _crafting = _this select 0;
@@ -39,6 +39,8 @@ _selectedRecipeOutput = [];
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_player_unconscious && {!r_drag_sqf} && {!_onLadder});
 _boiled = false;
+_boiledWaterBottles = ["ItemPlasticWaterBottleSafe","ItemWaterBottleSafe","ItemPlasticWaterBottleHerbal","ItemWaterBottleHerbal","ItemWaterbottle9ozBoiled","ItemWaterbottle8ozBoiled","ItemWaterbottle7ozBoiled","ItemWaterbottle6ozBoiled","ItemWaterbottle5ozBoiled","ItemWaterbottle4ozBoiled","ItemWaterbottle3ozBoiled","ItemWaterbottle2ozBoiled","ItemWaterbottle1ozBoiled","ItemWaterBottleBoiled","ItemPlasticWaterbottle9ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterbottle1ozBoiled","ItemPlasticWaterBottleBoiled"];
+_plasticWaterBottles = ["ItemPlasticWaterbottle","ItemPlasticWaterbottleInfected","ItemPlasticWaterbottleSafe","ItemPlasticWaterBottleHerbal","ItemPlasticWaterBottleBoiled","ItemPlasticWaterbottle1oz","ItemPlasticWaterbottle2oz","ItemPlasticWaterbottle3oz","ItemPlasticWaterbottle4oz","ItemPlasticWaterbottle5oz","ItemPlasticWaterbottle6oz","ItemPlasticWaterbottle7oz","ItemPlasticWaterbottle8oz","ItemPlasticWaterbottle9oz","ItemPlasticWaterbottle1ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle9ozBoiled"];
 
 // Need Near Requirements
 _needNear = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "neednearby");
@@ -155,7 +157,7 @@ if (_canDo) then {
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
 							if ((_removed < _countIn) && {(_x == _itemIn) || (!_selectedRecipeInputStrict && {_configParent == _itemIn})}) then {
-								if ((_x != "ItemWaterbottle") || (_configParent != "ItemWaterbottle") || {(_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && {getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest})}) then {
+								if (((_x != "ItemWaterbottle") && (_configParent != "ItemWaterbottle")) || {(_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && {getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest})}) then {
 									_num_removed = ([player,_x] call BIS_fnc_invRemove);
 								} else {
 									_num_removed = 0;
@@ -166,7 +168,7 @@ if (_canDo) then {
 									//diag_log format["debug remove: %1 of: %2", _configParent, _x];
 									if ((_x == "ItemWaterbottle") || (_configParent == "ItemWaterbottle")) then {
 										_waterLevel = floor((getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz")) - 1);
-										if (_x in ["ItemWaterbottle9ozBoiled","ItemWaterbottle8ozBoiled","ItemWaterbottle7ozBoiled","ItemWaterbottle6ozBoiled","ItemWaterbottle5ozBoiled","ItemWaterbottle4ozBoiled","ItemWaterbottle3ozBoiled","ItemWaterbottle2ozBoiled","ItemWaterbottle1ozBoiled","ItemWaterBottleBoiled","ItemPlasticWaterbottle9ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterbottle1ozBoiled","ItemPlasticWaterBottleBoiled"]) then {
+										if (_x in _boiledWaterBottles) then {
 											_boiled = true;
 										};
 									};
@@ -215,7 +217,7 @@ if (_canDo) then {
 								_countOut = _x select 1;
 								if (_itemOut == "ItemWaterbottleUnfilled") then {
 									{
-										if (_x in ["ItemPlasticWaterbottle","ItemPlasticWaterbottleInfected","ItemPlasticWaterbottleSafe","ItemPlasticWaterBottleBoiled","ItemPlasticWaterbottle1oz","ItemPlasticWaterbottle2oz","ItemPlasticWaterbottle3oz","ItemPlasticWaterbottle4oz","ItemPlasticWaterbottle5oz","ItemPlasticWaterbottle6oz","ItemPlasticWaterbottle7oz","ItemPlasticWaterbottle8oz","ItemPlasticWaterbottle9oz","ItemPlasticWaterbottle1ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle9ozBoiled"]) then {
+										if (_x in _plasticWaterBottles) then {
 											_itemOut = "ItemPlasticWaterbottleUnfilled";
 											if (_waterLevel > 0) then {
 												if (_boiled) then {
