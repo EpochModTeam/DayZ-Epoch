@@ -8,7 +8,7 @@
 //	<center angle of sector> and <sector width>.
 //
 //	Example:
-//	[position player, getDir player, 30, position enemy_tank] call BIS_fnc_inAngleSector
+//	[position player, getDir player, 30, position enemy_tank] call fnc_inAngleSector
 //	will return true if the vehicle named enemy_tank is within 30 degrees of where the player is pointing.
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
