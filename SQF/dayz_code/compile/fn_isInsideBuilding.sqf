@@ -25,6 +25,7 @@ local _posZ		= _posASL select 2;
 local _posLowZ		= _posLowASL select 2;
 
 local _insideBox	= objNull;			// object the player is inside of
+local _dir		= 0;
 local _type		= "";				// class name
 local _roofAbove	= false;			// is there geometry above
 local _intersect	= false;			// for raycast
@@ -134,7 +135,7 @@ if (isNull _insideBox) then {		// no detectable roof
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 if (!isNull _insideBox) then {					// bounding box detected
-	local _dir	= getDir _insideBox;			// direction of object on map
+	_dir		= getDir _insideBox;			// direction of object on map
 	local _rad	= sizeOf (typeOf _insideBox);		// scan radius
 	local _seg	= 16;					// radial scan density (must be evenly divisible by 4)
 	local _arc	= 360 / _seg;				// radial scan delta
@@ -172,4 +173,5 @@ if (!isNull _insideBox) then {					// bounding box detected
 	};
 };
 dayz_insideBuilding = [objNull, _insideBox] select _inside;
+_dir call fnc_isSheltered;
 _inside
