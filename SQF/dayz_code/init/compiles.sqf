@@ -197,6 +197,7 @@ if (!isDedicated) then {
 	fnc_remoteMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_remoteMessage.sqf";
 	fnc_freeBackpackSlots = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_freeBackpackSlots.sqf";	
 	fnc_apsiState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\apsiState.sqf"; // Toggle APSI on and off
+	fnc_brakeFix = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_brakeFix.sqf"; // fix for motorcycle & bicycle brakes
 	if (DZE_EVR) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_evr.sqf";};
 	
 	if (DZE_Remote_Vehicle) then {
@@ -256,6 +257,7 @@ if (!isDedicated) then {
 	};
 	fnc_setWeather = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\setWeather.sqf";
 	fnc_groundFog = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\groundFog.sqf";
+	fnc_issheltered = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_isSheltered.sqf";
 
 	// Compiles of all trading related functions
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\AdvancedTrading\compiles.sqf";

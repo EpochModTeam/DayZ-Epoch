@@ -309,8 +309,11 @@ while {1 == 1} do {
 		//sleep 1;
 	};
 
-	//Crowbar ammo fix
-	//"MeleeCrowbar" call dayz_meleeMagazineCheck;
+	// Brake Fix for Motorcycles and Bicycles
+	if (!DZE_isOnBike && {_refObj isKindOf "Motorcycle" && {driver _refObj == player}}) then {	// player just mounted a motorcycle or bicycle
+		DZE_isOnBike = true;
+		[_refObj] spawn fnc_brakeFix;
+	};
 
 	/*
 	_stop = diag_tickTime;

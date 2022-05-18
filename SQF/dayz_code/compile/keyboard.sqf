@@ -290,6 +290,11 @@ if (isNil "keyboard_keys") then {
 		} forEach (_this select 0);
 	};
 
+	local _brake = {
+		if (DZE_isOnBike) then {DZE_isBraking = true};
+		call _interrupt;
+	};
+
 	keyboard_keys = [];
 	channel_keys = [];
 	voice_keys = [];
@@ -331,7 +336,7 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "MoveLeft", _interrupt] call _addArray;	// Delete Key
 	[actionKeys "MoveRight", _interrupt] call _addArray;	// End Key
 	[actionKeys "MoveForward", _interrupt] call _addArray;	// W / Up Arrow Keys
-	[actionKeys "MoveBack", _interrupt] call _addArray;	// S / Down Arrow Keys
+	[actionKeys "MoveBack", _brake] call _addArray;		// S / Down Arrow Keys
 	[actionKeys "TurnLeft", _interrupt] call _addArray;	// A / Left Arrow Keys
 	[actionKeys "TurnRight", _interrupt] call _addArray;	// D / Right Arrow Keys
 	///////////////////////////////////////////////////////////////////////////////////////////

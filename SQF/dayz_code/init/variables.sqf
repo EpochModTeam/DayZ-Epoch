@@ -510,4 +510,6 @@ if (!isDedicated) then {
 	DZE_sheltered		= 0.0;	// used in determining how much a player is sheltered from the environment
 	DZE_roofOverhead	= false;
 	DZE_allTrees		= dayz_trees + ["b_craet1.p3d"];	// include shrubs that the player can hide in
+	DZE_isOnBike		= false;
+	DZE_isBraking		= false;
 };
