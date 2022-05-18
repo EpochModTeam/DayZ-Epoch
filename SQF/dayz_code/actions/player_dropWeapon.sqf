@@ -36,8 +36,9 @@ if (_item == dayz_onBack && carryClick) then {
 	_item = if (_droppedType == "") then {_this} else {_droppedType};
 };
 
+[format["WeaponHolder_%1",_item],objNull] call fn_waitForObject;
+
 _bag = createVehicle [format["WeaponHolder_%1",_item],getPosATL player,[], 1, "CAN_COLLIDE"];
 _bag modelToWorld getPosATL player;
 _bag setDir (getDir player);
-player reveal _bag;
 dayz_actionInProgress = false;

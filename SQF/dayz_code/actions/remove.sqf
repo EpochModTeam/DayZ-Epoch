@@ -432,7 +432,7 @@ if (_proceed && _success) then {
 		///////////////////////////////////////////////////////////////////////////////////
 
 		if (count _selectedRemoveOutput > 0) then {
-
+			["WeaponHolder",objNull] call fn_waitForObject;
 			local _item = "WeaponHolder" createVehicle [0,0,0];
 			_item setDir _iDir;
 
@@ -509,7 +509,7 @@ if (_proceed && _success) then {
 						if (_type == 5) exitWith {
 
 							for "_i" from 1 to _countOut do {
-
+								[_itemOut,objNull] call fn_waitForObject;
 								local _bpObj = _itemOut createVehicle [0,0,0];			// create backpack
 								local _bpPos = [_iPos, _bpDist, _bpDir] call BIS_fnc_relPos;	// position it a short distance away from the spawn point
 
@@ -536,7 +536,6 @@ if (_proceed && _success) then {
 			if (_totalCount > 0) then {		// Only reveal refund if there is something there. Random ranges can produce zero results.
 				_sleep = 1;
 				_item setPosATL _iPos;
-				player reveal _item;
 
 				DZE_GearCheckBypass = true;	// Bypass gear menu checks since dialogue will always open on item
 				player action ["Gear", _item];

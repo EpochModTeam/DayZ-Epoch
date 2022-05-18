@@ -68,6 +68,8 @@ if ((_ownerID == dayz_playerUID) || {_objType in ["IC_DomeTent","IC_Tent"]}) the
 	_bag setDir _dir;
 	_bag setPosATL _pos;
 
+	["WeaponHolder",objNull] call fn_waitForObject;
+
 	local _holder = "WeaponHolder" createVehicle [0,0,0];	// any packed items go here
 	_holder setPosATL _pos;
 
@@ -79,8 +81,6 @@ if ((_ownerID == dayz_playerUID) || {_objType in ["IC_DomeTent","IC_Tent"]}) the
 	publicVariableServer "PVDZ_obj_Destroy";
 
 	[_weapons, _magazines, _backpacks, _holder] call fn_addCargo;	// pile everything onto the ground
-
-	player reveal _holder;
 
 	localize "str_success_tent_pack" call dayz_rollingMessages;	// Your tent has been packed
 } else {

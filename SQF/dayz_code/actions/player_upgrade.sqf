@@ -144,6 +144,8 @@ if ((count _upgrade) > 0) then {
 				local _objectCharacterID	= _obj getVariable ["CharacterID","0"];
 				_classname				= _newclassname;
 
+				[_classname,objNull] call fn_waitForObject;
+
 				local _object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
 				//_object setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 				_object setVariable["memDir", _dir, true];
@@ -225,8 +227,6 @@ if ((count _upgrade) > 0) then {
 				};
 
 				publicVariableServer "PVDZE_obj_Swap";
-				player reveal _object;
-
 			} else {
 
 				{player addMagazine _x;} count _temp_removed_array;

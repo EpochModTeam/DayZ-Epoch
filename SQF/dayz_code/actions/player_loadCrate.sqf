@@ -44,6 +44,8 @@ player addMagazine "bulk_empty";
 
 ["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
+[_classname,objNull] call fn_waitForObject;
+
 _b0x1337 = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 _b0x1337 setDir _dir;
 
@@ -63,7 +65,6 @@ if (surfaceIsWater _location) then {
 	_b0x1337 setPosATL _location;
 };
 
-player reveal _b0x1337;
 DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on crate
 player action ["Gear", _b0x1337];
 

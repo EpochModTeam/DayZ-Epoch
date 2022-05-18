@@ -100,6 +100,8 @@ if (count _upgrade > 0) then {
 
 		_classname = _newclassname;
 
+		[_classname,objNull] call fn_waitForObject;
+
 		local _object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
 		//_object setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 		_object setVariable["memDir", _dir, true];
@@ -133,8 +135,6 @@ if (count _upgrade > 0) then {
 		_object setVariable ["ownerPUID", _ownerID, true];
 		PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _position, dayz_playerUID, _vector], _classname, _obj, player, [], dayz_authKey];
 		publicVariableServer "PVDZE_obj_Swap";
-		player reveal _object;
-
 	} else {
 		_text = getText(configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 

@@ -15,7 +15,9 @@ _holder = objNull;
 //Check if a holder is close by the player.
 _nearByPile= nearestObjects [_pos, ["WeaponHolder","WeaponHolderBase"],PILE_SEARCH_RADIUS];
 
-if (count _nearByPile == 0) then {
+if (count _nearByPile == 0) then {	
+	["WeaponHolder",objNull] call fn_waitForObject;
+
 	//No weapon holders found in the radius, spawn a new one
 	_holder = "WeaponHolder" createVehicle [0,0,0];
 	_holder setPosATL _pos;
@@ -30,7 +32,9 @@ if (count _nearByPile == 0) then {
 		_objects = lineIntersectsWith [(_holder modeltoWorld PILE_OFFSET), _pos, player, _holder, true];
 
 		//Can you see the current selected weapon holder
-		if (count _objects > 0) then {
+		if (count _objects > 0) then {			
+			["WeaponHolder",objNull] call fn_waitForObject;
+
 			//Unable to see the current selected weapon holder within the radius lets create a new one.
 			_holder = createVehicle ["WeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
 		};
@@ -43,6 +47,3 @@ switch _type do {
 	case 2: {_holder addWeaponCargoGlobal [_item,_amount];};
 	case 3: {_holder addBackpackCargoGlobal [_item,_amount];};
 };
-
-//Revel the item
-player reveal _holder;

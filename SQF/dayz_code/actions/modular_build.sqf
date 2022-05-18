@@ -1355,6 +1355,8 @@ if (_canBuild) then {
 
 		_classname = _classnameBuild;
 
+		[_classname,objNull] call fn_waitForObject;
+
 		local _builtObject = _classname createVehicle [0,0,0];
 
 		//_builtObject setDir _dir; // setDir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
