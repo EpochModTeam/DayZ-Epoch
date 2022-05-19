@@ -23864,6 +23864,14 @@
 			<French>Remplissage de %1, déplacez vous pour annuler.</French>
 			<Czech>Plnění %1, pohněte se pro zrušení.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_131_1">
+			<English>Abort refueling, no fuel source.</English>
+			<German>Betanken abgebrochen, es konnte keine Treibstoffquelle gefunden werden.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_131_2">
+			<English>Abort refueling, the fuel source has only %1 liters left. You need at least %2 liters of fuel.</English>
+			<German>Betanken abgebrochen, die Treibstoffquelle hat nur noch %1 Liter übrig. Benötigt werden %2 Liter Treibstoff.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_132">
 			<English>%1 filled to %2 percent capacity.</English>
 			<German>%1 wurde zu %2 Prozent betankt.</German>
@@ -23872,6 +23880,10 @@
 			<French>%1 est rempli(e) à %2 pourcents de sa capacité.</French>
 			<Czech>%1 je naplněno do %2 procent kapacity.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_132_1">
+			<English>%1 filled to %2 percent capacity. It is about %3 litres of fuel left in the fuel source.</English>
+			<German>%1 wurde zu %2 Prozent betankt. Es sind noch ca. %3 Liter Treibstoff in der Treibstoffquelle übrig.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_133">
 			<English>You can only own %1 plot pole(s)</English>
 			<German>Du kannst nur %1 Grundstück(e) besitzen.</German>
