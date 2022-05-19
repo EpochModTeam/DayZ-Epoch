@@ -31,6 +31,8 @@ while {true} do {
 	if (!isNil "_display") then {
 		_image = _display displayCtrl 1200;
 		_image ctrlSetText getText(missionConfigFile >> "loadScreen");
+		_image ctrlSetPosition [safeZoneX, safeZoneY, safeZoneW, safeZoneH];
+		_image ctrlCommit 0;
 		if (dayz_loadScreenMsg != "" ) then {
 			_control1 = _display displayctrl 8400;
 			_control1 ctrlSetStructuredText parseText format["<t align='center'>%1</t>",dayz_loadScreenMsg];
