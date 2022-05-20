@@ -41239,5 +41239,17 @@
 			<French>Véhicule '%1' détaché.</French>
 			<Russian>Объект '%1' был отсоединён.</Russian>
 		</Key>
+        <Key ID="STR_LOG_MISSING_EQUIPMENT">
+            <English>'%1' IS REQUIRED TO TOW.</English>
+            <German>'%1' IST ZUM ABSCHLEPPEN ERFORDERLICH.</German>
+            <French>'%1' EST NÉCESSAIRE POUR REMORQUER.</French>
+            <Russian>'%1' ТРЕБУЕТСЯ ДЛЯ БУКСИРОВКИ<Russian>
+        </Key>
+        <Key ID="STR_LOG_RETURNED_EQUIPMENT">
+            <English>'%1' HAS BEEN RETURNED.</English>
+            <German>'%1' WURDE ZURÜCKGEGEBEN.</German>
+            <French>'%1' A ÉTÉ RETOURNÉ.</French>
+            <Russian>'%1' ВЕРНУЛАСЬ<Russian>
+        </Key>		
 	</Package>
 </Project>
