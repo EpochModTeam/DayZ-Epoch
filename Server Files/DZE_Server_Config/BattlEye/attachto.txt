@@ -18,5 +18,5 @@
 5 "V3S_Civ"
 5 "Parachute"
 5 "VaultStorage" !"VaultStorageLocked" !"VaultStorage2Locked"
-5 "LockboxStorage" !"LockboxStorageLocked" !"LockboxStorageWinterLocked" !"LockboxStorage2Locked" !"LockboxStorageWinter2Locked"
+5 "LockboxStorage" !"LockboxStorage(Locked|2Locked|Broken|2Broken)" !"LockboxStorageWinter(Locked|2Locked|Broken|2Broken)"
 5 "TallSafe" !"TallSafeLocked"
