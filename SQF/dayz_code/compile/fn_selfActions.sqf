@@ -396,7 +396,8 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 		if (_restrict || _isModular || _isStatic || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
 			if (_hasToolbox && _hasCrowbar) then {				
 				_hasAccess = [player, _cursorTarget] call FNC_check_access;
-				if ((_hasAccess select 2) || (_hasAccess select 3) || (_isStash && (_hasAccess select 0))) then {
+				local _noPlotBuildings = ["WorkBench_DZ","FuelPump_DZ","Generator_DZ"];
+				if ((_hasAccess select 2) || (_hasAccess select 3) || ((_isStash || _typeOfCursorTarget in _noPlotBuildings) && (_hasAccess select 0))) then {
 					_hasDeconstructAccess = true;
 					_player_deleteBuild = true;
 				};
