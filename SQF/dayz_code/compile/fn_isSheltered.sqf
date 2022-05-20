@@ -20,10 +20,14 @@ local _deepScan = {
 
 	scopeName "exit";
 	for "_n" from _nearest to 0 step -1 do {
-		local _object	= _objects select _n;
-		local _model	= _object call fn_getModelName;
+		local _object = _objects select _n;
 
-		if (!(_object isKindOf "AllVehicles") && {!(_model in DZE_allTrees)}) then {	// not vehicles or trees
+		call {
+			if (_object isKindOf "AllVehicles") exitWith {};	// exclude vehicles, zombies and other players
+
+			local _model = _object call fn_getModelName;
+
+			if (_model in DZE_allTrees) exitWith {};		// exclude trees
 
 			///////////////////////////////////////////////////////////////////////////
 			//
