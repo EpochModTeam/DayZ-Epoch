@@ -1,6 +1,6 @@
 local _model = "";
 
-if (!isNull _this) then {
+if (!isNull _this && {!(_this isKindOf "Man")}) then {
 	local _array	= toArray (str _this);
 	local _begin	= (_array find 58) + 2;		// ": "
 	local _end	= (_array find 46) + 3;		// ".p3d"
