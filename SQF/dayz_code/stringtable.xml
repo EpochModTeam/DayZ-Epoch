@@ -33809,18 +33809,6 @@
 		<Key ID="STR_EPOCH_TUT_KEY_SHIFT">
 			<English>Shift</English>
 		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_PGUP">
-			<English>PgUp</English>
-			<German>Bild Auf</German>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_PGDN">
-			<English>PgDn</English>
-			<German>Bild Ab</German>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_KEY_CTRL">
-			<English>Ctrl</English>
-			<German>Strg</German>
-		</Key>
 		<Key ID="STR_EPOCH_TUT_KEY_ALT">
 			<English>Alt</English>
 		</Key>
@@ -33834,10 +33822,54 @@
 			<German>Nummernpad-Pfeiltasten</German>
 			<Russian>Стрелки на цифровой клавиатуре</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_ENGLISH">
+			<English>English</English>
+			<German>Englisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_GERMAN">
+			<English>German</English>
+			<German>Deutsch</German>
+		</Key>
+		<Key ID="STR_EPOCH_KEYBOARD_LAYOUT">
+			<English>Keyboard Layout: %1</English>
+			<German>Tastaturbelegung: %1</German>
+		</Key>
+		<Key ID="STR_GER_EPOCH_TUT_KEY_PGUP">
+			<English>Bild Auf</English>
+			<German>Bild Auf</German>
+		</Key>
+		<Key ID="STR_GER_EPOCH_TUT_KEY_PGDN">
+			<English>Bild Ab</English>
+			<German>Bild Ab</German>
+		</Key>
+		<Key ID="STR_GER_EPOCH_TUT_KEY_CTRL">
+			<English>Strg</English>
+			<German>Strg</German>
+		</Key>
+		<Key ID="STR_GER_EPOCH_TUT_ADJ_DEGREES_KEYS">
+			<English>ß´</English>
+			<German>ß´</German>
+		</Key>
+		<Key ID="STR_ENG_EPOCH_TUT_KEY_PGUP">
+			<English>PgUp</English>
+			<German>PgUp</German>
+		</Key>
+		<Key ID="STR_ENG_EPOCH_TUT_KEY_PGDN">
+			<English>PgDn</English>
+			<German>PgDn</German>
+		</Key>
+		<Key ID="STR_ENG_EPOCH_TUT_KEY_CTRL">
+			<English>Ctrl</English>
+			<German>Ctrl</German>
+		</Key>
+		<Key ID="STR_ENG_EPOCH_TUT_ADJ_DEGREES_KEYS">
+			<English>-=</English>
+			<German>-=</German>
+		</Key>		
 		<Key ID="STR_EPOCH_KEYBOARD_HANDEDNESS">
-			<English>** Keyboard is now configured: %1 **</English>
-			<German>** Tastatur is eingestellt auf: %1 **</German>
-			<Russian>** Теперь клавиатура сконфигурирована для %1 **</Russian>
+			<English>Keyboard is now configured: %1</English>
+			<German>Tastatur is eingestellt auf: %1</German>
+			<Russian>Теперь клавиатура сконфигурирована для %1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LEFT_HANDED">
 			<English>Left-handed</English>
@@ -33935,10 +33967,6 @@
 			<English>Build</English>
 			<German>Bauen</German>
 			<Russian>Построить</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_TUT_ADJ_DEGREES_KEYS">
-			<English>-=</English>
-			<German>ß´</German>
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_UI_SNAP">
 			<English>Snap</English>

@@ -34,8 +34,19 @@ local _strPitch		= localize "STR_EPOCH_TUT_PITCH";
 local _strBank		= localize "STR_EPOCH_TUT_BANK";
 local _strRotate	= localize "STR_EPOCH_TUT_ROTATE";
 local _tab		= localize "STR_EPOCH_TUT_KEY_TAB";
-local _PgUp		= localize "STR_EPOCH_TUT_KEY_PGUP";
-local _PgDn		= localize "STR_EPOCH_TUT_KEY_PGDN";
+local _ctrl		= localize "STR_ENG_EPOCH_TUT_KEY_CTRL";
+local _PgUp		= localize "STR_ENG_EPOCH_TUT_KEY_PGUP";
+local _PgDn		= localize "STR_ENG_EPOCH_TUT_KEY_PGDN";
+local _degKeys		= toArray (localize "STR_ENG_EPOCH_TUT_ADJ_DEGREES_KEYS");
+
+if (DZE_KEYBOARD == DZE_GERMAN) then {
+	_ctrl		= localize "STR_GER_EPOCH_TUT_KEY_CTRL";
+	_PgUp		= localize "STR_GER_EPOCH_TUT_KEY_PGUP";
+	_PgDn		= localize "STR_GER_EPOCH_TUT_KEY_PGDN";
+	_degKeys	= toArray (localize "STR_GER_EPOCH_TUT_ADJ_DEGREES_KEYS");
+};
+local _decrease		= toString [_degKeys select 0];
+local _increase		= toString [_degKeys select 1];
 local _hyphen		= _WHT + "-" + _ORA;
 local _slash		= _WHT + "/" + _ORA;
 local _colon		= _WHT + ": ";
@@ -46,14 +57,11 @@ local _WBR		= _WHT + "]";
 local _DBR		= "] [";
 local _BRW		= "] " + _WHT;
 local _hpsp		= _hyphen + _PgUp + _slash + _PgDn + _BRW;
-local _degKeys		= toArray (localize "STR_EPOCH_TUT_ADJ_DEGREES_KEYS");
-local _decrease		= toString [_degKeys select 0];
-local _increase		= toString [_degKeys select 1];
 local _handedness	= ["STR_EPOCH_TUT_KEY_ARROWS","STR_EPOCH_TUT_KEY_NUMPAD_ARROWS"] select DZE_LEFT_HANDED;
 
 local _HK = _OBR + _tab + _DBR + localize "STR_EPOCH_TUT_KEY_SHIFT" + _hyphen + _tab + _BRW	+ localize "STR_EPOCH_TUT_SNAP_NEXT_PREV"	+ _NL;
 _HK = _HK + _OBR + _PgUp + _DBR + _PgDn + _BRW							+ localize "STR_EPOCH_TUT_HEIGHT10"		+ _NL;
-_HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_CTRL" + _hpsp					+ localize "STR_EPOCH_TUT_HEIGHT1"		+ _NL;
+_HK = _HK + _OBR + _ctrl + _hpsp								+ localize "STR_EPOCH_TUT_HEIGHT1"		+ _NL;
 _HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_ALT"  + _hpsp					+ localize "STR_EPOCH_TUT_HEIGHT100"		+ _NL;
 _HK = _HK + _OBR + localize _handedness + _BRW							+ _strPitch + " / " + _strBank			+ _NL;
 _HK = _HK + _ORA + "[Q] [E] "									+ _WHT + _strRotate				+ _NL;

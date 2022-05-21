@@ -434,7 +434,11 @@ if (!isDedicated) then {
 	DZE_myHaloVehicle = objNull;
 	dayz_myLiftVehicle = objNull;
 	DZE_Friends = [];
-	DZE_LEFT_HANDED = false;
+	DZE_ENGLISH	= 0;
+	DZE_GERMAN	= 1;
+	DZE_HOTKEYS	= [[DZE_ENGLISH,"STR_EPOCH_ENGLISH"], [DZE_GERMAN,"STR_EPOCH_GERMAN"]];
+	DZE_KEYBOARD	= profileNamespace getVariable ["keyboardLayout", 0];
+	DZE_LEFT_HANDED	= profileNamespace getVariable ["leftHanded", false];
 	DZE_Q = false;
 	DZE_Z = false;
 	DZE_Q_alt = false;

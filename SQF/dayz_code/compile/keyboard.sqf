@@ -168,9 +168,8 @@ if (isNil "keyboard_keys") then {
 		_handled = true;
 	};
 	local _statusUI = {
-		DZE_UI = DZE_UI + 1;
-		if (DZE_UI == 6) then {DZE_UI = 0; [format[localize "STR_UI_STATUS_ICONS" + " %1",localize "STR_DISABLED"],1] call dayz_rollingMessages;};
-		if (DZE_UI == 1) then {[format[localize "STR_UI_STATUS_ICONS" + " %1",localize "STR_ENABLED"],1] call dayz_rollingMessages;};
+		DZE_UI = (DZE_UI + 1) % 6;
+		if (DZE_UI < 2) then {[format[localize "STR_UI_STATUS_ICONS" + " %1",localize (["STR_DISABLED","STR_ENABLED"] select DZE_UI)],1] call dayz_rollingMessages;};
 		profileNamespace setVariable ["statusUI",DZE_UI];
 		saveProfileNamespace;
 		call ui_changeDisplay;
@@ -179,13 +178,22 @@ if (isNil "keyboard_keys") then {
 	local _handedness = {
 		if (isNil "DZE_buildItem") then {	// only allow switching outside of base building
 			DZE_LEFT_HANDED = !DZE_LEFT_HANDED;
-			local _handed = "";
-			if (DZE_LEFT_HANDED) then {
-				_handed = "STR_EPOCH_LEFT_HANDED";
-			} else {
-				_handed = "STR_EPOCH_RIGHT_HANDED";
-			};
-			systemChat format [localize "STR_EPOCH_KEYBOARD_HANDEDNESS", localize _handed];
+			local _handed = ["STR_EPOCH_RIGHT_HANDED","STR_EPOCH_LEFT_HANDED"] select DZE_LEFT_HANDED;
+			[format [localize "STR_EPOCH_KEYBOARD_HANDEDNESS", localize _handed], 1] call dayz_rollingMessages;
+			profileNamespace setVariable ["leftHanded", DZE_LEFT_HANDED];
+			saveProfileNamespace;
+		};
+		_handled = true;
+	};
+	local _keyboard = {
+		if (isNil "DZE_buildItem") then {		// only allow switching outside of base building
+			DZE_KEYBOARD = (DZE_KEYBOARD + 1) % 2;	// English and German keyboard layout for hotkeys
+			{
+				if (DZE_KEYBOARD == _x select 0) exitWith {DZE_LANGUAGE = _x select 1};
+			} count DZE_HOTKEYS;
+			[format [localize "STR_EPOCH_KEYBOARD_LAYOUT", localize DZE_LANGUAGE], 1] call dayz_rollingMessages;
+			profileNamespace setVariable ["keyboardLayout", DZE_KEYBOARD];
+			saveProfileNamespace;
 		};
 		_handled = true;
 	};
@@ -369,8 +377,9 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "SelectAll", _block] call _addArray;
 	[[DIK_F1], _muteSound] call _addArray;
 	[[DIK_F3], _statusUI] call _addArray;
-	[[DIK_F6], _handedness] call _addArray;
 	[[DIK_F5], {if (diag_tickTime - dayz_lastSave > 10) then {call player_forceSave;};_handled = true;}] call _addArray;
+	[[DIK_F6], _handedness] call _addArray;
+	[[DIK_F7], _keyboard] call _addArray;
 	[[DIK_TAB], _dze_tab] call _addArray;
 	[actionKeys "LeanLeft",  {DZE_4 = true; dayz_dodge = true;}] call _addArray;
 	[actionKeys "LeanRight", {DZE_6 = true; dayz_dodge = true;}] call _addArray;
@@ -378,7 +387,7 @@ if (isNil "keyboard_keys") then {
 	[[DIK_E], _dze_e] call _addArray;
 	[actionKeys "GetOver", _bunnyhop] call _addArray; // V
 	[actionKeys "ForceCommandingMode", {DZE_5 = true; _handled = true;}] call _addArray;
-	[[DIK_F2, DIK_F4, DIK_F7, DIK_F8, DIK_F9, DIK_F10, DIK_F11, DIK_F12, DIK_4, DIK_5, DIK_6, DIK_7, DIK_8, DIK_9], _block] call _addArray;
+	[[DIK_F2, DIK_F4, DIK_F8, DIK_F9, DIK_F10, DIK_F11, DIK_F12, DIK_4, DIK_5, DIK_6, DIK_7, DIK_8, DIK_9], _block] call _addArray;
 	
 	if (dayz_groupSystem) then {
 		[[DIK_F5], _openGroups] call _addArray;
