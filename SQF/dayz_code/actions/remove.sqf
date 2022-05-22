@@ -132,7 +132,7 @@ if (_isModular) then {
 			_isEnabled	= _x select 0;				// is refund enabled?
 			_refund		= _x select _actionContext;		// get refund array
 		};
-	} count DZE_modularConfig;
+	} foreach DZE_modularConfig;
 
 	if (_actionContext == 2) then {						// if singular kit
 		_refund = [[_refund, 1]];					// reformat array
