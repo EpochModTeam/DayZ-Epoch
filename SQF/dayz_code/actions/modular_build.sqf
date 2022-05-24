@@ -1255,9 +1255,7 @@ if (_canBuild) then {
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	if (!_cancel) then {
-		_buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_storage_base"];
-
-		if (_isPole && ((count (nearestObjects [_modelCenterPos, _buildables, DZE_maintainRange])) >= DZE_BuildingLimit)) then {
+		if (_isPole && ((count (nearestObjects [_modelCenterPos, DZE_maintainClasses, DZE_maintainRange])) >= DZE_BuildingLimit)) then {
 			_cancel = true;
 			_reason = format[localize "str_epoch_player_41", floor DZE_maintainRange];	// You cannot build. There are too many objects within %1m.
 		};

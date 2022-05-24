@@ -227,14 +227,13 @@ if (_message != "") exitWith {
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Also count safes, lockboxes, vanilla buildables, tents and stashes against DZE_BuildingLimit
 
-local _buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_storage_base"];
 local _center = if (isNull _nearestPole) then {
 	_pos;		// player's position
 } else {
 	_nearestPole;
 };
 
-if ((count (nearestObjects [_center, _buildables, DZE_maintainRange])) >= DZE_BuildingLimit) exitWith {
+if ((count (nearestObjects [_center, DZE_maintainClasses, DZE_maintainRange])) >= DZE_BuildingLimit) exitWith {
 	dayz_actionInProgress = false;
 	format[localize "str_epoch_player_41", floor DZE_maintainRange] call dayz_rollingMessages;
 
