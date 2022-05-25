@@ -11,15 +11,19 @@ dayz_infectiouswaterholes = true; //Enable infected waterholes, randomly adds so
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
 dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
 DZE_HeliLift = true; // Enable Epoch heli lift system
-DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
 DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in positions listed in DZE_SafeZonePosArray?
 dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
 infectedWaterHoles = []; //Needed for non-cherno maps.
-DZE_GodModeBase = false; // Disables damage handler from base objects so they can't be destroyed. Make player built base objects indestructible.
 dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
 dayz_classicBloodBagSystem = true; // disable blood types system and use the single classic ItemBloodbag
 dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
+
+//	Building
+DZE_PlotPole = [30,45]; // Plot radius, minimum distance between plots
+DZE_GodModeBase = false; // Disables damage handler from base objects so they can't be destroyed. Make player built base objects indestructible.
+DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
+DZE_GodModeVehiclesPlot = false; //Disable vehicle damage at plot poles when the vehicle is locked and no crew is inside.
 
 // Death Messages
 DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
@@ -191,7 +195,6 @@ if (!isDedicated) then {
 	DZE_HeightLimitColor = true; // display plot boundary helpers in red if they are above DZE_BuildHeightLimit
 	DZE_requireplot = 1; // Players require a plot to build
 	DZE_requirePlotOverride = []; // Add a list of classnames that require a plot pole to build. This will override the config settings. E.g. ["DomeTentStorage","VaultStorageLocked","VaultStorage2Locked","TallSafeLocked","LockboxStorageLocked","LockboxStorage2Locked","LockboxStorageWinterLocked","LockboxStorageWinter2Locked"];
-	DZE_PlotPole = [30,45]; // Plot radius, minimum distance between plots
 	DZE_BuildOnRoads = false; // Allow building on roads
 	DZE_BuildingLimit = 150; // Maximum allowed objects per plot
 	DZE_RestrictedBuildingZones	= []; // [["Balota Airfield", [5158.72, 2518.75, 0], 600]];	// [["description", [position], distance], ["description", [position], distance], ... ];

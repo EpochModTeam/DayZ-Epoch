@@ -14,13 +14,14 @@ or by zombie_attack
 - return : updated damage for that part
 broadcast: boolean. if true, then the request will be sent to all players if the vehicle is not local.
 ************************************************************/
-private["_unit","_selection","_total","_damage","_needUpdate","_totalDmg","_force"];
+local _unit = _this select 0;
+local _selection = _this select 1;
+local _total = _this select 2;
 
-_unit = _this select 0;
-_selection = _this select 1;
-_total = _this select 2;
-_totalDmg = if (_selection != "") then {false} else {true};
-_force = [false,true] select (count _this > 6); // Needed to force update salvage
+if (DZE_GodModeVehiclesPlot && {locked _unit && {count (crew _unit) == 0} && {count (_unit nearEntities ["Plastic_Pole_EP1_DZ", DZE_PlotPole select 0]) > 0}}) exitWith {0};
+
+local _totalDmg = if (_selection != "") then {false} else {true};
+local _force = [false,true] select (count _this > 6); // Needed to force update salvage
 
 if (_total >= 0.98) then {
     _total = 1.0;
