@@ -160,6 +160,7 @@ GitHub Contributors
 * Victor the Cleaner - https://github.com/Victor-the-Cleaner
 * Damian6666 - https://github.com/Damian6666
 * TheFirstNoob - https://github.com/TheFirstNoob
+* BigEgg - https://github.com/BigEgg17
 
 --------------------------
 Special thanks
