@@ -224,6 +224,7 @@ if (_enoughMoney) then {
 						dayz_onBack = _x select 0; //Add to back
 					} else {
 						player addWeapon (_x select 0);
+						call player_selectWeapon;
 					};
 					_count = _count + 1;
 				};
@@ -241,7 +242,7 @@ if (_enoughMoney) then {
 			if ((_x select 1) in DZE_tradeVehicle) then {
 				_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
 				if (_item2Add != "0") then {
-					player addWeapon _item2Add;
+					player addWeapon _item2Add;					
 				};
 			};
 			_bTotal = _bTotal + (_x select 9);
