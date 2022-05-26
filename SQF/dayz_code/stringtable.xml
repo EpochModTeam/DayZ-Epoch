@@ -20964,7 +20964,7 @@
 			<German>Kaliber: .50&lt;br/&gt;Patronen: 250&lt;br/&gt;Verwendet in: M3P</German>
 			<Czech>Kalibr: .50&lt;br/&gt;Nábojů: 250&lt;br/&gt;Pro: M3P</Czech>
 			<Hungarian>Kaliber: .50&lt;br/&gt; Töltények: 250&lt;br/&gt; Hozzá tartozó fegyver: M3P</Hungarian>
-		</Key>		
+		</Key>
 		<Key ID="STR_DZ_MAG_50RND_DSHKM_NAME">
 			<English>50Rnd. DSHKM</English>
 			<Russian>50п. ДШКМ</Russian>
@@ -23326,7 +23326,8 @@
 		<Key ID="STR_EPOCH_PLAYER_12_1">
 			<English>You cannot abort while an EVR Storm is running!</English>
 			<German>Du darfst dich nicht während eines EVR-Sturms ausloggen!</German>
-		</Key>		
+			<Russian>Нельзя выходить из игры во время выброса!</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_16">
 			<English>You cannot pack while another player is nearby.</English>
 			<German>Packen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>
@@ -23859,7 +23860,7 @@
 		<Key ID="STR_EPOCH_PLAYER_131">
 			<English>Filling up %1, move to cancel.</English>
 			<German>Betanken von %1, bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>%1 заполняется, двигайтесь для отмены.</Russian>
+			<Russian>%1 заправляется, двигайтесь для отмены.</Russian>
 			<Dutch>Bezig met het vullen van %1, beweeg om te annuleren.</Dutch>
 			<French>Remplissage de %1, déplacez vous pour annuler.</French>
 			<Czech>Plnění %1, pohněte se pro zrušení.</Czech>
@@ -23867,15 +23868,17 @@
 		<Key ID="STR_EPOCH_PLAYER_131_1">
 			<English>Abort refueling, no fuel source.</English>
 			<German>Betanken abgebrochen, es konnte keine Treibstoffquelle gefunden werden.</German>
+			<Russian>Заправка прервана, источник топлива не найден.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_131_2">
 			<English>Abort refueling, the fuel source has only %1 liters left. You need at least %2 liters of fuel.</English>
 			<German>Betanken abgebrochen, die Treibstoffquelle hat nur noch %1 Liter übrig. Benötigt werden %2 Liter Treibstoff.</German>
-		</Key>		
+			<Russian>Заправка прервана, в источнике топлива осталось только %1л. Требуется %2л топлива.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_132">
 			<English>%1 filled to %2 percent capacity.</English>
 			<German>%1 wurde zu %2 Prozent betankt.</German>
-			<Russian>%1 заполнено на %2 процентов.</Russian>
+			<Russian>%1: Заправлено на %2 процентов.</Russian>
 			<Dutch>%1 is voor %2 procent gevuld.</Dutch>
 			<French>%1 est rempli(e) à %2 pourcents de sa capacité.</French>
 			<Czech>%1 je naplněno do %2 procent kapacity.</Czech>
@@ -23883,7 +23886,8 @@
 		<Key ID="STR_EPOCH_PLAYER_132_1">
 			<English>%1 filled to %2 percent capacity. It is about %3 litres of fuel left in the fuel source.</English>
 			<German>%1 wurde zu %2 Prozent betankt. Es sind noch ca. %3 Liter Treibstoff in der Treibstoffquelle übrig.</German>
-		</Key>		
+			<Russian>%1: Заправлено до %2 процентов. В топливном баке осталось около %3л топлива.</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_133">
 			<English>You can only own %1 plot pole(s)</English>
 			<German>Du kannst nur %1 Grundstück(e) besitzen.</German>
@@ -27280,7 +27284,7 @@
 		<Key ID="str_autojoin_warning">
 			<English>You will auto-join the game in %1 seconds. Press ESC to cancel and leave the lobby.</English>
 			<German>Du wirst in %1 Sekunden eingeloggt. Drücke ESC, um abzubrechen und die Lobby zu verlassen.</German>
-			<Russian>Вы автоматически присоединитесь к игре через %1 секунд. Нажмите ESC, чтобы покинуть лобби.</Russian>
+			<Russian>Вы автоматически присоединитесь к игре через %1 сек. Нажмите ESC, чтобы покинуть лобби.</Russian>
 			<Spanish>Va a auto-unirse al juego en %1 segundos. Presione ESC para cancelar y dejar el vestíbulo.</Spanish>
 			<French>Vous serez automatiquement rejoindre le jeu en %1 secondes. Appuyez sur ESC pour annuler et quitter le hall.</French>
 			<Czech>Budete auto-zapojit do hry za %1 sekund. Stisknutím klávesy ESC zrušit a nechat lobby.</Czech>
@@ -29299,12 +29303,12 @@
 		<Key ID="STR_EPOCH_TRADE_OFFER">
 			<English>I would offer %1 %2.</English>
 			<German>Ich biete %1 %2.</German>
-			<Russian>Предлагаю: %1 %2</Russian>
+			<Russian>Предлагаю: %1 %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ACCEPT">
 			<English>I accept %1 items from your %2.</English>
 			<German>Ich akzeptiere %1 aus %2.</German>
-			<Russian>%2: беру %1 шт.</Russian>
+			<Russian>Я возьму %1 шт. из %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ERROR">
 			<English>Something went wrong selecting the trader.</English>
@@ -29444,7 +29448,7 @@
 		<Key ID="STR_EPOCH_TRADE_SELL_SUCCESS">
 			<English>Trade successful, you received: %1.</English>
 			<German>Handel erfolgreich, du hast %1 erhalten.</German>
-			<Russian>Продажа завершена. Получено: %1</Russian>
+			<Russian>Продажа завершена. Получено: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_COINS">
 			<English>Trade successful, you paid %1 %2.</English>
@@ -29454,7 +29458,7 @@
 		<Key ID="STR_EPOCH_TRADE_SUCCESS_CHANGE">
 			<English>Trade successful, you received %1 %2</English>
 			<German>Handel erfolgreich, du hast %1 %2 erhalten.</German>
-			<Russian>Продажа завершена. Получено %1 %2</Russian>
+			<Russian>Продажа завершена. Получено %1 %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DEBUG">
 			<English>DEBUG: Something went wrong in the pay process. Please report this issue.</English>
@@ -33865,7 +33869,7 @@
 		<Key ID="STR_ENG_EPOCH_TUT_ADJ_DEGREES_KEYS">
 			<English>-=</English>
 			<German>-=</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_KEYBOARD_HANDEDNESS">
 			<English>Keyboard is now configured: %1</English>
 			<German>Tastatur is eingestellt auf: %1</German>
@@ -37620,7 +37624,7 @@
 		<Key ID="STR_CL_ZSC_DEPOSIT_OK">
 			<English>You have deposited %1 %2 into the %3.</English>
 			<German>Du hast %1 %2 in %3 eingezahlt.</German>
-			<Russian>Вы положили %1 %2 в %3</Russian>
+			<Russian>Вы положили %1 %2 в %3.</Russian>
 			<French>Vous avez déposé %1 %2 dans votre %3.</French>
 			<Spanish>Depositaste %1 %2 dentro de %3.</Spanish>
 		</Key>
@@ -37690,21 +37694,21 @@
 		<Key ID="STR_CL_ZSC_GLOBAL_WITHDRAW">
 			<English>You have withdrawn %1 %2.</English>
 			<German>Du hast %1 %2 abgehoben.</German>
-			<Russian>Вы сняли %1 %2</Russian>
+			<Russian>Вы сняли %1 %2.</Russian>
 			<French>Vous avez retiré %1 %2.</French>
 			<Spanish>Extrajiste %1 %2.</Spanish>
 		</Key>
 		<Key ID="STR_CL_ZSC_GLOBAL_DEPOSIT_FAIL">
 			<English>You can only have a maximum of %1 %2.</English>
 			<German>Du kannst maximal %1 %2 haben.</German>
-			<Russian>Вы можете иметь максимум %1 %2</Russian>
+			<Russian>Вы можете иметь максимум %1 %2.</Russian>
 			<French>Vous pouvez seulement avoir un maximum de %1 %2.</French>
 			<Spanish>Solo puedes tener un maximo de %1 %2.</Spanish>
 		</Key>
 		<Key ID="STR_CL_ZSC_GLOBAL_DEPOSIT_OK">
 			<English>You have deposited %1 %2.</English>
 			<German>Du hast %1 %2 eingezahlt.</German>
-			<Russian>Вы положили %1 %2</Russian>
+			<Russian>Вы положили %1 %2.</Russian>
 			<French>Vous avez déposé %1 %2.</French>
 			<Spanish>Has depositado %1 %2.</Spanish>
 		</Key>
@@ -41169,13 +41173,13 @@
 			<English>OBJECT '%1' ATTACHED.</English>
 			<German>OBJEKT '%1' GEKOPPELT.</German>
 			<French>Véhicule '%1' attaché.</French>
-			<Russian>Объект '%1' присоединён</Russian>
+			<Russian>'%1' присоединён</Russian>
 		</Key>
 		<Key ID="STR_LOG_DROPPED">
 			<English>OBJECT '%1' DROPPED.</English>
 			<German>OBJEKT '%1' ABGEKOPPELT.</German>
 			<French>Véhicule '%1' détaché.</French>
-			<Russian>Объект '%1' сброшен</Russian>
+			<Russian>'%1' сброшен</Russian>
 		</Key>
 		<Key ID="STR_LOG_DROP">
 			<English>DROP OBJECT</English>
@@ -41187,7 +41191,7 @@
 			<English>CAN NOT LIFT OBJECT '%1', BECAUSE IT'S TOWING ANOTHER OBJECT.</English>
 			<German>OBJEKT '%1' KANN NICHT HOCHGEZOGEN WERDEN, WEIL ES BEREITS ABGESCHLEPPT WIRD.</German>
 			<French>Véhicule non hélitreuillable '%1' car il tracte un autre objet.</French>
-			<Russian>Вы не можете поднять объект '%1', потому что он буксирует другой объект.</Russian>
+			<Russian>Вы не можете поднять '%1', потому что он буксирует другой объект.</Russian>
 		</Key>
 		<Key ID="STR_LOG_CANT_LIFT_MOVING">
 			<English>OBJECT '%1' IS BEING BY A PLAYER.</English>
@@ -41205,7 +41209,7 @@
 			<English>OBJECT '%1' IS ALREADY TRANSPORTED BY ANOTHER OBJECT.</English>
 			<German>DAS OBJEKT '%1' WIRD BEREITS VON EINEM ANDEREN OBJEKT TRANSPORTIERT.</German>
 			<French>Véhicule '%1' est déjà transporté par un autre véhicule.</French>
-			<Russian>Объект '%1' транспортируется другим объектом.</Russian>
+			<Russian>Объект '%1' уже буксируется другим транспортом.</Russian>
 		</Key>
 		<Key ID="STR_LOG_NOW_SELECT">
 			<English>SELECT THE OBJECT WHICH IS TO TOW WITH '%1'...</English>
@@ -41241,7 +41245,7 @@
 			<English>OBJECT '%1' IS TOO FAR FROM THE OBJECT TO BE TOWED.</English>
 			<German>DAS OBJEKT '%1' IST ZU WEIT ENTFERNT ZUM KOPPELN.</German>
 			<French>Le véhicule '%1' est trop loin du véhicule à remorquer.</French>
-			<Russian>Объект '%1' находится слишком далеко от буксируемого объекта.</Russian>
+			<Russian>Объект '%1' находится слишком далеко от буксируемого транспорта.</Russian>
 		</Key>
 		<Key ID="STR_LOG_IMPOSSIBLE_VEHICLE">
 			<English>ONLY THE PILOT CAN DETACH THIS OBJECT.</English>
@@ -41267,17 +41271,17 @@
 			<French>Véhicule '%1' détaché.</French>
 			<Russian>Объект '%1' был отсоединён.</Russian>
 		</Key>
-        <Key ID="STR_LOG_MISSING_EQUIPMENT">
-            <English>'%1' IS REQUIRED TO TOW.</English>
-            <German>'%1' IST ZUM ABSCHLEPPEN ERFORDERLICH.</German>
-            <French>'%1' EST NÉCESSAIRE POUR REMORQUER.</French>
-            <Russian>'%1' ТРЕБУЕТСЯ ДЛЯ БУКСИРОВКИ</Russian>
-        </Key>
-        <Key ID="STR_LOG_RETURNED_EQUIPMENT">
-            <English>'%1' HAS BEEN RETURNED.</English>
-            <German>'%1' WURDE ZURÜCKGEGEBEN.</German>
-            <French>'%1' A ÉTÉ RETOURNÉ.</French>
-            <Russian>'%1' ВЕРНУЛАСЬ</Russian>
-        </Key>		
+		<Key ID="STR_LOG_MISSING_EQUIPMENT">
+			<English>'%1' IS REQUIRED TO TOW.</English>
+			<German>'%1' IST ZUM ABSCHLEPPEN ERFORDERLICH.</German>
+			<French>'%1' EST NÉCESSAIRE POUR REMORQUER.</French>
+			<Russian>Для буксировки требуется %1.</Russian>
+		</Key>
+		<Key ID="STR_LOG_RETURNED_EQUIPMENT">
+			<English>'%1' HAS BEEN RETURNED.</English>
+			<German>'%1' WURDE ZURÜCKGEGEBEN.</German>
+			<French>'%1' A ÉTÉ RETOURNÉ.</French>
+			<Russian>Возвращено в инвентарь: %1.</Russian>
+		</Key>
 	</Package>
 </Project>
