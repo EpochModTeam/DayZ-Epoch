@@ -173,5 +173,5 @@ if (!isNull _insideBox) then {					// bounding box detected
 	};
 };
 dayz_insideBuilding = [objNull, _insideBox] select _inside;
-_dir call fnc_isSheltered;
+[_unit, _dir] call fnc_isSheltered;	// [vehicle player, direction of boundingBox if appropriate]
 _inside

@@ -14,7 +14,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 local _deepScan = {
 
-	local _objects	= lineIntersectsWith [_pos1, _pos2, player, objNull, true];		// sorted (nearest last)
+	local _objects	= lineIntersectsWith [_pos1, _pos2, _unit, objNull, true];		// sorted (nearest last)
 	local _nearest	= (count _objects) - 1;							// nearest object
 	local _idx	= _this;								// weight index
 
@@ -75,7 +75,8 @@ local _deepScan = {
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-local _dir		= _this;			// align hemisphere to building if inside
+local _unit		= _this select 0;		// vehicle player
+local _dir		= _this select 1;		// align hemisphere to building if inside
 local _rad		= 50;				// scan radius
 local _seg		= 8;				// initial segments
 local _spin		= 0;				// z spin offset per arc-cycle
@@ -84,7 +85,7 @@ local _e2		= 5.0;				// long edge length
 local _scanWgt		= [1,1.5,2];			// scan weighting index
 local _hitWgt		= [0,0,0];			// record hit weighting
 local _total		= 0;				// total hits, adjusted for weighting
-local _pos1		= aimPos player;		// ASL from
+local _pos1		= aimPos _unit;			// ASL from
 local _pos2		= +_pos1;			// ASL to
 
 _pos2 set [2, (_pos2 select 2) + _rad];			// overhead pos
