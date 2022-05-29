@@ -1,12 +1,10 @@
-private ["_backPackCount","_backPackCount_raw","_backPackSlots","_formattedText","_magazineCount","_magazineCount_raw","_magazineSlots","_name","_picture","_price","_text","_typeOf","_weaponSlots","_weaponsCount","_weaponsCount_raw"];
+private ["_backPackCount","_backPackCount_raw","_backPackSlots","_formattedText","_magazineCount","_magazineCount_raw","_magazineSlots","_name","_picture","_price","_typeOf","_weaponSlots","_weaponsCount","_weaponsCount_raw"];
 
 if (vkc_action == "claim") then {
 	ctrlShow[4850,true];
-	_text = localize "STR_CL_VKC_CLAIM";
 	_price = vkc_claimPrice;
 } else {
 	ctrlShow[4851,true];
-	_text = localize "STR_CL_VKC_CHANGE";
 	_price = vkc_changePrice;
 };
 
@@ -37,7 +35,7 @@ _formattedText = format [
 	"<t color='#33BFFF' size='0.7'>%2: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
 	"<t color='#33BFFF' size='0.7'>%4: </t><t color='#ffffff' size='0.7'>%5</t><br />" +
 	"<t color='#33BFFF' size='0.7'>%6: </t><t color='#ffffff' size='0.7'><img image='%7'/> %13/%10 <img image='%8'/> %14/%11 <img image='%9'/> %15/%12</t><br />" +
-	"<t color='#33BFFF' size='0.7'>Price to %16: </t><t color='#ffffff' size='0.7'>%17</t><br />",
+	"<t color='#33BFFF' size='0.7'>%16: </t><t color='#ffffff' size='0.7'>%17</t><br />",
 	_picture,
 	localize "STR_EPOCH_NAME",
 	_name,
@@ -53,8 +51,8 @@ _formattedText = format [
 	_weaponsCount,
 	_magazineCount,
 	_backPackCount,
-	toLower (_text),
-	_price
+	localize "STR_CL_VKC_PRICE",
+	_price	
 ];
 
 ((findDisplay 4800) displayCtrl 4803) ctrlSetStructuredText parseText _formattedText;

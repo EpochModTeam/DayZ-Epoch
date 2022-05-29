@@ -38029,6 +38029,13 @@
 			<Russian>Сменить ключ</Russian>
 			<Spanish>Cambiar llave del vehículo</Spanish>
 		</Key>
+		<Key ID="STR_CL_VKC_PRICE">
+			<English>Price</English>
+			<German>Preis</German>
+			<Russian>Стоимость</Russian>
+			<Spanish>Coste</Spanish>
+			<French>Frais</French>
+		</Key>		
 	</Package>
 
 	<Package name="servicePoints">
