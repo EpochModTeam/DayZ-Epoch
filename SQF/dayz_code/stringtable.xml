@@ -37184,8 +37184,330 @@
 			<English>%1 damaged by the EMP</English>
 			<German>%1 wurde vom EMP beschädigt</German>
 			<Russian>Повреждено выбросом: %1</Russian>
+		</Key>		
+		<Key ID="STR_TREE_STUMP_01">
+			<English>Tree Stump</English>
+			<German>Baumstumpf</German>
+			<Russian>Пень</Russian>
+		</Key>	
+		<Key ID="STR_TREE_STUMP_02">
+			<English>Tree Stump</English>
+			<German>Baumstumpf</German>
+			<Russian>Пень</Russian>
 		</Key>
-
+		<Key ID="STR_TREE_STUMP_03">
+			<English>Tree Stump</English>
+			<German>Baumstumpf</German>
+			<Russian>Пень</Russian>
+		</Key>
+		<Key ID="STR_TREE_STUMP_04">
+			<English>Tree Stump</English>
+			<German>Baumstumpf</German>
+			<Russian>Пень</Russian>
+		</Key>		
+		
+		<!--Placeholder strings for new items server admins want to add within the mission by overwrite this strings-->
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_01">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_01">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_02">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_02">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_03">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_03">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_04">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_04">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_05">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_05">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_06">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_06">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_07">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_07">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_08">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_08">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_09">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_09">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_10">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_10">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_11">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_11">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_12">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_12">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_13">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_13">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_14">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_14">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_15">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_15">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_16">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_16">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_17">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_17">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_18">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_18">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_19">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_19">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_20">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_20">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_21">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_21">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_22">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_22">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_23">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_23">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_24">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_24">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_25">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_25">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_26">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_26">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_27">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_27">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>	
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_28">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_28">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_29">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_29">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_30">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_30">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_31">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_31">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_32">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_32">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_33">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_33">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_34">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_34">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_35">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_35">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_36">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_36">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_37">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_37">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_38">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_38">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_39">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_39">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>	
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_40">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_40">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_41">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_41">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_42">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_42">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_43">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_43">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_44">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_44">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_45">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_45">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_46">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_46">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_47">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_47">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_48">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_48">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_49">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_49">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>		
+		<Key ID="STR_PLACEHOLDER_ITEM_NAME_50">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		<Key ID="STR_PLACEHOLDER_ITEM_DESC_50">
+			<English>Placeholder - overwrite in stringtable</English>
+		</Key>
+		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
