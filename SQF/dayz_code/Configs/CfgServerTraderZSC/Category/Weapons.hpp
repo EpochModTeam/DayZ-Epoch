@@ -391,7 +391,7 @@ class Category_16 {
 	class MK16_ACOG_SD_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1000,"worth"};};
 	class MK16_GL_ACOG_SD_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1200,"worth"};};	
 	class MK16_BL_CCO_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {400,"worth"};};
-	class MK16_BL_GL_ACOG_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {800,"worth"};}
+	class MK16_BL_GL_ACOG_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {800,"worth"};};
 	class MK16_BL_Holo_SD_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {800,"worth"};};
 	class MK16_BL_GL_CCO_SD_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1000,"worth"};};	
 	class L85A2_DZ {type = "trade_weapons";buy[] = {400,"worth"};sell[] = {200,"worth"};};
