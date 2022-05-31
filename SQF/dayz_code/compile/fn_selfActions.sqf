@@ -22,6 +22,7 @@ local _hasHotwireKit = "ItemHotwireKit" in _magazinesPlayer;
 local _isMan = _cursorTarget isKindOf "Man"; //includes animals and zombies
 local _isPZombie = player isKindOf "PZombie_VB";
 local _isClose = (player distance _cursorTarget < 3);
+local _ownerID = _cursorTarget getVariable ["ownerPUID","0"];
 local _dogHandle = player getVariable ["dogID",0];
 local _text = "";
 
@@ -242,8 +243,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	local _isPlant = _typeOfCursorTarget in Dayz_plants;
 	local _isTent = _typeOfCursorTarget in DZE_Tents;
 	local _istypeTent = _isTent || (_cursorTarget isKindOf "IC_Tent");
-	local _characterID = _cursorTarget getVariable ["CharacterID","0"];
-	local _ownerID = _cursorTarget getVariable ["ownerPUID","0"];
+	local _characterID = _cursorTarget getVariable ["CharacterID","0"];	
 	local _isOwner = _ownerID == _playerUID;
 	local _hasAccess = [];
 	local _isAnimal = _cursorTarget isKindOf "Animal";
@@ -1186,6 +1186,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 if (_dogHandle > 0) then {
 	local _dog = _dogHandle getFSMVariable "_dog";
 	if (isNil "_dog") exitWith {};
+	if (isNil "_ownerID") then {_ownerID = "0"};
 	if (_canDo && !_inVehicle && {alive _dog} && {!(_ownerID in [_myCharID,_playerUID])}) then {
 		if (s_player_movedog < 0) then {
 			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID",0], 1, false, true];
