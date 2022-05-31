@@ -1,10 +1,3 @@
-//Banned Weapons
-//#include "CfgBanned\CfgAmmo.hpp"
-//#include "CfgBanned\CfgMagazines.hpp"
-//#include "CfgBanned\CfgMarkers.hpp"
-//#include "CfgBanned\CfgVehicles.hpp"
-//#include "CfgBanned\CfgWeapons.hpp"
-
 class CfgPatches
 {
 	class dayz_anim
@@ -97,7 +90,14 @@ class CfgPatches
 			"CACharacters_W_BAF","Desert_E","CA_L39","CA_Missions2_PMC","CATracked_E","CATracked_E_BMP2","CATracked_E_M113",
 			"CATracked_E_M1_Abrams","CATracked_E_M2A2_Bradley","CATracked_E_T34","CATracked_E_T55","CATracked_E_T72",
 			"CATracked_E_us_m270mlrs","CATracked_E_ZSU","CAWheeled_D_BAF","CAWheeled_W_BAF","CAAir_BAF","CAAir_BAF_CH_47F",
-			"CATracked_BAF","CATracked_W_BAF","CA_CommunityConfigurationProject_E"
+			"CATracked_BAF","CATracked_W_BAF","CA_CommunityConfigurationProject_E","CA_Animals2_Dogs_Pastor","CA_Animals2_Dogs_Fin","CA_Animals2_Dogs",
+			"Bootcamp_ACR","CA_ACR","CA_DubbingRadio_ACR","CA_Missions_ACR","CA_Modules_ACR","CA_Modules_ACR_Functions","CAAir_ACR",
+			"CAAir_ACR_L159","CAAir_ACR_L39","CAAir_ACR_Mi24","CACharacters_ACR","CALanguage_ACR","CALanguage_missions_ACR","CAMisc_ACR",
+			"CAMisc_ACR_3DMarkers","CAMisc_ACR_Container","CAMisc_ACR_Dog","CAMisc_ACR_Helpers","CAMisc_ACR_PBX","CAMisc_ACR_ScaffoldingSmall",
+			"CAMisc_ACR_Shooting_range","CAMisc_ACR_Sign_Mines","CAMisc_ACR_Targets","CAMisc_ACR_Targets_InvisibleTarget","CAMisc_ACR_TestSphere",
+			"CATracked_ACR","CATracked_ACR_BVP1","CATracked_ACR_T72M4CZ","CAWEAPONS_ACR","CAWeapons_ACR_CZ805","CAWeapons_ACR_LRTV",
+			"CAWeapons_ACR_RBS70","CAWeapons_ACR_UK59","CAWheeled_ACR","CAWheeled_ACR_Dingo","CAWheeled_ACR_HMMWV","CAWheeled_ACR_LR",
+			"CAWheeled_ACR_Octavia","CAWheeled_ACR_Pandur","CaWheeled_ACR_RM70","CAWheeled_ACR_T810","Mountains_ACR","Woodland_ACR"
 		};
 		dayzVersion = 1.8;
 	};
@@ -106,7 +106,7 @@ class CfgPatches
 class CfgSkeletons
 {
 	class Default
-{
+	{
 		isDiscrete = 1;
 		skeletonInherit = "";
 		skeletonBones[] = {};
@@ -117,47 +117,8 @@ class CfgSkeletons
 		isDiscrete = 0;
 		skeletonInherit = "";
 		skeletonBones[] ={};
-};
-	class DogSkeleton
-{
-		isDiscrete = 0;
-		skeletonInherit = "";
-		skeletonBones[] =
-		{
-			"Hips","",
-			"spine","Hips",
-			"spine1","spine",
-			"spine2","spine1",
-			"neck","spine2",
-			"neck1","neck",
-			"head","neck1",
-			"Jaw","head",
-			"Tongue1","Jaw",
-			"Tongue2","Tongue1",
-			"leftArm","spine2",
-			"leftForeArm","leftArm",
-			"leftHand","leftForeArm",
-			"leftFinger","leftHand",
-			"rightArm","spine2",
-			"rightForeArm","rightArm",
-			"rightHand","rightForeArm",
-			"rightFinger","rightHand",
-			"tail1","Hips",
-			"tail2","tail1",
-			"tail3","tail2",
-			"leftUpLeg","spine",
-			"leftLeg","leftUpLeg",
-			"leftFoot","leftLeg",
-			"leftToe","leftFoot",
-			"rightUpLeg","spine",
-			"rightLeg","rightUpLeg",
-			"rightFoot","rightLeg",
-			"rightToe","rightFoot",
-			"leftEar","head",
-			"rightEar","head"
-		};
-		pivotsModel = "ca\Animals2\Dog_Skeleton.p3d";
 	};
+
 	class BirdSkeleton: AnimalSkeleton
 	{
 		skeletonInherit = "AnimalSkeleton";
@@ -199,7 +160,7 @@ class CfgSkeletons
 			"spine","",
 			"spine1","spine",
 			"tail","Hips"
-};
+		};
 	};
 	class CfgMovesButterfly: Default
 	{
@@ -364,10 +325,10 @@ class CfgSkeletons
  
 		pivotsModel = "";
 	};
-	};
+};
 	
 class CfgModels
-	{
+{
 	class Default
 	{
 		sectionsInherit = "";
@@ -384,7 +345,7 @@ class CfgModels
 		mfMax = 0;	// Maximum temperature when the model is moving (in celsius)
 		mFact = 1;	// Metabolism factor - number from interval <0, 1> (0 - metabolism has no influence, 1 - metabolism has full influence (no other temperature source will be considered)).
 		tBody = 37; 	// Metabolism temperature of the model (in celsius)
-	};
+	};	
 	class ArmaMan : Default
 	{
 		sections[] =
