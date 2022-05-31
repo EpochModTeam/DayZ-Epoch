@@ -19,7 +19,7 @@
 1 "server"
 5 "compile"
 5 "loadFile"
-5 "call" !="dog_callBack" !="\[,<NULL-object>,\"say\",\[\"dog_callBack\",120\]\]"
+5 "call" !dog_callBack !="\[,<NULL-object>,\"say\",\[\"dog_callBack\",120\]\]"
 1 "chat"
 1 "fade"
 5 "mission"
