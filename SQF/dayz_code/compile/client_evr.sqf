@@ -396,7 +396,7 @@ fnc_evr = {
 					[objNull, player, rSwitchMove, "AcinPercMrunSnonWnonDf_agony"] call RE;
 				};
 			} else {
-				if (DZE_EVRHandleVehicles && {isEngineOn _vehicle && ((speed _vehicle) > 10)}) then {
+				if (DZE_EVRHandleVehicles && {isEngineOn _vehicle}) then {
 					local _fuel = fuel _vehicle;
 					_vehicle setFuel 0;
 					player action ["engineOff",_vehicle];
