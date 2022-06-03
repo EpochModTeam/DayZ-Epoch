@@ -16,7 +16,6 @@ class Bizon_DZ : bizon
 	class Attachments
 	{
 		Attachment_Kobra = "Bizon_Kobra_DZ";
-		Attachment_SupBizon = "Bizon_SD_DZ";//left to maintain old attachment suppressor
 		Attachment_Sup9 = "Bizon_SD_DZ";
 	};
 };
@@ -27,7 +26,10 @@ class Bizon_Kobra_DZ : Bizon_DZ
 	picture = "\RH_aks\inv\bizonk.paa";
 	displayName = $STR_DZ_WPN_BIZON_KOBRA_NAME;	
 	
-	class Attachments {};
+	class Attachments
+	{
+		Attachment_Sup9 = "Bizon_Kobra_SD_DZ";
+	};
 	
 	class ItemActions
 	{
