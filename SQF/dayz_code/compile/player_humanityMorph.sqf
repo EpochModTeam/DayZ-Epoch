@@ -15,6 +15,8 @@ _old addEventHandler ["HandleDamage", {0}];
 //Logout
 local _humanity = player getVariable ["humanity",0];
 local _medical = player call player_sumMedical;
+local _legsBroken = r_fracture_legs;
+local _armsBroken = r_fracture_arms;
 local _worldspace = [round(direction player),getPosATL player];
 local _zombieKills = player getVariable ["zombieKills",0];
 local _headShots = player getVariable ["headShots",0];
@@ -59,7 +61,7 @@ if (count _medical > 0) then {
 	player setVariable ["blood_type",(_medical select 11),true];
 	player setVariable ["rh_factor",(_medical select 12),true];
 	player setVariable ["messing",(_medical select 13),true];
-	player setVariable ["blood_testdone",(_medical select 14),true];
+	player setVariable ["blood_testdone",(_medical select 14),true];	
 
 	//Add Wounds
 	{
@@ -71,14 +73,12 @@ if (count _medical > 0) then {
 
 	//Add fractures
 	local _fractures = _medical select 9;
-//	player setVariable ["hit_legs",(_fractures select 0),true];
-//	player setVariable ["hit_hands",(_fractures select 1),true];
-	[player,"legs",(_fractures select 0)] call object_setHit;
-	[player,"hands",(_fractures select 1)] call object_setHit;
+	[player,"legs",(_fractures select 0),_legsBroken,_armsBroken] call unit_setFractures;
+	[player,"hands",(_fractures select 1),_legsBroken,_armsBroken] call unit_setFractures;
 } else {
 	//Reset Fractures
-	player setVariable ["hit_legs",0,true];
-	player setVariable ["hit_hands",0,true];
+	[player,"legs",0,false,false] call unit_setFractures;
+	[player,"hands",0,false,false] call unit_setFractures;
 	player setVariable ["USEC_injured",false,true];
 	player setVariable ["USEC_inPain",false,true];
 };
