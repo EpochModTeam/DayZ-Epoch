@@ -66,6 +66,8 @@
 [ADDED] DZE_CombatTimer to change the combat time. (5d0d00583) @AirwavesMan
 [ADDED] Bases behave like buildings now. It will no longer rain or snow throught bases. Also the temperature will no longer drop. (8071602dd) @Victor-the-Cleaner
 [ADDED] BigEgg's togglable vehicle godmode at plot pole. (2d7a2468f) @AirwavesMan
+[ADDED] 4 tree stumps with gear slots. (ffdae898f) @AirwavesMan
+[ADDED] 50 placeholder items for server admins to use. (d95a7673a) @AirwavesMan
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [UPDATED] Replace M240 Nest ghost preview with the actual game object as preview. (ff05cb9cb) @ZzBombardierzZ, @AirwavesMan
 [UPDATED] Players may no longer build objects outside the plot radius. (bb968698e) @Victor-the-Cleaner
@@ -160,12 +162,18 @@
 [FIXED] Infinite refueling with the fuel pump. (4ebf760aa) @Damian6666, @AirwavesMan
 [FIXED] Very slow braking of Bikes and Motorcycles. (2ebe0d655) @Victor-the-Cleaner
 [FIXED] When buying a weapon without any weapon in the inventory the player had to switch the weapon first to be able to use it. (946c9c5c9) @iben
+[FIXED] Silencer of Bizon_Kobra_SD_DZ could not be removed. (62a72e195) @mmrsz, @AirwavesMan
+[FIXED] Fill quiver did not work properly. (4d377f7e4) @Victor-the-Cleaner
+[FIXED] Broken Legs after changing clothes. (56787c71a) @AirwavesMan
+[FIXED] Broken legs got not recognized after re-log or login. (d9f41afd1) @AirwavesMan
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @seelenapparat, @AirwavesMan
 [REMOVED] DZE_permanentPlot variable and checks. (5aba5d7dd, 9ecdb21dd) @AirwavesMan
 [REMOVED] Ghost previews for Razor Wire, Sandbag Nest, and HBarrier Cubes due to inaccurate geometry. (d744d995e) @Victor-the-Cleaner
 [REMOVED] DZE_modularBuild variable. (16361e546) @Victor-the-Cleaner
 [REMOVED] player_build.sqf (1bb034360) @Victor-the-Cleaner
 [REMOVED] OEMPos variable (fc6680c36) @AirwavesMan
+[REMOVED] PVDZ_playerMedicalSync, server_medicalSync (abce13a65) @AirwavesMan
 [REPLACED] fnc_veh_setFixServer --> server_setHitpoints. (637f1f445) @AirwavesMan
+[REPLACED] object_setHit --> unit_setFractures (56787c71a) @AirwavesMan
 
 [INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, SyNcRoNiCzZ, oiad(salival), BigEgg17
