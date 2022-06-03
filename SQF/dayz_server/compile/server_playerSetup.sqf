@@ -99,6 +99,7 @@ if (count _medical > 0) then {
 	_fractures = _medical select 9;
 	_playerObj setVariable ["hit_legs",(_fractures select 0),true];
 	_playerObj setVariable ["hit_hands",(_fractures select 1),true];
+	
 	_playerObj setVariable ["unconsciousTime",(_medical select 10),true];
 	_playerObj setVariable ["messing",if (count _medical >= 14) then {(_medical select 13)} else {[0,0,0]},true];
 	_playerObj setVariable ["blood_testdone",if (count _medical >= 15) then {(_medical select 14)} else {false},true];
@@ -114,7 +115,10 @@ if (count _medical > 0) then {
 	};
 } else {
 	//Reset bleeding wounds
-	call fnc_usec_resetWoundPoints;
+    {
+        _playerObj setVariable["hit_"+_x,false,true];
+    } forEach USEC_typeOfWounds;
+
 	//Reset fractures
 	_playerObj setVariable ["hit_legs",0,true];
 	_playerObj setVariable ["hit_hands",0,true];

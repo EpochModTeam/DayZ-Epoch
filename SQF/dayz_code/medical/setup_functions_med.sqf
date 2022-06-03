@@ -265,11 +265,13 @@ fnc_usec_playerHandleBlood = {
 	};
 };
 
-fnc_usec_resetWoundPoints = {
-	{
-		player setVariable["hit_"+_x,false,true];
-	} forEach USEC_typeOfWounds;
-	player setVariable ["USEC_injured",false,true];
+if (!isDedicated) then {
+	fnc_usec_resetWoundPoints = {
+		{
+			player setVariable["hit_"+_x,false,true];
+		} forEach USEC_typeOfWounds;
+		player setVariable ["USEC_injured",false,true];
+	};
 };
 
 fnc_usec_damageBleed = {
