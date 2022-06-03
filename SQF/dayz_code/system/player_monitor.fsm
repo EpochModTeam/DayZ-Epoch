@@ -760,13 +760,13 @@ class FSM
                          "_legs = player getVariable [""hit_legs"",0];" \n
                          "_arms = player getVariable [""hit_hands"",0];" \n
                          "" \n
-                         "if (_legs > 1) then {" \n
+                         "if (_legs >= 1) then {" \n
                          "	player setHit[""legs"",1];" \n
-                         "	r_fracture_legs = true;" \n
+                         "	r_fracture_legs = true;" \n						 
                          "};" \n
-                         "if (_arms > 1) then {" \n
+                         "if (_arms >= 1) then {" \n
                          "	player setHit[""hands"",1];" \n
-                         "	r_fracture_arms = true;" \n
+                         "	r_fracture_arms = true;" \n						 
                          "};" \n
                          "" \n
                          "//Record current weapon state" \n
