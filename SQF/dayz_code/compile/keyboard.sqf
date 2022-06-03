@@ -299,8 +299,10 @@ if (isNil "keyboard_keys") then {
 	};
 
 	local _brake = {
-		if (DZE_isOnBike) then {DZE_isBraking = true};
-		call _interrupt;
+        if (DZE_isOnBike) then {DZE_isBraking = true};
+        r_interrupt = true;
+        if (DZE_Surrender) then {call dze_surrender_off};
+        if (dayz_autoRun) then {call dayz_autoRunOff;};
 	};
 
 	keyboard_keys = [];
