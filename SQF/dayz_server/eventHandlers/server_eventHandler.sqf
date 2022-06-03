@@ -7,11 +7,9 @@
 "PVDZ_plr_Login2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
 "PVDZ_plr_LoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
 "PVDZ_obj_Destroy"		addPublicVariableEventHandler {(_this select 1) call server_deleteObj};
-"PVDZ_plr_Delete"		addPublicVariableEventHandler {(_this select 1) spawn sched_co_deleteVehicle}; // Delete hided players
+"PVDZ_plr_Delete"		addPublicVariableEventHandler {(_this select 1) setVariable ["sched_co_fliesDeleted", true];(_this select 1) spawn sched_co_deleteVehicle}; // Delete hided players
 "PVDZ_send" addPublicVariableEventHandler {(_this select 1) call server_sendToClient};
 //"PVDZ_dayzCarBomb" addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\actions\detonate_bomb.sqf";};
-//[player,[medical Array]];
-"PVDZ_playerMedicalSync" addPublicVariableEventHandler { (_this select 1) call server_medicalSync; ((_this select 1) select 0) setVariable["Medical",((_this select 1) select 1),false]; }; //diag_log format["%1 - %2",((_this select 1) select 0),((_this select 1) select 1)]; };
 
 // EPOCH ADDITIONS
 "PVDZE_maintainArea" 	addPublicVariableEventHandler {(_this select 1) spawn server_maintainArea};

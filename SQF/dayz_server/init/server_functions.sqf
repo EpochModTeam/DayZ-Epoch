@@ -63,27 +63,6 @@ if (DZE_Virtual_Garage) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\garage\init.sqf";
 };
 
-server_medicalSync = {
-	local _player = _this select 0;
-	local _array = _this select 1;
-
-	_player setVariable ["USEC_isDead",(_array select 0)]; //0
-	_player setVariable ["NORRN_unconscious",(_array select 1)]; //1
-	_player setVariable ["USEC_infected",(_array select 2)]; //2
-	_player setVariable ["USEC_injured",(_array select 3)]; //3
-	_player setVariable ["USEC_inPain",(_array select 4)]; //4
-	_player setVariable ["USEC_isCardiac",(_array select 5)]; //5
-	_player setVariable ["USEC_lowBlood",(_array select 6)]; //6
-	_player setVariable ["USEC_BloodQty",(_array select 7)]; //7
-	// _wounds; //8
-	// [_legs,_arms]; //9
-	_player setVariable ["unconsciousTime",(_array select 10)]; //10
-	_player setVariable ["blood_type",(_array select 11)]; //11
-	_player setVariable ["rh_factor",(_array select 12)]; //12
-	_player setVariable ["messing",(_array select 13)]; //13
-	_player setVariable ["blood_testdone",(_array select 14)]; //14
-};
-
 vehicle_handleServerKilled = {
 	local _unit = _this select 0;
 

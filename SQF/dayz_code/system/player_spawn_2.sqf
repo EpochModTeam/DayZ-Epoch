@@ -1,4 +1,4 @@
-private ["_isOK", "_startcombattimer", "_myPos", "_wpnType", "_ismelee","_radsound", "_bloodloss","_NutritionLoss", "_Nutrition","_outsideMap","_lastUpdate","_tempPos","_lowBlood","_refObj", "_size", "_vel", "_speed","_isPZombie", "_radTimer", "_timer", "_timer30", "_timer150", "_hunger","_thirst","_result","_randomSpot","_distance","_mylastPos","_lastTemp","_rnd","_messTimer","_saveTime"];
+private ["_isOK", "_startcombattimer", "_myPos", "_wpnType", "_ismelee","_radsound", "_bloodloss","_NutritionLoss", "_Nutrition","_outsideMap","_lastUpdate","_tempPos","_lowBlood","_refObj", "_size", "_vel", "_speed","_isPZombie", "_radTimer", "_timer", "_timer150", "_hunger","_thirst","_result","_randomSpot","_distance","_mylastPos","_lastTemp","_rnd","_messTimer","_saveTime"];
 disableSerialization;
 
 _messTimer = 0;
@@ -7,7 +7,6 @@ _isPZombie = player isKindOf "PZombie_VB";
 _radTimer = 0;
 
 _timer = diag_tickTime;
-_timer30 = diag_Ticktime;
 _timer150 = diag_ticktime;
 //_timerMonitor = diag_ticktime;
 
@@ -63,19 +62,6 @@ while {1 == 1} do {
 
 	if ((diag_tickTime - _timer) > 300) then {
 		_timer = diag_tickTime;
-	};
-
-	//Every 30 seconds force the client to update the server of all medical Values
-	if ((diag_tickTime - _timer30) > 30) then {
-		[] spawn {
-			private "_medical";
-
-			_medical = player call player_sumMedical;
-
-			PVDZ_playerMedicalSync = [player,_medical];
-			publicVariableServer "PVDZ_playerMedicalSync";
-		};
-		_timer30 = diag_tickTime;
 	};
 
 	//Record Check
