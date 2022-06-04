@@ -1,5 +1,6 @@
 class JetSkiYanahui_Case;
 class JetSkiYanahui_Case_Yellow : JetSkiYanahui_Case {
+	scope = 2;
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_JETSKI_YELLOW;
@@ -12,6 +13,7 @@ class JetSkiYanahui_Case_Yellow : JetSkiYanahui_Case {
 };
 
 class JetSkiYanahui_Case_Green : JetSkiYanahui_Case {
+	scope = 2;
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_JETSKI_GREEN;
@@ -24,6 +26,7 @@ class JetSkiYanahui_Case_Green : JetSkiYanahui_Case {
 };
 
 class JetSkiYanahui_Case_Blue : JetSkiYanahui_Case {
+	scope = 2;
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_JETSKI_BLUE;
@@ -36,6 +39,7 @@ class JetSkiYanahui_Case_Blue : JetSkiYanahui_Case {
 };
 
 class JetSkiYanahui_Case_Red : JetSkiYanahui_Case {
+	scope = 2;
 	side = 1;
 	faction = "USMC";
 	displayName = $STR_VEH_NAME_JETSKI_RED;
