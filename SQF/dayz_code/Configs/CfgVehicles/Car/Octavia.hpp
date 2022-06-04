@@ -60,8 +60,8 @@ class Octavia_ACR_DZE: Car {
 	};
 	soundGear[] = {"",0.00017782794,1};
 	insideSoundCoef = 0.9;
-	SoundGetIn[] = {"ca\Sounds_ACR\wheeled\Skoda\dvere",0.56234133,1};
-	SoundGetOut[] = {"ca\Sounds_ACR\wheeled\Skoda\dvere",0.56234133,1,40};
+	SoundGetIn[] = {"ca\sounds\Vehicles\wheeled\GOLF\ext\ext-golf-getout", 0.562341, 1};
+	SoundGetOut[] = {"ca\sounds\Vehicles\wheeled\GOLF\ext\ext-golf-getout", 0.562341, 1, 40};
 	soundEngineOnInt[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_start",0.56234133,1.0};
 	soundEngineOnExt[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_ext_start",0.56234133,1.0,250};
 	soundEngineOffInt[] = {"ca\Sounds_ACR\wheeled\Skoda\skoda_int_stop",0.56234133,1.0};
