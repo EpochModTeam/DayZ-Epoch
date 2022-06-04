@@ -50,10 +50,7 @@ while {r_doLoop} do {
 					_cureChance = if (_isOwner) then {0.10 + _cureAttempt} else {0.05 + _cureAttempt};
 					if ([_cureChance] call fn_chance) then {
 						r_player_infected = false;
-						player setVariable["USEC_infected",false,false];
-						
-						PVDZ_serverStoreVar = [player,"USEC_infected",false];
-						publicVariableServer "PVDZ_serverStoreVar";
+						player setVariable["USEC_infected",false,true];
 					} else {
 						_infectedStatus = if (r_player_infected) then { "Infected" } else { "Cured" };
 						_cureAttempt = _cureAttempt + 0.01;

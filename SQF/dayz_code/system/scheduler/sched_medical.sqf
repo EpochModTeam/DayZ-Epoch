@@ -2,13 +2,9 @@
 
 #include "scheduler.hpp"
 
-sched_medical_slow = {  // 10 seconds
+sched_medical_slow = {  // 10 seconds	
 	if (abs (r_player_blood - (player getVariable["USEC_BloodQty", r_player_bloodTotal])) > 120) then {
- 	//Do not global send
-		player setVariable["USEC_BloodQty", r_player_blood, false];
-	//Send only to server
-		PVDZ_serverStoreVar = [player, "USEC_BloodQty", r_player_blood];
-		publicVariableServer "PVDZ_serverStoreVar";
+		player setVariable["USEC_BloodQty", r_player_blood, true];	//	Variable is already global, there is no need to switch the system now.
 	};
 
 	objNull
