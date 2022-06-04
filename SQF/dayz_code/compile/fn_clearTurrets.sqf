@@ -30,7 +30,7 @@ local _findRecurse = {
 	
 	{
 		local _mag = _x;
-		if !(["horn",_mag] call fnc_inString) then {
+		if !(["Horn",_mag] call fnc_inString) then {
 			if (DZE_clearVehicleFlares) then {
 				_obj removeMagazinesTurret[_mag,_turret];
 			} else {

@@ -27,21 +27,31 @@ local _findRecurse = {
 
 {
 	local _type = _x select 0;
-	local _turret = _x select 1;
-	local _mags = getArray(configFile >> "CfgWeapons" >> _type >> "magazines");
-	local _mag = _mags select 0;
-	
-	if (!isNil "_mag" && {!(["horn",_mag] call fnc_inString)})then {
-		for "_i" from 1 to _countMags do {
-			_obj addMagazineTurret[_mag,_turret];
-		};	
-	};
+
+	if (!(["Horn",_type] call fnc_inString) && (_type != "")) then {
+		local _turret = _x select 1;
+		local _mags = getArray(configFile >> "CfgWeapons" >> _type >> "magazines");
+		local _mag = _mags select 0;
+		
+		if (!isNil "_mag")then {
+			for "_i" from 1 to _countMags do {
+				_obj addMagazineTurret[_mag,_turret];
+			};	
+		};
+	};	
 } forEach _weaponArray;
 
 {
-	local _mags = getArray(configFile >> "CfgWeapons" >> _x >> "magazines");
-	local _mag = _mags select 0;
-	for "_i" from 1 to _countMags do {
-		_obj addMagazine _mag;
-	};
+	local _weapon = _x;
+
+	if !(["Horn",_weapon] call fnc_inString) then {
+		local _mags = getArray(configFile >> "CfgWeapons" >> _weapon >> "magazines");
+		local _mag = _mags select 0;
+		
+		if (!isNil "_mag")then {
+			for "_i" from 1 to _countMags do {
+				_obj addMagazine _mag;
+			};
+		};
+	};		
 } count (weapons _obj);
