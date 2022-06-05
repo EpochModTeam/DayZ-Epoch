@@ -166,6 +166,7 @@
 [FIXED] Fill quiver did not work properly. (4d377f7e4) @Victor-the-Cleaner
 [FIXED] Broken Legs after changing clothes. (56787c71a) @AirwavesMan
 [FIXED] Broken legs got not recognized after re-log or login. (d9f41afd1) @AirwavesMan
+[FIXED] Wrong wheel names for certain trucks and APCs on repair or salvage. (f18154ad9) @Victor-the-Cleaner, @AirwavesMan
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @seelenapparat, @AirwavesMan
 [REMOVED] DZE_permanentPlot variable and checks. (5aba5d7dd, 9ecdb21dd) @AirwavesMan
 [REMOVED] Ghost previews for Razor Wire, Sandbag Nest, and HBarrier Cubes due to inaccurate geometry. (d744d995e) @Victor-the-Cleaner
