@@ -91,13 +91,13 @@ class CfgPatches
 			"CATracked_E_M1_Abrams","CATracked_E_M2A2_Bradley","CATracked_E_T34","CATracked_E_T55","CATracked_E_T72",
 			"CATracked_E_us_m270mlrs","CATracked_E_ZSU","CAWheeled_D_BAF","CAWheeled_W_BAF","CAAir_BAF","CAAir_BAF_CH_47F",
 			"CATracked_BAF","CATracked_W_BAF","CA_Animals2_Dogs_Pastor","CA_Animals2_Dogs_Fin","CA_Animals2_Dogs",
-			"Bootcamp_ACR","CA_ACR","CA_DubbingRadio_ACR","CA_Missions_ACR","CA_Modules_ACR","CA_Modules_ACR_Functions","CAAir_ACR",
+			"CA_ACR","CA_DubbingRadio_ACR","CA_Modules_ACR","CA_Modules_ACR_Functions","CAAir_ACR",
 			"CAAir_ACR_L159","CAAir_ACR_L39","CAAir_ACR_Mi24","CACharacters_ACR","CALanguage_ACR","CALanguage_missions_ACR","CAMisc_ACR",
 			"CAMisc_ACR_3DMarkers","CAMisc_ACR_Container","CAMisc_ACR_Dog","CAMisc_ACR_Helpers","CAMisc_ACR_PBX","CAMisc_ACR_ScaffoldingSmall",
 			"CAMisc_ACR_Shooting_range","CAMisc_ACR_Sign_Mines","CAMisc_ACR_Targets","CAMisc_ACR_Targets_InvisibleTarget","CAMisc_ACR_TestSphere",
 			"CATracked_ACR","CATracked_ACR_BVP1","CATracked_ACR_T72M4CZ","CAWEAPONS_ACR","CAWeapons_ACR_CZ805","CAWeapons_ACR_LRTV",
 			"CAWeapons_ACR_RBS70","CAWeapons_ACR_UK59","CAWheeled_ACR","CAWheeled_ACR_Dingo","CAWheeled_ACR_HMMWV","CAWheeled_ACR_LR",
-			"CAWheeled_ACR_Octavia","CAWheeled_ACR_Pandur","CaWheeled_ACR_RM70","CAWheeled_ACR_T810","Mountains_ACR","Woodland_ACR",
+			"CAWheeled_ACR_Octavia","CAWheeled_ACR_Pandur","CaWheeled_ACR_RM70","CAWheeled_ACR_T810",
 			"CA_CommunityConfigurationProject_E","ca_communityconfigurationproject_e_ai_madetankgunnersuseatandheammo_muzzle"
 		};
 		dayzVersion = 1.8;
