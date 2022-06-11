@@ -768,6 +768,7 @@ class Watertower_DZE : BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 1200;
+	ladders[] = {{"start", "end"}};
 	displayName = $STR_EQUIP_NAME_WATERTOWER;
 	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartGeneric",2}};
