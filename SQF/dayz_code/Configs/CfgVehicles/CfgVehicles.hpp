@@ -825,6 +825,6 @@ class CfgVehicles
 		airRotation = 1.0;
 	};
 	
-	#include "TreeStumps.hpp"
+	#include "HiddenGearContainer.hpp"
 	#include "Helper.hpp"	
 };

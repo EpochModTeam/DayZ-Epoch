@@ -37200,10 +37200,17 @@
 			<German>Baumstumpf</German>
 			<Russian>Пень</Russian>
 		</Key>
-		<Key ID="STR_TREE_STUMP_04">
-			<English>Tree Stump</English>
-			<German>Baumstumpf</German>
-			<Russian>Пень</Russian>
+		<Key ID="STR_FALLEN_TREE">
+			<English>Fallen Tree</English>
+			<German>Umgestürzter Baum</German>
+		</Key>
+		<Key ID="STR_EXCAVATED_DIRT">
+			<English>Excavated Dirt</English>
+			<German>Aufgewühlte Erde</German>
+		</Key>
+		<Key ID="STR_DIRT_HEAP">
+			<English>Dirt Heap</English>
+			<German>Haufen Erde</German>
 		</Key>		
 		
 		<!--Placeholder strings for new items server admins want to add within the mission by overwrite this strings-->
