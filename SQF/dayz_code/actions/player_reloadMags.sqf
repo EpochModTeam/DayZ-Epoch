@@ -31,7 +31,7 @@ if (currentWeapon player != "") then {
 if !(_create in _mags) exitWith {localize "str_must_have_weapon" call dayz_rollingMessages;};
 
 */
-player playActionNow "PutDown";
+//player playActionNow "PutDown";
 
 _consume_magsize = getNumber(configFile >> "CfgMagazines" >> _consume >> "count");
 _create_magsize = getNumber(configFile >> "CfgMagazines" >> _create >> "count");
@@ -136,5 +136,6 @@ if (_qtynew_create_ammo_rest != 0) then {
 		player addMagazine [_create,_qtynew_create_ammo_rest];
 	};
 };
+reload player;
 uiSleep 1;
 dayz_actionInProgress = false;
