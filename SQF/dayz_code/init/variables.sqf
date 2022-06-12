@@ -321,12 +321,13 @@ if (!isDedicated) then {
 	DZE_WaterSources = ["Land_pumpa","Land_Barrel_water","Land_Misc_Well_C_EP1","Land_Misc_Well_L_EP1","land_smd_water_pump","Watertank_DZE","Watertower_DZE","Land_water_tank","MAP_water_tank"];
 
 	// Helper Colors Require Reformatting
+	DZE_maxSnapObjectDiag = 18;    // Internal diagonal distance of the largest buildable & snappable object in the game, currently the Land_WarfareBarrier10xTall_DZ. DO NOT MODIFY THIS!
 	DZE_helperSize = [[3,"Sign_sphere100cm_EP1"],[2,"Sign_sphere25cm_EP1"],[1,"Sign_sphere10cm_EP1"]];	// array of helper sizes and corresponding class. Keep in reverse order for optimized lookup
 	DZE_helperSizeDefault = 3; // default to large sphere
 	DZE_NoRefundTransparency = 0.5;	// Red Basebuilding Helper Transparency. min = 0.1, max = 1
 	DZE_removeTransparency = 0.5;	// Green Basebuilding Helper Transparency. min = 0.1, max = 1
 	DZE_deconstructTransparency	= 0.5;	// Blue Basebuilding Helper Transparency. min = 0.1, max = 1
-	DZE_largeObjects = ["MetalContainer2D_DZ","MetalContainer1G_DZ","MetalContainer1B_DZ","MetalContainer1A_DZ","DragonTeeth_DZ","DragonTeethBig_DZ","MetalFloor4x_DZ","Land_metal_floor_2x2_wreck","WoodFloor4x_DZ","Land_wood_floor_2x2_wreck","Scaffolding_DZ","CinderGateFrame_DZ","CinderGate_DZ","CinderGateLocked_DZ","WoodGateFrame_DZ","Land_DZE_WoodGate","Land_DZE_WoodGateLocked","WoodRamp_DZ","Metal_Drawbridge_DZ","Metal_DrawbridgeLocked_DZ","Land_WarfareBarrier10x_DZ","Land_WarfareBarrier10xTall_DZ","SandNestLarge_DZ"];	 // adjust _allowedDistance in fn_selfActions.sqf for large modular/crafted objects
+	DZE_largeObjects = ["Watertower_DZE","DeerStand_DZ","MetalContainer2D_DZ","MetalContainer1G_DZ","MetalContainer1B_DZ","MetalContainer1A_DZ","DragonTeeth_DZ","DragonTeethBig_DZ","MetalFloor4x_DZ","Land_metal_floor_2x2_wreck","WoodFloor4x_DZ","Land_wood_floor_2x2_wreck","Scaffolding_DZ","CinderGateFrame_DZ","CinderGate_DZ","CinderGateLocked_DZ","WoodGateFrame_DZ","Land_DZE_WoodGate","Land_DZE_WoodGateLocked","WoodRamp_DZ","Metal_Drawbridge_DZ","Metal_DrawbridgeLocked_DZ","Land_WarfareBarrier10x_DZ","Land_WarfareBarrier10xTall_DZ","SandNestLarge_DZ"];	 // adjust _allowedDistance in fn_selfActions.sqf for large modular/crafted objects
 	
 	DZE_NoRefundTexture	= [0, format["#(argb,8,8,3)color(1.00,0.00,0.00,%1,ca)", (DZE_NoRefundTransparency max 0.1)]	];	// red
 	DZE_removeTexture = [0, format["#(argb,8,8,3)color(0.15,1.00,0.40,%1,ca)", (DZE_removeTransparency max 0.1)]	];	// green

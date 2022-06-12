@@ -29,7 +29,7 @@ fnc_snapActionCleanup = {
 	player removeAction s_player_toggleSnapSelect;
 	s_player_toggleSnapSelect = -1;
 
-	{player removeAction _x;} count s_player_toggleSnapSelectPoint;
+	{player removeAction _x;} forEach s_player_toggleSnapSelectPoint;
 	s_player_toggleSnapSelectPoint = [];
 	snapActions = -1;
 
@@ -71,40 +71,44 @@ fnc_initSnapPoints = {
 		_x resize 3;									// remove text element
 		_objectSnapGizmo attachTo [_object, _x];
 		snapGizmos set [count snapGizmos, _objectSnapGizmo];
-	} count _points;
+	} forEach _points;
 };
 
 fnc_initSnapPointsNearby = {
 	local _object	 = _this select 0;
 	local _findObjects = nearestObjects [_object, [], DZE_snapRadius] - [_object];
 
-	{deleteVehicle _x;} count snapGizmosNearby;	// clean up previous radius
+	{deleteVehicle _x;} forEach snapGizmosNearby;	// clean up previous radius
 	snapGizmosNearby = [];
 	{
 		local _nearbyObject = _x;
-		local _typeOf = typeOf _x;
+		local _typeOf = typeOf _nearbyObject;
 
 		local _pointsNearby = getArray (configFile >> "SnapBuilding" >> _typeOf >> "points");
 		local _displayName = getText (configFile >> "CfgVehicles" >> _typeOf >> "displayName");
-		{
-			local _objectSnapGizmo = DZE_SNAP_HELPER_CLASS createVehicleLocal [0,0,0];
-			_objectSnapGizmo setObjectTexture DZE_SNAP_POINT_RESET;				// green
-			_objectSnapGizmo setDir (_nearbyObject getVariable["memDir",0]);
-			_objectSnapGizmo setVariable ["snappoint", [_displayName, _x select 3], false];	// store object and snapping point display names
 
-			_x resize 3;									// remove text element
-			_objectSnapGizmo attachTo [_nearbyObject, _x];
+		if (count _pointsNearby > 0) then {
+			local _memDir = _nearbyObject getVariable ["memDir",0];
+			{
+				local _objectSnapGizmo = DZE_SNAP_HELPER_CLASS createVehicleLocal [0,0,0];
+				_objectSnapGizmo setObjectTexture DZE_SNAP_POINT_RESET;						// green
+				_objectSnapGizmo setPosATL (getPosATL _nearbyObject);
+				_objectSnapGizmo setVariable ["snappoint", [_displayName, _x select 3, _memDir], false];	// store object display name, snapping point text, and direction
 
-			snapGizmosNearby set [count snapGizmosNearby, _objectSnapGizmo];		// rebuild helper list
-		} count _pointsNearby;
+				_x resize 3;											// remove text element
+				_objectSnapGizmo attachTo [_nearbyObject, _x];
+
+				snapGizmosNearby set [count snapGizmosNearby, _objectSnapGizmo];				// rebuild helper list
+			} forEach _pointsNearby;
+		};
 	} forEach _findObjects;
 };
 
 fnc_initSnapPointsCleanup = {
-	{deleteVehicle _x;} count snapGizmos;
+	{deleteVehicle _x;} forEach snapGizmos;
 	snapGizmos = [];
 
-	{deleteVehicle _x;} count snapGizmosNearby;
+	{deleteVehicle _x;} forEach snapGizmosNearby;
 	snapGizmosNearby = [];
 
 	snapActionState = localize "STR_EPOCH_ACTION_SNAP_OFF";
@@ -123,7 +127,7 @@ fnc_snapDistanceCheck = {
 	_snapObject = {
 		_objectHelper setPosASL (getPosASL _closestNearCurr);	// snap object
 
-		DZE_memDir = getDir _closestNearCurr;
+		DZE_memDir = (_closestNearCurr getVariable ["snappoint", ["","",0]]) select 2;
 		[_objectHelper, [DZE_memForBack, DZE_memLeftRight, DZE_memDir]] call fnc_SetPitchBankYaw;
 
 		waitUntil {uiSleep 0.1; !helperDetach};
@@ -227,7 +231,7 @@ fnc_snapDistanceCheck = {
 						_closestHeldCurr = _x;			// update current
 						_closestNearCurr = _nearCurr;		// paired points
 					};
-				} count snapGizmos;
+				} forEach snapGizmos;
 			} forEach snapGizmosNearby;
 
 			if ((isNull _closestHeldCurr) || {_closestHeldCurr != _closestHeldPrev}) then {

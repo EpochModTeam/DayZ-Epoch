@@ -580,14 +580,13 @@ if (_canBuild) then {
 	
 	local _detach = {
 		detach _objectHelper;								// release object
-
 		DZE_memDir = getDir _objectHelper;						// get current Z rotation
 
 		if (DZE_memLeftRight == 0) then {						// if object is not banked (left/right)
 
 			local _absMem = abs DZE_memForBack;
 
-			if ((_absMem >= 90) && (_absMem < 270)) then {				// but is pitched upside down (forward/back)
+			if (_absMem >= 90 && {_absMem < 270}) then {				// but is pitched upside down (forward/back)
 				DZE_memDir = DZE_memDir + 180;					// prevent flipping around X axis
 			};
 		} else {									// if object is banked (left/right)
@@ -616,9 +615,9 @@ if (_canBuild) then {
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	local _update = {
-		DZE_memForBack		= DZE_memForBack % 360;		// clamp rotation angles
-		DZE_memLeftRight	= DZE_memLeftRight % 360;
-		DZE_memDir		= DZE_memDir % 360;
+		DZE_memForBack		= (DZE_memForBack	+ 360) % 360;		// clamp rotation angles
+		DZE_memLeftRight	= (DZE_memLeftRight	+ 360) % 360;
+		DZE_memDir		= (DZE_memDir		+ 360) % 360;
 
 		[_objectHelper, [DZE_memForBack, DZE_memLeftRight, DZE_memDir]] call fnc_SetPitchBankYaw;
 
@@ -985,7 +984,7 @@ if (_canBuild) then {
 		local _bz	= abs (_b0 select 2) + abs (_b1 select 2);
 		local _diag	= sqrt (_bx^2 + _by^2 + _bz^2);			// get diagonal of boundingBox
 
-		DZE_snapRadius	= _diag * 0.5 + 9;				// 9 is half the largest bounding box diagonal (rounded up) of the largest snappable objects in the game; currently the Land_WarfareBarrier10xTall_DZ and the MetalContainer2D_DZ.
+		DZE_snapRadius	= ceil ((_diag * 0.5) + (DZE_maxSnapObjectDiag * 0.5));	// snap radius is the sum of half the bounding box diagonals of both the current object and the largest object in the game; currently the Land_WarfareBarrier10xTall_DZ
 		_refreshDist	= DZE_snapRadius * 0.5;				// distance object moves before the snap auto-refresh triggers
 	};
 
@@ -1595,7 +1594,6 @@ if (_canBuild) then {
 						_builtObject spawn player_fireMonitor;
 					} else {
 						_builtObject setVariable ["ownerPUID", dayz_playerUID, true];
-
 						if (_isPole) then {
 
 							_friendsArr = [[dayz_playerUID, toArray (name player)]];
