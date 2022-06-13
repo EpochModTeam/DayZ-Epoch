@@ -24213,26 +24213,36 @@
 			<Czech>Vytvořit Rampu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_190">
-			<English>Craft Tent</English>
+			<English>Craft Camping Tent</English>
 			<German>Zelt herstellen</German>
 			<Russian>Создать: Палатка</Russian>
 			<Dutch>Maak tent</Dutch>
 			<Czech>Vyrobit Stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_191">
-			<English>Craft Desert Tent</English>
-			<German>Wüsten-Igluzelt herstellen</German>
+			<English>Craft Desert Dome Tent</English>
+			<German>Wüstenigluzelt herstellen</German>
 			<Russian>Создать: Пустынная палатка</Russian>
 			<Dutch>Maak Woestijntent</Dutch>
 			<Czech>Vyrobit Pouštní stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_192">
-			<English>Craft Green Tent</English>
-			<German>Grünes Zelt herstellen</German>
+			<English>Craft Dome Tent</English>
+			<German>Igluzelt herstellen</German>
 			<Russian>Создать: Зелёная палатка</Russian>
 			<Dutch>Maak Groene tent</Dutch>
 			<Czech>Vyrobit Zelený stan</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_192_1">
+			<English>Craft Winter Camping Tent</English>
+			<German>Winterzelt herstellen</German>
+			<Russian>Создать: Зимняя палатка-домик</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_192_2">
+			<English>Craft Winter Dome Tent</English>
+			<German>Winterigluzelt herstellen</German>
+			<Russian>Создать: Зимняя палатка-полусфера</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_193">
 			<English>Craft Sun Shade</English>
 			<German>Sonnenschutz herstellen</German>
@@ -27295,7 +27305,7 @@
 			<Spanish>Asentar Tienda de Campaña Desierto</Spanish>
 			<French>Monter la Tente Dôme Désert</French>
 			<Czech>Postavit stan (iglú) Poušť</Czech>
-			<German>Wüsten-Igluzelt aufschlagen</German>
+			<German>Wüstenigluzelt aufschlagen</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT">
 			<English>Desert Dome Tent</English>
@@ -27303,7 +27313,7 @@
 			<Russian>Пустынная палатка-полусфера</Russian>
 			<Spanish>Tienda de Campaña Desierto</Spanish>
 			<Czech>Stan (iglú) Poušť</Czech>
-			<German>Wüsten-Igluzelt</German>
+			<German>Wüstenigluzelt</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT1">
 			<English>Desert Dome Tent +</English>
@@ -27311,7 +27321,7 @@
 			<Russian>Пустынная палатка-полусфера +</Russian>
 			<Spanish>Tienda de Campaña Desierto +</Spanish>
 			<Czech>Stan (iglú) Poušť +</Czech>
-			<German>Wüsten-Igluzelt +</German>
+			<German>Wüstenigluzelt +</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT2">
 			<English>Desert Dome Tent ++</English>
@@ -27319,7 +27329,7 @@
 			<Russian>Пустынная палатка-полусфера ++</Russian>
 			<Spanish>Tienda de Campaña Desierto ++</Spanish>
 			<Czech>Stan (iglú) Poušť ++</Czech>
-			<German>Wüsten-Igluzelt ++</German>
+			<German>Wüstenigluzelt ++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT3">
 			<English>Desert Dome Tent +++</English>
@@ -27327,7 +27337,7 @@
 			<Russian>Пустынная палатка-полусфера +++</Russian>
 			<Spanish>Tienda de Campaña Desierto +++</Spanish>
 			<Czech>Stan (iglú) Poušť +++</Czech>
-			<German>Wüsten-Igluzelt +++</German>
+			<German>Wüstenigluzelt +++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT4">
 			<English>Desert Dome Tent ++++</English>
@@ -27335,7 +27345,7 @@
 			<Russian>Пустынная палатка-полусфера ++++</Russian>
 			<Spanish>Tienda de Campaña Desierto ++++</Spanish>
 			<Czech>Stan (iglú) Poušť ++++</Czech>
-			<German>Wüsten-Igluzelt ++++</German>
+			<German>Wüstenigluzelt ++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DESERT_TENT5">
 			<English>Desert Dome Tent +++++</English>
@@ -27343,7 +27353,7 @@
 			<Russian>Пустынная палатка-полусфера +++++</Russian>
 			<Spanish>Tienda de Campaña Desierto +++++</Spanish>
 			<Czech>Stan (iglú) Poušť +++++</Czech>
-			<German>Wüsten-Igluzelt +++++</German>
+			<German>Wüstenigluzelt +++++</German>
 		</Key>
 
 		<Key ID="STR_FOOD_NAME_BIOMEAT">

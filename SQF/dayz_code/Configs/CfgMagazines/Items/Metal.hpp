@@ -337,5 +337,23 @@ class equip_tent_poles: CA_Magazine
 			output[] = {{"ItemDomeTent",1}};
 			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};
+		class Crafting3
+		{
+			text = $STR_EPOCH_PLAYER_192_1;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"ItemTentWinter",1}};
+			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
+		};
+		class Crafting4
+		{
+			text = $STR_EPOCH_PLAYER_192_2;
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"ItemWinterDomeTent",1}};
+			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
+		};		
 	};
 };
