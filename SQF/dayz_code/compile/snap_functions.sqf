@@ -92,7 +92,6 @@ fnc_initSnapPointsNearby = {
 			{
 				local _objectSnapGizmo = DZE_SNAP_HELPER_CLASS createVehicleLocal [0,0,0];
 				_objectSnapGizmo setObjectTexture DZE_SNAP_POINT_RESET;						// green
-				_objectSnapGizmo setPosATL (getPosATL _nearbyObject);
 				_objectSnapGizmo setVariable ["snappoint", [_displayName, _x select 3, _memDir], false];	// store object display name, snapping point text, and direction
 
 				_x resize 3;											// remove text element
@@ -127,7 +126,7 @@ fnc_snapDistanceCheck = {
 	_snapObject = {
 		_objectHelper setPosASL (getPosASL _closestNearCurr);	// snap object
 
-		DZE_memDir = (_closestNearCurr getVariable ["snappoint", ["","",0]]) select 2;
+		DZE_memDir = (_closestNearCurr getVariable ["snappoint", ["","", getDir _closestNearCurr]]) select 2;
 		[_objectHelper, [DZE_memForBack, DZE_memLeftRight, DZE_memDir]] call fnc_SetPitchBankYaw;
 
 		waitUntil {uiSleep 0.1; !helperDetach};

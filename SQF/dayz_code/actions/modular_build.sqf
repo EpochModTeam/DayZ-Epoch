@@ -615,9 +615,9 @@ if (_canBuild) then {
 	///////////////////////////////////////////////////////////////////////////////////////////
 
 	local _update = {
-		DZE_memForBack		= (DZE_memForBack	+ 360) % 360;		// clamp rotation angles
-		DZE_memLeftRight	= (DZE_memLeftRight	+ 360) % 360;
-		DZE_memDir		= (DZE_memDir		+ 360) % 360;
+		DZE_memForBack		= DZE_memForBack % 360;		// clamp rotation angles
+		DZE_memLeftRight	= DZE_memLeftRight % 360;
+		DZE_memDir		= DZE_memDir % 360;
 
 		[_objectHelper, [DZE_memForBack, DZE_memLeftRight, DZE_memDir]] call fnc_SetPitchBankYaw;
 
@@ -984,7 +984,7 @@ if (_canBuild) then {
 		local _bz	= abs (_b0 select 2) + abs (_b1 select 2);
 		local _diag	= sqrt (_bx^2 + _by^2 + _bz^2);			// get diagonal of boundingBox
 
-		DZE_snapRadius	= ceil ((_diag * 0.5) + (DZE_maxSnapObjectDiag * 0.5));	// snap radius is the sum of half the bounding box diagonals of both the current object and the largest object in the game; currently the Land_WarfareBarrier10xTall_DZ
+		DZE_snapRadius	= ceil ((_diag + DZE_maxSnapObjectDiag) * 0.5);	// snap radius is the sum of half the bounding box diagonals of both the current object and the largest object in the game; currently the Land_WarfareBarrier10xTall_DZ
 		_refreshDist	= DZE_snapRadius * 0.5;				// distance object moves before the snap auto-refresh triggers
 	};
 
