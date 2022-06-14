@@ -33727,7 +33727,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_SCISSORS_DESC">
 			<English>A tool to cut various thin materials.</English>
-			<German>Ein Werzeug, um verschiedenste dünne Materialien zu zuschneiden.</German>
+			<German>Ein Werkzeug, um verschiedenste dünne Materialien zu zuschneiden.</German>
 			<Russian>Инструмент для разрезания различных тонких материалов.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCISSORS_BROKEN_DESC">
@@ -33747,7 +33747,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_SCREWEXTRACTOR_DESC">
 			<English>A tool used for screwing and unscrewing screws.</English>
-			<German>Ein Werzeug, um Schrauben ein- und herauszuschrauben.</German>
+			<German>Ein Werkzeug, um Schrauben ein- und herauszuschrauben.</German>
 			<Russian>Инструмент для закручивания и откручивания шурупов.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCREWEXTRACTOR_BROKEN_DESC">
@@ -33767,7 +33767,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_WRENCH_DESC">
 			<English>A tool used for screwing and unscrewing screw-nuts.</English>
-			<German>Ein Werzeug zum Anziehen oder Lösen von Muttern.</German>
+			<German>Ein Werkzeug zum Anziehen oder Lösen von Muttern.</German>
 			<Russian>Инструмент для закручивания и откручивания гаек.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_WRENCH_BROKEN_DESC">
