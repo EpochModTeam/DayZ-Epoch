@@ -1,132 +1,64 @@
-private ["_victim","_started","_UID","_hasEmptyBag","_bloodDrained","_bloodLevel","_forceExit","_bloodType","_rh","_timer","_i","_complete","_animState","_isMedic","_blood","_bloodAfter","_isClose"];
-/* ********************************************************
-Used to fill blood bags with whole blood, only 4k per bag.
-By icomrade for DayZ Mod
-********************************************************* */
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
-call fnc_usec_medic_removeActions;
 call gear_ui_init;
 closeDialog 0;
-r_interrupt = false;
-_victim = (_this select 3) select 0;
-_hasEmptyBag = "emptyBloodBag" in magazines player;
-_bloodLevel = _victim getVariable ["USEC_BloodQty", 0];
-_bloodType = _victim getVariable ["blood_type", false];
-_rh = _victim getVariable ["rh_factor", false];
-r_doLoop = true;
-_i = 0;
-_started= false;
-_timer = diag_tickTime;
-_complete = false;
-_bloodDrained = false;
-_forceExit = false;
-_UID = getPlayerUID player;
-if ((isNil "_UID") or (_UID == "0")) exitWith {};
-if (!_hasEmptyBag) exitWith { localize "str_actions_medical_bagEmpty" call dayz_rollingMessages; };
 
-if (_bloodLevel <= 4200) exitWith {localize "str_actions_medical_bagMissingBlood" call dayz_rollingMessages;};
+local _player = player;
+local _emptyBloodBag = "emptyBloodBag";
+local _hasEmptyBloodBag = _emptyBloodBag in magazines player;
+local _bloodLevel = _player getVariable ["USEC_BloodQty", 0];
+local _bloodAmount = 4000;
 
-if (!(alive _victim)) then {
-	_bloodDrained = _victim getVariable ["bloodTaken", false];
-	if (_bloodDrained) exitWith {_forceExit = true;};
-	_victim setVariable ["bloodTaken", true, true];
-};
+if (vehicle _player != _player) exitWith {dayz_actionInProgress = false;localize "STR_EPOCH_PLAYER_318" call dayz_rollingMessages;};
+if !(_hasEmptyBloodBag) exitWith {dayz_actionInProgress = false;localize "str_actions_medical_bagEmpty" call dayz_rollingMessages;};
+if (_bloodLevel <= (_bloodAmount + 200)) exitWith {dayz_actionInProgress = false;localize "str_actions_medical_bagMissingBlood" call dayz_rollingMessages;};
 
-if (_forceExit) exitWith {localize "str_actions_medical_bagMissingBlood" call dayz_rollingMessages;};
+local _count = [_player,_emptyBloodBag,1] call BIS_fnc_invRemove;
 
-if (vehicle player == player) then {
-	//not in a vehicle
-	player playActionNow "Medic";
-};
+if (_count == 1) then {
+	local _i = 1;
+	local _steps = 5;
+	local _complete = false;
+	local _finished = false;
+	local _blood = 0;
+	local _bloodAfter = 0;
 
-while {r_doLoop && (_i < 25)} do {
-	_animState = animationState player;
-	_isMedic = ["medic",_animState] call fnc_inString;
+	localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
 
-	if (_isMedic && {!_started}) then {
-		player removeMagazine "emptyBloodBag";
-		localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
-		//[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_start","PLAIN DOWN"] call RE;
-		_started = true;
-	};
+	while {_i <= _steps} do {
+		_finished = ["Medic",1] call fn_loopAction;
 
-	if (_started) then {
-		if ((diag_tickTime - _timer) >= 1) then {
-			_timer = diag_tickTime;
-			r_player_blood = r_player_blood - 160;
-			//PVDZ_send = [_victim,"Transfuse",[_victim,player,-160,_UID]];
-			//publicVariableServer "PVDZ_send";
-			_i = _i + 1;
+		if !(_finished) exitwith {localize "str_actions_medical_bagInterrupted" call dayz_rollingMessages;};
+
+		r_player_blood = r_player_blood - round(_bloodAmount/_steps);	
+		_player setVariable["USEC_BloodQty", r_player_blood, true];			
+
+		_blood = _player getVariable ["USEC_BloodQty", 0];
+		_bloodAfter = (_blood - _bloodAmount);		
+
+		if ((_blood <= _bloodAfter) || (_i == _steps)) exitwith {
+			localize "str_actions_medical_bagDone" call dayz_rollingMessages;
+			_complete = true;
 		};
 
-		if (!_isMedic) then {
-			player playActionNow "Medic";
+		_i = _i + 1;
+	};
+
+	if (_complete) then {
+		local _bloodType = _player getVariable ["blood_type", false];
+		local _rh = _player getVariable ["rh_factor", false];
+		local _bloodbag = call {
+			if (dayz_classicBloodBagSystem) exitwith {"ItemBloodbag"};			
+			if (_bloodType == "A") exitwith {if (_rh) then {"wholeBloodBagAPOS"} else {"wholeBloodBagANEG"};};
+			if (_bloodType == "B") exitwith {if (_rh) then {"wholeBloodBagBPOS"} else {"wholeBloodBagBNEG"};};
+			if (_bloodType == "AB") exitwith {if (_rh) then {"wholeBloodBagABPOS"} else {"wholeBloodBagABNEG"};};
+			if (_bloodType == "O") exitwith {if (_rh) then {"wholeBloodBagOPOS"} else {"wholeBloodBagONEG"};};
 		};
-	};
-
-	_blood = _victim getVariable ["USEC_BloodQty", 0];
-	_bloodAfter = (_blood - 4000);
-
-	if ((_blood <= _bloodAfter) or (_i == 25)) then {
-		localize "str_actions_medical_bagDone" call dayz_rollingMessages;
-		//[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_bagDone","PLAIN DOWN"] call RE;
-		//_victim setVariable ["USEC_BloodQty", _bloodAfter, true];
-		r_doLoop = false;
-		_complete = true;
-	};
-
-	_isClose = ((player distance _victim) < ((sizeOf typeOf _victim) / 2));
-
-	if (!_isClose) then {
-		r_doLoop = false;
-		r_interrupt = true;
-		localize "str_actions_medical_bagInterrupted" call dayz_rollingMessages;
-		//[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_bagInterrupted","PLAIN DOWN"] call RE;
-	};
-};
-
-if (r_interrupt) exitWith {
-r_interrupt = false;
-};
-
-if (_complete) then {
-	if (dayz_classicBloodBagSystem) then {
-		player addMagazine "ItemBloodbag";
-	} else {
-		call {
-			if (_bloodType == "A") exitwith {
-				if (_rh) then {
-					player addMagazine "wholeBloodBagAPOS";
-				} else {
-					player addMagazine "wholeBloodBagANEG";
-				};
-			};
-
-			if (_bloodType == "B") exitwith {
-				if (_rh) then {
-					player addMagazine "wholeBloodBagBPOS";
-				} else {
-					player addMagazine "wholeBloodBagBNEG";
-				};
-			};
-
-			if (_bloodType == "AB") exitwith {
-				if (_rh) then {
-					player addMagazine "wholeBloodBagABPOS";
-				} else {
-					player addMagazine "wholeBloodBagABNEG";
-				};
-			};
-
-			if (_bloodType == "O") exitwith {
-				if (_rh) then {
-					player addMagazine "wholeBloodBagOPOS";
-				} else {
-					player addMagazine "wholeBloodBagONEG";
-				};
-			};
-		};
+		_player addMagazine _bloodbag;
 	};
 } else {
-	diag_log format ["Fill Bag: Something went wrong and the bloodBag was not added!"];
+	localize "str_actions_medical_bagEmpty" call dayz_rollingMessages;
 };
+
+dayz_actionInProgress = false;
