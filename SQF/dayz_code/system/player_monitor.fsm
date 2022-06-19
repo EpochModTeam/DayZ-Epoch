@@ -626,6 +626,23 @@ class FSM
                          "};" \n
                          "" \n
                          "_model call player_switchModel;" \n
+						 "" \n
+						 "[] spawn {" \n
+						 "	// Dummy agent has to be created with 'NONE' (suitable empty position near given position)." \n
+						 "" \n
+						 "	// Create zombie" \n
+						 "	local _dummyZed = createAgent ['z_priest', [0,0,5000], [], 0, 'NONE'];" \n
+						 "	local _dummyBloodSucker = objNull;" \n
+						 "" \n
+						 "	if (DZE_Bloodsuckers) then {" \n
+						 "		// Create mutant" \n
+						 "		_dummyBloodSucker = createAgent ['z_bloodsucker', [0,0,5000], [], 0, 'NONE'];" \n
+						 "	};" \n
+						 "" \n
+						 "	uiSleep 5;" \n
+						 "" \n
+						 "	 {if (!isNull _x) then {deleteVehicle _x}} forEach [_dummyZed, _dummyBloodSucker];" \n
+						 "};" \n						 
                          "" \n
                          "_lastAte = _survival select 1;" \n
                          "_lastDrank = _survival select 2;" \n
