@@ -56,6 +56,7 @@ local _cantSee = false;
 									local _skin = _x getVariable ["mutantSkin", "act_krovosos_new1"]; // Set textures locally on each client to prevent issues with RESec
 									local _texture = format["\dayz_epoch_c\skins\bloodsucker\%1.paa",_skin];
 									[nil,nil,rSETOBJECTTEXTURE,_x,0,_texture] call RE;
+									_x setVariable ["BLInvisible",false,!(local _x)];
 								};
 							};
 							_x setVariable ["lastAttack", diag_tickTime];
