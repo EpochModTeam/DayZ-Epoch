@@ -1,33 +1,27 @@
-private ["_msg","_bagUsed","_bloodResult","_bloodAmount","_unit","_humanityAwarded","_timer","_i","_isClose","_duration","_rhVal","_bloodBagArrayNeeded","_badBag","_wholeBag","_bagFound","_bloodType","_rh","_bloodBagWholeNeeded","_wholeBagFound","_bloodTestdone"];// bleed.sqf
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
-_unit = (_this select 3) select 0;
-_bagUsed = (_this select 3) select 1;
+local _unit = (_this select 3) select 0;
+local _bagUsed = (_this select 3) select 1;
 
 call fnc_usec_medic_removeActions;
+closeDialog 0;
 r_action = false;
 
-if !(vehicle player == player) exitWith {/* This check is probably not necessary */};
-
-//Does the player have a transfusionKit
-//_hasTransfusionKit = "transfusionKit" in magazines player;
 if (time - dayz_lastTransfusion > 120) then {dayz_bloodBagHumanity = 300;}; //Reset humanity reward to full value after two minutes
 
-_badBag = false;
-_wholeBag = false;
-//Unconscious timeout for receiving unit	
-_duration = [2,3] select ((_unit getVariable ["USEC_BloodQty",0]) <= 4000);
+local _badBag = false;
+local _wholeBag = false;
+local _duration = [2,3] select ((_unit getVariable ["USEC_BloodQty",0]) <= 4000); //Unconscious timeout for receiving unit	
 
 if (!dayz_classicBloodBagSystem) then {
-	_bloodType = _unit getVariable ["blood_type", ""]; //Get receiving units blood type
-	_rh = _unit getVariable ["rh_factor", false]; //Get the receiving units RH type
-	_rhVal = if (_rh) then {"POS"} else {"NEG"}; // Get the RH value.
-	_bloodTestdone = _unit getVariable ["blood_testdone", false]; //Get status of blood test of receiving unit
-	_bloodResult = _bloodType + _rhVal; // Combine strings for convenience
-
-	//End if the player does not have a transfusion kit
-	//if (!_hasTransfusionKit) exitWith { localize "str_actions_medical_transfusion_failed_transfusionkit" call dayz_rollingMessages; };
+	local _bloodType = _unit getVariable ["blood_type", ""]; //Get receiving units blood type
+	local _rh = _unit getVariable ["rh_factor", false]; //Get the receiving units RH type
+	local _rhVal = if (_rh) then {"POS"} else {"NEG"}; // Get the RH value.
+	local _bloodTestdone = _unit getVariable ["blood_testdone", false]; //Get status of blood test of receiving unit
+	local _bloodResult = _bloodType + _rhVal; // Combine strings for convenience
 	
-	_bloodBagArrayNeeded = ["bloodBagONEG"];
+	local _bloodBagArrayNeeded = ["bloodBagONEG"];
 
 	if (_bloodTestdone) then { // if the recipient does not know his blood type, only O- can apply
 		_bloodBagArrayNeeded = call {
@@ -42,31 +36,29 @@ if (!dayz_classicBloodBagSystem) then {
 		};
 	};
 
-	_bagFound = (_bagUsed in _bloodBagArrayNeeded);
-
-	//No subs for whole blood :(
-	_bloodBagWholeNeeded = "wholeBloodBag" + _bloodResult;
-	_wholeBagFound = (_bagUsed == _bloodBagWholeNeeded);
+	local _bagFound = (_bagUsed in _bloodBagArrayNeeded);
+	local _bloodBagWholeNeeded = "wholeBloodBag" + _bloodResult;
+	local _wholeBagFound = (_bagUsed == _bloodBagWholeNeeded);
 
 	call { // Options are listed top to bottom in order of precedence
 		if (_bagFound) exitWith {_wholeBag = false; _badBag = false;}; //use packed/separated bags first
 		if (_wholeBagFound) exitWith {_wholeBag = true; _badBag = false;};
-		_wholeBag = false; _badBag = true; // Default
+		_wholeBag = false; 
+		_badBag = true; // Default
 	};
 };
 
-r_interrupt = false;
-r_doLoop = true;
-_timer = diag_tickTime;
-_i = 0;
-_humanityAwarded = 0;
-_msg = "";
-_bloodAmount = [4000 /*Whole blood only gives 4k*/,r_player_bloodTotal/*Full bloodbag*/] select (!_wholeBag);
+local _humanityAwarded = 0;
+local _msg = "";				
+local _bloodAmount = [4000 ,r_player_bloodTotal] select (!_wholeBag); /*Whole blood only gives 4k*/
+local _isClose = false;
+local _finished = false;
+local _isOk = true;
 
 //diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)", name player, name _unit];
 
-player removeMagazine _bagUsed;
-player playActionNow "Medic";
+local _count = [player,_bagUsed,1] call BIS_fnc_invRemove;
+if (_count != 1) exitwith {dayz_actionInProgress = false;localize "str_actions_medical_transfusion_interrupted" call dayz_rollingMessages;};
 
 if (!_badBag) then {
 	PVDZ_send = [_unit,"Transfuse",[_unit,player,_bloodAmount]];
@@ -75,19 +67,10 @@ if (!_badBag) then {
 
 localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
 
-while {r_doLoop} do {
+while {1==1} do {
+	_finished = ["Medic",1] call fn_loopAction;
 
-	if (!(["medic",animationState player] call fnc_inString)) then {
-		player playActionNow "Medic";
-	};
-
-	if ((diag_tickTime - _timer) >= 1) then {
-		_timer = diag_tickTime;
-		if (!_wholeBag) then {
-			_i = _i + 1; //Full bloodbag
-		} else {
-			_i = _i + 3;	//Whole blood only gives 4k
-		};
+	if (_finished) then {
 		if (!_badBag) then {
 			_bloodAmount = _bloodAmount - 500;
 
@@ -98,51 +81,30 @@ while {r_doLoop} do {
 				_humanityAwarded = _humanityAwarded + 25;
 			};
 		} else {
-			// This is designed to knock the player out after 12 seconds if they get a bad blood bag.
-			if (_i >= 12) then {
-				_bloodAmount = 0;
-
-				// Send to server with key for security
-				PVDZ_send = [_unit,"Unconscious",[_unit,_duration],[_unit,dayz_authKey,player]];
-				publicVariableServer "PVDZ_send";
-
-				//diag_log ("Transfusion: "+str(PVDZ_send select 2));
-				_msg = "str_actions_medical_transfusion_fail";
-			};
+			// Knock the player out after one loop cyrcle if they get a bad blood bag.
+			_isOk = false;
+			_msg = "str_actions_medical_transfusion_fail";
 		};
 	};
 
-	if ((_unit getVariable ["USEC_BloodQty", 0]) >= r_player_bloodTotal || _bloodAmount == 0) then {
-		//diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
+	if (_isOk && !_finished) then {
+		_msg = "str_actions_medical_transfusion_interrupted";
+		_duration = 3;
+		_isOk = false;
+	};
+
+	if (!_isOk) exitwith {			
+		PVDZ_send = [_unit,"Unconscious",[_unit,_duration],[_unit,dayz_authKey,player]];
+		publicVariableServer "PVDZ_send";		
+	};
+
+	if ((_unit getVariable ["USEC_BloodQty", 0]) >= r_player_bloodTotal || _bloodAmount <= 0) exitwith {
 		dayz_bloodBagHumanity = dayz_bloodBagHumanity / 2; //Diminish humanity reward for subsequent transfusions. Resets to full reward after two minutes.
 		dayz_lastTransfusion = time;
-		if (!_badBag) then {
-			_humanityAwarded call player_humanityChange;
-			_msg = "str_actions_medical_transfusion_successful";
-		};
-		r_doLoop = false;
+		_humanityAwarded call player_humanityChange;
+		_msg = "str_actions_medical_transfusion_successful";
 	};
-
-	_isClose = ((player distance _unit) < ((sizeOf typeOf _unit) / 2));
-
-	if (r_interrupt || {!_isClose}) then {
-		//diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];
-		_msg = "str_actions_medical_transfusion_interrupted";
-		r_doLoop = false;
-	};
-
-	uiSleep 1;
 };
-
-r_doLoop = false;
-
-if (r_interrupt) then {
-	r_interrupt = false;
-	player switchMove "";
-	player playActionNow "stop";
-};
-
-// Wait until the animation stops to display the message.
-waitUntil {uiSleep .5; (!(["medic",animationState player] call fnc_inString))};
 
 localize _msg call dayz_rollingMessages;
+dayz_actionInProgress = false;

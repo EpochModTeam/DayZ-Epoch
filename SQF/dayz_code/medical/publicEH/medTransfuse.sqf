@@ -52,6 +52,11 @@ while {r_doLoop} do {
 		_msg = "str_actions_medical_transfusion_successful";
 		r_doLoop = false;
 	};
+
+	if !((_medic distance _unit) < ((sizeOf typeOf _unit) / 2)) then {
+		[_unit,3] call fnc_usec_damageUnconscious;
+		r_interrupt = true;
+	};
 	
 	if (r_interrupt) then {
 		_msg = "str_actions_medical_transfusion_interrupted";
