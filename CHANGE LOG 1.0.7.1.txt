@@ -102,6 +102,8 @@
 [UPDATED] Disabled server cleanup by default to avoid base deletion. (ed5d78d7d) @AirwavesMan
 [UPDATED] Players who built an object within the plot pole are no longer able to remove that building if they got removed from the plot pole. (57f1a534a) @AirwavesMan
 [UPDATED] All new created objects like buildings should be useable directly now not after a few seconds. (0799e7e18) @AirwavesMan
+[UPDATED] When a blood transfusion gets interrupted the player who received the transfusion will be unconscious. (92746e377) @AirwavesMan
+[UPDATED] Combining ammo into another ammo type has no animation any longer and the ammo will be reloaded into the current weapon. (95f365507) @Victor-the-Cleaner
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -167,6 +169,11 @@
 [FIXED] Broken Legs after changing clothes. (56787c71a) @AirwavesMan
 [FIXED] Broken legs got not recognized after re-log or login. (d9f41afd1) @AirwavesMan
 [FIXED] Wrong wheel names for certain trucks and APCs on repair or salvage. (f18154ad9) @Victor-the-Cleaner, @AirwavesMan
+[FIXED] Filling a blood bag could be interrupted and the blood bag got still filled. (5b61cfba0) @DeandlDernai, @AirwavesMan
+[FIXED] Winter tents could not be crafted. (6a854b0fc) @AirwavesMan
+[FIXED] Micro lags when zombies and bloodsuckers spawn. (37c60bc85) @AirwavesMan, @iben
+[FIXED] Rpt error: Warning: looped for animation: ca\anims\characters\data\anim\sdr\mov\erc\stp\non\non\amovpercmstpsnonwnondnon_amovpercmstpsraswpstdnon_end.rtm differs (looped now 0)! MoveName: amovpercmstpsnonwnondnon_amovpercmstpsraswpstdnon_end. @iben
+[FIXED] A blood transfusion could be interrupted and the player still received the whole blood bag from the transfusion. (92746e377) @AirwavesMan
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @seelenapparat, @AirwavesMan
 [REMOVED] DZE_permanentPlot variable and checks. (5aba5d7dd, 9ecdb21dd) @AirwavesMan
 [REMOVED] Ghost previews for Razor Wire, Sandbag Nest, and HBarrier Cubes due to inaccurate geometry. (d744d995e) @Victor-the-Cleaner
