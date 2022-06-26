@@ -220,7 +220,7 @@ if (_isVehicle) then {
 					//head hit, legs, pushed from back
 					_knockdown = ["head_hit","legs"];
 					if (_wound in _knockdown) then {
-						if (((diag_tickTime - _lastTackle) > 7) && (_speed >= 5.62)) then {
+						if (((diag_tickTime - _lastTackle) > 7) && (_speed >= 5.62) && {!((animationState player) in ["bunnyhopunarmed","bunnyhoprifle"])}) then {
 							switch true do {
 							/*
 								//Removed for now
@@ -292,7 +292,7 @@ if (_isVehicle) then {
 							};
 
 							// Make player dive after making sure the zed can see you.
-							if (_movePlayer != "") then {
+							if (!isNil "_movePlayer" && {_movePlayer != ""}) then {
 								player setVariable ["lastTackle", diag_tickTime];
 								_doRE = ({isPlayer _x} count (player nearEntities ["AllVehicles",100]) > 1);
 
