@@ -20,28 +20,6 @@ class advanced_workBench_kit: CA_Magazine
 	};
 };
 
-class ItemWorkBench_DZE : CA_Magazine
-{
-	scope = 2;
-	count = 1;
-	type = 256;
-	displayName = $STR_BLD_name_ItemWorkBench;
-	model = "z\addons\dayz_buildings\models\workbench_flat.p3d";
-	picture = "\z\addons\dayz_buildings\equip\item_workbench.paa";
-	descriptionShort = $STR_BLD_desc_ItemWorkBench;
-	
-	class ItemActions 
-	{
-		class Build 
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {"ItemToolbox"};
-			create = "WorkBench_DZE";
-		};
-	};
-};
-
 class outhouse_kit: CA_Magazine
 {
 	scope = 2;

@@ -225,24 +225,24 @@ class Wooden_shed2_DZ: Land_Shed_wooden
 
 class WorkBench_DZE : BuiltItems 
 {
-	scope = 2;
-	destrType = "DestructTree";
-	cost = 100;
-	offset[] = {0,2,0.5};
-	model = "z\addons\dayz_buildings\models\workbench.p3d";
-	icon = "\ca\data\data\Unknown_object.paa";
-	mapSize = 2;
-	armor = 400;
-	displayName = $STR_EPOCH_WORKBENCH;
-	vehicleClass = "DayZ Epoch Buildables";
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	constructioncount = 1;
-	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
-	requireplot = 0;
-	nounderground = 0;
-	transportMaxWeapons = 10;
-	transportMaxMagazines = 25;
-	transportMaxBackpacks = 1;
+    scope = 2;
+    destrType = "DestructTree";
+    cost = 100;
+    offset[] = {0,2,-0.05};
+    model = "z\addons\dayz_buildings\models\workbench.p3d";
+    icon = "\ca\data\data\Unknown_object.paa";
+    mapSize = 2;
+    armor = 400;
+    displayName = $STR_EPOCH_WORKBENCH;
+    vehicleClass = "DayZ Epoch Buildables";
+    maintainBuilding[] = {{"PartWoodLumber",1}};
+    constructioncount = 1;
+    removeoutput[] = {{"ItemWorkBench_DZE",1}};
+    requireplot = 0;
+    nounderground = 0;
+    transportMaxWeapons = 10;
+    transportMaxMagazines = 25;
+    transportMaxBackpacks = 1;
 };
 
 class Advanced_WorkBench_DZ: BuiltItems
