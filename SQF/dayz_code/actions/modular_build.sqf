@@ -176,7 +176,7 @@ if (_canBuild) then {
 	DZE_F			= false;	// F Key - hold/release
 	DZE_P			= false;	// P Key - show/hide plot pole
 	DZE_T			= false;	// T Key - terrain align
-	DZE_L			= false;	// L Key - local mode
+	DZE_L			= false;	// L Key - local axis
 	DZE_H			= false;	// H Key - hide/unhide panel
 	DZE_LEFT		= false;	// Left Arrow Key - Bank Left
 	DZE_RIGHT		= false;	// Right Arrow Key - Bank Right
@@ -238,8 +238,9 @@ if (_canBuild) then {
 
 	local _setup_object = {
 
-		if (!_staticOffsetSet) then {
-			_object setVectorUp [0,0,1];
+		_object setVectorUp [0,0,1];
+
+		if (_isStaticWeapon && !_staticOffsetSet) then {
 			_staticOffset = ((getPosASL _object) select 2) - ((getPosASL _modelBase) select 2);
 			_staticOffsetSet = true;
 		};
@@ -341,9 +342,9 @@ if (_canBuild) then {
 		} else {
 			_vector1 = [0,0,1];							// world vectorUp
 		};
-		{_vector1 set [_forEachIndex, _x * _distance];} forEach _vector1;		// vector distance
+		_vector1 = [_vector1, _distance] call DZE_fnc_vectorMultiply;			// vector distance
 
-		local _modelNewASL	= [_modelOldASL, _vector1] call BIS_fnc_vectorAdd;	// new pos
+		local _modelNewASL	= [_modelOldASL, _vector1] call DZE_fnc_vectorAdd;	// new pos
 		local _modelNewASLZ	= _modelNewASL select 2;				// new pos height
 		local _modelNewATL	= ASLToATL _modelNewASL;				// new ATL
 		local _modelNewATLZ	= _modelNewATL select 2;				// new ATL height
@@ -403,9 +404,9 @@ if (_canBuild) then {
 
 			while {_modelNewASLZ > _heightZ} do {						// while object is above ground/sea level
 
-				{_vector2 set [_forEachIndex, _x * 0.5]} forEach _vector2;		// get half the previous vector distance
+				_vector2 = [_vector2, 0.5] call DZE_fnc_vectorMultiply;			// get half the previous vector distance
 
-				local _newPos	= [_modelNewASL, _vector2] call BIS_fnc_vectorAdd;	// test start position + half previous distance
+				local _newPos	= [_modelNewASL, _vector2] call DZE_fnc_vectorAdd;	// test start position + half previous distance
 				local _newPosZ	= _newPos select 2;					// ASL height
 
 				call {
@@ -425,7 +426,7 @@ if (_canBuild) then {
 				if (_newPosZ > _minHeight) then {					// test new height
 					_modelNewASL	= +_newPos;					// move closer
 					_modelNewASLZ	= _newPosZ;					// update height
-					_helperPos = [_helperPos, _vector2] call BIS_fnc_vectorAdd;	// vector aggregate
+					_helperPos = [_helperPos, _vector2] call DZE_fnc_vectorAdd;	// vector aggregate
 				};
 				_count = _count + 1;
 				if (_count > 15) exitWith {};						// prevent endless looping (usually resolves within 10 loops)
@@ -434,7 +435,7 @@ if (_canBuild) then {
 		///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		} else {
-			_helperPos = [_helperPos, _vector1] call BIS_fnc_vectorAdd;			// safe vector
+			_helperPos = [_helperPos, _vector1] call DZE_fnc_vectorAdd;			// safe vector
 		};
 
 		///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -580,6 +581,7 @@ if (_canBuild) then {
 	
 	local _detach = {
 		detach _objectHelper;								// release object
+
 		DZE_memDir = getDir _objectHelper;						// get current Z rotation
 
 		if (DZE_memLeftRight == 0) then {						// if object is not banked (left/right)
@@ -976,14 +978,7 @@ if (_canBuild) then {
 
 		["", "", "", ["Init", _object, _classname, _objectHelper]] spawn snap_build;
 
-		local _box	= boundingBox _object;
-		local _b0	= _box select 0;				// lower diagonal
-		local _b1	= _box select 1;				// upper diagonal
-		local _bx	= abs (_b0 select 0) + abs (_b1 select 0);
-		local _by	= abs (_b0 select 1) + abs (_b1 select 1);
-		local _bz	= abs (_b0 select 2) + abs (_b1 select 2);
-		local _diag	= sqrt (_bx^2 + _by^2 + _bz^2);			// get diagonal of boundingBox
-
+		local _diag	= _object call DZE_fnc_boundingBoxDiagonal;
 		DZE_snapRadius	= ceil ((_diag + DZE_maxSnapObjectDiag) * 0.5);	// snap radius is the sum of half the bounding box diagonals of both the current object and the largest object in the game; currently the Land_WarfareBarrier10xTall_DZ
 		_refreshDist	= DZE_snapRadius * 0.5;				// distance object moves before the snap auto-refresh triggers
 	};
@@ -1361,7 +1356,6 @@ if (_canBuild) then {
 		_builtObject setVectorDirAndUp _vector;
 
 		local _position	= _modelBasePos;						// ATL/ASL
-		local _vectorUp	= _vector select 1;
 		local _isWater	= surfaceIsWater _position;
 
 		if (_isStaticWeapon) then {							// handle static weapons
@@ -1369,9 +1363,8 @@ if (_canBuild) then {
 
 			if (!_isWater) then {_positionASL = ATLToASL _position;};		// must be ASL
 
-			for "_i" from 0 to 2 do {
-				_positionASL set [_i, (_positionASL select _i) + ((_vectorUp select _i) * _staticOffset)];		// add static weapon vectorUp offset to ASL position (world coordinates)
-			};
+			_positionASL = [_positionASL, [_vector select 1, _staticOffset] call DZE_fnc_vectorMultiply] call DZE_fnc_vectorAdd;	// add static weapon vectorUp offset to ASL position (world coordinates)
+
 			if (!_isWater) then {							// convert back to
 				_position = ASLToATL _positionASL;				// ATL
 			} else {
@@ -1387,12 +1380,8 @@ if (_canBuild) then {
 		///////////////////////////////////////////////////////////////////////////////////
 
 		if (!_isStaticWeapon) then {
-			_position = _modelCenterPos;						// ATL/ASL. Update db position in case model center is non-zero
-			_position set [2, (_position select 2) - _modelOffset];			// adjust world Z-height
-
-			if (surfaceIsWater _position) then {
-				_position = ASLToATL _position;					// ensure position passed to db is ATL
-			};
+			_position = [_builtObject, [0,0,-_modelOffset]] call DZE_fnc_modelToWorldASL;	// adjust db position in case model center is non-zero
+			_position = ASLToATL _position;							// ensure position passed to db is ATL
 		};
 
 		///////////////////////////////////////////////////////////////////////////////////
@@ -1594,6 +1583,7 @@ if (_canBuild) then {
 						_builtObject spawn player_fireMonitor;
 					} else {
 						_builtObject setVariable ["ownerPUID", dayz_playerUID, true];
+
 						if (_isPole) then {
 
 							_friendsArr = [[dayz_playerUID, toArray (name player)]];
