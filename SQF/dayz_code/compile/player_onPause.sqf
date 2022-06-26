@@ -23,9 +23,8 @@ if (diag_tickTime - dayz_lastSave > 10) then {
 };
 
 while {(!isNull _display) && !r_player_dead} do {
-	_timeout = 30;
-	_timeout = player getVariable["combattimeout", 0];
-	_inCombat = (_timeout >= diag_tickTime);
+	_timeout = player getVariable["combatTimeout", 0];
+	_inCombat = (_timeout >= diag_tickTime) || (player getVariable["combatNoTimeout", 0] == 1);
 	_playerCheck = ({isPlayer _x} count (player nearEntities ["AllVehicles",5]) > 1);
 	_zedCheck = ((count (player nearEntities ["zZombie_Base",10]) > 0) && !_isPZombie);
 	_gearDisplay = findDisplay 106;
@@ -70,7 +69,7 @@ while {(!isNull _display) && !r_player_dead} do {
 		};		
 		case (_inCombat) : {
 			_btnAbort ctrlEnable false;
-			_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText, ceil (_timeout - diag_tickTime)];
+			_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText,[DZE_CombatTimer,ceil (_timeout - diag_tickTime)] select ((player getVariable["combatNoTimeout", 0] == 0))];
 			[localize "str_abort_playerincombat",1] call dayz_rollingMessages;
 			if (TimeOutDisplayed) then {
 				_display closeDisplay 2;

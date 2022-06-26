@@ -140,6 +140,7 @@ fnc_evr = {
 		};
 			
 		if (_this == "Stage4") exitWith {
+			[player,false] call fnc_setCombat;	//	Start endless combat until storm has ended	
 			if (_hasAPSI) then {
 				playSound "ns_evrDetect";
 				uiSleep 0.2;
@@ -187,7 +188,7 @@ fnc_evr = {
 			
 		if (_this == "Stage5") exitWith {
 			DZE_EVRStormRunning = true;
-			[player,false] call fnc_setCombat;
+			[player,false] call fnc_setCombat;	//	Start endless combat until storm has ended
 			
 			if (_hasAPSI) then {
 				playSound "ns_evrDetect";
@@ -234,7 +235,8 @@ fnc_evr = {
 			"chromAberration" ppEffectEnable false;
 		};
 			
-		if (_this == "Stage6") exitWith {		
+		if (_this == "Stage6") exitWith {	
+			[player,false] call fnc_setCombat;	//	Start endless combat until storm has ended	
 			if (_hasAPSI) then {
 				playSound "ns_evrDetect";
 				uiSleep 0.2;
@@ -280,7 +282,8 @@ fnc_evr = {
 			"chromAberration" ppEffectEnable false;
 		};
 
-		if (_this == "Stage7") exitWith {			
+		if (_this == "Stage7") exitWith {	
+			[player,false] call fnc_setCombat;	//	Start endless combat until storm has ended		
 			if (_hasAPSI) then {
 				playSound "ns_evrDetect";
 				cutRsc ["RscAPSI_Start","PLAIN"];
@@ -481,7 +484,7 @@ fnc_evr = {
 			disableUserInput true; disableUserInput true;
 			disableUserInput false; disableUserInput false;
 			DZE_EVRStormRunning = false;
-			player setVariable["startcombattimer", 0];
+			player setVariable["combatNoTimeout", 0];
 		};
 	};
 };

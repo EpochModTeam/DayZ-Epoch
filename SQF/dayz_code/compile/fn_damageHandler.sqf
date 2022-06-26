@@ -85,11 +85,8 @@ _isPlayer = (isPlayer _source);
 if (DZE_PVE_Mode && {_isPlayer} && {!_falling}) exitWith {};
 
 if (_unit == player) then {
-//Set player in combat
-	_unit setVariable["startcombattimer", 1];
-	if !(_unit getVariable["inCombat",false]) then {
-		_unit setVariable["inCombat",true,true];
-	};
+    //Set player in combat
+    [_unit,true] call fnc_setCombat;
 
 	if (r_player_timeout == 0 && {!_inVehicle}) then {
 		if (_ammo == "tranquiliser_bolt") then {

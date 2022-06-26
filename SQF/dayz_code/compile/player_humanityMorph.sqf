@@ -22,7 +22,8 @@ local _zombieKills = player getVariable ["zombieKills",0];
 local _headShots = player getVariable ["headShots",0];
 local _humanKills = player getVariable ["humanKills",0];
 local _banditKills = player getVariable ["banditKills",0];
-local _combattimeout = player getVariable["combattimeout",0];
+local _combattimeout = player getVariable["combatTimeout",0];
+local _combatNoTimeout = player getVariable["combatNoTimeout",0];
 local _inCombat = player getVariable ["inCombat",false];
 local _survivalTime = player getVariable ["SurvivalTime",0];
 local _ConfirmedHumanKills = player getVariable ["ConfirmedHumanKills",0];
@@ -91,7 +92,8 @@ if (count _medical > 0) then {
 //player setVariable ["banditKills",_banditKills,true]; //Moved to player_switchModel
 //player setVariable ["characterID",_charID,true]; //Moved to player_switchModel
 player setVariable ["worldspace",_worldspace];
-player setVariable ["combattimeout",_combattimeout,false];
+player setVariable ["combatTimeout",_combattimeout,false];
+player setVariable ["combatNoTimeout",_combatNoTimeout,false];
 player setVariable ["inCombat",_inCombat,true];
 player setVariable ["SurvivalTime",_survivalTime,false];
 player setVariable ["ConfirmedHumanKills",_ConfirmedHumanKills,true];

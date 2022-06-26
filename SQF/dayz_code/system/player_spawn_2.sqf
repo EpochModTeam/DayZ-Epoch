@@ -260,12 +260,6 @@ while {1 == 1} do {
 		pickupInit = true;
 	};
 
-	_startcombattimer = player getVariable["startcombattimer", 0];
-	if (_startcombattimer == 1) then { //Do not use _PlayerNearby it makes building impossible, this is handled in player_onPause.sqf just fine
-		[player,true] call fnc_setCombat;
-		player setVariable["startcombattimer", 0, false];
-	};
-
 	uiSleep 2;
 
 	_myPos = player getVariable["lastPos",[]];

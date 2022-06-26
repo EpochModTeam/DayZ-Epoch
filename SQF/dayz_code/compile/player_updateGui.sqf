@@ -15,7 +15,7 @@ local _foodVal = 1 - (dayz_hunger / SleepFood);
 local _thirstVal = 1 - (dayz_thirst / SleepWater);
 local _tempVal = 1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));  // Normalise to [0,1]
 local _bloodVal = r_player_blood / r_player_bloodTotal;
-local _combatVal = if (player getVariable["combattimeout",0] >= diag_tickTime) then {0} else {1};
+local _combatVal = if ((player getVariable["combatTimeout",0] >= diag_tickTime) || (player getVariable["combatNoTimeout", 0] == 1)) then {0} else {1};
 local _ctrlBloodOuter = 0;
 local _ctrlFoodBorder = 0;
 local _ctrlThirstBorder = 0;

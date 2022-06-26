@@ -177,12 +177,6 @@ disableUserInput true;
 if (dayz_soundMuted) then {call player_toggleSoundMute;}; // hide icon before fadeSound
 0.1 fadeSound 0;
 
-_body setVariable ["NORRN_unconscious", false, true];
-_body setVariable ["unconsciousTime", 0, true];
-_body setVariable ["USEC_isCardiac",false,true];
-_body setVariable ["bloodTaken", false, true];
-_body setVariable ["startcombattimer", 0]; //remove combat timer on death
-_body setVariable ["inCombat", false, true];
 r_player_unconscious = false;
 r_player_cardiac = false;
 dayz_autoRun = false;
@@ -211,8 +205,6 @@ deleteGroup _myGroup;
 8 cutText ["","PLAIN"]; //Clear group tags
 3 cutRsc ["default", "PLAIN",3];
 4 cutRsc ["default", "PLAIN",3];
-
-_body setVariable["combattimeout", 0, true];
 
 _animState = toLower (animationState _body);
 _animStateArray = toArray _animState;

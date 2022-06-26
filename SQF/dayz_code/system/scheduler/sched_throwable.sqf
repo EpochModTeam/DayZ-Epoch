@@ -19,7 +19,7 @@ sched_throwable = {
 				sched_throwable_prevmuzz = currentMuzzle player;
 				sched_throwable_time = diag_tickTime+11;
 			};
-			if (((player getVariable["combattimeout", diag_tickTime])-diag_tickTime)>27) then {
+			if (((player getVariable["combatTimeout", diag_tickTime])-diag_tickTime)>27) then {
 				sched_throwable_time = diag_tickTime+21;
 			};
 		};
