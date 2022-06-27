@@ -35,7 +35,7 @@ dayz_actionInProgress = true;
 
 local _misc_checks = {
 
-	local _inCombat		= (player getVariable["combattimeout",0] >= diag_tickTime);
+	local _inCombat		= (player getVariable["inCombat",false]);
 	local _inVehicle	= ((vehicle player) != player);
 	local _onLadder		= (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 	local _reason		= "";
@@ -1405,7 +1405,7 @@ if (_canBuild) then {
 
 			[player, (getPosATL player), 40, "repair"] spawn fnc_alertZombies;
 
-			local _finished = ["Medic", 1, {player getVariable["combattimeout", 0] >= diag_tickTime or DZE_cancelBuilding}] call fn_loopAction;
+			local _finished = ["Medic", 1, {(player getVariable["inCombat",false]) || DZE_cancelBuilding}] call fn_loopAction;
 
 			if (!_finished) exitWith {
 				_isOk = false;
