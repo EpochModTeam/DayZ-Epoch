@@ -722,7 +722,7 @@
 			<!-- %1 jerrycan name %2 liters-->
 			<English>Refuel %1 with %2L</English>
 			<German>%1 mit %2L betanken</German>
-			<Russian>Заправить %1 (%2л)</Russian>
+			<Russian>Заправить %1 (%2 л)</Russian>
 			<Spanish>Reabastecer %1 con %2L</Spanish>
 			<French>Remettre du carburant dans %1 avec %2L</French>
 			<Czech>Doplnit %2L paliva do %1</Czech>
@@ -1261,7 +1261,7 @@
 		<Key ID="str_siphon_drained">
 			<!-- %1 vehicle name -->
 			<English>%1 has been drained for %2 litres of fuel.</English>
-			<Russian>Из %1 слито %2л топлива.</Russian>
+			<Russian>Из %1 слито %2 л топлива.</Russian>
 			<Spanish>Se le sustrajo %2 litros de combustible al %1.</Spanish>
 			<Czech>Z %1 bylo přečerpáno %2 litrů paliva.</Czech>
 			<French>Le %1 a été siphonné de %2 litres de carburant.</French>
@@ -1281,12 +1281,12 @@
 		<Key ID="str_fill_notenough">
 			<English>The fuel tank does not have enough fuel to fill all containers. Estimated %1 litres left (You needed %2 litres)</English>
 			<German>Der Treibstofftank hat nicht genug Kraftstoff, um alle Kraftstoffbehälter zu füllen. Es sind noch ungefähr %1 Liter übrig. (Du brauchst %2 Liter)</German>
-			<Russian>Не достаточно топлива для заполнения всех контейнеров. Осталось около %1л. (Вам нужно %2л)</Russian>
+			<Russian>Не достаточно топлива для заполнения всех контейнеров. Осталось около %1 л. (Вам нужно %2 л)</Russian>
 		</Key>
 		<Key ID="str_fill_success">
 			<English>You have filled %1 fuel container(s) with fuel. The fuel tank has an estimated %2 litres of fuel left.</English>
 			<German>%1 Kraftstoffbehälter wurde(n) erfolgreich mit Kraftstoff befüllt. Der Treibstofftank hat noch ungefähr %2 Liter Kraftstoff übrig.</German>
-			<Russian>Заполнено контейнеров: %1. Осталось примерно %2л топлива.</Russian>
+			<Russian>Заполнено контейнеров: %1. Осталось примерно %2 л топлива.</Russian>
 		</Key>
 		<Key ID="str_siphon_canceled">
 			<English>Canceled siphon</English>
@@ -6069,7 +6069,7 @@
 		<Key ID="STR_ITEM_NAME_FUELCAN_WATER">
 			<English>Can 5L (Water)</English>
 			<German>Kanister 5L (Wasser)</German>
-			<Russian>Канистра 5л (Вода)</Russian>
+			<Russian>Канистра 5 л (Вода)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN_WATER">
 			<English>A small 5-liter can filled with water.</English>
@@ -6079,7 +6079,7 @@
 		<Key ID="STR_ITEM_NAME_FUELCAN_MILK">
 			<English>Can 5L (Milk)</English>
 			<German>Kanister 5L (Milch)</German>
-			<Russian>Канистра 5л (Молоко)</Russian>
+			<Russian>Канистра 5 л (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN_MILK">
 			<English>A small 5-liter can filled with milk.</English>
@@ -6089,7 +6089,7 @@
 		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">
 			<English>Fuelcan 5L (empty)</English>
 			<German>Benzinkanister 5L (leer)</German>
-			<Russian>Канистра 5л (пустая)</Russian>
+			<Russian>Канистра 5 л (пустая)</Russian>
 			<Spanish>Bidón Chico 5L (vacío)</Spanish>
 			<French>Bidon 5L (vide)</French>
 			<Czech>Kanystr 5L (prázdný)</Czech>
@@ -6121,7 +6121,7 @@
 		<Key ID="STR_ITEM_NAME_JERRYCAN_WATER">
 			<English>Can 20L (Water)</English>
 			<German>Kanister 20L (Wasser</German>
-			<Russian>Канистра 20л (Вода)</Russian>
+			<Russian>Канистра 20 л (Вода)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN_WATER">
 			<English>20 litre can filled with water.</English>
@@ -6131,7 +6131,7 @@
 		<Key ID="STR_ITEM_NAME_JERRYCAN_MILK">
 			<English>Can 20L (Milk)</English>
 			<German>Kanister 20L (Milch)</German>
-			<Russian>Канистра 20л (Молоко)</Russian>
+			<Russian>Канистра 20 л (Молоко)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN_MILK">
 			<English>20 litre can filled with milk.</English>
@@ -6141,7 +6141,7 @@
 		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
 			<English>Jerry Can 20L (empty)</English>
 			<German>Benzinkanister 20L (leer)</German>
-			<Russian>Канистра 20л (пустая)</Russian>
+			<Russian>Канистра 20 л (пустая)</Russian>
 			<Spanish>Bidón 20L (vacío)</Spanish>
 			<French>Jerrican 20L (vide)</French>
 			<Czech>Kanystr 20L (prázdný)</Czech>
@@ -6708,7 +6708,7 @@
 		<Key ID="str_player_05">
 			<English>%1 has been filled with %2 litres of fuel</English>
 			<German>%1 wurde mit %2 Litern Treibstoff betankt.</German>
-			<Russian>В %1 было залито %2л топлива.</Russian>
+			<Russian>В %1 было залито %2 л топлива.</Russian>
 			<Spanish>El %1 fue cargado con %2 litros de combustible.</Spanish>
 			<French>%1 a été rempli avec %2 litres de carburant.</French>
 			<Czech>Do %1 bylo doplněno %2 litrů paliva.</Czech>
@@ -7190,7 +7190,7 @@
 		<Key ID="str_player_death_killed">
 			<English>%1 was killed by %2 with %3 from %4m</English>
 			<German>%1 wurde von %2 mit %3 aus %4m Entfernung getötet.</German>
-			<Russian>%1 был убит игроком %2 из %3 с расстояния %4м</Russian>
+			<Russian>%1 был убит игроком %2 из %3 с расстояния %4 м</Russian>
 		</Key>
 <!--
 		<Key ID="str_player_fail_drink">
@@ -23461,7 +23461,7 @@
 		<Key ID="STR_EPOCH_PLAYER_41">
 			<English>You cannot build. There are too many objects within %1m.</English>
 			<German>Bau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
-			<Russian>Нельзя построить, в пределах %1м слишком много объектов.</Russian>
+			<Russian>Отменено. В радиусе %1 м слишком много объектов.</Russian>
 			<Dutch>Kan niet bouwen, teveel objecten binnen %1.</Dutch>
 			<French>Impossible de construire, il y a trop d'objets à moins de %1m.</French>
 			<Czech>Nelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
@@ -23485,7 +23485,7 @@
 		<Key ID="STR_EPOCH_PLAYER_44">
 			<English>You cannot build a plot pole within %1m of an existing plot.</English>
 			<German>Eine Grundstücksmarkierung kann nicht innerhalb %1m von einem bestehenden Grundstück erbaut werden.</German>
-			<Russian>Нельзя строить ещё один столб в пределах %1м от существующего столба.</Russian>
+			<Russian>Нельзя построить ещё один столб в радиусе %1 м от существующего столба.</Russian>
 			<Dutch>Kan bouw-paal niet bouwen op minder als %1m afstand van een bestaand bouwterrein.</Dutch>
 			<French>Impossible de construire un panneau de propriété privée à moins de %1m d'un autre panneau du genre.</French>
 			<Czech>Nelze postavit hraniční značku ve vzdálenosti %1 metrů od jiné značky.</Czech>
@@ -23873,7 +23873,7 @@
 		<Key ID="STR_EPOCH_PLAYER_131_2">
 			<English>Abort refueling, the fuel source has only %1 liters left. You need at least %2 liters of fuel.</English>
 			<German>Betanken abgebrochen, die Treibstoffquelle hat nur noch %1 Liter übrig. Benötigt werden %2 Liter Treibstoff.</German>
-			<Russian>Заправка прервана, в источнике топлива осталось только %1л. Требуется %2л топлива.</Russian>
+			<Russian>Заправка прервана, в источнике топлива осталось только %1 л. Требуется %2 л топлива.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_132">
 			<English>%1 filled to %2 percent capacity.</English>
@@ -23886,7 +23886,7 @@
 		<Key ID="STR_EPOCH_PLAYER_132_1">
 			<English>%1 filled to %2 percent capacity. It is about %3 litres of fuel left in the fuel source.</English>
 			<German>%1 wurde zu %2 Prozent betankt. Es sind noch ca. %3 Liter Treibstoff in der Treibstoffquelle übrig.</German>
-			<Russian>%1: Заправлено до %2 процентов. В топливном баке осталось около %3л топлива.</Russian>
+			<Russian>%1: Заправлено до %2 процентов. В топливном баке осталось около %3 л топлива.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_133">
 			<English>You can only own %1 plot pole(s)</English>
@@ -23901,7 +23901,7 @@
 		<Key ID="STR_EPOCH_PLAYER_135">
 			<English>This item needs a %1 within %2 meters</English>
 			<German>Dieses Gebäude benötitgt ein(e) %1 innerhalb von %2 Metern.</German>
-			<Russian>Требуется %1 в пределах %2м.</Russian>
+			<Russian>Требуется %1 в радиусе %2 м.</Russian>
 			<Dutch>Dit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
 			<French>Ce bâtiment nécessite un %1 à moins de %2 mètres</French>
 			<Czech>Tato budova potřebuje %1 v rámci %2.</Czech>
@@ -23982,7 +23982,7 @@
 		<Key ID="STR_EPOCH_PLAYER_149">
 			<English>Crafting needs a %1 within %2 meters</English>
 			<German>Zur Herstellung wird ein(e) %1 innerhalb von %2 Meter(n) benötigt.</German>
-			<Russian>Для создания требуется %1 вблизи %2м</Russian>
+			<Russian>Для создания требуется %1 в радиусе %2 м</Russian>
 			<Dutch>Hiervoor heb je een %1 nodig binnen %2 meter</Dutch>
 			<Czech>Výroba potřebuje %1 v rámci %2 metrů</Czech>
 		</Key>
@@ -24073,17 +24073,17 @@
 		<Key ID="STR_EPOCH_PLAYER_166">
 			<English>You can't build a %1 within %2 meters of a safe zone.</English>
 			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einer Safe Zone.</German>
-			<Russian>Нельзя построить %1 в пределах %2м от безопасной зоны.</Russian>
+			<Russian>Нельзя построить %1 в %2 м от безопасной зоны.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_167">
 			<English>You can't build a %1 within %2 meters of a %3.</English>
 			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einem Objekt (%3).</German>
-			<Russian>Нельзя построить %1 в пределах %2м от %3.</Russian>
+			<Russian>Нельзя построить %1 в %2 м от %3.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_168">
 			<English>Building is restricted above %1 meter(s).</English>
 			<German>Das Bauen ist auf eine Höhe von %1 Metern begrenzt.</German>
-			<Russian>Высота строительства ограничена %1м.</Russian>
+			<Russian>Высота строительства ограничена %1 м.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_173">
 			<English>Dog consumed %1, and is now tamed.</English>
@@ -24215,21 +24215,21 @@
 		<Key ID="STR_EPOCH_PLAYER_190">
 			<English>Craft Camping Tent</English>
 			<German>Zelt herstellen</German>
-			<Russian>Создать: Палатка</Russian>
+			<Russian>Создать: Палатка-домик</Russian>
 			<Dutch>Maak tent</Dutch>
 			<Czech>Vyrobit Stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_191">
 			<English>Craft Desert Dome Tent</English>
 			<German>Wüstenigluzelt herstellen</German>
-			<Russian>Создать: Пустынная палатка</Russian>
+			<Russian>Создать: Пустынная палатка-полусфера</Russian>
 			<Dutch>Maak Woestijntent</Dutch>
 			<Czech>Vyrobit Pouštní stan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_192">
 			<English>Craft Dome Tent</English>
 			<German>Igluzelt herstellen</German>
-			<Russian>Создать: Зелёная палатка</Russian>
+			<Russian>Создать: Палатка-полусфера</Russian>
 			<Dutch>Maak Groene tent</Dutch>
 			<Czech>Vyrobit Zelený stan</Czech>
 		</Key>
@@ -24242,7 +24242,7 @@
 			<English>Craft Winter Dome Tent</English>
 			<German>Winterigluzelt herstellen</German>
 			<Russian>Создать: Зимняя палатка-полусфера</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_193">
 			<English>Craft Sun Shade</English>
 			<German>Sonnenschutz herstellen</German>
@@ -28910,182 +28910,182 @@
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ">
 			<English>Water Bottle (1oz)</English>
 			<German>Wasserflasche (100ml)</German>
-			<Russian>Бутылка воды (100мл)</Russian>
+			<Russian>Бутылка воды (100 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ_DESC">
 			<English>Water Bottle with 1oz of water.</English>
 			<German>Wasserflasche mit 100ml Wasser.</German>
-			<Russian>Бутылка с 100мл воды.</Russian>
+			<Russian>Бутылка с 100 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ">
 			<English>Water Bottle (2oz)</English>
 			<German>Wasserflasche (200ml)</German>
-			<Russian>Бутылка воды (200мл)</Russian>
+			<Russian>Бутылка воды (200 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ_DESC">
 			<English>Water Bottle with 2oz of water.</English>
 			<German>Wasserflasche mit 200ml Wasser.</German>
-			<Russian>Бутылка с 200мл воды.</Russian>
+			<Russian>Бутылка с 200 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ">
 			<English>Water Bottle (3oz)</English>
 			<German>Wasserflasche (300ml)</German>
-			<Russian>Бутылка воды (300мл)</Russian>
+			<Russian>Бутылка воды (300 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ_DESC">
 			<English>Water Bottle with 3oz of water.</English>
 			<German>Wasserflasche mit 300ml Wasser.</German>
-			<Russian>Бутылка с 300мл воды.</Russian>
+			<Russian>Бутылка с 300 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ">
 			<English>Water Bottle (4oz)</English>
 			<German>Wasserflasche (400ml)</German>
-			<Russian>Бутылка воды (400мл)</Russian>
+			<Russian>Бутылка воды (400 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ_DESC">
 			<English>Water Bottle with 4oz of water.</English>
 			<German>Wasserflasche mit 400ml Wasser.</German>
-			<Russian>Бутылка с 400мл воды.</Russian>
+			<Russian>Бутылка с 400 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ">
 			<English>Water Bottle (5oz)</English>
 			<German>Wasserflasche (500ml)</German>
-			<Russian>Бутылка воды (500мл)</Russian>
+			<Russian>Бутылка воды (500 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ_DESC">
 			<English>Water Bottle with 5oz of water.</English>
 			<German>Wasserflasche mit 500ml Wasser.</German>
-			<Russian>Бутылка с 500мл воды.</Russian>
+			<Russian>Бутылка с 500 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ">
 			<English>Water Bottle (6oz)</English>
 			<German>Wasserflasche (600ml)</German>
-			<Russian>Бутылка воды (600мл)</Russian>
+			<Russian>Бутылка воды (600 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ_DESC">
 			<English>Water Bottle with 6oz of water.</English>
 			<German>Wasserflasche mit 600ml Wasser.</German>
-			<Russian>Бутылка с 600мл воды.</Russian>
+			<Russian>Бутылка с 600 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ">
 			<English>Water Bottle (7oz)</English>
 			<German>Wasserflasche (700ml)</German>
-			<Russian>Бутылка воды (700мл)</Russian>
+			<Russian>Бутылка воды (700 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ_DESC">
 			<English>Water Bottle with 7oz of water.</English>
 			<German>Wasserflasche mit 700ml Wasser.</German>
-			<Russian>Бутылка с 700мл воды.</Russian>
+			<Russian>Бутылка с 700 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ">
 			<English>Water Bottle (8oz)</English>
 			<German>Wasserflasche (800ml)</German>
-			<Russian>Бутылка воды (800мл)</Russian>
+			<Russian>Бутылка воды (800 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ_DESC">
 			<English>Water Bottle with 8oz of water.</English>
 			<German>Wasserflasche mit 800ml Wasser.</German>
-			<Russian>Бутылка с 800мл воды.</Russian>
+			<Russian>Бутылка с 800 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ">
 			<English>Water Bottle (9oz)</English>
 			<German>Wasserflasche (900ml)</German>
-			<Russian>Бутылка воды (900мл)</Russian>
+			<Russian>Бутылка воды (900 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ_DESC">
 			<English>Water Bottle with 9oz of water.</English>
 			<German>Wasserflasche mit 900ml Wasser.</German>
-			<Russian>Бутылка с 900мл воды.</Russian>
+			<Russian>Бутылка с 900 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED">
 			<English>Water Bottle (Boiled 1oz)</English>
 			<German>Wasserflasche (Abgek. 100ml)</German>
-			<Russian>Бутылка (чистая вода 100мл)</Russian>
+			<Russian>Бутылка (чистая вода 100 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED_DESC">
 			<English>Water Bottle with 1oz of boiled water.</English>
 			<German>Wasserflasche mit 100ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 100мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 100 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED">
 			<English>Water Bottle (Boiled 2oz)</English>
 			<German>Wasserflasche (Abgek. 200ml)</German>
-			<Russian>Бутылка (чистая вода 200мл)</Russian>
+			<Russian>Бутылка (чистая вода 200 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED_DESC">
 			<English>Water Bottle with 2oz of boiled water.</English>
 			<German>Wasserflasche mit 200ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 200мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 200 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED">
 			<English>Water Bottle (Boiled 3oz)</English>
 			<German>Wasserflasche (Abgek. 300ml)</German>
-			<Russian>Бутылка (чистая вода 300мл)</Russian>
+			<Russian>Бутылка (чистая вода 300 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED_DESC">
 			<English>Water Bottle with 3oz of boiled water.</English>
 			<German>Wasserflasche mit 300ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 300мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 300 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED">
 			<English>Water Bottle (Boiled 4oz)</English>
 			<German>Wasserflasche (Abgek. 400ml)</German>
-			<Russian>Бутылка (чистая вода 400мл)</Russian>
+			<Russian>Бутылка (чистая вода 400 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED_DESC">
 			<English>Water Bottle with 4oz of boiled water.</English>
 			<German>Wasserflasche mit 400ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 400мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 400 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED">
 			<English>Water Bottle (Boiled 5oz)</English>
 			<German>Wasserflasche (Abgek. 500ml)</German>
-			<Russian>Бутылка (чистая вода 500мл)</Russian>
+			<Russian>Бутылка (чистая вода 500 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED_DESC">
 			<English>Water Bottle with 5oz of boiled water.</English>
 			<German>Wasserflasche mit 500ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 500мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 500 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED">
 			<English>Water Bottle (Boiled 6oz)</English>
 			<German>Wasserflasche (Abgek. 600ml)</German>
-			<Russian>Бутылка (чистая вода 600мл)</Russian>
+			<Russian>Бутылка (чистая вода 600 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED_DESC">
 			<English>Water Bottle with 6oz of boiled water.</English>
 			<German>Wasserflasche mit 600ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 600мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 600 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED">
 			<English>Water Bottle (Boiled 7oz)</English>
 			<German>Wasserflasche (Abgek. 700ml)</German>
-			<Russian>Бутылка (чистая вода 700мл)</Russian>
+			<Russian>Бутылка (чистая вода 700 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED_DESC">
 			<English>Water Bottle with 7oz of boiled water.</English>
 			<German>Wasserflasche mit 700ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 700мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 700 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED">
 			<English>Water Bottle (Boiled 8oz)</English>
 			<German>Wasserflasche (Abgek. 800ml)</German>
-			<Russian>Бутылка (чистая вода 800мл)</Russian>
+			<Russian>Бутылка (чистая вода 800 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED_DESC">
 			<English>Water Bottle with 8oz of boiled water.</English>
 			<German>Wasserflasche mit 800ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 800мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 800 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED">
 			<English>Water Bottle (Boiled 9oz)</English>
 			<German>Wasserflasche (Abgek. 900ml)</German>
-			<Russian>Бутылка (чистая вода 900мл)</Russian>
+			<Russian>Бутылка (чистая вода 900 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED_DESC">
 			<English>Water Bottle with 9oz of boiled water.</English>
 			<German>Wasserflasche mit 900ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 900мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 900 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE">
 			<English>Briefcase</English>
@@ -32838,182 +32838,182 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZ">
 			<English>Water Bottle PET (1oz)</English>
-			<Russian>Бутылка ПЭТ с водой (100мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (100 мл)</Russian>
 			<German>Wasserflasche PET (100ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZ_DESC">
 			<English>Water Bottle PET with 1oz of water.</English>
-			<Russian>Пластиковая бутылка со 100мл воды.</Russian>
+			<Russian>Пластиковая бутылка со 100 мл воды.</Russian>
 			<German>Wasserflasche PET mit 100ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZ">
 			<English>Water Bottle PET (2oz)</English>
-			<Russian>Бутылка ПЭТ с водой (200мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (200 мл)</Russian>
 			<German>Wasserflasche PET (200ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZ_DESC">
 			<English>Water Bottle PET with 2oz of water.</English>
-			<Russian>Пластиковая бутылка с 200мл воды.</Russian>
+			<Russian>Пластиковая бутылка с 200 мл воды.</Russian>
 			<German>Wasserflasche PET mit 200ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZ">
 			<English>Water Bottle PET (3oz)</English>
-			<Russian>Бутылка ПЭТ с водой (300мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (300 мл)</Russian>
 			<German>Wasserflasche PET (300ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZ_DESC">
 			<English>Water Bottle PET with 3oz of water.</English>
-			<Russian>Пластиковая бутылка с 300мл воды.</Russian>
+			<Russian>Пластиковая бутылка с 300 мл воды.</Russian>
 			<German>Wasserflasche PET mit 300ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZ">
 			<English>Water Bottle PET (4oz)</English>
-			<Russian>Бутылка ПЭТ с водой (400мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (400 мл)</Russian>
 			<German>Wasserflasche PET (400ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZ_DESC">
 			<English>Water Bottle PET with 4oz of water.</English>
-			<Russian>Пластиковая бутылка с 400мл воды.</Russian>
+			<Russian>Пластиковая бутылка с 400 мл воды.</Russian>
 			<German>Wasserflasche PET mit 400ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZ">
 			<English>Water Bottle PET (5oz)</English>
-			<Russian>Бутылка ПЭТ с водой (500мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (500 мл)</Russian>
 			<German>Wasserflasche PET (500ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZ_DESC">
 			<English>Water Bottle PET with 5oz of water.</English>
-			<Russian>Пластиковая бутылка с 500мл воды.</Russian>
+			<Russian>Пластиковая бутылка с 500 мл воды.</Russian>
 			<German>Wasserflasche PET mit 500ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZ">
 			<English>Water Bottle PET (6oz)</English>
-			<Russian>Бутылка ПЭТ с водой (600мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (600 мл)</Russian>
 			<German>Wasserflasche PET (600ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZ_DESC">
 			<English>Water Bottle PET with 6oz of water.</English>
-			<Russian>Пластиковая бутылка с 600мл воды.</Russian>
+			<Russian>Пластиковая бутылка с 600 мл воды.</Russian>
 			<German>Wasserflasche PET mit 600ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZ">
 			<English>Water Bottle PET (7oz)</English>
-			<Russian>Бутылка ПЭТ с водой (700мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (700 мл)</Russian>
 			<German>Wasserflasche PET (700ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZ_DESC">
 			<English>Water Bottle PET with 7oz of water.</English>
-			<Russian>Пластиковая бутылка с 700мл воды.</Russian>
+			<Russian>Пластиковая бутылка с 700 мл воды.</Russian>
 			<German>Wasserflasche PET mit 700ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZ">
 			<English>Water Bottle PET (8oz)</English>
-			<Russian>Бутылка ПЭТ с водой (800мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (800 мл)</Russian>
 			<German>Wasserflasche PET (800ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZ_DESC">
 			<English>Water Bottle PET with 8oz of water.</English>
-			<Russian>Пластиковая бутылка с 800мл воды.</Russian>
+			<Russian>Пластиковая бутылка с 800 мл воды.</Russian>
 			<German>Wasserflasche PET mit 800ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZ">
 			<English>Water Bottle PET (9oz)</English>
-			<Russian>Бутылка ПЭТ с водой (900мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (900 мл)</Russian>
 			<German>Wasserflasche PET (900ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZ_DESC">
 			<English>Water Bottle PET with 9oz of water.</English>
-			<Russian>Пластиковая бутылка с 900мл воды.</Russian>
+			<Russian>Пластиковая бутылка с 900 мл воды.</Russian>
 			<German>Wasserflasche PET mit 900ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZBOILED">
 			<English>Water Bottle PET (Boiled 1oz)</English>
-			<Russian>Бутылка ПЭТ с чистой водой (100мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (100 мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 100ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZBOILED_DESC">
 			<English>Water Bottle PET with 1oz of boiled water.</English>
-			<Russian>Бутылка со 100мл кипячёной воды</Russian>
+			<Russian>Бутылка со 100 мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 100ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZBOILED">
 			<English>Water Bottle PET (Boiled 2oz)</English>
-			<Russian>Бутылка ПЭТ с чистой водой (200мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (200 мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 200ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZBOILED_DESC">
 			<English>Water Bottle PET with 2oz of boiled water.</English>
-			<Russian>Бутылка с 200мл кипячёной воды</Russian>
+			<Russian>Бутылка с 200 мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 200ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZBOILED">
 			<English>Water Bottle PET (Boiled 3oz)</English>
-			<Russian>Бутылка ПЭТ с чистой водой (300мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (300 мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 300ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZBOILED_DESC">
 			<English>Water Bottle PET with 3oz of boiled water.</English>
-			<Russian>Бутылка с 300мл кипячёной воды</Russian>
+			<Russian>Бутылка с 300 мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 300ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZBOILED">
 			<English>Water Bottle PET (Boiled 4oz)</English>
-			<Russian>Бутылка ПЭТ с чистой водой (400мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (400 мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 400ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZBOILED_DESC">
 			<English>Water Bottle PET with 4oz of boiled water.</English>
-			<Russian>Бутылка с 400мл кипячёной воды</Russian>
+			<Russian>Бутылка с 400 мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 400ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZBOILED">
 			<English>Water Bottle PET (Boiled 5oz)</English>
-			<Russian>Бутылка ПЭТ с чистой водой (500мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (500 мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 500ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZBOILED_DESC">
 			<English>Water Bottle PET with 5oz of boiled water.</English>
-			<Russian>Бутылка с 500мл кипячёной воды</Russian>
+			<Russian>Бутылка с 500 мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 500ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZBOILED">
 			<English>Water Bottle PET (Boiled 6oz)</English>
-			<Russian>Бутылка ПЭТ с чистой водой (600мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (600 мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 600ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZBOILED_DESC">
 			<English>Water Bottle PET with 6oz of boiled water.</English>
-			<Russian>Бутылка с 600мл кипячёной воды</Russian>
+			<Russian>Бутылка с 600 мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 600ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZBOILED">
 			<English>Water Bottle PET (Boiled 7oz)</English>
-			<Russian>Бутылка ПЭТ с чистой водой (700мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (700 мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 700ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZBOILED_DESC">
 			<English>Water Bottle PET with 7oz of boiled water.</English>
-			<Russian>Бутылка с 700мл кипячёной воды</Russian>
+			<Russian>Бутылка с 700 мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 700ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZBOILED">
 			<English>Water Bottle PET (Boiled 8oz)</English>
-			<Russian>Бутылка ПЭТ с чистой водой (800мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (800 мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 800ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZBOILED_DESC">
 			<English>Water Bottle PET with 8oz of boiled water.</English>
-			<Russian>Бутылка с 800мл кипячёной воды</Russian>
+			<Russian>Бутылка с 800 мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 800ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZBOILED">
 			<English>Water Bottle PET (Boiled 9oz)</English>
-			<Russian>Бутылка ПЭТ с чистой водой (900мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (900 мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 900ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZBOILED_DESC">
 			<English>Water Bottle PET with 9oz of boiled water.</English>
-			<Russian>Бутылка с 900мл кипячёной воды</Russian>
+			<Russian>Бутылка с 900 мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 900ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_COFFEE">
@@ -37194,12 +37194,12 @@
 			<English>%1 damaged by the EMP</English>
 			<German>%1 wurde vom EMP beschädigt</German>
 			<Russian>Повреждено выбросом: %1</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_TREE_STUMP_01">
 			<English>Tree Stump</English>
 			<German>Baumstumpf</German>
 			<Russian>Пень</Russian>
-		</Key>	
+		</Key>
 		<Key ID="STR_TREE_STUMP_02">
 			<English>Tree Stump</English>
 			<German>Baumstumpf</German>
@@ -37213,23 +37213,26 @@
 		<Key ID="STR_FALLEN_TREE">
 			<English>Fallen Tree</English>
 			<German>Umgestürzter Baum</German>
+			<Russian>Упавшее дерево</Russian>
 		</Key>
 		<Key ID="STR_EXCAVATED_DIRT">
 			<English>Excavated Dirt</English>
 			<German>Aufgewühlte Erde</German>
+			<Russian>Выкопанная земля</Russian>
 		</Key>
 		<Key ID="STR_DIRT_HEAP">
 			<English>Dirt Heap</English>
 			<German>Haufen Erde</German>
-		</Key>		
-		
+			<Russian>Кучка земли</Russian>
+		</Key>
+
 		<!--Placeholder strings for new items server admins want to add within the mission by overwrite this strings-->
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_01">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_01">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_02">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37241,13 +37244,13 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_03">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_04">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_04">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_05">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37265,7 +37268,7 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_07">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_08">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37277,13 +37280,13 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_09">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_10">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_10">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_11">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37301,7 +37304,7 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_13">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_14">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37313,13 +37316,13 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_15">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_16">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_16">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_17">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37337,7 +37340,7 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_19">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_20">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37349,13 +37352,13 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_21">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_22">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_22">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_23">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37373,7 +37376,7 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_25">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_26">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37385,13 +37388,13 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_27">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_28">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_28">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_29">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37409,7 +37412,7 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_31">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_32">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37421,13 +37424,13 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_33">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_34">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_34">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_35">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37445,7 +37448,7 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_37">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_38">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37457,13 +37460,13 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_39">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_40">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_40">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_41">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37481,7 +37484,7 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_43">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_44">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37493,13 +37496,13 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_45">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_46">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_46">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_47">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
@@ -37517,14 +37520,14 @@
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_49">
 			<English>Placeholder - overwrite in stringtable</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_50">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
 		<Key ID="STR_PLACEHOLDER_ITEM_DESC_50">
 			<English>Placeholder - overwrite in stringtable</English>
 		</Key>
-		
+
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
@@ -37554,7 +37557,7 @@
 			<English>Note: some spawns were blocked due to a body of yours within %1m</English>
 			<French>Note: certains engins ont été bloqués à cause d'un corps à vous a %1m</French>
 			<German>Anmerkung: Einige Spawnpunkte wurden wegen einer Leiche von dir im Umkreis von %1m blockiert</German>
-			<Russian>Некоторые точки спавна заблокированы, т.к. они в радиусе %1м от вашего тела.</Russian>
+			<Russian>Некоторые точки спавна заблокированы, т.к. они в радиусе %1 м от вашего тела.</Russian>
 			<Spanish>algunos spawns fueron bloqueados por que tienes un cuerpo a %1mts</Spanish>
 		</Key>
 		<Key ID="STR_ESS_HUMANITY_TOO_HIGH">
@@ -38374,7 +38377,7 @@
 			<Russian>Стоимость</Russian>
 			<Spanish>Coste</Spanish>
 			<French>Frais</French>
-		</Key>		
+		</Key>
 	</Package>
 
 	<Package name="servicePoints">
@@ -38913,7 +38916,7 @@
 		<Key ID="STR_CL_PS_VIEW_SET">
 			<English>View distance set to: %1m</English>
 			<German>Sichtweite setzen auf: %1m</German>
-			<Russian>Дальность прорисовки: %1м</Russian>
+			<Russian>Дальность прорисовки: %1 м</Russian>
 		</Key>
 		<Key ID="STR_CL_PS_VIEW_FPS">
 			<English>Warning: The higher the view distance the lower your FPS will be.</English>
@@ -41063,7 +41066,7 @@
 		</Key>
 		<Key ID="STR_CL_EC_MINIMUM_DISTANCE">
 			<English>You must be at least %1 meters away to call your %2.</English>
-			<Russian>Вы должны быть на расстоянии не менее %1м, чтобы вызвать %2.</Russian>
+			<Russian>Вы должны быть на расстоянии не менее %1 м, чтобы вызвать %2.</Russian>
 			<German>Du musst mindestens %1 Meter weit weg sein, um deine(n) %2 zu rufen.</German>
 		</Key>
 		<Key ID="STR_CL_EC_COUNTDOWN">
@@ -41519,13 +41522,13 @@
 			<English>OBJECT '%1' ATTACHED.</English>
 			<German>OBJEKT '%1' GEKOPPELT.</German>
 			<French>Véhicule '%1' attaché.</French>
-			<Russian>'%1' присоединён</Russian>
+			<Russian>%1 присоединён.</Russian>
 		</Key>
 		<Key ID="STR_LOG_DROPPED">
 			<English>OBJECT '%1' DROPPED.</English>
 			<German>OBJEKT '%1' ABGEKOPPELT.</German>
 			<French>Véhicule '%1' détaché.</French>
-			<Russian>'%1' сброшен</Russian>
+			<Russian>%1 сброшен.</Russian>
 		</Key>
 		<Key ID="STR_LOG_DROP">
 			<English>DROP OBJECT</English>
@@ -41537,37 +41540,37 @@
 			<English>CAN NOT LIFT OBJECT '%1', BECAUSE IT'S TOWING ANOTHER OBJECT.</English>
 			<German>OBJEKT '%1' KANN NICHT HOCHGEZOGEN WERDEN, WEIL ES BEREITS ABGESCHLEPPT WIRD.</German>
 			<French>Véhicule non hélitreuillable '%1' car il tracte un autre objet.</French>
-			<Russian>Вы не можете поднять '%1', потому что он буксирует другой объект.</Russian>
+			<Russian>Вы не можете поднять %1, потому что он буксирует другой объект.</Russian>
 		</Key>
 		<Key ID="STR_LOG_CANT_LIFT_MOVING">
 			<English>OBJECT '%1' IS BEING BY A PLAYER.</English>
 			<German>OBJEKT '%1' IST DICHT AN EINEM ANDEREN SPIELER DRAN.</German>
 			<French>Remorquage du véhicule '%1' en cours par un autre joueur.</French>
-			<Russian>Объект '%1' блокируется другим игроком.</Russian>
+			<Russian>%1 блокируется другим игроком.</Russian>
 		</Key>
 		<Key ID="STR_LOG_CANT_LIFT_PLAYER">
 			<English>THERE IS A PLAYER IN OBJECT '%1'.</English>
 			<German>IM OBJEKT '%1' BEFINDET SICH EIN SPIELER.</German>
 			<French>Il y a un joueur dans le véhicule '%1'.</French>
-			<Russian>В объекте '%1' находится игрок.</Russian>
+			<Russian>В %1 находится игрок.</Russian>
 		</Key>
 		<Key ID="STR_LOG_ALREADY">
 			<English>OBJECT '%1' IS ALREADY TRANSPORTED BY ANOTHER OBJECT.</English>
 			<German>DAS OBJEKT '%1' WIRD BEREITS VON EINEM ANDEREN OBJEKT TRANSPORTIERT.</German>
 			<French>Véhicule '%1' est déjà transporté par un autre véhicule.</French>
-			<Russian>Объект '%1' уже буксируется другим транспортом.</Russian>
+			<Russian>%1 уже буксируется другим транспортом.</Russian>
 		</Key>
 		<Key ID="STR_LOG_NOW_SELECT">
 			<English>SELECT THE OBJECT WHICH IS TO TOW WITH '%1'...</English>
 			<German>WÄHLE NUN DAS OBJEKT, DAS OBJEKT '%1' ABSCHLEPPEN SOLL...</German>
 			<French>Sélectionner l'objet à remorquer avec '%1'.</French>
-			<Russian>Выберите технику для буксировки '%1'.</Russian>
+			<Russian>Выберите технику для буксировки %1</Russian>
 		</Key>
 		<Key ID="STR_TOW_THIS">
 			<English>TOW OBJECT</English>
 			<German>OBJEKT KOPPELN</German>
 			<French>Remorquer l'objet</French>
-			<Russian>Буксировать объект</Russian>
+			<Russian>Буксировать</Russian>
 		</Key>
 		<Key ID="STR_LOG_TUG_SELECT">
 			<English>... TOW SELECTED OBJECT TO THIS OBJECT</English>
@@ -41591,7 +41594,7 @@
 			<English>OBJECT '%1' IS TOO FAR FROM THE OBJECT TO BE TOWED.</English>
 			<German>DAS OBJEKT '%1' IST ZU WEIT ENTFERNT ZUM KOPPELN.</German>
 			<French>Le véhicule '%1' est trop loin du véhicule à remorquer.</French>
-			<Russian>Объект '%1' находится слишком далеко от буксируемого транспорта.</Russian>
+			<Russian>%1 находится слишком далеко от буксируемого транспорта.</Russian>
 		</Key>
 		<Key ID="STR_LOG_IMPOSSIBLE_VEHICLE">
 			<English>ONLY THE PILOT CAN DETACH THIS OBJECT.</English>
@@ -41603,7 +41606,7 @@
 			<English>OBJECT '%1' IS IN TRANSIT.</English>
 			<German>DAS OBJEKT '%1' IST IN BEWEGUNG.</German>
 			<French>Véhicule '%1' est en mouvement.</French>
-			<Russian>Объект '%1' находится в движении.</Russian>
+			<Russian>%1 находится в движении.</Russian>
 		</Key>
 		<Key ID="STR_LOG_INPROGRESS">
 			<English>SORRY, BUT THE CURRENT OPERATION IS NOT FINISHED YET!</English>
@@ -41615,7 +41618,7 @@
 			<English>OBJECT '%1' UNTOWED.</English>
 			<German>OBJEKT '%1' WURDE ABGEKOPPELT.</German>
 			<French>Véhicule '%1' détaché.</French>
-			<Russian>Объект '%1' был отсоединён.</Russian>
+			<Russian>%1 был отсоединён.</Russian>
 		</Key>
 		<Key ID="STR_LOG_MISSING_EQUIPMENT">
 			<English>'%1' IS REQUIRED TO TOW.</English>
