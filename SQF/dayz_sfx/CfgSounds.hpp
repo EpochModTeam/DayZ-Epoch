@@ -981,4 +981,164 @@ class CfgSounds {
 		sound[]= {"\dayz_sfx\evr\fx_misc4.ogg",1,1};
 		titles[]={};
 	};
+	class z_bookcase_0 {
+		sound[] = {"\dayz_sfx\search\bookcase_0.ogg", 0.1, 1, 25};
+		titles[] = {};
+	};
+	class z_bookcase_1 {
+		sound[] = {"\dayz_sfx\search\bookcase_1.ogg", 0.1, 1, 25};
+		titles[] = {};
+	};
+	class z_bookcase_2 {
+		sound[] = {"\dayz_sfx\search\bookcase_2.ogg", 0.1, 1, 35};
+		titles[] = {};
+	};
+	class z_chest_0 {
+		sound[] = {"\dayz_sfx\search\chest_0.ogg", 0.1, 1, 25};
+		titles[] = {};
+	};
+	class z_chest_1 {
+		sound[] = {"\dayz_sfx\search\chest_1.ogg", 0.1, 1, 30};
+		titles[] = {};
+	};
+	class z_chest_2 {
+		sound[] = {"\dayz_sfx\search\chest_2.ogg", 0.1, 1, 35};
+		titles[] = {};
+	};
+	class z_church_0 {
+		sound[] = {"\dayz_sfx\search\church_0.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_church_1 {
+		sound[] = {"\dayz_sfx\search\church_1.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_church_2 {
+		sound[] = {"\dayz_sfx\search\church_2.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_dumpster_0 {
+		sound[] = {"\dayz_sfx\search\dumpster_0.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_dumpster_1 {
+		sound[] = {"\dayz_sfx\search\dumpster_1.ogg", 0.1, 1, 60};
+		titles[] = {};
+	};
+	class z_garbage_can_0 {
+		sound[] = {"\dayz_sfx\search\garbage_can_0.ogg", 0.1, 1, 30};
+		titles[] = {};
+	};
+	class z_garbage_can_1 {
+		sound[] = {"\dayz_sfx\search\garbage_can_1.ogg", 0.1, 1, 35};
+		titles[] = {};
+	};
+	class z_garbage_can_2 {
+		sound[] = {"\dayz_sfx\search\garbage_can_2.ogg", 0.1, 1, 40};
+		titles[] = {};
+	};
+	class z_garbage_hard_0 {
+		sound[] = {"\dayz_sfx\search\garbage_hard_0.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_garbage_hard_1 {
+		sound[] = {"\dayz_sfx\search\garbage_hard_1.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_garbage_soft_0 {
+		sound[] = {"\dayz_sfx\search\garbage_soft_0.ogg", 0.1, 1, 40};
+		titles[] = {};
+	};
+	class z_garbage_soft_1 {
+		sound[] = {"\dayz_sfx\search\garbage_soft_1.ogg", 0.1, 1, 40};
+		titles[] = {};
+	};
+	class z_house_0 {
+		sound[] = {"\dayz_sfx\search\house_0.ogg", 0.1, 1, 30};
+		titles[] = {};
+	};
+	class z_house_1 {
+		sound[] = {"\dayz_sfx\search\house_1.ogg", 0.1, 1, 40};
+		titles[] = {};
+	};
+	class z_house_2 {
+		sound[] = {"\dayz_sfx\search\house_2.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_rubble_0 {
+		sound[] = {"\dayz_sfx\search\rubble_0.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_rubble_1 {
+		sound[] = {"\dayz_sfx\search\rubble_1.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_shed_0 {
+		sound[] = {"\dayz_sfx\search\shed_0.ogg", 0.1, 1, 40};
+		titles[] = {};
+	};
+	class z_shed_1 {
+		sound[] = {"\dayz_sfx\search\shed_1.ogg", 0.1, 1, 40};
+		titles[] = {};
+	};
+	class z_shed_2 {
+		sound[] = {"\dayz_sfx\search\shed_2.ogg", 0.1, 1, 40};
+		titles[] = {};
+	};
+	class z_wardrobe_0 {
+		sound[] = {"\dayz_sfx\search\wardrobe_0.ogg", 0.1, 1, 25};
+		titles[] = {};
+	};
+	class z_wardrobe_1 {
+		sound[] = {"\dayz_sfx\search\wardrobe_1.ogg", 0.1, 1, 25};
+		titles[] = {};
+	};
+	class z_wardrobe_2 {
+		sound[] = {"\dayz_sfx\search\wardrobe_2.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_waste_container_0 {
+		sound[] = {"\dayz_sfx\search\waste_container_0.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_waste_container_1 {
+		sound[] = {"\dayz_sfx\search\waste_container_1.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_wreck_0 {
+		sound[] = {"\dayz_sfx\search\wreck_0.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_wreck_1 {
+		sound[] = {"\dayz_sfx\search\wreck_1.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_wreck_HMMWV_0 {
+		sound[] = {"\dayz_sfx\search\wreck_HMMWV_0.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_wreck_van_0 {
+		sound[] = {"\dayz_sfx\search\wreck_van_0.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class z_wreck_van_1 {
+		sound[] = {"\dayz_sfx\search\wreck_van_1.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+	class breakin {
+		sound[] = {"\dayz_sfx\search\breakin.ogg", 0.1, 1, 75};
+		titles[] = {};
+	};
+	class coins {
+		sound[] = {"\dayz_sfx\search\coins.ogg", 0.1, 1, 10};
+		titles[] = {};
+	};
+	class newspaper {
+		sound[] = {"\dayz_sfx\search\newspaper.ogg", 0.1, 1, 10};
+		titles[] = {};
+	};
+	class shipping_container {
+		sound[] = {"\dayz_sfx\search\shipping_container.ogg", 0.1, 1, 75};
+		titles[] = {};
+	};	
 };
