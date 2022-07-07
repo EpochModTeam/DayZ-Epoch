@@ -50,6 +50,8 @@ private [
 _player = _this select 0;
 _target = _this select 1;
 
+if (isNil "_target" || {isNull _target}) exitwith {[false,false,false,false,false,false,false,""]};
+
 // Initialize return values
 _isOwner = false;
 _isFriendly = false;
