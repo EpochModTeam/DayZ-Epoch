@@ -181,6 +181,7 @@
 [REMOVED] player_build.sqf (1bb034360) @Victor-the-Cleaner
 [REMOVED] OEMPos variable (fc6680c36) @AirwavesMan
 [REMOVED] PVDZ_playerMedicalSync, server_medicalSync (abce13a65) @AirwavesMan
+[REMOVED] startcombattimer variable (b6c7364c5) @AirwavesMan
 [REPLACED] fnc_veh_setFixServer --> server_setHitpoints. (637f1f445) @AirwavesMan
 [REPLACED] object_setHit --> unit_setFractures (56787c71a) @AirwavesMan
 
