@@ -1,6 +1,6 @@
 // Written by icomrade (https://github.com/icomrade)
 
-private ["_hasAccess","_heliPad","_objectID","_objectUID","_plotCheck"];
+private ["_hasAccess","_heliPad","_objectID","_objectUID","_plotCheck","_wealth"];
 
 closeDialog 0;
 
