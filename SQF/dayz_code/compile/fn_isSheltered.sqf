@@ -36,29 +36,17 @@ local _deepScan = {
 			///////////////////////////////////////////////////////////////////////////
 
 			local _box	= boundingBox _object;
-			local _b0	= _box select 0;	// min boundary
-			local _b1	= _box select 1;	// max boundary
+			local _edge	= [_box select 1, _box select 0] call DZE_fnc_vectorDiff;
+			local _edgeX	= _edge select 0;
+			local _edgeY	= _edge select 1;
+			local _edgeZ	= _edge select 2;
 
-			local _edgeX	= abs (_b0 select 0) + (_b1 select 0);
-			local _edgeY	= abs (_b0 select 1) + (_b1 select 1);
-			local _edgeZ	= abs (_b0 select 2) + (_b1 select 2);
-
-			local _proceed = false;
+			local _proceed	= false;
 
 			call {
-				if (_idx < 2) exitWith {					// objects close to the horizon
-					if (_edgeZ > _e1) then {				// have a minimum height requirement
-						if (_edgeX > _e2 || {_edgeY > _e2}) then {	// plus at least one long edge
-							_proceed = true;
-						};
-					};
-				};
-				if (_edgeX > _e1 && {_edgeY > _e2}) exitWith {			// objects above the player
-					_proceed = true;					// must have
-				};								// at least one long edge
-				if (_edgeX > _e2 && {_edgeY > _e1}) exitWith {			// with a minimum adjacent edge
-					_proceed = true;					// but no minimum height requirement
-				};
+				if (_edgeX > _e2 && {(_edgeY > _e1 || {_edgeZ > _e1})}) exitWith {_proceed = true;};
+				if (_edgeY > _e2 && {(_edgeX > _e1 || {_edgeZ > _e1})}) exitWith {_proceed = true;};
+				if (_edgeZ > _e2 && {(_edgeX > _e1 || {_edgeY > _e1})}) exitWith {_proceed = true;};
 			};
 
 			if (_proceed) then {
@@ -81,7 +69,7 @@ local _rad		= 50;				// scan radius
 local _seg		= 8;				// initial segments
 local _spin		= 0;				// z spin offset per arc-cycle
 local _e1		= 2.5;				// minimum edge length
-local _e2		= 5.0;				// long edge length
+local _e2		= 4.6;				// long edge length
 local _scanWgt		= [1,1.5,2];			// scan weighting index
 local _hitWgt		= [0,0,0];			// record hit weighting
 local _total		= 0;				// total hits, adjusted for weighting
