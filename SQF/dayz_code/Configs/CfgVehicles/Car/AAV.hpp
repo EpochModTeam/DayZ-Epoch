@@ -80,7 +80,9 @@ class AAV_DZE : AAV_DZ {
 			stabilizedInAxes = 0;
 		};		
 	};	
-	
+	class Upgrades {
+		ItemTankORP[] = {"AAV_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+	};	
 };
 
 class AAV_DZE1: AAV_DZE {
