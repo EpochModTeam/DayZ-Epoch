@@ -1,6 +1,6 @@
 // Written by icomrade (https://github.com/icomrade)
 
-private ["_hasAccess","_heliPad","_objectID","_objectUID","_plotCheck","_wealth"];
+private["_itemText","_enoughMoney","_moneyInfo","_wealth","_success","_ownerPUID"];
 
 closeDialog 0;
 
