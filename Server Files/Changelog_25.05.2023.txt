@@ -1,0 +1,16 @@
+Changelog 25.05.2023
+
+Server Files Updated:
+
+[ADDED] New HiveExt.dll compatible with MySQL 8.0.33+
+[ADDED] New Binaries: DatabaseMySql.dll, DatabasePostgre.dll, tbb.dll, tbbmalloc.dll to run the new HiveExt.dll
+[FIXED] Upgrading or creating a key for a vehicle could fail if the vehicle had too many items in gear.
+
+Mission Files Updated:
+
+[FIXED] Maintain the Virtual Garage with Coins did not work properly.
+[FIXED] Wooden bases with wooden walls and floors got not properly recognized as shelter.
+[FIXED] Upgrading AAV_DZE to AAV_DZE1 did not work.
+
+Not needed on a new server:
+The mission check under 'dayz_server\init\mission_check.sqf' must be updated if you are upgrading your existing server with the newest updated missionfiles.
