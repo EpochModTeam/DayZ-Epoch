@@ -1,4 +1,4 @@
-Note: Both server and client should be updated to current A2OA stable 1.63.131129 or newer -- DO NOT USE BETA BUILDS, wait until A2/OA updates are pushed to the stable channel.
+Note: Both server and client should be updated to current A2OA stable 1.64.0.144629 or newer -- DO NOT USE BETA BUILDS, wait until A2/OA updates are pushed to the stable channel.
 <br />
 <br />
 Note: Do not copy ArmA 2 addons directory/pbo files into the ArmA 2 OA/Expansion directory, instead load the ArmA 2 addons in a -mod flag (default directory EX) `"-mod=C:\Program Files (x86)\Steam\SteamApps\common\Arma 2;EXPANSION;ca"`
