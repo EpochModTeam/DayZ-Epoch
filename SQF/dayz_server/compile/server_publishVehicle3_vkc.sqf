@@ -79,9 +79,9 @@ diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = _worldspace select 0;
 _uid = _worldspace call dayz_objectUID2;
 
-_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _damage , _characterID, _worldspace, _inv, _newHitpoints, _fuel,_uid];
+_key = str formatText["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, _damage , _characterID, _worldspace, _inv, _newHitpoints, _fuel,_uid];
 #ifdef OBJECT_DEBUG
-diag_log ("HIVE: WRITE: "+ str(_key));
+diag_log ("HIVE: WRITE: "+ _key);
 #endif
 
 _key call server_hiveWrite;
