@@ -12,7 +12,7 @@ Note: if you have copied your ArmA 2 addons into your ArmA2 OA/Expansion/Addons 
 
 2. Install or update [[MySQL Server](https://dev.mysql.com/downloads/mysql/)] on the server. Create a new MySQL database called `dayz_epoch`. Execute the epoch.sql file on the `dayz_epoch` database. Execute add_recommended_mysql_events.sql on the `dayz_epoch` database. Make sure the MySQL event scheduler is turned on.
 
-3. [[Download](http://dayzepoch.com/a2dayzepoch.php)] both client and server files and extract to the root `Arma 2 Operation Arrowhead` folder. Example: `C:\Program Files (x86)\Steam\steamapps\common\Arma 2 Operation Arrowhead`. On some Windows systems dll files may need to be unblocked. Right-click the file, click properties and click "Unblock".
+3. [[Download](http://dayzepoch.com/a2dayzepoch.php)] both client and server files and extract to the root `Arma 2 Operation Arrowhead` folder. Example: `C:\Program Files (x86)\Steam\steamapps\common\Arma 2 Operation Arrowhead`. On some Windows systems dll files may need to be unblocked. Right-click the file, click properties and click "Unblock". Additionally, copy the dlls from the dlls folder and paste them into the Server Root folder (where you have arma2oaserver.exe).
 
 4. Move the `DZE_Server_Config` folder to the root of the drive (C:\ on most systems) or a similar location. For security, it is important this folder is located outside the arma2oaserver.exe folder and its sub-folders.
 
