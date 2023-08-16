@@ -1,0 +1,9 @@
+[FIXED] Upgrading or creating a key for a vehicle could fail if the vehicle had too many items in the gear. (3f1ada6dd) @Wilhelm Klink, @AirwavesMan
+[FIXED] Maintain the Virtual Garage with Coins did not work properly. (2d00a515c) @AirwavesMan
+[FIXED] Wooden bases with wooden walls and floors got not properly recognized as shelter. (1b0848779) @Victor-the-Cleaner, @AirwavesMan
+[FIXED] Upgrading the AAV_DZE to AAV_DZE1 did not work. (ab50bf315) @Big Dee, @AirwavesMan
+[FIXED] Wrong classname for 2 static weapons. (0ad3698b3) @Kitty, @AirwavesMan
+[REPLACED] GPMG_TriPod_GrenadeLauncher_Static_kit --> GPMG_TriPod_MG_Static_kit (0ad3698b3) @Kitty, @AirwavesMan
+[REPLACED] GMG_Tripod_MG_Static_kit --> GMG_Tripod_GrenadeLauncher_Static_kit (0ad3698b3) @Kitty, @AirwavesMan
+[REPLACED] GPMG_TriPod_GrenadeLauncher_Static_DZ --> GPMG_TriPod_MG_Static_DZ (0ad3698b3) @Kitty, @AirwavesMan
+[REPLACED] GMG_Tripod_MG_Static_DZ --> GMG_Tripod_GrenadeLauncher_Static_DZ (0ad3698b3) @Kitty, @AirwavesMan
