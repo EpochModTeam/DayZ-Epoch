@@ -122,7 +122,7 @@ class BAF_GMG_Tripod_D: GMG_TriPod {
 	class assembleInfo;
 };
 
-class GMG_Tripod_MG_Static_DZ: BAF_GMG_Tripod_D {			// GMG Minitripod
+class GMG_Tripod_GrenadeLauncher_Static_DZ: BAF_GMG_Tripod_D {			// GMG Minitripod
 	side = 1;
 	faction = "USMC";
 	class assembleInfo: assembleInfo {
@@ -130,9 +130,9 @@ class GMG_Tripod_MG_Static_DZ: BAF_GMG_Tripod_D {			// GMG Minitripod
 	};
 	offset[] = {0,3,0};
 	nounderground = 0;
-	GhostPreview = "GMG_Tripod_MG_Static_DZ";
+	GhostPreview = "GMG_Tripod_GrenadeLauncher_Static_DZ";
 	vehicleClass = "DayZ Epoch Static Weapons";
-	removeoutput[] = {{"GMG_Tripod_MG_Static_kit",1}};
+	removeoutput[] = {{"GMG_Tripod_GrenadeLauncher_Static_kit",1}};
 };
 
 class AGS_Ins;
@@ -161,7 +161,7 @@ class BAF_GPMG_Minitripod_D: BAF_L2A1_ACOG_base {
 	class assembleInfo;
 };
 
-class GPMG_TriPod_GrenadeLauncher_Static_DZ: BAF_GPMG_Minitripod_D {	// GPMG Minitripod
+class GPMG_TriPod_MG_Static_DZ: BAF_GPMG_Minitripod_D {	// GPMG Minitripod
 	side = 1;
 	faction = "USMC";
 	class assembleInfo: assembleInfo {
@@ -169,9 +169,9 @@ class GPMG_TriPod_GrenadeLauncher_Static_DZ: BAF_GPMG_Minitripod_D {	// GPMG Min
 	};
 	offset[] = {0,3,0};
 	nounderground = 0;
-	GhostPreview = "GPMG_TriPod_GrenadeLauncher_Static_DZ";
+	GhostPreview = "GPMG_TriPod_MG_Static_DZ";
 	vehicleClass = "DayZ Epoch Static Weapons";
-	removeoutput[] = {{"GPMG_TriPod_GrenadeLauncher_Static_kit",1}};
+	removeoutput[] = {{"GPMG_TriPod_MG_Static_kit",1}};
 };
 
 class M119;

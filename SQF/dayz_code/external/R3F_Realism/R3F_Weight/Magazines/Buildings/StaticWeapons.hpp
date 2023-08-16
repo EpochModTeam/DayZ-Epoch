@@ -34,7 +34,7 @@ class L2A1_Tripod_MG_Static_kit
 {
 	weight = 32.5;
 };
-class GMG_Tripod_MG_Static_kit
+class GMG_Tripod_GrenadeLauncher_Static_kit
 {
 	weight = 29;
 };
@@ -46,7 +46,7 @@ class MK19_TriPod_GrenadeLauncher_Static_kit
 {
 	weight = 35.3;
 };
-class GPMG_TriPod_GrenadeLauncher_Static_kit
+class GPMG_TriPod_MG_Static_kit
 {
 	weight = 25.7;
 };

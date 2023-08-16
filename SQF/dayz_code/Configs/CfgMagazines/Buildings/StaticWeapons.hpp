@@ -174,7 +174,7 @@ class L2A1_Tripod_MG_Static_kit: CA_Magazine
 	};
 };
 
-class GMG_Tripod_MG_Static_kit: CA_Magazine
+class GMG_Tripod_GrenadeLauncher_Static_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -191,7 +191,7 @@ class GMG_Tripod_MG_Static_kit: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
-			create = "GMG_Tripod_MG_Static_DZ";
+			create = "GMG_Tripod_GrenadeLauncher_Static_kit";
 		};
 	};
 };
@@ -240,7 +240,7 @@ class MK19_TriPod_GrenadeLauncher_Static_kit: CA_Magazine
 	};
 };
 
-class GPMG_TriPod_GrenadeLauncher_Static_kit: CA_Magazine
+class GPMG_TriPod_MG_Static_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -257,7 +257,7 @@ class GPMG_TriPod_GrenadeLauncher_Static_kit: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
-			create = "GPMG_TriPod_GrenadeLauncher_Static_DZ";
+			create = "GPMG_TriPod_MG_Static_kit";
 		};
 	};
 };
