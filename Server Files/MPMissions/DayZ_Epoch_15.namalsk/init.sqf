@@ -53,7 +53,13 @@ initialized = true;
 if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\REsec.sqf";};
 
 if (isServer) then {
-	if (dayz_POIs) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf";};
+	if (dayz_POIs) then {
+		[
+			"A2Objects", // Object A2 objects that were included by Sumrak in Namalsk Crisis.
+			["A2RailGun",.25], // Spawns rail gun on the second floor of object A2. Default chance: .25 (25%)
+			"mapFixes" // Fixes entrances to some barracks and prevents fall hazards in Object A2.
+		] call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\namalsk\poi\init.sqf";
+	};
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\dynamic_vehicle.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\server_monitor.sqf";
 	execVM "\z\addons\dayz_server\traders\namalsk.sqf"; //Add trader agents

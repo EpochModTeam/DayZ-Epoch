@@ -118,7 +118,7 @@ if (isServer) then {
 		["any","any","any","any",-1,"CrashSites"]
 	];
 
-	dayz_POIs = false; //Adds Point of Interest map additions (negatively impacts FPS)
+	dayz_POIs = true; //Adds Point of Interest map additions (negatively impacts FPS)
 	DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
 	DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with
 	DynamicVehicleFuelLow = 0; // Min fuel random vehicles can spawn with
