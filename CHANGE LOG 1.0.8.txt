@@ -1,3 +1,4 @@
+[NEW] Sumrak's original Namalsk Object A2 POI added. Map fixes and rail gun spawn also added as POI. (b8f201d) @worldwidesorrow
 [NEW] Added option to exempt players in safe zones from effects of EVR storm. (057ecc0) @worldwidesorrow
 [NEW] Added an option to limit access to static weapons within plot radius to plot owner and plot friends (b27f189) @worldwidesorrow
 [FIXED] Upgrading or creating a key for a vehicle could fail if the vehicle had too many items in the gear. (3f1ada6dd) @Wilhelm Klink, @AirwavesMan
