@@ -40411,8 +40411,8 @@
 		</Key>
 		<Key ID="STR_CL_AUTOCLAIM_RETURN">
 			<English>You have left the mission area! You have %1 seconds to return!</English>
-			<German>Du hast den Missionsbereich verlassen! Du hast %1 um zurückzukehren!</German>
-			<French>Vous quitter la zone de mission! Vous avez %1  secondes pour revenir!</French>
+			<German>Du hast den Missionsbereich verlassen! Du hast %1 Sekunden um zurückzukehren!</German>
+			<French>Vous quitter la zone de mission! Vous avez %1 secondes pour revenir!</French>
 			<Russian>Вы покинули зону миссии! У вас есть %1 сек. чтобы вернуться!</Russian>
 			<Spanish>Has dejado el área de la misión! Tienes %1 segundos para volver!</Spanish>
 		</Key>
