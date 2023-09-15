@@ -1,3 +1,4 @@
+[NEW] Added an option to limit access to static weapons within plot radius to plot owner and plot friends (b27f189) @worldwidesorrow
 [FIXED] Upgrading or creating a key for a vehicle could fail if the vehicle had too many items in the gear. (3f1ada6dd) @Wilhelm Klink, @AirwavesMan
 [FIXED] Maintain the Virtual Garage with Coins did not work properly. (2d00a515c) @AirwavesMan
 [FIXED] Wooden bases with wooden walls and floors got not properly recognized as shelter. (1b0848779) @Victor-the-Cleaner, @AirwavesMan
