@@ -266,6 +266,36 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		
 		if (_type isKindOf "StaticWeapon" || {_type in DZE_StaticWeapons}) then {
 			[_object,DZE_clearStaticAmmo,false] call fn_vehicleAddons;
+			
+			if (DZE_StaticWeaponPlotCheck) then {
+				_object addEventHandler ["GetIn", {
+					local _weapon = _this select 0;
+					local _player = _this select 2;
+					local _nearPlots = _weapon nearEntities ["Plastic_Pole_EP1_DZ", (DZE_PlotPole select 0)];
+					if (count _nearPlots > 0) then {
+						local _nearestPlot = _nearPlots select 0;
+						local _plotFriends = _nearestPlot getVariable "plotfriends"; // owner is index 0.
+						local _playerUID = getPlayerUID _player;
+						local _isPlotFriend = false;
+						{
+							if((_x select 0) == _playerUID) exitWith {_isPlotFriend = true;};
+						} count _plotFriends;
+						
+						if (!_isPlotFriend) then {
+							// "eject" action doesn't work on the static weapons for some reason.
+							moveOut _player;
+							
+							/* uncomment to log the offender to the server rpt.
+							local _plotOwner = _plotFriends select 0;
+							local _plotOwnerUID = _plotOwner select 0;
+							local _plotOwnerName = _plotOwner select 1;
+							_plotOwnerName = [_plotOwnerName, (toString _plotOwnerName)] select (typeName _plotOwnerName == "ARRAY");
+							diag_log format ["Player [%1, %2] ejected from %3 on plot belonging to [%4, %5]",(name _player), _playerUID, (typeOf _weapon), _plotOwnerUID, _plotOwnerName];
+							*/
+						};
+					};
+				}];
+			};
 		};
 		
 		_setGlobal = [false,true] select ((_type in DZE_LockedStorage) || (_type in DZE_DoorsLocked));

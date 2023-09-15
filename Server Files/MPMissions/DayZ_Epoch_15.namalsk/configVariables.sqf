@@ -147,6 +147,9 @@ if (isServer) then {
 		DZE_EVRFirstTime = [15, 60]; // Random time in minutes after server restart to begin the first EVR storm [min, max].
 		DZE_EVRTimer = [45, 180]; // Random time in minutes between additional EVR storms [min, max].
 	};
+	
+	// Static Weapon Plot Access
+	DZE_StaticWeaponPlotCheck = false; // Limits the use of static weapons within the plot radius to plot owner and plot friends.
 };
 
 // Client
