@@ -37225,6 +37225,12 @@
 			<German>Haufen Erde</German>
 			<Russian>Кучка земли</Russian>
 		</Key>
+		<Key ID="STR_OBJECTA2_ENTER">
+			<English>Entering Object AII</English>
+		</Key>
+		<Key ID="STR_OBJECTA2_LEAVE">
+			<English>Leaving Object AII</English>
+		</Key>
 
 		<!--Placeholder strings for new items server admins want to add within the mission by overwrite this strings-->
 		<Key ID="STR_PLACEHOLDER_ITEM_NAME_01">

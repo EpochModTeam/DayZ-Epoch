@@ -752,6 +752,7 @@ if (!isDedicated) then {
 	dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_ejectPlayer.sqf";
 	fnc_isInsideBuilding = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_isInsideBuilding.sqf";	//_isInside = [_unit,_building] call fnc_isInsideBuilding;
 	fnc_setCombat = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_setCombat.sqf";
+	if (worldName == "namalsk") then {player_objectAII = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_objectA2.sqf";};
 };
 
 //Both

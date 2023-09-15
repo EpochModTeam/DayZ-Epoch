@@ -551,6 +551,9 @@ if (!isDedicated) then {
 		DZE_EVRBloodLoss = [4000,8000]; // Random number of blood loss if a player does not have an APSI and/or is not inside a building [min, max]. Player will not die, there is a minimum of 1000 after the calculation
 		DZE_EVRSafezoneExempt = true; // Players in safe zones are exempt from the effects of the EVR storms.
 	};
+	
+	// Namalsk Object AII Light Intensity
+	DZE_ObjectA2lightIntensity = .10; // (RECOMMENDED VALUE = 0.10, 0 = off (dark), 1 = fully on (not recommended))
 
 	// Garage Door Opener
 	DZE_GarageDoor_Opener = false;	// Enables the option to open Garage Doors from the inside of a vehicle.

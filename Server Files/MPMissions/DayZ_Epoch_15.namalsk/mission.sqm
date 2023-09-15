@@ -319,7 +319,7 @@ class Mission
 	
 	class Sensors
 	{
-		items=4;
+		items=5;
 		#define TRGDEF a=100;b=100;activationBy="WEST";repeating=1;interruptable=1;age="UNKNOWN";class Effects{};
 		class Item0
 		{
@@ -356,7 +356,16 @@ class Mission
 			expCond="(player distance zonedock) < 100;";
 			expActiv="[""Dock Trader"",true,""enter""] call player_traderCity;";
 			expDesactiv="[""Dock Trader"",true,""leave""] call player_traderCity;";
-		};			
+		};
+		class Item4
+		{
+			position[]={4977.15,4.74,6624.89};
+			TRGDEF
+			name="zoneAII";
+			expCond="(player distance [4977.15,6624.89,0.74293]) < 41;";
+			expActiv="[true,""enter""] call player_objectAII;";
+			expDesactiv="[true,""leave""] call player_objectAII;";
+		};
 	};
 };
 class Intro
