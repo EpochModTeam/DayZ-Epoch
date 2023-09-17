@@ -568,7 +568,7 @@ if (!isDedicated) then {
 	
 	if (DZE_Service_Points) then {
 		// Valid vehicle config classes as an example: "Air", "AllVehicles", "All", "APC", "Bicycle", "Car", "Helicopter", "Land", "Motorcycle", "Plane", "Ship", "Tank"
-		DZE_SP_Classes = ["Map_A_FuelStation_Feed","Land_A_FuelStation_Feed","FuelPump_DZ"]; // service point classes, You can also use dayz_fuelpumparray by its self for all the default fuel pumps.
+		DZE_SP_Classes = ["Map_A_FuelStation_Feed","Land_A_FuelStation_Feed","FuelPump_DZ","land_fuelstation_w"]; // service point classes, You can also use dayz_fuelpumparray by its self for all the default fuel pumps.
 		DZE_SP_MaxDistance = 50; // maximum distance from a service point for the options to be shown
 		
 		// Refuel Settings
